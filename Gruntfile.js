@@ -192,7 +192,7 @@ module.exports = function(grunt) {
    grunt.loadNpmTasks('grunt-md2html');
 
    // Utility runners
-   grunt.registerTask('copy-stack', ['copy:rand', 'copy:fonts', 'copy:select2', 'copy:icheck']);
+   grunt.registerTask('copy-stack', ['copy:fonts']);
    grunt.registerTask('cleanup', ['clean:cleanup']);
    grunt.registerTask('setup', ['copy:lessvar', 'full']);
 
