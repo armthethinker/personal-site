@@ -173,7 +173,7 @@ module.exports = function(grunt) {
          include: {
             files: [{
                src: ['README.md'],
-               dest: 'includes/ui/README.html'
+               dest: 'includes/README-body.html'
             }]
          }
       }
