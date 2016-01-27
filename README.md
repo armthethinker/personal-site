@@ -5,3 +5,6 @@
 - FTP /perch/ separately from the rest of the site
 - local includes now
 - show full tree, split sites per folder
+
+## Useful Perch Links
+[Installing a local server](https://solutions.grabaperch.com/development/installing-a-local-server-with-xampp)
