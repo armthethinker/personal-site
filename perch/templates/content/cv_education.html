@@ -1,0 +1,23 @@
+<div class="slat slat-ed <perch:content id="most_interesting" type="checkbox" label="Most Interesting" value="js-most-interesting" />">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3><perch:content type="text" id="ed_place" label="Place of Education" title="true"/> <small><perch:content type="text" id="ed_degree" label="Degree or Certification"/></small></h3>
+			<perch:if exists="major">
+				<p><strong>Majors:</strong> <perch:content type="text" id="major" label="Major"/></p>
+			</perch:if>
+			<perch:if exists="minor">
+				<p><strong>Minors:</strong> <perch:content type="text" id="minor" label="Minors"/></p>
+			</perch:if>
+			<perch:if exists="description">
+				<blockquote><perch:content type="textarea" id="description" label="Description" html="true"/></blockquote>
+			</perch:if>
+			<ul class="list-inline">
+				<li><i class="fa fa-map-marker"></i> <perch:content type="text" id="location" label="Location"/></li>
+				<li><i class="fa fa-clock-o"></i> <perch:content type="text" id="time" label="Time There"/></li>
+				<perch:if exists="GPA">
+					<li><i class="fa fa-line-chart"></i> <perch:content type="text" id="GPA" label="GPA"/></li>
+				</perch:if>
+			</ul>
+		</div>
+	</div>
+</div>

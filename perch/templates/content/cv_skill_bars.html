@@ -1,0 +1,19 @@
+<div class="slat slat-skill-bar <perch:content id="most_interesting" type="checkbox" label="Most Interesting" value="js-most-interesting" />">
+	<div class="row">
+		<div class="col-xs-12">
+				
+			<perch:repeater id="skill-labels" label="Skill Labels">
+				<span class="small m-r-sm"><i class="fa fa-circle text-<perch:content type="radio" id="skill_color" label="Skill Color" options="primary, info, success, warning, danger"/>"></i> <perch:content type="text" id="skill_name" label="Skill Name"/></span>
+			</perch:repeater>
+			
+			<div class="progress">
+				<perch:repeater id="skill-bars" label="Skill Bars">
+					<div class="progress-bar progress-bar-<perch:content type="radio" id="skill_color" label="Skill Color" options="primary, info, success, warning, danger"/>" style="width: <perch:content type="text" id="skill-bar-percentage" label="Skill Bar Percentage"/>%">
+						<span class="sr-only"><perch:content type="text" id="skill-bar-percentage" label="Skill Bar Percentage"/>% <perch:content type="text" id="skill_name" label="Skill Name"/></span>
+					</div>
+				</perch:repeater>
+			</div>
+	
+		</div>
+	</div>
+</div>

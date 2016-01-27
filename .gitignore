@@ -13,8 +13,12 @@ Thumbs.db
 /bower_components/
 /node_modules/
 
-# TEMP #
-/perch/
+# Perch Blocking #
+/perch/addons
+/perch/config/config.php
+/perch/core
+/perch/resources
+/perch/setup
 
 # Privacy #
 ######################

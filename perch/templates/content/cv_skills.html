@@ -1,0 +1,19 @@
+<div class="slat slat-skill-pills">
+	<div class="row">
+		<div class="col-xs-12 m-tb-sm small">
+			<span class="m-r-xs"><i class="fa fa-circle text-primary"></i> Rocks</span>
+			<span class="m-lr-xs"><i class="fa fa-circle text-success"></i> Pretty Great</span>
+			<span class="m-lr-xs"><i class="fa fa-circle text-info"></i> Ok</span>
+			<span class="m-lr-xs"><i class="fa fa-circle text-warning"></i> Rusty</span>
+		</div>
+		<div class="col-xs-12">
+			<perch:repeater id="skill-pills" label="Skill Pills">
+				<perch:before><ul class="list-inline"></perch:before>
+					<li class="<perch:content id="most_interesting" type="checkbox" label="Most Interesting" value="js-most-interesting" />">
+						<span class="label label-<perch:content type="radio" id="skill_level" label="Skill Level" options="Rocks | primary, Pretty Great | success, Ok | info, Rusty | warning"/>"><perch:content type="text" id="skill-pill" label="Skill Pill"/></span>
+					</li>
+				<perch:after></ul></perch:after>
+			</perch:repeater>
+		</div>
+	</div>
+</div>

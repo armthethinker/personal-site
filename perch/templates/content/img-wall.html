@@ -1,0 +1,156 @@
+<perch:content type="select" id="wall-type" label="Image Wall Type" options="Side by side first smaller | sbs, First Big Four Small | fbfs, Two tall stacked then hor One Big | tsob, Four sm on both sides one center multilayer reconfig | fsbsoc, One Straight | 1s, Two Straight | 2s, Three Straight | 3s, Four Straight | 4s, One Video | 1v, Two Video | 2v" suppress="true"/>
+
+<style>
+		.img-<perch:content id="perch_item_index" type="hidden" />-1{
+			background-image: url("<perch:content type="image" id="iw_img1" label="Image 1" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-1" label="Background Size 1" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-2{
+			background-image: url("<perch:content type="image" id="iw_img2" label="Image 2" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-2" label="Background Size 2" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-3{
+			background-image: url("<perch:content type="image" id="iw_img3" label="Image 3" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-3" label="Background Size 3" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-4{
+			background-image: url("<perch:content type="image" id="iw_img4" label="Image 4" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-4" label="Background Size 4" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-5{
+			background-image: url("<perch:content type="image" id="iw_img5" label="Image 5" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-5" label="Background Size 5" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-6{
+			background-image: url("<perch:content type="image" id="iw_img6" label="Image 6" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-6" label="Background Size 6" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-7{
+			background-image: url("<perch:content type="image" id="iw_img7" label="Image 7" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-7" label="Background Size 7" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-8{
+			background-image: url("<perch:content type="image" id="iw_img8" label="Image 8" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-8" label="Background Size 8" options="Cover | cover, Contain | contain" />;
+		}
+		.img-<perch:content id="perch_item_index" type="hidden" />-9{
+			background-image: url("<perch:content type="image" id="iw_img9" label="Image 9" output="path"/>");
+			background-size: <perch:content type="select" id="background-size-9" label="Background Size 9" options="Cover | cover, Contain | contain" />;
+		}
+</style>
+
+<perch:if id="wall-type" value="sbs">
+	<!--  Side by side, first smaller  -->
+	<div class="row">
+		<div class="col-md-5 col-xs-6 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-md-7 col-xs-6 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="fbfs">
+	<!--  First Big, Four Small  -->
+	<div class="row">
+		<div class="col-md-10 img-cover img-lg img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-md-2">
+			<div class="row">
+				<div class="col-md-12 col-sm-3 col-xs-6 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+				<div class="col-md-12 col-sm-3 col-xs-6 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-3"></div>
+				<div class="col-md-12 col-sm-3 col-xs-6 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-4"></div>
+				<div class="col-md-12 col-sm-3 col-xs-6 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-5"></div>
+			</div>
+		</div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="tsob">
+	<!--  Two tall stacked then hor, One Big  -->
+	<div class="row">
+		<div class="col-md-3">
+			<div class="row">
+				<div class="col-md-12 col-sm-8 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+				<div class="col-md-12 col-sm-4 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+			</div>
+		</div>
+		<div class="col-md-9 img-cover img-lg img-<perch:content id="perch_item_index" type="hidden" />-3"></div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="fsbsoc">
+	<!--  Four sm on both sides, one center, multi-layer reconfig  -->
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="row">
+				<div class="col-sm-6 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+				<div class="col-sm-6 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+				<div class="col-sm-6 hidden-xs img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-3"></div>
+				<div class="col-sm-6 hidden-xs img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-4"></div>
+			</div>
+		</div>
+		<div class="col-md-4 col-xs-8 img img-md img-<perch:content id="perch_item_index" type="hidden" />-5"></div>
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-6 col-xs-8 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-6"></div>
+				<div class="col-md-6 col-xs-4 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-7"></div>
+				<div class="col-sm-6 col-xs-5 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-8"></div>
+				<div class="col-sm-6 col-xs-7 img-cover img-sm img-<perch:content id="perch_item_index" type="hidden" />-9"></div>
+			</div>
+		</div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="1s">
+	<!--  One Big  -->
+	<div class="row">
+		<div class="col-md-12 img-cover img-xl hidden-sm hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-xs-12 img-cover img-lg hidden-md hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="2s">
+	<div class="row">
+		<div class="col-xs-6 img-cover img-md hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-xs-6 img-cover img-md hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+		<div class="col-xs-6 img-cover img-sm hidden-sm hidden-md hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-xs-6 img-cover img-sm hidden-sm hidden-md hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+	</div>
+</perch:if>
+	
+<perch:if id="wall-type" value="3s">
+	<div class="row">
+		<div class="col-xs-4 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-xs-4 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+		<div class="col-xs-4 img-cover img-md img-<perch:content id="perch_item_index" type="hidden" />-3"></div>
+	</div>
+</perch:if>
+	
+<perch:if id="wall-type" value="4s">
+	<div class="row">
+		<div class="col-xs-3 img-cover img-sm hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-xs-3 img-cover img-sm hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+		<div class="col-xs-3 img-cover img-sm hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-3"></div>
+		<div class="col-xs-3 img-cover img-sm hidden-lg img-<perch:content id="perch_item_index" type="hidden" />-4"></div>
+		<div class="col-xs-3 img-cover img-md hidden-md hidden-sm hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-1"></div>
+		<div class="col-xs-3 img-cover img-md hidden-md hidden-sm hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-2"></div>
+		<div class="col-xs-3 img-cover img-md hidden-md hidden-sm hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-3"></div>
+		<div class="col-xs-3 img-cover img-md hidden-md hidden-sm hidden-xs img-<perch:content id="perch_item_index" type="hidden" />-4"></div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="1v">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 m-tb-md fitvids-init">
+			<iframe width="560" height="315" src="//www.youtube.com/embed/<perch:content type="text" id="video1" label="Video 1" help="Just type the video's unique id."/>?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</perch:if>
+
+<perch:if id="wall-type" value="2v">
+	<div class="row">
+		<div class="col-sm-5 col-sm-offset-1 m-tb-md fitvids-init">
+			<iframe width="560" height="315" src="//www.youtube.com/embed/<perch:content type="text" id="video1" label="Video 1" help="Just type the video's unique id."/>?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="col-sm-5 m-tb-md fitvids-init">
+			<iframe width="560" height="315" src="//www.youtube.com/embed/<perch:content type="text" id="video2" label="Video 2" help="Just type the video's unique id."/>?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</perch:if>
