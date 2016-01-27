@@ -16,21 +16,14 @@ module.exports = function(grunt) {
             src: ['css/built-bootstrap+<%= pkg.gname %>.css',
                   'bower_components/fontawesome/css/font-awesome.min.css',
                   'bower_components/animate.css/animate.min.css',
-                  'bower_components/select2/select2.css',
-                  'bower_components/select2/select2-bootstrap.css',
-                  'bower_components/anchor-js/anchor.css',
-                  'bower_components/icheck/skins/flat/red.css'
+                  'bower_components/anchor-js/anchor.css'
                   ],
             dest: 'dist/css/<%= pkg.gname %>-v<%= pkg.version %>.css'
          },
          js: {
             src: ['js/bootstrap.min.js',
-                  'bower_components/fixie/fixie.min.js',
-                  'bower_components/holderjs/holder.min.js',
-                  'bower_components/select2/select2.js',
                   'bower_components/anchor-js/anchor.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
-                  'bower_components/icheck/icheck.min.js',
                   'js/<%= pkg.gname %>.js'],
             dest: 'dist/js/<%= pkg.gname %>-v<%= pkg.version %>.js'
          }
@@ -57,28 +50,6 @@ module.exports = function(grunt) {
          fonts: {
             src: 'fonts/*',
             dest: 'dist/'
-         },
-         select2: {
-            flatten: true,
-            expand: true,
-            src: 'img/select2/*',
-            dest: 'dist/css/'
-         },
-         icheck: {
-            options: {
-               noProcess: ['*.{png,gif,jpg,ico}'],
-            },
-            flatten: true,
-            expand: true,
-            src: ['bower_components/icheck/skins/flat/red.png',
-                  'bower_components/icheck/skins/flat/red@2x.png'],
-            dest: 'dist/css/'
-         },
-         rand: {
-            flatten: true,
-            expand: true,
-            src: 'bower_components/UIFunk/rand.php',
-            dest: 'includes/'
          },
          lessvar: {
             flatten: true,
@@ -209,12 +180,12 @@ module.exports = function(grunt) {
    });
 
    grunt.loadNpmTasks('grunt-contrib-uglify');
-   grunt.loadNpmTasks('grunt-contrib-less');    
+   grunt.loadNpmTasks('grunt-contrib-less');
    grunt.loadNpmTasks('grunt-contrib-watch');
-   grunt.loadNpmTasks('grunt-contrib-cssmin');   
-   grunt.loadNpmTasks('grunt-contrib-concat');   
-   grunt.loadNpmTasks('grunt-contrib-clean');    
-   grunt.loadNpmTasks('grunt-contrib-copy');    
+   grunt.loadNpmTasks('grunt-contrib-cssmin');
+   grunt.loadNpmTasks('grunt-contrib-concat');
+   grunt.loadNpmTasks('grunt-contrib-clean');
+   grunt.loadNpmTasks('grunt-contrib-copy');
    grunt.loadNpmTasks('grunt-sftp-deploy');
    grunt.loadNpmTasks('grunt-autoprefixer');
    grunt.loadNpmTasks('grunt-text-replace');
