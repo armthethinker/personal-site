@@ -11,7 +11,7 @@
 <head>
 
    <meta charset="UTF-8">
-   <title>Dasein Design</title>
+   <title><?= $m_title ?></title>
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
    <!--  Meta Meta  -->
