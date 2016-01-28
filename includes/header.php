@@ -33,12 +33,19 @@
    <meta property="og:type" content="website" />-->
   
    <?php
-      if ($m_location=="home"){
-         echo '<link rel="stylesheet" href="'.$tooty.'/dist/css/DaseinDesign-v0.2.0.cover.css" media="screen" type="text/css" />';
+      if ($old==true){
+         if ($m_location=="home"){
+            echo '<link rel="stylesheet" href="'.$tooty.'/dist/css/DaseinDesign-v0.2.0.cover.css" media="screen" type="text/css" />';
+         }
+         else{
+            echo '<link rel="stylesheet" href="'.$tooty.'/dist/css/DaseinDesign-v0.2.0.css" media="screen" type="text/css" />';
+            echo '<link rel="stylesheet" href="/css/patch.css" media="screen" type="text/css" />';
+         }
       }
       else{
-         echo '<link rel="stylesheet" href="'.$tooty.'/dist/css/DaseinDesign-v0.2.0.css" media="screen" type="text/css" />';
-         echo '<link rel="stylesheet" href="/css/patch.css" media="screen" type="text/css" />';
+         ?>
+            <link rel="stylesheet" href="/dist/css/andrewrmchughrocks.css" media="screen" type="text/css" />
+         <?php
       }
    ?>
    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900,900italic|Vollkorn:400italic,400,700|Montserrat' rel='stylesheet' type='text/css'> 
