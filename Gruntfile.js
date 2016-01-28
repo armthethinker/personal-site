@@ -13,25 +13,25 @@ module.exports = function(grunt) {
             separator: '\n'
          },
          css: {
-            src: ['css/built-bootstrap+<%= pkg.gname %>.css',
+            src: ['css/bootstrap+<%= pkg.gname %>.css',
                   'bower_components/fontawesome/css/font-awesome.min.css',
                   'bower_components/animate.css/animate.min.css',
                   'bower_components/anchor-js/anchor.css'
                   ],
-            dest: 'dist/css/<%= pkg.gname %>-v<%= pkg.version %>.css'
+            dest: 'dist/css/<%= pkg.gname %>.css'
          },
          js: {
             src: ['js/bootstrap.min.js',
                   'bower_components/anchor-js/anchor.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                   'js/<%= pkg.gname %>.js'],
-            dest: 'dist/js/<%= pkg.gname %>-v<%= pkg.version %>.js'
+            dest: 'dist/js/<%= pkg.gname %>.js'
          }
       },
       uglify: {
          dist: {
             files: {
-               'dist/js/<%= pkg.gname %>-v<%= pkg.version %>.min.js': ['dist/js/<%= pkg.gname %>-v<%= pkg.version %>.js']
+               'dist/js/<%= pkg.gname %>.min.js': ['dist/js/<%= pkg.gname %>.js']
             }
          }
       },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             files: [{
                expand: true,
                cwd: 'dist/css/',
-               src: ['*.css', '!*.min.css'],
+               src: ['*.css',  '!*.min.css'],
                dest: 'dist/css/',
                ext: '.min.css'
             }]
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
                banner: '<%= banner %>',
                stripBanners: false,
                sourceMap: true,
-               sourceMapFilename: 'dist/css/<%= pkg.gname %>-v<%= pkg.version %>.css.map'
+               sourceMapFilename: 'dist/css/<%= pkg.gname %>.css.map'
             },
             src: ['css/less/build.less'],
             dest: 'css/built-bootstrap+<%= pkg.gname %>.css'
