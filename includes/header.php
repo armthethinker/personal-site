@@ -10,7 +10,6 @@
 
 <head>
 
-   <meta charset="UTF-8">
    <title><?= $m_title ?></title>
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -41,15 +40,17 @@
          else{
             echo '<link rel="stylesheet" href="'.$tooty.'/dist/css/DaseinDesign-v0.2.0.css" media="screen" type="text/css" />';
             echo '<link rel="stylesheet" href="/css/patch.css" media="screen" type="text/css" />';
+            echo '<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,900,900italic|Vollkorn:400italic,400,700|Montserrat" rel="stylesheet" type="text/css">'
          }
       }
       else{
          ?>
             <link rel="stylesheet" href="/dist/css/andrewrmchughrocks.css" media="screen" type="text/css" />
+            <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,700|Droid+Serif' rel='stylesheet' type='text/css'>
          <?php
       }
    ?>
-   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900,900italic|Vollkorn:400italic,400,700|Montserrat' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body class="<?php echo $bg_body //.' '.$classes_header; ?>">
