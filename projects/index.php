@@ -7,18 +7,12 @@ include($path_includes.'/header.php');
 ?>
 
 <div class="container">
-   <div class="row">
-      <div class="col-xs-12">
-         <div class="nav-top">
-            <div class="row">
-               <div class="col-sm-6 col-xs-12">
-                  <div class="name">Andrew R McHugh</div>
-               </div>
-               <div class="col-sm-6 col-xs-12">
-                  <?php include($path_includes.'/nav-main.php'); ?>
-               </div>
-            </div>
-         </div>
+   <div class="row nav-top">
+      <div class="col-sm-6 col-xs-12">
+         <div class="name">Andrew R McHugh</div>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+         <?php include($path_includes.'/nav-main.php'); ?>
       </div>
    </div>
    <div class="row">
