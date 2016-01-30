@@ -17,14 +17,7 @@ include($path_includes.'/header.php');
             <h1>Andrew R McHugh</h1>
             <h3>Designer of Futures</h3>
             <p>Sample text. My background is in philosophy, design, how technology and people come together, math, and physics. Along the way, I've built a bikeshare program, worked for systematic sustainability change, codesigned and cobuilt a couple of web apps, cofounded a startup, and did research with sample text sample.</p>
-            <div class="nav-main">
-               <div class="nav-items">
-                  <div class="nav-item active"><a href="/">Bio</a></div>
-                  <div class="nav-item"><a href="/projects">Projects</a></div>
-                  <div class="nav-item"><a href="">CV</a></div>
-                  <div class="nav-item"><a href="http://amzn.com/1582705291">Book</a></div>
-               </div>
-            </div>
+            <?php include($path_includes.'/nav-main.php'); ?>
          </div>
       </div>
    </div>
