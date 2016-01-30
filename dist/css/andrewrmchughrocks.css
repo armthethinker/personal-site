@@ -278,13 +278,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #f58914;
+  color: #6a868d;
   text-decoration: none;
 }
 a:hover,
 a:focus {
   color: #b56208;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -1768,7 +1768,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #f58914;
+  color: #6a868d;
   font-weight: normal;
   border-radius: 0;
 }
@@ -1789,7 +1789,7 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus {
   color: #b56208;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
 }
 .btn-link[disabled]:hover,
@@ -2202,7 +2202,7 @@ tbody.collapse.in {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #f58914;
+  border-color: #6a868d;
 }
 .nav .nav-divider {
   height: 1px;
@@ -2395,7 +2395,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #f58914;
+  color: #6a868d;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -2825,23 +2825,21 @@ h3 {
   font-size: 15px;
 }
 p {
-  font-family: "Droid Serif";
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   line-height: 1.8;
 }
 p.lead {
-  font-family: "Lato";
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
   margin-bottom: 50px;
 }
 p a {
-  color: #ffffff;
   border-bottom: #f58914 2px solid;
 }
 p a:hover {
   color: #f8ac5b;
-  border-bottom: #f58914 1px solid;
-  text-decoration: none;
+  border-bottom: #f58914 2px solid;
   cursor: pointer;
 }
 .btn-outline {
