@@ -2851,16 +2851,16 @@ p a:hover {
 .btn-outline.btn-default {
   border-color: #ffffff;
 }
-.nav-main {
-  margin-top: 5px;
-  margin-bottom: 25px;
-}
-.nav-main .name {
+.nav-top .name {
   font-weight: 300;
   margin-top: 12px;
   font-variant: small-caps;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+.nav-main {
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 .nav-main .nav-items {
   font-weight: 300;
@@ -2876,7 +2876,7 @@ p a:hover {
   margin-top: 5px;
 }
 .nav-main .nav-items > .nav-item > a {
-  color: #ffffff;
+  color: #6a868d;
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 2px;
@@ -2903,6 +2903,9 @@ p a:hover {
   left: 5px;
   right: 5px;
   top: 17px;
+}
+.nav-main.nav-main-inverse .nav-items > .nav-item > a {
+  color: #ffffff;
 }
 /* sm, md, lg */
 @media (min-width: 768px) {
@@ -2977,6 +2980,88 @@ p a:hover {
     bottom: 0;
     position: absolute;
     background-image: url(https://dl.dropboxusercontent.com/u/32463552/temp-public-assets/andrew-mchugh-lg.png);
+  }
+}
+.showcase-item {
+  margin-bottom: 50px;
+  height: 100px;
+  /* xs, sm */
+  /* Medium devices (desktops, 992px and up) */
+}
+.showcase-item .showcase-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+.showcase-item .showcase-description {
+  transition: all 0.5s ease;
+  background: #f5f2cb;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 210px;
+  padding: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.showcase-item .showcase-description h2,
+.showcase-item .showcase-description p,
+.showcase-item .showcase-description .btn.btn-outline.btn-default {
+  color: #5e6063;
+  border-color: #5e6063;
+}
+.showcase-item .showcase-description h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.showcase-item .showcase-description h3 {
+  color: rgba(94, 96, 99, 0.5);
+  margin-bottom: 25px;
+}
+.showcase-item .showcase-description p {
+  margin-bottom: 25px;
+}
+.showcase-item:hover .showcase-description {
+  top: 230px;
+}
+.showcase-item:hover .showcase-img {
+  top: -5px;
+}
+@media (min-width: 992px) {
+  .showcase-item:hover .showcase-description {
+    top: 45px;
+    left: -50px;
+    right: 50px;
+  }
+  .showcase-item:hover .showcase-img {
+    top: 0px;
+    left: -30px;
+    right: 30px;
+  }
+  .showcase-item .showcase-description {
+    right: 100px;
+    left: -100px;
+    top: 45px;
+  }
+  .showcase-item .showcase-description h2 {
+    font-size: 30px;
+  }
+}
+.showcase-img {
+  background-image: url(https://dl.dropboxusercontent.com/u/32463552/houseofandrew.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 992px) {
+  .showcase-img {
+    height: 400px;
   }
 }
 /*!
