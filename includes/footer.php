@@ -1,5 +1,5 @@
 
-   <footer class="palette19 palette16-t p-tb-md">
+   <footer class="palette19 palette16-t p-tb-md hidden //edit">
       <div class="container">
          <div class="row">
             <div class="col-xs-6">
