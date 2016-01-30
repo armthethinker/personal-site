@@ -2793,15 +2793,25 @@ tbody.collapse.in {
 .row.u-grid .col-* {
   height: 30px;
 }
+.homepage-hero {
+  position: relative;
+  z-index: 10;
+  top: 150px;
+  color: #ffffff;
+}
+.homepage-hero h3 {
+  margin-bottom: 35px;
+}
+@media (min-width: 992px) {
+  .homepage-hero {
+    top: 300px;
+  }
+}
 @media (min-width: 768px) {
   html,
   body {
     font-size: 16px;
   }
-}
-h1 {
-  font-weight: 700;
-  font-size: 34px;
 }
 h1 + h3,
 h2 + h3 {
@@ -2834,14 +2844,80 @@ p a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-.homepage-hero {
-  position: relative;
-  z-index: 10;
-  top: 150px;
+.btn-outline {
+  background: none;
   color: #ffffff;
 }
-.homepage-hero h3 {
-  margin-bottom: 35px;
+.btn-outline.btn-default {
+  border-color: #ffffff;
+}
+.nav-main {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+.nav-main .name {
+  font-weight: 300;
+  margin-top: 12px;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.nav-main .nav-items {
+  font-weight: 300;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+}
+.nav-main .nav-items > .nav-item > a {
+  color: #ffffff;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 4px 10px 10px 10px;
+}
+.nav-main .nav-items > .nav-item > a:hover {
+  text-decoration: none;
+  border-top: #f58914 1px solid;
+  border-bottom: #f58914 1px solid;
+  cursor: pointer;
+}
+.nav-main .nav-items > .nav-item.active > a {
+  position: relative;
+}
+.nav-main .nav-items > .nav-item.active > a:hover {
+  border: none !important;
+}
+.nav-main .nav-items > .nav-item.active > a:before {
+  content: "\00A0";
+  border-top: #f58914 1px solid;
+  height: 1px;
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 17px;
+}
+/* sm, md, lg */
+@media (min-width: 768px) {
+  .nav-main {
+    margin-top: 15px;
+  }
+  .nav-main .name {
+    margin-top: 8px;
+  }
+  .nav-main .nav-items {
+    margin-left: 0;
+  }
+  .nav-main .nav-items > .nav-item > a {
+    padding: 4px 20px 10px 20px;
+  }
 }
 .img-background-container {
   position: absolute;
@@ -2881,9 +2957,6 @@ p a:hover {
   }
 }
 @media (min-width: 992px) {
-  .homepage-hero {
-    top: 300px;
-  }
   .img-background-container .img-gradient {
     height: auto;
     width: auto;
@@ -2905,81 +2978,6 @@ p a:hover {
     position: absolute;
     background-image: url(https://dl.dropboxusercontent.com/u/32463552/temp-public-assets/andrew-mchugh-lg.png);
   }
-}
-.nav-top {
-  margin-top: 5px;
-  margin-bottom: 25px;
-}
-.nav-top .name {
-  font-weight: 300;
-  margin-top: 12px;
-  font-variant: small-caps;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.nav-top .nav-items {
-  font-weight: 300;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-}
-.nav-top .nav-items > .nav-item > a {
-  color: #ffffff;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 2px;
-  font-size: 18px;
-  padding: 4px 10px 10px 10px;
-}
-.nav-top .nav-items > .nav-item > a:hover {
-  text-decoration: none;
-  border-top: #f58914 1px solid;
-  border-bottom: #f58914 1px solid;
-  cursor: pointer;
-}
-.nav-top .nav-items > .nav-item.active > a {
-  position: relative;
-}
-.nav-top .nav-items > .nav-item.active > a:hover {
-  border: none !important;
-}
-.nav-top .nav-items > .nav-item.active > a:before {
-  content: "\00A0";
-  border-top: #f58914 1px solid;
-  height: 1px;
-  position: absolute;
-  left: 5px;
-  right: 5px;
-  top: 17px;
-}
-/* sm, md, lg */
-@media (min-width: 768px) {
-  .nav-top {
-    margin-top: 15px;
-  }
-  .nav-top .name {
-    margin-top: 8px;
-  }
-  .nav-top .nav-items {
-    margin-left: 0;
-  }
-  .nav-top .nav-items > .nav-item > a {
-    padding: 4px 20px 10px 20px;
-  }
-}
-.btn-outline {
-  background: none;
-  color: #ffffff;
-}
-.btn-outline.btn-default {
-  border-color: #ffffff;
 }
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
