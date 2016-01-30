@@ -23,14 +23,14 @@ include($path_includes.'/header.php');
    </div>
    <div class="row">
       <div class="col-xs-12">
-         <div class="showcase-item v2">
+         <div class="showcase-item">
             <div class="row">
                <div class="col-lg-8 col-md-7 col-xs-12">
                   <div class="showcase-img"></div>
                </div>
                <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                   <div class="showcase-description">
-                     <h2>Project Container v2</h2>
+                     <h2>Project Container</h2>
                      <h3 class="fixie"></h3>
                      <p class="fixie"></p>
                      <div class="btn btn-sm btn-default btn-outline">View Project</div>
@@ -38,7 +38,7 @@ include($path_includes.'/header.php');
                </div>
             </div>
          </div>
-         <div class="showcase-item v2">
+         <div class="showcase-item">
             <div class="row">
                <div class="col-lg-8 col-md-7 col-xs-12">
                   <div class="showcase-img"></div>
@@ -53,7 +53,7 @@ include($path_includes.'/header.php');
                </div>
             </div>
          </div>
-         <div class="showcase-item v2">
+         <div class="showcase-item">
             <div class="row">
                <div class="col-lg-8 col-md-7 col-xs-12">
                   <div class="showcase-img"></div>
@@ -68,7 +68,7 @@ include($path_includes.'/header.php');
                </div>
             </div>
          </div>
-         <div class="showcase-item v2">
+         <div class="showcase-item">
             <div class="row">
                <div class="col-lg-8 col-md-7 col-xs-12">
                   <div class="showcase-img"></div>
