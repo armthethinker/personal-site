@@ -1,13 +1,13 @@
 {
-  "name": "andrewrmchughrocks",
-  "gname": "andrewrmchughrocks",
-  "version": "2.0.0",
+  "name": "project-init-php",
+  "gname": "project-init-php",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/PLACE.git"
   },
   "url": "PLACE",
-  "description": "andrewrmchughrocks is a personal repository to seed app development.",
+  "description": "project-init-php is a personal repository to seed app development.",
   "author": "Andrew R McHugh, Dasein Design",
   "devDependencies": {
     "grunt": "^0.4.5",
