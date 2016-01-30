@@ -15,7 +15,7 @@ include($path_includes.'/header.php');
                   <div class="name">Andrew R McHugh</div>
                </div>
                <div class="col-sm-6 col-xs-12">
-                  <?php include($path_includes.'/header.php'); ?>
+                  <?php include($path_includes.'/nav-main.php'); ?>
                </div>
             </div>
          </div>
