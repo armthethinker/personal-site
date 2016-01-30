@@ -1,8 +1,4 @@
-	<?php
-      include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
-      $andrew_dbox="https://dl.dropboxusercontent.com/u/32463552/temp-public-assets";
-      $tooty = $andrew_dbox;
-   ?>
+
    <footer class="palette19 palette16-t p-tb-md">
       <div class="container">
          <div class="row">
