@@ -2,7 +2,7 @@
 include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
 
 $m_location="home";
-$m_title="Andrew R McHugh | Design & Developer.";
+$m_title="Andrew R McHugh | Designer & Developer";
 include($path_includes.'/header.php');
 ?>
 
