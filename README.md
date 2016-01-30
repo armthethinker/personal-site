@@ -12,4 +12,4 @@
 
 
 ## Useful Perch Links
-[Installing a local server](https://solutions.grabaperch.com/development/installing-a-local-server-with-xampp)
+[Installing a local server running Perch](https://solutions.grabaperch.com/development/installing-a-local-server-with-xampp)
