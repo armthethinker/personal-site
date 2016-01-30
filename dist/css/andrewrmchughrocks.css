@@ -2819,7 +2819,7 @@ h2 + h3 {
 }
 h3 {
   font-variant: small-caps;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 3px;
   font-weight: 300;
   font-size: 15px;
