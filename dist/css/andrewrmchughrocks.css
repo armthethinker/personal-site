@@ -263,10 +263,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333333;
+  color: #6a868d;
   background-color: #ffffff;
 }
 input,
@@ -278,12 +278,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #f58914;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #b56208;
   text-decoration: underline;
 }
 a:focus {
@@ -360,7 +360,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -1768,7 +1768,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #337ab7;
+  color: #f58914;
   font-weight: normal;
   border-radius: 0;
 }
@@ -1788,7 +1788,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #b56208;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -2202,7 +2202,7 @@ tbody.collapse.in {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #f58914;
 }
 .nav .nav-divider {
   height: 1px;
@@ -2395,7 +2395,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #f58914;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -2416,7 +2416,7 @@ tbody.collapse.in {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #b56208;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -2785,12 +2785,13 @@ tbody.collapse.in {
   border: 5px solid rgba(255, 0, 0, 0.5);
   position: absolute;
 }
-html,
-body {
-  font-family: Lato;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #6a868d;
+.row.u-grid {
+  z-index: 1070;
+  position: absolute;
+  color: #d9534f;
+}
+.row.u-grid .col-* {
+  height: 30px;
 }
 @media (min-width: 768px) {
   html,
@@ -2833,19 +2834,13 @@ p a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-.btn-outline {
-  background: none;
-  color: #ffffff;
-}
-.btn-outline.btn-default {
-  border-color: #ffffff;
-}
-.hero {
+.homepage-hero {
   position: relative;
   z-index: 10;
   top: 150px;
+  color: #ffffff;
 }
-.hero h3 {
+.homepage-hero h3 {
   margin-bottom: 35px;
 }
 .img-background-container {
@@ -2855,12 +2850,14 @@ p a:hover {
   right: 0;
   bottom: 0;
   z-index: 5;
+  height: 100%;
+  background-color: #6a868d;
 }
 .img-background-container .img-gradient {
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZhODY4ZCIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM2YTg2OGQiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM2YTg2OGQiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNmE4NjhkIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz48L3N2Zz4=');
 }
 .img-background-container .img-background {
@@ -2884,7 +2881,7 @@ p a:hover {
   }
 }
 @media (min-width: 992px) {
-  .hero {
+  .homepage-hero {
     top: 300px;
   }
   .img-background-container .img-gradient {
@@ -2976,6 +2973,13 @@ p a:hover {
   .nav-top .nav-items > .nav-item > a {
     padding: 4px 20px 10px 20px;
   }
+}
+.btn-outline {
+  background: none;
+  color: #ffffff;
+}
+.btn-outline.btn-default {
+  border-color: #ffffff;
 }
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
