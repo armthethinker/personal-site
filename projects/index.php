@@ -1,67 +1,114 @@
 <?php
-   include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
+include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
 
-   $bg_body='palette15';
-   $m_location="projects";
-   include($path_includes.'/header.php');
-   include($path_includes.'/navbar.php');
+$m_location="projects";
+$m_title="Showcase of Andrew R McHugh";
+include($path_includes.'/header.php');
 ?>
+
 <div class="container">
-	<div class="row m-tb-md">
-		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-         <div class="alert alert-warning small">
-            <strong>Note:</strong> Some of my work can only be shown privately in an interview setting.
-         </div>
-			<input class="form-control minimal js-search-projects input-lg" type="text" placeholder="Search for a word or #tag">
-			<ul class="list-inline">
-				<li>
-					<label>
-						<input type="checkbox" id="interestingbox"> Just see what is most interesting
-					</label>
-				</li>
-            <li class="pull-right">
-               <i class="fa fa-flash palette7-t"></i> Ongoing &amp; Active Involvement
-            </li>
-			</ul>
-		</div>
-	</div>
-	<div class="row">
-		<?php
-         perch_content_custom('Description', array(
-            'page'=>'/andrew/projects/*',
-            'template'=>'project-card.html',
-            'sort'=>'date_start',
-            'sort-order'=>'DESC',
-            // 'filter'=>'most_interesting',
-            // 'match'=>'eq',
-            // 'value'=>true
-         ));
-      ?>
-      <?php
-         perch_content_custom('Description', array(
-            // 'page'=>'/andrew/projects/*',
-            // 'template'=>'project-card.html',
-            // 'sort'=>'date_start',
-            // 'sort-order'=>'DESC',
-            //'filter'=>'ongoing',
-            //'match'=>'neq',
-            //'value'=>true
-         ));
-      ?>
-		<div class="col-xs-12 m-tb-lg">
-         <div class="alert alert-warning hidden js-interesting-alert">
-            <div class="media">
-               <i class="fa fa-fw fa-eye pull-left"></i>
-               <div class="media-body">
-                  <strong>You're Missing Something!</strong><br>
-                     You have the "Most Interesting" checkbox turned on. If you uncheck it, you can see more examples of my work.<br>
-                  <label class="m-tb-sm">
-                     <input type="checkbox" id="interestingbox2"> Just see what is most interesting
-                  </label>
+   <div class="row">
+      <div class="col-xs-12">
+         <div class="nav-top">
+            <div class="row">
+               <div class="col-sm-6 col-xs-12">
+                  <div class="name">Andrew R McHugh</div>
+               </div>
+               <div class="col-sm-6 col-xs-12">
+                  <?php include($path_includes.'/header.php'); ?>
                </div>
             </div>
          </div>
       </div>
-	</div>
+   </div>
+   <div class="row">
+      <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12">
+         <h1>Selected Projects</h1>
+         <p class="lead">These projects best exemplify the type of work I aim to do in the future. Each showcases unique abilities. To see a wider-view of my work, skim my <a>archive</a>.</p>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-xs-12">
+         <div class="showcase-item v2">
+            <div class="row">
+               <div class="col-lg-8 col-md-7 col-xs-12">
+                  <div class="showcase-img"></div>
+               </div>
+               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                  <div class="showcase-description">
+                     <h2>Project Container v2</h2>
+                     <h3 class="fixie"></h3>
+                     <p class="fixie"></p>
+                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="showcase-item v2">
+            <div class="row">
+               <div class="col-lg-8 col-md-7 col-xs-12">
+                  <div style="background-image: url(&quot;https://dl.dropboxusercontent.com/u/32463552/Dasein%20Design%20Public/Codepen/DSC_0002.JPG&quot;)" class="showcase-img"></div>
+               </div>
+               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                  <div class="showcase-description">
+                     <h2>Moral Decision-Making and Haptic Feedback in Virtual Environments</h2>
+                     <h3>Virtual Reality & Moral Experiments</h3>
+                     <p>Moral questions are often posed in writing or conversation. We created a virtual environment to test the Trolley Problem. Using VR, we were able to situate participants closer to a realistic experience and thereby a realistic response.</p>
+                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="showcase-item v2">
+            <div class="row">
+               <div class="col-lg-8 col-md-7 col-xs-12">
+                  <div class="showcase-img"></div>
+               </div>
+               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                  <div class="showcase-description">
+                     <h2>Nora</h2>
+                     <h3 class="fixie"></h3>
+                     <p class="fixie"></p>
+                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="showcase-item v2">
+            <div class="row">
+               <div class="col-lg-8 col-md-7 col-xs-12">
+                  <div class="showcase-img"></div>
+               </div>
+               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                  <div class="showcase-description">
+                     <h2>Nora</h2>
+                     <h3 class="fixie"></h3>
+                     <p class="fixie"></p>
+                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12">
+         <div class="showcase-item v1">
+            <div class="row">
+               <div class="col-md-8"><img src="holder.js/100px300?theme=vine&amp;text=project%20img"/></div>
+               <div class="col-md-4">
+                  <h2>Project Container v1</h2>
+                  <h3 class="fixie"></h3>
+                  <p class="fixie"></p>
+                  <div class="btn btn-sm btn-default btn-outline">View Project</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12">
+         <h6>more projects?</h6>
+      </div>
+      <div class="col-xs-12">
+         <h6>footer info</h6>
+      </div>
+   </div>
 </div>
 <?php include($path_includes.'/footer.php');?>
