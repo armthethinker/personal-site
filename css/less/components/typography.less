@@ -28,12 +28,19 @@ p{
       font-weight: 300;
       font-style: italic;
       margin-bottom: 50px;
+      a{
+      border-bottom: @link-underline-color 2px solid;
+         &:hover{
+            border-bottom: @link-underline-color 2px solid;
+         }
+      }
    }
    a{
-      border-bottom: @link-underline-color 2px solid;
+      border-bottom: @link-underline-color 1px solid;
+      transition: color 0.5s ease;
       &:hover{
          color: mix(@palette-orange, @palette-white, 70%);
-         border-bottom: @link-underline-color 2px solid;
+         border-bottom: @link-underline-color 1px solid;
          cursor: pointer;
       }
    }

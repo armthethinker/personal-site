@@ -2834,12 +2834,19 @@ p.lead {
   font-style: italic;
   margin-bottom: 50px;
 }
-p a {
+p.lead a {
   border-bottom: #f58914 2px solid;
+}
+p.lead a:hover {
+  border-bottom: #f58914 2px solid;
+}
+p a {
+  border-bottom: #f58914 1px solid;
+  transition: color 0.5s ease;
 }
 p a:hover {
   color: #f8ac5b;
-  border-bottom: #f58914 2px solid;
+  border-bottom: #f58914 1px solid;
   cursor: pointer;
 }
 .btn-outline {
