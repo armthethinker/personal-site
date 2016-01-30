@@ -6,7 +6,7 @@
 - local includes now
 - show full tree, split sites per folder
 
-** use minified files**
+**use minified files**
 - [ ] css
 - [ ] js
 
