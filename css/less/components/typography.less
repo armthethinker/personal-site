@@ -21,21 +21,19 @@ h4{}
 h5{}
 h6{}
 p{
-   font-family: "Droid Serif";
+   font-family: @font-family-serif;
    line-height: 1.8;
    &.lead{
-      font-family: "Lato";
+      font-family: @font-family-sans-serif;
       font-weight: 300;
       font-style: italic;
       margin-bottom: 50px;
    }
    a{
-      color: @palette-white;
-      border-bottom: @palette-orange 2px solid;
+      border-bottom: @link-underline-color 2px solid;
       &:hover{
          color: mix(@palette-orange, @palette-white, 70%);
-         border-bottom: @palette-orange 1px solid;
-         text-decoration: none;
+         border-bottom: @link-underline-color 2px solid;
          cursor: pointer;
       }
    }
