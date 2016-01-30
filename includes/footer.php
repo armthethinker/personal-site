@@ -23,10 +23,11 @@
          </div>
       </div>
    </footer>
-   <!--<div class="red-close"></div>-->
+
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>
+	<!--<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>-->
+   <script type="text/javascript" src="/dist/js/andrewrmchughrocks.js"></script>
 	<?php // include($path_includes.'/g-analytics.php'); ?>
 	<?php // include($path_includes.'/twitter.php'); ?>
 
