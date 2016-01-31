@@ -1,7 +1,6 @@
 <?php
    include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
 
-  include($path_includes.'/navbar.php');
    $bg_body='palette20';
    $m_location="projects";
    include($path_includes.'/header.php');
