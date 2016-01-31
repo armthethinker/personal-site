@@ -95,7 +95,7 @@ module.exports = function(grunt) {
             tasks: ['js']
          },
          html:{
-            files: ['*.php', '*.html', '*/*.php'],
+            files: ['*.php', '*.html', '**/*.php', '**/*.html'],
             tasks: []
          },
          md:{
