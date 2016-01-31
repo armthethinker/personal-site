@@ -23,22 +23,18 @@ include($path_includes.'/header.php');
    </div>
    <div class="row">
       <div class="col-xs-12">
-         <div class="showcase-item">
-            <div class="row">
-               <div class="col-lg-8 col-md-7 col-xs-12">
-                  <div class="showcase-img"></div>
-               </div>
-               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-                  <div class="showcase-description">
-                     <h2>Project Container</h2>
-                     <h3 class="fixie"></h3>
-                     <p class="fixie"></p>
-                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="showcase-item">
+         <?php
+            perch_content_custom('Description', array(
+               'page'=>'/projects/*',
+               'template'=>'project-showcase.html',
+               'sort'=>'date_start',
+               'sort-order'=>'DESC',
+               // 'filter'=>'ongoing',
+               // 'match'=>'eq',
+               // 'value'=>true
+            ));
+         ?>
+         <div class="showcase-item hidden">
             <div class="row">
                <div class="col-lg-8 col-md-7 col-xs-12">
                   <div class="showcase-img"></div>
@@ -53,55 +49,6 @@ include($path_includes.'/header.php');
                </div>
             </div>
          </div>
-         <div class="showcase-item">
-            <div class="row">
-               <div class="col-lg-8 col-md-7 col-xs-12">
-                  <div class="showcase-img"></div>
-               </div>
-               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-                  <div class="showcase-description">
-                     <h2>Nora</h2>
-                     <h3 class="fixie"></h3>
-                     <p class="fixie"></p>
-                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="showcase-item">
-            <div class="row">
-               <div class="col-lg-8 col-md-7 col-xs-12">
-                  <div class="showcase-img"></div>
-               </div>
-               <div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-                  <div class="showcase-description">
-                     <h2>Nora</h2>
-                     <h3 class="fixie"></h3>
-                     <p class="fixie"></p>
-                     <div class="btn btn-sm btn-default btn-outline">View Project</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="col-xs-12">
-         <div class="showcase-item v1">
-            <div class="row">
-               <div class="col-md-8"><img src="holder.js/100px300?theme=vine&amp;text=project%20img"/></div>
-               <div class="col-md-4">
-                  <h2>Project Container v1</h2>
-                  <h3 class="fixie"></h3>
-                  <p class="fixie"></p>
-                  <div class="btn btn-sm btn-default btn-outline">View Project</div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="col-xs-12">
-         <h6>more projects?</h6>
-      </div>
-      <div class="col-xs-12">
-         <h6>footer info</h6>
       </div>
    </div>
 </div>
