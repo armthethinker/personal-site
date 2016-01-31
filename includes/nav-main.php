@@ -1,4 +1,12 @@
-<div class="nav-main nav-main-inverse">
+<?php
+   if ($navStyle == 1){
+      $navStyle = 'nav-main-inverse';
+   }
+   else {
+      $navStyle = null;
+   }
+?>
+<div class="nav-main <?= $navStyle ?>">
    <div class="nav-items">
       <div class="nav-item active"><a href="/">Bio</a></div>
       <div class="nav-item"><a href="/projects">Projects</a></div>

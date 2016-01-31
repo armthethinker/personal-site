@@ -1,6 +1,4 @@
-.nav-main{
-   margin-top: 5px;
-   margin-bottom: 25px;
+.nav-top{
    .name{
       font-weight: 300;
       margin-top: 12px;
@@ -8,6 +6,10 @@
       text-transform: uppercase;
       letter-spacing: 3px;
    }
+}
+.nav-main{
+   margin-top: 5px;
+   margin-bottom: 25px;
    .nav-items{
       font-weight: 300;
       display: flex;
@@ -17,7 +19,7 @@
       > .nav-item{
          //border: 1px red solid;
          > a{
-            color: @palette-white;
+            color: @palette-blue;
             text-transform: lowercase;
             font-variant: small-caps;
             letter-spacing: 2px;
@@ -49,9 +51,18 @@
          }
       }
    }
+   &.nav-main-inverse{
+      .nav-items{
+         > .nav-item{
+            > a{
+               color: @palette-white;
+            }
+         }
+      }
+   }
 }
 /* sm, md, lg */
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-sm-min) { //edit section
    .nav-main{
       margin-top: 15px;
       .name{

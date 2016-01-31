@@ -15,7 +15,7 @@ module.exports = function(grunt) {
          css: {
             src: ['css/built-bootstrap+<%= pkg.gname %>.css',
                   'bower_components/fontawesome/css/font-awesome.min.css',
-                  'bower_components/animate.css/animate.min.css',
+                  //'bower_components/animate.css/animate.min.css',
                   'bower_components/anchor-js/anchor.css'
                   ],
             dest: 'dist/css/<%= pkg.gname %>.css'
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
             tasks: ['js']
          },
          html:{
-            files: ['*.php', '*.html', 'includes/**' ],
+            files: ['*.php', '*.html', '**/*.php', '**/*.html'],
             tasks: []
          },
          md:{

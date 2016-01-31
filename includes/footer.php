@@ -1,9 +1,5 @@
-	<?php
-      include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
-      $andrew_dbox="https://dl.dropboxusercontent.com/u/32463552/temp-public-assets";
-      $tooty = $andrew_dbox;
-   ?>
-   <footer class="palette19 palette16-t p-tb-md">
+
+   <footer class="palette19 palette16-t p-tb-md hidden //edit">
       <div class="container">
          <div class="row">
             <div class="col-xs-6">
@@ -27,12 +23,13 @@
          </div>
       </div>
    </footer>
-   <!--<div class="red-close"></div>-->
+
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>
-	<?php include($path_includes.'/g-analytics.php'); ?>
-	<?php include($path_includes.'/twitter.php'); ?>
+	<!--<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>-->
+   <script type="text/javascript" src="/dist/js/andrewrmchughrocks.js"></script>
+	<?php // include($path_includes.'/g-analytics.php'); ?>
+	<?php // include($path_includes.'/twitter.php'); ?>
 
 	</body>
 

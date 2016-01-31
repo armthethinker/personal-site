@@ -1,7 +1,7 @@
 html,
 body{
    @media (min-width: @screen-sm-min) {
-      font-size: 16px;
+      font-size: 16px; //edit
    }
 }
 h1,
@@ -12,7 +12,7 @@ h2{
 }
 h3{
    font-variant: small-caps;
-   text-transform: uppercase;
+   text-transform: lowercase;
    letter-spacing: 3px;
    font-weight: 300;
    font-size: 15px;
@@ -21,21 +21,26 @@ h4{}
 h5{}
 h6{}
 p{
-   font-family: "Droid Serif";
+   font-family: @font-family-serif;
    line-height: 1.8;
    &.lead{
-      font-family: "Lato";
+      font-family: @font-family-sans-serif;
       font-weight: 300;
       font-style: italic;
       margin-bottom: 50px;
+      a{
+      border-bottom: @link-underline-color 2px solid;
+         &:hover{
+            border-bottom: @link-underline-color 2px solid;
+         }
+      }
    }
    a{
-      color: @palette-white;
-      border-bottom: @palette-orange 2px solid;
+      border-bottom: @link-underline-color 1px solid;
+      transition: color 0.5s ease;
       &:hover{
          color: mix(@palette-orange, @palette-white, 70%);
-         border-bottom: @palette-orange 1px solid;
-         text-decoration: none;
+         border-bottom: @link-underline-color 1px solid;
          cursor: pointer;
       }
    }
