@@ -3136,11 +3136,21 @@ ul:not(.pager) {
      -moz-columns: 2;
           columns: 2;
 }
+.pd-header dl dt:nth-child(5n) {
+  -webkit-column-break-before: always;
+  -moz-column-break-before: always;
+  column-break-before: always;
+}
 @media (min-width: 992px) {
   .pd-header dl {
     -webkit-columns: 1;
        -moz-columns: 1;
             columns: 1;
+  }
+  .pd-header dl dt:nth-child(5n) {
+    -webkit-column-break-before: avoid;
+    -moz-column-break-before: avoid;
+    column-break-before: avoid;
   }
 }
 @media (min-width: 992px) {

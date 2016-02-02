@@ -30,8 +30,18 @@
       margin-bottom: 0;
       //font-size: @font-size-sm;
       columns: 2;
+      dt:nth-child(5n){
+         -webkit-column-break-before: always;
+            -moz-column-break-before: always;
+                 column-break-before: always;
+      }
       @media (min-width: @screen-md-min){
          columns: 1;
+         dt:nth-child(5n){
+            -webkit-column-break-before: avoid;
+               -moz-column-break-before: avoid;
+                    column-break-before: avoid;
+         }
       }
       &.u-margin-top{
          @media (min-width: @screen-md-min){
