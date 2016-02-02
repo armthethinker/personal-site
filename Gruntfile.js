@@ -149,7 +149,7 @@ module.exports = function(grunt) {
       },
       autoprefixer: {
         options: {
-            browsers: 'last 4 versions'
+            browsers: ['> 5%', 'not ie <= 8']
          },
          // prefix all files
          normal: {
