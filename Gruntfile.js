@@ -14,16 +14,16 @@ module.exports = function(grunt) {
          },
          css: {
             src: ['css/built-bootstrap+<%= pkg.gname %>.css',
-                  'bower_components/fontawesome/css/font-awesome.min.css',
+                  //'bower_components/fontawesome/css/font-awesome.min.css',
                   //'bower_components/animate.css/animate.min.css',
-                  'bower_components/anchor-js/anchor.css'
+                  //'bower_components/anchor-js/anchor.css'
                   ],
             dest: 'dist/css/<%= pkg.gname %>.css'
          },
          js: {
             src: ['js/bootstrap.min.js',
-                  'bower_components/anchor-js/anchor.js',
-                  'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
+                  //'bower_components/anchor-js/anchor.js',
+                  //'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                   'js/<%= pkg.gname %>.js'],
             dest: 'dist/js/<%= pkg.gname %>.js'
          }
