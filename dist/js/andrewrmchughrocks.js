@@ -129,5 +129,23 @@ $(document).ready(function() {
    }
    $('.nav-top').on('click', '.nav-item', function(){
       setNavActive(this);
-   })
+   });
+
+   // FUNCTION Set the wide img width to 100% of window
+   function setImgWideWidth() {
+      $('.pd-img-wide').each(function(i) {
+         //console.log('i: ' + i + ' ' + this);
+         var xWindow = $(window).width();
+         var xImg = xWindow;
+         var xImgOffset = $(this).offset();
+         var xImgOffsetLeft = xImgOffset.left;
+         $(this).offset({ left: 0 }).width(xImg);
+      });
+   }
+
+   // On load and window resize, reset the img width to 100% of window
+   setImgWideWidth();
+   $(window).resize(function() {
+      setImgWideWidth();
+   });
 });
