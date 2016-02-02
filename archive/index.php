@@ -35,13 +35,10 @@
    <div class="row">
       <?php
          perch_content_custom('Description', array(
-            'page'=>'/andrew/projects/*',
+            'page'=>'/archive/*',
             'template'=>'project-card.html',
             'sort'=>'date_start',
-            'sort-order'=>'DESC',
-            'filter'=>'ongoing',
-            'match'=>'eq',
-            'value'=>true
+            'sort-order'=>'DESC'
          ));
       ?>
       <div class="col-xs-12 m-tb-lg">

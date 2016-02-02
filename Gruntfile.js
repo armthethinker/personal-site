@@ -14,16 +14,16 @@ module.exports = function(grunt) {
          },
          css: {
             src: ['css/built-bootstrap+<%= pkg.gname %>.css',
-                  'bower_components/fontawesome/css/font-awesome.min.css',
+                  //'bower_components/fontawesome/css/font-awesome.min.css',
                   //'bower_components/animate.css/animate.min.css',
-                  'bower_components/anchor-js/anchor.css'
+                  //'bower_components/anchor-js/anchor.css'
                   ],
             dest: 'dist/css/<%= pkg.gname %>.css'
          },
          js: {
             src: ['js/bootstrap.min.js',
-                  'bower_components/anchor-js/anchor.js',
-                  'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
+                  //'bower_components/anchor-js/anchor.js',
+                  //'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                   'js/<%= pkg.gname %>.js'],
             dest: 'dist/js/<%= pkg.gname %>.js'
          }
@@ -64,13 +64,13 @@ module.exports = function(grunt) {
          preBuild: ['css/built-*']
       },
       less: {
-         mixin: {
-            options: {
-               sourceMap: false,
-            },
-            src: ['css/less/components/mixins/utility-belt.less'],
-            dest: 'css/less/components/built-utility-belt.less'
-         },
+         // mixin: {
+         //    options: {
+         //       sourceMap: false,
+         //    },
+         //    src: ['css/less/components/mixins/utility-belt.less'],
+         //    dest: 'css/less/components/built-utility-belt.less'
+         // },
          dev: {
             options: {
                banner: '<%= banner %>',
@@ -149,7 +149,7 @@ module.exports = function(grunt) {
       },
       autoprefixer: {
         options: {
-            browsers: ['last 4 versions']
+            browsers: ['> 5%', 'not ie <= 8']
          },
          // prefix all files
          normal: {
@@ -202,7 +202,7 @@ module.exports = function(grunt) {
    grunt.registerTask('js', ['concat:js']);
 
    // Production ready task runners
-   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
+   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
    grunt.registerTask('deploy', ['sftp-deploy:deploy']);
    grunt.registerTask('deployjs', ['sftp-deploy:js']);
 

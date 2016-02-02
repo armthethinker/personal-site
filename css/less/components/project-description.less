@@ -1,0 +1,177 @@
+// Project Description styles (.pd-*)
+
+// Header box
+.pd-header{
+   margin-bottom: 25px;
+   background: #eee;
+   box-shadow: rgba(0,0,0,.4) 0 5px 15px 0;
+   h3{
+      margin-top: 15px;
+   }
+   .pd-header-content{
+      padding: 0 35px 20px 35px;
+   }
+   p.lead{
+      padding-right: 25px;
+      &:before{
+         content: "tl;dr";
+         display: block;
+         float: right;
+         position: relative;
+         right: -25px;
+         font-style: normal;
+         font-weight: 500;
+         color: @palette-orange;
+         font-size: 11px;
+         height: 100%;
+      }
+   }
+   dl{
+      margin-bottom: 0;
+      //font-size: @font-size-sm;
+      columns: 2;
+      dt:nth-child(5n){
+         -webkit-column-break-before: always;
+            -moz-column-break-before: always;
+                 column-break-before: always;
+      }
+      @media (min-width: @screen-md-min){
+         columns: 1;
+         dt:nth-child(5n){
+            -webkit-column-break-before: avoid;
+               -moz-column-break-before: avoid;
+                    column-break-before: avoid;
+         }
+      }
+      &.u-margin-top{
+         @media (min-width: @screen-md-min){
+            margin-top: 15px;
+         }
+      }
+      dt{
+         font-weight: normal;
+         text-transform: lowercase;
+         font-variant: small-caps;
+         font-style: italic;
+      }
+      dd{
+         margin-top: -1px;
+         margin-bottom: 5px;
+      }
+   }
+}
+
+// Sections
+.pd-section{
+   p{
+      > strong.pd-p-header {
+         text-transform: uppercase;
+         font-family: @font-family-sans-serif;
+         font-weight: 900;
+         font-variant: small-caps;
+         &:after{
+            content: ".";
+         }
+      }
+   }
+}
+
+// Images
+.pd-img{
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   //background-color: @palette-blue;
+   margin-top: 20px;
+   margin-bottom: 10px;
+
+   // sizing for each screen size
+   height: @img-xs-height;
+   @media (min-width: @screen-sm-min){
+      height: @img-sm-height;
+   }
+   @media (min-width: @screen-md-min){
+      height: @img-md-height;
+   }
+   @media (min-width: @screen-lg-min){
+      height: @img-lg-height;
+   }
+   &.pd-img-hero{
+      margin-bottom: 30px;
+   }
+   &.pd-img-contain{
+      // &:before{
+      //    content:".pd-img-contain";
+      // }
+   }
+   &.pd-img-wide{
+      // &:before{
+      //    content:"wide";
+      // }
+      // Handled by JS
+   }
+   &.pd-img-side{ //EDIT reduce to img-contain at small screen sizes
+      // &:before{
+      //    content: "side";
+      //    margin-top: 10px;
+      //    width: 100%;
+      //    height: 10px;
+      // }
+      height: 250px;
+      width: 67%;
+      float: left;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      @media (min-width: @screen-sm-min){
+         height: @img-sm-height - 50;
+      }
+      @media (min-width: @screen-md-min){
+         height: @img-md-height - 50;
+      }
+      @media (min-width: @screen-lg-min){
+         height: @img-lg-height - 50;
+      }
+      + .pd-img-caption{
+         float: left;
+         width: 33%;
+         margin-top: 20px;
+         padding-left: 10px;
+      }
+   }
+   + .pd-img-caption{
+      margin-bottom: 30px;
+      font-size: small; //edit var
+      font-style: italic;
+   }
+   &.pd-img-side-by-side{
+      &:before{
+         content:"side-by-side";
+      }
+      height: 200px;
+      float: left;
+      width: 49%;
+      @media (min-width: @screen-sm-min){
+         height: @img-sm-height - 100;
+      }
+      @media (min-width: @screen-md-min){
+         height: @img-md-height - 150;
+      }
+      @media (min-width: @screen-lg-min){
+         height: @img-lg-height - 150;
+      }
+      &:first-of-type{
+         margin-right: 2%;
+      }
+   }
+   &.u-pd-img-size-contain{
+      background-size: contain;
+   }
+}
+
+// Pagination
+.pd-paginator{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-top: 1px @palette-blue solid;
+}
