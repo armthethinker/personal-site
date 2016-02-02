@@ -3158,6 +3158,15 @@ ul:not(.pager) {
   margin-top: -1px;
   margin-bottom: 5px;
 }
+.pd-section p > strong.pd-p-header {
+  text-transform: uppercase;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-variant: small-caps;
+}
+.pd-section p > strong.pd-p-header:after {
+  content: ".";
+}
 .pd-img {
   width: 100%;
   background-size: cover;

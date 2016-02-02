@@ -51,6 +51,21 @@
    }
 }
 
+// Sections
+.pd-section{
+   p{
+      > strong.pd-p-header {
+         text-transform: uppercase;
+         font-family: @font-family-sans-serif;
+         font-weight: 900;
+         font-variant: small-caps;
+         &:after{
+            content: ".";
+         }
+      }
+   }
+}
+
 // Images
 .pd-img{
    width: 100%;
