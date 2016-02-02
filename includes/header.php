@@ -39,4 +39,4 @@
 
 </head>
 
-<body class="<?php echo $bg_body //.' '.$classes_header; ?>">
+<body>
