@@ -5,6 +5,7 @@
    include($path_includes.'/header.php');
 ?>
 <div class="container">
+   <?php include($path_includes.'/nav-top.php'); ?>
    <div class="row pd-container">
       <div class="col-xs-12">
          <?php perch_content('Showcase Meta'); ?>
