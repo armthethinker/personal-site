@@ -21,24 +21,34 @@
 @brand-danger:          #d9534f;
 
 @palette-blue: #6A868D;
+@palette-pale-blue: #F5FAFF;
+@palette-dark-blue: #556;
 @palette-white: #FFF;
 @palette-gold: #F5F2CB;
 @palette-orange: #F58914;
 @palette-gray: #5E6063;
 @palette-grey: @palette-gray;
 
+// Img heights
+@img-height-ratio: 80;
+@img-xs-height: 300px;
+@img-sm-height: @img-xs-height + @img-height-ratio;
+@img-md-height: @img-sm-height + @img-height-ratio;
+@img-lg-height: @img-md-height + @img-height-ratio;
+
+@space: "\00A0";
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @palette-pale-blue;
 //** Global text color on `<body>`.
-@text-color:            @palette-blue;
+@text-color:            @palette-dark-blue;
 
 //** Global textual link color.
-@link-color:            @palette-blue;
+@link-color:            @text-color;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@palette-orange, 15%);
 //** Link hover decoration.

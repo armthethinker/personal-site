@@ -1,4 +1,8 @@
+// Navigation
+
 .nav-top{
+   margin-top: 5px;
+   margin-bottom: 25px;
    .name{
       font-weight: 300;
       margin-top: 12px;
@@ -6,10 +10,6 @@
       text-transform: uppercase;
       letter-spacing: 3px;
    }
-}
-.nav-main{
-   margin-top: 5px;
-   margin-bottom: 25px;
    .nav-items{
       font-weight: 300;
       display: flex;
@@ -23,7 +23,7 @@
             text-transform: lowercase;
             font-variant: small-caps;
             letter-spacing: 2px;
-            font-size: 18px;
+            font-size: 18px; //edit
             padding: 4px 10px 10px 10px;
             &:hover{
                text-decoration: none;
@@ -39,7 +39,7 @@
                   border: none !important;
                }
                &:before{
-                  content: "\00A0";
+                  content: @space;
                   border-top: @palette-orange 1px solid;
                   height: 1px;
                   position: absolute;
@@ -62,8 +62,8 @@
    }
 }
 /* sm, md, lg */
-@media (min-width: @screen-sm-min) { //edit section
-   .nav-main{
+@media (min-width: @screen-sm-min) {
+   .nav-top{
       margin-top: 15px;
       .name{
          margin-top: 8px;

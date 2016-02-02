@@ -1,0 +1,74 @@
+<perch:blocks>
+
+   <perch:block type="pd_section_header2_text" label="Header 2 and Text">
+      <div class="row pd-section">
+         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <h2><perch:content type="text" id="header_2" label="Header h2"/></h2>
+            <p><perch:content type="textarea" id="header_2_text" label="Text" html="true"/></p>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_header3_text" label="Header 3 and Text">
+      <div class="row pd-section">
+         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <h3><perch:content type="text" id="header_3" label="Header h3"/></h3>
+            <p><perch:content type="textarea" id="header_3_text" label="Text" html="true"/></p>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_header4_text" label="Header 4 (in paragraph)">
+      <div class="row pd-section">
+         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p><strong class="pd-p-header"><perch:content type="text" id="header_4" label="Header h4" help="Inside a strong tag"/></strong> <perch:content type="textarea" id="header_4_text" label="Text" html="true" size="s"/></p>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_text" label="Text">
+      <div class="row pd-section">
+         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p><perch:content type="textarea" id="pd_text" label="Text" html="true"/></p>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_img_contain" label="Img Contain">
+      <div class="row pd-section">
+         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="pd-img pd-img-contain <perch:content type="checkbox" id="pd_img_contain_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_contain" label="Image Contain" output="path"/>');"></div>
+            <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_img_wide" label="Img Wide">
+      <div class="row pd-section">
+         <div class="col-xs-12">
+            <div class="pd-img pd-img-wide <perch:content type="checkbox" id="pd_img_wide_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_wide" label="Image Wide" output="path"/>')"></div>
+            <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_img_side" label="Img Side">
+      <div class="row pd-section">
+         <div class="col-md-10 col-md-offset-1 col-xs-12">
+            <div class="pd-img pd-img-side <perch:content type="checkbox" id="pd_img_side_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_side" label="Image Side" output="path"/>')"></div>
+            <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
+         </div>
+      </div>
+   </perch:block>
+
+   <perch:block type="pd_section_img_side-by-side" label="Img Side-By-Side">
+      <div class="row pd-section">
+         <div class="col-md-10 col-md-offset-1 col-xs-12">
+            <div class="pd-img pd-img-side-by-side <perch:content type="checkbox" id="pd_img_sidebyside1_size" label="Background Size Left" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />"style="background-image: url('<perch:content type="image" id="pd_img_sidebyside1" label="Image Side-By-Side Left" output="path"/>')"></div>
+            <div class="pd-img pd-img-side-by-side <perch:content type="checkbox" id="pd_img_sidebyside2_size" label="Background Size Right" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />"style="background-image: url('<perch:content type="image" id="pd_img_sidebyside2" label="Image Side-By-Side Right" output="path"/>')"></div>
+            <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
+         </div>
+      </div>
+   </perch:block>
+
+</perch:blocks>

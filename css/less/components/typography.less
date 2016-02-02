@@ -1,7 +1,7 @@
 html,
 body{
    @media (min-width: @screen-sm-min) {
-      font-size: 16px; //edit
+      //font-size: 16px; //edit
    }
 }
 h1,
@@ -15,14 +15,14 @@ h3{
    text-transform: lowercase;
    letter-spacing: 3px;
    font-weight: 300;
-   font-size: 15px;
+   font-size: 15px; //edit
 }
 h4{}
 h5{}
 h6{}
 p{
    font-family: @font-family-serif;
-   line-height: 1.8;
+   //line-height: 1.8;
    &.lead{
       font-family: @font-family-sans-serif;
       font-weight: 300;
@@ -44,4 +44,7 @@ p{
          cursor: pointer;
       }
    }
+}
+ul:not(.pager){ //edit needed?
+   font-family: "Droid Serif";
 }
