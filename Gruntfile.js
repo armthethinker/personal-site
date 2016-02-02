@@ -202,7 +202,7 @@ module.exports = function(grunt) {
    grunt.registerTask('js', ['concat:js']);
 
    // Production ready task runners
-   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
+   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
    grunt.registerTask('deploy', ['sftp-deploy:deploy']);
    grunt.registerTask('deployjs', ['sftp-deploy:js']);
 
