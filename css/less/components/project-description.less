@@ -66,19 +66,9 @@
       //font-size: @font-size-sm;
       -webkit-columns: 2;
               columns: 2;
-      dt:nth-child(5n){
-         -webkit-column-break-before: always;
-            -moz-column-break-before: always;
-                 column-break-before: always;
-      }
       @media (min-width: @screen-md-min){
          -webkit-columns: 1;
                  columns: 1;
-         dt:nth-child(5n){
-            -webkit-column-break-before: avoid;
-               -moz-column-break-before: avoid;
-                    column-break-before: avoid;
-         }
       }
       &.u-margin-top{
          @media (min-width: @screen-md-min){
@@ -90,6 +80,16 @@
          text-transform: lowercase;
          font-variant: small-caps;
          font-style: italic;
+         &:nth-child(5n){
+            -webkit-column-break-before: always;
+               -moz-column-break-before: always;
+                    column-break-before: always;
+            @media (min-width: @screen-md-min){
+               -webkit-column-break-before: avoid;
+                  -moz-column-break-before: avoid;
+                       column-break-before: avoid;
+            }
+         }
       }
       dd{
          margin-top: -1px;
