@@ -1,6 +1,26 @@
 // Project Description styles (.pd-*)
 
 .pd-container{
+   h1{
+      font-size: @font-size-h3;
+   }
+   h2{
+      font-size: @font-size-h4;
+   }
+   h3{
+      font-size: @font-size-h4;
+   }
+   @media (min-width: @screen-sm-min){
+      h1{
+         font-size: @font-size-h1;
+      }
+      h2{
+         font-size: @font-size-h2;
+      }
+      h3{
+         font-size: @font-size-h3;
+      }
+   }
    &:after{
       content: "FIN";
       text-align: center;
@@ -73,14 +93,31 @@
       }
       dd{
          margin-top: -1px;
-         margin-bottom: 5px;
+         line-height: 1.4;
+         margin-bottom: @line-height-computed / 4;
       }
    }
 }
 
 // Sections
 .pd-section{
+   &:last-of-type {
+      margin-bottom: 100px;
+   }
    p{
+      font-size: 16px;
+      @media (min-width: @screen-xssm-min){
+         font-size: 17px;
+      }
+      @media (min-width: @screen-sm-min){
+         font-size: 18px;
+      }
+      @media (min-width: @screen-md-min){
+         font-size: 19px;
+      }
+      @media (min-width: @screen-lg-min){
+         font-size: 21px;
+      }
       > strong.pd-p-header {
          text-transform: uppercase;
          font-family: @font-family-sans-serif;
@@ -95,7 +132,7 @@
       font-variant: small-caps;
       text-transform: lowercase;
       letter-spacing: 0;
-      font-weight: 500;
+      font-weight: 700;
       font-size: @font-size-h3; //edit
    }
 }
@@ -165,7 +202,7 @@
    }
    + .pd-img-caption{
       margin-bottom: 30px;
-      font-size: small; //edit var
+      font-size: @font-size-small;
       font-style: italic;
    }
    &.pd-img-side-by-side{
