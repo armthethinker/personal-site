@@ -34,6 +34,29 @@
       </div>
    </perch:block>
 
+   <perch:block type="pd_section_bullet" label="Bullets">
+      <div class="row pd-section">
+         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <perch:content type="select" id="pd_bullets_ulol" label="Unordered or ordered list" options="Bullets, Numbered" suppress="true"/>
+            <perch:if id="pd_bullets_ulol" value="Bullets" match="eq">
+               <ul>
+            </perch:if>
+            <perch:if id="pd_bullets_ulol" value="Numbered" match="eq">
+               <ol>
+            </perch:if>
+            <perch:repeater id="pd_bullets" label="Bullets">
+               <li><perch:content type="textarea" id="pd_bullet" label="Bullet" html="true" size="xs"/></li>
+            </perch:repeater>
+            <perch:if id="pd_bullets_ulol" value="Bullets" match="eq">
+               </ul>
+            </perch:if>
+            <perch:if id="pd_bullets_ulol" value="Numbered" match="eq">
+               </ol>
+            </perch:if>
+         </div>
+      </div>
+   </perch:block>
+
    <perch:block type="pd_section_img_contain" label="Img Contain">
       <div class="row pd-section">
          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
