@@ -20,6 +20,8 @@ h3{
 h4{}
 h5{}
 h6{}
+ul,
+ol,
 p{
    font-family: @font-family-serif;
    //line-height: 1.8;
@@ -43,7 +45,8 @@ p{
          cursor: pointer;
       }
    }
-}
-ul:not(.pager){ //edit needed?
-   font-family: "Droid Serif";
+   li{
+      margin-bottom: @line-height-computed / 4;
+
+   }
 }
