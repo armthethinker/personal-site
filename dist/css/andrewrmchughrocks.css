@@ -2197,31 +2197,45 @@ h3 {
   letter-spacing: 3px;
   font-weight: 300;
 }
+ul,
+ol,
 p {
   font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 }
+ul.lead,
+ol.lead,
 p.lead {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
 }
+ul.lead a,
+ol.lead a,
 p.lead a {
   border-bottom: #f58914 2px solid;
 }
+ul.lead a:hover,
+ol.lead a:hover,
 p.lead a:hover {
   border-bottom: #f58914 2px solid;
 }
+ul a,
+ol a,
 p a {
   border-bottom: #f58914 1px solid;
   transition: color 0.5s ease;
 }
+ul a:hover,
+ol a:hover,
 p a:hover {
   color: #f8ac5b;
   border-bottom: #f58914 1px solid;
   cursor: pointer;
 }
-ul:not(.pager) {
-  font-family: "Droid Serif";
+ul li,
+ol li,
+p li {
+  margin-bottom: 10.75px;
 }
 .btn-outline {
   background: none;
@@ -2230,16 +2244,12 @@ ul:not(.pager) {
 .btn-outline.btn-default {
   border-color: #ffffff;
 }
+.btn-default:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
 .nav-main {
   margin-top: 5px;
   margin-bottom: 25px;
-}
-.nav-main .name {
-  font-weight: 300;
-  margin-top: 12px;
-  font-variant: small-caps;
-  text-transform: uppercase;
-  letter-spacing: 3px;
 }
 .nav-main .nav-items {
   font-weight: 300;
@@ -2294,6 +2304,13 @@ ul:not(.pager) {
   .nav-main .nav-items > .nav-item > a {
     padding: 4px 20px 10px 20px;
   }
+}
+.nav-top .name {
+  font-weight: 300;
+  margin-top: 18px;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .img-background-container {
   position: absolute;
@@ -2365,7 +2382,7 @@ ul:not(.pager) {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   right: 0;
   transition: all 0.5s ease;
 }
@@ -2394,6 +2411,7 @@ ul:not(.pager) {
 .showcase-item .showcase-description h3 {
   color: rgba(94, 96, 99, 0.5);
   margin-bottom: 25px;
+  font-size: 16px;
 }
 .showcase-item .showcase-description p {
   margin-bottom: 25px;
@@ -2407,17 +2425,17 @@ ul:not(.pager) {
 @media (min-width: 992px) {
   .showcase-item:hover .showcase-description {
     top: 45px;
-    left: -50px;
-    right: 50px;
+    left: -40px;
+    right: 40px;
   }
   .showcase-item:hover .showcase-img {
     top: 0px;
-    left: -30px;
-    right: 30px;
+    left: -15px;
+    right: 15px;
   }
   .showcase-item .showcase-description {
-    right: 100px;
-    left: -100px;
+    right: 85px;
+    left: -85px;
     top: 45px;
   }
   .showcase-item .showcase-description h2 {
@@ -2535,39 +2553,54 @@ ul:not(.pager) {
   margin-top: -1px;
   line-height: 1.4;
   margin-bottom: 10.75px;
+  font-size: 14px;
 }
 .pd-section:last-of-type {
   margin-bottom: 100px;
 }
+.pd-section ul,
+.pd-section ol,
 .pd-section p {
   font-size: 16px;
 }
 @media (min-width: 624px) {
+  .pd-section ul,
+  .pd-section ol,
   .pd-section p {
     font-size: 17px;
   }
 }
 @media (min-width: 768px) {
+  .pd-section ul,
+  .pd-section ol,
   .pd-section p {
     font-size: 18px;
   }
 }
 @media (min-width: 992px) {
+  .pd-section ul,
+  .pd-section ol,
   .pd-section p {
     font-size: 19px;
   }
 }
 @media (min-width: 1200px) {
+  .pd-section ul,
+  .pd-section ol,
   .pd-section p {
     font-size: 21px;
   }
 }
+.pd-section ul > strong.pd-p-header,
+.pd-section ol > strong.pd-p-header,
 .pd-section p > strong.pd-p-header {
   text-transform: uppercase;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-variant: small-caps;
 }
+.pd-section ul > strong.pd-p-header:after,
+.pd-section ol > strong.pd-p-header:after,
 .pd-section p > strong.pd-p-header:after {
   content: ".";
 }
