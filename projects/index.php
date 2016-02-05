@@ -15,13 +15,13 @@ include($path_includes.'/header.php');
       </div>
    </div>
    <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12" domFlag>
          <?php
-            perch_content_custom('Description', array(
+            perch_content_custom('Showcase Meta', array(
                'page'=>'/projects/*',
                'template'=>'project-showcase.html',
-               'sort'=>'date_start',
-               'sort-order'=>'DESC',
+               // 'sort'=>'date_start',
+               // 'sort-order'=>'DESC',
                // 'filter'=>'ongoing',
                // 'match'=>'eq',
                // 'value'=>true

@@ -2,9 +2,6 @@
    if ($navStyle == 1){
       $navStyle = 'nav-main-inverse';
    }
-   else {
-      $navStyle = null;
-   }
 ?>
 <div class="nav-main <?= $navStyle ?>">
    <div class="nav-items">

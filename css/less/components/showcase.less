@@ -6,7 +6,7 @@
       box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
       position: absolute;
       top: 0;
-      left: 0;
+      left: @grid-gutter-width / 2;
       right: 0;
       transition: all 0.5s ease;
    }
@@ -34,6 +34,7 @@
       h3{
          color: fade(@palette-gray, 50%);
          margin-bottom: 25px;
+         font-size: @font-size-base;
       }
       p{
          margin-bottom: 25px;
@@ -54,19 +55,19 @@
       &:hover{
          .showcase-description{
             top: 45px;
-            left: -50px;
-            right: 50px;
+            left: -40px;
+            right: 40px;
          }
          .showcase-img{
             top: 0px;
-            left: -30px;
-            right: 30px;
+            left: -15px;
+            right: 15px;
          }
       }
       // Move the box to the right for larger screens
       .showcase-description{
-         right: 100px;
-         left: -100px;
+         right: 85px;
+         left: -85px;
          top: 45px;
          h2{
             font-size: 30px; //EDIT replace with the BS variable

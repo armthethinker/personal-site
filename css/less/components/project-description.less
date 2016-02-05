@@ -1,15 +1,50 @@
 // Project Description styles (.pd-*)
 
+.pd-container{
+   h1{
+      font-size: @font-size-h3;
+   }
+   h2{
+      font-size: @font-size-h4;
+   }
+   h3{
+      font-size: @font-size-h4;
+   }
+   @media (min-width: @screen-sm-min){
+      h1{
+         font-size: @font-size-h1;
+      }
+      h2{
+         font-size: @font-size-h2;
+      }
+      h3{
+         font-size: @font-size-h3;
+      }
+   }
+   &:after{
+      content: "FIN";
+      text-align: center;
+      width: 100%;
+      font-size: 10px;
+   }
+}
+
 // Header box
 .pd-header{
    margin-bottom: 25px;
    background: #eee;
    box-shadow: rgba(0,0,0,.4) 0 5px 15px 0;
+   h1{
+      margin: 0;
+   }
    h3{
-      margin-top: 15px;
+      margin-top: 8px;
    }
    .pd-header-content{
-      padding: 0 35px 20px 35px;
+      padding: 0 15px 20px 15px;
+      @media (min-width: @screen-sm-min){
+         padding: 0 35px 20px 35px;
+      }
    }
    p.lead{
       padding-right: 25px;
@@ -29,23 +64,15 @@
    dl{
       margin-bottom: 0;
       //font-size: @font-size-sm;
-      columns: 2;
-      dt:nth-child(5n){
-         -webkit-column-break-before: always;
-            -moz-column-break-before: always;
-                 column-break-before: always;
-      }
+      -webkit-columns: 2;
+              columns: 2;
       @media (min-width: @screen-md-min){
-         columns: 1;
-         dt:nth-child(5n){
-            -webkit-column-break-before: avoid;
-               -moz-column-break-before: avoid;
-                    column-break-before: avoid;
-         }
+         -webkit-columns: 1;
+                 columns: 1;
       }
       &.u-margin-top{
          @media (min-width: @screen-md-min){
-            margin-top: 15px;
+            margin-top: 8px;
          }
       }
       dt{
@@ -53,17 +80,47 @@
          text-transform: lowercase;
          font-variant: small-caps;
          font-style: italic;
+         &:nth-child(5n){
+            -webkit-column-break-before: always;
+               -moz-column-break-before: always;
+                    column-break-before: always;
+            @media (min-width: @screen-md-min){
+               -webkit-column-break-before: avoid;
+                  -moz-column-break-before: avoid;
+                       column-break-before: avoid;
+            }
+         }
       }
       dd{
          margin-top: -1px;
-         margin-bottom: 5px;
+         line-height: 1.4;
+         margin-bottom: @line-height-computed / 4;
+         font-size: @font-size-small;
       }
    }
 }
 
 // Sections
 .pd-section{
+   &:last-of-type {
+      margin-bottom: 100px;
+   }
+   ul,
+   ol,
    p{
+      font-size: 16px;
+      @media (min-width: @screen-xssm-min){
+         font-size: 17px;
+      }
+      @media (min-width: @screen-sm-min){
+         font-size: 18px;
+      }
+      @media (min-width: @screen-md-min){
+         font-size: 19px;
+      }
+      @media (min-width: @screen-lg-min){
+         font-size: 21px;
+      }
       > strong.pd-p-header {
          text-transform: uppercase;
          font-family: @font-family-sans-serif;
@@ -73,6 +130,13 @@
             content: ".";
          }
       }
+   }
+   h3{
+      font-variant: small-caps;
+      text-transform: lowercase;
+      letter-spacing: 0;
+      font-weight: 700;
+      font-size: @font-size-h3; //edit
    }
 }
 
@@ -141,13 +205,13 @@
    }
    + .pd-img-caption{
       margin-bottom: 30px;
-      font-size: small; //edit var
+      font-size: @font-size-small;
       font-style: italic;
    }
    &.pd-img-side-by-side{
-      &:before{
-         content:"side-by-side";
-      }
+      // &:before{
+      //    content:"side-by-side";
+      // }
       height: 200px;
       float: left;
       width: 49%;

@@ -9,4 +9,7 @@ $path_includes = $serverRoot."/includes";
 // Variable for calling old CSS
 $old = false;
 
+// Navigation styling
+$navStyle = null;
+
 ?>
