@@ -3,7 +3,6 @@
 ## Notes/To-Do on integrating with Perch & DD.co
 - use minified files (css, js)
 - fill in images for each project
-- <perch:order> projects
 - toggle font-size down a bit
 - header nav on projects
 - analyze the snippets on /projects/
