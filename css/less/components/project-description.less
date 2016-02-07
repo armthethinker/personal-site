@@ -140,6 +140,11 @@
       font-weight: 700;
       opacity: .7;
    }
+   .pd-img-caption{
+      margin-bottom: 30px;
+      font-size: @font-size-small;
+      font-style: italic;
+   }
 }
 
 // Images
@@ -197,17 +202,16 @@
       @media (min-width: @screen-lg-min){
          height: @img-lg-height - 50;
       }
+      &.u-pd-img-size-contain{
+         // Corrects for whitespace above img so that the img aligns with the side text
+         background-position: 50% 0%;
+      }
       + .pd-img-caption{
          float: left;
          width: 33%;
          margin-top: 20px;
          padding-left: 10px;
       }
-   }
-   + .pd-img-caption{
-      margin-bottom: 30px;
-      font-size: @font-size-small;
-      font-style: italic;
    }
    &.pd-img-side-by-side{
       // &:before{
