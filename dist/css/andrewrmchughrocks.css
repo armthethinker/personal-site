@@ -2663,6 +2663,21 @@ blockquote:empty {
 .pd-img.pd-img-hero {
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .pd-img.pd-img-wide {
+    height: 570px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-img.pd-img-wide {
+    height: 690px;
+  }
+}
+@media (min-width: 1200px) {
+  .pd-img.pd-img-wide {
+    height: 810px;
+  }
+}
 .pd-img.pd-img-side {
   height: 250px;
   width: 67%;
