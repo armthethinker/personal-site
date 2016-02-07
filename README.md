@@ -21,6 +21,8 @@
    - consider using the problem set up with the premise that these are personas?
 - projects
    - less post-it note look
+- turn on GAnalytics
+- Meta:tags
 - upload all work!
 
 ## Useful Perch Links
