@@ -2192,10 +2192,10 @@ h2 + h3 {
   margin-top: 0px;
 }
 h3 {
-  font-variant: small-caps;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 300;
+  font-size: 20px;
 }
 ul,
 ol,
@@ -2490,7 +2490,9 @@ p li {
   margin: 0;
 }
 .pd-header h3 {
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 .pd-header .pd-header-content {
   padding: 0 15px 20px 15px;
@@ -2605,11 +2607,11 @@ p li {
   content: ".";
 }
 .pd-section h3 {
-  font-variant: small-caps;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 0;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
+  opacity: .8;
 }
 .pd-img {
   width: 100%;
