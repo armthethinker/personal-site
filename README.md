@@ -19,6 +19,8 @@
 - soundcloud
    - just say what I did, not my experience
    - consider using the problem set up with the premise that these are personas?
+- vr trolley
+   - update video
 - projects
    - less post-it note look
 - turn on GAnalytics
