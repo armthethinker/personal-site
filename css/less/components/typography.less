@@ -39,3 +39,17 @@ p{
 
    }
 }
+blockquote{
+   font-style: italic;
+   margin-left: (@grid-gutter-width / -3) - 5px;
+   padding-left: @grid-gutter-width / 3;
+   @media (min-width: @screen-sm-min){
+      margin-left: (@grid-gutter-width / -2) - 5px;
+      padding-left: @grid-gutter-width / 2;
+   }
+   p:last-of-type{
+      font-style: normal;
+      font-size: @font-size-small;
+      opacity: .7;
+   }
+}
