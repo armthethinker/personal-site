@@ -2618,6 +2618,15 @@ blockquote p:last-of-type {
   font-size: 14px;
   font-style: italic;
 }
+.pd-section .pd-img-caption a {
+  border-bottom: #ff9932 1px solid;
+  transition: color 0.5s ease;
+}
+.pd-section .pd-img-caption a:hover {
+  color: #ffb870;
+  border-bottom: #ff9932 1px solid;
+  cursor: pointer;
+}
 .pd-img {
   width: 100%;
   background-size: cover;
