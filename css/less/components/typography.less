@@ -53,3 +53,10 @@ blockquote{
       opacity: .7;
    }
 }
+p,
+blockquote{
+   &:empty{
+      display: none;
+      visibility: hidden;
+   }
+}

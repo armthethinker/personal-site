@@ -2253,6 +2253,11 @@ blockquote p:last-of-type {
   font-size: 14px;
   opacity: .7;
 }
+p:empty,
+blockquote:empty {
+  display: none;
+  visibility: hidden;
+}
 .btn-outline {
   background: none;
   color: #ffffff;
