@@ -24,6 +24,7 @@
 - projects
    - less post-it note look
 - turn on GAnalytics
+- reactivate responsive embed
 - Meta:tags
 - upload all work!
 
