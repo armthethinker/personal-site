@@ -24,7 +24,9 @@
 - projects
    - less post-it note look
 - turn on GAnalytics
+- implement nav bar
 - reactivate responsive embed
+- no-scroll on homepage
 - Meta:tags
 - upload all work!
 
