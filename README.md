@@ -20,6 +20,7 @@
 - turn on GAnalytics
 - no-scroll on homepage
 - Meta:tags
+- dates, dates, dates
 - upload all work!
 
 - nice to do
