@@ -19,6 +19,7 @@
 - upload all work!
 
 - nice to do
+   - projects load flash fix
    - header nav on projects
    - Meta:tags
    - toggle font-size down a bit
