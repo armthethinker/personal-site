@@ -25,6 +25,7 @@
 
 - nice to do
    - header nav on projects
+   - css truncate implementation
    - zoom.js by Fat
    - start with questions, like you do
    - get the gist of the decision making quicker
