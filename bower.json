@@ -17,6 +17,7 @@
     "bootstrap": "~3.3.6",
     "fontawesome": "~4.3.0",
     "jquery.scrollTo": "~2.1.0",
-    "anchor-js": "~0.4.0"
- }
+    "anchor-js": "~0.4.0",
+    "jquery": "^2.2.0"
+  }
 }
