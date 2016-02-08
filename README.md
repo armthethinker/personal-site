@@ -8,7 +8,6 @@
    - wi
    - freelancing
    - jenga
-- toggle font-size down a bit
 - analyze the snippets on /projects/
 - hide archive until complete
 - have a solution at the top of each section
@@ -16,12 +15,13 @@
 - make sure everyone is fine with being in the portfolio
 - turn on GAnalytics
 - no-scroll on homepage
-- Meta:tags
 - dates, dates, dates
 - upload all work!
 
 - nice to do
    - header nav on projects
+   - Meta:tags
+   - toggle font-size down a bit
    - css truncate implementation
    - zoom.js by Fat
    - start with questions, like you do
