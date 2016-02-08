@@ -3,6 +3,11 @@
 ## Notes/To-Do on integrating with Perch & DD.co
 - use minified files (css, js)
 - fill in images for each project
+   - soundscape
+   - vr trolley
+   - wi
+   - freelancing
+   - jenga
 - toggle font-size down a bit
 - header nav on projects
 - analyze the snippets on /projects/
@@ -21,8 +26,6 @@
    - consider using the problem set up with the premise that these are personas?
 - vr trolley
    - update video
-- projects
-   - less post-it note look
 - turn on GAnalytics
 - implement nav bar
 - reactivate responsive embed
