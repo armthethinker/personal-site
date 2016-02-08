@@ -18,7 +18,6 @@
    - just say what I did, not my experience
    - consider using the problem set up with the premise that these are personas?
 - turn on GAnalytics
-- implement nav bar
 - no-scroll on homepage
 - Meta:tags
 - upload all work!

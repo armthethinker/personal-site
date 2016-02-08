@@ -2166,6 +2166,9 @@ body {
   padding: 0 12px 3px 12px;
   background: #ffffff;
 }
+a[target="_blank"] {
+  cursor: alias !important;
+}
 .homepage-hero {
   position: relative;
   z-index: 10;
