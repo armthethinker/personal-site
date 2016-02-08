@@ -12,7 +12,6 @@
 - header nav on projects
 - analyze the snippets on /projects/
 - hide archive until complete
-- back to top link
 - soundscape img needs updating
 - have a solution at the top of each section
 - embeds need caption

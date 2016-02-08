@@ -45,6 +45,11 @@ $(document).ready(function() {
          var xImgOffset = $(this).offset();
          var xImgOffsetLeft = xImgOffset.left;
          $(this).offset({ left: 0 }).width(xImg);
+
+   // Scroll to
+   $('.js-to-top').on('click', function(){
+      $(window).scrollTo($('#top'), 800,{
+         interrupt: true
       });
    }
 
