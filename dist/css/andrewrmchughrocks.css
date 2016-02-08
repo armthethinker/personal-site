@@ -2650,6 +2650,9 @@ blockquote:empty {
   border-bottom: #ff9932 1px solid;
   cursor: pointer;
 }
+.pd-section .pd-embed {
+  text-align: center;
+}
 .pd-img {
   width: 100%;
   background-size: cover;
