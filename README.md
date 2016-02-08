@@ -14,9 +14,6 @@
 - have a solution at the top of each section
 - embeds need caption
 - make sure everyone is fine with being in the portfolio
-- soundcloud
-   - just say what I did, not my experience
-   - consider using the problem set up with the premise that these are personas?
 - turn on GAnalytics
 - no-scroll on homepage
 - Meta:tags
