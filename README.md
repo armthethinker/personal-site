@@ -25,7 +25,6 @@
 - upload all work!
 
 - nice to do
-   - reactivate responsive embed
    - zoom.js by Fat
    - start with questions, like you do
    - get the gist of the decision making quicker

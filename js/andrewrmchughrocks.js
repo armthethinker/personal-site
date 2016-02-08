@@ -55,6 +55,9 @@ $(document).ready(function(){
       });
    });
 
+   // Responsive video resizing
+   $(".pd-embed").fitVids();
+
 
    // On load and window resize, reset the img width to 100% of window
    setImgWideWidth();
