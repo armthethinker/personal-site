@@ -1,7 +1,7 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
 
-$m_location="projects";
+$menu_location="projects";
 $m_title="Showcase of Andrew R McHugh";
 include($path_includes.'/header.php');
 ?>
