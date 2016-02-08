@@ -2266,6 +2266,8 @@ blockquote p:last-of-type {
   font-style: normal;
   font-size: 14px;
   opacity: .7;
+  text-indent: -1.2em;
+  padding-left: 1.2em;
 }
 p:empty,
 blockquote:empty {
