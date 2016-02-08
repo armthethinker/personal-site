@@ -9,7 +9,6 @@
    - freelancing
    - jenga
 - toggle font-size down a bit
-- header nav on projects
 - analyze the snippets on /projects/
 - hide archive until complete
 - have a solution at the top of each section
@@ -25,6 +24,7 @@
 - upload all work!
 
 - nice to do
+   - header nav on projects
    - zoom.js by Fat
    - start with questions, like you do
    - get the gist of the decision making quicker
