@@ -12,25 +12,28 @@
 - header nav on projects
 - analyze the snippets on /projects/
 - hide archive until complete
-- soundscape img needs updating
 - have a solution at the top of each section
 - embeds need caption
 - make sure everyone is fine with being in the portfolio
-- start with questions, like you do
-- get the gist of the decision making quicker
-- consider same location of nav
-- add contact infoz
 - soundcloud
    - just say what I did, not my experience
    - consider using the problem set up with the premise that these are personas?
-- vr trolley
-   - update video
 - turn on GAnalytics
 - implement nav bar
-- reactivate responsive embed
 - no-scroll on homepage
 - Meta:tags
 - upload all work!
+
+- nice to do
+   - reactivate responsive embed
+   - zoom.js by Fat
+   - start with questions, like you do
+   - get the gist of the decision making quicker
+   - soundscape img needs updating
+   - consider same location of nav
+   - add contact infoz
+   - vr trolley
+      - update video
 
 ## Useful Perch Links
 [Installing a local server running Perch](https://solutions.grabaperch.com/development/installing-a-local-server-with-xampp)
