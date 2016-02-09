@@ -56,7 +56,9 @@ $(document).ready(function(){
    });
 
    // Responsive video resizing
-   $(".pd-embed").fitVids();
+   $(".pd-embed").fitVids({
+      customSelector: "iframe[src^='https://marvelapp.com']"
+   });
 
 
    // On load and window resize, reset the img width to 100% of window
