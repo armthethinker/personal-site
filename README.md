@@ -17,6 +17,7 @@
 - no-scroll on homepage
 - dates, dates, dates
 - unlink jQuery
+- readd GFonts
 - upload all work!
 
 - nice to do
