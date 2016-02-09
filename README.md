@@ -16,6 +16,7 @@
 - turn on GAnalytics
 - no-scroll on homepage
 - dates, dates, dates
+- unlink jQuery
 - upload all work!
 
 - nice to do
