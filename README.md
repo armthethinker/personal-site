@@ -2,7 +2,6 @@
 
 ## Notes/To-Do on integrating with Perch & DD.co
 - make sure everyone is fine with being in the portfolio
-- turn on GAnalytics
 - no-scroll on homepage
 - dates, dates, dates
 - upload all work!
