@@ -2,9 +2,6 @@
 
 ## Notes/To-Do on integrating with Perch & DD.co
 - make sure everyone is fine with being in the portfolio
-- no-scroll on homepage
-- dates, dates, dates
-- upload all work!
 
 - nice to do
    - projects load flash fix
@@ -18,6 +15,8 @@
    - soundscape img needs updating
    - consider same location of nav
    - add contact infoz
+   - favicon
+   - 404++
    - vr trolley
       - update video
 
