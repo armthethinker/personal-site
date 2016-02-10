@@ -2,22 +2,10 @@
 
 ## Notes/To-Do on integrating with Perch & DD.co
 - use minified files (css, js)
-- fill in images for each project
-   - soundscape
-   - vr trolley
-   - wi
-   - freelancing
-   - jenga
-- analyze the snippets on /projects/
-- hide archive until complete
-- have a solution at the top of each section
-- embeds need caption
 - make sure everyone is fine with being in the portfolio
 - turn on GAnalytics
 - no-scroll on homepage
 - dates, dates, dates
-- unlink jQuery
-- readd GFonts
 - upload all work!
 
 - nice to do
