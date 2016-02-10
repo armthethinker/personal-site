@@ -1,9 +1,9 @@
 
-   <footer class="palette19 palette16-t p-tb-md hidden //edit">
+   <footer class="palette19 palette16-t p-tb-md hidden"> <!-- //edit -->
       <div class="container">
          <div class="row">
             <div class="col-xs-6">
-               <i class="fa fa-copyright"></i> Dasein Design and Andrew R McHugh
+               <i class="fa fa-copyright"></i> Andrew R McHugh
             </div>
             <div class="col-xs-6">
                <div class="connect-links pull-right">
@@ -17,7 +17,7 @@
                   <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter-square"></i></a>
                   <a href="https://www.youtube.com/user/arm156291"><i class="fa fa-youtube-square"></i></a>
                   <a href="http://open.spotify.com/user/arm5629"><i class="fa fa-spotify"></i></a>
-                  <a href="http://medium.com/@armthethinker"><img class="fa-medium" src="http://daseindesign.co/img/Medium-white.png"></a>
+                  <a href="http://medium.com/@armthethinker"><i class="fa fa-medium"></i></a>
                </div>
             </div>
          </div>
