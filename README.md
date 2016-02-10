@@ -1,7 +1,6 @@
 # Andrew's Personal Site
 
 ## Notes/To-Do on integrating with Perch & DD.co
-- use minified files (css, js)
 - make sure everyone is fine with being in the portfolio
 - turn on GAnalytics
 - no-scroll on homepage

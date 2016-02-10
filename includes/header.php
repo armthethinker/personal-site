@@ -31,7 +31,7 @@
       }
       else{
          ?>
-            <link rel="stylesheet" href="/dist/css/andrewrmchughrocks.css" media="screen" type="text/css" />
+            <link rel="stylesheet" href="/dist/css/andrewrmchughrocks.min.css" media="screen" type="text/css" />
             <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,700|Droid+Serif:500,500italic' rel='stylesheet' type='text/css'>
          <?php
       }
