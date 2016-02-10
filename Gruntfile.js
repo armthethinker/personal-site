@@ -13,7 +13,7 @@ module.exports = function(grunt) {
             separator: '\n'
          },
          css: {
-            src: ['bower_components/jquery/jquery.min.js',
+            src: [//'bower_components/jquery/jquery.min.js',
                   'css/built-bootstrap+<%= pkg.gname %>.css',
                   //'bower_components/fontawesome/css/font-awesome.min.css',
                   //'bower_components/animate.css/animate.min.css',
