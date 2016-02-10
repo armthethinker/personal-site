@@ -16,7 +16,7 @@ include($path_includes.'/header.php');
                <h1>Andrew R McHugh</h1>
                <h3>Designer of New Futures</h3>
                <p>I break down complexity into understandable and useable chunks. Currently, I am a Masters student at Carnegie Mellon University, studying human-computer interaction with a focus on virtual reality. Previously, I cofounded the What If…? Conference, What If…? 360’s predecessor. I left in 2014 and have been designing and developing user experiences ever since.</p>
-               <p>Actively curious about many things, I have a background in design, philosophy, technology and people, mathematics, and physics. During my undergraduate years, I built a bikeshare program, led a movement for systematic sustainability change, and researched brain-computer interfaces and digital divide/differentiation problems. In my free time, I tinkers on side projects and listen to music louder than necessary.</p>
+               <p>Actively curious about many things, I have a background in design, philosophy, technology and people, mathematics, and physics. During my undergraduate years, I built a bikeshare program, led a movement for systematic sustainability change, and researched brain-computer interfaces and digital divide/differentiation problems. In my free time, I tinker on side projects and listen to music louder than necessary.</p>
                <?php
                   $navStyle = 1;
                   include($path_includes.'/nav-main.php');
