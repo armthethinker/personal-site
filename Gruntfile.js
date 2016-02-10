@@ -103,6 +103,10 @@ module.exports = function(grunt) {
          md:{
             files: ['*.md'],
             tasks: ['md2html']
+         },
+         full:{
+            files: ['css/less/**', 'js/**', '*.php', '*.html', '**/*.php', '**/*.html', '*.md'],
+            tasks: ['fullw']
          }
       },
       'sftp-deploy': {
@@ -205,6 +209,7 @@ module.exports = function(grunt) {
 
    // Production ready task runners
    grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
+   grunt.registerTask('fullw', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild', 'watch:full']);
    grunt.registerTask('deploy', ['sftp-deploy:deploy']);
    grunt.registerTask('deployjs', ['sftp-deploy:js']);
 
