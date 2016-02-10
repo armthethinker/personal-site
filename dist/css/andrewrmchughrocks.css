@@ -2422,7 +2422,7 @@ blockquote:empty {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 0;
   right: 0;
   transition: all 0.5s ease;
 }
@@ -2458,6 +2458,9 @@ blockquote:empty {
   margin-bottom: 25px;
 }
 @media (min-width: 992px) {
+  .showcase-item .showcase-img {
+    left: 15px;
+  }
   .showcase-item .showcase-description {
     right: 85px;
     left: -85px;
@@ -2755,6 +2758,7 @@ blockquote:empty {
   background-size: contain;
 }
 .pd-paginator {
+  margin-top: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px #5386e4 solid;
