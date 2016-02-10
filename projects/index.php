@@ -9,9 +9,9 @@ include($path_includes.'/header.php');
 <div class="container">
    <?php include($path_includes.'/nav-top.php'); ?>
    <div class="row">
-      <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12">
+      <div class="col-xs-12">
          <h1>Selected Projects</h1>
-         <p class="lead">These projects best exemplify the type of work I aim to do in the future. Each showcases unique abilities. To see a wider-view of my work, skim my <a>archive</a>.</p>
+         <p class="lead">These projects best exemplify the type of work I aim to do in the future.</p>
       </div>
    </div>
    <div class="row">
