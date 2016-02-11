@@ -13,8 +13,7 @@ module.exports = function(grunt) {
             separator: '\n'
          },
          css: {
-            src: [//'bower_components/jquery/jquery.min.js',
-                  'css/built-bootstrap+<%= pkg.gname %>.css',
+            src: ['css/built-bootstrap+<%= pkg.gname %>.css',
                   //'bower_components/fontawesome/css/font-awesome.min.css',
                   //'bower_components/animate.css/animate.min.css',
                   //'bower_components/anchor-js/anchor.css'
@@ -22,7 +21,8 @@ module.exports = function(grunt) {
             dest: 'dist/css/<%= pkg.gname %>.css'
          },
          js: {
-            src: ['js/bootstrap.min.js',
+            src: ['bower_components/jquery/dist/jquery.min.js',
+                  'js/bootstrap.min.js',
                   //'bower_components/anchor-js/anchor.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                   'bower_components/jquery.fitvids/jquery.fitvids.js',
