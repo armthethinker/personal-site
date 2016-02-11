@@ -11,7 +11,6 @@ include($path_includes.'/header.php');
    <div class="row">
       <div class="col-xs-12">
          <h1>Selected Projects</h1>
-         <p class="lead">These projects best exemplify the type of work I aim to do in the future.</p>
       </div>
    </div>
    <div class="row">
