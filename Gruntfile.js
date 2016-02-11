@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             dest: 'dist/css/<%= pkg.gname %>.css'
          },
          js: {
-            src: ['bower_components/jquery/dist/jquery.min.js',
+            src: [//'bower_components/jquery/dist/jquery.min.js',
                   'js/bootstrap.min.js',
                   //'bower_components/anchor-js/anchor.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
