@@ -1,0 +1,83 @@
+body{
+   //font-size: @font-size-sm;
+   // @media (min-width: @screen-sm-min) {
+   //    font-size: @font-size-md;
+   // }
+   padding-bottom: 100px;
+}
+
+// Utility classes
+.m-b-md{
+   margin-bottom: 20px;
+}
+.m-b-lg{
+   margin-bottom: 50px;
+}
+.iphone-border{
+   width: 320px;
+   height: 568px;
+   border: 5px solid rgba(255,0,0,.5);
+   position: absolute;
+}
+.row.u-grid{
+   z-index: @zindex-tooltip;
+   position: absolute;
+   color: @brand-danger;
+   .col-*{
+      height: 30px;
+   }
+}
+.u-back-to-top{
+   position: fixed;
+   bottom: 10px;
+   right: 0;
+   opacity: .7;
+   cursor: pointer;
+   text-transform: lowercase;
+   font-variant: small-caps;
+   padding: 0 12px 3px 12px;
+   background: @body-bg;
+}
+a[target="_blank"]{
+   cursor: alias !important;
+}
+
+// Stylez
+
+.homepage-hero{
+   position: relative;
+   z-index: 10;
+   top: 150px;
+   color: @palette-white;
+   h3{
+      margin-bottom: 35px;
+   }
+   @media (min-width: @screen-md-min) {
+      top: 40px;
+   }
+}
+
+//From Animate.css
+.animated {
+   animation-duration: 1.5s;
+   animation-fill-mode: both;
+}
+@keyframes slideFadeInUp {
+   0% {
+      transform: translate3d(0, 35%, 0);
+      opacity: 0;
+      visibility: visible;
+   }
+
+   100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.slideFadeInUp {
+   animation-name: slideFadeInUp;
+}
+
+
+/////////////

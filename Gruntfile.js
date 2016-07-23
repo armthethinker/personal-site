@@ -14,31 +14,26 @@ module.exports = function(grunt) {
          },
          css: {
             src: ['css/built-bootstrap+<%= pkg.gname %>.css',
-                  'bower_components/fontawesome/css/font-awesome.min.css',
-                  'bower_components/animate.css/animate.min.css',
-                  'bower_components/select2/select2.css',
-                  'bower_components/select2/select2-bootstrap.css',
-                  'bower_components/anchor-js/anchor.css',
-                  'bower_components/icheck/skins/flat/red.css'
+                  //'bower_components/fontawesome/css/font-awesome.min.css',
+                  //'bower_components/animate.css/animate.min.css',
+                  //'bower_components/anchor-js/anchor.css'
                   ],
-            dest: 'dist/css/<%= pkg.gname %>-v<%= pkg.version %>.css'
+            dest: 'dist/css/<%= pkg.gname %>.css'
          },
          js: {
-            src: ['js/bootstrap.min.js',
-                  'bower_components/fixie/fixie.min.js',
-                  'bower_components/holderjs/holder.min.js',
-                  'bower_components/select2/select2.js',
-                  'bower_components/anchor-js/anchor.js',
+            src: [//'bower_components/jquery/dist/jquery.min.js',
+                  'js/bootstrap.min.js',
+                  //'bower_components/anchor-js/anchor.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
-                  'bower_components/icheck/icheck.min.js',
+                  'bower_components/jquery.fitvids/jquery.fitvids.js',
                   'js/<%= pkg.gname %>.js'],
-            dest: 'dist/js/<%= pkg.gname %>-v<%= pkg.version %>.js'
+            dest: 'dist/js/<%= pkg.gname %>.js'
          }
       },
       uglify: {
          dist: {
             files: {
-               'dist/js/<%= pkg.gname %>-v<%= pkg.version %>.min.js': ['dist/js/<%= pkg.gname %>-v<%= pkg.version %>.js']
+               'dist/js/<%= pkg.gname %>.min.js': ['dist/js/<%= pkg.gname %>.js']
             }
          }
       },
@@ -47,7 +42,7 @@ module.exports = function(grunt) {
             files: [{
                expand: true,
                cwd: 'dist/css/',
-               src: ['*.css', '!*.min.css'],
+               src: ['*.css',  '!*.min.css'],
                dest: 'dist/css/',
                ext: '.min.css'
             }]
@@ -57,28 +52,6 @@ module.exports = function(grunt) {
          fonts: {
             src: 'fonts/*',
             dest: 'dist/'
-         },
-         select2: {
-            flatten: true,
-            expand: true,
-            src: 'img/select2/*',
-            dest: 'dist/css/'
-         },
-         icheck: {
-            options: {
-               noProcess: ['*.{png,gif,jpg,ico}'],
-            },
-            flatten: true,
-            expand: true,
-            src: ['bower_components/icheck/skins/flat/red.png',
-                  'bower_components/icheck/skins/flat/red@2x.png'],
-            dest: 'dist/css/'
-         },
-         rand: {
-            flatten: true,
-            expand: true,
-            src: 'bower_components/UIFunk/rand.php',
-            dest: 'includes/'
          },
          lessvar: {
             flatten: true,
@@ -93,19 +66,19 @@ module.exports = function(grunt) {
          preBuild: ['css/built-*']
       },
       less: {
-         mixin: {
-            options: {
-               sourceMap: false,
-            },
-            src: ['css/less/components/mixins/utility-belt.less'],
-            dest: 'css/less/components/built-utility-belt.less'
-         },
+         // mixin: {
+         //    options: {
+         //       sourceMap: false,
+         //    },
+         //    src: ['css/less/components/mixins/utility-belt.less'],
+         //    dest: 'css/less/components/built-utility-belt.less'
+         // },
          dev: {
             options: {
                banner: '<%= banner %>',
                stripBanners: false,
                sourceMap: true,
-               sourceMapFilename: 'dist/css/<%= pkg.gname %>-v<%= pkg.version %>.css.map'
+               sourceMapFilename: 'dist/css/<%= pkg.gname %>.css.map'
             },
             src: ['css/less/build.less'],
             dest: 'css/built-bootstrap+<%= pkg.gname %>.css'
@@ -124,12 +97,16 @@ module.exports = function(grunt) {
             tasks: ['js']
          },
          html:{
-            files: ['*.php', '*.html', 'includes/**' ],
+            files: ['*.php', '*.html', '**/*.php', '**/*.html'],
             tasks: []
          },
          md:{
             files: ['*.md'],
             tasks: ['md2html']
+         },
+         full:{
+            files: ['css/less/**', 'js/**', '*.php', '*.html', '**/*.php', '**/*.html', '*.md'],
+            tasks: ['fullw']
          }
       },
       'sftp-deploy': {
@@ -178,7 +155,7 @@ module.exports = function(grunt) {
       },
       autoprefixer: {
         options: {
-            browsers: ['last 4 versions']
+            browsers: ['> 5%', 'not ie <= 8']
          },
          // prefix all files
          normal: {
@@ -202,26 +179,27 @@ module.exports = function(grunt) {
          include: {
             files: [{
                src: ['README.md'],
-               dest: 'includes/ui/README.html'
+               dest: 'includes/README-body.html'
             }]
          }
       }
    });
 
    grunt.loadNpmTasks('grunt-contrib-uglify');
-   grunt.loadNpmTasks('grunt-contrib-less');    
+   grunt.loadNpmTasks('grunt-contrib-less');
    grunt.loadNpmTasks('grunt-contrib-watch');
-   grunt.loadNpmTasks('grunt-contrib-cssmin');   
-   grunt.loadNpmTasks('grunt-contrib-concat');   
-   grunt.loadNpmTasks('grunt-contrib-clean');    
-   grunt.loadNpmTasks('grunt-contrib-copy');    
+   grunt.loadNpmTasks('grunt-contrib-cssmin');
+   grunt.loadNpmTasks('grunt-contrib-concat');
+   grunt.loadNpmTasks('grunt-contrib-clean');
+   grunt.loadNpmTasks('grunt-contrib-copy');
+   grunt.loadNpmTasks('grunt-ftp-deploy');
    grunt.loadNpmTasks('grunt-sftp-deploy');
    grunt.loadNpmTasks('grunt-autoprefixer');
    grunt.loadNpmTasks('grunt-text-replace');
    grunt.loadNpmTasks('grunt-md2html');
 
    // Utility runners
-   grunt.registerTask('copy-stack', ['copy:rand', 'copy:fonts', 'copy:select2', 'copy:icheck']);
+   grunt.registerTask('copy-stack', ['copy:fonts']);
    grunt.registerTask('cleanup', ['clean:cleanup']);
    grunt.registerTask('setup', ['copy:lessvar', 'full']);
 
@@ -231,7 +209,8 @@ module.exports = function(grunt) {
    grunt.registerTask('js', ['concat:js']);
 
    // Production ready task runners
-   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
+   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
+   grunt.registerTask('fullw', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild', 'watch:full']);
    grunt.registerTask('deploy', ['sftp-deploy:deploy']);
    grunt.registerTask('deployjs', ['sftp-deploy:js']);
 

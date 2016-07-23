@@ -14,16 +14,31 @@
          </div>
       </div>
    </div>
+   <div class="row m-tb-md">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+         <div class="alert alert-warning small">
+            <strong>Note:</strong> Some of my work can only be shown privately in an interview setting.
+         </div>
+         <input class="form-control minimal js-search-projects input-lg" type="text" placeholder="Search for a word or #tag">
+         <ul class="list-inline">
+            <li>
+               <label>
+                  <input type="checkbox" id="interestingbox"> Just see what is most interesting
+               </label>
+            </li>
+            <li class="pull-right">
+               <i class="fa fa-flash palette7-t"></i> Ongoing &amp; Active Involvement
+            </li>
+         </ul>
+      </div>
+   </div>
    <div class="row">
       <?php
          perch_content_custom('Description', array(
-            'page'=>'/andrew/projects/*',
+            'page'=>'/archive/*',
             'template'=>'project-card.html',
             'sort'=>'date_start',
-            'sort-order'=>'DESC',
-            'filter'=>'ongoing',
-            'match'=>'eq',
-            'value'=>true
+            'sort-order'=>'DESC'
          ));
       ?>
       <div class="col-xs-12 m-tb-lg">

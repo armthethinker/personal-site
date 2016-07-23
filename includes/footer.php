@@ -1,13 +1,9 @@
-	<?php
-      include($_SERVER['DOCUMENT_ROOT']."/includes/global-vars.php");
-      $andrew_dbox="https://dl.dropboxusercontent.com/u/32463552/temp-public-assets";
-      $tooty = $andrew_dbox;
-   ?>
-   <footer class="palette19 palette16-t p-tb-md">
+
+   <footer class="palette19 palette16-t p-tb-md hidden"> <!-- //edit -->
       <div class="container">
          <div class="row">
             <div class="col-xs-6">
-               <i class="fa fa-copyright"></i> Dasein Design and Andrew R McHugh
+               <i class="fa fa-copyright"></i> Andrew R McHugh
             </div>
             <div class="col-xs-6">
                <div class="connect-links pull-right">
@@ -21,18 +17,18 @@
                   <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter-square"></i></a>
                   <a href="https://www.youtube.com/user/arm156291"><i class="fa fa-youtube-square"></i></a>
                   <a href="http://open.spotify.com/user/arm5629"><i class="fa fa-spotify"></i></a>
-                  <a href="http://medium.com/@armthethinker"><img class="fa-medium" src="http://daseindesign.co/img/Medium-white.png"></a>
+                  <a href="http://medium.com/@armthethinker"><i class="fa fa-medium"></i></a>
                </div>
             </div>
          </div>
       </div>
    </footer>
-   <!--<div class="red-close"></div>-->
 
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+   <!--<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>-->
+   <script type="text/javascript" src="/dist/js/andrewrmchughrocks.min.js"></script>
 	<?php include($path_includes.'/g-analytics.php'); ?>
-	<?php include($path_includes.'/twitter.php'); ?>
+	<?php // include($path_includes.'/twitter.php'); ?>
 
 	</body>
 
