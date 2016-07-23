@@ -4,21 +4,28 @@
 - make sure everyone is fine with being in the portfolio
 
 - nice to do
-   - projects load flash fix
-   - header nav on projects
-   - Meta:tags
-   - toggle font-size down a bit
-   - css truncate implementation
-   - zoom.js by Fat
-   - start with questions, like you do
-   - get the gist of the decision making quicker
-   - soundscape img needs updating
-   - consider same location of nav
+   - add projects
+      - Humane Virtuality
+      - ViewPoint
+      - Elementary
+      - Fox?
    - add contact infoz
-   - favicon
-   - 404++
+   - update bio
+   - update CV
    - vr trolley
       - update video
+   - soundscape img needs updating
+   - Meta:tags
+   - toggle font-size down a bit
+   - favicon
+   - 404++
+   - header nav on projects
+   - zoom.js by Fat
+   - projects load flash fix?
+   - css truncate implementation
+
+
+
 
 ## Useful Perch Links
 [Installing a local server running Perch](https://solutions.grabaperch.com/development/installing-a-local-server-with-xampp)
