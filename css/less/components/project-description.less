@@ -39,8 +39,8 @@
       margin: 0;
    }
    h3{
-      margin-top: 10px;
-      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-bottom: 20px;
       font-size: @font-size-large;
    }
    .pd-header-content{
@@ -51,6 +51,7 @@
    }
    p.lead{
       padding-right: 25px;
+      line-height: 1.5;
       &:before{
          content: "tl;dr";
          display: block;
@@ -75,7 +76,7 @@
       }
       &.u-margin-top{
          @media (min-width: @screen-md-min){
-            margin-top: 8px;
+            margin-top: 40px;
          }
       }
       dt{
@@ -83,6 +84,7 @@
          text-transform: lowercase;
          font-variant: small-caps;
          font-style: italic;
+         opacity: .65;
          &:nth-child(5n){
             -webkit-column-break-before: always;
                -moz-column-break-before: always;
@@ -137,13 +139,15 @@
    h3{
       text-transform: none;
       letter-spacing: 0;
-      font-weight: 700;
+      font-weight: @headings-font-weight;
       opacity: .7;
    }
    .pd-img-caption{
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       font-size: @font-size-small;
       font-style: italic;
+      text-align: center;
+      color: @palette-gray;
       a{
          border-bottom: @link-underline-color 1px solid;
          transition: color 0.5s ease;

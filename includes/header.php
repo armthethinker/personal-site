@@ -32,7 +32,7 @@
       else{
          ?>
             <link rel="stylesheet" href="/dist/css/andrewrmchughrocks.min.css" media="screen" type="text/css" />
-            <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,700|Droid+Serif:500,500italic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,600|Droid+Serif:500,500italic' rel='stylesheet' type='text/css'>
             <script src="https://use.fontawesome.com/8a0ca50a3d.js"></script>
          <?php
       }

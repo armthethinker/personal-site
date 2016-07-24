@@ -366,7 +366,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
   color: inherit;
 }
@@ -2453,12 +2453,12 @@ blockquote:empty {
 .showcase-item .showcase-description {
   transition: all 0.5s ease;
   background: #f7faff;
-  border-top: solid 10px #5386e4;
+  border: solid 5px;
   position: absolute;
   right: 0px;
   left: 0px;
   top: 210px;
-  padding: 15px 25px 20px;
+  padding: 23px 30px 30px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 .showcase-item .showcase-description h2,
@@ -2542,8 +2542,8 @@ blockquote:empty {
   margin: 0;
 }
 .pd-header h3 {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 .pd-header .pd-header-content {
@@ -2556,6 +2556,7 @@ blockquote:empty {
 }
 .pd-header p.lead {
   padding-right: 25px;
+  line-height: 1.5;
 }
 .pd-header p.lead:before {
   content: "tl;dr";
@@ -2582,7 +2583,7 @@ blockquote:empty {
 }
 @media (min-width: 992px) {
   .pd-header dl.u-margin-top {
-    margin-top: 8px;
+    margin-top: 40px;
   }
 }
 .pd-header dl dt {
@@ -2590,6 +2591,7 @@ blockquote:empty {
   text-transform: lowercase;
   font-variant: small-caps;
   font-style: italic;
+  opacity: .65;
 }
 .pd-header dl dt:nth-child(5n) {
   -webkit-column-break-before: always;
@@ -2661,13 +2663,15 @@ blockquote:empty {
 .pd-section h3 {
   text-transform: none;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 600;
   opacity: .7;
 }
 .pd-section .pd-img-caption {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 14px;
   font-style: italic;
+  text-align: center;
+  color: #5e6063;
 }
 .pd-section .pd-img-caption a {
   border-bottom: #ff9932 1px solid;
@@ -2785,5 +2789,8 @@ blockquote:empty {
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px #5386e4 solid;
+}
+.pd-img {
+  background-color: #eeeef3;
 }
 /*# sourceMappingURL=dist/css/andrewrmchughrocks.css.map */
