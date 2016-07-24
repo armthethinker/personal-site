@@ -13,9 +13,13 @@ include($path_includes.'/header.php');
       <div class="row">
          <div class="col-lg-5 col-md-6 col-xs-12">
             <div class="homepage-hero animated slideFadeInUp">
-               <h1>Andrew R McHugh</h1>
-               <h3>Designer of New Futures</h3>
-               <p>I break down complexity into understandable and useable chunks. Currently, I am a Masters student at Carnegie Mellon University, studying human-computer interaction with a focus on virtual reality. Previously, I cofounded the What If…? Conference, What If…? 360’s predecessor. I left in 2014 and have been designing and developing user experiences ever since.</p>
+               <h1>Andrew R McHugh TK add links</h1>
+               <h3>UX Designer of New Futures</h3>
+
+               <p class="lead"><strong>I break down complexity into understandable and useable chunks.</strong> Currently, <strong>I am a Masters student at Carnegie Mellon University and at the Madeira Interactive Technologies Institute</strong> in Portugal, studying human-computer interaction with a focus on virtual reality. Through August, I am exploring the user experience design implications for virtual reality in an internship called <a>Humane Virtuality</a>.</p>
+
+               <p>Previously, I cofounded, designed, and produced the a curiosity-inspired platform, <a>The What If…? Conference</a>. After three and a half years, I left to design and develop user experiences. In April 2016, my first children’s book <a>The Book of What If…?</a> was published by Beyond Words / Aladdin an imprint of Simon &amp; Schuster. My work has been featured in news outlets including the <a>Wall Street Journal</a> and <a>Silicon Prairie News</a>.</p>
+
                <p>Actively curious about many things, I have a background in design, philosophy, technology and people, mathematics, and physics. During my undergraduate years, I built a bikeshare program, led a movement for systematic sustainability change, and researched brain-computer interfaces and digital divide/differentiation problems. In my free time, I tinker on side projects and listen to music louder than necessary.</p>
                <?php
                   $navStyle = 1;
