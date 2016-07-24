@@ -29,12 +29,14 @@
 ## Hierarchy
 \* Partially Managed by Perch
 \*\* Entirely Managed By Perch
+```
 /
 |--index \*
    |--projects \*\*
       |--project pages \*\*
    |--cv
    |--book
+```
 
 
 ## Useful Perch Links
