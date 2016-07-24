@@ -12,6 +12,7 @@
    - add contact infoz
    - update bio
    - update CV
+   - add blog link?
    - vr trolley
       - update video
    - soundscape img needs updating
@@ -21,10 +22,19 @@
    - 404++
    - header nav on projects
    - zoom.js by Fat
+   - archive
    - projects load flash fix?
    - css truncate implementation
 
-
+## Hierarchy
+\* Partially Managed by Perch
+\*\* Entirely Managed By Perch
+/
+|--index \*
+   |--projects \*\*
+      |--project pages \*\*
+   |--cv
+   |--book
 
 
 ## Useful Perch Links
