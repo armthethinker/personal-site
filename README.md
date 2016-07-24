@@ -9,15 +9,15 @@
       - ViewPoint
       - Elementary
       - Fox?
-   - add contact infoz
-   - update bio
+   - ~~add contact infoz~~
+   - ~~update bio~~
    - update CV
-   - add blog link?
+   - ~~add blog link?~~
    - vr trolley
       - update video
-   - soundscape img needs updating
+   - ~~soundscape img needs updating~~
    - Meta:tags
-   - toggle font-size down a bit
+   - ~~toggle font-size down a bit~~
    - favicon
    - 404++
    - header nav on projects
@@ -28,12 +28,14 @@
 
 ## Hierarchy
 \* Partially Managed by Perch
+
 \*\* Entirely Managed By Perch
+
 ```
 /
-|--index \*
-   |--projects \*\*
-      |--project pages \*\*
+|--index *
+   |--projects **
+      |--project pages **
    |--cv
    |--book
 ```
