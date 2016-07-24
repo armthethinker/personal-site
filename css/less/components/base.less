@@ -50,10 +50,22 @@ a[target="_blank"]{
    top: 150px;
    color: @palette-white;
    h3{
+      margin-top: -15px;
       margin-bottom: 35px;
    }
    @media (min-width: @screen-md-min) {
       top: 40px;
+   }
+   p{
+      &:not(.lead){
+         font-size: 90%;
+      }
+      &.lead{
+         font-style: initial;
+      }
+      a{
+         color: #fff;
+      }
    }
 }
 

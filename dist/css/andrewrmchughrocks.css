@@ -267,7 +267,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   color: #555566;
@@ -2176,12 +2176,22 @@ a[target="_blank"] {
   color: #ffffff;
 }
 .homepage-hero h3 {
+  margin-top: -15px;
   margin-bottom: 35px;
 }
 @media (min-width: 992px) {
   .homepage-hero {
     top: 40px;
   }
+}
+.homepage-hero p:not(.lead) {
+  font-size: 90%;
+}
+.homepage-hero p.lead {
+  font-style: initial;
+}
+.homepage-hero p a {
+  color: #fff;
 }
 .animated {
   animation-duration: 1.5s;
@@ -2219,7 +2229,7 @@ p {
 ul.lead,
 ol.lead,
 p.lead {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
 }
@@ -2321,7 +2331,7 @@ blockquote:empty {
   position: absolute;
   left: 5px;
   right: 5px;
-  top: 17px;
+  top: 16px;
 }
 .nav-main.nav-main-inverse .nav-items > .nav-item > a {
   color: #ffffff;
@@ -2625,7 +2635,7 @@ blockquote:empty {
 .pd-section ol > strong.pd-p-header,
 .pd-section p > strong.pd-p-header {
   text-transform: uppercase;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-variant: small-caps;
 }
