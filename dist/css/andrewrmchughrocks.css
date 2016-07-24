@@ -2193,6 +2193,15 @@ a[target="_blank"] {
 .homepage-hero p a {
   color: #fff;
 }
+footer {
+  margin-top: 50px;
+}
+footer .col-sm-6 {
+  margin-top: 20px;
+}
+footer .col-sm-6 a {
+  margin-top: -6px;
+}
 .animated {
   animation-duration: 1.5s;
   animation-fill-mode: both;
@@ -2283,6 +2292,11 @@ p:empty,
 blockquote:empty {
   display: none;
   visibility: hidden;
+}
+.connect-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
 }
 .btn-outline {
   background: none;
