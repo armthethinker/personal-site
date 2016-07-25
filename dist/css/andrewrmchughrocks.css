@@ -2244,6 +2244,10 @@ body {
 a[target="_blank"] {
   cursor: alias !important;
 }
+.tk-error {
+  position: relative;
+  z-index: 1000;
+}
 .homepage-hero {
   position: relative;
   z-index: 10;
@@ -2367,6 +2371,15 @@ p:empty,
 blockquote:empty {
   display: none;
   visibility: hidden;
+}
+b,
+strong {
+  color: #32323c;
+}
+h3 + p > strong > em,
+h3 + p + p > strong > em {
+  top: -20px;
+  position: relative;
 }
 .connect-links {
   display: flex;
@@ -2561,8 +2574,8 @@ blockquote:empty {
     left: 15px;
   }
   .showcase-item .showcase-description {
-    right: 85px;
-    left: -85px;
+    right: 0px;
+    left: -195px;
     top: 45px;
   }
   .showcase-item .showcase-description h2 {
@@ -2574,11 +2587,11 @@ blockquote:empty {
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 @media (min-width: 992px) {
   .showcase-img {
-    height: 400px;
+    height: 550px;
   }
 }
 .pd-container h1 {
@@ -2727,7 +2740,7 @@ blockquote:empty {
 .pd-section p > strong.pd-p-header {
   text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   font-variant: small-caps;
 }
 .pd-section ul > strong.pd-p-header:after,
@@ -2747,6 +2760,7 @@ blockquote:empty {
   font-style: italic;
   text-align: center;
   color: #5e6063;
+  font-weight: 300;
 }
 .pd-section .pd-img-caption a {
   border-bottom: #ff9932 1px solid;
