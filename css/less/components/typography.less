@@ -62,6 +62,17 @@ blockquote{
       visibility: hidden;
    }
 }
+b,
+strong{
+   color: darken(@palette-dark-blue, 15%);
+}
+h3 + p,
+h3 + p + p{
+   > strong > em{
+      top: -20px;
+      position: relative;
+   }
+}
 .connect-links{
    display: flex;
    justify-content: space-between;
