@@ -7,12 +7,14 @@
             </div>
             <div class="col-sm-6">
                <div class="connect-links">
+                  <a href="http://www.linkedin.com/pub/andrew-mchugh/48/72b/3ab/"><i class="fa fa-linkedin-square"></i></a>
                   <a href="https://www.facebook.com/arm5629"><i class="fa fa-facebook"></i></a>
+                  <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter"></i></a>
                   <a href="http://instagram.com/armthethinker"><i class="fa fa-instagram"></i></a>
                   <a href="http://codepen.io/armthethinker"><i class="fa fa-codepen"></i></a>
-                  <a href="http://www.linkedin.com/pub/andrew-mchugh/48/72b/3ab/"><i class="fa fa-linkedin-square"></i></a>
+      
+                  <a href="http://github.com/armthethinker"><i class="fa fa-github"></i></a>
                   <a href="https://soundcloud.com/andrew-r-mchugh"><i class="fa fa-soundcloud"></i></a>
-                  <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter"></i></a>
                   <a href="https://www.youtube.com/user/arm156291"><i class="fa fa-youtube"></i></a>
                   <a href="http://open.spotify.com/user/arm5629"><i class="fa fa-spotify"></i></a>
                   <a href="http://medium.com/@armthethinker"><i class="fa fa-medium"></i></a>
