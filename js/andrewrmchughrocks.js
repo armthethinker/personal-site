@@ -66,4 +66,20 @@ $(document).ready(function(){
    $(window).resize(function() {
       setImgWideWidth();
    });
+
+   tkFinder();
 });
+
+function tkFinder(){
+   findInPage('TK')
+}
+
+function findInPage(str) {
+   var documentHTML = $('html').html();
+   var found = documentHTML.search(str);
+
+   if(found>0){
+      $('.tk-error').removeClass('hidden');
+   }
+
+}

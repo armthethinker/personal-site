@@ -41,3 +41,6 @@
 </head>
 
 <body>
+<div class="alert alert-danger tk-error hidden">
+   <strong class="tk-count"></strong> To Come(s) on page.
+</div>
