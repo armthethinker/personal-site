@@ -67,7 +67,7 @@ $(document).ready(function(){
       setImgWideWidth();
    });
 
-   tkFinder();
+   // tkFinder();
 });
 
 function tkFinder(){
