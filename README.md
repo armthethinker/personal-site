@@ -4,17 +4,17 @@
 - make sure everyone is fine with being in the portfolio
 
 - nice to do
-   - add projects
-      - Humane Virtuality
-      - ViewPoint
-      - Elementary
-      - Fox?
+   - ~~add projects~~
+      - ~~Humane Virtuality~~
+      - ~~ViewPoint~~
+      - ~~Elementary~~
    - ~~add contact infoz~~
    - ~~update bio~~
    - update CV
    - ~~add blog link?~~
-   - vr trolley
-      - update video
+   - ~~vr trolley~~
+      - ~~update video~~
+   - ViewPoint video
    - ~~soundscape img needs updating~~
    - Meta:tags
    - ~~toggle font-size down a bit~~
@@ -24,7 +24,6 @@
    - zoom.js by Fat
    - archive
    - projects load flash fix?
-   - css truncate implementation
 
 ## Hierarchy
 \* Partially Managed by Perch
@@ -32,7 +31,6 @@
 \*\* Entirely Managed By Perch
 
 ```
-/
 |--index *
    |--projects **
       |--project pages **
