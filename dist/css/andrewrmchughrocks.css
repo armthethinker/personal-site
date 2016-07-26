@@ -2269,6 +2269,10 @@ a[target="_blank"] {
 .homepage-hero p.lead {
   font-style: initial;
 }
+.homepage-hero p.lead b,
+.homepage-hero p.lead strong {
+  color: #ffffff;
+}
 .homepage-hero p a {
   color: #fff;
 }
@@ -2348,6 +2352,15 @@ ul li,
 ol li,
 p li {
   margin-bottom: 10.75px;
+}
+h3 a {
+  border-bottom: #ff9932 2px solid;
+  transition: color 0.5s ease;
+}
+h3 a:hover {
+  color: #ffb870;
+  border-bottom: #ff9932 2px solid;
+  cursor: pointer;
 }
 blockquote {
   font-style: italic;
@@ -2531,7 +2544,7 @@ h3 + p + p > strong > em {
   /* Medium devices (desktops, 992px and up) */
 }
 .showcase-item .showcase-img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -2545,9 +2558,9 @@ h3 + p + p > strong > em {
   position: absolute;
   right: 0px;
   left: 0px;
-  top: 210px;
+  top: 320px;
   padding: 23px 30px 30px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 40px 100px 0 rgba(0, 0, 0, 0.3);
 }
 .showcase-item .showcase-description h2,
 .showcase-item .showcase-description p,
@@ -2846,6 +2859,7 @@ h3 + p + p > strong > em {
   width: 33%;
   margin-top: 20px;
   padding-left: 10px;
+  text-align: left;
 }
 .pd-img.pd-img-side-by-side {
   height: 200px;
@@ -2878,8 +2892,5 @@ h3 + p + p > strong > em {
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px #5386e4 solid;
-}
-.pd-img {
-  background-color: #eeeef3;
 }
 /*# sourceMappingURL=dist/css/andrewrmchughrocks.css.map */
