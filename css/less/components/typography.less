@@ -39,6 +39,17 @@ p{
 
    }
 }
+h3{
+   a{
+      border-bottom: @link-underline-color 2px solid;
+      transition: color 0.5s ease;
+      &:hover{
+         color: mix(@palette-orange, @palette-white, 70%);
+         border-bottom: @link-underline-color 2px solid;
+         cursor: pointer;
+      }
+   }
+}
 blockquote{
    font-style: italic;
    margin-left: (@grid-gutter-width / -3) - 5px;
