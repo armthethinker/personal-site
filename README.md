@@ -24,6 +24,9 @@
    - zoom.js by Fat
    - archive
    - projects load flash fix?
+   - Single page
+   - Remove Lato
+   - Add Droid Serif 400, 700
 
 ## Hierarchy
 \* Partially Managed by Perch
