@@ -2419,6 +2419,8 @@ h3 + p + p > strong > em {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 5px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .nav-main .nav-items > .nav-item > a {
   text-transform: lowercase;
