@@ -4,11 +4,38 @@ h2{
       margin-top: 0px;
    }
 }
+h1{
+   line-height: 1.1;
+}
 h3{
    text-transform: uppercase;
    letter-spacing: 3px;
    font-weight: 300;
    font-size: @font-size-large;
+}
+.section-bio,
+.section-projects{
+   h1{
+      text-align: center;
+      + h3{
+         text-align: center;
+      }
+   }
+}
+.section-bio{
+   h1{
+      margin-bottom: 10px;
+   }
+   img{
+      margin-bottom: 40px;
+      box-shadow: 0 20px 40px 0 rgba(0,0,0,.4);
+   }
+   p{
+      font-family: @font-family-sans-serif;
+      &.lead{
+         font-style: normal;
+      }
+   }
 }
 ul,
 ol,
@@ -18,11 +45,15 @@ p{
       font-family: @font-family-sans-serif;
       font-weight: 300;
       font-style: italic;
+      line-height: 1.5;
       a{
       border-bottom: @link-underline-color 2px solid;
          &:hover{
             border-bottom: @link-underline-color 2px solid;
          }
+      }
+      strong{
+         font-weight: 600;
       }
    }
    a{
