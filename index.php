@@ -5,7 +5,7 @@ $menu_location="bio";
 $m_title="Andrew R McHugh | UX Designer of New Futures";
 include($path_includes.'/header.php');
 ?>
-<div id="particles-js"></div>
+<!-- <div id="particles-js"></div> -->
 <div class="container">
    <?php include($path_includes.'/nav-top.php'); ?>
    <div class="row section-bio animated slideFadeInUp">
