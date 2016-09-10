@@ -25,8 +25,6 @@ include($path_includes.'/header.php');
       <div class="col-xs-12">
          <h1 id="projects">Selected Projects</h1>
       </div>
-   </div>
-   <div class="row">
       <div class="col-xs-12" domFlag>
          <?php
             perch_content_custom('Showcase Meta', array(
@@ -35,18 +33,6 @@ include($path_includes.'/header.php');
                'sort'=>'pd_order'
             ));
          ?>
-      </div>
-   </div>
-</div>
-<div class="img-background-container hidden">
-
-   <div class="img-gradient"></div>
-   <div class="img-background"></div>
-   <div class="container">
-      <div class="row">
-         <div class="col-lg-5 col-md-6 col-xs-12">
-
-         </div>
       </div>
    </div>
 </div>

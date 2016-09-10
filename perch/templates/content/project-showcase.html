@@ -4,11 +4,11 @@
       <div class="col-md-9 col-xs-12">
          <div class="showcase-img" style='background-image: url("<perch:content type="image" id="project_coverImg" label="Cover Image" output="path"/>")'></div>
       </div>
-      <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+      <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2">
          <div class="showcase-description">
             <h2><perch:content type="text" id="pd_title" label="Project Title" title="true" /></h2>
             <h3><perch:content id="pd_subtitle" type="text" label="Subtitle" /></h3>
-            <p><perch:content id="pd_description_overview" type="textarea" label="Project Description" html="false" chars="200" append="..." /></p>
+            <p><perch:content id="pd_shows" type="textarea" label="This project shows"/></p>
             <a class="btn btn-default btn-outline" href="<perch:content id="_page" type="hidden"/>">View Project <i class="fa fa-angle-right"></i></a>
          </div>
       </div>
