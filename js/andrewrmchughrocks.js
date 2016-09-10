@@ -35,9 +35,6 @@ function setNavActive(click){
 $(document).ready(function(){
    // On load and window resize, reset the showcase item height
    setShowcaseItemHeight();
-   $(window).resize(function() {
-      setShowcaseItemHeight();
-   });
 
    // Prototyping nav
    $('.nav-top').on('click', '.nav-item', function(){
@@ -61,6 +58,7 @@ $(document).ready(function(){
    // On load and window resize, reset the img width to 100% of window
    setImgWideWidth();
    $(window).resize(function() {
+      setShowcaseItemHeight();
       setImgWideWidth();
    });
 
