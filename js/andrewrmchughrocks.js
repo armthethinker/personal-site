@@ -83,3 +83,8 @@ function findInPage(str) {
    }
 
 }
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'js/config-particles.json', function() {
+  console.log('Particles are loaded.');
+});
