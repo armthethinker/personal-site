@@ -7,7 +7,9 @@ include($path_includes.'/header.php');
 ?>
 <!-- <div id="particles-js"></div> -->
 <div class="container">
-   <?php include($path_includes.'/nav-top.php'); ?>
+   <div class="row">
+      <?php include($path_includes.'/nav-top.php'); ?>
+   </div>
    <div class="row section-bio animated slideFadeInUp">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
          <h1>Andrew R McHugh</h1>
