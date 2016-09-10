@@ -13,17 +13,14 @@ function setImgWideWidth() {
 }
 // FUNCTION Set the showcase item height
 function setShowcaseItemHeight() {
+   var xWindow = $(window).width();
+   var yImg = $('.showcase-item').find('.showcase-img').height();
    $('.showcase-item').each(function(i) {
-      //console.log('i: ' + i + ' ' + this);
-      var xWindow = $(window).width();
-      var yImg = $(this).find('.showcase-img').height();
-      if (xWindow >= 992) { //EDIT error at 992 px that is resolved at 993
-         var yShowcaseItem = yImg + 50;
+      var yShowcaseDescription = $(this).find('.showcase-description').height();
+      if (xWindow > 992) {
+         var yShowcaseItem = yImg + 180;
       } else {
-         //console.log(this);
-         var yShowcaseDescription = $(this).find('.showcase-description').height();
-         var yShowcaseItem = yImg + yShowcaseDescription;
-         //console.log('yImg: ' + yImg + '; yShowcaseDescription: ' + yShowcaseDescription + '; yShowcaseItem: ' + yShowcaseItem);
+         var yShowcaseItem = yImg + yShowcaseDescription + 20;
       }
       $(this).height(yShowcaseItem);
    });
