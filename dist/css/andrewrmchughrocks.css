@@ -2319,16 +2319,15 @@ h3 {
 .section-projects p.lead {
   font-style: normal;
 }
-.section-bio .h-shows,
-.section-projects .h-shows {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  font-size: 90%;
-}
 .section-bio h1 {
   margin-bottom: 10px;
+}
+.header-inline {
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  font-size: 90%;
 }
 ul,
 ol,
