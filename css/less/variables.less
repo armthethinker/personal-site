@@ -41,6 +41,10 @@
 
 @space: "\00A0";
 
+@box-shadow-low:  0  5px  15px 0 rgba(0,0,0,.45);
+@box-shadow:      0 20px  40px 0 rgba(0,0,0,.4);
+@box-shadow-high: 0 40px 100px 0 rgba(0,0,0,.3);
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -49,6 +53,7 @@
 @body-bg:               @palette-white;
 //** Global text color on `<body>`.
 @text-color:            @palette-dark-blue;
+@text-color-dark:       darken(@palette-dark-blue, 15%);
 
 //** Global textual link color.
 @link-color:            @text-color;
