@@ -77,7 +77,7 @@
    <perch:block type="pd_section_img_contain" label="Img Contain">
       <div class="row pd-section">
          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <div class="pd-img pd-img-contain <perch:content type="checkbox" id="pd_img_contain_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_contain" label="Image Contain" output="path"/>');"></div>
+            <div class="pd-img pd-img-contain <perch:content type="checkbox" id="pd_img_contain_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_contain" label="Image Contain" output="path"/>');" data-height="<perch:content type="image" id="pd_img_contain" output="h"/>" data-width="<perch:content type="image" id="pd_img_contain" output="w"/>"></div>
             <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
          </div>
       </div>
@@ -86,7 +86,7 @@
    <perch:block type="pd_section_img_wide" label="Img Wide">
       <div class="row pd-section">
          <div class="col-xs-12">
-            <div class="pd-img pd-img-wide <perch:content type="checkbox" id="pd_img_wide_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_wide" label="Image Wide" output="path"/>')"></div>
+            <div class="pd-img pd-img-wide <perch:content type="checkbox" id="pd_img_wide_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_wide" label="Image Wide" output="path"/>')" data-height="<perch:content type="image" id="pd_img_wide" output="h"/>" data-width="<perch:content type="image" id="pd_img_wide" output="w"/>"></div>
             <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
          </div>
       </div>
@@ -95,7 +95,7 @@
    <perch:block type="pd_section_img_side" label="Img Side">
       <div class="row pd-section">
          <div class="col-md-10 col-md-offset-1 col-xs-12">
-            <div class="pd-img pd-img-side <perch:content type="checkbox" id="pd_img_side_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_side" label="Image Side" output="path"/>')"></div>
+            <div class="pd-img pd-img-side <perch:content type="checkbox" id="pd_img_side_size" label="Background Size" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />" style="background-image: url('<perch:content type="image" id="pd_img_side" label="Image Side" output="path"/>')" data-height="<perch:content type="image" id="pd_img_side" output="h"/>" data-width="<perch:content type="image" id="pd_img_side" output="w"/>"></div>
             <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
          </div>
       </div>
@@ -104,8 +104,8 @@
    <perch:block type="pd_section_img_side-by-side" label="Img Side-By-Side">
       <div class="row pd-section">
          <div class="col-md-10 col-md-offset-1 col-xs-12">
-            <div class="pd-img pd-img-side-by-side <perch:content type="checkbox" id="pd_img_sidebyside1_size" label="Background Size Left" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />"style="background-image: url('<perch:content type="image" id="pd_img_sidebyside1" label="Image Side-By-Side Left" output="path"/>')"></div>
-            <div class="pd-img pd-img-side-by-side <perch:content type="checkbox" id="pd_img_sidebyside2_size" label="Background Size Right" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />"style="background-image: url('<perch:content type="image" id="pd_img_sidebyside2" label="Image Side-By-Side Right" output="path"/>')"></div>
+            <div class="pd-img pd-img-side-by-side <perch:content type="checkbox" id="pd_img_sidebyside1_size" label="Background Size Left" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />"style="background-image: url('<perch:content type="image" id="pd_img_sidebyside1" label="Image Side-By-Side Left" output="path"/>')" data-height="<perch:content type="image" id="pd_img_sidebyside1" output="h"/>" data-width="<perch:content type="image" id="pd_img_sidebyside1" output="w"/>"></div>
+            <div class="pd-img pd-img-side-by-side <perch:content type="checkbox" id="pd_img_sidebyside2_size" label="Background Size Right" help=".u-pd-img-size-contain" value="u-pd-img-size-contain" />"style="background-image: url('<perch:content type="image" id="pd_img_sidebyside2" label="Image Side-By-Side Right" output="path"/>')" data-height="<perch:content type="image" id="pd_img_sidebyside2" output="h"/>" data-width="<perch:content type="image" id="pd_img_sidebyside2" output="w"/>"></div>
             <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
          </div>
       </div>
