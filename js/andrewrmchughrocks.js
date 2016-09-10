@@ -32,9 +32,28 @@ function setNavActive(click){
    return false;
 }
 
+// FUNCTION Set the height/width of constrained images
+function setConstrainedImgDimensions(){
+   $('.pd-img-contain, .pd-img-wide, .pd-img-side').each(function(i){
+
+      heightNatural = $(this).data('height');
+       widthNatural = $(this).data('width');
+
+      heightGiven =  $(this).height();
+       widthGiven =  $(this).width();
+
+      if(widthNatural >= heightNatural){
+         $(this).height(widthGiven * heightNatural / widthNatural);
+      } else{
+         $(this).width(widthNatural * heightGiven / heightNatural);
+      }
+
+   });
+
+}
+
 $(document).ready(function(){
-   // On load and window resize, reset the showcase item height
-   setShowcaseItemHeight();
+
 
    // Prototyping nav
    $('.nav-top').on('click', '.nav-item', function(){
@@ -54,12 +73,17 @@ $(document).ready(function(){
       customSelector: "iframe[src^='https://marvelapp.com']"
    });
 
-
-   // On load and window resize, reset the img width to 100% of window
+   // On load reset the showcase item height
+   setShowcaseItemHeight();
+   // On load reset the img width to 100% of window
    setImgWideWidth();
+   // On load set the image dimensions for particular images
+   setConstrainedImgDimensions();
+   // On resize, re-run functions
    $(window).resize(function() {
       setShowcaseItemHeight();
       setImgWideWidth();
+      setConstrainedImgDimensions();
    });
 
    // tkFinder();
