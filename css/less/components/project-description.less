@@ -34,12 +34,12 @@
    margin-bottom: 25px;
    background: @palette-pale-blue;
    border-bottom: solid 10px @palette-blue;
-   box-shadow: rgba(0,0,0,.4) 0 5px 15px 0;
+   box-shadow: @box-shadow-low;
    h1{
       margin: 0;
    }
    h3{
-      margin-top: 0px;
+      margin-top: 10px;
       margin-bottom: 20px;
       font-size: @font-size-large;
    }
@@ -159,9 +159,6 @@
    }
    .pd-embed{
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      box-shadow: 0 20px 40px 0 rgba(0,0,0,.4);
       .margin-full-at-xs;
    }
 }
@@ -172,9 +169,7 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-position: 50% 50%;
-   margin-top: 20px;
-   margin-bottom: 10px;
-   box-shadow: 0 20px 40px 0 rgba(0,0,0,.4);
+
    // sizing for each screen size
    height: @img-xs-height;
    @media (min-width: @screen-sm-min){
@@ -220,11 +215,11 @@
       height: 250px;
       width: 67%;
       float: left;
-      margin-top: 20px;
-      margin-bottom: 30px;
       .margin-full-at-xs;
       @media (min-width: @screen-sm-min){
          height: @img-sm-height - 50;
+         margin-top: 20px;
+         margin-bottom: 30px;
       }
       @media (min-width: @screen-md-min){
          height: @img-md-height - 50;
