@@ -27,7 +27,7 @@ include($path_includes.'/header.php');
       <div class="col-xs-12">
          <h1 id="projects">Selected Projects</h1>
       </div>
-      <div class="col-xs-12" domFlag>
+      <div class="col-xs-12">
          <?php
             perch_content_custom('Showcase Meta', array(
                'page'=>'/projects/*',
