@@ -2311,18 +2311,24 @@ h3 {
 .section-projects h1 + h3 {
   text-align: center;
 }
-.section-bio h1 {
-  margin-bottom: 10px;
-}
-.section-bio img {
-  margin-bottom: 40px;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
-}
-.section-bio p {
+.section-bio p,
+.section-projects p {
   font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.section-bio p.lead {
+.section-bio p.lead,
+.section-projects p.lead {
   font-style: normal;
+}
+.section-bio .h-shows,
+.section-projects .h-shows {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 90%;
+}
+.section-bio h1 {
+  margin-bottom: 10px;
 }
 ul,
 ol,
@@ -2491,6 +2497,10 @@ h3 + p + p > strong > em {
   font-variant: small-caps;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+.section-bio img {
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
 }
 .showcase-item {
   margin-bottom: 50px;
@@ -2717,6 +2727,7 @@ h3 + p + p > strong > em {
   font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-variant: small-caps;
+  font-size: 90%;
 }
 .pd-section ul > strong.pd-p-header:after,
 .pd-section ol > strong.pd-p-header:after,
@@ -2728,6 +2739,7 @@ h3 + p + p > strong > em {
   letter-spacing: 0;
   font-weight: 600;
   opacity: .7;
+  font-style: italic;
 }
 .pd-section .pd-img-caption {
   margin-bottom: 40px;
@@ -2748,6 +2760,9 @@ h3 + p + p > strong > em {
 }
 .pd-section .pd-embed {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
 }
 .pd-img {
   width: 100%;
@@ -2756,6 +2771,7 @@ h3 + p + p > strong > em {
   background-position: 50% 50%;
   margin-top: 20px;
   margin-bottom: 10px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
   height: 300px;
 }
 @media (min-width: 768px) {
