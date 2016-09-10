@@ -45,6 +45,15 @@ a[target="_blank"]{
    position: relative;
    z-index: 1000;
 }
+.margin-full-at-xs{
+   margin-left:  -@grid-gutter-width/2;
+   margin-right: -@grid-gutter-width/2;
+   width: auto;
+   @media (min-width: @screen-sm-min){
+      margin-left: 0;
+      margin-right: 0;
+   }
+}
 
 // Stylez
 
