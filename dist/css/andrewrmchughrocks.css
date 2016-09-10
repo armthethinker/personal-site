@@ -2248,34 +2248,6 @@ a[target="_blank"] {
   position: relative;
   z-index: 1000;
 }
-.homepage-hero {
-  position: relative;
-  z-index: 10;
-  top: 150px;
-  color: #ffffff;
-}
-.homepage-hero h3 {
-  margin-top: -15px;
-  margin-bottom: 35px;
-}
-@media (min-width: 992px) {
-  .homepage-hero {
-    top: 40px;
-  }
-}
-.homepage-hero p:not(.lead) {
-  font-size: 90%;
-}
-.homepage-hero p.lead {
-  font-style: initial;
-}
-.homepage-hero p.lead b,
-.homepage-hero p.lead strong {
-  color: #ffffff;
-}
-.homepage-hero p a {
-  color: #fff;
-}
 footer {
   margin-top: 50px;
 }
@@ -2303,15 +2275,54 @@ footer .col-sm-6 a {
 .slideFadeInUp {
   animation-name: slideFadeInUp;
 }
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+}
 h1 + h3,
 h2 + h3 {
   margin-top: 0px;
+}
+h1 {
+  line-height: 1.1;
 }
 h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 300;
   font-size: 20px;
+}
+.section-bio h1,
+.section-projects h1 {
+  text-align: center;
+}
+.section-bio h1 + h3,
+.section-projects h1 + h3 {
+  text-align: center;
+}
+.section-bio h1 {
+  margin-bottom: 10px;
+}
+.section-bio img {
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.section-bio p {
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.section-bio p.lead {
+  font-style: normal;
 }
 ul,
 ol,
@@ -2324,6 +2335,7 @@ p.lead {
   font-family: -apple-system, BlinkMacSystemFont, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
+  line-height: 1.5;
 }
 ul.lead a,
 ol.lead a,
@@ -2334,6 +2346,11 @@ ul.lead a:hover,
 ol.lead a:hover,
 p.lead a:hover {
   border-bottom: #ff9932 2px solid;
+}
+ul.lead strong,
+ol.lead strong,
+p.lead strong {
+  font-weight: 600;
 }
 ul a,
 ol a,
@@ -2475,70 +2492,6 @@ h3 + p + p > strong > em {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.img-background-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  height: 100%;
-  background-color: #5386e4;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.img-background-container .img-gradient {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  height: 300px;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUzODZlNCIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM1Mzg2ZTQiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM1Mzg2ZTQiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTM4NmU0Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz48L3N2Zz4=');
-}
-.img-background-container .img-background {
-  position: absolute;
-  z-index: 1;
-  background-image: url(/img/andrew-mchugh-md.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 73% 25%;
-  width: 100%;
-  height: 300px;
-}
-@media (min-width: 768px) {
-  .img-background-container .img-gradient {
-    height: 350px;
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUzODZlNCIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM1Mzg2ZTQiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiM1Mzg2ZTQiIHN0b3Atb3BhY2l0eT0iMC44Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTM4NmU0Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz48L3N2Zz4=');
-  }
-  .img-background-container .img-background {
-    background-size: cover;
-    background-position: 50% 25%;
-    height: 350px;
-  }
-}
-@media (min-width: 992px) {
-  .img-background-container .img-gradient {
-    height: auto;
-    width: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUzODZlNCIgc3RvcC1vcGFjaXR5PSIwLjg1Ii8+PHN0b3Agb2Zmc2V0PSI0NSUiIHN0b3AtY29sb3I9IiM1Mzg2ZTQiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM1Mzg2ZTQiIHN0b3Atb3BhY2l0eT0iMC4wNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzUzODZlNCIgc3RvcC1vcGFjaXR5PSIwLjAxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz48L3N2Zz4=');
-  }
-  .img-background-container .img-background {
-    background-size: cover;
-    background-position: 57% 25%;
-    height: auto;
-    width: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    background-image: url(/img/andrew-mchugh-lg.jpg);
-  }
-}
 .showcase-item {
   margin-bottom: 50px;
   height: 100px;
@@ -2561,8 +2514,15 @@ h3 + p + p > strong > em {
   right: 0px;
   left: 0px;
   top: 320px;
-  padding: 23px 30px 30px;
+  padding: 23px 20px 20px;
+  margin: auto 10px;
   box-shadow: 0 40px 100px 0 rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 768px) {
+  .showcase-item .showcase-description {
+    padding: 23px 30px 30px;
+    margin: auto;
+  }
 }
 .showcase-item .showcase-description h2,
 .showcase-item .showcase-description p,
