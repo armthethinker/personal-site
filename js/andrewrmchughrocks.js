@@ -54,9 +54,11 @@ function setConstrainedImgDimensions(){
 
 $(document).ready(function(){
 
+   if(is.not.touchDevice()){
       $(function () {
          $('[data-toggle="tooltip"]').tooltip()
       })
+   }
 
    // Prototyping nav
    $('.nav-top').on('click', '.nav-item', function(){

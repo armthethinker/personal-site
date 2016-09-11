@@ -20,6 +20,7 @@
     "anchor-js": "~0.4.0",
     "jquery": "^2.2.0",
     "jquery.fitvids": "fitvids#^1.1.0",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "is_js": "isjs#^0.8.0"
   }
 }
