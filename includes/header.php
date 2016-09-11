@@ -15,7 +15,7 @@
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="shortcut icon" href="http://andrewrmchugh.rocks/favicon.ico" type="image/x-icon" />
    <?php
       $domain        = 'http://'.$_SERVER["HTTP_HOST"];
       $url           = $domain.$_SERVER["REQUEST_URI"];
