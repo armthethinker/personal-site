@@ -1,21 +1,44 @@
-<meta name="description" content="<perch:pages id="description" label="Description" type="textarea" size="xs" escape="true" count="chars" />" />
-<meta name="keywords" content="<perch:pages id="keywords" label="Keywords" type="textarea" size="xs" escape="true" help="Separate with commas" count="chars" />" />
-<meta name="robots" content="<perch:pages id="noindex" label="Do not index" type="checkbox" value="noindex" append="," divider-before="Search engine indexing" /><perch:pages id="nofollow" label="Do not follow links" type="checkbox" value="nofollow" append="," /><perch:pages id="nosnippet" label="Do not show a snippet" type="checkbox" value="nosnippet" append="," />" />
 <!--  Meta Meta  -->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A lightweight web design company that focuses on how everything interacts. Design for the embedded environment." />
-<meta name="keywords" content="web design, Columbia, MO, Missouri, web development, flat design, user interface, user experience, layout, " />
--->
 <!--  Schema Tags  -->
-<!--<meta itemprop="name" content="Dasein Design">
-<meta itemprop="description" content="A lightweight web design company that focuses on how everything interacts. Design for the embedded environment.">
-<meta itemprop="image" content="http://daseindesign.co/img/logo-sq.png">
--->
 <!--  Open Graph Tags  -->
-<!--<meta property="og:title" content="Dasein Design" />
-<meta property="og:site_name" content="Dasein Design"/>
-<meta property="og:url" content="http://daseindesign.co" />
-<meta property="og:description" content="A lightweight web design company that focuses on how everything interacts. Design for the embedded environment." />
-<meta property="og:image" content="/img/logo-sq.png" />
-<meta property="fb:app_id" content="1445828285671294" />
-<meta property="og:type" content="website" />-->
+
+<!-- Site name -->
+<meta itemprop="name" content="<perch:pages id="sitename" type="hidden" />">
+<meta property="og:site_name" content="<perch:pages id="sitename" type="hidden" />" />
+<meta name="twitter:site" content="<perch:pages id="twittername" type="hidden" />" />
+
+<!-- Title -->
+<title><perch:pages id="pagetitle" label="Social Title" /></title>
+<meta property="og:title" content="<perch:pages id="pagetitle" type="hidden" />" />
+<meta name="twitter:title" content="<perch:pages id="pagetitle" type="hidden" />" />
+
+<!-- Description -->
+<meta name="description" itemprop="description" content="<perch:pages id="description" label="Description" type="textarea" size="xs" escape="true" count="chars" />" />
+<meta property="og:description" content="<perch:pages id="description" label="Description" type="textarea" size="xs" escape="true" count="chars" />" />
+<meta name="twitter:description" content="<perch:pages id="description" label="Description" type="textarea" size="xs" escape="true" count="chars" />" />
+
+<!-- URL -->
+<meta property="og:url" content="<perch:pages id="url" type="hidden" />" />
+<meta name="twitter:url" content="<perch:pages id="url" type="hidden" />" />
+
+<!-- Image -->
+<perch:if exists="og_image">
+   <meta itemprop="image" content="<perch:pages id="og_image" label="Image when shared" help="Should be at least 1200x630" type="image" width="1200" />" />
+   <meta property="og:image" content="<perch:pages id="og_image" type="hidden" />" />
+   <meta property="twitter:image" content="<perch:pages id="og_image" type="hidden" />" />
+<perch:else />
+   <meta itemprop="image" content="<perch:pages id="sharing_image" type="hidden" />" />
+   <meta property="og:image" content="<perch:pages id="sharing_image" type="hidden" />" />
+   <meta property="twitter:image" content="<perch:pages id="sharing_image" type="hidden" />" />
+</perch:if>
+
+<!-- Types -->
+<perch:if exists="og_type">
+   <meta property="og:type" content="<perch:pages id="og_type" label="Facebook type" type="select" options="article,book,profile,website,video,music" allowempty="true" default="article"/>" />
+</perch:if>
+<meta name="twitter:card" content="summary" />
+
+<!-- Author -->
+<perch:if exists="fbname">
+   <meta property="article:author" content="<perch:pages id="fbname" type="hidden" />" />
+</perch:if>

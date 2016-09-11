@@ -14,9 +14,27 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-   <title><?= $m_title ?></title>
+
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-   <?php perch_page_attributes(); ?>
+   <?php
+      $domain        = 'http://'.$_SERVER["HTTP_HOST"];
+      $url           = $domain.$_SERVER["REQUEST_URI"];
+      $sitename      = "Andrew R McHugh | UX Designer of New Futures";
+      $twittername   = "@armthethinker";
+      $sharing_image = 'http://andrewrmchugh.rocks/img/andrew-mchugh-lg.jpg';
+      $fbname        = "https://www.facebook.com/arm5629";
+
+      PerchSystem::set_var('sitename',$sitename);
+      PerchSystem::set_var('domain',$domain);
+      PerchSystem::set_var('url',$url);
+      PerchSystem::set_var('sharing_image',$sharing_image);
+      PerchSystem::set_var('twittername',$twittername);
+      PerchSystem::set_var('fbname',$fbname);
+
+      perch_page_attributes(array(
+         'template' => 'seo.html'
+      ));
+   ?>
 
    <?php
       if ($old==true){
