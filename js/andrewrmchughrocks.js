@@ -51,9 +51,7 @@ function setConstrainedImgDimensions(){
    });
 
 }
-
 $(document).ready(function(){
-
    if(is.not.touchDevice()){
       $(function () {
          $('[data-toggle="tooltip"]').tooltip()

@@ -32,10 +32,8 @@
    </footer>
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-   <!--<script type="text/javascript" src="<?php echo $tooty;?>/dist/js/DaseinDesign-v0.2.0.js"></script>-->
    <script type="text/javascript" src="/dist/js/andrewrmchughrocks.min.js"></script>
 	<?php include($path_includes.'/g-analytics.php'); ?>
-	<?php // include($path_includes.'/twitter.php'); ?>
 
 	</body>
 
