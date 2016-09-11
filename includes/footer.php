@@ -18,7 +18,14 @@
                </div>
             </div>
             <div class="col-sm-6 col-sm-pull-6 col-xs-12 copyright">
-               <i class="fa fa-copyright"></i> Andrew R McHugh
+               <div class="media">
+                  <div class="media-left hidden-xs">
+                     <i class="fa fa-copyright"></i>
+                  </div>
+                  <div class="media-body">
+                     <i class="fa fa-copyright hidden-lg hidden-md hidden-sm"></i> <strong>Andrew R McHugh</strong> is a UX designer on a mission to expand human capability through novel interfaces.
+                  </div>
+               </div>
             </div>
          </div>
       </div>
