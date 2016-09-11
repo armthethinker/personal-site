@@ -2268,6 +2268,14 @@ footer .col-sm-6 {
 footer .col-sm-6 a {
   margin-top: -6px;
 }
+footer .copyright {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .copyright {
+    text-align: left;
+  }
+}
 .animated {
   animation-duration: 1.5s;
   animation-fill-mode: both;
@@ -2330,8 +2338,14 @@ h3 {
 .section-projects p.lead {
   font-style: normal;
 }
+.section-bio {
+  margin-bottom: 40px;
+}
 .section-bio h1 {
   margin-bottom: 10px;
+}
+.section-projects h1 {
+  margin-bottom: 40px;
 }
 .header-inline {
   text-transform: uppercase;
