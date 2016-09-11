@@ -54,6 +54,9 @@ function setConstrainedImgDimensions(){
 
 $(document).ready(function(){
 
+      $(function () {
+         $('[data-toggle="tooltip"]').tooltip()
+      })
 
    // Prototyping nav
    $('.nav-top').on('click', '.nav-item', function(){

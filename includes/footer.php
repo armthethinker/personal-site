@@ -4,17 +4,17 @@
          <div class="row">
             <div class="col-sm-6 col-sm-push-6 col-xs-12">
                <div class="connect-links">
-                  <a href="http://www.linkedin.com/pub/andrew-mchugh/48/72b/3ab/"><i class="fa fa-linkedin-square"></i></a>
-                  <a href="https://www.facebook.com/arm5629"><i class="fa fa-facebook"></i></a>
-                  <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter"></i></a>
-                  <a href="http://instagram.com/armthethinker"><i class="fa fa-instagram"></i></a>
-                  <a href="http://codepen.io/armthethinker"><i class="fa fa-codepen"></i></a>
+                  <a href="http://www.linkedin.com/pub/andrew-mchugh/48/72b/3ab/" data-toggle="tooltip" data-placement="top" title="I connect with people professionally"><i class="fa fa-linkedin-square"></i></a>
+                  <a href="https://www.facebook.com/arm5629"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="top" title="I have some friends"></i></a>
+                  <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="top" title="I say short things, usually with links"></i></a>
+                  <a href="http://instagram.com/armthethinker"><i class="fa fa-instagram" data-toggle="tooltip" data-placement="top" title="I take pictures of lives"></i></a>
+                  <a href="http://codepen.io/armthethinker"><i class="fa fa-codepen" data-toggle="tooltip" data-placement="top" title="I share small bits of code"></i></a>
 
-                  <a href="http://github.com/armthethinker"><i class="fa fa-github"></i></a>
-                  <a href="https://soundcloud.com/andrew-r-mchugh"><i class="fa fa-soundcloud"></i></a>
-                  <a href="https://www.youtube.com/user/arm156291"><i class="fa fa-youtube"></i></a>
-                  <a href="http://open.spotify.com/user/arm5629"><i class="fa fa-spotify"></i></a>
-                  <a href="http://medium.com/@armthethinker"><i class="fa fa-medium"></i></a>
+                  <a href="http://github.com/armthethinker"><i class="fa fa-github" data-toggle="tooltip" data-placement="top" title="I create projects that utilize code"></i></a>
+                  <a href="https://soundcloud.com/andrew-r-mchugh"><i class="fa fa-soundcloud" data-toggle="tooltip" data-placement="top" title="I make noises"></i></a>
+                  <a href="https://www.youtube.com/user/arm156291"><i class="fa fa-youtube" data-toggle="tooltip" data-placement="top" title="I share videos, usually of my work"></i></a>
+                  <a href="http://open.spotify.com/user/arm5629"><i class="fa fa-spotify" data-toggle="tooltip" data-placement="top" title="I listen to music"></i></a>
+                  <a href="http://medium.com/@armthethinker"><i class="fa fa-medium" data-toggle="tooltip" data-placement="top" title="I write about design and some people really like it"></i></a>
                </div>
             </div>
             <div class="col-sm-6 col-sm-pull-6 col-xs-12 copyright">
