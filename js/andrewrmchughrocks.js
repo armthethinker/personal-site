@@ -70,6 +70,14 @@ $(document).ready(function(){
          interrupt: true
       });
    });
+   $('.nav-item.active + .nav-projects>a').on('click', function(e){
+      e.preventDefault();
+      window.history.pushState("Projects", "Projects", "#projects");
+      $(window).scrollTo($('#projects'), 600,{
+         interrupt: true,
+         offset: -50
+      });
+   });
 
    // Responsive video resizing
    $(".pd-embed").fitVids({
