@@ -50,6 +50,49 @@ function setConstrainedImgDimensions(){
 
    });
 
+   sideBySides = $('.pd-img-side-by-side');
+   for(i = 0; i < sideBySides.length; i+=2){
+
+      heightG = $(sideBySides[i]).height();
+      widthG  = $(sideBySides[i]).parent().outerWidth();
+
+      spread = Number($(sideBySides[i]).css('margin-right').replace(/px/, ''));
+
+
+      imgL = {
+         el:      $(sideBySides[i]),
+         height:  $(sideBySides[i]).data('height'),
+         width:   $(sideBySides[i]).data('width'),
+         ratio:   $(sideBySides[i]).data('width') / $(sideBySides[i]).data('height')
+      }
+
+      imgR = {
+         el:      $(sideBySides[i + 1]),
+         height:  $(sideBySides[i + 1]).data('height'),
+         width:   $(sideBySides[i + 1]).data('width'),
+         ratio:   $(sideBySides[i + 1]).data('width') / $(sideBySides[i + 1]).data('height')
+      }
+
+
+      widthL = (imgL.ratio * heightG);
+      widthR = (imgR.ratio * heightG);
+
+      dWidth = widthG - widthL - widthR - spread;
+
+      // scalar = 1.0;
+
+      imgL.el.width(widthL + dWidth * imgL.ratio / 2);
+      imgR.el.width(widthR + dWidth * imgR.ratio / 2);
+
+      // heightG = widthL * imgL.height / imgL.width;
+
+      // imgL.el.height(heightG * scalar);
+      // imgR.el.height(heightG * scalar);
+
+      console.log(imgL, imgR, spread, heightG, widthG, dWidth);
+
+   }
+
 }
 $(document).ready(function(){
    if(is.not.touchDevice()){

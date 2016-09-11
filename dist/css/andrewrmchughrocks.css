@@ -3063,7 +3063,6 @@ img,
 .pd-img.pd-img-side-by-side {
   height: 200px;
   float: left;
-  width: 49%;
 }
 @media (min-width: 768px) {
   .pd-img.pd-img-side-by-side {
@@ -3081,7 +3080,7 @@ img,
   }
 }
 .pd-img.pd-img-side-by-side:first-of-type {
-  margin-right: 2%;
+  margin-right: 15px;
 }
 .pd-img.u-pd-img-size-contain {
   background-size: contain;
