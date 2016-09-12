@@ -68,8 +68,20 @@
    <perch:block type="pd_section_embed" label="Embed">
       <div class="row pd-section">
          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <div class="pd-embed"><perch:content type="textarea" id="pd_embed" label="Embed" html="true" size="s" help="Paste embed code."/></div>
-            <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
+            <perch:content type="checkbox" id="pd_embed_hidexs" label="Hide at xs screens" suppress="true"/>
+            <perch:if exists="pd_embed_hidexs">
+               <div class="hidden-xs">
+            <perch:else />
+               <div>
+            </perch:if>
+               <div class="pd-embed"><perch:content type="textarea" id="pd_embed" label="Embed" html="true" size="s" help="Paste embed code."/></div>
+               <div class="pd-img-caption"><perch:content type="textarea" id="pd_img_caption" label="Caption" size="xs" html="true"/></div>
+            </div>
+            <perch:if exists="pd_embed_hidexs">
+               <div class="hidden-lg hidden-md hidden-sm">
+                  <p><perch:content type="textarea" id="pd_embed_alt" label="Alternative entry for xs screens" html="true" size="xs"/></p>
+               </div>
+            </perch:if>
          </div>
       </div>
    </perch:block>
