@@ -185,7 +185,7 @@
       margin-bottom: 30px;
    }
    &.pd-img-contain{
-      .margin-full-at-xs;
+      .center-block;
    }
    &.pd-img-wide{
       // &:before{
@@ -238,10 +238,10 @@
       @media (min-width: @screen-lg-min){
          height: @img-lg-height - 50;
       }
-      &.u-pd-img-size-contain{
-         // Corrects for whitespace above img so that the img aligns with the side text
-         background-position: 50% 0%;
-      }
+      // &.u-pd-img-size-contain{
+      //    // Corrects for whitespace above img so that the img aligns with the side text
+      //    background-position: 50% 0%;
+      // }
    }
    &.pd-img-side-by-side{
       // &:before{
@@ -267,9 +267,9 @@
          right: @grid-gutter-width / 4;
       }
    }
-   &.u-pd-img-size-contain{
-      background-size: contain;
-   }
+   // &.u-pd-img-size-contain{
+   //    background-size: contain;
+   // }
 }
 
 // Pagination
