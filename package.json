@@ -1,14 +1,15 @@
 {
   "name": "andrewrmchughrocks",
-  "gname": "andrewrmchughrocks",
-  "version": "2.0.0",
+  "version": "2.1",
+  "distPrefix": "andrewrmchughrocks-2.1",
+  "homepage": "http://andrewrmchugh.rocks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PLACE.git"
+    "url": "https://github.com/armthethinker/personal-site.git"
   },
-  "url": "PLACE",
+  "url": "http://andrewrmchugh.rocks",
   "description": "andrewrmchughrocks is a personal repository to seed app development.",
-  "author": "Andrew R McHugh, Dasein Design",
+  "author": "Andrew R McHugh",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.2.0",

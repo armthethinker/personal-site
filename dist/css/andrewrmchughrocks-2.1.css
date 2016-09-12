@@ -1,6 +1,6 @@
 /*!
- * andrewrmchughrocks v2.0.0 ()
- * Copyright 2015-2016 Andrew R McHugh, Dasein Design
+ * andrewrmchughrocks v2.1 (http://andrewrmchugh.rocks)
+ * Copyright 2015-2016 Andrew R McHugh
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -2987,15 +2987,9 @@ img,
   margin-bottom: 30px;
 }
 .pd-img.pd-img-contain {
-  margin-left: -15px;
-  margin-right: -15px;
-  width: auto;
-}
-@media (min-width: 768px) {
-  .pd-img.pd-img-contain {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   .pd-img.pd-img-wide {
@@ -3057,9 +3051,6 @@ img,
     height: 490px;
   }
 }
-.pd-img.pd-img-side.u-pd-img-size-contain {
-  background-position: 50% 0%;
-}
 .pd-img.pd-img-side-by-side {
   height: 200px;
   float: left;
@@ -3086,13 +3077,10 @@ img,
 .pd-img.pd-img-side-by-side:nth-of-type(2n + 1) {
   right: 7.5px;
 }
-.pd-img.u-pd-img-size-contain {
-  background-size: contain;
-}
 .pd-paginator {
   margin-top: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px #5386e4 solid;
 }
-/*# sourceMappingURL=dist/css/andrewrmchughrocks.css.map */
+/*# sourceMappingURL=dist/css/andrewrmchughrocks-2.1.css.map */

@@ -1,4 +1,8 @@
 /*!
+ * andrewrmchughrocks v2.1 (http://andrewrmchugh.rocks)
+ * Copyright 2015-2016 Andrew R McHugh
+ */
+/*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under the MIT license
@@ -212,7 +216,7 @@ $(document).ready(function(){
 
    // Responsive video resizing
    $(".pd-embed").fitVids({
-      customSelector: "iframe[src^='https://marvelapp.com']"
+      customSelector: "iframe[src^='https://marvelapp.com']" // InVision doesn't work...
    });
 
    // On load reset the showcase item height
