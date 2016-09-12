@@ -3063,6 +3063,7 @@ img,
 .pd-img.pd-img-side-by-side {
   height: 200px;
   float: left;
+  position: relative;
 }
 @media (min-width: 768px) {
   .pd-img.pd-img-side-by-side {
@@ -3079,8 +3080,11 @@ img,
     height: 390px;
   }
 }
-.pd-img.pd-img-side-by-side:first-of-type {
-  margin-right: 15px;
+.pd-img.pd-img-side-by-side:nth-of-type(2n) {
+  left: 7.5px;
+}
+.pd-img.pd-img-side-by-side:nth-of-type(2n + 1) {
+  right: 7.5px;
 }
 .pd-img.u-pd-img-size-contain {
   background-size: contain;

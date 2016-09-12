@@ -249,6 +249,7 @@
       // }
       height: 200px;
       float: left;
+      position: relative;
       // width: 49%;
       @media (min-width: @screen-sm-min){
          height: @img-sm-height - 100;
@@ -259,8 +260,11 @@
       @media (min-width: @screen-lg-min){
          height: @img-lg-height - 150;
       }
-      &:first-of-type{
-         margin-right: @grid-gutter-width / 2;
+      &:nth-of-type(2n){
+         left: @grid-gutter-width / 4;
+      }
+      &:nth-of-type(2n + 1){
+         right: @grid-gutter-width / 4;
       }
    }
    &.u-pd-img-size-contain{

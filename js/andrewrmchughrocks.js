@@ -54,9 +54,9 @@ function setConstrainedImgDimensions(){
    for(i = 0; i < sideBySides.length; i+=2){
 
       heightG = $(sideBySides[i]).height();
-      widthG  = $(sideBySides[i]).parent().outerWidth();
+      widthG  = $(sideBySides[i]).parent().outerWidth() - 2 * Number($(sideBySides[i]).parent().css('padding-left').replace(/px/, ''));
 
-      spread = Number($(sideBySides[i]).css('margin-right').replace(/px/, ''));
+      // spread = Number($(sideBySides[i]).css('margin-right').replace(/px/, ''));
 
 
       imgL = {
@@ -73,24 +73,29 @@ function setConstrainedImgDimensions(){
          ratio:   $(sideBySides[i + 1]).data('width') / $(sideBySides[i + 1]).data('height')
       }
 
+      imgL.el.height(imgL.height);
+      imgR.el.height(imgR.height);
 
-      widthL = (imgL.ratio * heightG);
-      widthR = (imgR.ratio * heightG);
+      imgL.el.width(imgL.width);
+      imgR.el.width(imgR.width);
 
-      dWidth = widthG - widthL - widthR - spread;
+      imgRatio = imgL.width / imgR.width;
 
-      // scalar = 1.0;
+      imgR.el.height(imgL.height);
+      imgR.el.width(imgR.width * (imgL.height / imgR.height));
 
-      imgL.el.width(widthL + dWidth * imgL.ratio / 2);
-      imgR.el.width(widthR + dWidth * imgR.ratio / 2);
 
-      // heightG = widthL * imgL.height / imgL.width;
+      widthRatio = widthG / (imgL.el.width() + imgR.el.width());
 
-      // imgL.el.height(heightG * scalar);
-      // imgR.el.height(heightG * scalar);
+      oldRWidth = imgR.el.width();
 
-      console.log(imgL, imgR, spread, heightG, widthG, dWidth);
+      imgL.el.width(imgL.el.width() * widthRatio);
+      imgR.el.width(imgR.el.width() * widthRatio);
 
+      heightScalar = oldRWidth / imgR.el.width();
+
+      imgL.el.height(imgL.el.height() / heightScalar);
+      imgR.el.height(imgR.el.height() / heightScalar);
    }
 
 }
