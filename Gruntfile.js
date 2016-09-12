@@ -5,20 +5,19 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json'),
 
       banner: '/*!\n' +
-      ' * <%= pkg.gname %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+      ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
       ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
       ' */\n',
       concat: {
          options: {
-            separator: '\n'
+            separator: '\n',
+            banner: '<%= banner %>',
          },
          css: {
-            src: ['css/built-bootstrap+<%= pkg.gname %>.css',
-                  //'bower_components/fontawesome/css/font-awesome.min.css',
-                  //'bower_components/animate.css/animate.min.css',
+            src: ['css/built-bootstrap+<%= pkg.name %>.css',
                   //'bower_components/anchor-js/anchor.css'
                   ],
-            dest: 'dist/css/<%= pkg.gname %>.css'
+            dest: 'dist/css/<%= pkg.distPrefix %>.css'
          },
          js: {
             src: [//'bower_components/jquery/dist/jquery.min.js',
@@ -27,26 +26,22 @@ module.exports = function(grunt) {
                   // 'bower_components/particles.js/particles.min.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                   'bower_components/jquery.fitvids/jquery.fitvids.js',
-                  'js/<%= pkg.gname %>.js'],
-            dest: 'dist/js/<%= pkg.gname %>.js'
+                  'js/<%= pkg.name %>.js'],
+            dest: 'dist/js/<%= pkg.distPrefix %>.js'
          }
       },
       uglify: {
          dist: {
             files: {
-               'dist/js/<%= pkg.gname %>.min.js': ['dist/js/<%= pkg.gname %>.js']
+               'dist/js/<%= pkg.distPrefix %>.min.js': ['dist/js/<%= pkg.distPrefix %>.js']
             }
          }
       },
       cssmin: {
          dist: {
-            files: [{
-               expand: true,
-               cwd: 'dist/css/',
-               src: ['*.css',  '!*.min.css'],
-               dest: 'dist/css/',
-               ext: '.min.css'
-            }]
+            files: {
+               'dist/css/<%= pkg.distPrefix %>.min.css': ['dist/css/<%= pkg.distPrefix %>.css']
+            }
          }
       },
       copy: {
@@ -76,13 +71,12 @@ module.exports = function(grunt) {
          // },
          dev: {
             options: {
-               banner: '<%= banner %>',
                stripBanners: false,
                sourceMap: true,
-               sourceMapFilename: 'dist/css/<%= pkg.gname %>.css.map'
+               sourceMapFilename: 'dist/css/<%= pkg.distPrefix %>.css.map'
             },
             src: ['css/less/build.less'],
-            dest: 'css/built-bootstrap+<%= pkg.gname %>.css'
+            dest: 'css/built-bootstrap+<%= pkg.name %>.css'
          }
       },
       watch: {

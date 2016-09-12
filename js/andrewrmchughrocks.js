@@ -129,7 +129,7 @@ $(document).ready(function(){
 
    // Responsive video resizing
    $(".pd-embed").fitVids({
-      customSelector: "iframe[src^='https://marvelapp.com']"
+      customSelector: "iframe[src^='https://marvelapp.com']" // InVision doesn't work...
    });
 
    // On load reset the showcase item height
