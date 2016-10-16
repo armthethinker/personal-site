@@ -8,8 +8,8 @@
                   <a href="https://www.facebook.com/arm5629"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="top" title="I have some friends"></i></a>
                   <a href="http://twitter.com/armthethinker"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="top" title="I say short things, usually with links"></i></a>
                   <a href="http://instagram.com/armthethinker"><i class="fa fa-instagram" data-toggle="tooltip" data-placement="top" title="I take pictures of lives"></i></a>
+                  <a href="http://pinterest.com/armthethinker"><i class="fa fa-pinterest" data-toggle="tooltip" data-placement="top" title="I pin things of interest"></i></a>
                   <a href="http://codepen.io/armthethinker"><i class="fa fa-codepen" data-toggle="tooltip" data-placement="top" title="I share small bits of code"></i></a>
-
                   <a href="http://github.com/armthethinker"><i class="fa fa-github" data-toggle="tooltip" data-placement="top" title="I create projects that utilize code"></i></a>
                   <a href="https://soundcloud.com/andrew-r-mchugh"><i class="fa fa-soundcloud" data-toggle="tooltip" data-placement="top" title="I make noises"></i></a>
                   <a href="https://www.youtube.com/user/arm156291"><i class="fa fa-youtube" data-toggle="tooltip" data-placement="top" title="I share videos, usually of my work"></i></a>
