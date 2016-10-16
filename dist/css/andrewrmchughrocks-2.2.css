@@ -2967,6 +2967,10 @@ img,
     margin-right: 0;
   }
 }
+.pd-section .pd-embed.pd-framer iframe {
+  zoom: 1.3;
+  border: none;
+}
 .pd-img {
   width: 100%;
   background-size: cover;
