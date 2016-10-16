@@ -1,6 +1,6 @@
 {
   "name": "andrewrmchughrocks",
-  "version": "2.1",
+  "version": "2.2",
   "authors": [
     "Andrew R McHugh <andrew@daseindesign.co>"
   ],
@@ -17,10 +17,10 @@
     "bootstrap": "~3.3.6",
     "fontawesome": "~4.3.0",
     "jquery.scrollTo": "~2.1.0",
-    "anchor-js": "~0.4.0",
     "jquery": "^2.2.0",
     "jquery.fitvids": "fitvids#^1.1.0",
     "particles.js": "^2.0.0",
-    "is_js": "isjs#^0.8.0"
+    "is_js": "isjs#^0.8.0",
+    "anchor-js": "^3.2.2"
   }
 }

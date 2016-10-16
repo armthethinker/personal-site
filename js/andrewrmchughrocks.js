@@ -145,6 +145,12 @@ $(document).ready(function(){
       setConstrainedImgDimensions();
    });
 
+   anchors.options = {
+      placement: 'left',
+      icon: '#'
+   };
+   anchors.add('.pd-section h2, .pd-section h3');
+
    // tkFinder();
 });
 

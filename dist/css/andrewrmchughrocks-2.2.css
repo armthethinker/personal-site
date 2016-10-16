@@ -1,5 +1,5 @@
 /*!
- * andrewrmchughrocks v2.1 (http://andrewrmchugh.rocks)
+ * andrewrmchughrocks v2.2 (http://andrewrmchugh.rocks)
  * Copyright 2015-2016 Andrew R McHugh
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -291,7 +291,6 @@ a:focus {
   text-decoration: none;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1402,7 +1401,6 @@ address {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2471,6 +2469,14 @@ footer .copyright {
   display: block;
   vertical-align: bottom;
 }
+.anchorjs-link {
+  transition: all .25s linear;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  border-bottom: none;
+}
 h1 + h3,
 h2 + h3 {
   margin-top: 0px;
@@ -3083,4 +3089,4 @@ img,
   padding-bottom: 10px;
   border-top: 1px #5386e4 solid;
 }
-/*# sourceMappingURL=dist/css/andrewrmchughrocks-2.1.css.map */
+/*# sourceMappingURL=dist/css/andrewrmchughrocks-2.2.css.map */

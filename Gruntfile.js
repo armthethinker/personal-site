@@ -14,8 +14,7 @@ module.exports = function(grunt) {
             banner: '<%= banner %>',
          },
          css: {
-            src: ['css/built-bootstrap+<%= pkg.name %>.css',
-                  //'bower_components/anchor-js/anchor.css'
+            src: ['css/built-bootstrap+<%= pkg.name %>.css'
                   ],
             dest: 'dist/css/<%= pkg.distPrefix %>.css'
          },
@@ -26,6 +25,7 @@ module.exports = function(grunt) {
                   // 'bower_components/particles.js/particles.min.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                   'bower_components/jquery.fitvids/jquery.fitvids.js',
+                  'bower_components/anchor-js/anchor.js',
                   'js/<%= pkg.name %>.js'],
             dest: 'dist/js/<%= pkg.distPrefix %>.js'
          }
