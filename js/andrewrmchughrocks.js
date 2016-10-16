@@ -121,7 +121,7 @@ $(document).ready(function(){
    $('.nav-item.active + .nav-projects>a').on('click', function(e){
       e.preventDefault();
       window.history.pushState("Projects", "Projects", "#projects");
-      $(window).scrollTo($('#projects'), 600,{
+      $(window).scrollTo($('#projects'), 600, {
          interrupt: true,
          offset: -50
       });
@@ -154,7 +154,17 @@ $(document).ready(function(){
    $('.pd-header').after('<div class="row pd-section"><div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12"><div id="table-of-contents"></div></div></div>')
    generateTableOfContents(anchors.elements);
 
-   anchors.add('.pd-section h3')
+   anchors.add('.pd-section h3');
+
+   $('#table-of-contents a').on('click', function(e){
+      e.preventDefault();
+      newLocation = $(this);
+      window.history.pushState(newLocation.text(), newLocation.text(), newLocation.attr('href'));
+      $(window).scrollTo($(newLocation.attr('href')), 600, {
+         interrupt: true,
+         offset: -50
+      });
+   });
    // tkFinder();
 });
 
