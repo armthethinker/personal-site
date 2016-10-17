@@ -152,7 +152,9 @@ $(document).ready(function(){
    anchors.add('.pd-section h2');
 
    $('.pd-header').after('<div class="row pd-section"><div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12"><div id="table-of-contents"></div></div></div>')
-   generateTableOfContents(anchors.elements);
+
+   if ($('#table-of-contents')[0] != undefined)
+      generateTableOfContents(anchors.elements);
 
    anchors.add('.pd-section h3');
 
@@ -171,25 +173,25 @@ $(document).ready(function(){
 // External code for generating a simple dynamic Table of Contents
 function generateTableOfContents(els) {
    var anchoredElText,
-      anchoredElHref,
-      list = document.createElement('OL');
+       anchoredElHref,
+       list = document.createElement('OL');
 
-  document.getElementById('table-of-contents').appendChild(list);
+   document.getElementById('table-of-contents').appendChild(list);
 
    for (var i = 0; i < els.length; i++) {
       anchoredElText = els[i].textContent;
       anchoredElHref = els[i].querySelector('.anchorjs-link').getAttribute('href');
       addNavItem(list, anchoredElHref, anchoredElText);
-  }
-  function addNavItem(ul, href, text) {
-     var listItem = document.createElement('LI'),
-         anchorItem = document.createElement('A'),
-         textNode = document.createTextNode(text);
+   }
+   function addNavItem(ul, href, text) {
+      var listItem = document.createElement('LI'),
+          anchorItem = document.createElement('A'),
+          textNode = document.createTextNode(text);
 
-     anchorItem.href = href;
-     list.appendChild(listItem);
-     listItem.appendChild(anchorItem);
-     anchorItem.appendChild(textNode);
+      anchorItem.href = href;
+      list.appendChild(listItem);
+      listItem.appendChild(anchorItem);
+      anchorItem.appendChild(textNode);
    }
 }
 
