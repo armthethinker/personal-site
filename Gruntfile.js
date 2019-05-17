@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
       banner: '/*!\n' +
       ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-      ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+      ' * Copyright 2019-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
       ' */\n',
       concat: {
          options: {
@@ -150,7 +150,7 @@ module.exports = function(grunt) {
       },
       autoprefixer: {
         options: {
-            browsers: ['> 5%', 'not ie <= 8']
+            browsers: ['> 5%']
          },
          // prefix all files
          normal: {
