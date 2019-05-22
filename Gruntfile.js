@@ -20,7 +20,7 @@ module.exports = function(grunt) {
          },
          js: {
             src: [//'bower_components/jquery/dist/jquery.min.js',
-                  'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                  'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
                   'bower_components/is_js/is.min.js',
                   // 'bower_components/particles.js/particles.min.js',
                   'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
@@ -61,24 +61,24 @@ module.exports = function(grunt) {
          cleanup: ['dist', 'bower_components', 'node_modules', 'includes/ui/README.html'],
          preBuild: ['css/built-*']
       },
-      less: {
-         // mixin: {
-         //    options: {
-         //       sourceMap: false,
-         //    },
-         //    src: ['css/less/components/mixins/utility-belt.less'],
-         //    dest: 'css/less/components/built-utility-belt.less'
-         // },
-         dev: {
-            options: {
-               stripBanners: false,
-               sourceMap: true,
-               sourceMapFilename: 'dist/css/<%= pkg.distPrefix %>.css.map'
-            },
-            src: ['css/less/build.less'],
-            dest: 'css/built-bootstrap+<%= pkg.name %>.css'
-         }
-      },
+      // less: {
+      //    // mixin: {
+      //    //    options: {
+      //    //       sourceMap: false,
+      //    //    },
+      //    //    src: ['css/less/components/mixins/utility-belt.less'],
+      //    //    dest: 'css/less/components/built-utility-belt.less'
+      //    // },
+      //    dev: {
+      //       options: {
+      //          stripBanners: false,
+      //          sourceMap: true,
+      //          sourceMapFilename: 'dist/css/<%= pkg.distPrefix %>.css.map'
+      //       },
+      //       src: ['css/less/build.less'],
+      //       dest: 'css/built-bootstrap+<%= pkg.name %>.css'
+      //    }
+      // },
       watch: {
          options: {
             livereload: true
@@ -181,7 +181,7 @@ module.exports = function(grunt) {
    });
 
    grunt.loadNpmTasks('grunt-contrib-uglify');
-   grunt.loadNpmTasks('grunt-contrib-less');
+   // grunt.loadNpmTasks('grunt-contrib-less');
    grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-contrib-cssmin');
    grunt.loadNpmTasks('grunt-contrib-concat');
@@ -199,13 +199,13 @@ module.exports = function(grunt) {
    grunt.registerTask('setup', ['copy:lessvar', 'full']);
 
    // Slim task runners
-   grunt.registerTask('default', ['less:dev', 'concat:js', 'clean:preBuild', 'watch']);
+   // grunt.registerTask('default', ['less:dev', 'concat:js', 'clean:preBuild', 'watch']);
+   grunt.registerTask('default', ['concat:js', 'clean:preBuild', 'watch']);
    grunt.registerTask('css', ['less:dev', 'concat:css', 'replace', 'autoprefixer', 'clean:preBuild']);
    grunt.registerTask('js', ['concat:js']);
 
    // Production ready task runners
-   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
-   grunt.registerTask('fullw', ['clean:dist', 'copy-stack', 'less:dev', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild', 'watch:full']);
+   grunt.registerTask('full', ['clean:dist', 'copy-stack', 'concat', 'replace', 'autoprefixer', 'cssmin', 'uglify', 'md2html', 'clean:preBuild']);
    grunt.registerTask('deploy', ['sftp-deploy:deploy']);
    grunt.registerTask('deployjs', ['sftp-deploy:js']);
 
