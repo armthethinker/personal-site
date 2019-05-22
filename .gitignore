@@ -25,3 +25,6 @@ Thumbs.db
 .ftppass
 .sftppass
 error_log
+_site
+.sass-cache
+.jekyll-metadata
