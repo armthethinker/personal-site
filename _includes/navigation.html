@@ -1,0 +1,12 @@
+<!-- Nav -->
+<div class="row nav-core justify-content-center align-content-center">
+   <div class="col">
+      <ul class="nav justify-content-center nav-fill">
+         {% for item in site.data.navigation %}
+         <li class="nav-item">
+            <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+         </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>

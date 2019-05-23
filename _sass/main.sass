@@ -1,0 +1,512 @@
+$break-sm: 576px
+$break-md: 768px
+$break-lg: 992px
+$break-xl: 1200px
+
+$perspective: 1300px
+
+$palette-timeline-bg: #161618
+
+$border-radius: 16px
+
+//                   https://coolors.co/161618-484349-ddd6f3-faaca8-f7f7ff
+// extra saturation: https://coolors.co/161618-484349-4c1af2-f94c43-f7f7ff
+html
+   overflow-x: hidden
+body
+   color: #484349
+
+h1
+   color: #f94c43
+a
+   color: #f94c43
+   // color: #f7f7ff
+   // border-bottom: #f94c43 solid 3px
+   &:hover
+      color: #f94c43
+.header
+   position: relative
+   height: 500px
+   background-color: $palette-timeline-bg
+   // overflow: hidden
+   .header-name
+      width: 800px
+      position: absolute
+      color: #f7f7ff
+      text-align: center
+      transform: translate(-50%,-50%)
+      top: 50%
+      left: 50%
+      // text-shadow: 0 0 24px rgba(0,0,0,.2)
+      font-size: larger
+   .header-bg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: 50% 40%
+   .circ
+      background-color: black
+      position: absolute
+      transform: translate(-50%,-50%)
+      border-radius: 100%
+      object-fit: cover
+      object-position: 50% 30%
+      box-shadow: 0 0 32px rgba(22,22,24,.5), 0 0 64px rgba(22,22,24,.3)
+      // border: 16px $palette-timeline-bg solid
+      height: 200px
+      width: 200px
+   .circ1
+      background-color: black
+      top: 10%
+      left: 10%
+      object-position: 20% 0
+   .circ2
+      background-color: black
+      top: 30%
+      left: 25%
+   .circ3
+      background-color: black
+      top: 40%
+      left: 40%
+   .circ4
+      background-color: black
+      top: 45%
+      left: 50%
+   .circ5
+      background-color: black
+      top: 40%
+      left: 60%
+   .circ6
+      background-color: black
+      top: 30%
+      left: 75%
+   .circ7
+      background-color: black
+      top: 10%
+      left: 90%
+
+
+.timeline
+   background-color: $palette-timeline-bg
+   color: #ececee
+   // font-weight: 800
+   font-size: 16pt
+   // padding-top: 72px
+   strong
+      color: #f7f7ff
+
+   &.timeline-transition
+      background-image: linear-gradient(180deg, $palette-timeline-bg 80%, #28203B 84%, #4F4760 88%, #A9A0C1 94%, #DDD6F3 100%)
+      padding-bottom: 72px
+      // margin-left: -15px
+      // margin-right: -15px
+
+
+   .timeline-entry
+      margin-bottom: 72px
+
+      >.date
+         opacity: .3
+         text-transform: uppercase // TK TODO
+         font-weight: 800
+         @media (min-width: $break-sm)
+            text-align: right
+
+.selected-projects
+   background-color: #FAACA8
+   background-image: linear-gradient(to bottom, #DDD6F3 0%, #FAACA8 100%)
+
+body
+   overflow-x: hidden
+   font-family: 'Poppins'
+   h1,
+   h2,
+   h3,
+   h4,
+   strong
+      // color: red
+      font-weight: 600
+      // font-family: 'Josefin Sans'
+      // font-family: 'Karla'
+   background-color: transparent
+
+.container
+
+   @media (min-width: $break-lg)
+      padding-left:  80px
+      padding-right: 80px
+   @media (min-width: $break-lg + 80px * 2)
+      padding-left:  15px
+      padding-right: 15px
+   @media (min-width: $break-xl)
+      padding-left:  80px
+      padding-right: 80px
+   @media (min-width: $break-xl + 80px * 2)
+      padding-left:  15px
+      padding-right: 15px
+   // @media (min-width: $break-xl)
+   //    max-width: 1000px
+.project-card
+   box-shadow: 0 8px 16px rgba(0,0,0,.3)
+   margin: 60px auto
+   padding: 40px 40px 40px
+   position: relative
+   transform-style: preserve-3d
+   perspective: $perspective
+   transition: box-shadow 2s
+   border-radius: 16px
+
+   @media (min-width: $break-md)
+      padding: 64px 64px 54px
+
+   @media (min-width: $break-lg)
+      padding: 64px 64px 24px
+
+   &.b-o-w
+      background-color: white
+
+   h3
+      font-size: 1.3rem
+      margin-bottom: 1.6rem
+   img.hero
+      object-fit: cover
+      object-position: 50% 30%
+      height: 300px
+      width: calc(100% + 2 * 40px)
+      left: -40px
+      transition: transform .5s, box-shadow .5s, border-radius .5s
+      box-shadow: 0 16px 32px rgba(0,0,0,0)
+      position: relative
+
+      @media (min-width: $break-md)
+         left: -64px
+         width: calc(100% + 2 * 64px)
+
+
+      @media (min-width: $break-lg)
+         left: auto
+         right: auto
+         position: relative
+         width: calc(100% + 64px)
+         margin-top: -64px
+         margin-right: -64px
+         height: 620px
+         // top: -64px
+
+      @media (min-width: $break-xl)
+         height: 500px
+
+   .thumb-container
+      height: 72px
+      width: calc(100% + 32px)
+      position: relative
+      top: -32px
+      left: -16px
+      right: -16px
+
+      @media (min-width: $break-sm)
+         height: 96px
+      @media (min-width: $break-md)
+         height: 112px
+      @media (min-width: $break-lg)
+         position: absolute
+         top: -64px - 32px
+         left: auto
+         right: -64px - 32px
+         height: 144px*3 + 32px*2
+         width: 144px
+
+
+      img.thumb
+         object-fit: cover
+         object-position: 50% 50%
+         height: 80px
+         width: 80px
+         border-radius: 8px
+         box-shadow: 0 8px 16px rgba(0,0,0,.2)
+         transition: transform .5s, box-shadow .5s
+
+         @media (min-width: $break-sm)
+            margin-bottom: 32px
+            height: 104px
+            width: 104px
+
+         @media (min-width: $break-md)
+            margin-bottom: 32px
+            height: 128px
+            width: 128px
+
+         @media (min-width: $break-lg)
+            height: 144px
+            width: 144px
+
+
+   .btn-view-project
+      padding-top: 1rem
+      padding-bottom: 1rem
+      border-radius: 50px
+      box-shadow: 0 8px 16px rgba(0,0,0,.3)
+   .project-description
+      transition: transform .5s
+
+   @media (min-width: $break-lg)
+      .project-description
+         bottom: 0
+      p
+         margin-bottom: 0
+   .project-meta
+      padding: 0 0 36px
+      transition: transform .5s
+      @media (min-width: $break-lg)
+         padding: 24px 0
+      p
+         margin-bottom: 0
+   &:hover
+      box-shadow: 0 16px 40px rgba(0,0,0,.15)
+      img.hero
+         transform: translateZ(32px)
+         box-shadow: 0 16px 32px rgba(0,0,0,.1)
+         border-radius: 8px
+      img.thumb
+         transform: translateZ(54px)
+         box-shadow: 0 16px 32px rgba(0,0,0,.1)
+         @media (min-width: $break-lg)
+            transform: translateZ(54px) rotateY(-15deg)
+      .project-description
+         transform: translateZ(24px)
+      .project-meta
+         transform: translateZ(24px)
+      .btn-view-project
+         transform: translateZ(32px)
+
+
+$palette-echo: #4054B2
+$palette-hv: #C80D59
+$palette-morals: #544C51
+$palette-whatif: #f4973a
+
+.btn
+   &.shade-echo
+      color: $palette-echo
+      background-color: lighten($palette-echo, 45%)
+      border-color: $palette-echo
+      box-shadow: 0 8px 16px rgba($palette-echo, .1) !important
+      transition: background-color .2s, box-shadow .2s, transform .5s
+      &:hover,
+      &:active
+         background-color: lighten($palette-echo, 38%)
+         box-shadow: 0 10px 24px rgba($palette-echo, .2) !important
+   &.shade-hv
+      color: $palette-hv
+      background-color: lighten($palette-hv, 45%)
+      border-color: $palette-hv
+      box-shadow: 0 8px 16px rgba($palette-hv, .1) !important
+      transition: background-color .2s, box-shadow .2s, transform .5s
+      &:hover,
+      &:active
+         background-color: lighten($palette-hv, 38%)
+         box-shadow: 0 10px 24px rgba($palette-hv, .2) !important
+   &.shade-morals
+      color: $palette-morals
+      background-color: lighten($palette-morals, 45%)
+      border-color: $palette-morals
+      box-shadow: 0 8px 16px rgba($palette-morals, .1) !important
+      transition: background-color .2s, box-shadow .2s, transform .5s
+      &:hover,
+      &:active
+         background-color: lighten($palette-morals, 38%)
+         box-shadow: 0 10px 24px rgba($palette-morals, .2) !important
+   &.shade-whatif
+      color: $palette-whatif
+      background-color: lighten($palette-whatif, 35%)
+      border-color: $palette-whatif
+      box-shadow: 0 8px 16px rgba($palette-whatif, .1) !important
+      transition: background-color .2s, box-shadow .2s, transform .5s
+      &:hover,
+      &:active
+         background-color: lighten($palette-whatif, 38%)
+         box-shadow: 0 10px 24px rgba($palette-whatif, .2) !important
+   &.btn-timeline
+      box-sizing: border-box
+      background: linear-gradient($palette-timeline-bg, $palette-timeline-bg), linear-gradient(30deg, #AC32B4 30%, #4579E7 50%, #DD7962 85%)
+      border: 12px solid transparent
+      background-repeat: no-repeat
+      background-origin: padding-box, border-box
+      border-radius: 28px
+      position: relative
+      margin-top: 24px
+      margin-bottom: 24px
+      color: white
+      &:before
+         content: ""
+         position: absolute
+         top: -7px
+         bottom: -8px
+         left: -7px
+         right: -7px
+         border: 12px solid $palette-timeline-bg
+         border-radius: 27px
+
+
+
+@media (min-width: $break-lg)
+   .project-card.left-hand
+      > .row
+         flex-direction: row-reverse !important
+      img.hero
+         margin-right: 0
+         margin-left: -64px
+      .thumb-container
+         right: unset
+         left: -96px
+      &:hover
+         img.thumb
+            transform: translateZ(54px) rotateY(15deg)
+.nav-core
+   background-color: $palette-timeline-bg
+   padding: 24px
+   font-weight: 900
+   a
+      color: rgba(255,255,255,.3)
+   a.active
+      color: white
+   a:hover:not(.active)
+      color: rgba(255,255,255,.5)
+.header-hero
+   margin-top: 24px
+   margin-bottom: 48px !important
+   @media (min-width: $break-sm)
+      margin-top: 72px
+      margin-bottom: 24px !important
+.circ-inline
+   height: 50px
+   width: 50px
+   border-radius: 50%
+   object-fit: cover
+   @media (min-width: $break-sm)
+      height: 60px
+      width: 60px
+   @media (min-width: $break-md)
+      height: 80px
+      width: 80px
+.circ-flex
+   max-width: 100%
+   border-radius: 50%
+   object-fit: cover
+.footer
+   background-color: #faaca8
+   padding-top: 32px
+   padding-bottom: 80px
+
+
+img
+   box-shadow: 0 24px 56px rgba(0,0,0,.2)
+   &.img-fluid.rounded
+      border-radius: $border-radius !important
+   &.cover
+      object-fit: cover
+   &.contain
+      object-fit: contain
+
+
+.card
+   margin-bottom: 24px
+   @media (min-width: $break-sm)
+      min-width: 200px
+   img
+      box-shadow: none
+.p-img-container
+   margin-bottom: 16px
+   img
+      margin-bottom: 8px
+.p-img-caption
+   font-size: 80%
+   opacity: .7
+.page-header
+   .card
+      margin-top: 40px
+      box-shadow: 0 24px 48px rgba(0,0,0,.2) !important
+      // border-radius: 0 0 $border-radius $border-radius !important
+      // background-color: red
+      img.card-img
+         border-radius: $border-radius $border-radius 0 0
+         height: 100%
+         object-fit: cover
+         @media (min-width: $break-lg)
+            border-radius: $border-radius 0 0 $border-radius
+      .card-text
+         margin-bottom: 16px
+      .card-aside
+         font-size: 80%
+.page-body
+   .card-body
+      font-size: 80%
+      opacity: .7
+// .page-header
+//    width: calc(100% + 30px)
+//    margin-left: -15px
+.p-sec
+   margin-bottom: 40px
+   > .img-fluid
+      margin-left: -15px
+      max-width: calc(100% + 30px)
+   .card
+      border: none
+      border-radius: $border-radius
+      box-shadow: 0 16px 32px rgba(0,0,0,.1)
+      img
+         border-radius: $border-radius $border-radius 0 0
+   blockquote
+      font-size: 140%
+      font-weight: 100
+      border-left: 2px solid blue
+      padding: 24px 0 24px 24px
+      div
+         padding-top: 16px
+      // font-style: italic
+
+// .container-fluid.theme-dark
+//    background-color: #101020
+//    color: #eeeeee
+.page-header
+   .nav-main
+      border-bottom: solid 1px black
+      margin-bottom: 40px
+   .nav
+      margin-left: -15px
+      margin-right: -15px
+   .jumbotron
+      position: relative
+   .jumbotron-bg
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: rgba(250,200,250,.9)
+
+   .jbg-1
+      opacity: .9
+      background-color: #8EC5FC
+      background-image: linear-gradient(115deg, #8EC5FC 0%, #E0C3FC 100%)
+   .jbg-2
+      background-color: #FBDA47
+      // opacity: .8
+   .jumbotron
+      margin-bottom: 80px
+      img.img-bottom
+         position: relative
+         bottom: -64px
+      video.video-bottom
+         bottom: -64px
+      .jumbotron-video-gradient
+         height: 48px
+         width: 100%
+         position: absolute
+         bottom: 0
+         background-image: linear-gradient(0deg, rgba(251, 218, 71, 1) 0%, rgba(251, 218, 71, 0) 100%)

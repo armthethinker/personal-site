@@ -1,0 +1,8 @@
+- name: Bio
+  link: /
+- name: Projects
+  link: /#selected-projects
+- name: CV
+  link: /#CV
+- name: Book
+  link: /#Book
