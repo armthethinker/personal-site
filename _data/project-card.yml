@@ -1,0 +1,80 @@
+- title: Samsung
+  emoji: 🤓
+  subtitle: Spatial computing & magic glasses
+  description: Just about all of my work is under NDA, so here I can talk about the kinds of things I did, but not the actual content. I can also share some of my personal 3D work.
+  role: Senior Designer
+  date: February 2017 - Now
+  whileAt: Samsung yo
+  withWho: Samsung Research America, Mobile Platform Solutions Lab, XR Design Group (XRDG)
+  imgHero:
+  imgThumb1:
+  imgThumb1Position:
+  imgThumb2:
+  imgThumb2Position:
+  imgThumb3:
+  imgThumb3Position:
+  left: true
+- title: Echo
+  emoji: 💸
+  subtitle: Transparent consumer banking in an opaque market
+  description: We created a transparent consumer banking application that utilizes learning and prediction to provide better service. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a banking software company. Echo lets you master your finances.
+  role: Project Manager, Prototyping Lead, UX Designer
+  date: January 2016 to December 2016
+  whileAt: M-ITI / Carnegie Mellon University
+  withWho: Jae-Won Kim, Andrew Novotny, Joel Rodrigues
+  imgHero: http://andrewrmchugh.rocks/perch/resources/mchugh-portfolio-hero-2.jpg
+  imgThumb1: http://andrewrmchugh.rocks/perch/resources/port-1.3-additional-3.png
+  imgThumb1Position: 50% 10%
+  imgThumb2: http://andrewrmchugh.rocks/perch/resources/16-09-22-elementary-16.jpg
+  imgThumb2Position: 45% 100%
+  imgThumb3: http://andrewrmchugh.rocks/perch/resources/2.1-add-goal.png
+  imgThumb3Position: 50% 0
+  left: false
+- title: Humane Virtuality
+  emoji: 😎
+  subtitle: Researching the future of VR UX in week-long sprints
+  description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work. I shared weekly journals of one to two week long sprints — totaling six experiments. Case studies are being published now.
+  role: UX Designer
+  date: June - August 2016
+  whileAt: Over the summer during my master’s degree at CMU/M-ITI
+  withWho: Myself
+  imgHero: http://andrewrmchugh.rocks/perch/resources/00-demo-1.gif
+  imgThumb1: http://andrewrmchugh.rocks/perch/resources/ex11-animate-medium.gif
+  imgThumb1Position: 50% 50%
+  imgThumb2: http://andrewrmchugh.rocks/perch/resources/ex-7-1.gif
+  imgThumb2Position: 50% 50%
+  imgThumb3: http://andrewrmchugh.rocks/perch/resources/hero-10.gif
+  imgThumb3Position: 50% 50%
+  left: false
+- title: Moral Decisions & Haptics in VR
+  emoji: 🚋
+  subtitle: An exploration of the trolley problem
+  description: Moral questions are often posed in writing or conversation. We created a virtual environment to test an isomorph of the Trolley Problem. Using VR, we were able to situate participants in a realistic scenario whereas traditional thought experiments are tested through text or conversation. We found that participants who have haptic feedback are less likely to kill one person — in order to save four — than their non-haptic counterparts.
+  role: UX & Research Methods Designer
+  date: October - December 2015
+  whileAt: Carnegie Mellon Human-Computer Interaction Institute, Research Issues in Game Development
+  withWho: Ivan Wang, Maddie Duque, Swetha Kannan
+  imgHero: http://andrewrmchugh.rocks/perch/resources/cover-virtual-trolley-3.jpg
+  imgThumb1: http://andrewrmchugh.rocks/perch/resources/2.jpg
+  imgThumb1Position: 20% 50%
+  imgThumb2: http://andrewrmchugh.rocks/perch/resources/4.jpg
+  imgThumb2Position: 30% 50%
+  imgThumb3: http://andrewrmchugh.rocks/perch/resources/screen-shot-2016-01-14-at-2.34.39-pm.png
+  imgThumb3Position: 50% 50%
+  left: false
+- title: What If…? Conference & Book
+  emoji: 🤔
+  subtitle: Active curiosity to the max
+  description: In 2010, I cofounded a conference that used active curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, a makerspace, and a book. I left the company in June 2014 to pursue graduate school.
+  role: Cofounder & Chief Curiosity Curator
+  date: November 2010 - June 2014
+  whileAt: Matt Murrie (cofounder), and many others along the way
+  withWho:
+  imgHero: http://andrewrmchugh.rocks/perch/resources/image392.jpg
+  imgThumb1: http://andrewrmchugh.rocks/perch/resources/image264.jpg
+  imgThumb1Position: 50% 50%
+  imgThumb2: http://andrewrmchugh.rocks/perch/resources/image139.jpg
+  imgThumb2Position: 50% 50%
+  imgThumb3: http://andrewrmchugh.rocks/perch/resources/image333.jpg
+  imgThumb3Position: 50% 50%
+  left: false

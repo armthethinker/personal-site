@@ -52,7 +52,13 @@ title: Home
 <div class="row justify-content-center timeline timeline-transition collapse collapse-timeline">
    <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
       {% for item in site.data.timeline-entry %}
-         {% include timeline-entry.html date=item.date emoji=item.emoji description1=item.description1 description2=item.description2 %}
+         {% include
+            timeline-entry.html
+            date=item.date
+            emoji=item.emoji
+            description1=item.description1
+            description2=item.description2
+         %}
       {% endfor %}
    </div>
 </div>
@@ -60,178 +66,26 @@ title: Home
 <div class="row selected-projects justify-content-center pt-4">
    <div class="col-12 col-sm-10 col-xl-8">
       <h1 class="text-center mt-3 pt-3">Selected projects</h1>
-      <div class=' project-card b-o-w'>
-         <div class='row'>
-            <div class='col-12 col-lg-4 d-flex align-items-end'>
-               <div class='project-description'>
-                  <h2>Echo 💸</h2>
-                  <h3>Transparent consumer banking in an opaque market</h3>
-                  <p>We created a transparent consumer banking application that utilizes learning and prediction to provide better service. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a banking software company. Echo lets you master your finances.</p>
-               </div>
-            </div>
-            <div class='col-12 col-lg'>
-               <img class="hero" src='http://andrewrmchugh.rocks/perch/resources/mchugh-portfolio-hero-2.jpg'>
-               <div class='thumb-container d-flex justify-content-between justify-content-sm-around justify-content-lg-start flex-lg-column'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/port-1.3-additional-3.png' style='object-position: 50% 10%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/16-09-22-elementary-16.jpg' style='object-position: 45% 100%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/2.1-add-goal.png' style='object-position: 50% 0'>
-               </div>
-            </div>
-         </div>
-         <div class='row d-flex flex-column-reverse flex-lg-row'>
-            <div class='col-12 col-lg-4 d-flex align-items-center'>
-               <a class='btn btn-primary btn-block btn-view-project shade-echo' href='#'>View project</a>
-            </div>
-            <div class='col-12 col-lg'>
-               <div class='row project-meta small'>
-                  <div class='col-6 col-lg'>
-                     <strong>Role</strong>
-                     <p>Project Manager, Prototyping Lead, UX Designer</p>
-                  </div>
-                  <div class='col-6 col-lg'>
-                     <strong>Date</strong>
-                     <p>January 2016 to December 2016</p>
-                  </div>
-                  <div class="w-100 m-1 d-md-none"></div>
-                  <div class='col-6 col-lg'>
-                     <strong>While at</strong>
-                     <p>M-ITI / Carnegie Mellon University</p>
-                  </div>
-                  <div class='col-6 col-lg'>
-                     <strong>With</strong>
-                     <p>Jae-Won Kim, Andrew Novotny, Joel Rodrigues</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-      </div>
-      <div class='project-card b-o-w left-hand'>
-         <div class='row'>
-            <div class='col-12 col-lg-4 d-flex align-items-end'>
-               <div class='project-description'>
-                  <h2>Humane Virtuality 😎</h2>
-                  <h3>Researching the future of VR UX in week-long sprints</h3>
-                  <p>For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work. I shared weekly journals of one to two week long sprints — totaling six experiments. Case studies are being published now.</p>
-               </div>
-            </div>
-            <div class='col-12 col-lg-8'>
-               <img class="hero" src='http://andrewrmchugh.rocks/perch/resources/00-demo-1.gif'>
-               <div class='thumb-container d-flex justify-content-between justify-content-md-around justify-content-lg-start flex-lg-column'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/ex11-animate-medium.gif' style='object-position: 50% 50%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/ex-7-1.gif' style='object-position: 50% 50%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/hero-10.gif' style='object-position: 50% 50%'>
-               </div>
-            </div>
-         </div>
-         <div class='row d-flex flex-column-reverse flex-lg-row'>
-            <div class='col-12 col-lg-4 d-flex align-items-center'>
-               <a class='btn btn-primary btn-block btn-view-project shade-hv' href='#'>View project</a>
-            </div>
-            <div class='col-12 col-lg'>
-               <div class='row project-meta small'>
-                  <div class='col-6'>
-                     <strong>Role</strong>
-                     <p>UX Designer, Creative Lead</p>
-                  </div>
-                  <div class='col-6'>
-                     <strong>Date</strong>
-                     <p>June 2016 – Ongoing</p>
-                  </div>
-                  <div class='col-6'>
-                     <strong>While at</strong>
-                     <p>Over the summer during my master’s degree at CMU/M-ITI</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-      </div>
-      <div class='project-card b-o-w'>
-         <div class='row'>
-            <div class='col-12 col-lg-4 d-flex align-items-end'>
-               <div class='project-description'>
-                  <h2>Moral Decisions & Haptics in VR 🚋</h2>
-                  <h3>An exploration of the trolley problem</h3>
-                  <p>Moral questions are often posed in writing or conversation. We created a virtual environment to test an isomorph of the Trolley Problem. Using VR, we were able to situate participants in a realistic scenario whereas traditional thought experiments are tested through text or conversation. We found that participants who have haptic feedback are less likely to kill one person — in order to save four — than their non-haptic counterparts.</p>
-               </div>
-            </div>
-            <div class='col-12 col-lg-8'>
-               <img class="hero" src='http://andrewrmchugh.rocks/perch/resources/cover-virtual-trolley-3.jpg'>
-               <div class='thumb-container d-flex justify-content-between justify-content-md-around justify-content-lg-start flex-lg-column'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/2.jpg' style='object-position: 20% 50%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/4.jpg' style='object-position: 30% 50%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/screen-shot-2016-01-14-at-2.34.39-pm.png' style='object-position: 50% 50%'>
-               </div>
-            </div>
-         </div>
-         <div class='row d-flex flex-column-reverse flex-lg-row'>
-            <div class='col-12 col-lg-4 d-flex align-items-center'>
-               <a class='btn btn-primary btn-block btn-view-project shade-morals' href='#'>View project</a>
-            </div>
-            <div class='col-12 col-lg'>
-               <div class='row project-meta small'>
-                  <div class='col'>
-                     <strong>Role</strong>
-                     <p>UX & Research Methods Designer</p>
-                  </div>
-                  <div class='col'>
-                     <strong>Date</strong>
-                     <p>October 2015 to December 2015</p>
-                  </div>
-                  <div class='col'>
-                     <strong>While at</strong>
-                     <p>Carnegie Mellon Human-Computer Interaction Institute, Research Issues in Game Development</p>
-                  </div>
-                  <div class='col'>
-                     <strong>With</strong>
-                     <p>Ivan Wang, Maddie Duque, Swetha Kannan</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-      </div>
-      <div class='project-card b-o-w left-hand'>
-         <div class='row'>
-            <div class='col-12 col-lg-4 d-flex align-items-end'>
-               <div class='project-description'>
-                  <h2>What If…? Conference & Book 🤔</h2>
-                  <h3>Active curiosity to the max</h3>
-                  <p>In 2010, I cofounded a conference that used active curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, a makerspace, and a book. I left the company in June 2014 to pursue graduate school.</p>
-               </div>
-            </div>
-            <div class='col-12 col-lg-8'>
-               <img class="hero" src='http://andrewrmchugh.rocks/perch/resources/image392.jpg'>
-               <div class='thumb-container d-flex justify-content-between justify-content-md-around justify-content-lg-start flex-lg-column'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/image264.jpg' style='object-position: 50% 50%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/image139.jpg' style='object-position: 50% 50%'>
-                  <img class='thumb' src='http://andrewrmchugh.rocks/perch/resources/image333.jpg' style='object-position: 50% 50%'>
-               </div>
-            </div>
-         </div>
-         <div class='row d-flex flex-column-reverse flex-lg-row'>
-            <div class='col-12 col-lg-4 d-flex align-items-center'>
-               <a class='btn btn-primary btn-block btn-view-project shade-whatif' href='#'>View project</a>
-            </div>
-            <div class='col-12 col-lg'>
-               <div class='row project-meta small'>
-                  <div class='col'>
-                     <strong>Role</strong>
-                     <p>Cofounder & Chief Curiosity Curator</p>
-                  </div>
-                  <div class='col'>
-                     <strong>Date</strong>
-                     <p>November 2010 to June 2014</p>
-                  </div>
-                  <div class='col'>
-                     <strong>With</strong>
-                     <p>Matt Murrie (cofounder), and many others along the way</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-      </div>
+      {% for item in site.data.project-card %}
+         {% include
+            project-card.html
+            title             = item.title
+            emoji             = item.emoji
+            subtitle          = item.subtitle
+            description       = item.description
+            role              = item.role
+            date              = item.date
+            whileAt           = item.whileAt
+            withWho           = item.withWho
+            imgHero           = item.imgHero
+            imgThumb1         = item.imgThumb1
+            imgThumb1Position = item.imgThumb1Position
+            imgThumb2         = item.imgThumb2
+            imgThumb2Position = item.imgThumb2Position
+            imgThumb3         = item.imgThumb3
+            imgThumb3Position = item.imgThumb3Position
+            left              = item.left
+         %}
+      {% endfor %}
    </div>
 </div>
