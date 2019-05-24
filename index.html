@@ -51,57 +51,9 @@ title: Home
 <!-- Extended timeline -->
 <div class="row justify-content-center timeline timeline-transition collapse collapse-timeline">
    <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
-      <div class="row timeline-entry">
-         <div class="col-12 col-sm-3 date">
-            2009-2013<br>
-         </div>
-         <div class="col description">
-            <p>👨🏻‍💻, 👨🏻‍🌾, 🚴🏻‍♂️<br><strong>In undergrad, I studied four components of human experience</strong>: philosophy, a humanities perspective on technology, math, and physics.</p>
-            <p>On the side, I created a startup/conference, <a href="#">What If…?</a>, that encouraged active curiosity. I also led a sustainability house, a campus revolving sustainability fund, and created a bike share program.</p>
-         </div>
-      </div>
-      <div class="row timeline-entry">
-         <div class="col-12 col-sm-3 date">
-            2014
-         </div>
-         <div class="col description">
-            <p>👨🏻‍✈️<br><strong>Continued to design and produce <a href="#">The What If…? Conference</a></strong>, helping 1000s ask their own questions.</p>
-         </div>
-      </div>
-      <div class="row timeline-entry">
-         <div class="col-12 col-sm-3 date">
-            2015
-         </div>
-         <div class="col description">
-            <p>👨🏻‍🎨<br><strong>Left What If…? to pursue a career in a nacent technology that could use ethical designers</strong>: augmented and virutal reality.</p>
-            <p>Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.</p>
-         </div>
-      </div>
-      <div class="row timeline-entry">
-         <div class="col-12 col-sm-3 date">
-            2015-2016
-         </div>
-         <div class="col description">
-            <p>👨🏻‍💻, 🙌🏻, 🏦<br><strong>Masters in human-computer interaction at Carnegie Mellon University and a small Portuguese institue off the coast of Morocco (dual degree).</strong></p>
-            <p>Researched how <a href="#">haptic feedback can change moral decisions</a> in VR. Led client work for a <a href="#">consumer banking app</a> that honestly we all need.</p>
-         </div>
-      </div>
-      <div class="row timeline-entry">
-         <div class="col-12 col-sm-3 date">
-            2016
-         </div>
-         <div class="col description">
-            <p>📕<br><strong>Published a young adult non-fiction book, <a href="#">The Book Of What If…?: Questions & Activities for Curious Minds</a></strong>. Published in English, Macedonian, & Chinese.</p>
-         </div>
-      </div>
-      <div class="row timeline-entry">
-         <div class="col-12 col-sm-3 date">
-            2017-Now
-         </div>
-         <div class="col description">
-            <p>🤓 & 😎<br><strong>Designing future AR & VR interfaces at Samsung Research America.</strong> A touch of pure research and a lot of figuring out how to make spatial interface products.</p>
-         </div>
-      </div>
+      {% for item in site.data.timeline-entry %}
+         {% include timeline-entry.html date=item.date emoji=item.emoji description1=item.description1 description2=item.description2 %}
+      {% endfor %}
    </div>
 </div>
 <!-- Projects -->
@@ -280,34 +232,6 @@ title: Home
             </div>
          </div>
 
-      </div>
-   </div>
-</div>
-<!-- Footer -->
-<div class="row footer justify-content-center">
-   <div class="col-12 col-sm-8 col-lg-10 col-xl-8">
-      <div class="row">
-         <div class="col-12 col-md-6 text-center text-md-left">
-            <div class="media">
-               <div class="mr-2 d-none d-md-block">&copy;</div>
-               <div class="media-body">
-                  <span class="mr-2 d-md-none">&copy;</span><strong>Andrew R McHugh</strong> is a designer on a mission to expand human capability through novel interfaces and democratized technology.
-               </div>
-            </div>
-         </div>
-         <div class="col-12 col-md-6">
-            <div class="d-md-none mt-3 mb-3"></div>
-            <div class="d-flex justify-content-around">
-               <i class="fab fa-facebook-messenger"></i>
-               <i class="fab fa-medium-m"></i>
-               <i class="fab fa-youtube"></i>
-               <i class="fab fa-linkedin"></i>
-               <i class="fab fa-twitter"></i>
-               <i class="fab fa-github"></i>
-               <i class="fab fa-pinterest"></i>
-               <i class="fab fa-instagram"></i>
-            </div>
-         </div>
       </div>
    </div>
 </div>
