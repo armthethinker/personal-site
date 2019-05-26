@@ -50,6 +50,7 @@ Fullscrene image, but probably needs some work
 - header
 - subheader
 - style: `anything | lg`
+- aspect: `21by9 | 16by9 | 4by3 | 1by1`
 
 ### timeline-entry
 - date
