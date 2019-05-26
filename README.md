@@ -1,29 +1,24 @@
-# Andrew's Personal Site
+# Andrew's personal site
+> It's my personal site! 😲
 
-## Notes/To-Do on integrating with Perch & DD.co
-- nice to do
-   - update CV
-   - ViewPoint video
-   - Meta:tags
-   - favicon
-   - 404++
-   - header nav on projects
-   - zoom.js by Fat
-   - archive
-   - projects load flash fix?
-   - Single page
-   - Remove Lato
-   - Add Droid Serif 400, 700
+http://andrewrmchugh.rocks
 
-## Hierarchy
-\* Partially Managed by Perch
+Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 
-\*\* Entirely Managed By Perch
+## How to build
+- To serve the site: `$ bundle exec jekyll serve`
+- To update the bundle: `$ bundle update`
 
+## Project hierarchy
 ```
-|--index *
-   |--projects **
-      |--project pages **
-   |--cv
-   |--book
+root
+|-- _data/:       .yml data structures
+|-- _includes/:   partial page templates
+|-- _layouts/:    page layouts
+|-- _sass/:       source styling
+|-- _site/:       compiled version of the site
+|-- archive/:     older pages
+|-- assets/:      imgs, css, JS
+|-- projects/:    my various project pages
+|-- Various root files and pages
 ```
