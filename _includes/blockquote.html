@@ -1,4 +1,8 @@
+{% if include.header != undefined %}
+<div class="-none p-sec p-sec-header">
+{% else %}
 <div class="-none p-sec">
+{% endif %}
    <div class="row justify-content-center">
       <div class="col-7">
          <blockquote>{{include.quote}}<div>– {{include.source}}</div></blockquote>
