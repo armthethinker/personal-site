@@ -13,9 +13,11 @@
             <div class="col">
                <div class="p-img-container">
                   <img class="img-fluid rounded" src="{{include.url}}">
+                  {% if include.captionSide == undefined or include.captionSide == false %}
                   <div class="p-img-caption">
                      {{include.caption | markdownify}}
                   </div>
+                  {% endif %}
                </div>
             </div>
             {% if include.url2 != undefined %}
@@ -37,9 +39,11 @@
                <div class="row">
                   <div class="col"></div>
                   <div class="col-12 col-md-8 col-lg-12">
+                     {% if include.captionSide %}
                      <div class="p-img-caption">
-                        {{include.captionSide | markdownify}}
+                        {{include.caption | markdownify}}
                      </div>
+                     {% endif %}
                   </div>
                </div>
             </div>
