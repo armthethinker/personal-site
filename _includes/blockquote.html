@@ -5,7 +5,7 @@
 {% endif %}
    <div class="row justify-content-center">
       <div class="col-7">
-         <blockquote>{{include.quote}}<div>– {{include.source}}</div></blockquote>
+         <blockquote>{{include.quote | markdownify}}<div>– {{include.source}}</div></blockquote>
       </div>
    </div>
 </div>
