@@ -22,3 +22,37 @@ root
 |-- projects/:    my various project pages
 |-- Various root files and pages
 ```
+
+## Partial page templates for content
+
+### blockquote
+- quote
+- source
+
+### media-img-xl
+Fullscrene image, but probably needs some work
+- url
+- caption
+
+### media-img
+- url
+- caption
+- url2 (adds second image)
+- caption2
+- header
+- subheader
+- style: `anything | lg`
+- captionSide (puts the given caption on the side)
+
+### media-youtube
+- urlCode
+- caption
+- header
+- subheader
+- style: `anything | lg`
+
+### timeline-entry
+- date
+- emoji
+- description1 (first paragraph)
+- description2 (second paragraph)
