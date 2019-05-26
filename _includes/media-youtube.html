@@ -1,0 +1,32 @@
+<div class="-none p-sec">
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-xl-8">
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+               <h2>{{include.header}}</h2>
+               <strong class="d-block mb-4">{{include.subheader}}</strong>
+            </div>
+            <div class="col">
+               <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{include.url}}?rel=0" allowfullscreen></iframe>
+               </div>
+            </div>
+
+            {% if include.style == "lg" %}
+            <div class="col-12"></div>
+            {% else %}
+            <div class="col-12 col-lg-3"></div>
+            {% endif %}
+         </div>
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3"></div>
+            <div class="col">
+               <div class="p-img-caption">
+                  {{include.caption | markdownify}}
+               </div>
+            </div>
+            <div class="col-12 col-lg-3"></div>
+         </div>
+      </div>
+   </div>
+</div>
