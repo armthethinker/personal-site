@@ -11,7 +11,7 @@
                <strong class="d-block mb-4">{{include.subheader}}</strong>
             </div>
             <div class="col">
-               {% if include.url != "" or include.url != undefined%}
+               {% if include.url != "" and include.url != unknown %}
                <div class="p-img-container">
                   <img class="img-fluid rounded" src="{{include.url}}">
                   <div class="p-img-caption">
