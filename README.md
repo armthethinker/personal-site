@@ -7,7 +7,10 @@ Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 
 ## How to build
 - To serve the site: `$ bundle exec jekyll serve`
+- To serve and allow all incoming requests `$ bundle exec jekyll serve --host 0.0.0.0`
 - To update the bundle: `$ bundle update`
+
+Served over `:4000`.
 
 ## Project hierarchy
 ```
