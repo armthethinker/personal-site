@@ -1,5 +1,5 @@
 {% for project in site.data.projects %}
-   {% if project.title == page.title %}
+   {% if project.pID == page.pID %}
       {% assign p = project %}
    {% endif %}
 {% endfor %}
