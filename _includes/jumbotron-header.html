@@ -35,9 +35,9 @@
             {% if p.imgJumbotronHero != unknown %}
             <img src="{{p.imgJumbotronHero}}" class="img-fluid img-rounded">
             {% endif %}
-            {% if p.videoJumbotronHero != unknown %}
+            {% if p.videoJumbotronHero != unknown%}
             <div class="embed-responsive embed-responsive-1by1 jumbotron-bottom">
-               <video src="https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4" type="video/mp4" autoplay muted></video>
+               <video src="{{p.videoJumbotronHero}}" type="video/mp4" autoplay muted></video>
                <div class="jumbotron-video-gradient"></div>
             </div>
             {% endif %}

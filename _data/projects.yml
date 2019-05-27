@@ -39,9 +39,7 @@
   left: false
   url: elementary.html
   bgColor: rgba(251, 218, 71, 1)
-  bgImg: https://source.unsplash.com/1600x900/?neon
-  videoJumbotronHero:
-  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
+  videoJumbotronHero: https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4
 - title: Humane Virtuality
   pID: 3
   emoji: 😎
