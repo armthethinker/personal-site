@@ -3,8 +3,8 @@
       {% assign p = project %}
    {% endif %}
 {% endfor %}
-<div class="jumbotron jumbotron-fluid" style="background-image:url('http://andrewrmchugh.rocks/perch/resources/v-prioritizing-goals.jpg')">
-   <div class="jumbotron-bg jbg-2"></div>
+<div class="jumbotron jumbotron-fluid" style="background-image:url('{{p.jumbotronHero}}')">
+   <div class="jumbotron-bg" style="background-color: {{p.bgColor}}"></div>
    <div class="container position-relative">
       {% include navigation.html %}
       <div class="nav-main">
@@ -50,9 +50,9 @@
                </div>
             </div>
          </div>
-         <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex align-items-end">
-            <img src="http://andrewrmchugh.rocks/perch/resources/v-prioritizing-goals.jpg" class="img-fluid img-bottom d-none">
-            <div class="-none embed-responsive embed-responsive-1by1 jumbotron-bottom">
+         <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex align-items-center">
+            <img src="http://andrewrmchugh.rocks/perch/resources/v-prioritizing-goals.jpg" class="img-fluid">
+            <div class="embed-responsive embed-responsive-1by1 jumbotron-bottom">
                <video src="https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4" type="video/mp4" autoplay muted></video>
                <div class="jumbotron-video-gradient"></div>
             </div>

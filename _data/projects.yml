@@ -1,6 +1,5 @@
 - title: Samsung
   pID: 1
-  url: samsung.html
   emoji: 🤓
   subtitle: Spatial computing & magic glasses
   description: Just about all of my work is under NDA, so here I can talk about the kinds of things I did, but not the actual content. I can also share some of my personal 3D work.
@@ -16,9 +15,10 @@
   imgThumb3:
   imgThumb3Position:
   left: true
+  url: samsung.html
+  bgColor: rgba(251, 218, 71, .3)
 - title: Echo
   pID: 2
-  url: echo.html
   emoji: 💸
   subtitle: Transparent consumer banking in an opaque market
   description: We created a transparent consumer banking application that utilizes learning and prediction to provide better service. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a banking software company. Echo lets you master your finances.
@@ -34,9 +34,12 @@
   imgThumb3: http://andrewrmchugh.rocks/perch/resources/2.1-add-goal.png
   imgThumb3Position: 50% 0
   left: false
+  url: elementary.html
+  bgColor: rgba(251, 218, 71, 1)
+  bgImg:
+  jumbotronHero: https://source.unsplash.com/1600x900/?neon
 - title: Humane Virtuality
   pID: 3
-  url: humane-virtuality.html
   emoji: 😎
   subtitle: Researching the future of VR UX in week-long sprints
   description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work. I shared weekly journals of one to two week long sprints — totaling six experiments. Case studies are being published now.
@@ -52,9 +55,12 @@
   imgThumb3: http://andrewrmchugh.rocks/perch/resources/hero-10.gif
   imgThumb3Position: 50% 50%
   left: false
+  url: humane-virtuality.html
+  bgColor: rgba(251, 218, 71, .8)
+  bgImg:
+  jumbotronHero: https://source.unsplash.com/1600x900/?neon
 - title: Moral Decisions & Haptics in VR
   pID: 4
-  url: moral-decision-making-haptic-feedback-in-virtual-environments.html
   emoji: 🚋
   subtitle: An exploration of the trolley problem
   description: Moral questions are often posed in writing or conversation. We created a virtual environment to test an isomorph of the Trolley Problem. Using VR, we were able to situate participants in a realistic scenario whereas traditional thought experiments are tested through text or conversation. We found that participants who have haptic feedback are less likely to kill one person — in order to save four — than their non-haptic counterparts.
@@ -70,16 +76,19 @@
   imgThumb3: http://andrewrmchugh.rocks/perch/resources/screen-shot-2016-01-14-at-2.34.39-pm.png
   imgThumb3Position: 50% 50%
   left: false
+  url: moral-decision-making-haptic-feedback-in-virtual-environments.html
+  bgColor: rgba(251, 218, 71, .3)
+  bgImg:
+  jumbotronHero: https://source.unsplash.com/1600x900/?neon
 - title: What If…? Conference & Book
   pID: 5
-  url: what-if-conference-book.html
   emoji: 🤔
   subtitle: Active curiosity to the max
   description: In 2010, I cofounded a conference that used active curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, a makerspace, and a book. I left the company in June 2014 to pursue graduate school.
   role: Cofounder & Chief Curiosity Curator
   date: November 2010 - June 2014
-  whileAt: Matt Murrie (cofounder), and many others along the way
-  withWho:
+  whileAt: Our startup, What If...? LLC
+  withWho: Cofounder Matt Murrie and many others along the way
   imgHero: http://andrewrmchugh.rocks/perch/resources/image392.jpg
   imgThumb1: http://andrewrmchugh.rocks/perch/resources/image264.jpg
   imgThumb1Position: 50% 50%
@@ -88,3 +97,7 @@
   imgThumb3: http://andrewrmchugh.rocks/perch/resources/image333.jpg
   imgThumb3Position: 50% 50%
   left: false
+  url: what-if-conference-book.html
+  bgColor: rgba(251, 218, 71, .3)
+  bgImg:
+  jumbotronHero: https://source.unsplash.com/1600x900/?neon
