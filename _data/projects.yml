@@ -17,6 +17,9 @@
   left: true
   url: samsung.html
   bgColor: rgba(251, 218, 71, .3)
+  bgImg: https://source.unsplash.com/1600x900/?neon
+  videoJumbotronHero:
+  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
 - title: Echo
   pID: 2
   emoji: 💸
@@ -36,8 +39,9 @@
   left: false
   url: elementary.html
   bgColor: rgba(251, 218, 71, 1)
-  bgImg:
-  jumbotronHero: https://source.unsplash.com/1600x900/?neon
+  bgImg: https://source.unsplash.com/1600x900/?neon
+  videoJumbotronHero:
+  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
 - title: Humane Virtuality
   pID: 3
   emoji: 😎
@@ -56,9 +60,10 @@
   imgThumb3Position: 50% 50%
   left: false
   url: humane-virtuality.html
-  bgColor: rgba(251, 218, 71, .8)
-  bgImg:
-  jumbotronHero: https://source.unsplash.com/1600x900/?neon
+  bgColor: rgba(251, 218, 71, .84)
+  bgImg: https://source.unsplash.com/1600x900/?neon
+  videoJumbotronHero:
+  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
 - title: Moral Decisions & Haptics in VR
   pID: 4
   emoji: 🚋
@@ -78,8 +83,9 @@
   left: false
   url: moral-decision-making-haptic-feedback-in-virtual-environments.html
   bgColor: rgba(251, 218, 71, .3)
-  bgImg:
-  jumbotronHero: https://source.unsplash.com/1600x900/?neon
+  bgImg: https://source.unsplash.com/1600x900/?neon
+  videoJumbotronHero:
+  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
 - title: What If…? Conference & Book
   pID: 5
   emoji: 🤔
@@ -99,5 +105,6 @@
   left: false
   url: what-if-conference-book.html
   bgColor: rgba(251, 218, 71, .3)
-  bgImg:
-  jumbotronHero: https://source.unsplash.com/1600x900/?neon
+  bgImg: https://source.unsplash.com/1600x900/?neon
+  videoJumbotronHero:
+  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant

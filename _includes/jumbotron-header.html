@@ -3,29 +3,10 @@
       {% assign p = project %}
    {% endif %}
 {% endfor %}
-<div class="jumbotron jumbotron-fluid" style="background-image:url('{{p.jumbotronHero}}')">
+<div class="jumbotron jumbotron-fluid" style="background-image:url('{{p.bgImg}}')">
    <div class="jumbotron-bg" style="background-color: {{p.bgColor}}"></div>
    <div class="container position-relative">
-      {% include navigation.html %}
-      <div class="nav-main">
-         <ul class="nav justify-content-between">
-            <li class="nav-item flex-fill">
-               <a class="nav-link" href="#">Andrew R McHugh</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link active" href="#">Bio</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">CV</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Book</a>
-            </li>
-         </ul>
-      </div>
+      {% include navigation-project.html %}
       <div class="row">
          <div class="col-12 col-lg-6 order-2 order-lg-1">
             <h1 class="display-2">{{p.title}}</h1>
@@ -51,11 +32,15 @@
             </div>
          </div>
          <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex align-items-center">
-            <img src="http://andrewrmchugh.rocks/perch/resources/v-prioritizing-goals.jpg" class="img-fluid">
+            {% if p.imgJumbotronHero != unknown %}
+            <img src="{{p.imgJumbotronHero}}" class="img-fluid img-rounded">
+            {% endif %}
+            {% if p.videoJumbotronHero != unknown %}
             <div class="embed-responsive embed-responsive-1by1 jumbotron-bottom">
                <video src="https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4" type="video/mp4" autoplay muted></video>
                <div class="jumbotron-video-gradient"></div>
             </div>
+            {% endif %}
          </div>
       </div>
    </div>
