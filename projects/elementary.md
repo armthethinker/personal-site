@@ -161,12 +161,6 @@ Often aware of savings options, few users have savings accounts or other investm
    caption2=""
 %}
 
-{% include p-section.html
-   header="A five part vision"
-   subheader=""
-   content="In order to create a transparent consumer banking application, we created a five part vision that guided our design work."
-%}
-
 {% include cards.html
    header="A five part vision"
    subheader="In order to create a transparent consumer banking application, we created a five part vision that guided our design work."
@@ -200,7 +194,119 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
    caption2=""
 %}
 
----
+{% include p-section.html
+   header=""
+   subheader=""
+   content="
+### Principles
+
+   **Transparency** Users have questions about their transactions, groups of transactions, and patterns. We made it easy to answer these questions.
+
+   **Foresight** We give users just enough insight into their future so they can be prepared. These insights are based on the user’s previous actions.
+
+   **Relation of user to others** When you’re doing something for the first time, you don’t know what to expect. We allow users to anonymously learn from each other by showing them how “other users like you” have acted.
+
+### Sprint process
+   As the project manager, I implemented the Sprint process as outlined by Jake Knapp, John Zeratsky, and Braden Kowitz. We worked through four week-long sprints which each include complementary research, sketches, a prototype, and user testing. It is a process that uses divergent and convergent thinking, harnessing the strengths of each member of the team. In this phase, each prototype is independent from the others.
+   "
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="On the first day of our sprint we create a goal for users to accomplish. With this, we make a high level service blueprint of how we think our design will work."
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="We critique our thoughts and try to foresee limitations using our four months of research and additional interviews."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="On our second day, we explore interactions from other products and services. We then go through four sketching exercises that leave us with four specific design directions (one from each member of the team). I show my final sketch here."
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="On our third day, we critique our sketches and make storyboard to prepare our prototype."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="On the fourth day, we spend all day implementing our designs to the level at which we can answer the questions we set out to answer. Thus far, those questions are largely about concept validation and a bit about usability."
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="On the fifth and final day of our sprint, we perform think-alouds and interviews with four to five users. Joel, our research lead, performs the study while the rest of us sit in a separate room, watch the study via Google Hangouts, and take notes. We wrap the week up with a document that summarizes our decisions and findings."
+%}
+
+{% include p-section.html
+   content="
+### Continuous iteration
+   After our sprints, we had near-daily group critiques and continued our weekly user testing. Most of this was on our home island, Madeira, but we also spent a week testing in Lisbon."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="A tiny sample of our critique boards."
+%}
+
+{% include p-section.html
+   content="
+### Low & medium fidelity prototypes
+   Our prototypes were built off of our research, constructed in individual brainstorms, synthesized in a critique, and informed weekly from user feedback sessions.
+
+   We built two hi-fi prototypes: one for visuals and one for interactions."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="**Start with sketches** Each prototype started with individual sketches, followed by a critique, and synthesis into a prototype storyboard."
+%}
+
+{% include media-img-xl.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="**Sprint prototypes** These four, independent prototypes came out of our sprints and were each focused on one part of our vision. Our final product had pieces of each of these. For example, Telescope looked at how to help users understand and plan their long-term future – which grew into the simulator section."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="Microsprints We spent a couple days iterating over specific sections of the app (e.g. onboarding, adding notes to transactions, creating a coherent information architecture, category structure). Left: Joel's early work on categories."
+   style="lg"
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="My suggestion for information architecture (which you can interact with)."
+%}
+
+{% include p-section.html
+   content="**Framer experiments** In addition to our primary work, I also made small experimental interactions in Framer."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center."
+   style="md"
+   captionSide=false
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="An example of how we might change a categorized transaction with a long press."
+%}
+
+{% include p-section.html
+   header="Introducing Echo"
+   subheader=""
+   content="Our final product, Echo, allows users to master their finances. The information architecture is centered on three pieces: transactions and categories, goals, and a financial simulator. Additionally, we let our users search the system with a fuzzy search (not shown here)."
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center.
+
+### Transactions
+"
+%}
+
+{% include blockquote.html
+   quote="I want to feel in control of my finances."
+   source="User interview"
+%}
+
+{% include blockquote.html
+   quote="Wow. It’s good it shows [your available balance and expected spending], ‘specially if you are struggling to make ends meet."
+   source="User interview"
+%}
+
+{% include p-section.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   content="When a user opens the application, they're greeted with their historical and upcoming transactions, as well as their balance, expected spending, and critical insights."
+%}
 
 {% include media-img.html
    url="https://source.unsplash.com/1600x900/?neon"
@@ -218,4 +324,115 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
    captionSide=true
 %}
 
----
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="**Automatic categorization** To understand spending, users need to know their transactions at multiple levels of representation (i.e. categories)."
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="It's also helpful to know the relation of one month to the previous and upcoming months, including months in the future (utilizing machine learning algorithms)."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="Additional insights Each transaction detail screen has insights about how often the transaction happens and what to expect when it does happen. Here, a grocery transaction at Pingo Doce is shown."
+   captionSide=true
+%}
+
+{% include p-section.html
+   content="
+### Goals
+"
+%}
+
+{% include blockquote.html
+   quote="I want to save for my wedding dress. I’ve always dreamed about it."
+   source="User in our photo diary study"
+%}
+
+{% include blockquote.html
+   quote="When is this application out for download? Sell it to [my bank,] Millenium!"
+   source="User feedback"
+%}
+
+{% include p-section.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   content="
+   Goals act as savings buckets, meaning that users can save towards different objectives such as a new vehicle, a trip, or paying off a loan. Goals are flexible and can be paused, money can be transferred in and out, and goals can be continuous. Perhaps most importantly **goals create achievable outcomes based on existing mental models**.
+
+   Money virtually and automatically transfers between the user’s main account and goal account to keep a distinction between allocated and unallocated funds. Their money is automatically balanced between a current/checking account and a high interest savings account based on the user’s habits.
+"
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="Types of goals** We offer many structured options, but also include a create your own option for other kinds of goals."
+   style="md"
+   captionSide=false
+   url2="https://source.unsplash.com/1600x900/?neon"
+   caption2="**Minimally structured questions** Each goal utilizes minimal input to provide deeper context to the goal (in contrast to existing goal systems such as Simple). Default values are based on the user's actions, other users like them, and market data."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   captionSide=true
+%}
+
+{% include p-section.html
+   content="
+### Simulator
+   "
+%}
+
+{% include blockquote.html
+   quote="I want the bank to help me understand my habits and their implications."
+   source="User interview"
+%}
+
+{% include blockquote.html
+   quote="Great, I like this part! This is good for me because of my house loans, I’m still paying for them."
+   source="User feedback"
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="To explore questions, users swipe through categories. Improved from testing, this design matches users' mental models."
+%}
+
+{% include p-section.html
+   content="When we think about what might happen to us, we wonder how it will affect our finances. The simulator section allows users to explore these possible futures. Similar to goals, we use minimally structured questions to help users get a meaningful answer without bogging them down with input. We also give them contextual information to inform their decisions. Users may star their entry to save it for future use.
+
+Some simulators can be found on the web and others can only be accessed when sitting down with a banker. Echo democratizes financial simulation by empowering users."
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="**Long term planning** Each simulator question opens a page where the user can play with inputs to that question, automatically updating the visualization and answer at the top of the page. Between the text response and the visual, users begin to understand how their answers to the input questions change their overall outcome."
+   style="lg"
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="**Data-driven expectations** Like the goals section, each input question informs the user of how other users like them have acted."
+   captionSide=true
+%}
+
+{% include media-img.html
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="**User action focused representation** To keep the user's focus and the visual representation of the page in sync, we collapse the header and shrink the visualization when the user is inputing information. A flick of the finger down expands the header and visualization."
+   captionSide=true
+%}
+
+{% include p-section.html
+   header="Hi-fi prototypes"
+   subheader=""
+   content="We delivered two final prototypes, one to show interactions and a second to show visuals.
+
+<div class='alert alert-warning'>Do you really want the prorotypes still there?</div>
+   "
+%}
+
+{% include p-section.html
+   header="Colophon"
+   subheader="This material was adapted from work my counterparts and I completed for Exictos and the Madeira Interactive Technologies Institute."
+   url="https://source.unsplash.com/1600x900/?neon"
+   caption="The following organizations supported our work financially or otherwise. Thanks to them, we were able to research consumer banking and build Echo."
+%}
