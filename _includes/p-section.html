@@ -1,3 +1,9 @@
+{% if include.urlPage != false %}
+{% assign urlPrepend = page.assetURL %}
+{% else %}
+{% assign urlPrepend = "" %}
+{% endif %}
+
 {% if include.header != undefined %}
 <div class="-none p-sec p-sec-header">
 {% else %}
@@ -13,7 +19,7 @@
             <div class="col">
                {% if include.url != "" and include.url != unknown %}
                <div class="p-img-container">
-                  <img class="img-fluid rounded" src="{{include.url}}">
+                  <img class="img-fluid rounded" src="{{include.url | prepend:urlPrepend}}">
                   <div class="p-img-caption">
                      {{include.caption | markdownify}}
                   </div>
