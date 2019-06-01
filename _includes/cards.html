@@ -11,7 +11,7 @@
                   {% for item in include.data %}
                   <div class="col">
                      <div class="card">
-                        <img src="https://source.unsplash.com/1600x900/?neon" class="card-img-top" alt="{{item.caption | strip_html}}">
+                        <img src="{{item.url}}" class="card-img-top" alt="{{item.caption | strip_html}}">
                         <div class="card-body">
                            <p class="card-text">{{item.caption}}</p>
                         </div>
