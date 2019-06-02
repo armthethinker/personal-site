@@ -15,9 +15,9 @@ assetURL: /assets/img/elementary/
 {% include media-youtube.html
    header="Concept video"
    subheader=""
-   urlCode="CQFdGfwChtw"
+   urlCode="KlLjFG6iTOA"
    caption=""
-   style="md"
+   style="lg"
    aspect="16by9"
 %}
 
@@ -39,7 +39,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
 {% include media-img.html
    header=""
    subheader=""
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="personal-transactions.png"
    caption="A screenshot of my own opaque banking app from Bank of America. My other and primary bank, Simple, does a better job, but still isn't entirely transparent."
    style="md"
    captionSide=false
@@ -58,7 +58,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
 {% include media-youtube.html
    header=""
    subheader=""
-   urlCode="CQFdGfwChtw"
+   urlCode="8C6ulEP3BJc"
    caption="Final presentation to our client and the public. (26.5min)"
    style="md"
    aspect="16by9"
@@ -74,12 +74,12 @@ Instead of helping their users, banks (often) only provide a list of transaction
    "
 %}
 
-{% include media-img.html
+{% include media-img-xl.html
    header=""
    subheader=""
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="monetaryecosystem-sm.png"
    caption="Early on in our research phase, we created a context ecosystem to remind us of the connections between people and concepts. The key to staying focused with a broad project is structure."
-   style="md"
+   style="xl"
    captionSide=false
    url2=""
    caption2=""
@@ -91,7 +91,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
    content="**Elementary** is a group of four master’s students in the Carnegie Mellon University and University of Madeira Master of Human-Computer interaction dual degree program. We are a multi-disciplinary team with backgrounds in the humanities, psychology, and computer science. When working, we each take the lead on one aspect of the project, then collaborate to completion.
 
    **Exictos (our client)**, formerly known as Promosoft, was founded in 1989. They specialize in the production and implementation of core banking software, serving more than 60 banks in Portuguese-speaking countries. Exictos expanded their offerings to include both mobile and online banking software as a layer over their core platform. In 2015, Exictos was acquired by the Polish Asseco group to strengthen its presence in Africa and to open up new opportunities for expansion in South American markets, especially Brazil."
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="16-05-14-profiles-11.jpg"
    caption="Elementary was (from left): Joel, Andrew, Andrew (me), and Jae"
 %}
 
@@ -112,21 +112,22 @@ _Interviews, User Study_
 _Photo Diary Study, User Study_
 
 To interpret our data, we created models including a flow model, sequence diagrams, a cultural model, and a competitive analysis grid. We also printed out the photos and captions users created in their photo diaries. Everything went up on our walls so we could be immersed in our research during the later design phase."
+   url="16-03-10-elementary-4.jpg"
 %}
 
 {% include media-img.html
    header=""
    subheader=""
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="consolidated-flow.jpg"
    caption="Our consolidated flow model, showing the connections between the user and their monetary environment. "
    style="md"
    captionSide=false
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="27-this-is-my-mother-someone-that-i-love-and-i-will-love-until-the-end-of-my-life..jpg"
    caption2="A user's response to a photo diary question. \"This is my mother, someone that I love and I will love until the end of my life.\""
 %}
 
 {% include media-img-xl.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="exictos-affinity.jpg"
    caption="We took our 549 interview notes and placed them on the wall, grouping notes by their conceptual nearness. after we had groups of between four and nine notes, we create blue notes that describe the group. We then group blue notes under pink notes which describe the blue note groups. Finally, we use green notes to segment our diagram into general categories. Once the grouping is over, we “walk the wall” by placing post its with design ideas, key insights, and questions. These new notes help guide our visioning process and make sure we’re designing based on data."
 %}
 
@@ -154,7 +155,7 @@ Often aware of savings options, few users have savings accounts or other investm
 {% include media-img.html
    header=""
    subheader=""
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="research-short.gif"
    caption="Elementary placing our notes from our interviews into our affinity diagram."
    style="md"
    captionSide=false
@@ -165,7 +166,7 @@ Often aware of savings options, few users have savings accounts or other investm
 {% include cards.html
    header="A five part vision"
    subheader="In order to create a transparent consumer banking application, we created a five part vision that guided our design work."
-   data=site.data.echo.features
+   data=site.data.echo.vision
 %}
 
 {% include p-section.html
@@ -187,7 +188,7 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 {% include media-img.html
    header=""
    subheader=""
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="process.jpg"
    caption=""
    style="md"
    captionSide=false
@@ -213,24 +214,27 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="On the first day of our sprint we create a goal for users to accomplish. With this, we make a high level service blueprint of how we think our design will work."
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url="16-09-22-elementary-16.jpg"
+   caption="**On the first day** of our sprint we create a goal for users to accomplish. With this, we make a high level service blueprint of how we think our design will work."
+   url2="16-09-22-elementary-26.jpg"
    caption2="We critique our thoughts and try to foresee limitations using our four months of research and additional interviews."
+   style="lg"
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="On our second day, we explore interactions from other products and services. We then go through four sketching exercises that leave us with four specific design directions (one from each member of the team). I show my final sketch here."
-   url2="https://source.unsplash.com/1600x900/?neon"
-   caption2="On our third day, we critique our sketches and make storyboard to prepare our prototype."
+   url="16-09-26-elementary-49.jpg"
+   caption="**On our second day**, we explore interactions from other products and services. We then go through four sketching exercises that leave us with four specific design directions (one from each member of the team). I show my final sketch here."
+   url2="16-10-05-elementary-33.jpg"
+   caption2="**On our third day**, we critique our sketches and make storyboard to prepare our prototype."
+   style="lg"
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="On the fourth day, we spend all day implementing our designs to the level at which we can answer the questions we set out to answer. Thus far, those questions are largely about concept validation and a bit about usability."
-   url2="https://source.unsplash.com/1600x900/?neon"
-   caption2="On the fifth and final day of our sprint, we perform think-alouds and interviews with four to five users. Joel, our research lead, performs the study while the rest of us sit in a separate room, watch the study via Google Hangouts, and take notes. We wrap the week up with a document that summarizes our decisions and findings."
+   url="16-09-26-elementary-56.jpg"
+   caption="**On our fourth day**, we spend all day implementing our designs to the level at which we can answer the questions we set out to answer. Thus far, those questions are largely about concept validation and a bit about usability."
+   url2="16-10-07-elementary-44.jpg"
+   caption2="**On the fifth and final day** of our sprint, we perform think-alouds and interviews with four to five users. Joel, our research lead, performs the study while the rest of us sit in a separate room, watch the study via Google Hangouts, and take notes. We wrap the week up with a document that summarizes our decisions and findings."
+   style="lg"
 %}
 
 {% include p-section.html
@@ -240,7 +244,7 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="dsc1099-copy.jpg"
    caption="A tiny sample of our critique boards."
 %}
 
@@ -253,20 +257,20 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="16-10-12-elementary-30.jpg"
    caption="**Start with sketches** Each prototype started with individual sketches, followed by a critique, and synthesis into a prototype storyboard."
 %}
 
 {% include media-img-xl.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="sprint-prototypes.jpg"
    caption="**Sprint prototypes** These four, independent prototypes came out of our sprints and were each focused on one part of our vision. Our final product had pieces of each of these. For example, Telescope looked at how to help users understand and plan their long-term future – which grew into the simulator section."
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="category-summary.png"
    caption="Microsprints We spent a couple days iterating over specific sections of the app (e.g. onboarding, adding notes to transactions, creating a coherent information architecture, category structure). Left: Joel's early work on categories."
    style="lg"
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="screen-shot-2017-01-08-at-8.45.33-am.png"
    caption2="My suggestion for information architecture (which you can interact with)."
 %}
 
@@ -275,23 +279,23 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="."
    caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center."
    style="md"
    captionSide=false
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="."
    caption2="An example of how we might change a categorized transaction with a long press."
 %}
 
 {% include p-section.html
    header="Introducing Echo"
    subheader=""
-   content="Our final product, Echo, allows users to master their finances. The information architecture is centered on three pieces: transactions and categories, goals, and a financial simulator. Additionally, we let our users search the system with a fuzzy search (not shown here)."
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center.
-
+   content="
 ### Transactions
-"
+
+   Our final product, Echo, allows users to master their finances. The information architecture is centered on three pieces: transactions and categories, goals, and a financial simulator. Additionally, we let our users search the system with a fuzzy search (not shown here)."
+   url="echo-logo-1.png"
+   caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center."
 %}
 
 {% include blockquote.html
@@ -301,40 +305,40 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 
 {% include blockquote.html
    quote="Wow. It’s good it shows [your available balance and expected spending], ‘specially if you are struggling to make ends meet."
-   source="User interview"
+   source="User feedback"
 %}
 
 {% include p-section.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="1-transactions.png"
    content="When a user opens the application, they're greeted with their historical and upcoming transactions, as well as their balance, expected spending, and critical insights."
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="port-transactions-summary-1.png"
    caption="**Understand now** A clear and prominent representation of the user's available balance. The user can also see their expected spending for the month. This acts as a budgeting system, but the user doesn't have to input anything. The budget is built automatically from their actions."
    captionSide=true
 %}
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="port-insight-cards-1.png"
    caption="**Critical insights** These flickable cards display a single piece of information for the user (e.g. goal progress, spending habits, bank notifications)."
    captionSide=true
 %}
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="port-upcoming-1.png"
    caption="**Upcoming transactions** To prepare for the next seven days, Echo displays a collapsable list of upcoming transactions based on the user's history."
    captionSide=true
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="port-transactions-1.png"
    caption="**Automatic categorization** To understand spending, users need to know their transactions at multiple levels of representation (i.e. categories)."
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="port-4-categories.png"
    caption2="It's also helpful to know the relation of one month to the previous and upcoming months, including months in the future (utilizing machine learning algorithms)."
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="Additional insights Each transaction detail screen has insights about how often the transaction happens and what to expect when it does happen. Here, a grocery transaction at Pingo Doce is shown."
+   url="port-1.3-additional-3.png"
+   caption="**Additional insights** Each transaction detail screen has insights about how often the transaction happens and what to expect when it does happen. Here, a grocery transaction at Pingo Doce is shown."
    captionSide=true
 %}
 
@@ -355,7 +359,7 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include p-section.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="2-goals.png"
    content="
    Goals act as savings buckets, meaning that users can save towards different objectives such as a new vehicle, a trip, or paying off a loan. Goals are flexible and can be paused, money can be transferred in and out, and goals can be continuous. Perhaps most importantly **goals create achievable outcomes based on existing mental models**.
 
@@ -364,16 +368,16 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="Types of goals** We offer many structured options, but also include a create your own option for other kinds of goals."
+   url="2.1-add-goal.png"
+   caption="**Types of goals** We offer many structured options, but also include a create your own option for other kinds of goals."
    style="md"
    captionSide=false
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="port-2.1.3-minimally-struc.png"
    caption2="**Minimally structured questions** Each goal utilizes minimal input to provide deeper context to the goal (in contrast to existing goal systems such as Simple). Default values are based on the user's actions, other users like them, and market data."
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="port-2.1.1-context.png"
    captionSide=true
 %}
 
@@ -394,7 +398,7 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="simulator-page.gif"
    caption="To explore questions, users swipe through categories. Improved from testing, this design matches users' mental models."
 %}
 
@@ -405,19 +409,19 @@ Some simulators can be found on the web and others can only be accessed when sit
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="3.1-pay-back-loans-fully-extended.png"
    caption="**Long term planning** Each simulator question opens a page where the user can play with inputs to that question, automatically updating the visualization and answer at the top of the page. Between the text response and the visual, users begin to understand how their answers to the input questions change their overall outcome."
    style="lg"
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="port-3.3-data-driven-1.png"
    caption="**Data-driven expectations** Like the goals section, each input question informs the user of how other users like them have acted."
    captionSide=true
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="simulator-collapse.gif"
    caption="**User action focused representation** To keep the user's focus and the visual representation of the page in sync, we collapse the header and shrink the visualization when the user is inputing information. A flick of the finger down expands the header and visualization."
    captionSide=true
 %}
@@ -427,13 +431,13 @@ Some simulators can be found on the web and others can only be accessed when sit
    subheader=""
    content="We delivered two final prototypes, one to show interactions and a second to show visuals.
 
-<div class='alert alert-warning'>Do you really want the prorotypes still there?</div>
+<div class='alert alert-warning'>Sorry. The aren't working anymore. 🤷‍♀️</div>
    "
 %}
 
 {% include p-section.html
    header="Colophon"
    subheader="This material was adapted from work my counterparts and I completed for Exictos and the Madeira Interactive Technologies Institute."
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="mhci-logos-template-from-monica.png"
    caption="The following organizations supported our work financially or otherwise. Thanks to them, we were able to research consumer banking and build Echo."
 %}
