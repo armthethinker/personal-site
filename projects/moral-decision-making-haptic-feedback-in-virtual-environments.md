@@ -2,6 +2,7 @@
 layout: project-page
 pID: 4
 title: Moral Decisions & Haptics in VR
+assetURL: /assets/img/moral-decision-making-haptics-feedback-in-virtual-environments/
 ---
 
 <h1>TABLE OF CONTENTS</h1>

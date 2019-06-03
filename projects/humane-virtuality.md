@@ -2,6 +2,7 @@
 layout: project-page
 pID: 3
 title: Humane Virtuality
+assetURL: /assets/img/humane-virtuality/
 ---
 <h1>Table of contents</h1>
 
