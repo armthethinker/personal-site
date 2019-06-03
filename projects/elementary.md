@@ -431,7 +431,7 @@ Some simulators can be found on the web and others can only be accessed when sit
    subheader=""
    content="We delivered two final prototypes, one to show interactions and a second to show visuals.
 
-<div class='alert alert-warning'>Sorry. The aren't working anymore. 🤷‍♀️</div>
+<div class='alert alert-warning'>Sorry. They aren't working anymore. 🤷‍♀️</div>
    "
 %}
 
