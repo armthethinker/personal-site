@@ -159,7 +159,7 @@ body
    transform-style: preserve-3d
    perspective: $perspective
    transition: box-shadow 2s
-   border-radius: 16px
+   border-radius: $border-radius
 
    @media (min-width: $break-md)
       padding: 64px 64px 54px
@@ -413,6 +413,8 @@ img
       object-fit: cover
    &.contain
       object-fit: contain
+.embed-responsive
+   border-radius: $border-radius
 
 
 .card
