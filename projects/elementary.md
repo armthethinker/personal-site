@@ -21,6 +21,17 @@ assetURL: /assets/img/elementary/
    aspect="16by9"
 %}
 
+{% include media-youtube.html
+   header="Fancy render"
+   subheader=""
+   urlCode="23IxlW-Ug94"
+   caption=""
+   style="lg"
+   aspect="4by3"
+%}
+
+
+
 {% include p-section.html
    header="Problem"
    subheader="Banks don't really help their customers."
