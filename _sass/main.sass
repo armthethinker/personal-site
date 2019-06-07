@@ -284,73 +284,98 @@ body
       .btn-view-project
          transform: translateZ(32px)
 
-
+$palette-samsung: #992233
 $palette-echo: #4054B2
 $palette-hv: #C80D59
 $palette-morals: #544C51
 $palette-whatif: #f4973a
 
-.btn
-   &.shade-echo
-      color: $palette-echo
-      background-color: lighten($palette-echo, 45%)
-      border-color: $palette-echo
-      box-shadow: 0 8px 16px rgba($palette-echo, .1) !important
-      transition: background-color .2s, box-shadow .2s, transform .5s
-      &:hover,
-      &:active
-         background-color: lighten($palette-echo, 38%)
-         box-shadow: 0 10px 24px rgba($palette-echo, .2) !important
-   &.shade-hv
-      color: $palette-hv
-      background-color: lighten($palette-hv, 45%)
-      border-color: $palette-hv
-      box-shadow: 0 8px 16px rgba($palette-hv, .1) !important
-      transition: background-color .2s, box-shadow .2s, transform .5s
-      &:hover,
-      &:active
-         background-color: lighten($palette-hv, 38%)
-         box-shadow: 0 10px 24px rgba($palette-hv, .2) !important
-   &.shade-morals
-      color: $palette-morals
-      background-color: lighten($palette-morals, 45%)
-      border-color: $palette-morals
-      box-shadow: 0 8px 16px rgba($palette-morals, .1) !important
-      transition: background-color .2s, box-shadow .2s, transform .5s
-      &:hover,
-      &:active
-         background-color: lighten($palette-morals, 38%)
-         box-shadow: 0 10px 24px rgba($palette-morals, .2) !important
-   &.shade-whatif
-      color: $palette-whatif
-      background-color: lighten($palette-whatif, 35%)
-      border-color: $palette-whatif
-      box-shadow: 0 8px 16px rgba($palette-whatif, .1) !important
-      transition: background-color .2s, box-shadow .2s, transform .5s
-      &:hover,
-      &:active
-         background-color: lighten($palette-whatif, 38%)
-         box-shadow: 0 10px 24px rgba($palette-whatif, .2) !important
-   &.btn-timeline
-      box-sizing: border-box
-      background: linear-gradient($palette-timeline-bg, $palette-timeline-bg), linear-gradient(30deg, #AC32B4 30%, #4579E7 50%, #DD7962 85%)
-      border: 12px solid transparent
-      background-repeat: no-repeat
-      background-origin: padding-box, border-box
-      border-radius: 28px
-      position: relative
-      margin-top: 24px
-      margin-bottom: 24px
-      color: white
-      &:before
-         content: ""
-         position: absolute
-         top: -7px
-         bottom: -8px
-         left: -7px
-         right: -7px
-         border: 12px solid $palette-timeline-bg
-         border-radius: 27px
+$palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
+
+@mixin project-specific-style($name, $color-primary, $lighten, $box-shadow-intensity)
+   #{$name}
+      .color-primary,
+      h1,
+      a,
+      a:hover
+         color: $color-primary
+      &.project-card
+         h2
+            color: $color-primary
+      .bg-primary
+         background-color: $color-primary
+      .btn
+         color: $color-primary
+         background-color: lighten($color-primary, $lighten)
+         border-color: $color-primary
+         box-shadow: 0 8px 16px rgba($color-primary, $box-shadow-intensity) !important
+         transition: background-color .2s, box-shadow .2s, transform .5s
+         &:hover
+            background-color: lighten($color-primary, 30%) !important
+            box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
+            border-color: $color-primary !important
+         &:active
+            background-color: lighten($color-primary, 20%) !important
+            box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
+            border-color: $color-primary !important
+      .btn-outline
+         background-color: white
+      .page-header
+         .nav-main
+            &::after
+               background-color: rgba($color-primary, 20%)
+      .page-body
+         h2:not(:empty):before
+            content: " "
+            position: absolute
+            height: 4px
+            width: 24px
+            top: -8px
+            border-radius: 2px
+            background-color: $color-primary
+      footer,
+      .footer
+         margin-top: 104px
+         background-color: white
+         > .col-12
+            > .row
+               &::before
+                  content: ' '
+                  height: 4px
+                  width: 100%
+                  border-radius: 2px
+                  top: -32px
+                  background-color: rgba($color-primary, 20%)
+                  position: absolute
+
+
+@include project-specific-style(".project-samsung", $palette-samsung, 50%, 10%)
+@include project-specific-style(".project-echo", $palette-echo, 45%, 10%)
+@include project-specific-style(".project-hv", $palette-hv, 50%, 10%)
+@include project-specific-style(".project-morals", $palette-morals, 60%, 10%)
+@include project-specific-style(".project-whatif", $palette-whatif, 35%, 10%)
+
+
+.btn.btn-timeline
+   box-sizing: border-box
+   background: linear-gradient($palette-timeline-bg, $palette-timeline-bg), linear-gradient(30deg, #AC32B4 30%, #4579E7 50%, #DD7962 85%)
+   border: 12px solid transparent
+   background-repeat: no-repeat
+   background-origin: padding-box, border-box
+   border-radius: 28px
+   position: relative
+   margin-top: 24px
+   margin-bottom: 24px
+   color: white
+   &:before
+      content: ""
+      position: absolute
+      top: -7px
+      bottom: -8px
+      left: -7px
+      right: -7px
+      border: 12px solid $palette-timeline-bg
+      border-radius: 27px
 
 
 
