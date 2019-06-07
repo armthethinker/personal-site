@@ -21,7 +21,7 @@ assetURL: /assets/img/what-if-conference-book/
 %}
 
 {% include media-youtube.html
-   urlCode="CQFdGfwChtw"
+   urlCode="eRw5Id9emKo"
    caption="Our promotional explanation video."
    aspect="16by9"
 %}
@@ -49,8 +49,8 @@ The core of _What If…?_ is like water. Each project we take on is like a new c
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="Caption"
+   url="image139.jpg"
+   caption="Part of our pre-conference workshop."
    captionSide=true
 %}
 
@@ -59,8 +59,8 @@ The core of _What If…?_ is like water. Each project we take on is like a new c
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="Caption"
+   url="image179.jpg"
+   caption="Another shot of our pre-conference workshop."
    captionSide=true
 %}
 
@@ -69,8 +69,8 @@ The core of _What If…?_ is like water. Each project we take on is like a new c
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="Caption"
+   url="image409.jpg"
+   caption="We went beyond speakers and held a concert."
    captionSide=true
 %}
 
@@ -79,8 +79,8 @@ The core of _What If…?_ is like water. Each project we take on is like a new c
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption="Caption"
+   url="image264.jpg"
+   caption="People working through the interstitial activities."
    captionSide=true
 %}
 
@@ -90,7 +90,7 @@ The core of _What If…?_ is like water. Each project we take on is like a new c
 
 {% include media-youtube.html
    header="Conferences"
-   urlCode="CQFdGfwChtw"
+   urlCode="fqLxMqqwgh8"
    caption="Highlight reel from my last conference."
    aspect="16by9"
 %}
@@ -105,11 +105,11 @@ We were also honored to be sponsored by Quirky, littleBits, Schlafly Beer, and o
 
 {% include p-section.html
    header="Book"
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="editingamanuscriptthisweekendwhatwhat.jpg"
    caption="A review copy of the book. All those Post-It flags are things I need to deal with."
    content="A few years in the making, my first book _The Book of What If…?: Questions and Activities for Curious Minds_ comes out in 2016 (co-written with Matt Murrie). The book is comprised of question-based entries, all starting with “What If…?”. Each entry explores the question a bit, helping the reader (8–12 year olds) understand a few implications and base facts. Most entries have an activity for kids to delve deeper into the question. Some entires have peer-interviews with other kids; expert interviews with the likes of David Eagleman, Amber Case, and Aubrey de Grey; and profiles on historic individuals.
 
-<a href='http://amzn.com/1582705291' target='_blank'>Amazon: _The Book of What If…?: Questions and Activities for Curious Minds_</a>
+<a class='btn btn-outline' href='http://amzn.com/1582705291' target='_blank'>Amazon: _The Book of What If…?: Questions and Activities for Curious Minds_ ></a>
 
 **Technical bits** Published by Aladdin / Beyond Words, an imprint of Simon & Schuster. I’m represented by my agent, Jessica Regal."
 %}
@@ -124,9 +124,9 @@ We were also honored to be sponsored by Quirky, littleBits, Schlafly Beer, and o
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="wims3.jpg"
    caption="Our business model canvas."
-   url="https://source.unsplash.com/1600x900/?neon"
+   url2="whatifmakerteamatstartupweekendcolumbiawhatifmakerspace.jpg"
    caption2="Brainstorming during a Startup Weekend."
 %}
 
@@ -134,7 +134,9 @@ We were also honored to be sponsored by Quirky, littleBits, Schlafly Beer, and o
    content="**Makerspace** Keith Politte provoked Matt and I into exploring the idea of a makerspace: a place for makers, creatives, hackers, and hobbyists. If the conference is for non-tangible ideas, a makerspace helps communities explore physical questions. My research showed most makerspace members were middle-age, white guys — not the diverse crowd What If…? attracts. Our team, later including cofounder Lisa Bunch, explored properties and prepared financial models for a business loan. Our work culminated at a Startup Weekend where we finalized our business model and began work on an Indiegogo campaign. At the event, we collaborated with Olivia Keth, Lauren Rundquist, and Nelson Muller. Ultimately, the project failed shortly after the Startup Weekend when one of our founders left the project. The conference was our first priority, and as such, we couldn’t continue to sustain the MakerSpace work."
 %}
 
-{% include media-img-xl.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   caption=""
+{% include media-img.html
+   url="image333.jpg"
+   caption="Our 02014 venue was a concert hall. It was pretty great."
+   size="lg"
+   captionSide=true
 %}
