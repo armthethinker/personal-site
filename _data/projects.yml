@@ -59,7 +59,7 @@
   imgThumb2Position: 50% 50%
   imgThumb3: http://andrewrmchugh.rocks/perch/resources/hero-10.gif
   imgThumb3Position: 50% 50%
-  left: false
+  left: true
   url: humane-virtuality.html
   bgColor: rgba(251, 218, 71, .84)
   bgImg: https://source.unsplash.com/1600x900/?neon
@@ -105,7 +105,7 @@
   imgThumb2Position: 50% 50%
   imgThumb3: http://andrewrmchugh.rocks/perch/resources/image333.jpg
   imgThumb3Position: 50% 50%
-  left: false
+  left: true
   url: what-if-conference-book.html
   bgColor: rgba(251, 218, 71, .3)
   bgImg: https://source.unsplash.com/1600x900/?neon
