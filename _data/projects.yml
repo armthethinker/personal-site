@@ -17,7 +17,6 @@
   imgThumb3Position:
   left: true
   url: samsung.html
-  bgColor: rgba(251, 218, 71, .3)
   bgImg: https://source.unsplash.com/1600x900/?neon
   videoJumbotronHero:
   imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
@@ -40,7 +39,6 @@
   imgThumb3Position: 50% 0
   left: false
   url: elementary.html
-  bgColor: rgba(251, 218, 71, 1)
   videoJumbotronHero: https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4
 - title: Humane Virtuality
   pID: 3
@@ -61,7 +59,6 @@
   imgThumb3Position: 50% 50%
   left: true
   url: humane-virtuality.html
-  bgColor: rgba(251, 218, 71, .84)
   bgImg: https://source.unsplash.com/1600x900/?neon
   videoJumbotronHero:
   imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
@@ -84,7 +81,6 @@
   imgThumb3Position: 50% 50%
   left: false
   url: moral-decision-making-haptic-feedback-in-virtual-environments.html
-  bgColor: rgba(251, 218, 71, .3)
   bgImg: https://source.unsplash.com/1600x900/?neon
   videoJumbotronHero:
   imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
@@ -107,7 +103,6 @@
   imgThumb3Position: 50% 50%
   left: true
   url: what-if-conference-book.html
-  bgColor: rgba(0, 0, 0, .4)
   bgImg: /assets/img/whatif/image387.jpg
   videoJumbotronHero:
   imgJumbotronHero:

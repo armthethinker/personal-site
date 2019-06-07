@@ -278,15 +278,25 @@ body
       .btn-view-project
          transform: translateZ(32px)
 
-$palette-samsung: #992233
+$palette-samsung: #0c4da2
+$palette-samsung-secondary: #0c4da2
+
 $palette-echo: #4054B2
+$palette-echo-secondary: rgb(251, 218, 71)
+
 $palette-hv: #C80D59
+$palette-hv-secondary: #C80D59
+
 $palette-morals: #544C51
+$palette-morals-secondary: #ffffff
+
 $palette-whatif: #f4973a
+$palette-whatif-secondary: #f4973a
+
 
 $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
 
-@mixin project-specific-style($name, $color-primary, $lighten, $box-shadow-intensity)
+@mixin project-specific-style($name, $color-primary, $lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity)
    #{$name}
       .color-primary,
       h1,
@@ -314,6 +324,10 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
             border-color: $color-primary !important
       .btn-outline
          background-color: white
+      .jumbotron
+         text-shadow: 0 0 24px $color-secondary
+         .jumbotron-bg
+            background-color: rgba($color-secondary, $jumbotron-opacity)
       .page-header
          .nav-main
             &::after
@@ -343,11 +357,11 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
                   position: absolute
 
 
-@include project-specific-style(".project-samsung", $palette-samsung, 50%, 10%)
-@include project-specific-style(".project-echo", $palette-echo, 45%, 10%)
-@include project-specific-style(".project-hv", $palette-hv, 50%, 10%)
-@include project-specific-style(".project-morals", $palette-morals, 60%, 10%)
-@include project-specific-style(".project-whatif", $palette-whatif, 35%, 10%)
+@include project-specific-style(".project-samsung", $palette-samsung, 50%, 10%, $palette-samsung-secondary, 30%)
+@include project-specific-style(".project-echo", $palette-echo, 45%, 10%, $palette-echo-secondary, 80%)
+@include project-specific-style(".project-hv", $palette-hv, 50%, 10%, $palette-hv-secondary, 30%)
+@include project-specific-style(".project-morals", $palette-morals, 60%, 10%, $palette-morals-secondary, 64%)
+@include project-specific-style(".project-whatif", $palette-whatif, 35%, 10%, $palette-whatif-secondary, 30%)
 
 
 .btn.btn-timeline
