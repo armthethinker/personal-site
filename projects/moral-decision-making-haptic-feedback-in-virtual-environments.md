@@ -31,20 +31,20 @@ Our experiment, the Elevator Problem, uses a worker on an elevator dropping towa
 %}
 
 {% include p-section.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="screen-shot-2015-12-17-at-9.07.42-am.png"
    caption="Moral decisions across groups."
    content="Participants in the haptic and non-haptic groups both experienced an increasing heart rate as the experiment progressed (data was normalized in-group). Lever group participants’ heart rate did not change to the same degree, though this may be due to other factors."
 %}
 
 {% include media-img-xl.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="2.jpg"
    caption="On this subject, you can see the abundance of the required technology: the Oculus DK2 on his face with the positional tracker on a tripod, headphones for sound, the Leap Motion on the Oculus DK2 to track his hands, a skin conductance monitor on his fingers, and a heart rate monitor on his ear."
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="4.jpg"
    caption="To fake haptic feedback for the buttons used in the first phase of the experiment, we used a plastic container lid."
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="1.jpg"
    caption2="A common reaction of hesitation and terror."
 %}
 
@@ -96,8 +96,8 @@ The visual setup of the original problem requires the user to look in two extrem
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url="12197552912122242213119823698824o.jpg"
+   url2="1220086536680235814291196898860n.jpg"
    caption="Early versions of the “Elevator Problem”. Here, we’ve settled on electricity as the death mechanism."
 %}
 
@@ -108,16 +108,16 @@ After we had settled on our scenario and setup, we spent a few weeks refining th
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="122139429149043086015791670173832o.jpg"
    caption="Two low poly versions of our worker model. Since we were severely limited with our graphics capability, low polygon counts were important to a high frame rate and thus decreased motion sickness."
    captionSide=true
 %}
 
 {% include media-img.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="122428979161549118098521220020330o.jpg"
    caption="Environment after the programmers started implementing the design in Unity."
    style="lg"
-   url2="https://source.unsplash.com/1600x900/?neon"
+   url2="screen-shot-2016-01-14-at-2.34.39-pm.png"
    caption2="After much refinement."
 %}
 
@@ -134,7 +134,7 @@ After we had settled on our scenario and setup, we spent a few weeks refining th
 %}
 
 {% include p-section.html
-   url="https://source.unsplash.com/1600x900/?neon"
+   url="dsc0043.jpg"
    caption="Image of our handmade galvanic skin response and heart rate sensors."
    content="We tested 60 participants. While all participants completed the scenario, 4 datasets were thrown out due to technical issues. All participants were students or recent graduates of Carnegie Mellon University. A more detailed description of our methodology found on a <a href='http://ideate.xsead.cmu.edu/gallery/projects/virtual-trolley' target='_blank'>Carnegie Mellon project showcase site</a>."
 %}
