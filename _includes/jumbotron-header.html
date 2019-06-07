@@ -1,8 +1,3 @@
-{% for project in site.data.projects %}
-   {% if project.pID == page.pID %}
-      {% assign p = project %}
-   {% endif %}
-{% endfor %}
 <div class="jumbotron jumbotron-fluid" style="background-image:url('{{p.bgImg}}')">
    <div class="jumbotron-bg" style="background-color: {{p.bgColor}}"></div>
    <div class="container position-relative">

@@ -2,7 +2,7 @@
 layout: project-page
 pID: 2
 title: Echo
-assetURL: /assets/img/elementary/
+assetURL: /assets/img/echo/
 ---
 
 <h1>TABLE OF CONTENTS</h1>

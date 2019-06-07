@@ -2,7 +2,7 @@
 layout: project-page
 pID: 5
 title: What If...? Conference & Book
-assetURL: /assets/img/what-if-conference-book/
+assetURL: /assets/img/whatif/
 ---
 <h1>Table of contentenenensnsnf</h1>
 

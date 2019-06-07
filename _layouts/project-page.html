@@ -16,7 +16,13 @@
    <title>{{ page.title }}</title>
 </head>
 
-<body>
+{% for project in site.data.projects %}
+   {% if project.pID == page.pID %}
+      {% assign p = project %}
+   {% endif %}
+{% endfor %}
+
+<body class="project-{{p.short}}">
    {% include util-responsive-size.html %}
    <div class="page">
       <div class="-none page-header">
