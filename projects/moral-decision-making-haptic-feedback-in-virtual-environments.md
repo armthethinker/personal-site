@@ -87,7 +87,7 @@ Ivan’s pitch was for a recreation of a variant of the Trolley Problem, the “
 
 When the groups were formed, I voted to be (and was) put on Ivan’s team as I have a background in philosophy, UX, and experiment design. And, what could be cooler than creating experiential thought experiments?
 
-###Initial Designs
+### Initial Designs
 
 The first week of work focused on (1) how we would translate the trolley problem variant into virtual reality and (2) which research questions to ask. From our earlier work in the class, we understood some of the limitations of our devices (laptop, Oculus DK2, and Leap Motion). Previous iterations of the thought experiment relied on the question-asker to force the question-answerer into either pushing the “fat man” or not. When faced with the decision, people often look for a way out. Presenting the decision in a game-like environment therefore did not lend itself to a realistic decision. It was our task to create an environment that was believable enough for the user to jump in, believe, and make a realistic decision.
 

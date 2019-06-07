@@ -1,4 +1,8 @@
-<div class="jumbotron jumbotron-fluid" style="background-image:url('{{p.bgImg}}')">
+{% if p.light == true %}
+{% assign lightDark = "light" %}
+{% endif %}
+
+<div class="jumbotron jumbotron-fluid {{lightDark}}" style="background-image:url('{{p.bgImg}}')">
    <div class="jumbotron-bg" style="background-color: {{p.bgColor}}"></div>
    <div class="container position-relative">
       {% include navigation-project.html %}
@@ -11,16 +15,20 @@
                <div class="col-12 col-md card-aside">
                   <div class="row">
                      <div class="col-12 col-sm-6">
-                        <p><strong>Role</strong><br>{{p.role}}</p>
+                        <strong>Role</strong>
+                        <p>{{p.role}}</p>
                      </div>
                      <div class="col-12 col-sm-6">
-                        <p><strong>Date</strong><br>{{p.date}}</p>
+                        <strong>Date</strong>
+                        <p>{{p.date}}</p>
                      </div>
                      <div class="col-12 col-sm-6">
-                        <p><strong>While at</strong><br>{{p.whileAt}}</p>
+                        <strong>While at</strong>
+                        <p>{{p.whileAt}}</p>
                      </div>
                      <div class="col-12 col-sm-6">
-                        <p><strong>With</strong><br>{{p.withWho}}</p>
+                        <strong>With</strong>
+                        <p>{{p.withWho}}</p>
                      </div>
                   </div>
                </div>

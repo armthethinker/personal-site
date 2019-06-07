@@ -21,13 +21,13 @@ assetURL: /assets/img/echo/
    aspect="16by9"
 %}
 
-{% include media-youtube.html
+{% include p-section.html
    header="Fancy render"
    subheader=""
-   urlCode="23IxlW-Ug94"
-   caption=""
-   style="lg"
-   aspect="4by3"
+   content="
+<a href='https://youtu.be/23IxlW-Ug94'>Higher fidelity video ></a>
+   "
+   url="echo-overview.2019-06-02 22_17_19.gif"
 %}
 
 

@@ -136,7 +136,6 @@ body
    background-color: transparent
 
 .container
-
    @media (min-width: $break-lg)
       padding-left:  80px
       padding-right: 80px
@@ -149,8 +148,7 @@ body
    @media (min-width: $break-xl + 80px * 2)
       padding-left:  15px
       padding-right: 15px
-   // @media (min-width: $break-xl)
-   //    max-width: 1000px
+
 .project-card
    box-shadow: 0 8px 16px rgba(0,0,0,.3)
    margin: 60px auto
@@ -160,15 +158,13 @@ body
    perspective: $perspective
    transition: box-shadow 2s
    border-radius: $border-radius
+   background: white
 
    @media (min-width: $break-md)
       padding: 64px 64px 54px
 
    @media (min-width: $break-lg)
       padding: 64px 64px 24px
-
-   &.b-o-w
-      background-color: white
 
    h3
       font-size: 1.3rem
@@ -187,7 +183,6 @@ body
          left: -64px
          width: calc(100% + 2 * 64px)
 
-
       @media (min-width: $break-lg)
          left: auto
          right: auto
@@ -196,7 +191,6 @@ body
          margin-top: -64px
          margin-right: -64px
          height: 620px
-         // top: -64px
 
       @media (min-width: $break-xl)
          height: 500px
@@ -431,9 +425,10 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
 
 img
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
-   &.img-fluid.rounded
-      border-radius: $border-radius !important
+   &.img-fluid
       width: 100%
+   &.rounded
+      border-radius: $border-radius !important
    &.cover
       object-fit: cover
    &.contain
@@ -505,14 +500,14 @@ img
 //    color: #eeeeee
 .page-header
    .nav-main
-      margin-bottom: 40px
+      margin-bottom: 54px
       font-weight: 600
       &::after
          content: ' '
-         height: 4px
+         height: 2px
          width: 100%
          border-radius: 10px
-         background-color: rgba(0,0,0,.84)
+         background-color: rgba(0,0,0,.4)
          position: absolute
    .nav
       margin-left: -15px
@@ -549,3 +544,10 @@ img
          position: absolute
          bottom: 0
          background-image: linear-gradient(0deg, rgba(251, 218, 71, 1) 0%, rgba(251, 218, 71, 0) 100%)
+      p
+         opacity: .84
+
+.btn-outline
+   background-color: none !important
+.light
+   color: white
