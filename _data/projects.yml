@@ -60,9 +60,10 @@
   imgThumb3Position: 50% 50%
   left: true
   url: humane-virtuality.html
-  bgImg: https://source.unsplash.com/1600x900/?neon
+  bgImg: /assets/img/hv/IMG_9699.JPG
   videoJumbotronHero:
-  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
+  imgJumbotronHero:
+  light: true
 - title: Moral Decisions & Haptics in VR
   pID: 4
   short: morals
