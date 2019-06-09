@@ -355,6 +355,8 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
                   top: -32px
                   background-color: rgba($color-primary, 20%)
                   position: absolute
+      blockquote
+         border-left-color: $color-primary
 
 
 @include project-specific-style(".project-samsung", $palette-samsung, 50%, 10%, $palette-samsung-secondary, 30%)
@@ -503,11 +505,13 @@ img
    blockquote
       font-size: 140%
       font-weight: 100
-      border-left: 2px solid blue
+      border-left-width: 2px
+      border-left-style: solid
       padding: 24px 0 24px 24px
-      div
-         padding-top: 16px
-      // font-style: italic
+      .blockquote-source
+         padding-top: 0a
+         font-size: $blockquote-small-font-size
+         color: $blockquote-small-color
 
 // .container-fluid.theme-dark
 //    background-color: #101020

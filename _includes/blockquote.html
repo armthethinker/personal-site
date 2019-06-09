@@ -2,10 +2,15 @@
 <div class="-none p-sec p-sec-header">
 {% else %}
 <div class="-none p-sec">
-{% endif %}
+   {% endif %}
    <div class="row justify-content-center">
-      <div class="col-7">
-         <blockquote>{{include.quote | markdownify}}<div>– {{include.source}}</div></blockquote>
+      <div class="col-12 col-sm-10 col-xl-8">
+         <blockquote>{{include.quote | markdownify}}
+            <div class="blockquote-source media">
+               <div class="mr-2">–</div>
+               <div class="media-body">{{include.source}}</div>
+            </div>
+         </blockquote>
       </div>
    </div>
 </div>
