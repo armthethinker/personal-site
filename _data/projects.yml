@@ -74,7 +74,7 @@
   date: October - December 2015
   whileAt: Carnegie Mellon Human-Computer Interaction Institute, Research Issues in Game Development
   withWho: Ivan Wang, Maddie Duque, Swetha Kannan
-  imgHero: http://andrewrmchugh.rocks/perch/resources/cover-virtual-trolley-3.jpg
+  imgHero: /assets/img/morals/push-the-worker.gif
   imgThumb1: http://andrewrmchugh.rocks/perch/resources/2.jpg
   imgThumb1Position: 20% 50%
   imgThumb2: http://andrewrmchugh.rocks/perch/resources/4.jpg
@@ -83,9 +83,9 @@
   imgThumb3Position: 50% 50%
   left: false
   url: moral-decision-making-haptic-feedback-in-virtual-environments.html
-  bgImg: https://source.unsplash.com/1600x900/?neon
+  bgImg: /assets/img/morals/cover-virtual-trolley-sm.jpg
   videoJumbotronHero:
-  imgJumbotronHero: https://source.unsplash.com/1600x900/?plant
+  imgJumbotronHero: /assets/img/morals/push-the-worker.gif
 - title: What If…? Conference & Book
   pID: 5
   short: whatif
