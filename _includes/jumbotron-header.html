@@ -7,8 +7,8 @@
    <div class="container position-relative">
       {% include navigation-project.html %}
       <div class="row">
-         <div class="col-12 col-lg-6 order-2 order-lg-1">
-            <h1 class="display-2">{{p.title}}</h1>
+         <div class="col-12 col-lg-7 order-2 order-lg-1">
+            <h1 class="display-3">{{p.title}} {{p.emoji}}</h1>
             <h2>{{p.subtitle}}</h2>
             <p class="lead">{{p.description}}</p>
             <div class="row">
@@ -34,12 +34,12 @@
                </div>
             </div>
          </div>
-         <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex align-items-center">
+         <div class="col-12 col-lg-5 order-1 order-lg-2 d-flex align-items-center">
             {% if p.imgJumbotronHero != unknown %}
-            <img src="{{p.imgJumbotronHero}}" class="img-fluid img-rounded">
+            <img src="{{p.imgJumbotronHero}}" class="img-fluid rounded mb-4">
             {% endif %}
             {% if p.videoJumbotronHero != unknown%}
-            <div class="embed-responsive embed-responsive-1by1 jumbotron-bottom">
+            <div class="embed-responsive embed-responsive-1by1 jumbotron-bottom mb-4">
                <video src="{{p.videoJumbotronHero}}" type="video/mp4" autoplay muted></video>
                <div class="jumbotron-video-gradient"></div>
             </div>
