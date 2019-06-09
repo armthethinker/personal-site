@@ -40,6 +40,7 @@
   left: false
   url: elementary.html
   videoJumbotronHero: https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4
+  bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
 - title: Humane Virtuality
   pID: 3
   short: hv
