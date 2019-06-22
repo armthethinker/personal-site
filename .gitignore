@@ -14,13 +14,6 @@ Thumbs.db
 /node_modules/
 /_sass/bootstrap/
 
-# Perch Blocking #
-/perch/addons
-/perch/config/config.php
-/perch/core
-/perch/resources
-/perch/setup
-
 # Privacy #
 ######################
 .ftppass
@@ -29,4 +22,3 @@ error_log
 _site
 .sass-cache
 .jekyll-metadata
-/assets/img
