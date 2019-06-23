@@ -62,7 +62,7 @@
   url: humane-virtuality.html
   bgImg: /assets/img/hv/IMG_9699.JPG
   videoJumbotronHero:
-  imgJumbotronHero:
+  imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
   light: true
 - title: Moral Decisions & Haptics in VR
   pID: 4
