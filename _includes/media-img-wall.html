@@ -1,0 +1,38 @@
+{% if include.urlPage != false %}
+{% assign urlPrepend = page.assetURL %}
+{% else %}
+{% assign urlPrepend = "" %}
+{% endif %}
+
+<div class="p-sec">
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-xl-8">
+         <div class="row">
+            <div class="col">
+               <div class="row masonry-set align-items-center">
+
+                  {% assign colLength = include.data.size | divided_by: 3 %}
+                  {% assign colLengthDouble = colLength | times: 2 %}
+
+                  <div class="col masonry-1">
+                  {% for item in include.data limit:colLength %}
+                     <img class="img-fluid img-masonry" src="{{item.imgurl | prepend: urlPrepend}}" style="object-position: {{ item.origin }}">
+                  {% endfor %}
+                  </div>
+                  <div class="col masonry-2">
+                  {% for item in include.data limit:colLength offset:colLength %}
+                     <img class="img-fluid img-masonry" src="{{item.imgurl | prepend: urlPrepend}}" style="object-position: {{ item.origin }}">
+                  {% endfor %}
+                  </div>
+                  <div class="col masonry-3">
+                  {% for item in include.data limit:colLength offset:colLengthDouble %}
+                     <img class="img-fluid img-masonry" src="{{item.imgurl | prepend: urlPrepend}}" style="object-position: {{ item.origin }}">
+                  {% endfor %}
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
