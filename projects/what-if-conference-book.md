@@ -30,6 +30,10 @@ assetURL: /assets/img/whatif/
    content="An active curiosity engine that converges divergent people. Our primary product was an annual conference + workshop and an upcoming book. We also created a platform for independent conferences, we facilitated workshops, and almost made a makerspace."
 %}
 
+{% include media-img-wall.html
+   data=site.data.imgwall.whatif
+%}
+
 {% include p-section.html
    header="My role"
    content="From the beginning, Matt Murrie and I split the company 50–50. We were each cofounders and were each Chief Curiosity Curators. As our roles developed, Matt’s half was focused on external dealings: partnerships, contacts, networking. My half was focused on production: creative lead; designer; event organizer; web developer; video producer; and manager of interns, speakers, and attendee relations. I ensured we put on high-quality events. Though I didn’t realize it at the time, my role was best summed up as user-experience designer to the max."
