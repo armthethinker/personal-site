@@ -11,8 +11,6 @@ if (is.desktop()){
    element.addEventListener('mouseout', function() {
       element.classList.remove('animated', 'tada')
    })
-} else {
-
 }
 
 function flipTimelineButton(){
