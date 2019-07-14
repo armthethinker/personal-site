@@ -3,11 +3,11 @@
   short: samsung
   emoji: 🤓
   subtitle: Spatial computing & magic glasses
-  description: Just about all of my work is under NDA, so here I can talk about the kinds of things I did, but not the actual content. I can also share some of my personal 3D work.
+  description: Almost all of my work is under NDA. Here I share my general approach to spatial computing challenges (some of which is at Samsung) and personal 3D design work.
   role: Senior Designer
   date: February 2017 - Now
-  whileAt: Samsung yo
-  withWho: Samsung Research America, Mobile Platform Solutions Lab, XR Design Group (XRDG)
+  whileAt: Samsung Research America, Mobile Platform Solutions Lab
+  withWho: My coworkers in XR Design Group (XRDG)
   imgHero: https://source.unsplash.com/1600x900/?neon
   imgThumb1: https://source.unsplash.com/1600x900/?neon
   imgThumb1Position:
@@ -25,7 +25,7 @@
   short: echo
   emoji: 💸
   subtitle: Transparent consumer banking in an opaque market
-  description: We created a transparent consumer banking application that utilizes learning and prediction to provide better service. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a banking software company. Echo lets you master your finances.
+  description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
   role: Project Manager, Prototyping Lead, UX Designer
   date: January 2016 to December 2016
   whileAt: M-ITI / Carnegie Mellon University
@@ -46,7 +46,7 @@
   short: hv
   emoji: 😎
   subtitle: Researching the future of VR UX in week-long sprints
-  description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work. I shared weekly journals of one to two week long sprints — totaling six experiments. Case studies are being published now.
+  description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
   role: UX Designer
   date: June - August 2016
   whileAt: Over the summer during my master’s degree at CMU/M-ITI
@@ -68,11 +68,11 @@
   pID: 4
   short: morals
   emoji: 🚋
-  subtitle: An exploration of the trolley problem
-  description: Moral questions are often posed in writing or conversation. We created a virtual environment to test an isomorph of the Trolley Problem. Using VR, we were able to situate participants in a realistic scenario whereas traditional thought experiments are tested through text or conversation. We found that participants who have haptic feedback are less likely to kill one person — in order to save four — than their non-haptic counterparts.
+  subtitle: Does feeling a virtual world change your moral decisions?
+  description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
   role: UX & Research Methods Designer
   date: October - December 2015
-  whileAt: Carnegie Mellon Human-Computer Interaction Institute, Research Issues in Game Development
+  whileAt: Carnegie Mellon University
   withWho: Ivan Wang, Maddie Duque, Swetha Kannan
   imgHero: /assets/img/morals/push-the-worker.gif
   imgThumb1: /assets/img/morals/2.jpg
@@ -91,7 +91,7 @@
   short: whatif
   emoji: 🤔
   subtitle: Active curiosity to the max
-  description: In 2010, I cofounded a conference that used active curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, a makerspace, and a book. I left the company in June 2014 to pursue graduate school.
+  description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
   role: Cofounder & Chief Curiosity Curator
   date: November 2010 - June 2014
   whileAt: Our startup, What If...? LLC
