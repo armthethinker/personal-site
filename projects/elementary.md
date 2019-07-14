@@ -14,23 +14,11 @@ assetURL: /assets/img/echo/
 
 {% include media-youtube.html
    header="Concept video"
-   subheader=""
    urlCode="KlLjFG6iTOA"
    caption=""
    style="lg"
    aspect="16by9"
 %}
-
-{% include p-section.html
-   header="Fancy render"
-   subheader=""
-   content="
-<a href='https://youtu.be/23IxlW-Ug94'>Higher fidelity video ></a>
-   "
-   url="echo-overview.2019-06-02 22_17_19.gif"
-%}
-
-
 
 {% include p-section.html
    header="Problem"
@@ -48,8 +36,6 @@ Instead of helping their users, banks (often) only provide a list of transaction
 " %}
 
 {% include media-img.html
-   header=""
-   subheader=""
    url="personal-transactions.png"
    caption="A screenshot of my own opaque banking app from Bank of America. My other and primary bank, Simple, does a better job, but still isn't entirely transparent."
    style="md"
@@ -59,16 +45,12 @@ Instead of helping their users, banks (often) only provide a list of transaction
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="In response to the opaque market and our user research, **we created a transparent consumer banking application for the Portuguese market that utilizes learning and prediction to help people understand their finances**.
 
    _Our work was split over two four month periods: one of research; one of designs, prototypes, and user testing._"
 %}
 
 {% include media-youtube.html
-   header=""
-   subheader=""
    urlCode="8C6ulEP3BJc"
    caption="Final presentation to our client and the public. (26.5min)"
    style="md"
@@ -77,7 +59,6 @@ Instead of helping their users, banks (often) only provide a list of transaction
 
 {% include p-section.html
    header="My role"
-   subheader=""
    content="
    - **Project Manager**: I created the structures and systems that allowed us to work efficiently and effectively. These included thought structures for thinking about and explaining our project, Google Ventures’ Sprint process, and how the team functions (everyone leads one aspect and contributes to the other parts). I facilitated our critiques, leading the team to effective outcomes.
    - **Prototyping Lead**: I utilized my previous front-end and prototyping experience to build our website, hi-fi Framer prototypes and experiments, and wrote the design suggestions for our machine learning algorithms.
@@ -86,8 +67,6 @@ Instead of helping their users, banks (often) only provide a list of transaction
 %}
 
 {% include media-img-xl.html
-   header=""
-   subheader=""
    url="monetaryecosystem-sm.png"
    caption="Early on in our research phase, we created a context ecosystem to remind us of the connections between people and concepts. The key to staying focused with a broad project is structure."
    style="xl"
@@ -98,7 +77,6 @@ Instead of helping their users, banks (often) only provide a list of transaction
 
 {% include p-section.html
    header="Elementary & Exictos"
-   subheader=""
    content="**Elementary** is a group of four master’s students in the Carnegie Mellon University and University of Madeira Master of Human-Computer interaction dual degree program. We are a multi-disciplinary team with backgrounds in the humanities, psychology, and computer science. When working, we each take the lead on one aspect of the project, then collaborate to completion.
 
    **Exictos (our client)**, formerly known as Promosoft, was founded in 1989. They specialize in the production and implementation of core banking software, serving more than 60 banks in Portuguese-speaking countries. Exictos expanded their offerings to include both mobile and online banking software as a layer over their core platform. In 2015, Exictos was acquired by the Polish Asseco group to strengthen its presence in Africa and to open up new opportunities for expansion in South American markets, especially Brazil."
@@ -108,7 +86,6 @@ Instead of helping their users, banks (often) only provide a list of transaction
 
 {% include p-section.html
    header="Research methods"
-   subheader=""
    content="Our research spanned our first four months of work. To guide our investigation into Portuguese consumer banking, we created a series of core questions. Each question lead us to a research method.
 
 - What is already known about the banking market?<br>
@@ -127,8 +104,6 @@ To interpret our data, we created models including a flow model, sequence diagra
 %}
 
 {% include media-img.html
-   header=""
-   subheader=""
    url="consolidated-flow.jpg"
    caption="Our consolidated flow model, showing the connections between the user and their monetary environment. "
    style="md"
@@ -144,7 +119,6 @@ To interpret our data, we created models including a flow model, sequence diagra
 
 {% include p-section.html
    header="Research insights"
-   subheader=""
    content="Concluding our research phase, we compiled a short list of critical insights made from our research data. These are the most relevant insights.
 
 ### Lack of trust in banks and online merchants
@@ -164,8 +138,6 @@ Often aware of savings options, few users have savings accounts or other investm
 %}
 
 {% include media-img.html
-   header=""
-   subheader=""
    url="research-short.gif"
    caption="Elementary placing our notes from our interviews into our affinity diagram."
    style="md"
@@ -181,14 +153,11 @@ Often aware of savings options, few users have savings accounts or other investm
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="By continually providing value to users, banks are more likely to retain customers who are less likely to get frustrated. We are providing opportunities for customers to truly understand their finances. We are doing so in ways that no popular bank has, setting our client, Exictos, and their clients apart from their competition."
 %}
 
 {% include p-section.html
    header="Design process"
-   subheader=""
    content="Based our research, we understood the user’s core questions: How am I doing? How will I be doing? If something changes, how does that affect me? **In our last four months of work, we answered these questions by building Echo.**
 
 We explored each part of our five part vision in four week-long design sprints (our fifth part was explored throughout). With the user feedback, we were able to condense what made sense, get rid of what didn’t, and update what needed improvements.
@@ -197,8 +166,6 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   header=""
-   subheader=""
    url="process.jpg"
    caption=""
    style="md"
@@ -208,8 +175,6 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 ### Principles
 
@@ -300,7 +265,6 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 
 {% include p-section.html
    header="Introducing Echo"
-   subheader=""
    content="
 ### Transactions
 
@@ -439,7 +403,6 @@ Some simulators can be found on the web and others can only be accessed when sit
 
 {% include p-section.html
    header="Hi-fi prototypes"
-   subheader=""
    content="We delivered two final prototypes, one to show interactions and a second to show visuals.
 
 <div class='alert alert-warning'>Sorry. They aren't working anymore. 🤷‍♀️</div>
