@@ -39,7 +39,7 @@
   imgThumb3Position: 50% 0
   left: false
   url: elementary.html
-  videoJumbotronHero: https://media.giphy.com/media/Kfla4WUFftXfgAD2QP/giphy.mp4
+  imgJumbotronHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
   bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
 - title: Humane Virtuality
   pID: 3
