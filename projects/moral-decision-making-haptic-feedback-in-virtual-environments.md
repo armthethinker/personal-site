@@ -7,7 +7,7 @@ assetURL: /assets/img/morals/
 
 {% include blockquote.html
    quote="
-But there’s still a chance to save them. A worker sent to fix the electrical problem stands in front of me, bent over his work, oblivious to my presence. All I have to do is shove him to the floor below, killing him and shorting the electricity, which will spare the four people plunging to their death. I have 20 seconds to decide who dies.
+**But there’s still a chance to save them.** A worker sent to fix the electrical problem stands in front of me, bent over his work, oblivious to my presence. All I have to do is shove him to the floor below, killing him and shorting the electricity, which will spare the four people plunging to their death. I have 20 seconds to decide who dies.
 <br><br>
 […]
 <br><br>
