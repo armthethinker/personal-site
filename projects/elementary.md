@@ -379,11 +379,11 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 %}
 
 {% include media-img.html
-   url="."
+   url="echo-framer-relative-slider.gif"
    caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center."
    style="md"
    captionSide=false
-   url2="."
+   url2="echo-framer-category-switch.gif"
    caption2="An example of how we might change a categorized transaction with a long press."
 %}
 
