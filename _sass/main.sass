@@ -377,6 +377,12 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
          background-color: rgba($color-primary, .08)
          border-radius: 4px $border-radius $border-radius 4px
          border-left: solid 4px $color-primary
+      .toc-link
+         background-color: rgba($color-primary, .08)
+         color: $color-primary
+         &:hover
+            background-color: scale-color(rgba($color-primary, .16), $saturation: 16%)
+            box-shadow: 0 8px 16px transparentize($color-primary, .9)
 
 //                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
 @include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  30%,   100%)
@@ -656,3 +662,14 @@ p
    + ul,
    + ol
       margin-top: -1.5rem
+.table-of-contents
+   margin-bottom: 40px
+.toc-list-item
+   text-align: left
+.toc-link
+   display: inline-block
+   padding: .5rem 1rem
+   border-radius: 16px
+   margin: .3rem 0rem
+   &:hover
+      text-decoration: none

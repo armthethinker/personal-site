@@ -5,8 +5,6 @@ title: Moral Decisions & Haptics in VR
 assetURL: /assets/img/morals/
 ---
 
-<h1>TABLE OF CONTENTS</h1>
-
 FEATURED IN WALL STREET JOURNAL
 
 {% include p-section.html

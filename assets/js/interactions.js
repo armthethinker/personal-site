@@ -24,6 +24,57 @@ $('.collapse.collapse-timeline').on('hidden.bs.collapse', function(){
    flipTimelineButton()
 })
 
+// Generate a table of contents
+function generateTableOfContents(els) {
+   var anchoredElText,
+       anchoredElHref;
+       list = document.getElementById('table-of-contents');
+
+   // Find where you want to put the TOC, append the list we just made
+   // document.getElementById('table-of-contents').appendChild(list);
+
+   // Take all of the elements in the els and create+add a nav item
+   // Start at 2 to skip the page subheader and TOC header
+   for (var i = 2; i < els.length; i++) {
+      anchoredElText = els[i].textContent;
+      if (anchoredElText != ''){
+         anchoredElHref = els[i].querySelector('.anchorjs-link').getAttribute('href');
+         addNavItem(list, anchoredElHref, anchoredElText);
+      }
+   }
+}
+
+// Add nav items to a TOC
+function addNavItem(list, href, text) {
+   var anchorItem = document.createElement('A'),
+       textNode = document.createTextNode(text),
+       listItem = document.createElement('DIV');
+
+   // prepend number
+
+   anchorItem.classList.add('toc-link');
+   anchorItem.href = href;
+   list.appendChild(listItem);
+   listItem.appendChild(anchorItem);
+   listItem.classList.add('toc-list-item')
+   anchorItem.appendChild(textNode);
+}
+
+$(document).ready(function(){
+
+   // Setup anchor links
+   anchors.options = {
+      placement: 'left',
+      icon: '#'
+   };
+   anchors.add('h2:not(:empty)');
+
+   // If there isn't a TOC, make one from the anchors elements
+   if ($('#table-of-contents')[0] != undefined)
+      generateTableOfContents(anchors.elements);
+
+});
+
 // // Document functions
 //
 // // FUNCTION Set the wide img width to 100% of window
