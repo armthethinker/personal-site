@@ -269,10 +269,15 @@ body
          box-shadow: 0 16px 32px rgba(0,0,0,.1)
          border-radius: 8px
       img.thumb
-         transform: translateZ(54px)
          box-shadow: 0 16px 32px rgba(0,0,0,.1)
+         &:nth-child(1)
+            transform: translateZ(64px) rotateY(8deg)
+         &:nth-child(2)
+            transform: translateZ(56px) rotateY(0deg)
+         &:nth-child(3)
+            transform: translateZ(64px) rotateY(-8deg)
          @media (min-width: $break-lg)
-            transform: translateZ(54px) rotateY(-15deg)
+            transform: translateZ(56px) rotateY(-15deg) !important
       .project-description
          transform: translateZ(24px)
       .project-meta
@@ -420,7 +425,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
          left: -96px
       &:hover
          img.thumb
-            transform: translateZ(54px) rotateY(15deg)
+            transform: translateZ(56px) rotateY(15deg) !important
 .nav-core
    background-color: $palette-timeline-bg
    padding: 24px
