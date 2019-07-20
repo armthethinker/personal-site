@@ -344,8 +344,9 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
             background-color: rgba($color-secondary, $jumbotron-opacity)
       .page-header
          .nav-main
-            &::after
-               background-color: rgba($color-primary, 100%)
+            .nav
+               &::after
+                  background-color: rgba($color-primary, 100%)
       .page-body
          h2:not(:empty):before
             content: " "
@@ -359,16 +360,8 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
       .footer
          margin-top: 104px
          background-color: $palette-pageBg
-         > .col-12
-            > .row
-               &::before
-                  content: ' '
-                  height: 4px
-                  width: 100%
-                  border-radius: 2px
-                  top: -32px
-                  background-color: rgba($color-primary, 100%)
-                  position: absolute
+         &::before
+            background-color: rgba($color-primary, 100%)
          strong
             color: $color-primary
       blockquote
@@ -458,9 +451,16 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
    border-radius: 50%
    object-fit: cover
 .footer
-   background-color: #faaca8
    padding-top: 32px
    padding-bottom: 80px
+   &::before
+      content: ' '
+      height: 4px
+      width: calc(100% - 30px)
+      // margin-left: -15px
+      border-radius: 2px
+      top: -32px
+      position: relative
 
 img
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
@@ -559,13 +559,14 @@ video,
    .nav-main
       margin-bottom: 56px
       font-weight: 600
-      &::after
+      .nav::after
          content: ' '
          height: 4px
-         width: 100%
+         width: calc(100% - 30px)
+         margin-left: 15px
          border-radius: 10px
          background-color: rgba(0,0,0,.4)
-         position: absolute
+         position: relative
    .nav
       margin-left: -15px
       margin-right: -15px
@@ -670,3 +671,5 @@ p
    margin: .3rem 0rem
    &:hover
       text-decoration: none
+.page-main
+   background-color: #FAACA8
