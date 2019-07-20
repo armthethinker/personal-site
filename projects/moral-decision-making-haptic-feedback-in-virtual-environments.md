@@ -84,11 +84,19 @@ We tested 60 participants. While all participants completed the scenario, 4 data
 
 
 {% include p-section.html
-   header="My role"
+   header="My role & tools"
    content="
+### Role
 - With a bachelors degree in philosophy, I helped the team with any philosophical points and clarifications. This was especially important as we tried to create an easily understandable scenario that looked different from the initial thought experiment.
 - I was the user experience designer on the team, clarifying usability and interaction issues. The rest of the team consisted of programmers and artists.
 - I had worked and led more research projects than my counterparts. As such, I designed our research methodology and statistical analysis.
+
+### Tools
+- Unity
+- Leap Motion
+- Oculus DK2
+- Adobe Premiere
+- Pen & paper
 "
 %}
 

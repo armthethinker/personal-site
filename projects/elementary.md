@@ -67,7 +67,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
 %}
 
 {% include p-section.html
-   header="Elementary, Exictos, & my role"
+   header="Elementary, Exictos, my role, & tools"
    content="
 ### Elementary (our team)
 
@@ -80,7 +80,12 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
 - **Project Manager**: I created the structures and systems that allowed us to work efficiently and effectively. These included thought structures for thinking about and explaining our project, Google Ventures’ Sprint process, and how the team functions (everyone leads one aspect and contributes to the other parts). I facilitated our critiques, leading the team to effective outcomes.
 - **Prototyping Lead**: I utilized my previous front-end and prototyping experience to build our website, hi-fi Framer prototypes and experiments, and wrote the design suggestions for our machine learning algorithms.
 - **UX Designer & Researcher**: Each member of the team worked as a UX designer and researcher, finding a balance between user and client satisfaction. _Jae-Won Kim led UX design and Joel Rodrigues led research._
-   "
+
+### Tools
+- Sketch
+- Framer
+- Marvel
+"
    url="16-05-14-profiles-11.jpg"
    caption="Elementary was (from left): Joel, Andrew, Andrew (me), and Jae"
 %}

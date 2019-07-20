@@ -38,17 +38,26 @@ I ended up publishing weekly journals and a few case studies under my <a href='h
 %}
 
 {% include p-section.html
-   header="My role"
+   header="My role & tools"
    content="
-   - 👨🏻‍🎨 **UX Designer**: think, sketch, and define each experience/experiment.
-   - 👨🏻‍💻 **Prototyper**: build the prototypes in JS using A-Frame, create tools that can be used in the future to speed up the prototyping process.
-   - 🤔 **User Researcher**: getting feedback is incredibly important, but given the experimental nature and “earliness” of many of the prototypes, a few user interviews is all I need.
-   - ✍️ **Writer**: accurately convey my work and insights to the greater design and development community.
-   "
+### Role
+- 👨🏻‍🎨 **UX Designer**: think, sketch, and define each experience/experiment.
+- 👨🏻‍💻 **Prototyper**: build the prototypes in JS using A-Frame, create tools that can be used in the future to speed up the prototyping process.
+- 🤔 **User Researcher**: getting feedback is incredibly important, but given the experimental nature and “earliness” of many of the prototypes, a few user interviews is all I need.
+- ✍️ **Writer**: accurately convey my work and insights to the greater design and development community.
+
+
+### Tools
+- A-Frame (webVR)
+- Google Cardboard
+- Sketch
+- Adobe Premiere
+- Pen & paper
+"
 %}
 
 {% include p-section.html
-   header="Head tracked transformations"
+   header="Head tracked transform<span class='d-none d-md-inline d-xl-none'>-</span>ations"
    subheader="Experiment 1"
    content="**How can a user see around an object if their headset doesn't have positional tracking (e.g. Google Cardboard)?**
 
