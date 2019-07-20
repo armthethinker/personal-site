@@ -7,6 +7,7 @@ $perspective: 1300px
 
 $palette-timeline-bg: #161618
 $palette-body: #585359
+$palette-caption: lighten($palette-body, 20%)
 $palette-pageBg: #ededed
 
 $border-radius: 16px
@@ -100,7 +101,6 @@ a
       top: 10%
       left: 90%
 
-
 .timeline
    background-color: $palette-timeline-bg
    color: #ececee
@@ -116,7 +116,6 @@ a
       padding-bottom: 240px
       // margin-left: -15px
       // margin-right: -15px
-
 
    .timeline-entry
       margin-bottom: 72px
@@ -166,7 +165,7 @@ body
    background: white
 
    @media (min-width: $break-md)
-      padding: 64px 64px 54px
+      padding: 64px 64px 56px
 
    @media (min-width: $break-lg)
       padding: 64px 64px 24px
@@ -220,7 +219,6 @@ body
          height: 144px*3 + 32px*2
          width: 144px
 
-
       img.thumb
          object-fit: cover
          object-position: 50% 50%
@@ -243,7 +241,6 @@ body
          @media (min-width: $break-lg)
             height: 144px
             width: 144px
-
 
    .btn-view-project
       padding-top: 1rem
@@ -272,10 +269,15 @@ body
          box-shadow: 0 16px 32px rgba(0,0,0,.1)
          border-radius: 8px
       img.thumb
-         transform: translateZ(54px)
          box-shadow: 0 16px 32px rgba(0,0,0,.1)
+         &:nth-child(1)
+            transform: translateZ(64px) rotateY(8deg)
+         &:nth-child(2)
+            transform: translateZ(56px) rotateY(0deg)
+         &:nth-child(3)
+            transform: translateZ(64px) rotateY(-8deg)
          @media (min-width: $break-lg)
-            transform: translateZ(54px) rotateY(-15deg)
+            transform: translateZ(56px) rotateY(-15deg) !important
       .project-description
          transform: translateZ(24px)
       .project-meta
@@ -292,7 +294,7 @@ $palette-echo-secondary: rgb(251, 218, 71)
 $palette-hv: #C80D59
 $palette-hv-secondary: black
 
-$palette-morals: #544C51
+// $palette-morals: #544C51
 $palette-morals: #7154E9
 $palette-morals-secondary: #ffffff
 
@@ -301,7 +303,6 @@ $palette-morals-secondary: #ffffff
 
 $palette-whatif: #FC3F5E
 $palette-whatif-secondary: rgb(72, 63, 187)
-
 
 $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
 
@@ -370,8 +371,18 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
                   position: absolute
          strong
             color: $color-primary
-      blockquote::before
-         background-color: $color-primary
+      blockquote
+         // &::before
+         //    background-color: $color-primary
+         background-color: rgba($color-primary, .08)
+         border-radius: 4px $border-radius $border-radius 4px
+         border-left: solid 4px $color-primary
+      .toc-link
+         background-color: rgba($color-primary, .08)
+         color: $color-primary
+         &:hover
+            background-color: scale-color(rgba($color-primary, .16), $saturation: 16%)
+            box-shadow: 0 8px 16px transparentize($color-primary, .9)
 
 //                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
 @include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  30%,   100%)
@@ -379,7 +390,6 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
 @include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
 @include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
 @include project-specific-style(".project-whatif",    $palette-whatif,    32%, 20%, $palette-whatif-secondary,   30%,     0%)
-
 
 .btn.btn-timeline
    box-sizing: border-box
@@ -403,7 +413,6 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
       border-radius: 25px
 
 
-
 @media (min-width: $break-lg)
    .project-card.left-hand
       > .row
@@ -416,7 +425,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
          left: -96px
       &:hover
          img.thumb
-            transform: translateZ(54px) rotateY(15deg)
+            transform: translateZ(56px) rotateY(15deg) !important
 .nav-core
    background-color: $palette-timeline-bg
    padding: 24px
@@ -453,7 +462,6 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
    padding-top: 32px
    padding-bottom: 80px
 
-
 img
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
    &.img-fluid
@@ -464,10 +472,13 @@ img
       object-fit: cover
    &.contain
       object-fit: contain
+   &.img-xl
+      width: calc(100% + 30px)
+      max-width: calc(100% + 30px)
+      margin-left: -15px
 .embed-responsive
    border-radius: $border-radius
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
-
 
 .card
    margin-bottom: 24px
@@ -483,7 +494,7 @@ video,
    margin-bottom: 8px
 .p-img-caption
    font-size: 80%
-   opacity: .7
+   color: $palette-caption
 .page-header
    .card
       margin-top: 40px
@@ -503,7 +514,7 @@ video,
 .page-body
    .card-body
       font-size: 80%
-      opacity: .7
+      color: $palette-caption
 // .page-header
 //    width: calc(100% + 30px)
 //    margin-left: -15px
@@ -522,17 +533,17 @@ video,
    blockquote
       font-size: 140%
       font-weight: 300
-      padding: 24px 0 24px 24px
+      padding: 24px
       position: relative
       margin-bottom: 1.5rem
-      &::before
-         content: " "
-         height: 100%
-         width: 4px
-         position: absolute
-         left: 0
-         top: 0
-         border-radius: 4px
+      // &::before
+      //    content: " "
+      //    height: 100%
+      //    width: 4px
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    border-radius: 4px
       p
          margin-bottom: 0
       .blockquote-source
@@ -546,7 +557,7 @@ video,
 //    color: #eeeeee
 .page-header
    .nav-main
-      margin-bottom: 54px
+      margin-bottom: 56px
       font-weight: 600
       &::after
          content: ' '
@@ -596,7 +607,8 @@ video,
    border-radius: $border-radius
 .btn-outline
    background-color: none !important
-.light
+.light,
+.light h2
    color: white
 
 .img-masonry
@@ -647,3 +659,14 @@ p
    + ul,
    + ol
       margin-top: -1.5rem
+.table-of-contents
+   margin-bottom: 40px
+.toc-list-item
+   text-align: left
+.toc-link
+   display: inline-block
+   padding: .5rem 1rem
+   border-radius: 16px
+   margin: .3rem 0rem
+   &:hover
+      text-decoration: none

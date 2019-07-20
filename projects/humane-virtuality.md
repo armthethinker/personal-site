@@ -4,7 +4,6 @@ pID: 3
 title: Humane Virtuality
 assetURL: /assets/img/hv/
 ---
-<h1>Table of contents</h1>
 
 {% include p-section.html
    header="Context"

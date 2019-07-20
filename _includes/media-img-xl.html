@@ -4,18 +4,28 @@
 {% assign urlPrepend = "" %}
 {% endif %}
 
+<!-- <div class="-none p-sec">
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-xl-8">
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3"> -->
+
 <div class="-none p-sec">
-   <div class="row">
-      <div class="p-img-container">
-         <img class="img-fluid" src="{{include.url | prepend: urlPrepend}}">
-         <div class="col justify-content-center">
-            <div class="row justify-content-center">
-               <div class="col-12 col-sm-10 col-xl-8">
-                  <div class="p-img-caption">
-                     {{include.caption | markdownify}}
-                  </div>
+   <div class="row justify-content-center">
+      <div class="col-12">
+         <div class="p-img-container">
+            <img class="img-fluid img-xl" src="{{include.url | prepend: urlPrepend}}">
+         </div>
+      </div>
+      <div class="col-12 col-sm-10 col-xl-8">
+         <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-3"></div>
+            <div class="col">
+               <div class="p-img-caption">
+                  {{include.caption | markdownify}}
                </div>
             </div>
+            <div class="col-12 col-lg-3"></div>
          </div>
       </div>
    </div>

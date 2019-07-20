@@ -4,7 +4,6 @@ pID: 5
 title: What If…? Conference & Book
 assetURL: /assets/img/whatif/
 ---
-<h1>Table of contentenenensnsnf</h1>
 
 {% include p-section.html
    header="Problem"
