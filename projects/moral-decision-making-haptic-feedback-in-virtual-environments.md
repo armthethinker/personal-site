@@ -5,7 +5,16 @@ title: Moral Decisions & Haptics in VR
 assetURL: /assets/img/morals/
 ---
 
-FEATURED IN WALL STREET JOURNAL
+{% include blockquote.html
+   quote="
+But there’s still a chance to save them. A worker sent to fix the electrical problem stands in front of me, bent over his work, oblivious to my presence. All I have to do is shove him to the floor below, killing him and shorting the electricity, which will spare the four people plunging to their death. I have 20 seconds to decide who dies.
+<br><br>
+[…]
+<br><br>
+Self-sacrifice does not occur to me; I’m paralyzed by indecision as soon as the alarm sounds. I can hear the workers screaming, but with my palms on a warm body, the four seem far away. Does this hint at a separate moral failing? It doesn’t matter; time is running out. Just before the workers hit the floor, I push the avatar, and Mr. Wang, to their theoretical, virtual demise. Even after I take off the VR rig and the headphones, I can’t shake the feeling that I’ve done something wrong. Before Mr. Wang leads me out, I make sure to apologize.
+"
+   source="Amy Dockser Marcus in the <a href='https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082' target='_blank'>Wall Street Journal</a>"
+%}
 
 {% include p-section.html
    header="Problem"
