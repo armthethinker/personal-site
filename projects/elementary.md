@@ -47,8 +47,6 @@ Instead of helping their users, banks (often) only provide a list of transaction
    subheader="Introducing Echo"
    content="
    In response to the opaque market and our user research, **we created a transparent consumer banking application for the Portuguese market that utilizes learning and prediction to help people understand their finances**.
-
-   _Our work was split over two four month periods: one of research; one of designs, prototypes, and user testing._
 "
 %}
 
@@ -62,6 +60,10 @@ Instead of helping their users, banks (often) only provide a list of transaction
 
 {% include media-img-xl.html
    url="echo-sections.png"
+%}
+
+{% include p-section.html
+   content="_Our work was split over two four month periods: one of research; one of designs, prototypes, and user testing._"
 %}
 
 {% include p-section.html
@@ -358,24 +360,37 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
 
 {% include media-img.html
    url="16-10-12-elementary-30.jpg"
-   caption="**Start with sketches** Each prototype started with individual sketches, followed by a critique, and synthesis into a prototype storyboard."
+   caption="**Start with sketches.** Each prototype started with individual sketches, followed by a critique, and synthesis into a prototype storyboard."
 %}
 
 {% include media-img-xl.html
    url="sprint-prototypes.jpg"
-   caption="**Sprint prototypes** These four, independent prototypes came out of our sprints and were each focused on one part of our vision. Our final product had pieces of each of these. For example, Telescope looked at how to help users understand and plan their long-term future – which grew into the simulator section."
+   caption="**Sprint prototypes.** These four, independent prototypes came out of our sprints and were each focused on one part of our vision. Our final product had pieces of each of these."
+%}
+
+{% include p-section.html
+   content="
+Each of our sprints set out to explore one piece of our vision.
+
+- **Pocket**: How do users respond to focused savings buckets?
+- **Footprint**: In what ways do users find categorized transactions meaningful?
+- **Telescope**: Are users interested in simulating their long-term future?
+- **Echo**: Do users get value from seeing their spending patterns and forecasted transactions?
+
+(We also kept the Echo prototype's name when bringing our feature set together into a single app.)
+"
 %}
 
 {% include media-img.html
    url="category-summary.png"
-   caption="Microsprints We spent a couple days iterating over specific sections of the app (e.g. onboarding, adding notes to transactions, creating a coherent information architecture, category structure). Left: Joel's early work on categories."
+   caption="**Microsprints.** We spent a couple days iterating over specific sections of the app (e.g. onboarding, adding notes to transactions, creating a coherent information architecture, category structure). Here: Joel's early work on categories."
    style="lg"
    url2="screen-shot-2017-01-08-at-8.45.33-am.png"
-   caption2="My suggestion for information architecture (which you can interact with)."
+   caption2="One of my information architecture explorations during a microsprint."
 %}
 
 {% include p-section.html
-   content="**Framer experiments** In addition to our primary work, I also made small experimental interactions in Framer."
+   content="**Framer experiments.** In addition to our primary work, I also made experimental interactions in Framer."
 %}
 
 {% include media-img.html
