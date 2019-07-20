@@ -69,7 +69,7 @@ $(document).ready(function(){
       placement: 'left',
       icon: '#'
    };
-   anchors.add('h2:not(:empty)');
+   anchors.add('.page h2:not(:empty)');
 
    // If there isn't a TOC, make one from the anchors elements
    if ($('#table-of-contents')[0] != undefined)
