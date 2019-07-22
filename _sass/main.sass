@@ -286,7 +286,7 @@ body
          transform: translateZ(32px)
 
 $palette-samsung: #0c4da2
-$palette-samsung-secondary: #0c4da2
+$palette-samsung-secondary: #fff
 
 $palette-echo: #4054B2
 $palette-echo-secondary: rgb(251, 218, 71)
@@ -378,7 +378,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
             box-shadow: 0 8px 16px transparentize($color-primary, .9)
 
 //                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
-@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  30%,   100%)
+@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  80%,    20%)
 @include project-specific-style(".project-echo",      $palette-echo,      45%, 20%, $palette-echo-secondary,     70%,   100%)
 @include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
 @include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
@@ -492,7 +492,8 @@ img,
 video,
 .embed-responsive
    margin-bottom: 8px
-.p-img-caption
+.p-img-caption,
+.caption
    font-size: 80%
    color: $palette-caption
 .page-header
