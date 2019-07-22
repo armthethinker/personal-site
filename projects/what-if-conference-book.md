@@ -91,7 +91,7 @@ What If…? began as a conversation between Matt and myself. We talked about apa
 
 {% include p-section.html
    content="
-**Truly interdisciplinary.** We create the most robust solutions when we merge insights from disparate locations. Matt and I actively recruited diverse speakers and participants. We belive there can be fruitful conversations between engineers, high school students, mechanics, authors, PhDs, designers, entrepreneurs, and everyone else."
+**Truly interdisciplinary.** We create the most robust solutions when we merge insights from disparate locations. Matt and I actively recruited diverse speakers and participants. We believe there can be fruitful conversations between engineers, high school students, mechanics, authors, PhDs, designers, entrepreneurs, and everyone else."
 %}
 
 
@@ -147,7 +147,7 @@ We helped people solve problems by asking better, more foundational questions."
 
 {% include p-section.html
    content="
-We were honored to be sponsored by Quirky; littleBits; Schlafly Beer; the Reagional Economic Development Inc. for Columbia, MO; the SociaLIGHT Conference; Callaway Bank; Columbia Business Times; and others."
+We were honored to be sponsored by Quirky; littleBits; Schlafly Beer; the Regional Economic Development Inc. for Columbia, MO; the SociaLIGHT Conference; Callaway Bank; Columbia Business Times; and others."
 %}
 
 
@@ -180,7 +180,7 @@ We were honored to be sponsored by Quirky; littleBits; Schlafly Beer; the Reagio
 - **\"What if robots looked like people or animals?\"** <br>considers our robotic future (p 113)
 - **\"What if awesome didn\'t exist?\"** <br>gets into LGBTQ rights (p 123)
 - **\"What if computers were conscious?\"** <br>talks about artificial intelligence (p 138)
-- **\"What if you gave your pet a new ability\"** <br>considers gene modicfication (p 166)
+- **\"What if you gave your pet a new ability\"** <br>considers gene modification (p 166)
 
 Each entry starts by exploring the question and helping our reader (8–12 year olds) understand a few foundational facts. Most entries also have an activity for kids to delve deeper into the question. Some entires have peer-interviews with other kids; expert interviews with the likes of David Eagleman, Amber Case, and Aubrey de Grey; and profiles on historic individuals.
 
@@ -215,7 +215,7 @@ We helped communities facilitate their own conferences, allowing others to ask t
    content="
 Our conference brings together people from different backgrounds to participate in (mostly intangible) active curiosity. We realized we could transfer our our learnings and processes into a tangible, community-focused makerspace where people could explore physical questions.
 
-(If you're not familiar, a makerspace is a place for makers, creatives, hackers, and hobbyists. It has expensive tools you might not find in your garage and classes to teach you how to use those tools. In my research, most of these spaces were filled with older, white, male engineers. We aimed to make a more diverse space, as our project inherited the diversity from our conferece.)
+(If you're not familiar, a makerspace is a place for makers, creatives, hackers, and hobbyists. It has expensive tools you might not find in your garage and classes to teach you how to use those tools. In my research, most of these spaces were filled with older, white, male engineers. We aimed to make a more diverse space, as our project inherited the diversity from our conference.)
 
-Over the course of a few months, we explored properites, financing (loans + Indiegogo), and new team members. The project ultimately fell through when one of our new memebers left the project. The conference was our primary priority, and with limited resources, we couldn’t continue to sustain the MakerSpace work. RIP."
+Over the course of a few months, we explored properties, financing (loans + Indiegogo), and new team members. The project ultimately fell through when one of our new members left the project. The conference was our primary priority, and with limited resources, we couldn’t continue to sustain the MakerSpace work. RIP."
 %}

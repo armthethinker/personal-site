@@ -154,7 +154,7 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
 %}
 
 {% include blockquote.html
-   quote="When is this application out for download? Sell it to [my bank,] Millenium!"
+   quote="When is this application out for download? Sell it to [my bank,] Millennium!"
    source="User feedback"
 %}
 

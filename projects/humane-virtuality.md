@@ -66,7 +66,7 @@ I build an environment with togglable elements and various interaction methods:
 1. Rotate target with head rotation
 1. Rotate target with head rotation _and_ scale the input (letting a user move a small amount to see behind the target)
 1. Rotate target _inversely_ with head rotation and scale the input
-1. For each abover method, toggle the target to be locked to the world or to a relative position from the user's head
+1. For each above method, toggle the target to be locked to the world or to a relative position from the user's head
 "
    url="00-demo-1.gif"
    caption="With this interaction mode, turning your head to the left, rotates the right side of the boxes towards you so that you may see the yellow doughnut otherwise hidden behind them."
@@ -137,7 +137,7 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 
 {% include media-img.html
    url="ex11-jump.gif"
-   caption="**Jump cut.** The user is instantly transfering between the start and end point. These are straightforward and comfortable, but can make the user lose context."
+   caption="**Jump cut.** The user is instantly transferring between the start and end point. These are straightforward and comfortable, but can make the user lose context."
    style="md"
    captionSide=false
    url2="ex11-micromovements.gif"
@@ -173,11 +173,11 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 %}
 {% include media-img.html
    url="critique-spherical@2x.jpg"
-   caption="Cricially examining @oscarmarinmiro's video controls layout."
+   caption="Critically examining @oscarmarinmiro's video controls layout."
    style="md"
    captionSide=false
    url2="Screen Shot 2016-06-30 at 7.36.17 AM.png"
-   caption2="My first pass put the controls right in fron of the user. This is uncomfortable because (1) the relaxed human eyeline is a few degrees down from horizontal and (2) it immediately gets in between you and the content (especially uncomfortable if you accidentally brought up the controls)."
+   caption2="My first pass put the controls right in from of the user. This is uncomfortable because (1) the relaxed human eye-line is a few degrees down from horizontal and (2) it immediately gets in between you and the content (especially uncomfortable if you accidentally brought up the controls)."
 %}
 
 {% include p-section.html
@@ -261,7 +261,7 @@ I concluded my internship by researching what was needed to create an effective 
 - User testing interaction experiments is more open-ended than testing robust apps. Think-alouds work well.
 - Users get distracted. Let them know they were heard, then push them in the direction you are interested in.
 - Given the state of consumer-awareness and experience, it’s likely you’re the first person to give your test users access to VR. Let them be amazed.
-- Focus on what you’re testing. If the visual design isn’t important, use someone else’s work there.
+- Focus on what you are testing. If the visual design isn’t important, use someone else’s work there.
 - A few settings variables and keyboard shortcuts exponentially speed up personal testing during development.
 "
 %}

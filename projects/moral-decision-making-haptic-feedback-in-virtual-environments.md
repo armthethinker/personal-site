@@ -20,7 +20,7 @@ Self-sacrifice does not occur to me; I’m paralyzed by indecision as soon as th
    header="Problem"
    subheader=""
    content="
-More and more of our lives are mediated through technology. Does the change from tangible, real world interactions to intangible, vitural world interactions change our moral calculus? That is to ask: **Do the capabilities of our interfaces (here, specifically haptics) change our moral choices?** (They do.)
+More and more of our lives are mediated through technology. Does the change from tangible, real world interactions to intangible, virtual world interactions change our moral calculus? That is to ask: **Do the capabilities of our interfaces (here, specifically haptics) change our moral choices?** (They do.)
 "
 %}
 
@@ -30,7 +30,7 @@ More and more of our lives are mediated through technology. Does the change from
    content="
 **The Trolley Problem is a classic thought experiment in moral philosophy** where an out of control trolley car is speeding down a hill towards a group of five people. You, standing near the tracks, see a lever that would switch the trolley onto new tracks where one person would die. Do you pull the lever?
 
-**The “fat man” variant is similar, but your choice is to push a large man onto the tracks** to stopy the trolley to save five people (and kill him).
+**The “fat man” variant is similar, but your choice is to push a large man onto the tracks** to stop the trolley to save five people (and kill him).
 
 **Our experiment, the Elevator Problem, has a group of workers on a malfunctioning elevator dropping towards an electrified floor. If the participant pushes a nearby technician into the electrified floor, the elevator will stop and workers won’t die.** This is an isomorph of the Trolley Problem: a scenario that is categorically equivalent, but looks different. We specifically explored the different moral and physiological response between a haptic and non-haptic group. Haptic participants feel the person they are pushing with their hands whereas non-haptic participants do not. Additionally, we had a third group whose scenario used a two buttons to control the decent of an elevator with four workers and one with one worker (more similar to the lever-based Trolley Problem)."
 %}

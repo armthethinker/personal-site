@@ -67,7 +67,7 @@ When I'm thinking through interaction problems on my team, there exists a wide s
    style="md"
    captionSide=false
    url2="wedding.jpg"
-   caption2="**Concept work**: a high fideltity render to show the main idea is best. (For my wedding, I made a 3D layout to help us think through ideas.)"
+   caption2="**Concept work**: a high fidelity render to show the main idea is best. (For my wedding, I made a 3D layout to help us think through ideas.)"
 %}
 
 {% include media-img.html
