@@ -1,0 +1,31 @@
+- imgurl: 4ktest.jpg
+  origin: 50% 50%
+- imgurl: abby.jpg
+  origin: 50% 50%
+  caption: A failed Kinect scan of my wife.
+- imgurl: baby.gif
+  origin: 50% 50%
+- imgurl: braun.2019-07-20 22_30_40.gif
+  origin: 50% 50%
+- imgurl: displacement-torus.2019-07-20 22_34_21.gif
+  origin: 50% 60%
+  caption: Animating complex materials and microdisplacements.
+- imgurl: materials.2019-07-20 22_44_19.gif
+  origin: 50% 50%
+  caption: Material exploration.
+- imgurl: egg.2019-07-20 22_38_58.gif
+  origin: 70% 50%
+- imgurl: rings.2019-07-20 22_53_21.gif
+  origin: 50% 50%
+  caption: You'll notice that in my personal work, I love to play with lighting.
+- imgurl: siteless129.2019-07-20 22_55_15.gif
+  origin: 40% 50%
+  caption: <em>Siteless</em> is a book full of abstract architectural forms. I use it for modeling inspiration.
+- imgurl: spatial-computing.2019-05-27 08_20_32.gif
+  origin: 50% 50%
+- imgurl: surfshop-eggbadger.2019-07-20 22_12_59.gif
+  origin: 50% 50%
+  caption: Exploring materials, lighting, and modeling by recreating and remixing someone's render.
+- imgurl: two-screens-one-camera.gif
+  origin: 50% 50%
+  caption: From a project where I was exploring independently controlled eyes.
