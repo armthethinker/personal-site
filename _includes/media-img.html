@@ -1,0 +1,66 @@
+{% if include.urlPage != false %}
+{% assign urlPrepend = page.assetURL %}
+{% else %}
+{% assign urlPrepend = "" %}
+{% endif %}
+
+{% if include.urlPage2 != false %}
+{% assign urlPrepend2 = page.assetURL %}
+{% else %}
+{% assign urlPrepend2 = "" %}
+{% endif %}
+
+{% if include.header != undefined %}
+<div class="-none p-sec p-sec-header">
+{% else %}
+<div class="-none p-sec">
+{% endif %}
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-xl-8">
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+               <h2>{{include.header}}</h2>
+               <strong class="d-block mb-4">{{include.subheader}}</strong>
+            </div>
+            <div class="col">
+               <div class="p-img-container">
+                  <img class="img-fluid rounded" src="{{include.url | prepend:urlPrepend}}">
+                  {% if include.captionSide == undefined or include.captionSide == false %}
+                  <div class="p-img-caption">
+                     {{include.caption | markdownify}}
+                  </div>
+                  {% endif %}
+               </div>
+            </div>
+            {% if include.url2 != unknown and include.url2 != "" %}
+            <div class="col">
+               <div class="p-img-container">
+                  <img class="img-fluid rounded" src="{{include.url2 | prepend:urlPrepend2}}">
+                  <div class="p-img-caption">
+                     {{include.caption2 | markdownify}}
+                  </div>
+               </div>
+            </div>
+            {% endif %}
+
+            {% if include.style == "lg" %}
+            <div class="col-12">
+            {% else %}
+            <div class="col-12 col-lg-3">
+            {% endif %}
+               <div class="row">
+                  <div class="col"></div>
+                  <div class="col-12 col-md-8 col-lg-12">
+                     {% if include.captionSide %}
+                     <div class="p-img-caption">
+                        {{include.caption | markdownify}}
+                     </div>
+                     {% endif %}
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</div>

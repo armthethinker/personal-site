@@ -1,0 +1,21 @@
+<!-- Footer -->
+<div class="container">
+   <div class="row footer justify-content-center">
+      <div class="col-12 col-md-6 text-center text-md-left">
+         <div class="media">
+            <div class="mr-2 d-none d-md-block">&copy;</div>
+            <div class="media-body">
+               <span class="mr-2 d-md-none">&copy;</span><strong>Andrew R McHugh</strong> is a designer on a mission to expand human capability through novel interfaces and democratized technology.
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-md-6">
+         <div class="d-md-none mt-3 mb-3"></div>
+         <div class="d-flex justify-content-around">
+            {% for item in site.data.footer-social %}
+               <a href="{{item.link}}"><i class="fab fa-{{item.icon}}"></i></a>
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,46 +1,62 @@
-# Andrew's Personal Site
+# Andrew's personal site
+> It's my personal site! 😲
 
-## Notes/To-Do on integrating with Perch & DD.co
-- make sure everyone is fine with being in the portfolio
+http://andrewrmchugh.rocks
 
-- nice to do
-   - ~~add projects~~
-      - ~~Humane Virtuality~~
-      - ~~ViewPoint~~
-      - ~~Elementary~~
-   - ~~add contact infoz~~
-   - ~~update bio~~
-   - update CV
-   - ~~add blog link?~~
-   - ~~vr trolley~~
-      - ~~update video~~
-   - ViewPoint video
-   - ~~soundscape img needs updating~~
-   - Meta:tags
-   - ~~toggle font-size down a bit~~
-   - favicon
-   - 404++
-   - header nav on projects
-   - zoom.js by Fat
-   - archive
-   - projects load flash fix?
-   - Single page
-   - Remove Lato
-   - Add Droid Serif 400, 700
+Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 
-## Hierarchy
-\* Partially Managed by Perch
+## How to build
+- To serve the site: `$ bundle exec jekyll serve`
+- To serve and allow all incoming requests `$ bundle exec jekyll serve --host 0.0.0.0`
+- To update the bundle: `$ bundle update`
 
-\*\* Entirely Managed By Perch
+Served over `:4000`.
 
+## Project hierarchy
 ```
-|--index *
-   |--projects **
-      |--project pages **
-   |--cv
-   |--book
+root
+|-- _data/:       .yml data structures
+|-- _includes/:   partial page templates
+|-- _layouts/:    page layouts
+|-- _sass/:       source styling
+|-- _site/:       compiled version of the site
+|-- archive/:     older pages
+|-- assets/:      imgs, css, JS
+|-- projects/:    my various project pages
+|-- Various root files and pages
 ```
 
+## Partial page templates for content
 
-## Useful Perch Links
-[Installing a local server running Perch](https://solutions.grabaperch.com/development/installing-a-local-server-with-xampp)
+### blockquote
+- quote
+- source
+
+### media-img-xl
+Fullscrene image, but probably needs some work
+- url
+- caption
+
+### media-img
+- url
+- caption
+- url2 (adds second image)
+- caption2
+- header
+- subheader
+- style: `anything | lg`
+- captionSide (puts the given caption on the side)
+
+### media-youtube
+- urlCode
+- caption
+- header
+- subheader
+- style: `anything | lg`
+- aspect: `21by9 | 16by9 | 4by3 | 1by1`
+
+### timeline-entry
+- date
+- emoji
+- description1 (first paragraph)
+- description2 (second paragraph)

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+   {% include common-header-css.html %}
+
+   {% seo %}
+
+   <title>{{ page.title }}</title>
+</head>
+
+{% for project in site.data.projects %}
+   {% if project.pID == page.pID %}
+      {% assign p = project %}
+   {% endif %}
+{% endfor %}
+
+<body class="project-{{p.short}}">
+   <!-- {% include util-responsive-size.html %} -->
+   <div class="page">
+      <div class="-none page-header">
+         <!-- {% include all-page-alert.html %} -->
+         {% include jumbotron-header.html %}
+      </div>
+      <div class="container-fluid page-body">
+         {% include toc.html %}
+         {{ content }}
+      </div>
+   </div>
+   {% include footer.html %}
+   {% include common-js.html %}
+</body>
+</html>

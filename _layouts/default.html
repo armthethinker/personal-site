@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+   {% include common-header-css.html %}
+
+   {% seo %}
+
+   <title>{{ page.title }}</title>
+</head>
+
+<body class="page-main">
+   <div class="container-fluid">
+      <!-- {% include util-responsive-size.html %} -->
+      <!-- {% include all-page-alert.html %} -->
+      {% include navigation.html %}
+      {{ content }}
+   </div>
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-xl-8">
+         {% include footer.html %}
+      </div>
+   </div>
+   {% include common-js.html %}
+</body>
+</html>

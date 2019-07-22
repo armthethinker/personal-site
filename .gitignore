@@ -12,16 +12,13 @@ Thumbs.db
 ######################
 /bower_components/
 /node_modules/
-
-# Perch Blocking #
-/perch/addons
-/perch/config/config.php
-/perch/core
-/perch/resources
-/perch/setup
+/_sass/bootstrap/
 
 # Privacy #
 ######################
 .ftppass
 .sftppass
 error_log
+_site
+.sass-cache
+.jekyll-metadata

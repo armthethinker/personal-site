@@ -1,0 +1,97 @@
+---
+layout: default
+title: Home
+---
+<!-- Circle images and hello -->
+<div class="row timeline justify-content-center">
+   <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
+      <div class="row timeline-entry header-hero">
+         <div class="col-12 col-sm-3 date"></div>
+         <div class="col description">
+            <div class="header-circs d-flex justify-content-around justify-content-sm-between">
+               <img class="circ-inline" src="/assets/img/samsung/baby-vision.jpg">
+               <img class="circ-inline" src="/assets/img/hv/00-demo-1.gif">
+               <img class="circ-inline" src="/assets/img/morals/2.jpg">
+               <img class="circ-inline" src="/assets/img/whatif/image264.jpg">
+               <img class="circ-inline" src="/assets/img/echo/mchugh-portfolio-hero.jpg">
+            </div>
+         </div>
+      </div>
+      <div class="row timeline-entry">
+         <div class="col-12 col-sm-3 text-sm-right">
+            <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
+         </div>
+         <div class="col description">
+            <h1>I'm Andrew R McHugh</h1>
+            <h2>I use design to democratize ideas & technology</h2>
+         </div>
+      </div>
+      <div class="row timeline-entry">
+         <div class="col-12 col-sm-3 date">
+            Now
+         </div>
+         <div class="col description">
+            <strong>As a senior designer at Samsung</strong>, I expand human capability through spatial interfaces (that's augmented and virtual reality).
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Button -->
+<div class="row timeline justify-content-center">
+   <div class="col">
+      <div class="row timeline-entry">
+         <div class="col text-center">
+            <button class="btn btn-outline-primary btn-timeline d-inline" type="button" data-toggle="collapse" data-target=".collapse-timeline" aria-expanded="false" aria-controls="collapse-timeline">
+               See <span class="d-inline">the rest</span><span class="d-none">less</span> of my timeline
+            </button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Extended timeline -->
+<div class="row justify-content-center timeline timeline-transition collapse collapse-timeline">
+   <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
+      {% for item in site.data.timeline %}
+         {% include
+            timeline-entry.html
+            date=item.date
+            emoji=item.emoji
+            description1=item.description1
+            description2=item.description2
+         %}
+      {% endfor %}
+   </div>
+</div>
+<!-- Projects -->
+<div class="row selected-projects justify-content-center pt-4">
+   <div class="col-12 col-sm-10 col-xl-8">
+      <h1 class="text-center mt-3 pt-3" id="selected-projects">Selected projects</h1>
+      {% for item in site.data.projects %}
+         {% include
+            project-card.html
+            title                = item.title
+            pID                  = item.pID
+            short                = item.short
+            url                  = item.url
+            emoji                = item.emoji
+            subtitle             = item.subtitle
+            description          = item.description
+            role                 = item.role
+            date                 = item.date
+            whileAt              = item.whileAt
+            withWho              = item.withWho
+            imgHero              = item.imgHero
+            imgThumb1            = item.imgThumb1
+            imgThumb1Position    = item.imgThumb1Position
+            imgThumb2            = item.imgThumb2
+            imgThumb2Position    = item.imgThumb2Position
+            imgThumb3            = item.imgThumb3
+            imgThumb3Position    = item.imgThumb3Position
+            left                 = item.left
+            imgJumbotronHero     = item.imgJumbotronHero
+            videoJumbotronHero   = item.videoJumbotronHero
+            bgColor              = item.bgColor
+         %}
+      {% endfor %}
+   </div>
+</div>
