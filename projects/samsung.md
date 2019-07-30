@@ -90,15 +90,17 @@ When I'm thinking through interaction problems on my team, there exists a wide s
 
 **I am the most senior product designer**, though not the most senior designer (that honor would go to one of the two artist-engineers on our team from the games industry).
 
+**We deal with ambiguity**, shifting deadlines, and are in a field where customers have few preconceived notions.
+
 ### My role
 
 **Priorities & vision**: Through my years of work before and at Samsung, I've developed specific principles for what AR and VR can and should be. These guide my decisions and help to set the team's vision.
 
 I work with my manager to set priorities for the team, arguing for directions that would have the highest returns on investment.
 
-**Design & process**: I'm still an individual contributor, so I work on ideation, mockups, prototypes, and user research.
+**Design, prototyping, research, & process**: I'm an individual contributor, so I ideate, create mockups, craft renders, program prototypes, and construct user research.
 
-I guide the team to produce high quality work from the design side. This means contributions to what we should continue to explore, what's ready to prototype, which tradeoffs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
+I guide the team to produce high quality work from the design side. This means figuring out what we should continue to explore, what's ready to prototype, which tradeoffs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
 
 **Documentation**: I lead our documentation efforts (writing, editing, crafting the story, presenting). This also makes me a go to person for any of our historical work. Before our switch to a more collaborative tool, I created a custom website to showcase our documentation, design decisions, and ideations.
 
