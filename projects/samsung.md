@@ -106,7 +106,11 @@ I guide the team to produce high quality work from the design side. This means f
 
 **Presenting & collaborating**: I talk about our work to other teams and external partners. I also present to a number of lab heads, VPs, SVPs, Presidents, and once I presented to a group of Korean Congresspeople.
 
-**Patents**: I've produced three spatial design patents that are working their way through <a href='https://patents.google.com/?inventor=Andrew+R+McHugh&scholar&oq=Andrew+R+McHugh' target='_blank'>the USPTO</a>.
+**Patents**: I've produced three spatial design patents that are working their way through the USPTO.
+
+The first one creates a system for distance responsive interfaces. This allows developers to create different versions of their apps at different distances to the user, helping maintain legibility and functionality.
+
+<a class='btn btn-outline' href='https://patents.google.com/?inventor=Andrew+R+McHugh&scholar&oq=Andrew+R+McHugh' target='_blank'>My publicly visible patents ></a>
 
 **Mentoring**: I'm there for my teammates when they a hand thinking about a spatial design problem or how to navigate Samsung.
 "
