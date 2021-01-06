@@ -12,6 +12,8 @@ Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 
 Served over `:4000`.
 
+_`Grunt` isn't really set up, but is ready to be worked on._
+
 ## Project hierarchy
 ```
 root
