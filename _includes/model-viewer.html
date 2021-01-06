@@ -1,0 +1,47 @@
+{% if include.urlPage != false %}
+{% assign urlPrepend = page.modelURL %}
+{% else %}
+{% assign urlPrepend = "" %}
+{% endif %}
+
+{% if include.header != undefined %}
+<div class="-none p-sec p-sec-header">
+{% else %}
+<div class="-none p-sec">
+{% endif %}
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-xl-8">
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+               <h2>{{include.header}}</h2>
+               <strong class="d-block mb-4">{{include.subheader}}</strong>
+            </div>
+            <div class="col">
+               <model-viewer
+                  src="{{include.model | prepend:urlPrepend}}"
+                  alt="{{include.caption}}"
+                  {% if include.autoRotate == true %} auto-rotate="true" {% endif %}
+                  {% if include.cameraControls == true %} camera-controls="true" {% endif %}
+                  {% if include.cameraOrbit != undefined %} camera-orbit="{{include.cameraOrbit}}" {% endif %}
+                  {% if include.cameraOrbitMin != undefined %} min-camera-orbit="{{include.cameraOrbitMin}}" {% endif %}
+                  {% if include.cameraOrbitMax != undefined %} max-camera-orbit="{{include.cameraOrbitMax}}" {% endif %}
+                  interaction-prompt="when-focused"
+                  ar ar-scale="fixed"
+                  ios-src="assets/Astronaut.usdz"
+                  >
+               </model-viewer>
+            </div>
+
+         </div>
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3"></div>
+            <div class="col">
+               <div class="p-img-caption">
+                  {{include.caption | markdownify}}
+               </div>
+            </div>
+            <div class="col-12 col-lg-3"></div>
+         </div>
+      </div>
+   </div>
+</div>

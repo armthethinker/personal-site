@@ -3,7 +3,17 @@ layout: project-page
 pID: 1
 title: Samsung
 assetURL: /assets/img/samsung/
+modelURL: /assets/models/samsung/
 ---
+
+{% include model-viewer.html
+   model="h2/scene.gltf"
+   caption="A thing"
+   cameraControls=true
+   cameraOrbit="100deg 85deg 80%"
+   cameraOrbitMin="80deg 60deg auto"
+   cameraOrbitMax="120deg 120deg auto"
+%}
 
 {% include p-section.html
    header="Caveat"
