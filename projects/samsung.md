@@ -7,12 +7,15 @@ modelURL: /assets/models/samsung/
 ---
 
 {% include model-viewer.html
-   model="h2/scene.gltf"
+   model="hiking/hiking.glb"
+   modeliOS="hiking.usdz"
    caption="A thing"
    cameraControls=true
-   cameraOrbit="100deg 85deg 80%"
-   cameraOrbitMin="80deg 60deg auto"
-   cameraOrbitMax="120deg 120deg auto"
+   cameraOrbit="8deg 80deg 50%"
+   cameraOrbitMin="-30deg 60deg auto"
+   cameraOrbitMax="30deg 120deg auto"
+   cameraTarget="0m 1.3m 0m"
+   arPlacement="floor"
 %}
 
 {% include p-section.html

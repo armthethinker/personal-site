@@ -25,9 +25,12 @@
                   {% if include.cameraOrbit != undefined %} camera-orbit="{{include.cameraOrbit}}" {% endif %}
                   {% if include.cameraOrbitMin != undefined %} min-camera-orbit="{{include.cameraOrbitMin}}" {% endif %}
                   {% if include.cameraOrbitMax != undefined %} max-camera-orbit="{{include.cameraOrbitMax}}" {% endif %}
+                  {% if include.cameraTarget != undefined %} camera-target="{{include.cameraTarget}}" {% endif %}
+                  {% if include.arPlacement != undefined %} ar-placement="{{include.arPlacement}}" {% endif %}
                   interaction-prompt="when-focused"
-                  ar ar-scale="fixed"
-                  ios-src="assets/Astronaut.usdz"
+                  ar
+                  ar-scale="fixed"
+                  ios-src="{{include.modeliOS}}"
                   >
                </model-viewer>
             </div>
