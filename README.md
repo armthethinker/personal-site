@@ -62,3 +62,18 @@ Fullscrene image, but probably needs some work
 - emoji
 - description1 (first paragraph)
 - description2 (second paragraph)
+
+### model viewer
+```
+{% include model-viewer.html
+   model="hiking/hiking.glb"
+   modeliOS="hiking.usdz"
+   caption="Hiking with the wife."
+   cameraControls=true
+   cameraOrbit="8deg 80deg 50%"
+   cameraOrbitMin="-30deg 60deg auto"
+   cameraOrbitMax="30deg 120deg auto"
+   cameraTarget=".1m 1.3m 0m"
+   arPlacement="floor"
+%}
+```
