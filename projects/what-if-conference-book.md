@@ -73,7 +73,7 @@ What If…? began as a conversation between Matt and myself. We talked about apa
 {% include cards.html
    header= "Principles of What If…?"
    data= site.data.whatif.principles
-   col="col col-sm-6"
+   col="col-12 col-lg-6"
 %}
 
 {% include media-youtube.html
