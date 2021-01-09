@@ -62,6 +62,12 @@ When I'm thinking through interaction problems on my team, there exists a wide s
 "
 %}
 
+{% include cards.html
+   data=site.data.samsung.typesOfWork
+   col="col col-sm-6"
+   imgBottom=true
+%}
+
 {% include media-img.html
    url="ixds3-42.jpg"
    caption="**Ideation work**: a couple of quick, lo-fi renders, mockups, or sketches will suffice."

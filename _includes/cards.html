@@ -8,14 +8,24 @@
                <strong class="d-block mb-4">{{include.subheader}}</strong>
             </div>
             <div class="col">
-               <div class="row">
+               <div class="row row-cols-1 row-cols-sm-4">
                   {% for item in include.data %}
-                  <div class="col">
-                     <div class="card">
+                  {% if include.col != undefined %}
+                  <div class="{{include.col}} mb-4">
+                  {% else %}
+                  <div class="col mb-4">
+                  {% endif %}
+                     <div class="card h-100">
+                        {% if include.imgBottom != true %}
                         <img src="{{item.url}}" class="card-img-top" alt="{{item.caption | strip_html}}">
+                        {% endif %}
                         <div class="card-body">
+                           <h5 class="card-title">{{item.header}}</h5>
                            <p class="card-text">{{item.caption}}</p>
                         </div>
+                        {% if include.imgBottom == true %}
+                        <img src="{{item.url}}" class="card-img-bottom" alt="{{item.caption | strip_html}}">
+                        {% endif %}
                      </div>
                   </div>
                   {% endfor %}
