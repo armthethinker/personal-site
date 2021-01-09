@@ -1,10 +1,10 @@
-- title: Samsung
+- title: Samsung+
   pID: 1
   short: samsung
   emoji: 🤓
   subtitle: Spatial computing & magic glasses
   description: Almost all of my work is under NDA. Here I share my general approach to spatial computing challenges (some of which is at Samsung) and personal 3D design work.
-  role: Senior Designer
+  role: Senior Designer & Team Lead
   date: February 2017 - Now
   whileAt: Samsung Research America, Mobile Platform Solutions Lab
   withWho: My coworkers in XR Design Group (XRDG)
