@@ -17,6 +17,7 @@ if (is.desktop()){
 
 function flipTimelineButton(){
    $('.btn-timeline span').toggleClass('d-none').toggleClass('d-inline')
+   $('.btn-timeline .fas').toggleClass('fa-rotate-180')
 }
 
 $('.collapse.collapse-timeline').on('shown.bs.collapse', function(){
