@@ -67,54 +67,13 @@ What If…? began as a conversation between Matt and myself. We talked about apa
    content="
 **Matt and I are from liberal arts backgrounds, so we strongly believe that better questions and answers come from a wide exploration.** That means perspectives from different kinds of people, disciplines, and industries.
 
-**We took on many projects that look different, but the core of What If…? is like water.** Each project we take on is like a new container to mold that core. The water is always the same, but the shape changes to fit the needs of the project.
-
-### Principles of What If…?"
+**We took on many projects that look different, but the core of What If…? is like water.** Each project we take on is like a new container to mold that core. The water is always the same, but the shape changes to fit the needs of the project."
 %}
 
-{% include media-img.html
-   url="image139.jpg"
-   caption="Part of our pre-conference workshop."
-   captionSide=true
-%}
-
-{% include p-section.html
-   content="
-**Active curiosity.** Inspiring curiosity isn’t enough. We inspired **active curiosity**: get curious then go out and do something about your curiosity. We encouraged participants to change their communities, construct their ideas, and sketch out the future."
-%}
-
-{% include media-img.html
-   url="image179.jpg"
-   caption="Another shot of our pre-conference workshop."
-   captionSide=true
-%}
-
-{% include p-section.html
-   content="
-**Truly interdisciplinary.** We create the most robust solutions when we merge insights from disparate locations. Matt and I actively recruited diverse speakers and participants. We belive there can be fruitful conversations between engineers, high school students, mechanics, authors, PhDs, designers, entrepreneurs, and everyone else."
-%}
-
-
-{% include media-img.html
-   url="image409.jpg"
-   caption="We went beyond speakers and held a concert."
-   captionSide=true
-%}
-
-{% include p-section.html
-   content="
-**Democratizing question-asking.** In expert–novice environments, novices shy away from asking questions. At our events or in our book, we flatten this hierarchy to encourage questions from everyone. By recognizing and respecting the abilities of both experts and novices, the two can have a more balanced and engaging conversation. Experts can see things from a new perspective. Novices can learn something new."
-%}
-
-{% include media-img.html
-   url="image264.jpg"
-   caption="People working through the interstitial activities."
-   captionSide=true
-%}
-
-{% include p-section.html
-   content="
-**Everything can be questioned.** We allow _anyone_ to ask a question about _anything_. All social institutions and technologies are built by people who asked their own questions. We encouraged participants to question it all — as long as they were diligent in their question asking methodology. No one is interested in vapid questions, but our audiences love insightful explorations of intriguing questions."
+{% include cards.html
+   header= "Principles of What If…?"
+   data= site.data.whatif.principles
+   col="col col-sm-6"
 %}
 
 {% include media-youtube.html
