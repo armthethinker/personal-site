@@ -64,7 +64,7 @@ When I'm thinking through interaction problems on my team, there exists a wide s
 
 {% include cards.html
    data=site.data.samsung.typesOfWork
-   col="col col-sm-6"
+   col="col-12 col-sm-6"
    imgBottom=true
 %}
 
