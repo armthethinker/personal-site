@@ -103,6 +103,25 @@ I guide the team to produce high quality work from the design side. This means c
    data=site.data.imgwall.samsung
 %}
 
+{% include media-youtube.html
+   urlCode="HGyRwGuA9cU"
+   caption="A tent I captured with photogrammetry then processed."
+   aspect="16by9"
+   loop=true
+%}
+
+{% include model-viewer.html
+   model="tent-photogrammetry/tent-photogrammetry.glb"
+   modeliOS="tent-photogrammetry/tent-photogrammetry.usdz"
+   caption="The processed tent."
+   cameraControls=true
+   cameraOrbit="8deg 70deg 80%"
+   cameraOrbitMax="auto 89deg auto"
+   cameraTarget="0m .3m 0m"
+   arPlacement="floor"
+   interactionPrompt="auto"
+%}
+
 {% include p-section.html
    header="What I find most valuable about this work"
    subheader=""
