@@ -27,14 +27,22 @@
                   {% if include.cameraOrbitMax != undefined %} max-camera-orbit="{{include.cameraOrbitMax}}" {% endif %}
                   {% if include.cameraTarget != undefined %} camera-target="{{include.cameraTarget}}" {% endif %}
                   {% if include.arPlacement != undefined %} ar-placement="{{include.arPlacement}}" {% endif %}
+                  {% if include.interactionPrompt != undefined %}
+                  interaction-prompt="{{include.interactionPrompt}}"
+                  {% else %}
                   interaction-prompt="when-focused"
+                  {% endif %}
                   ar
                   ar-scale="fixed"
-                  ios-src="{{include.modeliOS}}"
+                  ios-src="{{include.modeliOS | prepend:urlPrepend}}"
                   >
                </model-viewer>
             </div>
-
+            {% if include.style == "lg" %}
+            <div class="col-12"></div>
+            {% else %}
+            <div class="col-12 col-lg-3"></div>
+            {% endif %}
          </div>
          <div class="row">
             <div class="col-12 col-md-4 col-lg-3"></div>
