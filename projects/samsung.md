@@ -103,11 +103,12 @@ I guide the team to produce high quality work from the design side. This means c
    data=site.data.imgwall.samsung
 %}
 
-{% include media-youtube.html
-   urlCode="HGyRwGuA9cU"
-   caption="A tent I captured with photogrammetry then processed."
+{% include media-video.html
+   url="tent-photogrammetry-5Mbps.mp4"
+   caption="**Video.** When a project needed a tent model and I happened to be learning photogrammetry, I captured and processed my tent for use."
    aspect="16by9"
    loop=true
+   controls=true
 %}
 
 {% include model-viewer.html
