@@ -54,6 +54,7 @@ Fullscrene image, but probably needs some work
 - caption
 - header
 - subheader
+- loop: `bool`
 - style: `anything | lg`
 - aspect: `21by9 | 16by9 | 4by3 | 1by1`
 
