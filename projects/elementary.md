@@ -2,6 +2,8 @@
 layout: project-page
 pID: 2
 title: Echo
+description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
+image: /assets/img/echo/16-02-24-exploration-25-1.jpg
 assetURL: /assets/img/echo/
 ---
 

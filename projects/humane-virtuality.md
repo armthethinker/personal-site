@@ -2,6 +2,8 @@
 layout: project-page
 pID: 3
 title: Humane Virtuality
+description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
+image: /assets/img/hv/IMG_9699.JPG
 assetURL: /assets/img/hv/
 ---
 
