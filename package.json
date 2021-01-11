@@ -1,7 +1,7 @@
 {
   "name": "andrewrmchughrocks",
-  "version": "3.0.0",
-  "distPrefix": "andrewrmchughrocks-3",
+  "version": "2021.1.0",
+  "distPrefix": "andrewrmchughrocks-2021.1.0",
   "homepage": "http://andrewrmchugh.rocks",
   "repository": {
     "type": "git",

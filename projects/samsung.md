@@ -3,6 +3,7 @@ layout: project-page
 pID: 1
 title: Samsung
 assetURL: /assets/img/samsung/
+modelURL: /assets/models/samsung/
 ---
 
 {% include p-section.html
@@ -61,22 +62,10 @@ When I'm thinking through interaction problems on my team, there exists a wide s
 "
 %}
 
-{% include media-img.html
-   url="ixds3-42.jpg"
-   caption="**Ideation work**: a couple of quick, lo-fi renders, mockups, or sketches will suffice."
-   style="md"
-   captionSide=false
-   url2="wedding.jpg"
-   caption2="**Concept work**: a high fideltity render to show the main idea is best. (For my wedding, I made a 3D layout to help us think through ideas.)"
-%}
-
-{% include media-img.html
-   url="ex-11-1.gif"
-   caption="**Interaction work**: a render or prototype that focuses on the specific interaction is what we need."
-   style="md"
-   captionSide=false
-   url2="ex11-micromovements.gif"
-   caption2="**Work shared outside of our team**: leans toward hi-fi renders or on-device captures of our built prototypes. (While I have some Unity chops, I'm fortunate to work on a team with deeper Unity expertise.)"
+{% include cards.html
+   data=site.data.samsung.typesOfWork
+   col="col-12 col-sm-6"
+   imgBottom=true
 %}
 
 {% include p-section.html
@@ -112,6 +101,26 @@ I guide the team to produce high quality work from the design side. This means c
 
 {% include media-img-wall.html
    data=site.data.imgwall.samsung
+%}
+
+{% include media-video.html
+   url="tent-photogrammetry-5Mbps.mp4"
+   caption="**Video.** When a project needed a tent model and I happened to be learning photogrammetry, I captured and processed my tent for use."
+   aspect="16by9"
+   loop=true
+   controls=true
+%}
+
+{% include model-viewer.html
+   model="tent-photogrammetry/tent-photogrammetry.glb"
+   modeliOS="tent-photogrammetry/tent-photogrammetry.usdz"
+   caption="**Model.** The final processed tent."
+   cameraControls=true
+   cameraOrbit="8deg 70deg 80%"
+   cameraOrbitMax="auto 89deg auto"
+   cameraTarget="0m .3m 0m"
+   arPlacement="floor"
+   interactionPrompt="auto"
 %}
 
 {% include p-section.html

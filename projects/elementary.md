@@ -60,10 +60,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
 
 {% include media-img-xl.html
    url="echo-sections.png"
-%}
-
-{% include p-section.html
-   content="_Our work was split over two four month periods: one of research; one of designs, prototypes, and user testing._"
+   caption="Our work was split over two four month periods: one of research; one of designs, prototypes, and user testing."
 %}
 
 {% include p-section.html

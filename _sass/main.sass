@@ -17,8 +17,11 @@ $border-radius: 16px
 html
    overflow-x: hidden
    background-color: $palette-pageBg
+   ::selection
+      color: #fefefe
+      background-color: #1a76ef
 body
-   color: #585359
+   color: #495061
 strong,
 h2,
 h3,
@@ -405,6 +408,8 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
       right: -7px
       border: 9px solid $palette-timeline-bg
       border-radius: 25px
+   i
+      transition: transform .5s
 
 
 @media (min-width: $break-lg)
@@ -515,10 +520,10 @@ video,
          margin-bottom: 16px
       .card-aside
          font-size: 80%
-.page-body
-   .card-body
-      font-size: 80%
-      color: $palette-caption
+// .page-body
+//    .card-body
+//       font-size: 80%
+//       color: $palette-caption
 // .page-header
 //    width: calc(100% + 30px)
 //    margin-left: -15px
@@ -616,10 +621,7 @@ video,
 .light h2
    color: white
 
-.img-masonry
-   border-radius: $border-radius
-   margin: 16px 0px
-   object-fit: cover
+
    // width: 100%
 
 // One for each column
@@ -659,6 +661,18 @@ $masonry-3: 200 100 150 125 200 150
          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 2))
       @media (min-width: $break-xl)
          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 3))
+   .img-masonry
+      border-radius: $border-radius
+      margin: 16px 0px
+      object-fit: cover
+   @media (max-width: $break-sm)
+      .col
+         padding-left: 8px
+         padding-right: 8px
+      .img-masonry
+         border-radius: $border-radius
+         margin: 8px 0px
+
 
 p
    + ul,
@@ -682,3 +696,23 @@ p
 // a[href^="#"]
 //    color: green !important
 //    font-weight: 900 !important
+
+
+model-viewer
+   width: 100%
+   min-height: 344px
+   box-shadow: 0 8px 16px rgba(0,0,0,.2)
+   border-radius: $border-radius
+   margin-bottom: 8px
+
+.p-sec
+   .card
+      img
+         margin-bottom: 0
+      .card-img-top
+         border-radius: $border-radius $border-radius 0 0
+      .card-img-bottom
+         border-radius: 0 0 $border-radius $border-radius
+      .card-body
+         p
+            font-size: 1rem

@@ -13,16 +13,19 @@ if (is.desktop()){
          element.classList.remove('animated', 'tada')
       })
    }
+
+   $('.visible-desktop').toggleClass('invisible')
 }
 
 function flipTimelineButton(){
    $('.btn-timeline span').toggleClass('d-none').toggleClass('d-inline')
+   $('.btn-timeline .fas').toggleClass('fa-rotate-180')
 }
 
-$('.collapse.collapse-timeline').on('shown.bs.collapse', function(){
+$('.collapse.collapse-timeline').on('show.bs.collapse', function(){
    flipTimelineButton()
 })
-$('.collapse.collapse-timeline').on('hidden.bs.collapse', function(){
+$('.collapse.collapse-timeline').on('hide.bs.collapse', function(){
    flipTimelineButton()
 })
 
