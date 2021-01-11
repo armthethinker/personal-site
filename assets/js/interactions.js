@@ -13,6 +13,8 @@ if (is.desktop()){
          element.classList.remove('animated', 'tada')
       })
    }
+
+   $('.visible-desktop').toggleClass('invisible')
 }
 
 function flipTimelineButton(){
