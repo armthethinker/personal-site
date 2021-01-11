@@ -114,7 +114,7 @@ I guide the team to produce high quality work from the design side. This means c
 {% include model-viewer.html
    model="tent-photogrammetry/tent-photogrammetry.glb"
    modeliOS="tent-photogrammetry/tent-photogrammetry.usdz"
-   caption="The processed tent."
+   caption="**Model.** The final processed tent."
    cameraControls=true
    cameraOrbit="8deg 70deg 80%"
    cameraOrbitMax="auto 89deg auto"
