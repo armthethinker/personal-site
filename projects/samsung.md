@@ -2,8 +2,11 @@
 layout: project-page
 pID: 1
 title: Samsung
+description: Almost all of my work is under NDA. Here I share my general approach to spatial computing challenges (some of which is at Samsung) and personal 3D design work.
+image: /assets/img/samsung/4ktest.jpg
 assetURL: /assets/img/samsung/
 modelURL: /assets/models/samsung/
+
 ---
 
 {% include p-section.html
