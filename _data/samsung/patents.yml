@@ -1,0 +1,88 @@
+- title: System and method for augmented reality interaction
+  abstract: A method, an electronic device, and computer readable medium is provided. The method includes identifying a plurality of virtual objects for output to a display of the electronic device, including a priority level for each of the plurality of virtual objects. The method also includes comparing the priority level of an object of the plurality of virtual objects to the priority level associated with another object of the plurality of virtual objects to determine whether to modify an appearance of either object. In response to determining to modify the appearance of either object, the method further includes modifying the appearance of either. The method additionally includes rendering the plurality of virtual objects on the display of the electronic device.
+  description: Creating a priority system to manage relative content importance.
+  img: US20190279407A1-20190912-D00011.png
+  year: 2018
+  inventors: Andrew R McHugh, Duncan Knarr
+  assignee: Samsung Electronics Co Ltd
+  number: US20190279407A1
+  link: https://patents.google.com/patent/US20190279407A1/en
+  status: Pending
+  objectPosition: 10% 91%
+  small: false
+- title: Mobile device with a foldable display and method of providing user interfaces on the foldable display
+  abstract: A system and method for controlling presentation on a foldable display of an electronic device is provided. A foldable electronic device comprises a foldable housing including a hinge structure, a first housing structure and a second housing structure foldable and unfoldable with respect to the first housing structure about the hinge structure. The electronic device includes a processor and a memory to store instructions that cause the processor to receive a first user input to select an application program; detect a change from a folded state to an unfolded state; determine whether the selected application program has user interface size restrictions; and in the unfolded state, display a user interface of the selected application on at least a portion of the foldable display, based in part on the screen size restriction.
+  description: Novel interactions to manage multiple open apps/windows, especially for foldable devices.
+  img: US20200320906A1-20201008-D00013.png
+  year: 2019
+  inventors: Duncan Knarr, Andrew R McHugh, Seokhyun Yoon
+  assignee: Samsung Electronics Co Ltd
+  number: US20200320906A1
+  link: https://patents.google.com/patent/US20200320906A1/en
+  status: Pending
+  objectPosition: 50% 89%
+  small: true
+- title: System and method for head mounted device input
+  abstract: According to one implementation, a head mounted display (HMD) device comprises a motion detector, a display, and a processor coupled to the motion detector and the display. A memory is also coupled to the processor, wherein the memory stores executable instructions that cause the processor to define an available range for a motion and output a graphic user interface for the available range on the display. An input based upon a motion of the HMD device detected by the inertial motion unit, within the available range is received. One of the HMD device or an external device may then be controlled in response to the input.
+  description: Utilizing head or body movement as a discrete or continuous input. Useful in limited contexts for non-primary input.
+  img: US20200202629A1-20200625-D00005.png
+  year: 2019
+  inventors: Priyanka Sharma, Andrew R McHugh
+  assignee: Samsung Electronics Co Ltd
+  number: US20200202629A1
+  link: https://patents.google.com/patent/US20200202629A1/en
+  status: Pending
+  objectPosition: 0% 0%
+  small: true
+- title: System and method for transition boundaries and distance responsive interfaces in augmented and virtual reality
+  abstract: A head mounted display (HMD) device is provided. The HMD has a display panel, a depth or distance sensor to measure distances between the HMD and a real object. The HMD device sets a close transition boundary distance (CTBD) between the HMD and a close transition boundary (CTB). A far transition boundary distance (FTBD) is set between the HMD and a far transition boundary (FTB). The CTBD is less than the FTBD. As a real object that has associated near and far virtual content moves nearer to the HMD device and crosses the CTB, the virtual content transitions to near virtual content for viewing on the HMD. As the real object moves away from the HMD and crosses the FTB, the virtual content transitions to the far virtual content for viewing on the HMD.
+  description: Increased legibility and contextual controls based on user distance from UI. Additional system to prevent rapid toggling when user stands on boundary line.
+  img: US20190172262A1-20190606-D00005.png
+  year: 2018
+  inventors: Andrew R McHugh, Duncan Knarr
+  assignee: Samsung Electronics Co Ltd
+  number: US20190172262A1
+  link: https://patents.google.com/patent/US20190172262A1/en
+  status: Pending
+  objectPosition: 50% 90%
+  small: false
+# - title: Title
+#   abstract: Abstract
+#   description: Description
+#   img: Imglink
+#   year: year
+#   inventors: Andrew R McHugh, Duncan Knarr
+#   assignee: Samsung Electronics Co Ltd
+#   number: patentnumber
+#   link: link
+#   status: Pending
+# - title: Title
+#   abstract: Abstract
+#   description: Description
+#   img: Imglink
+#   year: year
+#   inventors: Andrew R McHugh, Duncan Knarr
+#   assignee: Samsung Electronics Co Ltd
+#   number: patentnumber
+#   link: link
+#   status: Pending
+# - title: Title
+#   abstract: Abstract
+#   description: Description
+#   img: Imglink
+#   year: year
+#   inventors: Andrew R McHugh, Duncan Knarr
+#   assignee: Samsung Electronics Co Ltd
+#   number: patentnumber
+#   link: link
+#   status: Pending
+# - title: Title
+#   abstract: Abstract
+#   description: Description
+#   img: Imglink
+#   year: year
+#   inventors: Andrew R McHugh, Duncan Knarr
+#   assignee: Samsung Electronics Co Ltd
+#   number: patentnumber
+#   link: link
+#   status: Pending

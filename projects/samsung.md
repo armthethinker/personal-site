@@ -102,6 +102,13 @@ I guide the team to produce high quality work from the design side. This means c
 "
 %}
 
+{% include patents.html
+   data=site.data.samsung.patents
+   header="Patents"
+   subheader="All while at Samsung Research America"
+   col="col-12 col-sm-6"
+%}
+
 {% include media-img-wall.html
    data=site.data.imgwall.samsung
 %}

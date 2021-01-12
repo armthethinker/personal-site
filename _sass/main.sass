@@ -492,8 +492,36 @@ img
    margin-bottom: 24px
    @media (min-width: $break-sm)
       min-width: 200px
-   img
-      box-shadow: none
+.p-sec
+   .card
+      img
+         margin-bottom: 0
+         box-shadow: none
+         &.card-img-top
+            border-radius: $border-radius $border-radius 0 0
+         &.card-img-bottom
+            border-radius: 0 0 $border-radius $border-radius
+         &.card-img-left
+            border-radius: $border-radius 0 0 $border-radius
+         &.card-img-right
+            border-radius: 0 $border-radius $border-radius 0
+      &.card-patent
+         overflow: hidden
+         img
+            height: 200px
+            width: 100%
+            object-fit: cover
+      &.card-patent-horizontal
+         img.card-img-left
+            // height: 100%
+            width: 100%
+            object-fit: cover
+            // todo em, rem font size
+         .col.img-background
+            background-size: cover
+      .card-body
+         p
+            font-size: 1rem
 .p-img-container
    margin-bottom: 16px
 img,
@@ -704,15 +732,3 @@ model-viewer
    box-shadow: 0 8px 16px rgba(0,0,0,.2)
    border-radius: $border-radius
    margin-bottom: 8px
-
-.p-sec
-   .card
-      img
-         margin-bottom: 0
-      .card-img-top
-         border-radius: $border-radius $border-radius 0 0
-      .card-img-bottom
-         border-radius: 0 0 $border-radius $border-radius
-      .card-body
-         p
-            font-size: 1rem
