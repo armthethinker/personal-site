@@ -10,11 +10,18 @@ modelURL: /assets/models/samsung/
 ---
 
 {% include p-section.html
-   header="Caveat"
+   header=""
    subheader=""
-   content="<div class='alert alert-danger'>What lies below is either properly obfuscated to comply with my NDA or is already public. I share my high level Samsung work and personal 3D work. The views here are my own and not necessarily shared by Samsung.</div>
+   content="<div class='alert alert-warning'>Since my NDA prohibits me from talking about what I do exactly, this page shares high level details about my Samsung work plus more details about my personal spatial computing work.</div>
+"
+%}
 
-I can't talk about what I do exactly, but I can give a bit of insight into how I work on any spatial design problem. Some of my work is pure design research, some is for future products, and the rest is for somewhere in between.
+{% include p-section.html
+   header="The general problem I solve"
+   subheader=""
+   content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
+
+   I think beyond our current black rectangles. I create novel interactions and product strategies. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
 "
 %}
 
@@ -28,25 +35,16 @@ I can't talk about what I do exactly, but I can give a bit of insight into how I
 %}
 
 {% include p-section.html
-   content="I was invited to present at XD Immersive in San Francisco in 2018 (put on by UX STRAT). I talked about
-- Even though everything looks different, high level design principles are the same (e.g. Neilson's usability heuristics, Case's principles of calm technology, Rams' principles for good design, Maeda laws of simplicity)
-- Questions you need to ask yourself when designing spatially
-- The various constraints you're faced with
-- Example critiques, similar to feedback I'd give to my teammates
-- Tools to use and guidance to use the tool that will best help you think through the problem at hand
-- What it takes to get hired in this industry
-- My particular path
+   content="
+**First**, this talk showed how high level design principles don't change when working on spatial computing problems (e.g. Neilson's usability heuristics, Case's principles of calm technology, Rams' principles for good design, Maeda's laws of simplicity).
+
+**Second**, I walk through the new constraints and a sample critique of an AR mockup.
+
+**Lastly**, I close with a few pointers on how to transition from 2D design into a 3D design career.
 "
 %}
 
-{% include p-section.html
-   header="The general problem I solve"
-   subheader=""
-   content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
 
-   I think beyond our current black rectangles. I create novel interactions and product strategies. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
-"
-%}
 
 {% include media-youtube.html
    header="Characteristic work"
@@ -144,15 +142,26 @@ I guide the team to produce high quality work from the design side. This means c
 %}
 
 {% include p-section.html
-   header="Tools I use for spatial ideation & prototyping"
+   header="Tools & skills for spatial prototyping"
    subheader=""
    content="
-- **Unity** for on-device prototypes
-- **Blender** for volumetric interaction ideation and renders, modeling, animation
-- **Tilt Brush, Blocks, Tvori, Quill, Maquette** for volumetric interactions and renders, modeling, animation, and non-interactive off-device prototypes
-- **Sketch** for flat mockups, visual explorations, flows
-- **Framer** for interaction ideas that I can explore more quickly in Framer (for less volumetric ideas)
-- **Pen & paper** for quick divergent ideation
+**UX design**
+- Maquette, Tvori, Tilt Brush, Blocks, Quill (AR/VR design tools)
+- Sketch, Figma, Adobe Creative Suite, Framer Classic, Procreate (2D design)
+- User research (design, facilitate, analyze)
+
+**AR/VR Prototyping, 3D Modeling**
+- Blender (modeling, texturing, procedural materials/shaders, 3D VFX compositing)
+- Unity (interactions, MRTK)
+- Depthkit, Meshroom, Polycam, Record3D (volumetric capture, photogrammetry)
+- A-Frame (webVR)
+
+**Other**
+- Identifying key opportunities through design experimentation and prototyping
+- Design+prototyping team management
+- Video production showcasing XR prototypes and use cases
+- HTML, CSS, JS
+- Familiar with most AR/VR HMDs and their UX patterns
 "
 %}
 
