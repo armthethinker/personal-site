@@ -25,7 +25,7 @@
                         <img src="{{item.img | prepend: patentURL}}" class="card-img-top" alt="Patent image for {{item.title | strip_html}}" style="object-position: {{item.objectPosition}}">
                         <div class="card-body">
                            <small class="text-monospace text-muted mb-1">{{item.year}} / {{item.number}} / {{item.status}}</small>
-                           <h5 class="card-title color-primary"><a href="{{item.link}}">{{item.title}}</a></h5>
+                           <h5 class="card-title color-primary"><a href="{{item.link}}" target="_blank">{{item.title}}</a></h5>
                            <p class="card-text">{{item.description}}</p>
                         </div>
                      </div>
@@ -39,13 +39,14 @@
                   <div class="col-12">
                      <div class="card card-patent-horizontal">
                         <div class="row no-gutters">
+                           <!-- <div class="col" style=""> -->
                            <div class="col img-background" style="background-image:url({{item.img | prepend: patentURL}}); background-position: {{item.objectPosition}}">
                               <!-- <img src="{{item.img | prepend: patentURL}}" class="card-img card-img-left" alt="Patent image for {{item.title | strip_html}}" style="object-position: {{item.objectPosition}}"> -->
                            </div>
                            <div class="col-10 col-md-8">
                               <div class="card-body">
                                  <small class="text-monospace text-muted mb-1">{{item.year}} / {{item.number}} / {{item.status}}</small>
-                                 <p class="card-title color-primary"><a href="{{item.link}}">{{item.title}}</a></p>
+                                 <p class="card-title color-primary"><a href="{{item.link}}" target="_blank">{{item.title}}</a></p>
                                  <p class="card-text">{{item.description}}</p>
                               </div>
                            </div>
