@@ -73,7 +73,7 @@ modelURL: /assets/models/samsung/
    content="
 Sometimes AR examples are limited to things we can already do well on flat devices. My work tries to go beyond these simple examples – into experiences we can only have with spatial computers.
 
-When I'm thinking through interaction problems on my team, there exists a wide swath of presentation options.
+Here's the process my team usually goes through for a project:
 "
 %}
 

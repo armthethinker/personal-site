@@ -1,12 +1,18 @@
-- header: Ideation
-  caption: A couple of quick, lo-fi renders, mockups, or sketches will suffice.
+- header: 1. Early research
+  caption: User, design, tech, and market research to understand opportunities and constraints in a space.
   url: /assets/img/samsung/ixds3-42.jpg
-- header: Product concepts
-  caption: A high fideltity render to show the main idea is best. (For my wedding, I made a 3D layout to help us think through ideas.)
+- header: 2. Product concept
+  caption: Renders and high level documentation to sell the idea internally and to guide the team.
+  url: /assets/img/samsung/vivid-house.jpg
+- header: 3. Scoping
+  caption: Define our MVP while aligning the team. What can be made real? What should be faked? What needs to be tested?
   url: /assets/img/samsung/wedding.jpg
-- header: Interaction design
-  caption: A render or prototype that focuses on the specific interaction is what we need.
-  url: /assets/img/samsung/ex-11-1.gif
-- header: Work shared outside of our team
-  caption: Leans toward hi-fi renders or on-device captures of our built prototypes. (While I have some Unity chops, I'm fortunate to work on a team with deeper Unity expertise.)
+- header: 4. Interaction design
+  caption: Exploration, definition, and then refinement – each stage with mockups and prototypes, in/validated with user studies.
   url: /assets/img/samsung/ex11-micromovements.gif
+- header: 5. Presentation
+  caption: When sharing our work across the company, we create polished decks and demo videos of our prototypes.
+  url: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+- header: 6. Iteration
+  caption: We learn something new. Requirements or goals change. We pivot to the next thing.
+  url: /assets/img/samsung/tent-photogrammetry-5Mbps.2021-02-21 14_55_21.gif
