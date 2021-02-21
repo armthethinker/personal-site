@@ -54,7 +54,7 @@ modelURL: /assets/models/samsung/
    content="
 **My team is the XR Design Group (XRDG).** We work under MPS Lab under Samsung Research America (SRA). Together, we find meaningful ways to build future facing technologies.
 
-**Our core team consists of around eight designers and engineers** (though we collaborate with teams across Samsung). We all participate in the entire design and development process, but focus on own specialties. Our tight collaboration leads us to better solutions.
+**Our core team consists of around eight designers and engineers** (though we collaborate with teams across Samsung). We all participate in the entire design and development process, but focus on our specialties. Our tight collaboration leads us to better solutions.
 
 **I am the most senior product designer**, though not the most senior designer (that honor would go to one of the two artist-engineers on our team from the games industry).
 "
@@ -98,7 +98,7 @@ I work with my manager to set priorities for the team, arguing for directions th
 
 **Design & process**: I'm still an individual contributor, so I work on ideation, mockups, prototypes, and user research.
 
-I guide the team to produce high quality work from the design side. This means contributions to what we should continue to explore, what's ready to prototype, which tradeoffs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
+I guide the team to produce high quality work from the design side. This means contributions to what we should continue to explore, what's ready to prototype, which trade offs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
 
 **Documentation**: I lead our documentation efforts (writing, editing, crafting the story, presenting). This also makes me a go to person for any of our historical work. Before our switch to a more collaborative tool, I created a custom website to showcase our documentation, design decisions, and ideations.
 
@@ -106,7 +106,7 @@ I guide the team to produce high quality work from the design side. This means c
 
 **Patents**: I've produced [four+ spatial design patents](#patents) that are working their way through the USPTO.
 
-**Mentoring**: I'm there for my teammates when they a hand thinking about a spatial design problem or how to navigate Samsung.
+**Mentoring**: I'm there for my teammates when they are thinking through spatial design problems or figuring out how to navigate Samsung.
 "
 %}
 

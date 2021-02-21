@@ -22,7 +22,7 @@ Self-sacrifice does not occur to me; I’m paralyzed by indecision as soon as th
    header="Problem"
    subheader=""
    content="
-More and more of our lives are mediated through technology. Does the change from tangible, real world interactions to intangible, vitural world interactions change our moral calculus? That is to ask: **Do the capabilities of our interfaces (here, specifically haptics) change our moral choices?** (They do.)
+More and more of our lives are mediated through technology. Does the change from tangible, real world interactions to intangible, virtual world interactions change our moral calculus? That is to ask: **Do the capabilities of our interfaces (here, specifically haptics) change our moral choices?** (They do.)
 "
 %}
 
@@ -32,9 +32,9 @@ More and more of our lives are mediated through technology. Does the change from
    content="
 **The Trolley Problem is a classic thought experiment in moral philosophy** where an out of control trolley car is speeding down a hill towards a group of five people. You, standing near the tracks, see a lever that would switch the trolley onto new tracks where one person would die. Do you pull the lever?
 
-**The “fat man” variant is similar, but your choice is to push a large man onto the tracks** to stopy the trolley to save five people (and kill him).
+**The “fat man” variant is similar, but your choice is to push a large man onto the tracks** to stop the trolley to save five people (and kill him).
 
-**Our experiment, the Elevator Problem, has a group of workers on a malfunctioning elevator dropping towards an electrified floor. If the participant pushes a nearby technician into the electrified floor, the elevator will stop and workers won’t die.** This is an isomorph of the Trolley Problem: a scenario that is categorically equivalent, but looks different. We specifically explored the different moral and physiological response between a haptic and non-haptic group. Haptic participants feel the person they are pushing with their hands whereas non-haptic participants do not. Additionally, we had a third group whose scenario used a two buttons to control the decent of an elevator with four workers and one with one worker (more similar to the lever-based Trolley Problem)."
+**Our experiment, the Elevator Problem, has a group of workers on a malfunctioning elevator dropping towards an electrified floor. If the participant pushes a nearby technician into the electrified floor, the elevator will stop and workers won’t die.** This is an isomorph of the Trolley Problem: a scenario that is categorically equivalent, but looks different. We specifically explored the different moral and physiological responses between a haptic and non-haptic group. Haptic participants feel the person they are pushing with their hands whereas non-haptic participants do not. Additionally, we had a third group whose scenario used two buttons to control the descent of an elevator with four workers and one with one worker (more similar to the lever-based Trolley Problem)."
 %}
 
 {% include media-youtube.html
@@ -89,7 +89,7 @@ We tested 60 participants. While all participants completed the scenario, 4 data
    header="My role & tools"
    content="
 ### Role
-- With a bachelors degree in philosophy, I helped the team with any philosophical points and clarifications. This was especially important as we tried to create an easily understandable scenario that looked different from the initial thought experiment.
+- With a bachelor's degree in philosophy, I helped the team with any philosophical points and clarifications. This was especially important as we tried to create an easily understandable scenario that looked different from the initial thought experiment.
 - I was the user experience designer on the team, clarifying usability and interaction issues. The rest of the team consisted of programmers and artists.
 - I had worked and led more research projects than my counterparts. As such, I designed our research methodology and statistical analysis.
 
@@ -107,7 +107,7 @@ We tested 60 participants. While all participants completed the scenario, 4 data
    content="
 This project started as a class project. Each student submitted ideas and, through a consolidation process, we all ended up in one of three groups.
 
-We refined our work over six weeks with weekly playtests, class feedback, and feedback from class guests. We used the feedback to clarify our designs. This lead to our final research experiment and written report.
+We refined our work over six weeks with weekly playtests, class feedback, and feedback from class guests. We used the feedback to clarify our designs. This led to our final research experiment and written report.
 
 ### Initial designs
 

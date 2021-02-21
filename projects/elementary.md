@@ -70,7 +70,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
    content="
 ### Elementary (our team)
 
-Elementary was a group of four master’s students in the Carnegie Mellon University and University of Madeira Master of Human-Computer interaction dual degree program. We were a multi-disciplinary team with backgrounds in the humanities, psychology, and computer science. When working, we each took the lead on one aspect of the project, then collaborated to completion.
+Elementary was a group of four master’s students in the Carnegie Mellon University and University of Madeira Master of Human-Computer interaction dual degree program. We were a multidisciplinary team with backgrounds in the humanities, psychology, and computer science. When working, we each took the lead on one aspect of the project, then collaborated to completion.
 
 ### Exictos (our client)
 Exictos, formerly known as Promosoft, was founded in 1989. They specialize in the production and implementation of core banking software, serving more than 60 banks in Portuguese-speaking countries. Exictos expanded their offerings to include both mobile and online banking software as a layer over their core platform. In 2015, Exictos was acquired by the Polish Asseco group to strengthen its presence in Africa and to open up new opportunities for expansion in South American markets, especially Brazil.
@@ -213,7 +213,7 @@ Some simulators can be found on the web and others can only be accessed when sit
 
 {% include media-img.html
    url="simulator-collapse.gif"
-   caption="**User action focused representation** To keep the user's focus and the visual representation of the page in sync, we collapse the header and shrink the visualization when the user is inputing information. A flick of the finger down expands the header and visualization."
+   caption="**User action focused representation** To keep the user's focus and the visual representation of the page in sync, we collapse the header and shrink the visualization when the user is inputting information. A flick of the finger down expands the header and visualization."
    captionSide=true
 %}
 
@@ -224,7 +224,7 @@ Some simulators can be found on the web and others can only be accessed when sit
 
 {% include p-section.html
    header="Research methods"
-   content="Our research spanned our first four months of work. To guide our investigation into Portuguese consumer banking, we created a series of core questions. Each question lead us to a research method.
+   content="Our research spanned our first four months of work. To guide our investigation into Portuguese consumer banking, we created a series of core questions. Each question leads us to a research method.
 
 - What is already known about the banking market?<br>
 _Literature Review, Market Study_
@@ -252,7 +252,7 @@ To interpret our data, we created models including a flow model, sequence diagra
 
 {% include media-img-xl.html
    url="exictos-affinity.jpg"
-   caption="We took our 549 interview notes and placed them on the wall, grouping notes by their conceptual nearness. after we had groups of between four and nine notes, we create blue notes that describe the group. We then group blue notes under pink notes which describe the blue note groups. Finally, we use green notes to segment our diagram into general categories. Once the grouping is over, we “walk the wall” by placing post its with design ideas, key insights, and questions. These new notes help guide our visioning process and make sure we’re designing based on data."
+   caption="We took our 549 interview notes and placed them on the wall, grouping notes by their conceptual nearness. After we had groups of between four and nine notes, we create blue notes that describe the group. We then group blue notes under pink notes which describe the blue note groups. Finally, we use green notes to segment our diagram into general categories. Once the grouping is over, we “walk the wall” by placing Post-Its with design ideas, key insights, and questions. These new notes help guide our visioning process and make sure we’re designing based on data."
 %}
 
 {% include p-section.html
@@ -269,7 +269,7 @@ Users make conscious decisions for how they will pay for things, taking control 
 Banks are not providing services in a way that pleases their users. When customers have problems, they are unlikely to contact the bank about it. Instead, users get frustrated and begin looking for new banks. This is especially true when banks charge “maintenance fees”. Without adequate communication, users wonder what these fees are for and suspect that the banks just want to take their money.
 
 ### Difficulty tracking expenses and budgeting
-When users want to know where their money is going, they track it. But, the tools provided to them by banks are insufficient. our data shows that most users do some form of expense tracking or budgeting. Excel and mental-tracking are the most popular forms of estimating budgets.
+When users want to know where their money is going, they track it. But, the tools provided to them by banks are insufficient. Our data shows that most users do some form of expense tracking or budgeting. Excel and mental-tracking are the most popular forms of estimating budgets.
 
 ### Unused savings options
 Often aware of savings options, few users have savings accounts or other investments. In interviews they remark that they “should have an account, but don’t”."
@@ -297,7 +297,7 @@ Often aware of savings options, few users have savings accounts or other investm
 {% include p-section.html
    header="Design process"
    url="process.jpg"
-   content="Based our research, we understood the user’s core questions: How am I doing? How will I be doing? If something changes, how does that affect me? **In our last four months of work, we answered these questions by building Echo.**
+   content="Based on our research, we understood the user’s core questions: How am I doing? How will I be doing? If something changes, how does that affect me? **In our last four months of work, we answered these questions by building Echo.**
 
 We explored each part of our five part vision in four week-long design sprints (our fifth part was explored throughout). With the user feedback, we were able to condense what made sense, get rid of what didn’t, and update what needed improvements.
 
@@ -331,7 +331,7 @@ In the time after our sprints, we continuously critiqued our work, iterated on i
    url="16-09-26-elementary-49.jpg"
    caption="**On our second day**, we explore interactions from other products and services. We then go through four sketching exercises that leave us with four specific design directions (one from each member of the team). I show my final sketch here."
    url2="16-10-05-elementary-33.jpg"
-   caption2="**On our third day**, we critique our sketches and make storyboard to prepare our prototype."
+   caption2="**On our third day**, we critique our sketches and make storyboards to prepare our prototype."
    style="lg"
 %}
 
