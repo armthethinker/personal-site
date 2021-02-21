@@ -21,7 +21,11 @@ modelURL: /assets/models/samsung/
    subheader=""
    content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
 
-   I think beyond our current black rectangles. I create novel interactions and product strategies. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
+   **I create novel interactions and product strategies.** I think beyond our current black rectangles. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
+
+   **It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
+
+   **Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products.
 "
 %}
 
@@ -44,13 +48,23 @@ modelURL: /assets/models/samsung/
 "
 %}
 
+{% include p-section.html
+   header="My team"
+   subheader=""
+   content="
+**My team is the XR Design Group (XRDG).** We work under MPS Lab under Samsung Research America (SRA). Together, we find meaningful ways to build future facing technologies.
 
+**Our core team consists of around eight designers and engineers** (though we collaborate with teams across Samsung). We all participate in the entire design and development process, but focus on own specialties. Our tight collaboration leads us to better solutions.
+
+**I am the most senior product designer**, though not the most senior designer (that honor would go to one of the two artist-engineers on our team from the games industry).
+"
+%}
 
 {% include media-youtube.html
-   header="Characteristic work"
-   subheader="What I'd produce for the team when we're thinking through problems"
+   header="My role"
+   subheader="And characteristic work"
    urlCode="cmkxEeIM2Sc"
-   caption="With spatial displays and the proper imaging pipeline, a mother could see her unborn child in place."
+   caption="With spatial displays and the proper imaging pipeline, sonograms could look like x-rays."
    style="lg"
    aspect="16by9"
 %}
@@ -65,22 +79,18 @@ When I'm thinking through interaction problems on my team, there exists a wide s
 
 {% include cards.html
    data=site.data.samsung.typesOfWork
-   col="col-12 col-sm-6"
+   col="col-12 col-md-6 col-lg-4"
    imgBottom=true
 %}
 
 {% include p-section.html
-   header="My team & role"
+   header=""
    subheader=""
    content="
-### My team
-**My team is the XR Design Group (XRDG).** We work under MPS Lab under Samsung Research America (SRA). Together, we find meaningful ways to build future facing technologies.
 
-**Our core team consists of around eight designers and engineers** (though we collaborate with teams across Samsung). We all participate in the entire design and development process, but focus on own specialties. Our tight collaboration leads us to better solutions.
+### Responsibilities
 
-**I am the most senior product designer**, though not the most senior designer (that honor would go to one of the two artist-engineers on our team from the games industry).
-
-### My role
+> There are many ways to create bad spatial computing experiences. My responsibility is to figure out what will resonate with users – while guiding and with my team.
 
 **Priorities & vision**: Through my years of work before and at Samsung, I've developed specific principles for what AR and VR can and should be. These guide my decisions and help to set the team's vision.
 
@@ -94,18 +104,13 @@ I guide the team to produce high quality work from the design side. This means c
 
 **Presenting & collaborating**: I talk about our work to other teams and external partners. I also present to a number of lab heads, VPs, SVPs, Presidents, and once I presented to a group of Korean Congresspeople.
 
-**Patents**: I've produced three spatial design patents that are working their way through the USPTO.
+**Patents**: I've produced [four+ spatial design patents](#patents) that are working their way through the USPTO.
 
 **Mentoring**: I'm there for my teammates when they a hand thinking about a spatial design problem or how to navigate Samsung.
 "
 %}
 
-{% include patents.html
-   data=site.data.samsung.patents
-   header="Patents"
-   subheader="All while at Samsung Research America"
-   col="col-12 col-sm-6"
-%}
+
 
 {% include media-img-wall.html
    data=site.data.imgwall.samsung
@@ -132,16 +137,6 @@ I guide the team to produce high quality work from the design side. This means c
 %}
 
 {% include p-section.html
-   header="What I find most valuable about this work"
-   subheader=""
-   content="
-**It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
-
-**Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products.
-"
-%}
-
-{% include p-section.html
    header="Tools & skills for spatial prototyping"
    subheader=""
    content="
@@ -163,6 +158,13 @@ I guide the team to produce high quality work from the design side. This means c
 - HTML, CSS, JS
 - Familiar with most AR/VR HMDs and their UX patterns
 "
+%}
+
+{% include patents.html
+   data=site.data.samsung.patents
+   header="Patents"
+   subheader="All while at Samsung Research America"
+   col="col-12 col-sm-6"
 %}
 
 {% include p-section.html
