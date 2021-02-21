@@ -1,31 +1,35 @@
-- imgurl: 4ktest.jpg
+- imgurl: vivid-boat-ocean.2021-02-21 12_26_04.gif
   origin: 50% 50%
-- imgurl: abby.jpg
-  origin: 50% 50%
-  # caption: A failed Kinect scan of my wife.
+  caption: Exploration for a memory palace.
 - imgurl: baby.gif
   origin: 50% 50%
+  caption: Concept render for spatialized sonograms.
+- imgurl: squiggle-0183.jpg
+  origin: 50% 50%
+  caption: Look development for a material.
 - imgurl: braun.2019-07-20 22_30_40.gif
   origin: 50% 50%
+  caption: Modeling practice.
 - imgurl: displacement-torus.2019-07-20 22_34_21.gif
   origin: 50% 60%
-  # caption: Animating complex materials and microdisplacements.
-- imgurl: materials.2019-07-20 22_44_19.gif
+  caption: Animating complex materials and microdisplacements.
+- imgurl: vivid-tree.jpg
   origin: 50% 50%
-  # caption: Material exploration.
-- imgurl: egg.2019-07-20 22_38_58.gif
-  origin: 70% 50%
+  caption: Another memory palace exploration.
+- imgurl: Statue_6.2021-02-21 12_07_44.gif
+  origin: 50% 50%
+  caption: Look development for various materials.
 - imgurl: rings.2019-07-20 22_53_21.gif
   origin: 50% 50%
-  # caption: You'll notice that in my personal work, I love to play with lighting.
+  caption: Artistic render, playing with lights and materials.
 - imgurl: siteless129.2019-07-20 22_55_15.gif
   origin: 40% 50%
-  # caption: <em>Siteless</em> is a book full of abstract architectural forms. I use it for modeling inspiration.
+  caption: <em>Siteless</em> is a book full of abstract architectural forms. I use it for modeling inspiration.
 - imgurl: spatial-computing.2019-05-27 08_20_32.gif
   origin: 50% 50%
-- imgurl: surfshop-eggbadger.2019-07-20 22_12_59.gif
-  origin: 50% 50%
-  # caption: Exploring materials, lighting, and modeling by recreating and remixing someone's render.
+- imgurl: paths.jpg
+  origin: 20% 50%
+  caption: Look development for virtual paths.
 - imgurl: two-screens-one-camera.gif
   origin: 50% 50%
-  # caption: From a project where I was exploring independently controlled eyes.
+  caption: Hardware VR project for independently controlled eyes, like in <em>Pan's Labyrinth</em>.
