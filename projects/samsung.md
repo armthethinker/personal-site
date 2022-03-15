@@ -3,18 +3,29 @@ layout: project-page
 pID: 1
 title: Samsung
 description: Almost all of my work is under NDA. Here I share my general approach to spatial computing challenges (some of which is at Samsung) and personal 3D design work.
-image: /assets/img/samsung/4ktest.jpg
+image: /assets/img/samsung/orb-1.jpg
 assetURL: /assets/img/samsung/
 modelURL: /assets/models/samsung/
 
 ---
 
 {% include p-section.html
-   header="Caveat"
+   header=""
    subheader=""
-   content="<div class='alert alert-danger'>What lies below is either properly obfuscated to comply with my NDA or is already public. I share my high level Samsung work and personal 3D work. The views here are my own and not necessarily shared by Samsung.</div>
+   content="<div class='alert alert-warning'>Since my NDA prohibits me from talking about what I do exactly, this page shares high level details about my Samsung work plus more details about my personal spatial computing work.</div>
+"
+%}
 
-I can't talk about what I do exactly, but I can give a bit of insight into how I work on any spatial design problem. Some of my work is pure design research, some is for future products, and the rest is for somewhere in between.
+{% include p-section.html
+   header="The general problem I solve"
+   subheader=""
+   content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
+
+   **I create novel interactions and product strategies.** I think beyond our current black rectangles. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
+
+   **It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
+
+   **Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products.
 "
 %}
 
@@ -28,31 +39,32 @@ I can't talk about what I do exactly, but I can give a bit of insight into how I
 %}
 
 {% include p-section.html
-   content="I was invited to present at XD Immersive in San Francisco in 2018 (put on by UX STRAT). I talked about
-- Even though everything looks different, high level design principles are the same (e.g. Neilson's usability heuristics, Case's principles of calm technology, Rams' principles for good design, Maeda laws of simplicity)
-- Questions you need to ask yourself when designing spatially
-- The various constraints you're faced with
-- Example critiques, similar to feedback I'd give to my teammates
-- Tools to use and guidance to use the tool that will best help you think through the problem at hand
-- What it takes to get hired in this industry
-- My particular path
+   content="
+**First**, this talk showed how high level design principles don't change when working on spatial computing problems (e.g. Neilson's usability heuristics, Case's principles of calm technology, Rams' principles for good design, Maeda's laws of simplicity).
+
+**Second**, I walk through the new constraints and a sample critique of an AR mockup.
+
+**Lastly**, I close with a few pointers on how to transition from 2D design into a 3D design career.
 "
 %}
 
 {% include p-section.html
-   header="The general problem I solve"
+   header="My team"
    subheader=""
-   content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
+   content="
+**My team is the XR Design Group (XRDG).** We work under MPS Lab under Samsung Research America (SRA). Together, we find meaningful ways to build future facing technologies.
 
-   I think beyond our current black rectangles. I create novel interactions and product strategies. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
+**Our core team consists of around eight designers and engineers** (though we collaborate with teams across Samsung). We all participate in the entire design and development process, but focus on our specialties. Our tight collaboration leads us to better solutions.
+
+**I am the most senior product designer**, though not the most senior designer (that honor would go to one of the two artist-engineers on our team from the games industry).
 "
 %}
 
 {% include media-youtube.html
-   header="Characteristic work"
-   subheader="What I'd produce for the team when we're thinking through problems"
+   header="My role"
+   subheader="And characteristic work"
    urlCode="cmkxEeIM2Sc"
-   caption="With spatial displays and the proper imaging pipeline, a mother could see her unborn child in place."
+   caption="With spatial displays and the proper imaging pipeline, sonograms could look like x-rays."
    style="lg"
    aspect="16by9"
 %}
@@ -61,28 +73,24 @@ I can't talk about what I do exactly, but I can give a bit of insight into how I
    content="
 Sometimes AR examples are limited to things we can already do well on flat devices. My work tries to go beyond these simple examples – into experiences we can only have with spatial computers.
 
-When I'm thinking through interaction problems on my team, there exists a wide swath of presentation options.
+Here's the process my team usually goes through for a project:
 "
 %}
 
 {% include cards.html
    data=site.data.samsung.typesOfWork
-   col="col-12 col-sm-6"
+   col="col-12 col-md-6 col-lg-4"
    imgBottom=true
 %}
 
 {% include p-section.html
-   header="My team & role"
+   header=""
    subheader=""
    content="
-### My team
-**My team is the XR Design Group (XRDG).** We work under MPS Lab under Samsung Research America (SRA). Together, we find meaningful ways to build future facing technologies.
 
-**Our core team consists of around eight designers and engineers** (though we collaborate with teams across Samsung). We all participate in the entire design and development process, but focus on own specialties. Our tight collaboration leads us to better solutions.
+### Responsibilities
 
-**I am the most senior product designer**, though not the most senior designer (that honor would go to one of the two artist-engineers on our team from the games industry).
-
-### My role
+> There are many ways to create bad spatial computing experiences. My responsibility is to figure out what will resonate with users – while guiding and with my team.
 
 **Priorities & vision**: Through my years of work before and at Samsung, I've developed specific principles for what AR and VR can and should be. These guide my decisions and help to set the team's vision.
 
@@ -90,17 +98,19 @@ I work with my manager to set priorities for the team, arguing for directions th
 
 **Design & process**: I'm still an individual contributor, so I work on ideation, mockups, prototypes, and user research.
 
-I guide the team to produce high quality work from the design side. This means contributions to what we should continue to explore, what's ready to prototype, which tradeoffs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
+I guide the team to produce high quality work from the design side. This means contributions to what we should continue to explore, what's ready to prototype, which trade offs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
 
 **Documentation**: I lead our documentation efforts (writing, editing, crafting the story, presenting). This also makes me a go to person for any of our historical work. Before our switch to a more collaborative tool, I created a custom website to showcase our documentation, design decisions, and ideations.
 
 **Presenting & collaborating**: I talk about our work to other teams and external partners. I also present to a number of lab heads, VPs, SVPs, Presidents, and once I presented to a group of Korean Congresspeople.
 
-**Patents**: I've produced three spatial design patents that are working their way through the USPTO.
+**Patents**: I've produced [four+ spatial design patents](#patents) that are working their way through the USPTO.
 
-**Mentoring**: I'm there for my teammates when they a hand thinking about a spatial design problem or how to navigate Samsung.
+**Mentoring**: I'm there for my teammates when they are thinking through spatial design problems or figuring out how to navigate Samsung.
 "
 %}
+
+
 
 {% include media-img-wall.html
    data=site.data.imgwall.samsung
@@ -127,26 +137,34 @@ I guide the team to produce high quality work from the design side. This means c
 %}
 
 {% include p-section.html
-   header="What I find most valuable about this work"
+   header="Tools & skills for spatial prototyping"
    subheader=""
    content="
-**It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
+**UX design**
+- Maquette, Tvori, Tilt Brush, Blocks, Quill (AR/VR design tools)
+- Sketch, Figma, Adobe Creative Suite, Framer Classic, Procreate (2D design)
+- User research (design, facilitate, analyze)
 
-**Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products.
+**AR/VR Prototyping, 3D Modeling**
+- Blender (modeling, texturing, procedural materials/shaders, 3D VFX compositing)
+- Unity (interactions, MRTK)
+- Depthkit, Meshroom, Polycam, Record3D (volumetric capture, photogrammetry)
+- A-Frame (webVR)
+
+**Other**
+- Identifying key opportunities through design experimentation and prototyping
+- Design+prototyping team management
+- Video production showcasing XR prototypes and use cases
+- HTML, CSS, JS
+- Familiar with most AR/VR HMDs and their UX patterns
 "
 %}
 
-{% include p-section.html
-   header="Tools I use for spatial ideation & prototyping"
-   subheader=""
-   content="
-- **Unity** for on-device prototypes
-- **Blender** for volumetric interaction ideation and renders, modeling, animation
-- **Tilt Brush, Blocks, Tvori, Quill, Maquette** for volumetric interactions and renders, modeling, animation, and non-interactive off-device prototypes
-- **Sketch** for flat mockups, visual explorations, flows
-- **Framer** for interaction ideas that I can explore more quickly in Framer (for less volumetric ideas)
-- **Pen & paper** for quick divergent ideation
-"
+{% include patents.html
+   data=site.data.samsung.patents
+   header="Patents"
+   subheader="All while at Samsung Research America"
+   col="col-12 col-sm-6"
 %}
 
 {% include p-section.html

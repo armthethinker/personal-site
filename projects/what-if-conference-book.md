@@ -143,7 +143,7 @@ We were honored to be sponsored by Quirky; littleBits; Schlafly Beer; the Region
 - **\"What if computers were conscious?\"** <br>talks about artificial intelligence (p 138)
 - **\"What if you gave your pet a new ability\"** <br>considers gene modification (p 166)
 
-Each entry starts by exploring the question and helping our reader (8–12 year olds) understand a few foundational facts. Most entries also have an activity for kids to delve deeper into the question. Some entires have peer-interviews with other kids; expert interviews with the likes of David Eagleman, Amber Case, and Aubrey de Grey; and profiles on historic individuals.
+Each entry starts by exploring the question and helping our reader (8–12 year olds) understand a few foundational facts. Most entries also have an activity for kids to delve deeper into the question. Some entries have peer-interviews with other kids; expert interviews with the likes of David Eagleman, Amber Case, and Aubrey de Grey; and profiles on historic individuals.
 
 <a class='btn btn-outline' href='http://amzn.com/1582705291' target='_blank'>Amazon: _The Book of What If…?: Questions and Activities for Curious Minds_ ></a>
 
@@ -174,7 +174,7 @@ We helped communities facilitate their own conferences, allowing others to ask t
 
 {% include p-section.html
    content="
-Our conference brings together people from different backgrounds to participate in (mostly intangible) active curiosity. We realized we could transfer our our learnings and processes into a tangible, community-focused makerspace where people could explore physical questions.
+Our conference brings together people from different backgrounds to participate in (mostly intangible) active curiosity. We realized we could transfer our learnings and processes into a tangible, community-focused makerspace where people could explore physical questions.
 
 (If you're not familiar, a makerspace is a place for makers, creatives, hackers, and hobbyists. It has expensive tools you might not find in your garage and classes to teach you how to use those tools. In my research, most of these spaces were filled with older, white, male engineers. We aimed to make a more diverse space, as our project inherited the diversity from our conference.)
 

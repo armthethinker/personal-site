@@ -289,13 +289,13 @@ body
          transform: translateZ(32px)
 
 $palette-samsung: #0c4da2
-$palette-samsung-secondary: #fff
+$palette-samsung-secondary: #000
 
 $palette-echo: #4054B2
 $palette-echo-secondary: rgb(251, 218, 71)
 
 $palette-hv: #C80D59
-$palette-hv-secondary: black
+$palette-hv-secondary: #000
 
 // $palette-morals: #544C51
 $palette-morals: #7154E9
@@ -382,7 +382,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
             box-shadow: 0 8px 16px transparentize($color-primary, .9)
 
 //                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
-@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  80%,    20%)
+@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,   0%,   100%)
 @include project-specific-style(".project-echo",      $palette-echo,      45%, 20%, $palette-echo-secondary,     70%,   100%)
 @include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
 @include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
@@ -492,8 +492,37 @@ img
    margin-bottom: 24px
    @media (min-width: $break-sm)
       min-width: 200px
-   img
-      box-shadow: none
+.p-sec
+   .card
+      img
+         margin-bottom: 0
+         box-shadow: none
+         &.card-img-top
+            border-radius: $border-radius $border-radius 0 0
+         &.card-img-bottom
+            border-radius: 0 0 $border-radius $border-radius
+         &.card-img-left
+            border-radius: $border-radius 0 0 $border-radius
+         &.card-img-right
+            border-radius: 0 $border-radius $border-radius 0
+      &.card-patent
+         overflow: hidden
+         img
+            height: 200px
+            width: 100%
+            object-fit: cover
+      &.card-patent-horizontal
+         img.card-img-left
+            height: 100%
+            width: 100%
+            object-fit: cover
+            // todo em, rem font size
+         .col.img-background
+            background-size: cover
+            border-radius: $border-radius 0 0 $border-radius
+      .card-body
+         p
+            font-size: 1rem
 .p-img-container
    margin-bottom: 16px
 img,
@@ -705,14 +734,5 @@ model-viewer
    border-radius: $border-radius
    margin-bottom: 8px
 
-.p-sec
-   .card
-      img
-         margin-bottom: 0
-      .card-img-top
-         border-radius: $border-radius $border-radius 0 0
-      .card-img-bottom
-         border-radius: 0 0 $border-radius $border-radius
-      .card-body
-         p
-            font-size: 1rem
+.alert
+   border-radius: $border-radius
