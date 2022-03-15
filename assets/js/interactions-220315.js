@@ -1,8 +1,8 @@
 if (is.desktop()){
-   $('.project-card').tilt({
-      maxTilt: 20,
-      perspective: 1500
-   })
+   // $('.project-card').tilt({
+   //    maxTilt: 20,
+   //    perspective: 1500
+   // })
    const element =  document.querySelector('.animated-hand')
    if (element != null){
       element.addEventListener('mouseenter', function() {

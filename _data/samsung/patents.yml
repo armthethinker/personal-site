@@ -1,3 +1,39 @@
+- title: Electronic device for communicating in augmented reality and method thereof
+  abstract: An augmented reality (AR) device supporting an AR is provided. The AR device includes a display, a communication circuit, at least one processor operatively connected to the display and the communication circuit, and a memory operatively connected to the at least one processor. The memory stores instructions that, when executed, cause the at least one processor to establish a connection with a user device storing a contact application and a message application, through the communication circuit, detect that the message application is executed, and display a first graphic user interface (GUI) and at least one avatar, which is disposed at a location adjacent to the first GUI and corresponds to at least one contact associated with the contact application or the message application, through the display in the AR.
+  description: Interactions for an avatar-based AR chat app.
+  img: US20210319617A1.png
+  year: 2020
+  inventors: Stephanie Kim Ahn, Aaron Faucher, Andrew R McHugh, Edgar Evangelista, Jaehyun Kim
+  assignee: Samsung Electronics Co Ltd
+  number: US20210319617A1
+  link: https://patents.google.com/patent/US20210319617A1/
+  status: Pending
+  objectPosition: 50% 28%
+  small: false
+- title: Efficient encoding of depth data across devices
+  abstract: One embodiment provides a method comprising determining a spatial relationship between an augmented reality (AR) device and a camera-equipped device. The AR device is worn by a user. The camera-equipped device is positioned within proximity of the user. The method comprises determining, based on the spatial relationship, minimum and maximum boundaries of a user volume encompassing a head and one or more extremities of the user. The minimum and maximum boundaries represent a reduced depth range that is narrower than a full depth range of a camera frustum of the camera-equipped device. The method further comprises encoding, based on the minimum and maximum boundaries, a depth image frame captured via the camera-equipped device, and transmitting the encoded depth image frame over a remote network connection. A reconstructed 3D image based in part on the encoded depth image frame is rendered by a different AR device.
+  description: In an AR-HMD and depth-capture-enabled phone system, decrease the depth data that needs to be encoded by using dynamic min-max culling.
+  img: US20220005215A1-1.jpg
+  year: 2020
+  inventors: Edgar Evangelista, Aaron Faucher, Jaehyun Kim, Andrew R McHugh
+  assignee: Samsung Electronics Co Ltd
+  number: US20220005215A1
+  link: https://patents.google.com/patent/US20220005215A1/
+  status: Pending
+  objectPosition: 50% 97%
+  small: true
+- title: Automatic representation toggling based on depth camera field of view
+  abstract: One embodiment provides a method comprising determining a spatial relationship between an augmented reality (AR) device and a camera-equipped device. The AR device is worn by a user. The camera-equipped device is positioned within proximity of the user. The method further comprises determining a position of the user relative to a field of view of the camera-equipped device, and providing a representation of the user for display. The representation automatically switches between a real image of the user and a virtual avatar of the user based on the position of the user.
+  description: Dynamically blend between depth video and an avatar in a AR-HMD and depth capture enabled phone system, based on if the user is within the capture volume.
+  img: US20210407215A1.png
+  year: 2020
+  inventors: Edgar Evangelista, Aaron Faucher, Jaehyun Kim, Andrew R McHugh
+  assignee: Samsung Electronics Co Ltd
+  number: US20210407215A1
+  link: https://patents.google.com/patent/US20210407215A1/
+  status: Pending
+  objectPosition: 88% 18%
+  small: false
 - title: System and method for augmented reality interaction
   abstract: A method, an electronic device, and computer readable medium is provided. The method includes identifying a plurality of virtual objects for output to a display of the electronic device, including a priority level for each of the plurality of virtual objects. The method also includes comparing the priority level of an object of the plurality of virtual objects to the priority level associated with another object of the plurality of virtual objects to determine whether to modify an appearance of either object. In response to determining to modify the appearance of either object, the method further includes modifying the appearance of either. The method additionally includes rendering the plurality of virtual objects on the display of the electronic device.
   description: Creating a priority system to manage relative content importance.
@@ -7,7 +43,7 @@
   assignee: Samsung Electronics Co Ltd
   number: US20190279407A1
   link: https://patents.google.com/patent/US20190279407A1/en
-  status: Pending
+  status: Granted
   objectPosition: 10% 91%
   small: false
 - title: Mobile device with a foldable display and method of providing user interfaces on the foldable display
@@ -31,7 +67,7 @@
   assignee: Samsung Electronics Co Ltd
   number: US20200202629A1
   link: https://patents.google.com/patent/US20200202629A1/en
-  status: Pending
+  status: Granted
   objectPosition: 0% 0%
   small: true
 - title: System and method for transition boundaries and distance responsive interfaces in augmented and virtual reality
@@ -43,7 +79,7 @@
   assignee: Samsung Electronics Co Ltd
   number: US20190172262A1
   link: https://patents.google.com/patent/US20190172262A1/en
-  status: Pending
+  status: Granted
   objectPosition: 50% 90%
   small: false
 # - title: Title

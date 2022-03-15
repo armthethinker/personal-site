@@ -35,7 +35,7 @@ root
 - source
 
 ### media-img-xl
-Fullscrene image, but probably needs some work
+Fullscreen image, but probably needs some work
 - url
 - caption
 
