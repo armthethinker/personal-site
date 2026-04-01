@@ -34,5 +34,9 @@ plugins:
 # to override the default setting.
 exclude:
   - .git/
-  - bower_components/
   - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - .sass-cache/
