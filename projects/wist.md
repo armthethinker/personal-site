@@ -3,7 +3,7 @@ layout: project-page
 pID: 1
 title: Wist
 description: Immersive memories
-image: /assets/img/samsung/orb-1.jpg
+image: /assets/img/wist/couch2-low-poster.jpg
 assetURL: /assets/img/wist/
 modelURL: /assets/models/wist/
 
@@ -60,6 +60,15 @@ modelURL: /assets/models/wist/
    caption="With spatial displays and the proper imaging pipeline, sonograms could look like x-rays."
    style="lg"
    aspect="16by9"
+%}
+
+
+{% include media-video.html
+   url="relive-with-me-low.mp4"
+   caption="**Video.** When a project needed a tent model and I happened to be learning photogrammetry, I captured and processed my tent for use."
+   aspect="16by9"
+   loop=true
+   controls=true
 %}
 
 {% include p-section.html
