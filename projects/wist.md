@@ -106,64 +106,6 @@ I guide the team to produce high quality work from the design side. This means c
 
 
 {% include media-img-wall.html
-   data=site.data.imgwall.samsung
+   data=site.data.imgwall.wist
 %}
 
-{% include media-video.html
-   url="tent-photogrammetry-5Mbps.mp4"
-   caption="**Video.** When a project needed a tent model and I happened to be learning photogrammetry, I captured and processed my tent for use."
-   aspect="16by9"
-   loop=true
-   controls=true
-%}
-
-{% include model-viewer.html
-   model="tent-photogrammetry/tent-photogrammetry.glb"
-   modeliOS="tent-photogrammetry/tent-photogrammetry.usdz"
-   caption="**Model.** The final processed tent."
-   cameraControls=true
-   cameraOrbit="8deg 70deg 80%"
-   cameraOrbitMax="auto 89deg auto"
-   cameraTarget="0m .3m 0m"
-   arPlacement="floor"
-   interactionPrompt="auto"
-%}
-
-{% include p-section.html
-   header="Tools & skills for spatial prototyping"
-   subheader=""
-   content="
-**UX design**
-- Maquette, Tvori, Tilt Brush, Blocks, Quill (AR/VR design tools)
-- Sketch, Figma, Adobe Creative Suite, Framer Classic, Procreate (2D design)
-- User research (design, facilitate, analyze)
-
-**AR/VR Prototyping, 3D Modeling**
-- Blender (modeling, texturing, procedural materials/shaders, 3D VFX compositing)
-- Unity (interactions, MRTK)
-- Depthkit, Meshroom, Polycam, Record3D (volumetric capture, photogrammetry)
-- A-Frame (webVR)
-
-**Other**
-- Identifying key opportunities through design experimentation and prototyping
-- Design+prototyping team management
-- Video production showcasing XR prototypes and use cases
-- HTML, CSS, JS
-- Familiar with most AR/VR HMDs and their UX patterns
-"
-%}
-
-{% include patents.html
-   data=site.data.samsung.patents
-   header="Patents"
-   subheader="All while at Samsung Research America"
-   col="col-12 col-sm-6"
-%}
-
-{% include p-section.html
-   header="Other work"
-   subheader=""
-   content="
-For other examples of my spatial computing work, you can look at [Humane Virtuality](/projects/humane-virtuality.html) and [Moral Decisions & Haptics in VR](/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html) as well as my sporadic [YouTube uploads](https://www.youtube.com/user/arm156291/videos).
-"
-%}
