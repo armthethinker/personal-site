@@ -1,11 +1,11 @@
 ---
 layout: project-page
-pID: 2
-title: Samsung
-description: Almost all of my work is under NDA. Here I share my general approach to spatial computing challenges (some of which is at Samsung) and personal 3D design work.
+pID: 1
+title: Wist
+description: Immersive memories
 image: /assets/img/samsung/orb-1.jpg
-assetURL: /assets/img/samsung/
-modelURL: /assets/models/samsung/
+assetURL: /assets/img/wist/
+modelURL: /assets/models/wist/
 
 ---
 
@@ -17,36 +17,29 @@ modelURL: /assets/models/samsung/
 %}
 
 {% include p-section.html
-   header="The general problem I solve"
+   header="Why immersive memories?"
    subheader=""
    content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
 
-   **I create novel interactions and product strategies.** I think beyond our current black rectangles. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
+   **Immersive media is incredibly compelling.** 
 
-   **It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
+   **The tech is there, but other apps fail to realize the dynamic component.** 
 
-   **Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products.
+   **My wife and I were about to have a kid. Then did.** 
+
 "
 %}
 
-{% include media-youtube.html
-   header="XD Immersive talk"
-   subheader="A pretty good overview of what I work on and how I think about spatial design"
-   urlCode="Mtff419uLe8"
-   caption="From 2D to 3D product design: a kinda personal journey. (~25min)"
-   style="md"
-   aspect="16by9"
-%}
 
 {% include p-section.html
-   content="
-**First**, this talk showed how high level design principles don't change when working on spatial computing problems (e.g. Neilson's usability heuristics, Case's principles of calm technology, Rams' principles for good design, Maeda's laws of simplicity).
+   header="Wist"
+   subheader="Take a video. Step inside. Enhance forever."
+   content="[ ] video TK
 
-**Second**, I walk through the new constraints and a sample critique of an AR mockup.
 
-**Lastly**, I close with a few pointers on how to transition from 2D design into a 3D design career.
 "
 %}
+
 
 {% include p-section.html
    header="My team"

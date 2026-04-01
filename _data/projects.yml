@@ -1,11 +1,34 @@
-- title: Samsung+
+- title: Wist
   pID: 1
+  short: wist
+  emoji: 🤓
+  subtitle: Immersive memories
+  description: Relivable memories as easy as taking a video.
+  role: Founder, CEO, Designer, Eng, R&D
+  date: May 2021 - February 2026
+  # whileAt: Samsung Research America, Mobile Platform Solutions Lab
+  # withWho: My coworkers in XR Design Group (XRDG)
+  imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgThumb1: /assets/img/samsung/baby.gif
+  imgThumb1Position:
+  imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  imgThumb2Position:
+  imgThumb3: /assets/img/samsung/two-screens-one-camera.gif
+  imgThumb3Position:
+  left: true
+  url: wist.html
+  bgImg:     /assets/img/samsung/orb-1.jpg
+  videoJumbotronHero:
+  imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  light: true
+- title: Samsung+
+  pID: 2
   short: samsung
   emoji: 🤓
   subtitle: Spatial computing & magic glasses
   description: A mixture of details about Samsung and my personal 3D work, respecting my NDA.
   role: Senior Designer & Team Lead
-  date: February 2017 - Now
+  date: February 2017 - May 2021
   whileAt: Samsung Research America, Mobile Platform Solutions Lab
   withWho: My coworkers in XR Design Group (XRDG)
   imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
@@ -22,7 +45,7 @@
   imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   light: true
 - title: Echo
-  pID: 2
+  pID: 3
   short: echo
   emoji: 💸
   subtitle: Transparent consumer banking in an opaque market
@@ -43,7 +66,7 @@
   imgJumbotronHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
   bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
 - title: Humane Virtuality
-  pID: 3
+  pID: 4
   short: hv
   emoji: 😎
   subtitle: Researching the future of VR UX in week-long sprints
@@ -66,7 +89,7 @@
   imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
   light: true
 - title: Moral Decisions & Haptics in VR
-  pID: 4
+  pID: 5
   short: morals
   emoji: 🚋
   subtitle: Does feeling a virtual world change your moral decisions?
@@ -88,7 +111,7 @@
   videoJumbotronHero:
   imgJumbotronHero: /assets/img/morals/push-the-worker.gif
 - title: What If…? Conference & Book
-  pID: 5
+  pID: 6
   short: whatif
   emoji: 🤔
   subtitle: Active curiosity to the max
