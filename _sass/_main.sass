@@ -736,3 +736,24 @@ model-viewer
 
 .alert
    border-radius: $border-radius
+
+
+@import "components/shadow"
+
+.project-hero
+   overflow: hidden
+   // background: linear-gradient(180deg,rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 1.5%)
+   // background: linear-gradient(0deg,rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.032) 0.5%, rgba(0, 0, 0, 0.010) 1.0%, rgba(0, 0, 0, 0.003) 1.5%, rgba(0, 0, 0, 0.0) 2.0%)
+   background: create-linear-gradient(rgb(0, 0, 0), 0, 2%, 0.1)
+   background-color: rgb(244, 246, 249)
+   padding: 200px 0
+
+.project-hero-mediawall
+   img
+      height: 300px
+      width: 400px
+      border-radius: $border-radius * 2
+      box-shadow: create-elevation(5)
+      object-fit: cover
+      margin: 0
+   

@@ -1,0 +1,40 @@
+/// Create a layered, tinted shadow based on elevation.
+/// @param {Number} $elevation - The intensity/depth of the shadow (1 is subtle, 5+ is deep).
+/// @param {Color} $tint [#2c2c2c] - The color of the shadow.
+@function create-elevation($elevation, $tint: #2c2c2c) {
+    $shadows: ();
+    $num-layers: 5;
+    $base-alpha: 0.05 + ($elevation * 0.005);
+    
+    @for $i from 1 through $num-layers {
+        $y-offset: floor(pow(2, $i - 1) * $elevation) * 1px;
+        $blur: $y-offset;
+        $spread: 0;
+        
+        $shadows: append(
+            $shadows, 
+            0 $y-offset $blur $spread rgba($tint, $base-alpha), 
+            comma
+        );
+    }
+    
+    @return $shadows;
+}
+
+@function pow($base, $exponent) {
+    $result: 1;
+    @for $_ from 1 through $exponent {
+        $result: $result * $base;
+    }
+    @return $result;
+}
+
+@function create-linear-gradient($color, $angle: 180deg, $distance: 2%, $strength: 0.1) {
+    $stops: ();
+    @for $i from 0 through 5 {
+        $stop-distance: $i / 5 * $distance;
+        $stop-strength: pow(1 - ($i / 5), 2) * $strength; // Quadratic
+        $stops: append($stops, rgba($color, $stop-strength) $stop-distance, comma);
+    }
+    @return linear-gradient($angle, $stops);
+}

@@ -6,12 +6,13 @@
   description: Relivable memories as easy as taking a video. <br><br>Concept, to funding, to beta, to end.
   role: Founder, CEO, Designer, Eng, R&D
   date: May 2021 - February 2026
+  dateYears: 2021 - 2026
   # whileAt: Samsung Research America, Mobile Platform Solutions Lab
   # withWho: My coworkers in XR Design Group (XRDG)
-  imgHero:   /assets/img/wist/Couch2-lowbitrate.mp4
-  imgThumb1: /assets/img/wist/small-knees-low.mp4
+  imgHero:   /assets/img/wist/couch2-low-poster.jpg
+  imgThumb1: /assets/img/wist/small-knees-low-poster.jpg
   imgThumb1Position:
-  imgThumb2: /assets/img/wist/relive-with-me-low.mp4
+  imgThumb2: /assets/img/wist/relive-with-me-low-poster.jpg
   imgThumb2Position:
   imgThumb3: /assets/img/wist/bento-sm/lock-screen4.jpg
   imgThumb3Position:
@@ -21,115 +22,120 @@
   videoJumbotronHero:
   imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   light: true
-# - title: Samsung+
-#   pID: 2
-#   short: samsung
-#   emoji: 🤓
-#   subtitle: Spatial computing & magic glasses
-#   description: A mixture of details about Samsung and my personal 3D work, respecting my NDA.
-#   role: Senior Designer & Team Lead
-#   date: February 2017 - May 2021
-#   whileAt: Samsung Research America, Mobile Platform Solutions Lab
-#   withWho: My coworkers in XR Design Group (XRDG)
-#   imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
-#   imgThumb1: /assets/img/samsung/baby.gif
-#   imgThumb1Position:
-#   imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
-#   imgThumb2Position:
-#   imgThumb3: /assets/img/samsung/two-screens-one-camera.gif
-#   imgThumb3Position:
-#   left: true
-#   url: samsung.html
-#   bgImg:     /assets/img/samsung/orb-1.jpg
-#   videoJumbotronHero:
-#   imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
-#   light: true
-# - title: Echo
-#   pID: 3
-#   short: echo
-#   emoji: 💸
-#   subtitle: Transparent consumer banking in an opaque market
-#   description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
-#   role: Project Manager, Prototyping Lead, UX Designer
-#   date: January 2016 to December 2016
-#   whileAt: M-ITI / Carnegie Mellon University
-#   withWho: Jae-Won Kim, Andrew Novotny, Joel Rodrigues
-#   imgHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
-#   imgThumb1: /assets/img/echo/16-05-14-elementary-6.jpg
-#   imgThumb1Position: 10% 0%
-#   imgThumb2: /assets/img/echo/16-09-22-elementary-16.jpg
-#   imgThumb2Position: 45% 100%
-#   imgThumb3: /assets/img/echo/16-02-24-exploration-25-1.jpg
-#   imgThumb3Position: 50% 0
-#   left: false
-#   url: elementary.html
-#   imgJumbotronHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
-#   bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
-# - title: Humane Virtuality
-#   pID: 4
-#   short: hv
-#   emoji: 😎
-#   subtitle: Researching the future of VR UX in week-long sprints
-#   description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
-#   role: UX Designer
-#   date: June - August 2016
-#   whileAt: Over the summer during my master’s degree at CMU/M-ITI
-#   withWho: Myself
-#   imgHero: /assets/img/hv/00-demo-1.gif
-#   imgThumb1: /assets/img/hv/ex11-animate-medium.gif
-#   imgThumb1Position: 50% 50%
-#   imgThumb2: /assets/img/hv/ex7-1.gif
-#   imgThumb2Position: 50% 50%
-#   imgThumb3: /assets/img/hv/hero-10.gif
-#   imgThumb3Position: 50% 50%
-#   left: true
-#   url: humane-virtuality.html
-#   bgImg: /assets/img/hv/IMG_9699.JPG
-#   videoJumbotronHero:
-#   imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
-#   light: true
-# - title: Moral Decisions & Haptics in VR
-#   pID: 5
-#   short: morals
-#   emoji: 🚋
-#   subtitle: Does feeling a virtual world change your moral decisions?
-#   description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
-#   role: UX & Research Methods Designer
-#   date: October - December 2015
-#   whileAt: Carnegie Mellon University
-#   withWho: Ivan Wang, Maddie Duque, Swetha Kannan
-#   imgHero: /assets/img/morals/push-the-worker.gif
-#   imgThumb1: /assets/img/morals/2.jpg
-#   imgThumb1Position: 20% 50%
-#   imgThumb2: /assets/img/morals/4.jpg
-#   imgThumb2Position: 30% 50%
-#   imgThumb3: /assets/img/morals/screen-shot-2016-01-14-at-2.34.39-pm.png
-#   imgThumb3Position: 50% 50%
-#   left: false
-#   url: moral-decision-making-haptic-feedback-in-virtual-environments.html
-#   bgImg: /assets/img/morals/cover-virtual-trolley-sm.jpg
-#   videoJumbotronHero:
-#   imgJumbotronHero: /assets/img/morals/push-the-worker.gif
-# - title: What If…? Conference & Book
-#   pID: 6
-#   short: whatif
-#   emoji: 🤔
-#   subtitle: Active curiosity to the max
-#   description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
-#   role: Cofounder & Chief Curiosity Curator
-#   date: November 2010 - June 2014
-#   whileAt: Our startup, What If...? LLC
-#   withWho: Cofounder Matt Murrie and many others along the way
-#   imgHero: /assets/img/whatif/whatifoverview.gif
-#   imgThumb1: /assets/img/whatif/image264.jpg
-#   imgThumb1Position: 50% 50%
-#   imgThumb2: /assets/img/whatif/image139.jpg
-#   imgThumb2Position: 50% 50%
-#   imgThumb3: /assets/img/whatif/image333.jpg
-#   imgThumb3Position: 50% 50%
-#   left: true
-#   url: what-if-conference-book.html
-#   bgImg: /assets/img/whatif/image387.jpg
-#   videoJumbotronHero:
-#   imgJumbotronHero: /assets/img/whatif/whatifoverview.gif
-#   light: true
+- title: Samsung+
+  pID: 2
+  short: samsung
+  emoji: 🤓
+  subtitle: Spatial computing & magic glasses
+  description: A mixture of details about Samsung and my personal 3D work, respecting my NDA.
+  role: Senior Designer & Team Lead
+  date: February 2017 - May 2021
+  dateYears: 2017 - 2021
+  whileAt: Samsung Research America, Mobile Platform Solutions Lab
+  withWho: My coworkers in XR Design Group (XRDG)
+  imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgThumb1: /assets/img/samsung/baby.gif
+  imgThumb1Position:
+  imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  imgThumb2Position:
+  imgThumb3: /assets/img/samsung/two-screens-one-camera.gif
+  imgThumb3Position:
+  left: true
+  url: samsung.html
+  bgImg:     /assets/img/samsung/orb-1.jpg
+  videoJumbotronHero:
+  imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  light: true
+- title: Echo
+  pID: 3
+  short: echo
+  emoji: 💸
+  subtitle: Transparent consumer banking in an opaque market
+  description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
+  role: Project Manager, Prototyping Lead, UX Designer
+  date: January 2016 to December 2016
+  dateYears: 2016
+  whileAt: M-ITI / Carnegie Mellon University
+  withWho: Jae-Won Kim, Andrew Novotny, Joel Rodrigues
+  imgHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
+  imgThumb1: /assets/img/echo/16-05-14-elementary-6.jpg
+  imgThumb1Position: 10% 0%
+  imgThumb2: /assets/img/echo/16-09-22-elementary-16.jpg
+  imgThumb2Position: 45% 100%
+  imgThumb3: /assets/img/echo/16-02-24-exploration-25-1.jpg
+  imgThumb3Position: 50% 0
+  left: false
+  url: elementary.html
+  imgJumbotronHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
+  bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
+- title: Humane Virtuality
+  pID: 4
+  short: hv
+  emoji: 😎
+  subtitle: Researching the future of VR UX in week-long sprints
+  description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
+  role: UX Designer
+  date: June - August 2016
+  dateYears: 2016
+  whileAt: Over the summer during my master’s degree at CMU/M-ITI
+  withWho: Myself
+  imgHero: /assets/img/hv/00-demo-1.gif
+  imgThumb1: /assets/img/hv/ex11-animate-medium.gif
+  imgThumb1Position: 50% 50%
+  imgThumb2: /assets/img/hv/ex7-1.gif
+  imgThumb2Position: 50% 50%
+  imgThumb3: /assets/img/hv/hero-10.gif
+  imgThumb3Position: 50% 50%
+  left: true
+  url: humane-virtuality.html
+  bgImg: /assets/img/hv/IMG_9699.JPG
+  videoJumbotronHero:
+  imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
+  light: true
+- title: Moral Decisions & Haptics in VR
+  pID: 5
+  short: morals
+  emoji: 🚋
+  subtitle: Does feeling a virtual world change your moral decisions?
+  description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
+  role: UX & Research Methods Designer
+  date: October - December 2015
+  dateYears: 2015
+  whileAt: Carnegie Mellon University
+  withWho: Ivan Wang, Maddie Duque, Swetha Kannan
+  imgHero: /assets/img/morals/push-the-worker.gif
+  imgThumb1: /assets/img/morals/2.jpg
+  imgThumb1Position: 20% 50%
+  imgThumb2: /assets/img/morals/4.jpg
+  imgThumb2Position: 30% 50%
+  imgThumb3: /assets/img/morals/screen-shot-2016-01-14-at-2.34.39-pm.png
+  imgThumb3Position: 50% 50%
+  left: false
+  url: moral-decision-making-haptic-feedback-in-virtual-environments.html
+  bgImg: /assets/img/morals/cover-virtual-trolley-sm.jpg
+  videoJumbotronHero:
+  imgJumbotronHero: /assets/img/morals/push-the-worker.gif
+- title: What If…? Conference & Book
+  pID: 6
+  short: whatif
+  emoji: 🤔
+  subtitle: Active curiosity to the max
+  description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
+  role: Cofounder & Chief Curiosity Curator
+  date: November 2010 - June 2014
+  dateYears: 2010 - 2014
+  whileAt: Our startup, What If...? LLC
+  withWho: Cofounder Matt Murrie and many others along the way
+  imgHero: /assets/img/whatif/whatifoverview.gif
+  imgThumb1: /assets/img/whatif/image264.jpg
+  imgThumb1Position: 50% 50%
+  imgThumb2: /assets/img/whatif/image139.jpg
+  imgThumb2Position: 50% 50%
+  imgThumb3: /assets/img/whatif/image333.jpg
+  imgThumb3Position: 50% 50%
+  left: true
+  url: what-if-conference-book.html
+  bgImg: /assets/img/whatif/image387.jpg
+  videoJumbotronHero:
+  imgJumbotronHero: /assets/img/whatif/whatifoverview.gif
+  light: true
