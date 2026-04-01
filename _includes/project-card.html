@@ -35,14 +35,16 @@
                <p>{{include.date}}</p>
             </div>
             <div class="w-100 m-1 d-xl-none"></div>
+            {% if include.whileAt != null and include.withWho != null %}
             <div class='col-6 col-xl'>
                <strong>While at</strong>
                <p>{{include.whileAt}}</p>
             </div>
-            <div class='col-6 col-xl'>
+            <!-- <div class='col-6 col-xl'>
                <strong>With</strong>
                <p>{{include.withWho}}</p>
-            </div>
+            </div> -->
+            {% endif %}
          </div>
       </div>
    </div>
