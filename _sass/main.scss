@@ -1,0 +1,19 @@
+// 1. SET VARIABLES (Overrides Bootstrap defaults)
+$primary: #bfff00; 
+
+// 2. IMPORT BOOTSTRAP (The "Menu" Approach)
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons"; // Comment out if not needed!
+
+// 3. YOUR CUSTOM SCSS
+// @import "components/header";
+// @import "components/custom-utils";
+
+@import "_main.sass";
