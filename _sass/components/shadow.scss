@@ -3,7 +3,7 @@
 /// @param {Color} $tint [#2c2c2c] - The color of the shadow.
 @function create-elevation($elevation, $tint: #2c2c2c) {
     $shadows: ();
-    $num-layers: 5;
+    $num-layers: 4;
     $base-alpha: 0.05 + ($elevation * 0.005);
     
     @for $i from 1 through $num-layers {

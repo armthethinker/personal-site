@@ -6,6 +6,11 @@
 {% assign include.loop = false %}
 {% endif %}
 
+{% if include.urlPage != false %}
+{% assign urlPrepend = page.assetURL %}
+{% else %}
+{% assign urlPrepend = "" %}
+{% endif %}
 
 
 
@@ -26,6 +31,8 @@
                   <video class="embed-responsive-item"
                   controls="{{include.controls}}"
                   loop="{{include.loop}}"
+                  autoplay="{{include.autoplay}}"
+                  muted="{{include.autoplay}}"
                   >
                      <source src="{{include.url | prepend:urlPrepend}}" type="video/mp4">
                   </video>

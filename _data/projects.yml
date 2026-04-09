@@ -2,11 +2,12 @@
   pID: 1
   short: wist
   emoji: 🤓
-  subtitle: Immersive memories as easy as taking a video
-  description: Relivable memories as easy as taking a video. <br><br>Concept, to funding, to beta, to end.
+  subtitle: Relivable, immersive memories as easy as taking a video
+  # description: Concept, to funding, to beta, to end.
+  description: Built a startup to bring the magic of immersive media to all parents. Built around existing consumer hardware and capture-patterns, putting more of our special sauce into the product, experience, and processing. Raised funds, built the team, shipped a beta with over 8,000 memories captured. Shut down after running out of runway.
   role: Founder, CEO, Designer, Eng, R&D
   date: May 2021 - February 2026
-  dateYears: 2021 - 2026
+  dateYears: 2021-2026
   # whileAt: Samsung Research America, Mobile Platform Solutions Lab
   # withWho: My coworkers in XR Design Group (XRDG)
   imgHero:   /assets/img/wist/couch2-low-poster.jpg
@@ -18,19 +19,19 @@
   imgThumb3Position:
   left: false
   url: wist.html
-  bgImg:     /assets/img/samsung/orb-1.jpg
+  bgImg:     /assets/img/wist/couch2-low-poster.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgJumbotronHero: /assets/img/wist/relive-with-me-low.mp4
   light: true
-- title: Samsung+
+- title: Samsung Research America
   pID: 2
   short: samsung
   emoji: 🤓
-  subtitle: Spatial computing & magic glasses
-  description: A mixture of details about Samsung and my personal 3D work, respecting my NDA.
-  role: Senior Designer & Team Lead
+  subtitle: Finding opportunities & constraints with magic spatial glasses
+  description: Led a team of designer-developers who used prototypes to explore the possibility space of AR glasses across OS, apps, and interactions. Promoted our vision to executives and external partners. Worked in a way that was flexible with ever changing specs while informing the device specs.
+  role: Team Lead & Senior Designer
   date: February 2017 - May 2021
-  dateYears: 2017 - 2021
+  dateYears: 2017-2021
   whileAt: Samsung Research America, Mobile Platform Solutions Lab
   withWho: My coworkers in XR Design Group (XRDG)
   imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
@@ -123,7 +124,7 @@
   description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
   role: Cofounder & Chief Curiosity Curator
   date: November 2010 - June 2014
-  dateYears: 2010 - 2014
+  dateYears: 2010-2014
   whileAt: Our startup, What If...? LLC
   withWho: Cofounder Matt Murrie and many others along the way
   imgHero: /assets/img/whatif/whatifoverview.gif

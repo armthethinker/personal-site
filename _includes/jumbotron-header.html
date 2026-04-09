@@ -22,14 +22,18 @@
                         <strong>Date</strong>
                         <p>{{p.date}}</p>
                      </div>
+                     {% if p.whileAt != null %}
                      <div class="col-12 col-sm-6">
                         <strong>While at</strong>
                         <p>{{p.whileAt}}</p>
                      </div>
+                     {% endif %}
+                     {% if p.withWho != null %}
                      <div class="col-12 col-sm-6">
                         <strong>With</strong>
                         <p>{{p.withWho}}</p>
                      </div>
+                     {% endif %}
                   </div>
                </div>
             </div>

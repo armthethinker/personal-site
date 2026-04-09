@@ -1,0 +1,28 @@
+- year: 2021
+  challenges: What can an immersive memory app be?
+  events: I left Samsung to prototype immersive memory ideas.
+  imgurl: temp/wist-maintain-up-sm.jpg
+  caption: 
+- year: 2022
+  challenges: Is this useful and feasible at all?
+  events: Found cofounder, raised first capital, launched alpha.  
+  imgurl: temp/wist-maintain-up-sm.jpg
+  caption: 
+- year: 2023
+  challenges: How do we build foundational tech and a delightful product?
+  events: Went viral, raised pre-seed round, press, hired first eng, launched beta, first backend processing pipeline release.
+  imgurl: temp/wist-maintain-up-sm.jpg
+  caption: 
+- year: 2024
+  challenges: Can we unlock growth with the backend processing pipeline?
+  events: Deeper R&D connecting various ML models and traditional CV techniques to build out a robust processing pipeline. More excitement, but not enough retention.
+  imgurl: temp/wist-maintain-up-sm.jpg
+  caption: 
+- year: 2025
+  challenges: Can we get over a retention cliff with processing output and QoL improvements?
+  events: Increased product robustness. More R&D. Retention improved, but not enough to sustain the company. Cofounder and other eng left. I spent the rest of the year exploring feasibility.
+  imgurl: temp/wist-maintain-up-sm.jpg
+  caption: 
+- year: 2026
+  challenges: How do we shut this down?
+  events: Dissolution.
