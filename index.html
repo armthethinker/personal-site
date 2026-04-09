@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <!-- Circle images and hello -->
-<div class="row timeline justify-content-center">
+<!-- <div class="row timeline justify-content-center">
    <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
       <div class="row timeline-entry header-hero">
          <div class="col-12 col-sm-3 date"></div>
@@ -23,7 +23,8 @@ title: Home
          </div>
          <div class="col description">
             <h1>I'm Andrew R McHugh</h1>
-            <h2>I am a designer turning spatial computing R&D experiments into great products.</h2>
+            <h2>I turn R&D ambiguity into meaningful products.</h2>
+            <p>Strategy • Design • Engineering</p>
          </div>
       </div>
       <div class="row timeline-entry">
@@ -31,9 +32,17 @@ title: Home
             Now
          </div>
          <div class="col description">
-            <strong>Building a startup (<a href="http://withvivid.com" target="_blank">Vivid</a>)</strong> that makes it easy for anyone to capture and view their immersive memories – on a phone and in VR.
+            <strong>Looking for my next role</strong>  after building a startup (<a href="https://wistlabs.com" target="_blank">Wist</a>) that turned videos into relivable immersive memories.
          </div>
       </div>
+   </div>
+</div> -->
+<div class="row justify-content-center py-5 text-center">
+   <div class="col-8">
+      <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
+      <h1>Andrew R McHugh</h1>
+      <h2 class="text-wrap" style="text-wrap: balance;">turns R&D ambiguity into meaningful products</h2>
+      <p>Strategy • Design • Engineering</p>
    </div>
 </div>
 <!-- Button -->
@@ -125,5 +134,35 @@ title: Home
             bgColor              = item.bgColor
          %}
       {% endfor %}
+   </div>
+</div>
+
+<div class="row justify-content-center pt-4">
+   <div class="col-12 col-sm-10 col-xl-8">
+      <h1 class="text-center mt-3 pt-3">Who I am</h1>
+      <p class="lead">I find clarity from complexity. I help teams navigate R&D->product ambiguity without getting stuck in the complexity.</p>
+      <p>Invent new products. Build the tech. Design the experience. Lead teams. Tell the story.</p>
+      <h2>How I work / how I'm different</h2>
+      <!-- <ul class="list-unstyled"> -->
+      {% for item in site.data.how-work %}
+         <!-- <li><strong>{{ item.topic }}</strong> {{ item.description }}</li> -->
+         <p>{{ item.emoji }}<br><strong>{{ item.topic }}</strong> {{ item.description }}</p>
+      {% endfor %}
+      <!-- </ul> -->
+      <h2>Tools</h2>
+      <p>Whatever can answer the biggest unknowns or can get us to the next phase.</p>
+      <!-- <p>The things I use to answer questions.</p> -->
+      <ul class="skill-categories list-unstyled">
+      {% for item in site.data.skills %}
+         <li class="mb-2">
+            <strong>{{ item.category }}</strong>
+            <ul class="skill-list list-inline">
+            {% for skill in item.list %}
+               <li class="list-inline-item">{{ skill }}</li>
+            {% endfor %}
+            </ul>
+         </li>
+      {% endfor %}
+      </ul>
    </div>
 </div>
