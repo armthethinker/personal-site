@@ -10,7 +10,8 @@ modelURL: /assets/models/wist/
 ---
 
 {% include media-video.html
-   header="Take a video. Step inside. Enhance forever."
+   header="Why immersive memories?"
+   subheader="Product thesis"
    url="temp/RELIVE.mp4"
    caption=""
    aspect="1by1"
@@ -20,17 +21,20 @@ modelURL: /assets/models/wist/
 %}
 
 {% include p-section.html
-   header="Why immersive memories?"
+   header=""
    subheader=""
-   content="**Immersive media is incredibly compelling, even more when it is your own memories.** I saw where the tech was going, in part from my time at Samsung, but no one was tacking the hard problem. Companies were going after high-end multi-camera rigs, or static photogrammetry, or wholly generated 2D video.
+   content="
+> Take a video. Step inside. Enhance forever.
 
-   Wist's unique perspective and challenges were
+**Immersive media is incredibly compelling, even more when it is your own memories.** I saw where the tech was going, in part from my time at Samsung, but no one was tacking the hard problem. Companies were going after high-end multi-camera rigs, or static photogrammetry, or wholly generated 2D video.
 
-   1. **Dynamic content.** A memory must be as alive as the original moment.
-   1. **Ease of use.** Work with what parents are already doing. Just take a video or import. The tech does the hard part. Then users can relive these moments on mobile or in VR by basically just pressing play.
-   1. **Continuous improvement.** Every capture must be able to be reprocessed with our latest version to enhance the reconstruction.
+Wist's unique perspective and challenges were
 
-   **And, I was about to have my first kid.** 
+1. **Dynamic, living memories.** A memory must be as alive as the original moment. Not static photogrammetry scans or flat media.
+1. **As easy as taking a video.** Just capture or import. We must match what people already do. The tech does the hard part.
+1. **Continuous improvement.** Every capture must be able to be reprocessed with our latest version to enhance the reconstruction.
+
+**And, I was about to have my first kid.** 
 "
 %}
 
@@ -56,27 +60,24 @@ modelURL: /assets/models/wist/
 
 {% include p-section.html
    header="A founder does everything"
-   subheader="My role"
+   subheader=""
    content="
-**I had four main roles.**
+**My roles: Founder + CEO, Designer, Engineer.**
 
-1. Founder + CEO.
-1. Designer.
-1. Engineer.
+I led the company from research prototypes through product development, fundraising, and ultimately through shutdown. 
 
-I led the company from my initial prototypes, through finding a cofounder, through product development and beta launches, and ultimately through dissolution. 
+We grew to four at our height, a cross-functional team. I operated across design, engineering, product, and R&D, building the core tech while defining product direction.
 
-Responsibilities included
+**Key responsibilities**
 
-- Define product vision
-- Leading team, hiring
-- Raising ~$1M from angels and VCs
-- Leading engineering & R&D
-- Designing core product experience + tiny interactions
-- Building/rebuilding most of the tech stack
+- Defined product vision, roadmap
+- Raised ~$1M from VCs and angels (lead: [Long Journey Ventures](https://www.longjourney.vc))
+- Hired and led a small, highly technical team
+- Led design, eng, product, and R&D across mobile, headsets, and backend systems
+- Designed core UX + interaction models
+- Built significant portions of the product across all surfaces
 - User research and metrics
 
-We were a tiny team of four (at our height), all highly capable of jumping between design, engineering, R&D, and the product decisions that guide us.
 "
 %}
 
@@ -101,7 +102,9 @@ We were a tiny team of four (at our height), all highly capable of jumping betwe
 
 ### Capture feels familiar
 
-iOS app that feels like a native camera. Each capture records video + depth + camera pose + intrinsics, all at 30-60fps. We directly encoded into an internal format that preserves a higher depth range and helps playback.
+> A futuristic camera in our iOS app that feels like a native camera. 
+
+Each capture records video + depth + camera pose + intrinsics, all at 30-60fps. We directly encoded into an internal format that preserves a higher depth range and helps playback.
 
 Users could also import 2D video for a \"spatial upconversion\".
 "
@@ -122,7 +125,17 @@ Users could also import 2D video for a \"spatial upconversion\".
    content="
 ### Processing enhances captures
 
-It must feel automatic, easy, and out of the way of capturing and staying in the moment.
+<!-- It must feel automatic, easy, and out of the way of capturing and staying in the moment. -->
+
+> A mix of on device and cloud pipeline that reconstructs dynamic spatial scenes from in-the-wild videos.
+
+Our system combined:
+- Video
+- LiDAR depth (if available)
+- Camera pose + intrinsics (if available)
+- ML and CV based depth estimation, segmentation, optical flow, +
+
+into an internal format that could capture, encode, and play at 30+fps.
 
 #### On device
 "
@@ -158,6 +171,12 @@ It must feel automatic, easy, and out of the way of capturing and staying in the
    subheader=""
    content="
 
+We integrated multiple computer vision ML models (depth estimation, camera pose + intrinsics estimation, segmentation, optical flow). We created model and data specific rectification layers and traditional CV techniques to improve temporal coherence and reduce artifacts. 
+
+One example: **LiDAR data is low resolution and highly flickery while ML depth estimation may be higher resolution, but lacks the same metric accuracy.** We figured out how to resolve the real world depth sequence from a plethora of data sources, including the two depth sources.
+
+<!-- 
+
 We built a concert of methods that would decompose the video into \"channels\" of data that could then be used together to refine the overall reconstruction and improve playback.
 
 High level processing stack
@@ -177,7 +196,7 @@ High level processing stack
 
 The complexities of each step are not well captured in this tiny list.
 
-Each step had particular consideration for the qualities of our data (handheld, in-the-wild, monocular video) and the peculiarites of the model or CV technique.
+Each step had particular consideration for the qualities of our data (handheld, in-the-wild, monocular video) and the peculiarites of the model or CV technique. -->
 
 ### Playback brings you back to a moment
 

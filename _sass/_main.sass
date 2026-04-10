@@ -304,10 +304,15 @@ $palette-morals-secondary: #ffffff
 // $palette-whatif: #f4973a
 // $palette-whatif-secondary: rgb(69, 58, 244)
 
+// $palette-wist: #FFA3AD
+// $palette-wist-secondary: #4AC6FF
+$palette-wist: #ff6b7c
+$palette-wist-secondary: #2489b7
+
 $palette-whatif: #FC3F5E
 $palette-whatif-secondary: rgb(72, 63, 187)
 
-$palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
+$palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palette-wist]
 
 @mixin project-specific-style($name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity)
    #{$name}
@@ -387,6 +392,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif]
 @include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
 @include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
 @include project-specific-style(".project-whatif",    $palette-whatif,    32%, 20%, $palette-whatif-secondary,   30%,     0%)
+@include project-specific-style(".project-wist",      $palette-wist,      15%, 20%, $palette-wist-secondary,     80%,   100%)
 
 .btn.btn-timeline
    box-sizing: border-box

@@ -8764,6 +8764,92 @@ body {
   box-shadow: 0 8px 16px rgba(252, 63, 94, 0.1);
 }
 
+.project-wist .color-primary,
+.project-wist h1,
+.project-wist .h1,
+.project-wist a,
+.project-wist a:hover,
+.project-wist h3,
+.project-wist .h3,
+.project-wist strong {
+  color: #ff6b7c;
+}
+.project-wist.project-card h2, .project-wist.project-card .h2 {
+  color: #ff6b7c;
+}
+.project-wist.project-card h3, .project-wist.project-card .h3 {
+  color: #585359;
+}
+.project-wist .bg-primary {
+  background-color: #ff6b7c;
+}
+.project-wist .btn {
+  color: #ff6b7c;
+  background-color: rgb(255, 183.5, 191.7128378378);
+  border-color: #ff6b7c;
+  box-shadow: 0 8px 16px rgba(255, 107, 124, 0.2) !important;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+}
+.project-wist .btn:hover {
+  background-color: white !important;
+  box-shadow: 0 12px 24px rgba(255, 107, 124, 0.2) !important;
+  border-color: #ff6b7c !important;
+}
+.project-wist .btn:active {
+  background-color: rgb(255, 209, 214.2837837838) !important;
+  box-shadow: 0 12px 24px rgba(255, 107, 124, 0.2) !important;
+  border-color: #ff6b7c !important;
+}
+.project-wist .btn-outline {
+  background-color: white;
+}
+.project-wist .jumbotron {
+  text-shadow: 0 0 24px #2489b7;
+}
+.project-wist .jumbotron .jumbotron-bg {
+  background-color: rgba(36, 137, 183, 0.8);
+}
+.project-wist .page-header .nav-main .nav::after {
+  background-color: #ff6b7c;
+}
+.project-wist .page-body h2:not(:empty):before, .project-wist .page-body .h2:not(:empty):before {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 24px;
+  top: -8px;
+  border-radius: 2px;
+  background-color: #ff6b7c;
+}
+.project-wist footer,
+.project-wist .footer {
+  margin-top: 104px;
+  background-color: #ededed;
+}
+.project-wist footer::before,
+.project-wist .footer::before {
+  background-color: #ff6b7c;
+}
+.project-wist footer a,
+.project-wist footer strong,
+.project-wist .footer a,
+.project-wist .footer strong {
+  color: #ff6b7c;
+}
+.project-wist blockquote {
+  background-color: rgba(255, 107, 124, 0.08);
+  border-radius: 4px 16px 16px 4px;
+  border-left: solid 4px #ff6b7c;
+}
+.project-wist .toc-link {
+  background-color: rgba(255, 107, 124, 0.08);
+  color: #ff6b7c;
+}
+.project-wist .toc-link:hover {
+  background-color: rgba(255, 107, 124, 0.16);
+  box-shadow: 0 8px 16px rgba(255, 107, 124, 0.1);
+}
+
 .btn.btn-timeline {
   box-sizing: border-box;
   background: linear-gradient(#161618, #161618), linear-gradient(30deg, #AC32B4 30%, #4579E7 50%, #DD7962 85%);
