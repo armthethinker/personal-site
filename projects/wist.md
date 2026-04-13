@@ -42,7 +42,7 @@ Wist's unique perspective and challenges were
 
 {% include media-img-xl.html
    url="temp/vivaldi/birth.jpg"
-   caption="Every moment is special."
+   caption="**Every moment is special**, from first heartbeats to first breaths to first laughs to first steps."
 %}
 
 
@@ -107,15 +107,15 @@ We grew to four at our height, a cross-functional team. I operated across design
 
 {% include media-img-xl.html
    url="temp/ux-flow.jpg"
-   caption="End to end experience. TK replace with new overall flow"
+   caption="**Wist flow.** Capture or import. Process on device and enhance in the cloud. Relive in headset or on mobile."
 %}
 
 {% include p-section.html
-   header=""
+   header="Capture feels familiar"
    subheader=""
    content="
 
-### Capture feels familiar
+<!-- ### Capture feels familiar -->
 
 > A futuristic camera in our iOS app that feels like a native camera. 
 
@@ -135,10 +135,10 @@ Users could also import 2D video for a \"spatial upconversion\".
 
 
 {% include p-section.html
-   header=""
+   header="Processing enhances captures"
    subheader=""
    content="
-### Processing enhances captures
+<!-- ### Processing enhances captures -->
 
 <!-- It must feel automatic, easy, and out of the way of capturing and staying in the moment. -->
 
@@ -215,12 +215,13 @@ The complexities of each step are not well captured in this tiny list.
 
 Each step had particular consideration for the qualities of our data (handheld, in-the-wild, monocular video) and the peculiarites of the model or CV technique. -->
 
-### Playback brings you back to a moment
+<!-- ### Playback brings you back to a moment -->
 
 "
 %}
 {% include media-video.html
-   header=""
+   header="Playback brings you back to a moment"
+   subheader="Quest, Vision Pro"
    url="relive-with-me-low.mp4"
    caption="**Video.** Really be there again in a headset for the most powerful experience. On Quest and Vision Pro."
    aspect="1by1"
@@ -228,25 +229,22 @@ Each step had particular consideration for the qualities of our data (handheld, 
    controls=true
    style="lg"
 %}
+
 {% include p-section.html
    header=""
    subheader=""
    content="
 
-**Headset apps** reproject memories back into the user's space. We took a lot of care around
+**Headset apps** reproject memories back into the user's space. We took a lot of care around:
 
-- Styling artifacts as part of the \"look\"
-- Visual styling that both represents the moment vividly and leans into user notions of \"memory viewers\" from sci-fi
-- An interface that is out of the way of the meaningful content
-- So many specific considerations for how the reprojected media intersects a user's space and their varied intentions while using the app
+**Focused UI** that prioritizes reliving moments over navigation
+
+**Visual styling** that plays the moment vividly and leans into user notions of \"memory viewers\" from sci-fi media (including the artifacts)
+
+**Space specific considerations** for how the reprojected media intersects a user's space and their varied intentions while using the app
     - Getting closer to the capture position fades in the culled edges
     - Grabbing the memory pauses it and crops in the boundaries of it
     - Fluid transitions and looping
-    - Toggleable \"person highlighting\" that hides everything other than the people in the capture
-    - Expandable menus that blur the line between \"browsing/searching\" and \"skimming\"
-
-TK - show don't tell
-
 "
 %}
 {% include media-img-wall.html
@@ -254,23 +252,18 @@ TK - show don't tell
 %}
 
 {% include p-section.html
-   header=""
+   header="iOS app playback"
    subheader=""
    content="
 
 **iOS app playback** looks like regular video at first. It was tricky to balance a feeling of \"this is familiar\" with \"this is giving me way more\".
-
-- **Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene.
-- **Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame.
-- **Smoothing details**: lots of tuning went into how the elements of the scene hierarchy follow each other smoothly, and how those intersect continuously with the user\'s actions.
-- **Modeless interaction**: users can drag-to-orbit or tilt their phone to see around a scene. Our camera system allows for continuous and softly constrained influence from various sources without locking the user into a mode.
 
 "
 %}
 {% include media-video.html
    header=""
    url="temp/wist-spatial-scrubbing.MOV"
-   caption="**Video.** A viewer that feels familiar yet extends to highlight the full depth of the moment."
+   caption="**Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene."
    aspect="16by9"
    loop=true
    controls=false
@@ -281,7 +274,7 @@ TK - show don't tell
 {% include media-video.html
    header=""
    url="temp/wist-v0.8.7-maintain-up.mp4"
-   caption=""
+   caption="**Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame."
    aspect="16by9"
    loop=true
    controls=false
@@ -294,13 +287,12 @@ TK - show don't tell
    subheader=""
    content="
 
-### Secondary features that make the product
 
-- Remote play
-- Playback at any angle, always up
-- Grab
-- Person highlighting
-- Height adjustment
+**Smoothing details**: lots of tuning went into how the elements of the scene hierarchy follow each other smoothly, and how those intersect continuously with the user\'s actions.
+
+**Modeless interaction**: users can drag-to-orbit or tilt their phone to see around a scene. Our camera system allows for continuous and softly constrained influence from various sources without locking the user into a mode.
+
+**Remote play**: to help folks sharing their content in the same space. One user can trigger a memory from their phone while a second user is in the headset.
 
 "
 %}
@@ -308,7 +300,7 @@ TK - show don't tell
 
 {% include media-img-xl.html
    url="temp/vivaldi/living-room.jpg"
-   caption="Every moment is special."
+   caption="Spatial playback allows for perfect realignment with the real world."
 %}
 
 
