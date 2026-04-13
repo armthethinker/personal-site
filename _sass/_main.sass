@@ -482,14 +482,15 @@ img
       width: 100%
    &.rounded
       border-radius: $border-radius !important
+      // corner-shape: superellipse(0.6)
    &.cover
       object-fit: cover
    &.contain
       object-fit: contain
    &.img-xl
-      width: calc(100% + 30px)
-      max-width: calc(100% + 30px)
-      margin-left: -15px
+      width: calc(100% + 60px)
+      max-width: calc(100% + 60px)
+      margin-left: -30px
 .embed-responsive
    border-radius: $border-radius
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
@@ -677,36 +678,62 @@ $masonry-3: 200 100 150 125 200 150
       $returnList: append($returnList, $item * $multiple)
    @return $returnList
 
-.masonry-set
-   > .masonry-1
-      @include setHeightOfNthOfType(".img-masonry", $masonry-1)
-      @media (min-width: $break-md)
-         @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-1, 2))
-      @media (min-width: $break-xl)
-         @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-1, 3))
-   > .masonry-2
-      @include setHeightOfNthOfType(".img-masonry", $masonry-2)
-      @media (min-width: $break-md)
-         @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-2, 2))
-      @media (min-width: $break-xl)
-         @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-2, 3))
-   > .masonry-3
-      @include setHeightOfNthOfType(".img-masonry", $masonry-3)
-      @media (min-width: $break-md)
-         @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 2))
-      @media (min-width: $break-xl)
-         @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 3))
-   .img-masonry
-      border-radius: $border-radius
-      margin: 16px 0px
-      object-fit: cover
-   @media (max-width: $break-sm)
-      .col
-         padding-left: 8px
-         padding-right: 8px
-      .img-masonry
-         border-radius: $border-radius
-         margin: 8px 0px
+// .masonry-set
+//    > .masonry-1
+//       @include setHeightOfNthOfType(".img-masonry", $masonry-1)
+//       @media (min-width: $break-md)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-1, 2))
+//       @media (min-width: $break-xl)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-1, 3))
+//    > .masonry-2
+//       @include setHeightOfNthOfType(".img-masonry", $masonry-2)
+//       @media (min-width: $break-md)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-2, 2))
+//       @media (min-width: $break-xl)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-2, 3))
+//    > .masonry-3
+//       @include setHeightOfNthOfType(".img-masonry", $masonry-3)
+//       @media (min-width: $break-md)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 2))
+//       @media (min-width: $break-xl)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 3))
+//    .img-masonry
+//       border-radius: $border-radius
+//       margin: 16px 0px
+//       object-fit: cover
+//    @media (max-width: $break-sm)
+//       .col
+//          padding-left: 8px
+//          padding-right: 8px
+//       .img-masonry
+//          border-radius: $border-radius
+//          margin: 8px 0px
+// FIXME: Remove old Masonry code
+
+
+.m-grid
+   margin: 0 auto
+
+.m-grid-sizer,
+.m-grid-item
+   width: 50%
+  
+   @media (min-width: 992px)
+      width: 33.333%
+
+.m-grid-item--lg
+   width: 100%
+  
+   @media (min-width: 992px)
+      width: 66.666%
+
+.m-grid-item
+   padding: 12px // FIXME: use grid gutter variable
+   float: left
+
+.m-grid-content
+   width: 100%
+   display: block
 
 
 p

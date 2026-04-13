@@ -14,14 +14,17 @@
     "clean": "rm -rf assets/css/* assets/js/*",
     "sass:build": "sass _sass/main.scss assets/css/main.css --load-path=node_modules",
     "postcss": "postcss assets/css/main.css -u autoprefixer -o assets/css/main.css",
-    "js:build": "terser node_modules/bootstrap/dist/js/bootstrap.bundle.min.js _js/main.js -o assets/js/main.min.js --mangle --compress",
+    "js:build": "terser node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/masonry-layout/dist/masonry.pkgd.min.js _js/main.js -o assets/js/main.min.js --mangle --compress",
     "jekyll:serve": "bundle exec jekyll serve --livereload",
     "watch:sass": "sass _sass/main.scss assets/css/main.css --load-path=node_modules --watch",
-    "start": "npm-run-all --parallel watch:sass jekyll:serve",
-    "build": "npm run clean && npm run sass:build && npm run postcss && npm run js:build && bundle exec jekyll build"
+    "watch:js": "terser node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/masonry-layout/dist/masonry.pkgd.min.js _js/main.js -o assets/js/main.min.js --watch",
+    "start": "npm-run-all --parallel watch:sass watch:js jekyll:serve",
+    "build": "npm run clean && npm run sass:build && npm run postcss && npm run js:build && bundle exec jekyll build",
+    "imageoptim": "imageoptim '_site/assets/img/**/*.jpg'"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "imageoptim-cli": "^3.1.9",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.0",
     "postcss-cli": "^10.0.0",
@@ -29,6 +32,7 @@
     "terser": "^5.16.0"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0"
+    "bootstrap": "^5.3.0",
+    "masonry-layout": "^4.2.2"
   }
 }

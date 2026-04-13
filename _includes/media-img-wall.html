@@ -6,40 +6,28 @@
 
 <div class="p-sec">
    <div class="container-fluid">
-      <!-- row wrapper - prev col-12 col-sm-10 col-xl-8 -->
       <div class="">
          <div class="row">
             <div class="col">
-               <div class="row masonry-set align-items-center">
+               <div class="m-grid">
+                  <div class="m-grid-sizer"></div>
+                  <div class="m-gutter-sizer"></div>
 
-                  {% assign colLength = include.data.size | divided_by: 3 %}
-                  {% assign colLengthDouble = colLength | times: 2 %}
+                  {% for item in include.data %}
+                     {% assign size = "m-grid-item--md" %}
+                     {% if item.size == "lg" %}
+                        {% assign size = "m-grid-item--lg" %}
+                     {% endif %}
 
-                  <div class="col masonry-1">
-                  {% for item in include.data limit:colLength %}
-                     <img class="img-fluid img-masonry" src="{{item.imgurl | prepend: urlPrepend}}" style="object-position: {{ item.origin }}" alt="{{item.caption}}">
-                     {% if item.caption != undefined %}
-                        <p class="caption">{{item.caption}}</p>
-                     {% endif %}
+                     <div class="m-grid-item {{ size }}">
+                        <div class="m-grid-content">
+                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption}}">
+                           {% if item.caption %}
+                              <p class="caption">{{item.caption}}</p>
+                           {% endif %}
+                        </div>
+                     </div>
                   {% endfor %}
-                  </div>
-                  <div class="col masonry-2">
-                  {% for item in include.data limit:colLength offset:colLength %}
-                     <img class="img-fluid img-masonry" src="{{item.imgurl | prepend: urlPrepend}}" style="object-position: {{ item.origin }}" alt="{{item.caption}}">
-                     {% if item.caption != undefined %}
-                        <p class="caption">{{item.caption}}</p>
-                     {% endif %}
-                  {% endfor %}
-                  </div>
-                  <div class="col masonry-3">
-                  {% for item in include.data limit:colLength offset:colLengthDouble %}
-                     <img class="img-fluid img-masonry" src="{{item.imgurl | prepend: urlPrepend}}" style="object-position: {{ item.origin }}" alt="{{item.caption}}">
-                     {% if item.caption != undefined %}
-                        <p class="caption">{{item.caption}}</p>
-                     {% endif %}
-                  {% endfor %}
-                  </div>
-
                </div>
             </div>
          </div>

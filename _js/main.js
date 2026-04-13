@@ -295,3 +295,12 @@ $(document).ready(function(){
 // // particlesJS.load('particles-js', 'js/config-particles.json', function() {
 // //   console.log('Particles are loaded.');
 // // });
+
+document.addEventListener('DOMContentLoaded', function () {
+   const grid = document.querySelector('.m-grid')
+   new Masonry(grid, {
+      itemSelector: '.m-grid-item',
+      columnWidth: '.m-grid-sizer',
+      percentPosition: true
+   })
+})
