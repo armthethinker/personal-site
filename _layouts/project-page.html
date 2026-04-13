@@ -14,7 +14,8 @@
 {% endfor %}
 
 <body class="project-{{p.short}}">
-   <!-- {% include util-responsive-size.html %} -->
+   {% include util-responsive-size.html %}
+   {% include project-breadcrumbs.html %}
    <div class="page">
       <div class="page-header">
          <!-- {% include all-page-alert.html %} -->
