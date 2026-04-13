@@ -10,15 +10,12 @@ modelURL: /assets/models/samsung/
 ---
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="<div class='alert alert-warning'>Since my NDA prohibits me from talking about what I do exactly, this page shares high level details about my Samsung work plus more details about my personal spatial computing work.</div>
 "
 %}
 
 {% include p-section.html
    header="The general problem I solve"
-   subheader=""
    content="> Spatial computing is an entirely new medium. I figure out how to make it more human.
 
    **I create novel interactions and product strategies.** I think beyond our current black rectangles. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
@@ -50,7 +47,7 @@ modelURL: /assets/models/samsung/
 
 {% include p-section.html
    header="My team"
-   subheader=""
+   
    content="
 **My team is the XR Design Group (XRDG).** We work under MPS Lab under Samsung Research America (SRA). Together, we find meaningful ways to build future facing technologies.
 
@@ -84,8 +81,6 @@ Here's the process my team usually goes through for a project:
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 
 ### Responsibilities
@@ -138,7 +133,7 @@ I guide the team to produce high quality work from the design side. This means c
 
 {% include p-section.html
    header="Tools & skills for spatial prototyping"
-   subheader=""
+   
    content="
 **UX design**
 - Maquette, Tvori, Tilt Brush, Blocks, Quill (AR/VR design tools)
@@ -169,7 +164,7 @@ I guide the team to produce high quality work from the design side. This means c
 
 {% include p-section.html
    header="Other work"
-   subheader=""
+   
    content="
 For other examples of my spatial computing work, you can look at [Humane Virtuality](/projects/humane-virtuality.html) and [Moral Decisions & Haptics in VR](/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html) as well as my sporadic [YouTube uploads](https://www.youtube.com/user/arm156291/videos).
 "

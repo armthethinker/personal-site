@@ -21,8 +21,6 @@ modelURL: /assets/models/wist/
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 > Take a video. Step inside. Enhance forever.
 
@@ -48,7 +46,6 @@ Wist's unique perspective and challenges were
 
 {% include p-section.html
    header="Accolades & praise"
-   subheader=""
    url=""
    caption=""
    content="
@@ -62,8 +59,6 @@ Wist's unique perspective and challenges were
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    url="temp/first-sight-sm.jpg"
    caption="Wist used in the production of \"First Sight\"."
    content="
@@ -75,7 +70,6 @@ Worked with Andrew McGee (director) to create a version of Wist that could be us
 
 {% include p-section.html
    header="A founder does everything"
-   subheader=""
    content="
 **My roles: Founder + CEO, Designer, Engineer.**
 
@@ -112,7 +106,7 @@ We grew to four at our height, a cross-functional team. I operated across design
 
 {% include p-section.html
    header="Capture feels familiar"
-   subheader=""
+   headerClassTag="h3"
    content="
 
 <!-- ### Capture feels familiar -->
@@ -136,7 +130,6 @@ Users could also import 2D video for a \"spatial upconversion\".
 
 {% include p-section.html
    header="Processing enhances captures"
-   subheader=""
    content="
 <!-- ### Processing enhances captures -->
 
@@ -163,8 +156,6 @@ into an internal format that could capture, encode, and play at 30+fps.
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 - Directly encode into our internal formats during capture
 - As \"backgroundable\" as possible
@@ -184,8 +175,6 @@ into an internal format that could capture, encode, and play at 30+fps.
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 
 We integrated multiple computer vision ML models (depth estimation, camera pose + intrinsics estimation, segmentation, optical flow). We created model and data specific rectification layers and traditional CV techniques to improve temporal coherence and reduce artifacts. 
@@ -231,8 +220,6 @@ Each step had particular consideration for the qualities of our data (handheld, 
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 
 **Headset apps** reproject memories back into the user's space. We took a lot of care around:
@@ -253,7 +240,6 @@ Each step had particular consideration for the qualities of our data (handheld, 
 
 {% include p-section.html
    header="iOS app playback"
-   subheader=""
    content="
 
 **iOS app playback** looks like regular video at first. It was tricky to balance a feeling of \"this is familiar\" with \"this is giving me way more\".
@@ -261,7 +247,6 @@ Each step had particular consideration for the qualities of our data (handheld, 
 "
 %}
 {% include media-video.html
-   header=""
    url="temp/wist-spatial-scrubbing.MOV"
    caption="**Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene."
    aspect="16by9"
@@ -272,7 +257,6 @@ Each step had particular consideration for the qualities of our data (handheld, 
 %}
 
 {% include media-video.html
-   header=""
    url="temp/wist-v0.8.7-maintain-up.mp4"
    caption="**Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame."
    aspect="16by9"
@@ -283,8 +267,6 @@ Each step had particular consideration for the qualities of our data (handheld, 
 %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 
 
@@ -307,49 +289,40 @@ Each step had particular consideration for the qualities of our data (handheld, 
 
 {% include p-section.html
    header="Tradeoffs & challenges"
-   subheader=""
    content="
 
-**My most critical responsibility was figuring out what can we do today that gets us to tomorrow?**
+**My critical responsibility was figuring out what can we do today that gets us to tomorrow.**
 
-The easist thing was figuring out our unique angle: dynamic, captured from a phone (possibly with LiDAR), feels like taking a video, just works. 
+With a tiny team, each item we worked on meant not working on 20 others. We had to be intentional about what we pursued, which fires we left burning, and what would get us to the next step.
 
-Living up to that took years of trials.
+**Easy**, relatively, to know our unique angle: dynamic memories, captured from a phone (optionally with LiDAR), feels like taking a video, just works. 
 
-My cofounder and I built the scaffolding early (core UX, encoding format, backend processing pipeline). That allowed us to improve without changing our architecture. In the last two years, we got to a point where more people were gravitating to the product  TK unfinished thought
+**Hard**, building the 1,000 parts that lives up to that vision.
+
+My cofounder and I built the scaffolding early (core UX, encoding format, backend processing pipeline), allowing us to improve without changing our architecture. 
+
 "
 %}
 
 {% include wist-year-challenges.html %}
 
 {% include p-section.html
-   header=""
-   subheader=""
    content="
 
 
-- 
+#### Trials
 
+Each of these could be its own talk.
 
+- How can you express depth on a flat screen in an additive way, not distracting from the content?
+- How can you encode depth and other data into the video stream in a way that maintains quality?
+- How can you market a real spatial app in a world of generated videos?
+- Should we increase quality or go after more users?
+- Should we focus on one headset or multiple? How do we balance consistency with experimentation?
+- Should we hire a CV lead or continue as a smaller team? Which gets us more traction and runway?
+- Should we focus on one media type (video) or many (photo, scans, audio, text)?
+- How do we present viewing options that allow for specific use cases without distracting from the core experience of reliving memories?
 
-- Bringing 3D to a flat screen
-- Encoding for processing and playback and preservation
-- Staging larger features, which fires can burn
-- Processing forever and ever and ever
-- Communicating this future
-
-
-
-
-### Another attempt
-
-**Higher quality or more users?**
-- Which gets us there?
-
-- Two headset platforms or one?
-- Hire a CV lead or continue as smaller team?
-- One media type (video) or many (video, photo, scans, audio, text)?
-- New feature or fix bugs?
 "
 %}
 
