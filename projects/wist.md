@@ -48,13 +48,28 @@ Wist's unique perspective and challenges were
 
 {% include p-section.html
    header="Accolades & praise"
-   subheader="TK"
+   subheader=""
+   url=""
+   caption=""
+   content="
+**User feedback**
+> \"It's much more immersive than watching the apple spatial videos.\"
+
+> \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\"
+
+**Covered in media**<br>Interviews in [Vice/Motherboard](https://www.vice.com/en/article/wist-app-relive-memories-vr/), [This Week in Startups](https://www.youtube.com/watch?v=TZlK7Ee84sI&t=1540s), [The Pitch](https://www.thepitch.show/122-wist-the-killer-use-case-for-vr), [Freethink](https://www.freethink.com/ar-vr/vr-app), [Upload VR](https://www.uploadvr.com/wist-delivers-minority-report-memory-replay/), and [XR AI Spotlight](https://www.xraispotlight.com/how-to-capture-and-relive-memories-in-3d-without-a-vision-pro/).
+"
+%}
+
+{% include p-section.html
+   header=""
+   subheader=""
    url="temp/first-sight-sm.jpg"
    caption="Wist used in the production of \"First Sight\"."
    content="
-- First Sight
-- User notes
-- Interviews (Vice, The Pitch, ...)
+**Used in short film**<br>
+Worked with Andrew McGee (director) to create a version of Wist that could be used on set to replace some VFX work. [See the film.](https://www.youtube.com/watch?v=URDjsHupqUM)
+
 "
 %}
 
@@ -91,7 +106,7 @@ We grew to four at our height, a cross-functional team. I operated across design
 %}
 
 {% include media-img-xl.html
-   url="temp/first-sight-sm.jpg"
+   url="temp/ux-flow.jpg"
    caption="End to end experience. TK replace with new overall flow"
 %}
 
@@ -112,7 +127,7 @@ Users could also import 2D video for a \"spatial upconversion\".
 
 {% include media-img.html
    url="capture2-low.mp4"
-   caption="**Capturing** feels like taking a video, only possible with our encoding technique and user focus."
+   caption="**Capturing** feels like video. We use a depth effect at camera init to hint at the difference between Wist and other camera apps."
    url2="bento-sm/import.jpg"
    caption2="**Importing** is delightfully unremarkable. The output is what is special."
    style="lg"
@@ -162,8 +177,10 @@ into an internal format that could capture, encode, and play at 30+fps.
 
 {% include media-img.html
    url="temp/importScanLayers.gif"
-   caption=""
-   style="md"
+   caption="Generating different channels of data (depth, flow, segmentation) allowed us to better rectify the final sequence."
+   url2="temp/wall-temp/Screenshot 2024-06-26 163446.png"
+   caption2="Visualization was critical to ensure our prototyping was improving the solve."
+   style="lg"
 %}
 
 {% include p-section.html
@@ -235,6 +252,21 @@ TK - show don't tell
 {% include media-img-wall.html
    data=site.data.imgwall.wist-playback
 %}
+
+{% include p-section.html
+   header=""
+   subheader=""
+   content="
+
+**iOS app playback** looks like regular video at first. It was tricky to balance a feeling of \"this is familiar\" with \"this is giving me way more\".
+
+- **Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene.
+- **Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame.
+- **Smoothing details**: lots of tuning went into how the elements of the scene hierarchy follow each other smoothly, and how those intersect continuously with the user\'s actions.
+- **Modeless interaction**: users can drag-to-orbit or tilt their phone to see around a scene. Our camera system allows for continuous and softly constrained influence from various sources without locking the user into a mode.
+
+"
+%}
 {% include media-video.html
    header=""
    url="temp/wist-spatial-scrubbing.MOV"
@@ -266,8 +298,9 @@ TK - show don't tell
 
 - Remote play
 - Playback at any angle, always up
-- Spatial scrubbing
 - Grab
+- Person highlighting
+- Height adjustment
 
 "
 %}
@@ -312,6 +345,19 @@ My cofounder and I built the scaffolding early (core UX, encoding format, backen
 - Staging larger features, which fires can burn
 - Processing forever and ever and ever
 - Communicating this future
+
+
+
+
+### Another attempt
+
+**Higher quality or more users?**
+- Which gets us there?
+
+- Two headset platforms or one?
+- Hire a CV lead or continue as smaller team?
+- One media type (video) or many (video, photo, scans, audio, text)?
+- New feature or fix bugs?
 "
 %}
 
