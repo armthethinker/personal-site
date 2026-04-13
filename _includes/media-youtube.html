@@ -7,8 +7,12 @@
       <div class="">
          <div class="row">
             <div class="col-12 col-md-4 col-lg-3">
+               {% if include.header %}
                <h2>{{include.header}}</h2>
+               {% endif %}
+               {% if include.subheader %}
                <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% endif %}
             </div>
             <div class="col">
                <div class="embed-responsive embed-responsive-{{include.aspect}}">
