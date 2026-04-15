@@ -1,0 +1,45 @@
+{% if include.section == true %}
+
+{% if include.header != undefined %}
+<div class="p-sec p-sec-header">
+{% else %}
+<div class="p-sec">
+{% endif %}
+   <div class="container">
+      <!-- row wrapper - prev col-12 col-sm-10 col-xl-8 -->
+      <div class="">
+         <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+               {% if include.header %}
+               <h2>{{include.header}}</h2>
+               {% endif %}
+               {% if include.subheader %}
+               <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% endif %}
+            </div>
+            <div class="col">
+{% endif %}
+
+{% for item in site.data.skills %}
+<strong>{{ item.category }}</strong>
+<ul class="skill-categories list-unstyled">
+   <li class="mb-2">
+      <ul class="skill-list list-inline">
+         {% for skill in item.list %}
+         <li class="list-inline-item">{{ skill }}</li>
+         {% endfor %}
+      </ul>
+   </li>
+</ul>
+{% endfor %}
+
+{% if include.section == true %}
+            </div>
+            <div class="col-12 col-lg-3"></div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endif %}
+
+
