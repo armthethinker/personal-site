@@ -19,9 +19,23 @@
                         {% assign size = "m-grid-item--lg" %}
                      {% endif %}
 
+                     {% assign video = false %}
+                     {% if item.video != nil and item.video == true %}
+                        {% assign video = true %}
+                     {% endif %}
+
                      <div class="m-grid-item {{ size }}">
                         <div class="m-grid-content">
-                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption}}">
+                           {% if video %}
+                              <div class="embed-responsive embed-responsive-{{item.aspect}}">
+                                 <video class="embed-responsive-item" autoplay loop muted>
+                                    <source src="{{item.imgurl | prepend: urlPrepend}}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                 </video>
+                              </div>
+                           {% else %}
+                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}">
+                           {% endif %}
                            {% if item.caption %}
                               <p class="caption">{{item.caption}}</p>
                            {% endif %}

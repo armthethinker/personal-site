@@ -1,9 +1,26 @@
-- imgurl: relive-with-me-low-poster.jpg
-  origin: 50% 50%
-  caption: Caption.
-- imgurl: small-knees-low-poster.jpg
-  origin: 50% 50%
-  caption: Caption.
-- imgurl: walking2-low-poster.jpg
-  origin: 50% 50%
-  caption: Caption.
+- imgurl: temp/frame_encoding.jpeg
+  caption: We experimented with many frame encodings, including this where we pack many "channels" of data into a single frame. This helps preserve data through compression and speed up playback compute time.
+- imgurl: temp/social-movement.mp4
+  caption: Early movement system focused on direct, contextual "grabbing".
+  video: true
+  aspect: 1by1
+- imgurl: temp/shaders/wistShaderPrototype-composite.mp4
+  caption: Early shader prototyping for visual look development.
+  video: true
+  aspect: 3by4
+- imgurl: temp/rerun/rerun-inputs-sm.mp4
+  caption: Rerun visualization of various input data streams (raw data, different ML depth estimates, different pose solves).
+  video: true
+  aspect: 16by9
+- imgurl: temp/rerun/rerun-ba-solve-trimmed-sm.mp4
+  caption: Rerun visualization of our bundle adjustment solve, an unfinished component I was developing at the end.
+  video: true
+  aspect: 16by9
+- imgurl: temp/feature-walkthrough-photos/exports/dev-onboard.jpg
+  caption: Onboarding starts with a clear focus on what the user can do with Wist.
+- imgurl: temp/feature-walkthrough-photos/exports/v0.7.0-sync.jpg
+  caption: Syncing starts as soon as possible to reduce user wait times.
+- imgurl: temp/multiplayer/multiplayer-test-sm.mp4
+  caption: Prototyping near field user-to-user interactions to help people feel even closer.
+  video: true
+  aspect: 16by9
