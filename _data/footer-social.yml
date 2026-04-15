@@ -1,16 +1,23 @@
--  icon: facebook-messenger
-   link: /
--  icon: medium-m
-   link: http://medium.com/@armthethinker
--  icon: youtube
+# -  icon: facebook-messenger
+   # link: /
+# -  name: Medium
+   # icon: medium-m
+   # link: http://medium.com/@armthethinker
+-  name: YouTube
+   icon: youtube
    link: https://www.youtube.com/user/arm156291
--  icon: linkedin
+-  name: LinkedIn
+   icon: linkedin
    link: http://www.linkedin.com/pub/andrew-mchugh/48/72b/3ab/
--  icon: twitter
-   link: http://twitter.com/armthethinker
--  icon: github
+# -  name: X (Twitter)
+   # icon: twitter
+   # link: http://twitter.com/armthethinker
+-  name: GitHub
+   icon: github
    link: http://github.com/armthethinker
--  icon: pinterest
-   link: http://pinterest.com/armthethinker
--  icon: instagram
+# -  name: Pinterest
+   # icon: pinterest
+   # link: http://pinterest.com/armthethinker
+-  name: Instagram
+   icon: instagram
    link: http://instagram.com/armthethinker
