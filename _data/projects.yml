@@ -4,8 +4,8 @@
   emoji: 🤓
   subtitle: Immersive memories as easy as taking a video
   # description: Concept, to funding, to beta, to end.
-  description: Built a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,000 memories.
-  role: Founder, CEO, Designer, Eng, R&D
+  description: Founded a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,000 memories and 17,000+ waitlist sign ups.
+  role: Founder, CEO (Design, Eng, Product, R&D)
   date: May 2021 - February 2026
   dateYears: 2021-2026
   # whileAt: Samsung Research America, Mobile Platform Solutions Lab
@@ -21,7 +21,8 @@
   url: wist.html
   bgImg:     /assets/img/wist/couch2-low-poster.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/wist/relive-with-me-low.mp4
+  # imgJumbotronHero: /assets/img/wist/relive-with-me-low-trimmed.mp4
+  imgJumbotronHero: /assets/img/wist/couch2-low-poster.jpg
   light: true
 - title: Samsung Research America
   pID: 2
