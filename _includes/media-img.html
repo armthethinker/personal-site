@@ -28,7 +28,22 @@
             </div>
             <div class="col">
                <div class="p-img-container">
+                  
+                  {% assign video = false %}
+                  {% if include.video != nil and include.video == true %}
+                     {% assign video = true %}
+                  {% endif %}
+
+                  {% if video %}
+                     <div class="embed-responsive embed-responsive-{{include.aspect}}">
+                        <video class="embed-responsive-item" autoplay loop muted>
+                           <source src="{{include.url | prepend: urlPrepend}}" type="video/mp4">
+                           Your browser does not support the video tag.
+                        </video>
+                     </div>
+                  {% else %}
                   <img class="img-fluid rounded" src="{{include.url | prepend:urlPrepend}}">
+                  {% endif %}
                   {% if include.captionSide == undefined or include.captionSide == false %}
                   <div class="p-img-caption">
                      {{include.caption | markdownify}}
