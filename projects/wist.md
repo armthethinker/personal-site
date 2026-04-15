@@ -10,17 +10,19 @@ modelURL: /assets/models/wist/
 ---
 
 {% include media-video.html
-   header="Why immersive memories?"
-   subheader="Product thesis"
-   url="temp/RELIVE.mp4"
+   url="temp/RELIVE-sm.mp4"
    caption=""
-   aspect="1by1"
+   aspect="9by16"
    loop=false
-   controls=true
-   style="lg"
+   autoplay=true
+   controls=false
+   style="xl"
+   maxHeight="70vh"
 %}
 
 {% include p-section.html
+   header="Why immersive memories?"
+   subheader="Product thesis"
    content="
 > Take a video. Step inside. Enhance forever.
 
@@ -36,12 +38,41 @@ Wist's unique perspective and challenges were
 "
 %}
 
-
-
 {% include media-img-xl.html
    url="temp/vivaldi/birth.jpg"
    caption="**Every moment is special**, from first heartbeats to first breaths to first laughs to first steps."
 %}
+
+{% include p-section.html
+   header="What I built & led"
+   subheader="Forest & the trees"
+   content="
+**My roles: Founder + CEO, Designer, Engineer.**
+
+I led the company from research prototypes through product development, fundraising, and ultimately through shutdown. 
+
+We grew to four at our height, a cross-functional team. I operated across design, engineering, product, and R&D, building the core tech while defining product direction.
+
+**Key responsibilities** 
+
+- Defined product vision, roadmap
+- Raised ~$1M from VCs and angels (lead: [Long Journey Ventures](https://www.longjourney.vc))
+- Hired and led a small, highly technical team
+- Led and built design, eng, product, and R&D across mobile, headsets, and backend systems
+- Designed core UX + interaction models
+<!-- - Built product across all surfaces (capture, playback, apps, processing backend, cloud backend) -->
+- User research and metrics
+
+I led or refined >80% of the code across our codebases.
+
+"
+%}
+
+
+{% include skills.html 
+   section=true
+%}
+
 
 
 {% include p-section.html
@@ -54,6 +85,11 @@ Wist's unique perspective and challenges were
 
 > \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\"
 
+**Traction**
+- 17,000+ waitlist sign ups
+- 8,000+ memories captured
+- WoW traction TK
+
 **Covered in media**<br>Interviews in [Vice/Motherboard](https://www.vice.com/en/article/wist-app-relive-memories-vr/), [This Week in Startups](https://www.youtube.com/watch?v=TZlK7Ee84sI&t=1540s), [The Pitch](https://www.thepitch.show/122-wist-the-killer-use-case-for-vr), [Freethink](https://www.freethink.com/ar-vr/vr-app), [Upload VR](https://www.uploadvr.com/wist-delivers-minority-report-memory-replay/), and [XR AI Spotlight](https://www.xraispotlight.com/how-to-capture-and-relive-memories-in-3d-without-a-vision-pro/).
 "
 %}
@@ -64,28 +100,6 @@ Wist's unique perspective and challenges were
    content="
 **Used in short film**<br>
 Worked with Andrew McGee (director) to create a version of Wist that could be used on set to replace some VFX work. [See the film.](https://www.youtube.com/watch?v=URDjsHupqUM)
-
-"
-%}
-
-{% include p-section.html
-   header="A founder does everything"
-   content="
-**My roles: Founder + CEO, Designer, Engineer.**
-
-I led the company from research prototypes through product development, fundraising, and ultimately through shutdown. 
-
-We grew to four at our height, a cross-functional team. I operated across design, engineering, product, and R&D, building the core tech while defining product direction.
-
-**Key responsibilities**
-
-- Defined product vision, roadmap
-- Raised ~$1M from VCs and angels (lead: [Long Journey Ventures](https://www.longjourney.vc))
-- Hired and led a small, highly technical team
-- Led design, eng, product, and R&D across mobile, headsets, and backend systems
-- Designed core UX + interaction models
-- Built significant portions of the product across all surfaces
-- User research and metrics
 
 "
 %}
@@ -122,6 +136,8 @@ Users could also import 2D video for a \"spatial upconversion\".
 {% include media-img.html
    url="capture2-low.mp4"
    caption="**Capturing** feels like video. We use a depth effect at camera init to hint at the difference between Wist and other camera apps."
+   video=true
+   aspect="1by1"
    url2="bento-sm/import.jpg"
    caption2="**Importing** is delightfully unremarkable. The output is what is special."
    style="lg"
@@ -248,7 +264,7 @@ Each step had particular consideration for the qualities of our data (handheld, 
 %}
 {% include media-video.html
    url="temp/wist-spatial-scrubbing.MOV"
-   caption="**Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene."
+   caption="**Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene. Smoothness comes from our work on smoothing our 3D camera positioning math."
    aspect="16by9"
    loop=true
    controls=false
@@ -291,7 +307,9 @@ Each step had particular consideration for the qualities of our data (handheld, 
    header="Tradeoffs & challenges"
    content="
 
-**My critical responsibility was figuring out what can we do today that gets us to tomorrow.**
+<!-- > The only way to navigate tradeoffs in a highly technical and experiential product like Wist is to know the opportunities and constraints across design, eng, product, and R&D. <br>**That's what makes me special.** -->
+
+**My critical responsibility was figuring out what can we do today that gets us to tomorrow.** I used my background across design, eng, and product to find our way forward.
 
 With a tiny team, each item we worked on meant not working on 20 others. We had to be intentional about what we pursued, which fires we left burning, and what would get us to the next step.
 
@@ -304,9 +322,11 @@ My cofounder and I built the scaffolding early (core UX, encoding format, backen
 "
 %}
 
-{% include wist-year-challenges.html %}
 
-{% include p-section.html
+
+<!-- {% include wist-year-challenges.html %} -->
+
+<!-- {% include p-section.html
    content="
 
 
@@ -324,10 +344,18 @@ Each of these could be its own talk.
 - How do we present viewing options that allow for specific use cases without distracting from the core experience of reliving memories?
 
 "
+%} -->
+
+{% include challenges-knew.html %}
+
+
+{% include p-section.html
+   content="
+> The only way to navigate tradeoffs in a highly technical and experiential product like Wist is to know the opportunities and constraints across design, eng, product, and R&D. <br>**That's what makes me special.**
+"
 %}
 
 
 {% include media-img-wall.html
    data=site.data.imgwall.wist
 %}
-
