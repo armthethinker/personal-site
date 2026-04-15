@@ -22,6 +22,7 @@
    <div class="container">
       <div class="">
          <div class="row">
+            {% if include.style != "xl" %}
             <div class="col-12 col-md-4 col-lg-3">
                {% if include.header %}
                <h2>{{include.header}}</h2>
@@ -30,7 +31,13 @@
                <strong class="d-block mb-4">{{include.subheader}}</strong>
                {% endif %}
             </div>
+            {% endif %}
             <div class="col">
+               {% if include.maxHeight %}
+               <div class="d-flex" style="max-height: {{include.maxHeight}};">
+               {% else %}
+               <div class="d-flex">
+               {% endif %}
                <div class="embed-responsive embed-responsive-{{include.aspect}}">
                   <video class="embed-responsive-item"
                   controls="{{include.controls}}"
@@ -41,9 +48,12 @@
                      <source src="{{include.url | prepend:urlPrepend}}" type="video/mp4">
                   </video>
                </div>
+               </div>
             </div>
             {% if include.style == "lg" %}
             <div class="col-12"></div>
+            {% elsif include.style == "xl" %}
+            <div class="d-none"></div>
             {% else %}
             <div class="col-12 col-lg-3"></div>
             {% endif %}
