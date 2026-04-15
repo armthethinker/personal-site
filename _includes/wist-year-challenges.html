@@ -1,23 +1,24 @@
 <div class="p-sec">
     <div class="container">
-        <!-- row wrapper - prev col-12 col-sm-10 col-xl-8 -->
         <div class="">
             {% for challenge in site.data.wist.challenges %}
-            <!-- <div class="row mt-4">
-                <div class="col-12 col-md-4 col-lg-3 "></div>
+            {% if challenge.imgurl %}
+            <div class="row mt-4">
+                <div class="{% include template-p-col-left.html %}"></div>
                 <div class="col">
                     <img class="img-fluid rounded" style="max-width: 200px;" src="{{ challenge.imgurl | prepend: page.assetURL }}" alt="{{ challenge.caption }}">
                 </div>
-                <div class="col-12 col-lg-3"></div>
-            </div> -->
+                <div class="{% include template-p-col-right.html %}"></div>
+            </div>
+            {% endif %}
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 ">
+                <div class="{% include template-p-col-left.html %}">
                     <p class="text-md-end mb-0"><strong>{{ challenge.year }}</strong></p>
                 </div>
                 <div class="col">
                     <p><strong>{{ challenge.challenges }}</strong><br>{{ challenge.events }}</p>
                 </div>
-                <div class="col-12 col-lg-3"></div>
+                <div class="{% include template-p-col-right.html %}"></div>
             </div>
             {% endfor %}
         </div>

@@ -15,14 +15,15 @@
 
 <body class="project-{{p.short}}">
    {% include util-responsive-size.html %}
-   {% include project-breadcrumbs.html %}
+   <!-- {% include project-breadcrumbs.html %} -->
+   <!-- {% include project-breadcrumbs-debug.html %} -->
    <div class="page">
       <div class="page-header">
          <!-- {% include all-page-alert.html %} -->
          {% include jumbotron-header.html %}
       </div>
       <div class="container-fluid page-body">
-         {% include toc.html %}
+         <!-- {% include toc.html %} -->
          {{ content }}
       </div>
    </div>
