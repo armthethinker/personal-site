@@ -1,0 +1,54 @@
+
+{% if include.header != undefined %}
+<div class="p-sec p-sec-header">
+{% else %}
+<div class="p-sec">
+{% endif %}
+   <div class="container">
+      <div class="">
+         <div class="row">
+            <div class="{% include template-p-col-left.html %}">
+               {% if include.header %}
+               <h2>{{include.header}}</h2>
+               {% endif %}
+               {% if include.subheader %}
+               <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% endif %}
+            </div>
+            <div class="col">
+                {% for item in site.data.wist.challenges2 %}
+                <h4 class="mt-3">{{item.challenge}}</h4>
+                <div class="row">
+                     <div class="col-12 col-xl-6">
+                        {% if item.knew %}
+                        <p><strong>Knew:</strong> {{item.knew}}</p>
+                        {% endif %}
+                     </div>
+                     <div class="col-12 col-xl-6">
+                        {% if item.considered %}
+                        <p><strong>Considered:</strong> {{item.considered}}</p>
+                        {% endif %}
+                     </div>
+                </div>
+
+                <div class="row mb-3">
+                     <div class="col-12 col-xl-6">
+                        {% if item.decided %}
+                        <p><strong>Decided:</strong> {{item.decided}}</p>
+                        {% endif %}
+                     </div>
+                     <div class="col-12 col-xl-6">
+                        {% if item.outcome %}
+                        <p><strong>Outcome:</strong> {{item.outcome}}</p>
+                        {% endif %}
+                     </div>
+                </div>
+                
+                
+                {% endfor %}
+            </div>
+            <div class="{% include template-p-col-right.html %}"></div>
+         </div>
+      </div>
+   </div>
+</div>
