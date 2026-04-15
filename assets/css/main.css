@@ -8601,6 +8601,23 @@ h1, .h1 {
   color: #f94c43;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  position: relative;
+  text-wrap-style: pretty;
+}
+
+body .lead {
+  text-wrap-style: pretty;
+}
+
+.text-wrap-pretty {
+  text-wrap-style: pretty !important;
+}
+
+.text-wrap-balance {
+  text-wrap-style: balance !important;
+}
+
 a {
   color: #f94c43;
 }
@@ -8953,6 +8970,9 @@ body {
   border-color: #0c4da2;
   box-shadow: 0 8px 16px rgba(12, 77, 162, 0.2) !important;
   transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+  border-radius: 50px;
+  border-width: 0;
+  padding: 0.7rem 1.2rem;
 }
 .project-samsung .btn:hover {
   background-color: rgb(84.6206896552, 152.9827586207, 242.3793103448) !important;
@@ -9040,6 +9060,9 @@ body {
   border-color: #4054B2;
   box-shadow: 0 8px 16px rgba(64, 84, 178, 0.2) !important;
   transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+  border-radius: 50px;
+  border-width: 0;
+  padding: 0.7rem 1.2rem;
 }
 .project-echo .btn:hover {
   background-color: rgb(170.4132231405, 179.9173553719, 224.5867768595) !important;
@@ -9127,6 +9150,9 @@ body {
   border-color: #C80D59;
   box-shadow: 0 8px 16px rgba(200, 13, 89, 0.2) !important;
   transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+  border-radius: 50px;
+  border-width: 0;
+  padding: 0.7rem 1.2rem;
 }
 .project-hv .btn:hover {
   background-color: rgb(246.2112676056, 119.7887323944, 171.1690140845) !important;
@@ -9214,6 +9240,9 @@ body {
   border-color: #7154E9;
   box-shadow: 0 8px 16px rgba(113, 84, 233, 0.2) !important;
   transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+  border-radius: 50px;
+  border-width: 0;
+  padding: 0.7rem 1.2rem;
 }
 .project-morals .btn:hover {
   background-color: rgb(225.5699481865, 219.5595854922, 250.4404145078) !important;
@@ -9301,6 +9330,9 @@ body {
   border-color: #FC3F5E;
   box-shadow: 0 8px 16px rgba(252, 63, 94, 0.2) !important;
   transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+  border-radius: 50px;
+  border-width: 0;
+  padding: 0.7rem 1.2rem;
 }
 .project-whatif .btn:hover {
   background-color: rgb(254.3538461538, 213.6461538462, 220.3230769231) !important;
@@ -9384,10 +9416,13 @@ body {
 }
 .project-wist .btn {
   color: #ff6b7c;
-  background-color: rgb(255, 183.5, 191.7128378378);
+  background-color: rgb(255, 209, 214.2837837838);
   border-color: #ff6b7c;
-  box-shadow: 0 8px 16px rgba(255, 107, 124, 0.2) !important;
+  box-shadow: 0 8px 16px rgba(255, 107, 124, 0.3) !important;
   transition: background-color 0.2s, box-shadow 0.2s, transform 0.5s;
+  border-radius: 50px;
+  border-width: 0;
+  padding: 0.7rem 1.2rem;
 }
 .project-wist .btn:hover {
   background-color: white !important;
@@ -9476,6 +9511,63 @@ body {
   transition: transform 0.5s;
 }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.8571428571%;
+}
+
+.embed-responsive-9by21::before {
+  padding-top: 233.3333333333%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-9by16::before {
+  padding-top: 177.7777777778%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-3by4::before {
+  padding-top: 133.3333333333%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
 @media (min-width: 992px) {
   .project-card.left-hand > .row {
     flex-direction: row-reverse !important;
@@ -9551,6 +9643,7 @@ body {
   content: " ";
   height: 4px;
   width: calc(100% - 30px);
+  left: 15px;
   border-radius: 2px;
   top: -32px;
   position: relative;
@@ -9669,7 +9762,7 @@ video,
 }
 
 .p-sec.p-sec-header {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .p-sec > .img-fluid {
   margin-left: -15px;
@@ -9864,6 +9957,23 @@ model-viewer {
 .negative-margin {
   margin-left: -15px;
   margin-right: -15px;
+}
+
+@keyframes blinker {
+  0%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blinker 0.2s linear infinite;
+  color: red;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

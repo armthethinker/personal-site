@@ -2,6 +2,7 @@ $break-sm: 576px
 $break-md: 768px
 $break-lg: 992px
 $break-xl: 1200px
+// $break-xxl: 1400px // FIXME: Work this in
 
 $perspective: 1300px
 
@@ -32,6 +33,19 @@ h6
 
 h1
    color: #f94c43
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+   position: relative // TODO: Was removed from new Boostrap
+   text-wrap-style: pretty
+body
+   .lead
+      text-wrap-style: pretty
+
+.text-wrap-pretty
+   text-wrap-style: pretty !important
+.text-wrap-balance
+   text-wrap-style: balance !important
+
 a
    color: #f94c43
    // color: #f7f7ff
@@ -288,6 +302,13 @@ body
       .btn-view-project
          transform: translateZ(32px)
 
+
+// .btn.btn-view-project
+//    border-radius: 50px
+//    border-width: 0
+//    padding: 0.7rem 1.2rem
+
+
 $palette-samsung: #0c4da2
 $palette-samsung-secondary: #000
 
@@ -336,6 +357,9 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
          border-color: $color-primary
          box-shadow: 0 8px 16px rgba($color-primary, $box-shadow-intensity) !important
          transition: background-color .2s, box-shadow .2s, transform .5s
+         border-radius: 50px
+         border-width: 0
+         padding: 0.7rem 1.2rem
          &:hover
             background-color: lighten($color-primary, 30%) !important
             box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
@@ -393,7 +417,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
 @include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
 @include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
 @include project-specific-style(".project-whatif",    $palette-whatif,    32%, 20%, $palette-whatif-secondary,   30%,     0%)
-@include project-specific-style(".project-wist",      $palette-wist,      15%, 20%, $palette-wist-secondary,     80%,   100%)
+@include project-specific-style(".project-wist",      $palette-wist,      20%, 30%, $palette-wist-secondary,     80%,   100%)
 
 .btn.btn-timeline
    box-sizing: border-box
@@ -418,6 +442,46 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
    i
       transition: transform .5s
 
+
+
+
+$embed-responsive-aspect-ratios: (21 9), (16 9), (4 3), (1 1) !default
+
+.embed-responsive
+   position: relative
+   display: block
+   width: 100%
+   padding: 0
+   overflow: hidden
+
+   &::before
+      display: block
+      content: ""
+
+   .embed-responsive-item,
+   iframe,
+   embed,
+   object,
+   video
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border: 0
+
+
+@each $ratio in $embed-responsive-aspect-ratios
+   $x: nth($ratio, 1)
+   $y: nth($ratio, 2)
+
+   .embed-responsive-#{$x}by#{$y}
+      &::before
+         padding-top: percentage($y / $x)
+   .embed-responsive-#{$y}by#{$x}
+      &::before
+         padding-top: percentage($x / $y)
 
 @media (min-width: $break-lg)
    .project-card.left-hand
@@ -470,7 +534,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
       content: ' '
       height: 4px
       width: calc(100% - 30px)
-      // margin-left: -15px
+      left: 15px
       border-radius: 2px
       top: -32px
       position: relative
@@ -566,7 +630,7 @@ video,
 //    margin-left: -15px
 .p-sec
    &.p-sec-header
-      margin-top: 40px
+      margin-top: 80px
    > .img-fluid
       margin-left: -15px
       max-width: calc(100% + 30px)
@@ -796,3 +860,18 @@ model-viewer
 .negative-margin
    margin-left: -15px
    margin-right: -15px
+
+@keyframes blinker 
+   0%,
+   100%
+      opacity: 1
+   25%,
+   75%
+      opacity: 0.2
+   50%
+      opacity: 0
+
+.blink 
+  animation: blinker 0.2s linear infinite
+  color: red
+  font-weight: bold
