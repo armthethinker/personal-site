@@ -1,7 +1,7 @@
-- name: Bio
-  link: /
-- name: Projects
-  link: /#selected-projects
+- name: How
+  link: /#how
+- name: Work
+  link: /#work
 - name: CV
   link: /assets/CV-Andrew-R-McHugh.pdf
   newPage: true

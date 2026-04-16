@@ -12,6 +12,7 @@
   caption: Rerun visualization of various input data streams (raw data, different ML depth estimates, different pose solves).
   video: true
   aspect: 16by9
+  size: lg
 - imgurl: temp/rerun/rerun-ba-solve-trimmed-sm.mp4
   caption: Rerun visualization of our bundle adjustment solve, an unfinished component I was developing at the end.
   video: true
@@ -24,3 +25,4 @@
   caption: Prototyping near field user-to-user interactions to help people feel even closer.
   video: true
   aspect: 16by9
+  size: lg

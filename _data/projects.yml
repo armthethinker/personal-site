@@ -10,7 +10,8 @@
   dateYears: 2021-2026
   # whileAt: Samsung Research America, Mobile Platform Solutions Lab
   # withWho: My coworkers in XR Design Group (XRDG)
-  imgHero:   /assets/img/wist/couch2-low-poster.jpg
+  # imgHero:   /assets/img/wist/couch2-low-poster.jpg
+  videoHero: /assets/img/wist/relive-with-me-low-trimmed.mp4
   imgThumb1: /assets/img/wist/small-knees-low-poster.jpg
   imgThumb1Position:
   imgThumb2: /assets/img/wist/relive-with-me-low-poster.jpg
@@ -20,8 +21,6 @@
   left: false
   url: wist.html
   bgImg:     /assets/img/wist/couch2-low-poster.jpg
-  videoJumbotronHero:
-  # imgJumbotronHero: /assets/img/wist/relive-with-me-low-trimmed.mp4
   imgJumbotronHero: /assets/img/wist/couch2-low-poster.jpg
   light: true
 - title: Samsung Research America
@@ -38,7 +37,8 @@
   imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   imgThumb1: /assets/img/samsung/baby.gif
   imgThumb1Position:
-  imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  # imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  imgThumb2: /assets/patents/US20220005215A1-1.jpg
   imgThumb2Position:
   imgThumb3: /assets/img/samsung/two-screens-one-camera.gif
   imgThumb3Position:
@@ -94,6 +94,7 @@
   videoJumbotronHero:
   imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
   light: true
+  skip: true
 - title: Moral Decisions & Haptics in VR
   pID: 5
   short: morals
@@ -117,6 +118,7 @@
   bgImg: /assets/img/morals/cover-virtual-trolley-sm.jpg
   videoJumbotronHero:
   imgJumbotronHero: /assets/img/morals/push-the-worker.gif
+  skip: true
 - title: What If…? Conference & Book
   pID: 6
   short: whatif
@@ -141,3 +143,4 @@
   videoJumbotronHero:
   imgJumbotronHero: /assets/img/whatif/whatifoverview.gif
   light: true
+  skip: true
