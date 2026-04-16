@@ -37,46 +37,25 @@ title: Home
       </div>
    </div>
 </div> -->
-<div class="row justify-content-center py-5 text-center">
+<div class="container">
+<div class="row justify-content-center andrew-header-height align-items-center">
 <!-- <div class="row justify-content-center py-5 text-center" style="background-image: url(assets/img/wist/temp/vivaldi/living-room.jpg); object-fit: cover; background-size: cover; background-position: 60% 75%;"> -->
-   <div class="col-8">
+   <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
       <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
-      <h1>Andrew R McHugh</h1>
-      <h2 class="text-wrap-balance">turns R&D ambiguity into meaningful products</h2>
-      <p>Strategy • Design • Engineering</p>
+      <!-- <h1>Andrew R McHugh</h1> -->
+      <!-- <h2 class="text-wrap-balance">turns R&D ambiguity into meaningful products</h2> -->
+      <h1 class="text-wrap-balance">Andrew R McHugh <br><span class="text-secondary">turns R&D ambiguity into meaningful products.</span></h1>
+      <p class="text-secondary fw-medium">Strategy • Design • Engineering</p>
    </div>
 </div>
-<!-- Button -->
-<div class="row timeline justify-content-center">
-   <div class="col">
-      <div class="row timeline-entry">
-         <div class="col text-center">
-            <button class="btn btn-outline-primary btn-timeline d-inline" type="button" data-toggle="collapse" data-target=".collapse-timeline" aria-expanded="false" aria-controls="collapse-timeline">
-               <span class="d-inline mr-3">🐵</span><span class="d-inline">See the rest of my timeline</span>
-               <span class="d-none mr-3">🙈</span><span class="d-none">Hide my timeline</span>
-               <i class="ml-3 fas fa-chevron-up fa-rotate-180"></i>
-            </button>
-         </div>
-      </div>
-   </div>
 </div>
-<!-- Extended timeline -->
-<div class="row justify-content-center timeline timeline-transition collapse collapse-timeline">
-   <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
-      {% for item in site.data.timeline %}
-         {% include
-            timeline-entry.html
-            date=item.date
-            emoji=item.emoji
-            description1=item.description1
-            description2=item.description2
-         %}
-      {% endfor %}
-   </div>
-</div>
+
 <!-- Projects -->
-<div class="container-fluid p-0" id="selected-projects">
+<div class="container-fluid p-0" id="work">
    {% for item in site.data.projects %}
+      {% if item.skip == true %}
+         {% continue %}
+      {% endif %}
       {% include
          project-hero.html
          title                = item.title
@@ -92,6 +71,7 @@ title: Home
          whileAt              = item.whileAt
          withWho              = item.withWho
          imgHero              = item.imgHero
+         videoHero            = item.videoHero
          imgThumb1            = item.imgThumb1
          imgThumb1Position    = item.imgThumb1Position
          imgThumb2            = item.imgThumb2
@@ -106,31 +86,49 @@ title: Home
    {% endfor %}
 </div>
 
-<div class="container-fluid">
-<div class="row justify-content-center pt-4">
-   <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-      <h1 class="text-center mt-3 pt-3">Who I am</h1>
-      <p class="lead text-center text-wrap-balance">I help teams turn R&D ambiguity and complexity into meaningful products.</p>
-      <p class="text-center small">Invent • Build • Design • Lead teams • Tell the story</p>
-      <h2 class="">How I work / how I'm different</h2>
-      <div class="row">
-         {% for item in site.data.how-work %}
-            <div class="col-12 col-md-6">
-               <div class="d-flex">
-                  <div class="ps-1 pe-3">
-                     <p class="text-center">{{ item.emoji }}</p>
-                  </div>
-                  <div class="flex-grow-1">
-                     <p><strong>{{ item.topic }}</strong> {{ item.description }}</p>
+<div class="container-fluid" id="how">
+   <div class="row justify-content-center py-4">
+      <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+         <!-- <h1 class="mt-3 pt-3">Who I am</h1> -->
+         <!-- <p class="lead text-wrap-balance">I help teams turn R&D ambiguity and complexity into meaningful products.</p> -->
+         <p class="small text-center fw-medium my-4">Invent • Build • Design <span class="d-none d-sm-inline">•</span><br class="d-sm-none"> Lead Teams • Tell the Story</span></p>
+
+         <h3 class="mb-3">How I work / how I'm different</h3>
+         <div class="row">
+            {% for item in site.data.how-work %}
+               <div class="col-12 col-md-6">
+                  <div class="d-flex">
+                     <div class="ps-1 pe-3">
+                        <p class="text-center">{{ item.emoji }}</p>
+                     </div>
+                     <div class="flex-grow-1">
+                        <p><strong>{{ item.topic }}</strong> {{ item.description }}</p>
+                     </div>
                   </div>
                </div>
-            </div>
-                  {% endfor %}
-                  <!-- <p>{{ item.emoji }}<br><strong>{{ item.topic }}</strong> {{ item.description }}</p> -->
+                     {% endfor %}
+                     <!-- <p>{{ item.emoji }}<br><strong>{{ item.topic }}</strong> {{ item.description }}</p> -->
+         </div>
+         <h3 class="mt-3">Tools</h3>
+         <p>Whatever can answer the biggest unknowns or can get us to the next phase.</p>
+         {% include skills.html %}
       </div>
-      <h2>Tools</h2>
-      <p>Whatever can answer the biggest unknowns or can get us to the next phase.</p>
-      {% include skills.html %}
    </div>
 </div>
-</div>
+
+
+         <div class="row timeline d-none">
+            <div class="col">
+               {% for item in site.data.timeline %}
+                  {% include
+                     timeline-entry.html
+                     date=item.date
+                     emoji=item.emoji
+                     description1=item.description1
+                     description2=item.description2
+                     short=item.short
+                     short2=item.short2
+                  %}
+               {% endfor %}
+            </div>
+         </div>

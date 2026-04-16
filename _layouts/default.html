@@ -9,16 +9,18 @@
 
 <body class="page-main">
    <div class="container-fluid p-0">
-      {% include util-responsive-size.html %}
+      <!-- {% include util-responsive-size.html %} -->
       <!-- {% include all-page-alert.html %} -->
       {% include navigation.html %}
       {{ content }}
    </div>
-   <div class="row justify-content-center">
-      <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+
+   <div class="row justify-content-center bg-footer">
+      <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
          {% include footer.html %}
       </div>
    </div>
+
    {% include common-js.html %}
 </body>
 </html>

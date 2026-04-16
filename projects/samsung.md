@@ -169,3 +169,6 @@ I guide the team to produce high quality work from the design side. This means c
 For other examples of my spatial computing work, you can look at [Humane Virtuality](/projects/humane-virtuality.html) and [Moral Decisions & Haptics in VR](/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html) as well as my sporadic [YouTube uploads](https://www.youtube.com/user/arm156291/videos).
 "
 %}
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
