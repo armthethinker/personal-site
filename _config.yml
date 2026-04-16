@@ -46,5 +46,5 @@ exclude:
   - Gruntfile.js
   - README.md
   - tsconfig.json
-
+  - assets/img/
 
