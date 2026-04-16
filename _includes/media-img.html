@@ -36,7 +36,7 @@
 
                   {% if video %}
                      <div class="embed-responsive embed-responsive-{{include.aspect}}">
-                        <video class="embed-responsive-item" autoplay loop muted>
+                        <video class="embed-responsive-item" autoplay loop muted playsinline>
                            <source src="{{include.url | prepend: urlPrepend}}" type="video/mp4">
                            Your browser does not support the video tag.
                         </video>

@@ -1,12 +1,14 @@
 <!-- Nav -->
-<div class="row nav-core justify-content-center align-content-center">
-   <div class="col">
-      <ul class="nav justify-content-center nav-fill">
-         {% for item in site.data.navigation %}
-         <li class="nav-item">
-            <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}" {% if item.newPage == true %}target="_blank"{% endif %}>{{ item.name }}</a>
-         </li>
-         {% endfor %}
-      </ul>
+<div class="container">
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
+         <ul class="nav justify-content-between">
+            {% for item in site.data.navigation %}
+            <li class="nav-item-w flex-fill text-center">
+               <a class="nav-link px-0 flex-fill fw-medium {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}" {% if item.newPage == true %}target="_blank"{% endif %}>{{ item.name }}</a>
+            </li>
+            {% endfor %}
+         </ul>
+      </div>
    </div>
 </div>
