@@ -1,9 +1,9 @@
 - imgurl: details-expandable-menu.jpg
   caption: Skim captures or expand the browsable area for faster browsing.
   # size: lg
-- imgurl: temp/feature-walkthrough-photos/quest/grab3.JPG
+- imgurl: temp/feature-walkthrough-photos/quest/grab3.jpg
   caption: Height is automatically estimated from capture-time floor detection. It may also be manually corrected.
-- imgurl: temp/feature-walkthrough-photos/quest/portal1.JPG
+- imgurl: temp/feature-walkthrough-photos/quest/portal1.jpg
   caption: Portal view option still reprojects the scene, but smoothly repositions the scene to the portal. This also allowed us to ship 2D->3D earlier, before we had camera estimation.
 - imgurl: details-menu-platform.jpg
   caption: Building on different platforms allowed for UI experimentation.
