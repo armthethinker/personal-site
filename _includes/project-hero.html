@@ -2,11 +2,11 @@
 <div class='project-hero project-{{include.short}}'>
     <div class="container">
         <div class='row justify-content-center'>
-            <div class='col-11 col-sm-10 col-lg-8 col-xl-7'>
+            <div class='col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7'>
                 <div class='project-description'>
-                    <h2>{{include.title}} {{include.emoji}}</h2>
-                    <h3>{{include.subtitle}}</h3>
-                    <p><small>{{include.dateYears}} • {{include.role}}</small></p>
+                    <h2 class="text-wrap-pretty mb-0">{{include.title}} {{include.emoji}}</h2>
+                    <h3 class="text-wrap-balance mb-1">{{include.subtitle}}</h3>
+                    <p class="fw-medium mb-3"><small>{{include.dateYears}} • {{include.role}}</small></p>
                     <p>{{include.description}}</p>
                 </div>
                 <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}}' href='/projects/{{include.url}}'>Learn more →</a>

@@ -1,16 +1,48 @@
 <div class="project-hero-mediawall pt-4">
-    <div class='row justify-content-center'>
-        <div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
-            <img class="img-fluid" src='{{include.imgHero}}'>
-        </div>
-        <div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
-            <img class="img-fluid" src='{{include.imgThumb1}}'>
-        </div>
-        <div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
-            <img class="img-fluid" src='{{include.imgThumb2}}'>
-        </div>
-        <div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
-            <img class="img-fluid" src='{{include.imgThumb3}}'>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10">
+                <div class='row justify-content-center'>
+                    <div class='col-12 mb-4 d-flex'>
+                        {% if include.imgHero %}
+                        <img class="img-fluid" src='{{include.imgHero}}'>
+                        {% elsif include.videoHero %}
+                        <div class="embed-responsive embed-responsive-4by3 ">
+                        <video class="embed-responsive-item object-fit-cover"
+                            playsinline
+                            loop
+                            autoplay
+                            muted
+                            >
+                                <source src="{{include.videoHero}}" type="video/mp4">
+                            </video>
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class='col-4 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+                        <img class="img-fluid" src='{{include.imgThumb1}}'>
+                    </div>
+                    <div class='col-4 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+                        <img class="img-fluid" src='{{include.imgThumb2}}'>
+                    </div>
+                    <div class='col-4 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+                        <img class="img-fluid" src='{{include.imgThumb3}}'>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<!-- <div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+    <img class="img-fluid" src='{{include.imgHero}}'>
+</div>
+<div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+    <img class="img-fluid" src='{{include.imgThumb1}}'>
+</div>
+<div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+    <img class="img-fluid" src='{{include.imgThumb2}}'>
+</div>
+<div class='col-6 col-lg-3 mb-4 mb-lg-0 justify-content-center d-flex'>
+    <img class="img-fluid" src='{{include.imgThumb3}}'>
+</div> -->
