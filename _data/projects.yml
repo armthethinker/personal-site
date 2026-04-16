@@ -10,18 +10,18 @@
   dateYears: 2021-2026
   # whileAt: Samsung Research America, Mobile Platform Solutions Lab
   # withWho: My coworkers in XR Design Group (XRDG)
-  # imgHero:   /assets/img/wist/couch2-low-poster.jpg
-  videoHero: /assets/img/wist/relive-with-me-low-trimmed.mp4
-  imgThumb1: /assets/img/wist/small-knees-low-poster.jpg
+  # imgHero:   /assets/imgopt/wist/couch2-low-poster.jpg
+  videoHero: /assets/imgopt/wist/relive-with-me-low-trimmed.mp4
+  imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
   imgThumb1Position:
-  imgThumb2: /assets/img/wist/relive-with-me-low-poster.jpg
+  imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
   imgThumb2Position:
-  imgThumb3: /assets/img/wist/bento-sm/lock-screen4.jpg
+  imgThumb3: /assets/imgopt/wist/bento-sm/lock-screen4.jpg
   imgThumb3Position:
   left: false
   url: wist.html
-  bgImg:     /assets/img/wist/couch2-low-poster.jpg
-  imgJumbotronHero: /assets/img/wist/couch2-low-poster.jpg
+  bgImg:     /assets/imgopt/wist/couch2-low-poster.jpg
+  imgJumbotronHero: /assets/imgopt/wist/couch2-low-poster.jpg
   light: true
 - title: Samsung Research America
   pID: 2
@@ -34,19 +34,19 @@
   dateYears: 2017-2021
   whileAt: Samsung Research America, Mobile Platform Solutions Lab
   withWho: My coworkers in XR Design Group (XRDG)
-  imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
-  imgThumb1: /assets/img/samsung/baby.gif
+  imgHero:   /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgThumb1: /assets/imgopt/samsung/baby.gif
   imgThumb1Position:
-  # imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  # imgThumb2: /assets/imgopt/samsung/displacement-torus.2019-07-20 22_34_21.gif
   imgThumb2: /assets/patents/US20220005215A1-1.jpg
   imgThumb2Position:
-  imgThumb3: /assets/img/samsung/two-screens-one-camera.gif
+  imgThumb3: /assets/imgopt/samsung/two-screens-one-camera.gif
   imgThumb3Position:
   left: true
   url: samsung.html
-  bgImg:     /assets/img/samsung/orb-1.jpg
+  bgImg:     /assets/imgopt/samsung/orb-1.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgJumbotronHero: /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   light: true
 - title: Echo
   pID: 3
@@ -59,17 +59,17 @@
   dateYears: 2016
   whileAt: M-ITI / Carnegie Mellon University
   withWho: Jae-Won Kim, Andrew Novotny, Joel Rodrigues
-  imgHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
-  imgThumb1: /assets/img/echo/16-05-14-elementary-6.jpg
+  imgHero: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
+  imgThumb1: /assets/imgopt/echo/16-05-14-elementary-6.jpg
   imgThumb1Position: 10% 0%
-  imgThumb2: /assets/img/echo/16-09-22-elementary-16.jpg
+  imgThumb2: /assets/imgopt/echo/16-09-22-elementary-16.jpg
   imgThumb2Position: 45% 100%
-  imgThumb3: /assets/img/echo/16-02-24-exploration-25-1.jpg
+  imgThumb3: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
   imgThumb3Position: 50% 0
   left: false
   url: elementary.html
-  imgJumbotronHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
-  bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
+  imgJumbotronHero: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
+  bgImg: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
 - title: Humane Virtuality
   pID: 4
   short: hv
@@ -81,20 +81,20 @@
   dateYears: 2016
   whileAt: Over the summer during my master’s degree at CMU/M-ITI
   withWho: Myself
-  imgHero: /assets/img/hv/00-demo-1.gif
-  imgThumb1: /assets/img/hv/ex11-animate-medium.gif
+  imgHero: /assets/imgopt/hv/00-demo-1.gif
+  imgThumb1: /assets/imgopt/hv/ex11-animate-medium.gif
   imgThumb1Position: 50% 50%
-  imgThumb2: /assets/img/hv/ex7-1.gif
+  imgThumb2: /assets/imgopt/hv/ex7-1.gif
   imgThumb2Position: 50% 50%
-  imgThumb3: /assets/img/hv/hero-10.gif
+  imgThumb3: /assets/imgopt/hv/hero-10.gif
   imgThumb3Position: 50% 50%
   left: true
   url: humane-virtuality.html
-  bgImg: /assets/img/hv/IMG_9699.JPG
+  bgImg: /assets/imgopt/hv/IMG_9699.JPG
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
+  imgJumbotronHero: /assets/imgopt/hv/ex6-sidebyside-direct-inverse.gif
   light: true
-  skip: true
+  # skip: true
 - title: Moral Decisions & Haptics in VR
   pID: 5
   short: morals
@@ -106,19 +106,19 @@
   dateYears: 2015
   whileAt: Carnegie Mellon University
   withWho: Ivan Wang, Maddie Duque, Swetha Kannan
-  imgHero: /assets/img/morals/push-the-worker.gif
-  imgThumb1: /assets/img/morals/2.jpg
+  imgHero: /assets/imgopt/morals/push-the-worker.gif
+  imgThumb1: /assets/imgopt/morals/2.jpg
   imgThumb1Position: 20% 50%
-  imgThumb2: /assets/img/morals/4.jpg
+  imgThumb2: /assets/imgopt/morals/4.jpg
   imgThumb2Position: 30% 50%
-  imgThumb3: /assets/img/morals/screen-shot-2016-01-14-at-2.34.39-pm.png
+  imgThumb3: /assets/imgopt/morals/screen-shot-2016-01-14-at-2.34.39-pm.jpg
   imgThumb3Position: 50% 50%
   left: false
   url: moral-decision-making-haptic-feedback-in-virtual-environments.html
-  bgImg: /assets/img/morals/cover-virtual-trolley-sm.jpg
+  bgImg: /assets/imgopt/morals/cover-virtual-trolley-sm.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/morals/push-the-worker.gif
-  skip: true
+  imgJumbotronHero: /assets/imgopt/morals/push-the-worker.gif
+  # skip: true
 - title: What If…? Conference & Book
   pID: 6
   short: whatif
@@ -130,17 +130,17 @@
   dateYears: 2010-2014
   whileAt: Our startup, What If...? LLC
   withWho: Cofounder Matt Murrie and many others along the way
-  imgHero: /assets/img/whatif/whatifoverview.gif
-  imgThumb1: /assets/img/whatif/image264.jpg
+  imgHero: /assets/imgopt/whatif/whatifoverview.gif
+  imgThumb1: /assets/imgopt/whatif/image264.jpg
   imgThumb1Position: 50% 50%
-  imgThumb2: /assets/img/whatif/image139.jpg
+  imgThumb2: /assets/imgopt/whatif/image139.jpg
   imgThumb2Position: 50% 50%
-  imgThumb3: /assets/img/whatif/image333.jpg
+  imgThumb3: /assets/imgopt/whatif/image333.jpg
   imgThumb3Position: 50% 50%
   left: true
   url: what-if-conference-book.html
-  bgImg: /assets/img/whatif/image387.jpg
+  bgImg: /assets/imgopt/whatif/image387.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/whatif/whatifoverview.gif
+  imgJumbotronHero: /assets/imgopt/whatif/whatifoverview.gif
   light: true
-  skip: true
+  # skip: true

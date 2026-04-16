@@ -12,5 +12,5 @@
 <!-- <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
 
 <!-- <script src="/assets/js/interactions-220315.js"></script> -->
-<!-- FIXME: Replace with a hashed name -->
-<script src="/assets/js/main.min.js"></script>
+{% assign js_path = site.data.manifest['main.min.js'] | default: '/assets/js/main.min.js' %}
+<script src="{{ js_path }}"></script>

@@ -3,8 +3,8 @@ layout: project-page
 pID: 1
 title: Wist
 description: Immersive memories
-image: /assets/img/wist/couch2-low-poster.jpg
-assetURL: /assets/img/wist/
+image: /assets/imgopt/wist/couch2-low-poster.jpg
+assetURL: /assets/imgopt/wist/
 modelURL: /assets/models/wist/
 
 ---
@@ -88,7 +88,7 @@ I led or refined >80% of the code across our codebases.
 **Traction**
 - 17,000+ waitlist sign ups
 - 8,000+ memories captured
-- WoW traction TK
+<!-- - WoW traction TK -->
 
 **Covered in media**<br>Interviews in [Vice/Motherboard](https://www.vice.com/en/article/wist-app-relive-memories-vr/), [This Week in Startups](https://www.youtube.com/watch?v=TZlK7Ee84sI&t=1540s), [The Pitch](https://www.thepitch.show/122-wist-the-killer-use-case-for-vr), [Freethink](https://www.freethink.com/ar-vr/vr-app), [Upload VR](https://www.uploadvr.com/wist-delivers-minority-report-memory-replay/), and [XR AI Spotlight](https://www.xraispotlight.com/how-to-capture-and-relive-memories-in-3d-without-a-vision-pro/).
 "
@@ -108,7 +108,7 @@ Worked with Andrew McGee (director) to create a version of Wist that could be us
    header="Product"
    subheader="It has to be easy and just work"
    content="
-> Wist was an end-to-end spatial media platform for parents with young kids.<br><br>Take a video. Step inside. Enhance forever.
+> Wist was an end-to-end spatial media platform for parents with young kids.
 
 "
 %}
@@ -185,7 +185,7 @@ into an internal format that could capture, encode, and play at 30+fps.
 {% include media-img.html
    url="temp/importScanLayers.gif"
    caption="Generating different channels of data (depth, flow, segmentation) allowed us to better rectify the final sequence."
-   url2="temp/wall-temp/Screenshot 2024-06-26 163446.png"
+   url2="temp/visualization-merge.jpg"
    caption2="Visualization was critical to ensure our prototyping was improving the solve."
    style="lg"
 %}

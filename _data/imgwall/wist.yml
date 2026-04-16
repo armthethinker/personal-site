@@ -1,4 +1,4 @@
-- imgurl: temp/frame_encoding.jpeg
+- imgurl: temp/frame_encoding.jpg
   caption: We experimented with many frame encodings, including this where we pack many "channels" of data into a single frame. This helps preserve data through compression and speed up playback compute time.
 - imgurl: temp/social-movement.mp4
   caption: Early movement system focused on direct, contextual "grabbing".

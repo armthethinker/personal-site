@@ -3,8 +3,8 @@ layout: project-page
 pID: 3
 title: Echo
 description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
-image: /assets/img/echo/16-02-24-exploration-25-1.jpg
-assetURL: /assets/img/echo/
+image: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
+assetURL: /assets/imgopt/echo/
 ---
 
 {% include blockquote.html
@@ -36,7 +36,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
 " %}
 
 {% include media-img.html
-   url="personal-transactions.png"
+   url="personal-transactions.jpg"
    caption="A screenshot of my own opaque banking app from Bank of America. My other and primary bank, Simple, does a better job, but still isn't entirely transparent."
    style="md"
    captionSide=false
@@ -61,7 +61,7 @@ Instead of helping their users, banks (often) only provide a list of transaction
 
 
 {% include media-img-xl.html
-   url="echo-sections.png"
+   url="echo-sections.jpg"
    caption="Our work was split over two four month periods: one of research; one of designs, prototypes, and user testing."
 %}
 
@@ -108,33 +108,33 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
 %}
 
 {% include media-img.html
-   url="1-transactions.png"
+   url="1-transactions.jpg"
    caption="When a user opens the application, they're greeted with their historical and upcoming transactions, as well as their balance, expected spending, and critical insights."
-   url2="port-1.3-additional-3.png"
+   url2="port-1.3-additional-3.jpg"
    caption2="**Additional insights** Each transaction detail screen has insights about how often the transaction happens and what to expect when it does happen. Here, a grocery transaction at Pingo Doce is shown."
    style="lg"
 %}
 
 {% include media-img.html
-   url="port-transactions-summary-1.png"
+   url="port-transactions-summary-1.jpg"
    caption="**Understand now** A clear and prominent representation of the user's available balance. The user can also see their expected spending for the month. This acts as a budgeting system, but the user doesn't have to input anything. The budget is built automatically from their actions."
    captionSide=true
 %}
 {% include media-img.html
-   url="port-insight-cards-1.png"
+   url="port-insight-cards-1.jpg"
    caption="**Critical insights** These flickable cards display a single piece of information for the user (e.g. goal progress, spending habits, bank notifications)."
    captionSide=true
 %}
 {% include media-img.html
-   url="port-upcoming-1.png"
+   url="port-upcoming-1.jpg"
    caption="**Upcoming transactions** To prepare for the next seven days, Echo displays a collapsable list of upcoming transactions based on the user's history."
    captionSide=true
 %}
 
 {% include media-img.html
-   url="port-transactions-1.png"
+   url="port-transactions-1.jpg"
    caption="**Automatic categorization** To understand spending, users need to know their transactions at multiple levels of representation (i.e. categories)."
-   url2="port-4-categories.png"
+   url2="port-4-categories.jpg"
    caption2="It's also helpful to know the relation of one month to the previous and upcoming months, including months in the future (utilizing machine learning algorithms)."
    style="lg"
 %}
@@ -158,20 +158,20 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
 %}
 
 {% include media-img.html
-   url="2-goals.png"
+   url="2-goals.jpg"
    caption=""
    style="lg"
    captionSide=false
-   url2="2.1-add-goal.png"
+   url2="2.1-add-goal.jpg"
    caption2="**Types of goals** We offer many structured options, but also include a create your own option for other kinds of goals."
 %}
 
 {% include media-img.html
    style="lg"
    captionSide=false
-   url="port-2.1.3-minimally-struc.png"
+   url="port-2.1.3-minimally-struc.jpg"
    caption="**Minimally structured questions** Each goal utilizes minimal input to provide deeper context to the goal (in contrast to existing goal systems such as Simple). Default values are based on the user's actions, other users like them, and market data."
-   url2="port-2.1.1-context.png"
+   url2="port-2.1.1-context.jpg"
    caption2=""
 %}
 
@@ -194,7 +194,7 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
 {% include media-img.html
    url="simulator-page.gif"
    caption="To explore questions, users swipe through categories. Improved from testing, this design matches users' mental models."
-   url2="3.1-pay-back-loans-fully-extended.png"
+   url2="3.1-pay-back-loans-fully-extended.jpg"
    caption2="**Long term planning** Each simulator question opens a page where the user can play with inputs to that question, automatically updating the visualization and answer at the top of the page. Between the text response and the visual, users begin to understand how their answers to the input questions change their overall outcome."
    style="lg"
 %}
@@ -206,7 +206,7 @@ Some simulators can be found on the web and others can only be accessed when sit
 %}
 
 {% include media-img.html
-   url="port-3.3-data-driven-1.png"
+   url="port-3.3-data-driven-1.jpg"
    caption="**Data-driven expectations** Like the goals section, each input question informs the user of how other users like them have acted."
    captionSide=true
 %}
@@ -218,7 +218,7 @@ Some simulators can be found on the web and others can only be accessed when sit
 %}
 
 {% include media-img-xl.html
-   url="monetaryecosystem-sm.png"
+   url="monetaryecosystem-sm.jpg"
    caption="Early on in our research phase, we created a context ecosystem to remind us of the connections between people and concepts. The key to staying focused with a broad project is structure."
 %}
 
@@ -246,7 +246,7 @@ To interpret our data, we created models including a flow model, sequence diagra
    caption="Our consolidated flow model, showing the connections between the user and their monetary environment. "
    style="md"
    captionSide=false
-   url2="27-this-is-my-mother-someone-that-i-love-and-i-will-love-until-the-end-of-my-life..jpg"
+   url2="27-this-is-my-mother-someone-that-i-love-and-i-will-love-until-the-end-of-my-life.jpg"
    caption2="A user's response to a photo diary question. \"This is my mother, someone that I love and I will love until the end of my life.\""
 %}
 
@@ -386,10 +386,10 @@ Each of our sprints set out to explore one piece of our vision.
 %}
 
 {% include media-img.html
-   url="category-summary.png"
+   url="category-summary.jpg"
    caption="**Microsprints.** We spent a couple days iterating over specific sections of the app (e.g. onboarding, adding notes to transactions, creating a coherent information architecture, category structure). Here: Joel's early work on categories."
    style="lg"
-   url2="screen-shot-2017-01-08-at-8.45.33-am.png"
+   url2="screen-shot-2017-01-08-at-8.45.33-am.jpg"
    caption2="One of my information architecture explorations during a microsprint."
 %}
 
@@ -409,6 +409,6 @@ Each of our sprints set out to explore one piece of our vision.
 {% include p-section.html
    header="Colophon"
    subheader="This material was adapted from work my counterparts and I completed for Exictos and the Madeira Interactive Technologies Institute."
-   url="mhci-logos-template-from-monica.png"
+   url="mhci-logos-template-from-monica.jpg"
    caption="The following organizations supported our work financially or otherwise. Thanks to them, we were able to research consumer banking and build Echo."
 %}

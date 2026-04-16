@@ -3,8 +3,8 @@ layout: project-page
 pID: 6
 title: What If…? Conference & Book
 description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
-image: /assets/img/whatif/image387.jpg
-assetURL: /assets/img/whatif/
+image: /assets/imgopt/whatif/image387.jpg
+assetURL: /assets/imgopt/whatif/
 ---
 
 {% include p-section.html
