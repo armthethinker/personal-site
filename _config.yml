@@ -40,3 +40,11 @@ exclude:
   - package.json
   - package-lock.json
   - .sass-cache/
+  - scripts/
+  - tsconfig.json
+  - bower.json
+  - Gruntfile.js
+  - README.md
+  - tsconfig.json
+
+
