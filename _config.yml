@@ -22,6 +22,7 @@ url: "http://andrewrmchugh.rocks" # the base hostname & protocol for your site, 
 twitter_username: armthethinker
 github_username:  armthethinker
 author: Andrew R McHugh
+url_book: https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/
 
 # Build settings
 markdown: kramdown
