@@ -47,23 +47,25 @@ Wist's unique perspective and challenges were
    header="What I built & led"
    subheader="Forest & the trees"
    content="
-**My roles: Founder + CEO, Designer, Engineer.**
 
 I led the company from research prototypes through product development, fundraising, and ultimately through shutdown. 
 
 We grew to four at our height, a cross-functional team. I operated across design, engineering, product, and R&D, building the core tech while defining product direction.
 
-**Key responsibilities** 
-
+As a **founder+CEO**
 - Defined product vision, roadmap
 - Raised ~$1M from VCs and angels (lead: [Long Journey Ventures](https://www.longjourney.vc))
 - Hired and led a small, highly technical team
-- Led and built design, eng, product, and R&D across mobile, headsets, and backend systems
-- Designed core UX + interaction models
-<!-- - Built product across all surfaces (capture, playback, apps, processing backend, cloud backend) -->
 - User research and metrics
 
-I led or refined >80% of the code across our codebases.
+As a **designer+engineer**
+- Led ML model and rectification methods implementation and orchestration 
+- Crafted new paradigms for interacting with spatial media in headsets and on mobile
+- Led and built depth video sequence optimization, video encoding, shader development, user data backend, performance optimization, and interaction systems - across mobile, headsets, and multiple backends
+
+<!-- > This kind of product requires someone who can jump between roles, understanding the complex system of constraints. -->
+
+> Jump into _any_ problem and either solve it or find new contraints.
 
 "
 %}
@@ -113,7 +115,7 @@ Worked with Andrew McGee (director) to create a version of Wist that could be us
 "
 %}
 
-{% include media-img-xl.html
+{% include media-img.html
    url="temp/ux-flow.jpg"
    caption="**Wist flow.** Capture or import. Process on device and enhance in the cloud. Relive in headset or on mobile."
 %}

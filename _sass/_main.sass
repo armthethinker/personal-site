@@ -16,6 +16,15 @@ $palette-pageBg-dark: darken($palette-pageBg, 2.5%)
 
 $border-radius: 16px
 
+@function perceptual-color($color, $l: null, $a: null)
+   $adjusted: $color
+   @if $l 
+      $adjusted: color.change($adjusted, $lightness: $l, $space: oklch)
+   @if $a 
+      $adjusted: color.change($adjusted, $alpha: $a)
+   @return color.to-gamut(color.to-space($adjusted, srgb), $method: local-minde)
+
+
 //                   https://coolors.co/161618-484349-ddd6f3-faaca8-f7f7ff
 // extra saturation: https://coolors.co/161618-484349-4c1af2-f94c43-f7f7ff
 html
@@ -339,6 +348,7 @@ $palette-whatif-secondary: rgb(72, 63, 187)
 $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palette-wist]
 
 @mixin project-specific-style($name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity)
+   $hover-color: color.adjust($color-primary, $lightness: -0.08, $space: oklch)
    #{$name}
       .color-primary,
       h1,
@@ -347,7 +357,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
       strong
          color: $color-primary
       a:hover
-         color: darken($color-primary, 8%) !important
+         color: color.to-gamut(color.to-space($hover-color, srgb), $method: local-minde) !important
       a.nav-link:hover
          background-color: color.adjust($color-primary, $lightness: 25%, $alpha: -0.3) !important
       &.project-card
@@ -367,11 +377,12 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
          border-width: 0
          padding: 0.7rem 1.2rem
          &:hover
-            background-color: lighten($color-primary, 30%) !important
+            // background-color: lighten($color-primary, 30%) !important
+            background-color: perceptual-color($color-primary, $l: 0.80) !important
             box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
             border-color: $color-primary !important
          &:active
-            background-color: lighten($color-primary, 20%) !important
+            background-color: perceptual-color($color-primary, $l: 0.70) !important
             box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
             border-color: $color-primary !important
       .btn-outline
@@ -863,6 +874,9 @@ model-viewer
       padding: 150px 0
    @media (min-width: $break-md)
       padding: 200px 0
+
+   &.project-hero-small
+      padding: 50px 0
       
 
 .project-hero-mediawall

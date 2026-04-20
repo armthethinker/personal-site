@@ -25,11 +25,11 @@
 - imgurl: siteless129.2019-07-20 22_55_15.gif
   origin: 40% 50%
   caption: <em>Siteless</em> is a book full of abstract architectural forms. I use it for modeling inspiration.
-- imgurl: spatial-computing.2019-05-27 08_20_32.gif
-  origin: 50% 50%
 - imgurl: paths.jpg
   origin: 20% 50%
   caption: Look development for virtual paths.
 - imgurl: two-screens-one-camera.gif
   origin: 50% 50%
   caption: Hardware VR project for independently controlled eyes, like in <em>Pan's Labyrinth</em>.
+# - imgurl: spatial-computing.2019-05-27 08_20_32.gif
+  # origin: 50% 50%

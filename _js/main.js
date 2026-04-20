@@ -65,20 +65,20 @@ function addNavItem(list, href, text) {
    anchorItem.appendChild(textNode);
 }
 
-$(document).ready(function(){
+// $(document).ready(function(){
    
-   // Setup anchor links
-   anchors.options = {
-      placement: 'left',
-      icon: '#'
-   };
-   anchors.add('.page h2:not(:empty)');
+//    // Setup anchor links
+//    anchors.options = {
+//       placement: 'left',
+//       icon: '#'
+//    };
+//    anchors.add('.page h2:not(:empty)');
    
-   // If there isn't a TOC, make one from the anchors elements
-   if ($('#table-of-contents')[0] != undefined)
-      generateTableOfContents(anchors.elements);
+//    // If there isn't a TOC, make one from the anchors elements
+//    if ($('#table-of-contents')[0] != undefined)
+//       generateTableOfContents(anchors.elements);
    
-});
+// });
 
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -44,7 +44,7 @@
                                  </video>
                               </div>
                            {% else %}
-                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}" style="height: 200px; object-fit: cover; object-position: {{item.origin}};">
+                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}" style=" object-fit: cover; object-position: {{item.origin}};">
                            {% endif %}
                            {% if item.caption %}
                               <p class="caption">{{item.caption}}</p>
