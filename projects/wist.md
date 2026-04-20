@@ -115,9 +115,10 @@ Worked with Andrew McGee (director) to create a version of Wist that could be us
 "
 %}
 
-{% include media-img.html
+{% include media-img-xl.html
    url="temp/ux-flow.jpg"
    caption="**Wist flow.** Capture or import. Process on device and enhance in the cloud. Relive in headset or on mobile."
+   extraImgClasses="img-xl-contained"
 %}
 
 {% include p-section.html

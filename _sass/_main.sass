@@ -429,9 +429,13 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
             box-shadow: 0 8px 16px transparentize($color-primary, .9)
    .project-hero#{$name}
       background-color: rgba($color-primary, 0.05)
+   .project-hero#{$name}.project-hero-small
+      background-color: none
+      .project-description
+         background-color: rgba($color-primary, 0.05)
       
 //                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
-@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,   0%,   100%)
+@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  80%,   100%)
 @include project-specific-style(".project-echo",      $palette-echo,      45%, 20%, $palette-echo-secondary,     70%,   100%)
 @include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
 @include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
@@ -575,6 +579,10 @@ img
       width: calc(100% + 60px)
       max-width: calc(100% + 60px)
       margin-left: -30px
+      &.img-xl-contained
+         max-height: 1040px
+         object-fit: contain
+         background-color: white
 .embed-responsive
    border-radius: $border-radius
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
@@ -649,7 +657,7 @@ video,
 //    margin-left: -15px
 .p-sec
    &.p-sec-header
-      margin-top: 80px
+      margin-top: 150px
    > .img-fluid
       margin-left: -15px
       max-width: calc(100% + 30px)
@@ -876,8 +884,14 @@ model-viewer
       padding: 200px 0
 
    &.project-hero-small
-      padding: 50px 0
-      
+      padding: 16px 0
+      background: none
+
+      .project-description
+         padding: 10px
+         // background-color: aliceblue
+         border-radius: 26px
+         overflow: hidden
 
 .project-hero-mediawall
    img

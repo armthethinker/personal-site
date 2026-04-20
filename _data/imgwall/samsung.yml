@@ -1,35 +1,43 @@
+# - imgurl: patents/US11995776-20240528-D00004.jpg
+- imgurl: patents/US11995776-20240528-D00009.jpg
+  caption: "Flexible user representation in a volumetric call based on device capabilities: flat 2D screen, cutout 2D screen, volumetric projection."
+- imgurl: patents/US20220229535A1-20220721-D00014.jpg
+  size: lg
+  caption: Part of the flow for 2D users sharing content in a mixed-device spatial call. We made it feel simple with contextual and scoped interactions.
+- imgurl: patents/US20210319617A1.jpg
+  caption: Async messaging app exploring volumetric content and interactions, like grabbing a friend's tiny avatar to start a new chat.
+- imgurl: patents/US20220229535A1-20220721-D00027.jpg
+  caption: Headset users can move around 3D content easily. To support the same for 2D users, we created a "model inspector" view.
+- imgurl: patents/US20220229535A1-20220721-D00020.jpg
+  caption: In a volumetric call, 2D users can change their 3D viewing perspective.
+- imgurl: patents/US20220229535A1-20220721-D00034.jpg
+  caption: Unified sharing space for mixed-device calls. Headset user is pointing to shared "wall" while mobile user can see the wall in a volumetric view or as a 2D region on their screen.
+- imgurl: patents/US20210319617A1-20211014-D00012.jpg
+  caption: High five with tiny avatars in an async messaging system.
+
 - imgurl: vivid-boat-ocean.2021-02-21 12_26_04.gif
-  origin: 50% 50%
-  caption: Exploration for a memory palace.
-- imgurl: baby.gif
-  origin: 50% 50%
-  caption: Concept render for spatialized sonograms.
-- imgurl: squiggle-0183.jpg
-  origin: 50% 50%
-  caption: Look development for a material.
-- imgurl: braun.2019-07-20 22_30_40.gif
-  origin: 50% 50%
-  caption: Modeling practice.
-- imgurl: displacement-torus.2019-07-20 22_34_21.gif
-  origin: 50% 60%
-  caption: Animating complex materials and microdisplacements.
-- imgurl: vivid-tree.jpg
-  origin: 50% 50%
-  caption: Another memory palace exploration.
+  caption: Exploration for a memory palace. (Personal)
+# - imgurl: baby.gif
+  # caption: Concept render for spatialized sonograms. (Personal)
+# - imgurl: squiggle-0183.jpg
+  # caption: Look development for a material.
+# - imgurl: braun.2019-07-20 22_30_40.gif
+  # caption: Modeling practice.
+# - imgurl: displacement-torus.2019-07-20 22_34_21.gif
+  # origin: 50% 60%
+  # caption: Animating complex materials and microdisplacements.
+# - imgurl: vivid-tree.jpg
+  # caption: Another memory palace exploration.
 - imgurl: Statue_6.2021-02-21 12_07_44.gif
-  origin: 50% 50%
-  caption: Look development for various materials.
-- imgurl: rings.2019-07-20 22_53_21.gif
-  origin: 50% 50%
-  caption: Artistic render, playing with lights and materials.
+  caption: Look development for various materials. (Personal)
+# - imgurl: rings.2019-07-20 22_53_21.gif
+  # caption: Artistic render, playing with lights and materials.
 - imgurl: siteless129.2019-07-20 22_55_15.gif
   origin: 40% 50%
-  caption: <em>Siteless</em> is a book full of abstract architectural forms. I use it for modeling inspiration.
-- imgurl: paths.jpg
-  origin: 20% 50%
-  caption: Look development for virtual paths.
+  caption: <em>Siteless</em> is a book full of abstract architectural forms. I use it for modeling inspiration. (Personal)
+# - imgurl: paths.jpg
+  # origin: 20% 50%
+  # caption: Look development for virtual paths.
 - imgurl: two-screens-one-camera.gif
-  origin: 50% 50%
-  caption: Hardware VR project for independently controlled eyes, like in <em>Pan's Labyrinth</em>.
+  caption: Hardware VR project for independently controlled eyes, like in <em>Pan's Labyrinth</em>. (Personal)
 # - imgurl: spatial-computing.2019-05-27 08_20_32.gif
-  # origin: 50% 50%

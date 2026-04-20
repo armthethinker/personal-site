@@ -3,7 +3,7 @@
     <div class="container">
         <div class='row justify-content-center'>
             <!-- <div class='col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7'> -->
-            <div class='col-10 col-xl-8'>
+            <div class='col-12 col-sm-10 col-xl-8'>
                 <div class='project-description'>
                     <div class="row">
                         <div class='col-12 col-md-4 col-lg-3'>
@@ -36,9 +36,9 @@
                             <p class="mb-0 fw-bold "><small>{{include.title}}</small></p>
                             <p class="mb-0 fw-bold color-primary text-wrap-pretty">{{include.subtitle}}</p>
                             <!-- <p class="fw-medium mb-1"><small>{{include.dateYears}} • <br>{{include.role}}</small></p> -->
-                            <p class="fw-medium mb-1"><small>{{include.role}} <br>{{include.dateYears}}</small></p>
+                            <p class="fw-medium mb-1"><small>{{include.role}} <br class="d-none d-sm-inline"><span class="d-inline d-sm-none">• </span>{{include.dateYears}}</small></p>
                         </div>
-                        <div class="col-12 col-md-8 offset-md-4 col-lg-2 offset-lg-0 text-lg-end">
+                        <div class="col-12 col-md-8 offset-md-4  col-lg-2 offset-lg-0 text-end">
                             <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}}' href='/projects/{{include.url}}'>→</a>
                         </div>
                     </div>
