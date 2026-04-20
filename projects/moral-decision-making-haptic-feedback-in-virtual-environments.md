@@ -3,8 +3,8 @@ layout: project-page
 pID: 5
 title: Moral Decisions & Haptics in VR
 description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
-image: /assets/img/morals/cover-virtual-trolley-sm.jpg
-assetURL: /assets/img/morals/
+image: /assets/imgopt/morals/cover-virtual-trolley-sm.jpg
+assetURL: /assets/imgopt/morals/
 ---
 
 {% include blockquote.html
@@ -42,6 +42,7 @@ More and more of our lives are mediated through technology. Does the change from
    urlCode="D4AIKfFNS3c"
    caption="Our setup process as well as our experience. (The poor recording quality is due to our laptop’s limited resources. Participants saw a higher resolution version.)"
    aspect="16by9"
+   style="lg"
 %}
 
 {% include p-section.html
@@ -49,7 +50,7 @@ More and more of our lives are mediated through technology. Does the change from
 %}
 
 {% include p-section.html
-   url="screen-shot-2015-12-17-at-9.07.42-am.png"
+   url="screen-shot-2015-12-17-at-9.07.42-am.jpg"
    caption="Moral decisions across groups."
    content="Participants in the haptic and non-haptic groups both experienced an increasing heart rate as the experiment progressed (data was normalized in-group). Lever group participants’ heart rate did not change to the same degree, though this may be due to other factors."
 %}
@@ -139,7 +140,7 @@ The visual setup of the original problem requires the user to look in separate d
    url="122428979161549118098521220020330o.jpg"
    caption="Environment after the programmers started implementing the design in Unity."
    style="lg"
-   url2="screen-shot-2016-01-14-at-2.34.39-pm.png"
+   url2="screen-shot-2016-01-14-at-2.34.39-pm.jpg"
    caption2="After much refinement."
 %}
 

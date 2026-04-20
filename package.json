@@ -21,7 +21,7 @@
     "watch:sass": "sass _sass/main.scss assets/css/main.css --load-path=node_modules --watch",
     "watch:js": "terser node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/masonry-layout/dist/masonry.pkgd.min.js _js/main.js -o assets/js/main.min.js --watch",
     "watch:ts": "tsc --watch",
-    "start": "npm-run-all --parallel watch:sass watch:js watch:ts jekyll:serve",
+    "start": "npm run clean && npm run sass:build && npm-run-all --parallel watch:sass watch:js watch:ts jekyll:serve",
     "build": "npm run clean && npm run sass:build && npm run postcss && npm run js:build && npm run ts:build && npm run hash && bundle exec jekyll build",
     "imgoptim": "npm run ts:build && node scripts/optimize-images.js"
   },

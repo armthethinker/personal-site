@@ -12,6 +12,10 @@
                <div class="m-grid">
                   <div class="m-grid-sizer"></div>
                   <div class="m-gutter-sizer"></div>
+                  {% assign imgstyle = false %}
+                  {% if include.imgstyle != nil %}
+                     {% assign imgstyle = include.imgstyle %}
+                  {% endif %}
 
                   {% for item in include.data %}
                      {% assign size = "m-grid-item--md" %}
@@ -24,6 +28,12 @@
                         {% assign video = true %}
                      {% endif %}
 
+                     {% assign _imgstyle = imgstyle %}
+                     {% if item.origin != nil %}
+                        {% assign _imgstyle = _imgstyle | append: " object-position: " | append: item.origin | append: ";" %}
+                     {% endif %}
+
+
                      <div class="m-grid-item {{ size }}">
                         <div class="m-grid-content">
                            {% if video %}
@@ -34,7 +44,7 @@
                                  </video>
                               </div>
                            {% else %}
-                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}">
+                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}" style="height: 200px; object-fit: cover; object-position: {{item.origin}};">
                            {% endif %}
                            {% if item.caption %}
                               <p class="caption">{{item.caption}}</p>

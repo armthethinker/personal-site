@@ -140,7 +140,7 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 {% include media-img.html
    url="ex11-jump.gif"
    caption="**Jump cut.** The user is instantly transferring between the start and end point. These are straightforward and comfortable, but can make the user lose context."
-   style="md"
+   style="lg"
    captionSide=false
    url2="ex11-micromovements.gif"
    caption2="**Micromovements.** If jump cuts are the most comfortable, but make you lose context, what if the user went through a series of `n` jump cuts between the start and end points? I thought it was nifty, but the few people I tried it on thought the prototype was lagging."
@@ -176,7 +176,7 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 {% include media-img.html
    url="critique-spherical@2x.jpg"
    caption="Critically examining @oscarmarinmiro's video controls layout."
-   style="md"
+   style="lg"
    captionSide=false
    url2="Screen Shot 2016-06-30 at 7.36.17 AM.jpg"
    caption2="My first pass put the controls right in front of the user. This is uncomfortable because (1) the relaxed human eyeline is a few degrees down from horizontal and (2) it immediately gets in between you and the content (especially uncomfortable if you accidentally brought up the controls)."

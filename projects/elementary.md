@@ -111,29 +111,29 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
    url="1-transactions.jpg"
    caption="When a user opens the application, they're greeted with their historical and upcoming transactions, as well as their balance, expected spending, and critical insights."
    url2="port-1.3-additional-3.jpg"
-   caption2="**Additional insights** Each transaction detail screen has insights about how often the transaction happens and what to expect when it does happen. Here, a grocery transaction at Pingo Doce is shown."
+   caption2="**Additional insights.** Each transaction detail screen has insights about how often the transaction happens and what to expect when it does happen. Here, a grocery transaction at Pingo Doce is shown."
    style="lg"
 %}
 
 {% include media-img.html
    url="port-transactions-summary-1.jpg"
-   caption="**Understand now** A clear and prominent representation of the user's available balance. The user can also see their expected spending for the month. This acts as a budgeting system, but the user doesn't have to input anything. The budget is built automatically from their actions."
+   caption="**Understand now.** A clear and prominent representation of the user's available balance. The user can also see their expected spending for the month. This acts as a budgeting system, but the user doesn't have to input anything. The budget is built automatically from their actions."
    captionSide=true
 %}
 {% include media-img.html
    url="port-insight-cards-1.jpg"
-   caption="**Critical insights** These flickable cards display a single piece of information for the user (e.g. goal progress, spending habits, bank notifications)."
+   caption="**Critical insights.** These flickable cards display a single piece of information for the user (e.g. goal progress, spending habits, bank notifications)."
    captionSide=true
 %}
 {% include media-img.html
    url="port-upcoming-1.jpg"
-   caption="**Upcoming transactions** To prepare for the next seven days, Echo displays a collapsable list of upcoming transactions based on the user's history."
+   caption="**Upcoming transactions.** To prepare for the next seven days, Echo displays a collapsable list of upcoming transactions based on the user's history."
    captionSide=true
 %}
 
 {% include media-img.html
    url="port-transactions-1.jpg"
-   caption="**Automatic categorization** To understand spending, users need to know their transactions at multiple levels of representation (i.e. categories)."
+   caption="**Automatic categorization.** To understand spending, users need to know their transactions at multiple levels of representation (i.e. categories)."
    url2="port-4-categories.jpg"
    caption2="It's also helpful to know the relation of one month to the previous and upcoming months, including months in the future (utilizing machine learning algorithms)."
    style="lg"
@@ -163,14 +163,14 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
    style="lg"
    captionSide=false
    url2="2.1-add-goal.jpg"
-   caption2="**Types of goals** We offer many structured options, but also include a create your own option for other kinds of goals."
+   caption2="**Types of goals.** We offer many structured options, but also include a create your own option for other kinds of goals."
 %}
 
 {% include media-img.html
    style="lg"
    captionSide=false
    url="port-2.1.3-minimally-struc.jpg"
-   caption="**Minimally structured questions** Each goal utilizes minimal input to provide deeper context to the goal (in contrast to existing goal systems such as Simple). Default values are based on the user's actions, other users like them, and market data."
+   caption="**Minimally structured questions.** Each goal utilizes minimal input to provide deeper context to the goal (in contrast to existing goal systems such as Simple). Default values are based on the user's actions, other users like them, and market data."
    url2="port-2.1.1-context.jpg"
    caption2=""
 %}
@@ -195,7 +195,7 @@ Exictos, formerly known as Promosoft, was founded in 1989. They specialize in th
    url="simulator-page.gif"
    caption="To explore questions, users swipe through categories. Improved from testing, this design matches users' mental models."
    url2="3.1-pay-back-loans-fully-extended.jpg"
-   caption2="**Long term planning** Each simulator question opens a page where the user can play with inputs to that question, automatically updating the visualization and answer at the top of the page. Between the text response and the visual, users begin to understand how their answers to the input questions change their overall outcome."
+   caption2="**Long term planning.** Each simulator question opens a page where the user can play with inputs to that question, automatically updating the visualization and answer at the top of the page. Between the text response and the visual, users begin to understand how their answers to the input questions change their overall outcome."
    style="lg"
 %}
 
@@ -207,13 +207,13 @@ Some simulators can be found on the web and others can only be accessed when sit
 
 {% include media-img.html
    url="port-3.3-data-driven-1.jpg"
-   caption="**Data-driven expectations** Like the goals section, each input question informs the user of how other users like them have acted."
+   caption="**Data-driven expectations.** Like the goals section, each input question informs the user of how other users like them have acted."
    captionSide=true
 %}
 
 {% include media-img.html
    url="simulator-collapse.gif"
-   caption="**User action focused representation** To keep the user's focus and the visual representation of the page in sync, we collapse the header and shrink the visualization when the user is inputting information. A flick of the finger down expands the header and visualization."
+   caption="**User action focused representation.** To keep the user's focus and the visual representation of the page in sync, we collapse the header and shrink the visualization when the user is inputting information. A flick of the finger down expands the header and visualization."
    captionSide=true
 %}
 
@@ -288,6 +288,7 @@ Often aware of savings options, few users have savings accounts or other investm
    header="A five part vision"
    subheader="In order to create a transparent consumer banking application, we created a five part vision that guided our design work."
    data=site.data.echo.vision
+   col="col-6 col-xl-4"
 %}
 
 {% include p-section.html
@@ -400,7 +401,7 @@ Each of our sprints set out to explore one piece of our vision.
 {% include media-img.html
    url="echo-framer-relative-slider.gif"
    caption="We looked for an easy way to input ballpark-level values. This is an early version of a slider that increases its value by the magnitude the slider knob is away from the center."
-   style="md"
+   style="lg"
    captionSide=false
    url2="echo-framer-category-switch.gif"
    caption2="An example of how we might change a categorized transaction with a long press."

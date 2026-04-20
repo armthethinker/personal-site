@@ -910,8 +910,25 @@ li.nav-item-w
 
 .andrew-header-height
    min-height: 400px
-   height: 60vh
-   max-height: 800px
+   height: 50vh
+   max-height: 600px
+
+.main-header-text-shadow
+   text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 6px rgba(0, 0, 0, 0.4), 0 0 12px rgba(0, 0, 0, 0.3)
 
 .bg-footer
    background-color: $palette-pageBg-dark
+
+.progressive-blur
+   backdrop-filter: blur(10px)
+   /* The mask dictates where the blur is visible (black) vs hidden (transparent) */
+   -webkit-mask: linear-gradient(to bottom, black, transparent)
+   mask: linear-gradient(to bottom, black, transparent)
+
+.shim-brightness-6
+   backdrop-filter: brightness(0.6)
+.shim-brightness-8
+   backdrop-filter: brightness(0.8)
+
+.shim-gradient-transparent-to-black
+   background: radial-gradient(ellipse at top in hsl shorter hue, hsla(0, 0%, 0%, 0.55), rgba(0, 0, 0, 0.37) 43.28%, rgba(0, 0, 0, 0.16862745098039217) 57.14%, hsla(0, 0%, 0%, 0) 68.49%)

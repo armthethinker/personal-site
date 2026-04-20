@@ -1,6 +1,5 @@
 <div class="p-sec">
    <div class="container">
-      <!-- row wrapper - prev col-12 col-sm-10 col-xl-8 -->
       <div class="">
          <div class="row">
             <div class="col-12 col-md-4 col-lg-3">
@@ -8,7 +7,7 @@
                <strong class="d-block mb-4">{{include.subheader}}</strong>
             </div>
             <div class="col">
-               <div class="row row-cols-1 row-cols-sm-4">
+               <div class="row">
                   {% for item in include.data %}
                   {% if include.col != undefined %}
                   <div class="{{include.col}} mb-4">
@@ -31,7 +30,6 @@
                   {% endfor %}
                </div>
             </div>
-            <!-- <div class="col-12 col-lg-3"></div> -->
          </div>
       </div>
    </div>

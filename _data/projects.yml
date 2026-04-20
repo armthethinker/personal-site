@@ -1,8 +1,8 @@
-- title: Wist
+- title: "Wist: Immersive Memories"
   pID: 1
   short: wist
   emoji: 🤓
-  subtitle: Immersive memories as easy as taking a video
+  subtitle: Take a video. Step inside. 
   # description: Concept, to funding, to beta, to end.
   description: Founded a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,000 memories and 17,000+ waitlist sign ups.
   role: Founder, CEO (Design, Eng, Product, R&D)
@@ -27,7 +27,7 @@
   pID: 2
   short: samsung
   emoji: 🤓
-  subtitle: Finding opportunities & constraints with magic spatial glasses
+  subtitle: Opportunities & constraints of magic spatial glasses
   description: Led a team of designer-developers who used prototypes to explore the possibility space of AR glasses across OS, apps, and interactions. Promoted our vision to executives and external partners. Worked in a way that was flexible with ever changing specs while informing the device specs.
   role: Team Lead & Senior Designer
   date: February 2017 - May 2021
@@ -70,6 +70,7 @@
   url: elementary.html
   imgJumbotronHero: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
   bgImg: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
+  small: true
 - title: Humane Virtuality
   pID: 4
   short: hv
@@ -95,6 +96,7 @@
   imgJumbotronHero: /assets/imgopt/hv/ex6-sidebyside-direct-inverse.gif
   light: true
   # skip: true
+  small: true
 - title: Moral Decisions & Haptics in VR
   pID: 5
   short: morals
@@ -119,6 +121,7 @@
   videoJumbotronHero:
   imgJumbotronHero: /assets/imgopt/morals/push-the-worker.gif
   # skip: true
+  small: true
 - title: What If…? Conference & Book
   pID: 6
   short: whatif
@@ -144,3 +147,4 @@
   imgJumbotronHero: /assets/imgopt/whatif/whatifoverview.gif
   light: true
   # skip: true
+  small: true

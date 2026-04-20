@@ -37,16 +37,22 @@ title: Home
       </div>
    </div>
 </div> -->
-<div class="container">
-<div class="row justify-content-center andrew-header-height align-items-center">
-<!-- <div class="row justify-content-center py-5 text-center" style="background-image: url(assets/img/wist/temp/vivaldi/living-room.jpg); object-fit: cover; background-size: cover; background-position: 60% 75%;"> -->
-   <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
-      <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
-      <!-- <h1>Andrew R McHugh</h1> -->
-      <!-- <h2 class="text-wrap-balance">turns R&D ambiguity into meaningful products</h2> -->
-      <h1 class="text-wrap-balance">Andrew R McHugh <br><span class="text-secondary">turns R&D ambiguity into meaningful products.</span></h1>
-      <p class="text-secondary fw-medium">Strategy • Design • Engineering</p>
+<div class="container-fluid p-0" style="background-image: url(/assets/imgopt/samsung/squiggle-0183.jpg); background-size: cover; background-position: 50% 90%;">
+
+<div class="container-fluid p-0 shim-brightness-8 shim-gradient-transparent-to-black">
+<div class="container main-header-text-shadow" >
+   {% include navigation.html %}
+   <div class="row justify-content-center andrew-header-height align-items-center">
+   <!-- <div class="row justify-content-center py-5 text-center" style="background-image: url(assets/img/wist/temp/vivaldi/living-room.jpg); object-fit: cover; background-size: cover; background-position: 60% 75%;"> -->
+      <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
+         <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
+         <!-- <h1>Andrew R McHugh</h1> -->
+         <!-- <h2 class="text-wrap-balance">turns R&D ambiguity into meaningful products</h2> -->
+         <h1 class="text-wrap-balance display-5 fw-bold">Andrew R McHugh <br><span class="text-secondary">turns R&D ambiguity into meaningful products.</span></h1>
+         <p class="text-secondary fw-medium">Strategy • Design • Engineering</p>
+      </div>
    </div>
+</div>
 </div>
 </div>
 
@@ -82,6 +88,7 @@ title: Home
          imgJumbotronHero     = item.imgJumbotronHero
          videoJumbotronHero   = item.videoJumbotronHero
          bgColor              = item.bgColor
+         small                = item.small
       %}
    {% endfor %}
 </div>
