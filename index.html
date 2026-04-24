@@ -38,22 +38,20 @@ title: Home
    </div>
 </div> -->
 <div class="container-fluid p-0" style="background-image: url(/assets/imgopt/samsung/squiggle-0183.jpg); background-size: cover; background-position: 50% 90%;">
-
-<div class="container-fluid p-0 shim-brightness-8 shim-gradient-transparent-to-black">
-<div class="container main-header-text-shadow" >
-   {% include navigation.html %}
-   <div class="row justify-content-center andrew-header-height align-items-center">
-   <!-- <div class="row justify-content-center py-5 text-center" style="background-image: url(assets/img/wist/temp/vivaldi/living-room.jpg); object-fit: cover; background-size: cover; background-position: 60% 75%;"> -->
-      <div class="col-12 col-sm-10 col-xl-8">
-         <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
-         <!-- <h1>Andrew R McHugh</h1> -->
-         <!-- <h2 class="text-wrap-balance">turns R&D ambiguity into meaningful products</h2> -->
-         <h1 class="text-wrap-balance display-5 fw-bold">Andrew R McHugh <br><span class="text-secondary">turns R&D ambiguity into meaningful products.</span></h1>
-         <p class="text-secondary fw-medium">Strategy • Design • Engineering</p>
+   <div class="container-fluid p-0 shim-brightness-8 shim-gradient-transparent-to-black">
+      <div class="container main-header-text-shadow" >
+         <div class="pt-3">
+         {% include navigation.html %}
+         </div>
+         <div class="row justify-content-center andrew-header-height align-items-center">
+            <div class="col-12 col-sm-10 col-xl-8">
+               <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1>
+               <h1 class="text-wrap-balance display-5 fw-bold">Andrew R McHugh <br><span class="text-secondary">turns R&D ambiguity into meaningful products.</span></h1>
+               <p class="text-secondary fw-medium">Strategy • Design • Engineering</p>
+            </div>
+         </div>
       </div>
    </div>
-</div>
-</div>
 </div>
 
 <!-- Projects -->
@@ -105,18 +103,24 @@ title: Home
 </div>
 
 <div class="container-fluid" id="how">
-   <div class="row justify-content-center py-4">
+   <div class="row justify-content-center py-5">
       <!-- <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-7 col-xxl-6"> -->
          <div class="col-12 col-sm-10 col-xl-8 col-xxl-6">
-            <p class="small text-center fw-medium my-4">Invent • Build • Design <span class="d-none d-sm-inline">•</span><br class="d-sm-none"> Lead Teams • Tell the Story</span></p>
-            <h2 class=" mt-5 ">How</h2>
+            <p class="small text-center fw-medium my-4">Invent • Design • Build <span class="d-none d-sm-inline">•</span><br class="d-sm-none"> Lead Teams • Tell the Story</span></p>
+            <h2 class=" mt-5 ">How I work</h2>
             <h3 class="mb-4 h5 text-secondary text-wrap-balance"><span class="text-primary">My special ability</span>: integrating design+eng+product for 0→1, highly technical, R&D-led work.</h3>
          <div class="row">
             {% for item in site.data.how-work %}
                <div class="col-12 col-md-6">
                   <div class="d-flex">
                      <div class="ps-1 pe-3">
-                        <p class="text-center">{{ item.emoji }}</p>
+                        <!-- <p class="text-center">{{ item.emoji }}</p> -->
+                        <p class="text-center">
+                           {% include icon.html 
+                              icon=item.icon
+                              size="24"
+                           %}
+                        </p>
                      </div>
                      <div class="flex-grow-1">
                         <p><strong>{{ item.topic }}</strong> {{ item.description }}</p>
@@ -126,7 +130,7 @@ title: Home
                      {% endfor %}
                      <!-- <p>{{ item.emoji }}<br><strong>{{ item.topic }}</strong> {{ item.description }}</p> -->
          </div>
-         <h3 class="mt-4">Tools</h3>
+         <h4 class="mt-4">Tools</h4>
          <p>Whatever can answer the biggest unknowns or can get us to the next phase.</p>
          {% include skills.html %}
       </div>
