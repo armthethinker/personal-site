@@ -7,10 +7,8 @@
     - HLSL
     - Metal Shading Language
     - HTML/CSS
-    - Arduino
 - category: Frameworks
   list:
-    - Git
     - SwiftUI
     - AVFoundation
     - Metal
@@ -22,13 +20,16 @@
     - Streamlit
     - Scikit Image
     - Rerun
+    - Anaconda
+    - Git
     - Mixpanel
     - Firebase (Firestore, Storage, Auth, Cloud Functions, +)
+    - FFMPEG
     - Loops
     - Jekyll
     - Node
     - Mocha
-    - FFMPEG
+    - Arduino
 - category: Design & Production
   list:
     - Unity
@@ -41,3 +42,4 @@
     - Qualitative & Quantitative User Research
     - Procreate
     - Keynote
+    - Reality Scan / Reality Capture

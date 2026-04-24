@@ -88,8 +88,9 @@ As a **designer+engineer**
 > \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\"
 
 **Traction**
-- 17,000+ waitlist sign ups
-- 8,000+ memories captured
+- 18,600+ waitlist sign ups
+- 1,700+ users
+- 8,800+ memories captured
 <!-- - WoW traction TK -->
 
 **Covered in media**<br>Interviews in [Vice/Motherboard](https://www.vice.com/en/article/wist-app-relive-memories-vr/), [This Week in Startups](https://www.youtube.com/watch?v=TZlK7Ee84sI&t=1540s), [The Pitch](https://www.thepitch.show/122-wist-the-killer-use-case-for-vr), [Freethink](https://www.freethink.com/ar-vr/vr-app), [Upload VR](https://www.uploadvr.com/wist-delivers-minority-report-memory-replay/), and [XR AI Spotlight](https://www.xraispotlight.com/how-to-capture-and-relive-memories-in-3d-without-a-vision-pro/).
@@ -196,9 +197,11 @@ into an internal format that could capture, encode, and play at 30+fps.
 {% include p-section.html
    content="
 
-We integrated multiple computer vision ML models (depth estimation, camera pose + intrinsics estimation, segmentation, optical flow). We created model and data specific rectification layers and traditional CV techniques to improve temporal coherence and reduce artifacts. 
+We integrated multiple computer vision ML models (depth estimation, camera pose + intrinsics estimation, segmentation, optical flow). We created model and data specific rectification layers and traditional CV techniques to improve temporal coherence and reduce artifacts. Models included Map Anything, Depth Pro, RAFT, FiLM, and more. 
 
 One example: **LiDAR data is low resolution and highly flickery while ML depth estimation may be higher resolution, but lacks the same metric accuracy.** We figured out how to resolve the real world depth sequence from a plethora of data sources, including the two depth sources.
+
+I built a PyTorch-based optimization function that integrated the various data sources based on their unique qualities (e.g. far field LiDAR is low quality) and physical realism (e.g. 3D point movement 3D should have smooth acceleration).
 
 <!-- 
 

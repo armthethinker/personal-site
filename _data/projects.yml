@@ -2,9 +2,10 @@
   pID: 1
   short: wist
   emoji: 🤓
-  subtitle: Take a video. Step inside. 
+  # subtitle: Take a video. Step inside. 
+  subtitle: Spatial capture, processing, & playback on iOS, Quest, Vision Pro
   # description: Concept, to funding, to beta, to end.
-  description: Founded a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,000 memories and 17,000+ waitlist sign ups.
+  description: Founded a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,800 memories and 18,600+ waitlist sign ups.
   role: Founder, CEO (Design, Eng, Product, R&D)
   date: May 2021 - February 2026
   dateYears: 2021-2026
@@ -12,6 +13,10 @@
   # withWho: My coworkers in XR Design Group (XRDG)
   # imgHero:   /assets/imgopt/wist/couch2-low-poster.jpg
   videoHero: /assets/imgopt/wist/relive-with-me-low-trimmed.mp4
+  # videoHero: /assets/imgopt/wist/temp/relive-sm.mp4
+  # videoHero: /assets/imgopt/wist/temp/social-movement.mp4
+  # videoHero: /assets/imgopt/wist/small-knees-low.mp4
+  # videoHero: /assets/imgopt/wist/couch2-low.mp4
   imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
   imgThumb1Position:
   imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
@@ -27,7 +32,8 @@
   pID: 2
   short: samsung
   emoji: 🤓
-  subtitle: Opportunities & constraints of magic spatial glasses
+  # subtitle: Opportunities & constraints of magic spatial glasses
+  subtitle: Defining & prototyping the future of AR glasses across OS, apps, and interactions
   description: Led a team of designer-developers who used prototypes to explore the possibility space of AR glasses across OS, apps, and interactions. Promoted our vision to executives and external partners. Worked in a way that was flexible with ever changing specs while informing the device specs.
   role: Team Lead & Senior Designer
   date: February 2017 - May 2021
@@ -129,7 +135,8 @@
   pID: 6
   short: whatif
   emoji: 🤔
-  subtitle: Active curiosity to the max
+  # subtitle: Active curiosity to the max
+  subtitle: Gathering diverse crowds to explore the world, starting with questions
   description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
   role: Cofounder & Chief Curiosity Curator
   date: November 2010 - June 2014

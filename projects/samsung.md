@@ -16,14 +16,15 @@ modelURL: /assets/models/samsung/
 
 {% include p-section.html
    header="The challenge"
-   subheader="A precursor to Galaxy XR"
    content="
 > Make spatial computing work for real humans in an environment with rapidly changing constraints.
 
 
 At the time, Samsung was figuring out what kinds of products could exist. Many teams were focused on semi-isolated technical problems. 
 
-My group focused on finding real value and validating that with prototypes, across interactions, apps, and the operating system. Our work shaped the trajectory of Samsung's spatial products.
+My group focused on finding real value and validating that with prototypes, across interactions, apps, and the operating system. 
+
+**Our work shaped the trajectory of Samsung's spatial products, a precursor to Galaxy XR.**
 
 #### Core focus
 **A new \"responsive design\"** where spatial content is responsive to a user's distance and the user's context.
@@ -75,7 +76,19 @@ And generally, **finding the details that must be solved for true everyday use**
 
 I was a Team Lead and Senior Designer. I worked in and led the XR Design Group (XRDG), a group of designers and engineers who worked to understand what could be created with AR glasses and how.
 
-**As a Team Lead**
+**As an AR/VR Team Lead:**
+- Demonstrated vision to executives, partners, and visiting dignitaries through conversations, presentations, and demos.
+- Created and managed the process that let us quickly explore the possibility space going from ideas, rapid prototypes, high production prototypes, and video documentation. 
+- Led and supported hiring process.
+
+**As a spatial designer & prototyper:** 
+- Led investigations across operating system, apps, and interactions.
+- Collaborated on prototypes (Unity/C#) and user studies, de-risking explorations.
+- Bridge design and engineering in a context where device capabilities were often changing.
+- Built internal documentation to catalog our work.
+- Submitted 10+ patents.
+
+<!-- **As a Team Lead**
 - **Priorities & vision**: Through my years of work before and at Samsung, I've developed specific principles for what AR and VR can and should be. These guide my decisions and help to set the team's vision. I work with my manager to set priorities for the team, arguing for directions that would have the highest returns on investment.
 - **Set/negotiate scope**: What we should continue to explore, what's ready to prototype, which trade offs should be made so we can meet our deadlines, and working with engineering to figure out implementation details.
 - **Presenting & collaborating**: I talk about our work to other teams and external partners. I also present to a number of lab heads, VPs, SVPs, Presidents, and once I presented to a group of Korean Congresspeople.
@@ -84,7 +97,7 @@ I was a Team Lead and Senior Designer. I worked in and led the XR Design Group (
 **As a Senior Designer**
 - **Design & prototype**: Ideation, mockups, prototypes, and user research. I used any tool that helps us answer core questions quickly and effectively.
 - **Documentation**: I lead our documentation efforts (writing, editing, crafting the story, presenting). This also makes me a go to person for any of our historical work. Before our switch to a more collaborative tool, I created a custom website to showcase our documentation, design decisions, and ideations.
-- **Patents**: I've produced at least 10 patents around spatial computing.
+- **Patents**: I've produced at least 10 patents around spatial computing. -->
 "
 %}
 
@@ -150,12 +163,19 @@ Depending on the timeline and problem we were addressing, we could shift time be
 %}
 
 {% include p-section.html
-   header="Tools & skills for spatial prototyping"
+   header="Tools used"
    content="
+
+> Whatever answers critical questions at the right fidelity to de-risk our next steps.
+
+I might render an idea quickly in Blender or spend a few days tuning an interaction system to feel just right. 
+
+Most projects ended with very high fidelity multi-device prototypes and a video showcasing the what and why.
+
 **UX design**
 - Maquette, Tvori, Tilt Brush, Blocks, Quill (AR/VR design tools)
 - Sketch, Figma, Adobe Creative Suite, Framer Classic, Procreate (2D design)
-- User research (design, facilitate, analyze)
+- User research (design, facilitate, analyze, largely qualitative)
 
 **AR/VR Prototyping, 3D Modeling**
 - Blender (modeling, texturing, procedural materials/shaders, 3D VFX compositing)
@@ -163,12 +183,8 @@ Depending on the timeline and problem we were addressing, we could shift time be
 - Depthkit, Meshroom, Polycam, Record3D (volumetric capture, photogrammetry)
 - A-Frame (webVR)
 
-**Other**
-- Identifying key opportunities through design experimentation and prototyping
-- Design+prototyping team management
-- Video production showcasing XR prototypes and use cases
-- HTML, CSS, JS
-- Familiar with most AR/VR HMDs and their UX patterns
+[(My current stack →)](/#how)
+
 "
 %}
 
