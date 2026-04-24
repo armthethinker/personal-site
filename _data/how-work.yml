@@ -1,25 +1,35 @@
 - topic: Map the possibility space.
   emoji: 🗺️
+  # icon: diagram-3
+  icon: signpost-split
 # Curiosity led investigations through ambiguity to a framing.
   description: Find opportunities and constraints by asking questions. Which can we start answering and which can be answered later?
 - topic: Get buy-in with *the thing*. 
   emoji: 🧠
   description: Use unique insight to clarify framing, for stakeholders, the team, and users. Create the human story about why this is valuable. Comfortable with ambiguity as we figure this out.
+  # icon: asterisk
+  icon: balloon-heart
+  # icon: gem
 - topic: Learn through prototyping.
   emoji: 🛠
   description: Fast prototypes answer questions in design, eng, and product. Flexible fidelity lets us explore at the right speed based on our most important unknowns.
+  # icon: hammer
+  icon: puzzle
 - topic: Forest and trees.
   emoji: 🌲
   description: My background enables me to find weird insights. My toolbox is filled with physics, math, philosophy, HCI, perception, computer vision, machine learning, and more. 
+  icon: bezier2
 - topic: Founder energy. 
   emoji: 🚀
   description: Driven. Zero to one. I can handle risk and uncertainty while finding the most valuable paths to pursue or to prune.
+  icon: cup-hot
 # - topic: Drawn to weird work that requires my unique perspective. 
   # description: I get a special joy from making the impossible possible or finding the thing no one was building towards (but is actually critical).
   # emoji: 🧬
 - topic: Democratizing the future.
   description: Focus on humans. Make complex systems feel so easy that anyone can use them, while keeping their power. Craft beautiful things.
   emoji: 🙌
+  icon: bicycle
 
 # - topic: Gravitate towards work that is meaningful, interactive, and fluid. 
 # - topic: Something about seeing the unseen, or making something impossible possible. 
