@@ -9045,9 +9045,13 @@ body {
 
 .project-hero.project-samsung.project-hero-small {
   background-color: none;
+  transition: background-color 0.2s;
 }
 .project-hero.project-samsung.project-hero-small .project-description {
   background-color: rgba(12, 77, 162, 0.05);
+}
+.project-hero.project-samsung.project-hero-small .project-description:hover {
+  background-color: rgba(12, 77, 162, 0.09);
 }
 
 .project-echo .color-primary,
@@ -9151,9 +9155,13 @@ body {
 
 .project-hero.project-echo.project-hero-small {
   background-color: none;
+  transition: background-color 0.2s;
 }
 .project-hero.project-echo.project-hero-small .project-description {
   background-color: rgba(64, 84, 178, 0.05);
+}
+.project-hero.project-echo.project-hero-small .project-description:hover {
+  background-color: rgba(64, 84, 178, 0.09);
 }
 
 .project-hv .color-primary,
@@ -9257,9 +9265,13 @@ body {
 
 .project-hero.project-hv.project-hero-small {
   background-color: none;
+  transition: background-color 0.2s;
 }
 .project-hero.project-hv.project-hero-small .project-description {
   background-color: rgba(200, 13, 89, 0.05);
+}
+.project-hero.project-hv.project-hero-small .project-description:hover {
+  background-color: rgba(200, 13, 89, 0.09);
 }
 
 .project-morals .color-primary,
@@ -9363,9 +9375,13 @@ body {
 
 .project-hero.project-morals.project-hero-small {
   background-color: none;
+  transition: background-color 0.2s;
 }
 .project-hero.project-morals.project-hero-small .project-description {
   background-color: rgba(113, 84, 233, 0.05);
+}
+.project-hero.project-morals.project-hero-small .project-description:hover {
+  background-color: rgba(113, 84, 233, 0.09);
 }
 
 .project-whatif .color-primary,
@@ -9469,9 +9485,13 @@ body {
 
 .project-hero.project-whatif.project-hero-small {
   background-color: none;
+  transition: background-color 0.2s;
 }
 .project-hero.project-whatif.project-hero-small .project-description {
   background-color: rgba(252, 63, 94, 0.05);
+}
+.project-hero.project-whatif.project-hero-small .project-description:hover {
+  background-color: rgba(252, 63, 94, 0.09);
 }
 
 .project-wist .color-primary,
@@ -9575,9 +9595,13 @@ body {
 
 .project-hero.project-wist.project-hero-small {
   background-color: none;
+  transition: background-color 0.2s;
 }
 .project-hero.project-wist.project-hero-small .project-description {
   background-color: rgba(255, 107, 124, 0.05);
+}
+.project-hero.project-wist.project-hero-small .project-description:hover {
+  background-color: rgba(255, 107, 124, 0.09);
 }
 
 .btn.btn-timeline {
@@ -9645,6 +9669,14 @@ body {
 
 .embed-responsive-9by16::before {
   padding-top: 177.7777777778%;
+}
+
+.embed-responsive-5by4::before {
+  padding-top: 80%;
+}
+
+.embed-responsive-4by5::before {
+  padding-top: 125%;
 }
 
 .embed-responsive-4by3::before {
@@ -10063,7 +10095,7 @@ model-viewer {
   background: none;
 }
 .project-hero.project-hero-small .project-description {
-  padding: 10px;
+  padding: 16px;
   border-radius: 26px;
   overflow: hidden;
 }
@@ -10143,6 +10175,10 @@ li.nav-item-w a.nav-link:hover {
 
 .shim-gradient-transparent-to-black {
   background: radial-gradient(ellipse at top in hsl shorter hue, hsla(0, 0%, 0%, 0.55), rgba(0, 0, 0, 0.37) 43.28%, rgba(0, 0, 0, 0.168627451) 57.14%, hsla(0, 0%, 0%, 0) 68.49%);
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,32 +4,35 @@
         <div class='row justify-content-center'>
             <!-- <div class='col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7'> -->
             <div class='col-12 col-sm-10 col-xl-8'>
-                <div class='project-description'>
-                    <div class="row">
+                <div class='project-description position-relative'>
+                    <div class="row align-items-center">
                         <div class='col-12 col-md-4 col-lg-3'>
                             <div class="row">
                                 <div class="col-6 col-md-12">
-                            {% if include.imgHero %}
-                            <div class="embed-responsive embed-responsive-4by3">
-                            <img class="img-fluid embed-responsive-item object-fit-cover" src='{{include.imgHero}}'>
-                            </div>
-                            {% elsif include.videoHero %}
-                            <div class="embed-responsive embed-responsive-4by3 ">
-                                <video class="embed-responsive-item object-fit-cover"
-                                    playsinline
-                                    loop
-                                    autoplay
-                                    muted
-                                    >
-                                    <source src="{{include.videoHero}}" type="video/mp4">
-                                </video>
-                            </div>
-                            {% endif %}
-                            </div>
+                                    <div class="embed-responsive embed-responsive-5by4 mb-0">
+                                        {% if include.imgHero %}
+                                        <img class="img-fluid embed-responsive-item object-fit-cover mb-0" src='{{include.imgHero}}'>
+                                        {% elsif include.videoHero %}
+                                        <video class="embed-responsive-item object-fit-cover"
+                                            playsinline
+                                            loop
+                                            autoplay
+                                            muted
+                                            >
+                                            <source src="{{include.videoHero}}" type="video/mp4">
+                                        </video>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-6 text-end d-md-none">
+                                    <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}} stretched-link' href='/projects/{{include.url}}'>→</a>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="flex-grow-1"> -->
                         <div class="col-12 col-md-8 col-lg-7">
+                        <!-- <div class="col"> -->
+                        <!-- <div class="col-12 py-1"> -->
                             <!-- <h5 class="text-wrap-pretty mb-0">{{include.title}}</h5> -->
                             <!-- <h5 class="text-wrap-balance mb-1">{{include.subtitle}}</h5> -->
                             <!-- <p class="lead"><strong>{{include.title}} {{include.emoji}}</strong></p> -->
@@ -38,8 +41,8 @@
                             <!-- <p class="fw-medium mb-1"><small>{{include.dateYears}} • <br>{{include.role}}</small></p> -->
                             <p class="fw-medium mb-1"><small>{{include.role}} <br class="d-none d-sm-inline"><span class="d-inline d-sm-none">• </span>{{include.dateYears}}</small></p>
                         </div>
-                        <div class="col-12 col-md-8 offset-md-4  col-lg-2 offset-lg-0 text-end">
-                            <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}}' href='/projects/{{include.url}}'>→</a>
+                        <div class="col-12 col-md-8 offset-md-4 col-lg-2 offset-lg-0 text-end d-none d-md-block">
+                            <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}} stretched-link' href='/projects/{{include.url}}'>→</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +56,7 @@
     {% include project-hero-mediawall.html %}
     <div class="container">
         <div class='row justify-content-center'>
-            <div class='col-10 col-xl-8'>
+            <div class='col-11 col-md-10 col-xl-8'>
                 <div class='project-description'>
                     <h2 class="text-wrap-prett mb-0">{{include.title}}</h2>
                     <h3 class="text-wrap-balanc mb-1 h2">{{include.subtitle}}</h3>

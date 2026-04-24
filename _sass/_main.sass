@@ -372,7 +372,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
          background-color: lighten($color-primary, $btn-bg-lighten)
          border-color: $color-primary
          box-shadow: 0 8px 16px rgba($color-primary, $box-shadow-intensity) !important
-         transition: background-color .2s, box-shadow .2s, transform .5s
+         transition: background-color 0.2s, box-shadow .2s, transform .5s
          border-radius: 50px
          border-width: 0
          padding: 0.7rem 1.2rem
@@ -413,7 +413,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
             background-color: rgba($color-primary, 100%)
          a,
          strong
-            color: $color-primary
+            color: $color-secondary
       blockquote
          // &::before
          //    background-color: $color-primary
@@ -431,8 +431,11 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
       background-color: rgba($color-primary, 0.05)
    .project-hero#{$name}.project-hero-small
       background-color: none
+      transition: background-color .2s
       .project-description
          background-color: rgba($color-primary, 0.05)
+         &:hover
+            background-color: rgba($color-primary, 0.09)
       
 //                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
 @include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  80%,   100%)
@@ -468,7 +471,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
 
 
 
-$embed-responsive-aspect-ratios: (21 9), (16 9), (4 3), (1 1) !default
+$embed-responsive-aspect-ratios: (21 9), (16 9), (5 4), (4 3), (1 1) !default
 
 .embed-responsive
    position: relative
@@ -505,6 +508,8 @@ $embed-responsive-aspect-ratios: (21 9), (16 9), (4 3), (1 1) !default
    .embed-responsive-#{$y}by#{$x}
       &::before
          padding-top: percentage($x / $y)
+
+
 
 @media (min-width: $break-lg)
    .project-card.left-hand
@@ -891,7 +896,7 @@ model-viewer
       background: none
 
       .project-description
-         padding: 10px
+         padding: 16px
          // background-color: aliceblue
          border-radius: 26px
          overflow: hidden
@@ -963,3 +968,6 @@ li.nav-item-w
 
 .shim-gradient-transparent-to-black
    background: radial-gradient(ellipse at top in hsl shorter hue, hsla(0, 0%, 0%, 0.55), rgba(0, 0, 0, 0.37) 43.28%, rgba(0, 0, 0, 0.16862745098039217) 57.14%, hsla(0, 0%, 0%, 0) 68.49%)
+
+.box-shadow-none
+   box-shadow: none !important
