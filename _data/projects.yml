@@ -17,6 +17,7 @@
   # videoHero: /assets/imgopt/wist/temp/social-movement.mp4
   # videoHero: /assets/imgopt/wist/small-knees-low.mp4
   # videoHero: /assets/imgopt/wist/couch2-low.mp4
+  # videoHero: /assets/imgopt/wist/walking2-low.mp4
   imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
   imgThumb1Position:
   imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
@@ -26,8 +27,10 @@
   left: false
   url: wist.html
   bgImg:     /assets/imgopt/wist/couch2-low-poster.jpg
-  imgJumbotronHero: /assets/imgopt/wist/couch2-low-poster.jpg
-  light: true
+  # imgJumbotronHero: /assets/imgopt/wist/couch2-low-poster.jpg
+  # imgJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
+  videoJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
+  light: false
 - title: Samsung Research America
   pID: 2
   short: samsung
@@ -56,7 +59,7 @@
 
   # imgJumbotronHero: /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   imgJumbotronHero: /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
-  light: true
+  light: false
 - title: Echo
   pID: 3
   short: echo
@@ -103,7 +106,7 @@
   bgImg: /assets/imgopt/hv/IMG_9699.JPG
   videoJumbotronHero:
   imgJumbotronHero: /assets/imgopt/hv/ex6-sidebyside-direct-inverse.gif
-  light: true
+  light: false
   # skip: true
   small: true
 - title: Moral Decisions & Haptics in VR
@@ -155,6 +158,6 @@
   bgImg: /assets/imgopt/whatif/image387.jpg
   videoJumbotronHero:
   imgJumbotronHero: /assets/imgopt/whatif/whatifoverview.gif
-  light: true
+  light: false
   # skip: true
   small: true

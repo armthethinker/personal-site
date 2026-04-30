@@ -21,7 +21,7 @@
   link: https://patents.google.com/patent/US20220005215A1/
   status: Granted
   objectPosition: 50% 97%
-  small: true
+  small: false
 - title: Automatic representation toggling based on depth camera field of view
   abstract: One embodiment provides a method comprising determining a spatial relationship between an augmented reality (AR) device and a camera-equipped device. The AR device is worn by a user. The camera-equipped device is positioned within proximity of the user. The method further comprises determining a position of the user relative to a field of view of the camera-equipped device, and providing a representation of the user for display. The representation automatically switches between a real image of the user and a virtual avatar of the user based on the position of the user.
   description: Dynamically blend between depth video and an avatar in a AR-HMD and depth capture enabled phone system, based on if the user is within the capture volume.
@@ -57,7 +57,7 @@
   link: https://patents.google.com/patent/US20200320906A1/en
   status: Granted
   objectPosition: 50% 89%
-  small: true
+  small: false
 - title: System and method for head mounted device input
   abstract: According to one implementation, a head mounted display (HMD) device comprises a motion detector, a display, and a processor coupled to the motion detector and the display. A memory is also coupled to the processor, wherein the memory stores executable instructions that cause the processor to define an available range for a motion and output a graphic user interface for the available range on the display. An input based upon a motion of the HMD device detected by the inertial motion unit, within the available range is received. One of the HMD device or an external device may then be controlled in response to the input.
   description: Utilizing head or body movement as a discrete or continuous input. Useful in limited contexts for non-primary input.
@@ -69,7 +69,7 @@
   link: https://patents.google.com/patent/US20200202629A1/en
   status: Granted
   objectPosition: 0% 0%
-  small: true
+  small: false
 - title: System and method for transition boundaries and distance responsive interfaces in augmented and virtual reality
   abstract: A head mounted display (HMD) device is provided. The HMD has a display panel, a depth or distance sensor to measure distances between the HMD and a real object. The HMD device sets a close transition boundary distance (CTBD) between the HMD and a close transition boundary (CTB). A far transition boundary distance (FTBD) is set between the HMD and a far transition boundary (FTB). The CTBD is less than the FTBD. As a real object that has associated near and far virtual content moves nearer to the HMD device and crosses the CTB, the virtual content transitions to near virtual content for viewing on the HMD. As the real object moves away from the HMD and crosses the FTB, the virtual content transitions to the far virtual content for viewing on the HMD.
   description: Increased legibility and contextual controls based on user distance from UI. Additional system to prevent rapid toggling when user stands on boundary line.

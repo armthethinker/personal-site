@@ -30,6 +30,7 @@
     - Node
     - Mocha
     - Arduino
+    - LLM/AI Assisted Workflows
 - category: Design & Production
   list:
     - Unity
