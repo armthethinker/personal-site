@@ -48,4 +48,5 @@ exclude:
   - README.md
   - tsconfig.json
   - assets/img/
+  - timeline.html
 
