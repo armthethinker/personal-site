@@ -25,7 +25,7 @@
             {% if include.style != "xl" %}
             <div class="col-12 col-md-4 col-lg-3">
                {% if include.header %}
-               <h2>{{include.header}}</h2>
+               <h2 class="section-header">{{include.header}}</h2>
                {% endif %}
                {% if include.subheader %}
                <strong class="d-block mb-4">{{include.subheader}}</strong>
@@ -40,11 +40,10 @@
                {% endif %}
                <div class="embed-responsive embed-responsive-{{include.aspect}}">
                   <video class="embed-responsive-item"
-                  controls="{{include.controls}}"
-                  loop="{{include.loop}}"
-                  autoplay="{{include.autoplay}}"
-                  muted="{{include.autoplay}}"
-                  playsinline
+
+                  {% if include.controls == true %}controls{% endif %}
+                  {% if include.loop == true %}loop{% endif %}
+                  {% if include.autoplay == true %}autoplay muted playsinline{% endif %}
                   >
                      <source src="{{include.url | prepend:urlPrepend}}" type="video/mp4">
                   </video>

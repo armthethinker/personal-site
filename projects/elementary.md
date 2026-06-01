@@ -289,6 +289,7 @@ Often aware of savings options, few users have savings accounts or other investm
    subheader="In order to create a transparent consumer banking application, we created a five part vision that guided our design work."
    data=site.data.echo.vision
    col="col-6 col-xl-4"
+   aspect="4by3"
 %}
 
 {% include p-section.html

@@ -6,42 +6,28 @@
             <div class='col-12 col-md-10 col-xl-8'>
                 <div class='project-description position-relative'>
                     <div class="row align-items-center">
-                        <div class='col-4 col-md-4 col-lg-3'>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="embed-responsive embed-responsive-5by4 mb-0">
-                                        {% if include.imgHero %}
-                                        <img class="img-fluid embed-responsive-item object-fit-cover mb-0" src='{{include.imgHero}}'>
-                                        {% elsif include.videoHero %}
-                                        <video class="embed-responsive-item object-fit-cover"
-                                            playsinline
-                                            loop
-                                            autoplay
-                                            muted
-                                            >
-                                            <source src="{{include.videoHero}}" type="video/mp4">
-                                        </video>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                <!-- <div class="col-8 text-end d-md-none">
-                                    <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}} stretched-link' href='/projects/{{include.url}}'>→</a>
-                                </div> -->
+                        <div class='col-12 col-sm-4 col-md-3 col-lg-3 col-xxl-4'>
+                            <div class="embed-responsive embed-responsive-5by4 mb-0">
+                                {% if include.imgHero %}
+                                <img class="img-fluid embed-responsive-item object-fit-cover mb-0" src='{{include.imgHero}}'>
+                                {% elsif include.videoHero %}
+                                <video class="embed-responsive-item object-fit-cover"
+                                    playsinline
+                                    loop
+                                    autoplay
+                                    muted
+                                    >
+                                    <source src="{{include.videoHero}}" type="video/mp4">
+                                </video>
+                                {% endif %}
                             </div>
                         </div>
-                        <!-- <div class="flex-grow-1"> -->
-                        <div class="col-8 col-md-8 col-lg-7">
-                        <!-- <div class="col"> -->
-                        <!-- <div class="col-12 py-1"> -->
-                            <!-- <h5 class="text-wrap-pretty mb-0">{{include.title}}</h5> -->
-                            <!-- <h5 class="text-wrap-balance mb-1">{{include.subtitle}}</h5> -->
-                            <!-- <p class="lead"><strong>{{include.title}} {{include.emoji}}</strong></p> -->
+                        <div class="col-12 col-sm-8 col-md-7 col-lg-7 col-xxl-6">
                             <p class="mb-0 mt-1 fw-bold text-wrap-balance"><small>{{include.title}}</small></p>
                             <p class="mb-0 fw-bold color-primary text-wrap-pretty">{{include.subtitle}}</p>
-                            <!-- <p class="fw-medium mb-1"><small>{{include.dateYears}} • <br>{{include.role}}</small></p> -->
                             <p class="fw-medium mb-1"><small>{{include.role}} <br class="d-none d-sm-inline"><span class="d-inline d-sm-none">• </span>{{include.dateYears}}</small></p>
                         </div>
-                        <div class="col-12 col-md-8 offset-md-4 col-lg-2 offset-lg-0 text-end d-none d-md-block">
+                        <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xxl-2 text-end ">
                             <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}} stretched-link' href='/projects/{{include.url}}'>→</a>
                         </div>
                     </div>

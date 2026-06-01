@@ -7,15 +7,15 @@
    <div class="jumbotron-bg"></div>
    <div class="container position-relative">
       {% include navigation-project.html %}
-      <div class="row pb-3 justify-content-center">
+      <div class="row pb-5 justify-content-center">
 
          <div class="col-12 col-xl-10 col-xxl-8 d-flex align-items-center">
-            {% if p.imgJumbotronHero != unknown %}
+            {% if p.imgJumbotronHero %}
             <img src="{{p.imgJumbotronHero}}" class="img-fluid rounded mb-4">
             {% endif %}
-            {% if p.videoJumbotronHero != unknown%}
+            {% if p.videoJumbotronHero %}
             <div class="embed-responsive embed-responsive-5by4 ">
-               <video class="embed-responsive-item object-fit-cover" src="{{p.videoJumbotronHero}}" type="video/mp4" autoplay muted loop></video>
+               <video class="embed-responsive-item object-fit-cover" src="{{p.videoJumbotronHero}}" type="video/mp4" autoplay muted loop playsinline></video>
             </div>
             {% endif %}
          </div>

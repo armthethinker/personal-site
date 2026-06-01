@@ -1,11 +1,39 @@
+{% if include.imgBottom == true %}
+{% assign imgBottom = true %}
+{% else %}
+{% assign imgBottom = false %}
+{% endif %}
+
+{% if include.fullWidth == true %}
+{% assign fullWidth = true %}
+{% else %}
+{% assign fullWidth = false %}
+{% endif %}
+
+{% if include.markdownify == true %}
+{% assign _markdownify = true %}
+{% else %}
+{% assign _markdownify = false %}
+{% endif %}
+
+{% assign aspect = include.aspect | default: "1by1" %}
+{% assign colsub = include.colsub | default: "col-12" %}
+
+
 <div class="p-sec">
    <div class="container">
       <div class="">
          <div class="row">
+            {% unless fullWidth %}
             <div class="col-12 col-md-4 col-lg-3">
-               <h2>{{include.header}}</h2>
+               {% if include.header %}
+               <h2 class="section-header">{{include.header}}</h2>
+               {% endif %}
+               {% if include.subheader %}
                <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% endif %}
             </div>
+            {% endunless %}
             <div class="col">
                <div class="row">
                   {% for item in include.data %}
@@ -14,16 +42,30 @@
                   {% else %}
                   <div class="col mb-4">
                   {% endif %}
-                     <div class="card h-100">
-                        {% if include.imgBottom != true %}
-                        <img src="{{item.url}}" class="card-img-top" alt="{{item.caption | strip_html}}">
-                        {% endif %}
+                     <div class="card h-lg-100">
+                        <div class="row align-items-center">
+                           <div class="{{colsub}}">
+                              {% if item.url and imgBottom == false %}
+                              {% include cards-media.html type=item.type src=item.url item=item position="top" aspect=aspect %}
+                              {% endif %}
+                           </div>
+
+                           <div class="{{colsub}}">
                         <div class="card-body">
-                           <h5 class="card-title color-primary">{{item.header}}</h5>
+                           <p class="card-title color-primary "><strong>{{item.header}}</strong></p>
+                           {% if _markdownify %}
+                           <p class="card-text">{{item.caption | markdownify}}</p>
+                           {% else %}
                            <p class="card-text">{{item.caption}}</p>
+                           {% endif %}
                         </div>
-                        {% if include.imgBottom == true %}
-                        <img src="{{item.url}}" class="card-img-bottom" alt="{{item.caption | strip_html}}">
+                        </div>
+                        </div>
+                        {% if item.url %}
+                        {% if imgBottom == true %}
+                        <!-- <img src="{{item.url}}" class="card-img-bottom" alt="{{item.caption | strip_html}}"> -->
+                         {% include cards-media.html type=item.type src=item.url item=item position="bottom" aspect=aspect %}
+                        {% endif %}
                         {% endif %}
                      </div>
                   </div>

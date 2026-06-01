@@ -9,13 +9,46 @@ modelURL: /assets/models/wist/
 
 ---
 
+
+{% include text-big.html
+   primary="Capture & relive memories spatially"
+   secondary="just by taking a video"
+%}
+
+
+
+
+{% include cards.html
+   data= site.data.wist.flow
+   col="col-12 col-lg-4"
+   colsub="col-12 col-md-6 col-lg-12"
+   fullWidth=true
+%}
+
+<!-- 
+{% include card-big.html
+   fullWidth=true
+   emoji="🤳"
+   title="Take a video"
+   subtitle="Capture immersive moments easily in Wist, just by taking or importing a video."
+   url="capture2-low.mp4"
+   aspect="1by1"
+   skip=true
+%} -->
+
+
+
+{% include text-big.html
+   tertiary="Press play"
+%}
+
 {% include media-video.html
    url="temp/RELIVE-sm.mp4"
    caption=""
    aspect="9by16"
    loop=false
-   autoplay=true
-   controls=false
+   autoplay=false
+   controls=true
    style="xl"
    maxHeight="70vh"
 %}
@@ -34,13 +67,19 @@ Wist's unique perspective and challenges were
 1. **As easy as taking a video.** Just capture or import. We must match what people already do. The tech does the hard part.
 1. **Continuous improvement.** Every capture must be able to be reprocessed with our latest version to enhance the reconstruction.
 
-**And, I was about to have my first kid.** 
+**And, it was personal: I was about to have my first kid.** 
 "
 %}
 
-{% include media-img-xl.html
-   url="temp/vivaldi/birth.jpg"
-   caption="**Every moment is special**, from first heartbeats to first breaths to first laughs to first steps."
+{% include media-video.html
+   url="Couch2-lowbitrate.mp4"
+   caption=""
+   aspect="16by9"
+   loop=true
+   autoplay=true
+   controls=false
+   style="xl"
+   header=""
 %}
 
 {% include p-section.html
@@ -52,22 +91,37 @@ I led the company from research prototypes through product development, fundrais
 
 We grew to four at our height, a cross-functional team. I operated across design, engineering, product, and R&D, building the core tech while defining product direction.
 
+<!-- ## 🙋🏻‍♂️
 As a **founder+CEO**
 - Defined product vision, roadmap
 - Raised ~$1M from VCs and angels (lead: [Long Journey Ventures](https://www.longjourney.vc))
 - Hired and led a small, highly technical team
 - User research and metrics
 
-As a **designer+engineer**
-- Led ML model and rectification methods implementation and orchestration 
-- Crafted new paradigms for interacting with spatial media in headsets and on mobile
-- Led and built depth video sequence optimization, video encoding, shader development, user data backend, performance optimization, and interaction systems - across mobile, headsets, and multiple backends
+## 👨🏻‍🎨
+As a **designer**
+- Crafted new paradigms for interacting with spatial media
+- Tuned interaction systems that were tuned to platform expectations (iOS, Quest, Vision Pro)
+
+## 👨🏻‍💻
+As an **engineer**
+- Led CV/ML model and rectification methods implementation and orchestration 
+- Led and built depth video sequence optimization, video encoding, shader development, user data backend, performance optimization, and interaction systems - across mobile, headsets, and multiple backends -->
 
 <!-- > This kind of product requires someone who can jump between roles, understanding the complex system of constraints. -->
 
-> Jump into _any_ problem and either solve it or find new contraints.
+<!-- > Jump into _any_ problem and either solve it or find new contraints. -->
+
+I wore many hats and used all the tools in my toolbox.
 
 "
+%}
+
+
+{% include cards.html
+   data= site.data.wist.roles
+   col="col-12 col-lg-6"
+   markdownify=true
 %}
 
 
@@ -76,6 +130,10 @@ As a **designer+engineer**
 %}
 
 
+{% include media-img-xl.html
+   url="temp/vivaldi/birth.jpg"
+   caption="**Every moment is special**, from first heartbeats to first breaths to first laughs to first steps."
+%}
 
 {% include p-section.html
    header="Accolades & praise"
@@ -122,14 +180,19 @@ Worked with Andrew McGee (director) to create a version of Wist that could be us
    extraImgClasses="img-xl-contained"
 %}
 
+
 {% include p-section.html
-   header="Capture feels familiar"
-   headerClassTag="h3"
+   content="
+**The entire product experience balanced two things**: 
+1. familiarity with existing patterns and 
+2. novel, spatial extensions into new experiences
+   "%}
+
+{% include p-section.html
+   header="iOS capture, browsing, & playback"
    content="
 
-<!-- ### Capture feels familiar -->
-
-> A futuristic camera in our iOS app that feels like a native camera. 
+#### Spatial capture that feels like video
 
 Each capture records video + depth + camera pose + intrinsics, all at 30-60fps. We directly encoded into an internal format that preserves a higher depth range and helps playback.
 
@@ -139,7 +202,7 @@ Users could also import 2D video for a \"spatial upconversion\".
 
 {% include media-img.html
    url="capture2-low.mp4"
-   caption="**Capturing** feels like video. We use a depth effect at camera init to hint at the difference between Wist and other camera apps."
+   caption="**Capturing** feels like video. We use a depth effect at camera init to hint at the difference between Wist and other camera apps. Dismissable. Hints at depth capture. Surfaces most important camera performance notices (e.g. phone is hot)."
    video=true
    aspect="1by1"
    url2="bento-sm/import.jpg"
@@ -148,8 +211,175 @@ Users could also import 2D video for a \"spatial upconversion\".
 %}
 
 
+
+{% include p-section.html
+   content="
+
+#### Beyond 2D playback, even on flat screens
+It was tricky to balance \"this is familiar\" and \"this is giving me way more\". My design principle was that **any effects, including depth, must be additive**.
+
+"
+%}
+
+
+
+{% include media-video.html
+   url="temp/wist-spatial-scrubbing.MOV"
+   caption="**Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene. Smoothness comes from our work on smoothing our 3D camera positioning math."
+   aspect="16by9"
+   loop=true
+   controls=false
+   autoplay=true
+   style="lg"
+%}
+
+{% include media-img.html
+   style="md"
+   captionSide=true
+   url="temp/features/player-details/layers.jpg"
+   caption="**Re-rendering the 3D scene.** By rendering from a new camera position, smartly coupled to the capture position, I was able to create smoother playback; enhance parallax perception; and blend inputs from device orientation, touch events, and the original camera poses."
+   aspect="1by1"
+%}
+
+
+{% include media-video.html
+   url="temp/wist-v0.8.7-maintain-up.mp4"
+   caption="**Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame."
+   aspect="16by9"
+   loop=true
+   controls=false
+   autoplay=true
+   style="lg"
+%}
+
+{% include p-section.html
+   content="
+
+
+**Smoothing details**: lots of tuning went into how the elements of the scene hierarchy follow each other smoothly, and how those intersect continuously with the user\'s actions.
+
+**Modeless interaction**: users can drag-to-orbit or tilt their phone to see around a scene. Our camera system allows for continuous and softly constrained influence from various sources without locking the user into a mode.
+
+**Remote play**: to help folks sharing their content in the same space. One user can trigger a memory from their phone while a second user is in the headset.
+
+
+#### Other iOS details
+
+"
+%}
+
+{% include media-img.html
+   style="lg"
+   captionSide=false
+   url="temp/features/your-memories.jpg"
+   caption="**Feed.** Elevation is used to give prominence to memories and capture button, communicated via soft shadow layers. Swipe to featured or favorites. "
+   aspect="1by1"
+   url2="temp/features/auto-export.jpg"
+   aspect2="4by3"
+   caption2="**Auto export.** To decrease switching costs, Wist automatically exported 2D videos to the user's camera roll."
+
+%}
+
+
+{% include media-img.html
+   style="md"
+   captionSide=true
+   url="temp/features/player-details/ui.jpg"
+   caption="**Viewing UI details.** Feels like regular video player until playing shows depth parallax. UI is available, though muted against content. Menus fade without interaction. Content blurs near device bounds via variable blur shader."
+   aspect="1by1"
+%}
+
+
+{% include media-img.html
+   style="lg"
+   url="temp/onboarding/onboarding-combined-stacked.jpg"
+   caption="**Reduced time to magic during onboarding.** Onboarding flow included skimmable feature cards, trying the 3D viewer with one of our featured memories, capturing or importing their first memory, and a instant camera inspired printing animation (and more). This helped users immediately feel the magic and ease of Wist. Then, when they sign in on a headset, their first memory is ready."
+%}
+
+
+
+
+{% include media-video.html
+   header="Headsets bring you closer to a moment"
+   subheader="Quest, Vision Pro"
+   url="relive-with-me-low.mp4"
+   caption="**Video.** Really be there again in a headset for the most powerful experience. On Quest and Vision Pro."
+   aspect="1by1"
+   loop=true
+   style="lg"
+   autoplay=true
+%}
+
+
+{% include p-section.html
+   content="
+   
+There is an interplay between what we can build, what is performant, and what users expect from sci-fi media.
+
+**Headset apps** reproject memories back into the user's space, and if the user is in the same place as the capture, they can realign the virtual content with their real world.
+
+**Playback-focused UI** prioritizes reliving moments over navigation and viewer options.
+
+**Sci-fi insipired, but not distracting visual styling.** Critical that we play the memory vividly, lean into user notions of \"memory viewers\" from sci-fi media (including the artifacts), but we cannot let the styling get in the way of the moment.
+
+**Space specific considerations** for how the reprojected media intersects a user's space and their varied intentions while using the app:
+   - Getting closer to the capture position fades in the culled edges
+   - Grabbing the memory pauses it and crops in the boundaries of it
+   - Fluid transitions and looping
+
+#### Other headset details
+
+"%}
+
+
+{% include media-img.html
+   style="lg"
+   captionSide=false
+   url="details-menu-platform.jpg"
+   caption="**Platform experimentation.** We shipped different interfaces to test interface variations, partially inspired by platform user expectations. Both had the core concepts: a focus on the memory itself; a small, grabbable player that expands to browse all memories; and deeper options hidden away."
+%}
+
+
+{% include media-img.html
+   style="lg"
+   captionSide=false
+   url="temp/feature-walkthrough-photos/quest/icon-closeup.jpg"
+   caption="**Quest UI soft shadows.** I pre-rendered the icon and a blurred version, which allowed us to fake realistic icon shadows. "
+   aspect="16by9"
+   aspect2="16by9"
+   url2="temp/feature-walkthrough-photos/avp/browse-collapsed-closeup2.jpg"
+   caption2="**Blur glow.** With the extra compute of the Vision Pro and ease of SwiftUI, the playing memory's card generates a blurred version of the thumbnail and blends it in as a glow behind the card."
+%}
+
+{% include media-img.html
+   style="md"
+   captionSide=true
+   url="temp/feature-walkthrough-photos/quest/grab2.jpg"
+   caption="**Grabbable memories.** Distinct yet intuitive gestures allow for quick, accurate, and forgiving repositioning. Grabbing pauses and fades the memory for a better mix of real and virtual content."
+   aspect="4by3"
+%}
+
+
+{% include media-img.html
+   style="md"
+   captionSide=true
+   url="temp/feature-walkthrough-photos/exports/featuresHighlights/person-highlighting@1x.jpg"
+   caption="**Person highlighting.** A view option that hides non-person content, making it feel like the people are back in your space."
+
+%}
+{% include media-img.html
+   style="md"
+   captionSide=true
+   url="details-expandable-menu.jpg"
+   caption="**Collapsable browsing.** Skim captures in the player or expand the browsable area for more focused browsing."
+
+%}
+
+
+
 {% include p-section.html
    header="Processing enhances captures"
+   subheader="On device & in the cloud"
    content="
 <!-- ### Processing enhances captures -->
 
@@ -171,7 +401,7 @@ into an internal format that could capture, encode, and play at 30+fps.
 
 {% include media-img.html
    url="temp/feature-walkthrough-photos/exports/v0.7.0-sync.jpg"
-   caption=""
+   caption="**Background sync.** Syncing starts as soon as possible to reduce user wait times. Given privacy concerns with personal media, sync card is tappable with additional information about how media is synced across devices."
    style="md"
 %}
 
@@ -188,18 +418,31 @@ into an internal format that could capture, encode, and play at 30+fps.
 
 {% include media-img.html
    url="temp/importScanLayers.gif"
-   caption="Generating different channels of data (depth, flow, segmentation) allowed us to better rectify the final sequence."
-   url2="temp/visualization-merge.jpg"
-   caption2="Visualization was critical to ensure our prototyping was improving the solve."
-   style="lg"
+   caption="**Multi-source informed rectification.** Generating different channels of data (depth, flow, segmentation) allowed us to better rectify the final sequence."
+   aspect="16by9"
 %}
+   <!-- url2="temp/visualization-merge.jpg"
+   caption2="Visualization was critical to ensure our prototyping was improving the solve."
+   style="lg" -->
 
 {% include p-section.html
    content="
 
 We integrated multiple computer vision ML models (depth estimation, camera pose + intrinsics estimation, segmentation, optical flow). We created model and data specific rectification layers and traditional CV techniques to improve temporal coherence and reduce artifacts. Models included Map Anything, Depth Pro, RAFT, FiLM, and more. 
+"%}
 
+{% include media-img.html
+   style="lg"
+   url="decks/enhance.jpg"
+   caption="**Raw LiDAR depth to our enhanced output.** More detail is present without losing metric accuracy, and it is more temporally stable."
+   url2="temp/frame_encoding.jpg"
+   caption2="**Data packing into video frames.** We experimented with many frame encodings, including this where we pack many \"channels\" of data into a single frame of video. This unlocked higher quality playback by balancing compute and texture lookups, as well as preserving data fidelity through compression."
+%}
+
+{% include p-section.html
+   content="
 One example: **LiDAR data is low resolution and highly flickery while ML depth estimation may be higher resolution, but lacks the same metric accuracy.** We figured out how to resolve the real world depth sequence from a plethora of data sources, including the two depth sources.
+
 
 I built a PyTorch-based optimization function that integrated the various data sources based on their unique qualities (e.g. far field LiDAR is low quality) and physical realism (e.g. 3D point movement 3D should have smooth acceleration).
 
@@ -230,82 +473,41 @@ Each step had particular consideration for the qualities of our data (handheld, 
 
 "
 %}
+
 {% include media-video.html
-   header="Playback brings you back to a moment"
-   subheader="Quest, Vision Pro"
-   url="relive-with-me-low.mp4"
-   caption="**Video.** Really be there again in a headset for the most powerful experience. On Quest and Vision Pro."
-   aspect="1by1"
-   loop=true
-   controls=true
-   style="lg"
-%}
-
-{% include p-section.html
-   content="
-
-**Headset apps** reproject memories back into the user's space. We took a lot of care around:
-
-**Focused UI** that prioritizes reliving moments over navigation
-
-**Visual styling** that plays the moment vividly and leans into user notions of \"memory viewers\" from sci-fi media (including the artifacts)
-
-**Space specific considerations** for how the reprojected media intersects a user's space and their varied intentions while using the app
-    - Getting closer to the capture position fades in the culled edges
-    - Grabbing the memory pauses it and crops in the boundaries of it
-    - Fluid transitions and looping
-"
-%}
-{% include media-img-wall.html
-   data=site.data.imgwall.wist-playback
-%}
-
-{% include p-section.html
-   header="iOS app playback"
-   content="
-
-**iOS app playback** looks like regular video at first. It was tricky to balance a feeling of \"this is familiar\" with \"this is giving me way more\".
-
-"
-%}
-{% include media-video.html
-   url="temp/wist-spatial-scrubbing.MOV"
-   caption="**Spatial scrubbing**: scrubbing the playback position changes how the scene camera follows the original camera position, helping the user understand the depth of the scene. Smoothness comes from our work on smoothing our 3D camera positioning math."
+   url="temp/rerun/rerun-ba-solve-trimmed-sm.mp4"
+   caption="**Rerun visualization.** I frequently used Rerun to visually validate our pipeline modules. This is my pass at a bundle adjustment solver, an unfinished component I was developing at the end."
    aspect="16by9"
    loop=true
-   controls=false
    autoplay=true
-   style="lg"
-%}
-
-{% include media-video.html
-   url="temp/wist-v0.8.7-maintain-up.mp4"
-   caption="**Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame."
-   aspect="16by9"
-   loop=true
    controls=false
-   autoplay=true
    style="lg"
+   maxHeight="70vh"
 %}
 
-{% include p-section.html
-   content="
 
-
-**Smoothing details**: lots of tuning went into how the elements of the scene hierarchy follow each other smoothly, and how those intersect continuously with the user\'s actions.
-
-**Modeless interaction**: users can drag-to-orbit or tilt their phone to see around a scene. Our camera system allows for continuous and softly constrained influence from various sources without locking the user into a mode.
-
-**Remote play**: to help folks sharing their content in the same space. One user can trigger a memory from their phone while a second user is in the headset.
-
-"
-%}
 
 
 {% include media-img-xl.html
    url="temp/vivaldi/living-room.jpg"
    caption="Spatial playback allows for perfect realignment with the real world."
 %}
+
+
+
+{% include p-section.html
+   header="Prototypes"
+   content="
+> Everything was a prototype until it shipped.
+"
+%}
+
+
+{% include media-img-wall.html
+   data=site.data.imgwall.wist
+%}
+
+
 
 
 
@@ -355,13 +557,17 @@ Each of these could be its own talk.
 {% include challenges-knew.html %}
 
 
+
+
+
+{% include media-img-xl.html
+   url="temp/vivaldi/wife-son.jpg"
+%}
+
+
+
 {% include p-section.html
    content="
 > The only way to navigate tradeoffs in a highly technical and experiential product like Wist is to know the opportunities and constraints across design, eng, product, and R&D. <br>**That's what makes me special.**
 "
-%}
-
-
-{% include media-img-wall.html
-   data=site.data.imgwall.wist
 %}

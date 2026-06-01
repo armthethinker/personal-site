@@ -5,7 +5,7 @@
 {% endif %}
 
 <div class="p-sec">
-   <div class="container-fluid">
+   <div class="container">
       <div class="negative-margin">
          <div class="row">
             <div class="col">
@@ -33,18 +33,24 @@
                         {% assign _imgstyle = _imgstyle | append: " object-position: " | append: item.origin | append: ";" %}
                      {% endif %}
 
+                     {% assign aspect = item.aspect | default: include.aspect %}
+
 
                      <div class="m-grid-item {{ size }}">
                         <div class="m-grid-content">
                            {% if video %}
-                              <div class="embed-responsive embed-responsive-{{item.aspect}}">
+                              <div class="embed-responsive embed-responsive-{{aspect}}">
                                  <video class="embed-responsive-item" autoplay loop muted playsinline>
                                     <source src="{{item.imgurl | prepend: urlPrepend}}" type="video/mp4">
                                     Your browser does not support the video tag.
                                  </video>
                               </div>
+                           {% elsif aspect == undefined %}
+                              <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}" style="{{_imgstyle}}">
                            {% else %}
-                           <img class="img-fluid rounded" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}" style=" object-fit: cover; object-position: {{item.origin}};">
+                              <div class="embed-responsive embed-responsive-{{aspect}}">
+                                 <img class="embed-responsive-item object-fit-cover" src="{{item.imgurl | prepend: urlPrepend}}" alt="{{item.caption | smartify}}" style="{{_imgstyle}}">
+                              </div>
                            {% endif %}
                            {% if item.caption %}
                               <p class="caption">{{item.caption}}</p>

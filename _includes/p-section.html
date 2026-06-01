@@ -13,11 +13,15 @@
       <div class="">
          <div class="row">
             <div class="{% include template-p-col-left.html %}">
-               {% if include.header %}
-               <h2>{{include.header}}</h2>
-               {% endif %}
-               {% if include.subheader %}
-               <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% if include.header or include.subheader %}
+
+                  {% if include.header %}
+                  <h2 class="section-header">{{include.header}}</h2>
+                  {% endif %}
+                  {% if include.subheader %}
+                  <strong class="d-block mb-4">{{include.subheader}}</strong>
+                  {% endif %}
+
                {% endif %}
             </div>
             <div class="col">

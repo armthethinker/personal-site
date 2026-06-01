@@ -19,11 +19,8 @@
   # videoHero: /assets/imgopt/wist/couch2-low.mp4
   # videoHero: /assets/imgopt/wist/walking2-low.mp4
   imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
-  imgThumb1Position:
   imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
-  imgThumb2Position:
   imgThumb3: /assets/imgopt/wist/bento-sm/lock-screen4.jpg
-  imgThumb3Position:
   left: false
   url: wist.html
   bgImg:     /assets/imgopt/wist/couch2-low-poster.jpg

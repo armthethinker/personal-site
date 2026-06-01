@@ -1,28 +1,40 @@
-- imgurl: temp/frame_encoding.jpg
-  caption: We experimented with many frame encodings, including this where we pack many "channels" of data into a single frame. This helps preserve data through compression and speed up playback compute time.
-- imgurl: temp/social-movement.mp4
-  caption: Early movement system focused on direct, contextual "grabbing".
-  video: true
-  aspect: 1by1
-- imgurl: temp/shaders/wistShaderPrototype-composite.mp4
-  caption: Early shader prototyping for visual look development.
-  video: true
-  aspect: 3by4
-- imgurl: temp/rerun/rerun-inputs-sm.mp4
-  caption: Rerun visualization of various input data streams (raw data, different ML depth estimates, different pose solves).
-  video: true
-  aspect: 16by9
-  size: lg
-- imgurl: temp/rerun/rerun-ba-solve-trimmed-sm.mp4
-  caption: Rerun visualization of our bundle adjustment solve, an unfinished component I was developing at the end.
-  video: true
-  aspect: 16by9
-- imgurl: temp/feature-walkthrough-photos/exports/dev-onboard.jpg
-  caption: Onboarding starts with a clear focus on what the user can do with Wist.
-- imgurl: temp/feature-walkthrough-photos/exports/v0.7.0-sync.jpg
-  caption: Syncing starts as soon as possible to reduce user wait times.
 - imgurl: temp/multiplayer/multiplayer-test-sm.mp4
   caption: Prototyping near field user-to-user interactions to help people feel even closer.
   video: true
   aspect: 16by9
   size: lg
+# - imgurl: temp/frame_encoding.jpg
+  # caption: We experimented with many frame encodings, including this where we pack many "channels" of data into a single frame. This helps preserve data through compression and speed up playback compute time.
+- imgurl: temp/shaders/wistShaderPrototype-composite.mp4
+  caption: Early shader prototyping for visual look development.
+  video: true
+  aspect: 3by4
+- imgurl: temp/social-movement.mp4
+  caption: Early movement system focused on direct, contextual "grabbing".
+  video: true
+  aspect: 1by1
+# - imgurl: temp/rerun/rerun-ba-solve-trimmed-sm.mp4
+  # caption: Rerun visualization of our bundle adjustment solve, an unfinished component I was developing at the end.
+  # video: true
+  # aspect: 16by9
+# - imgurl: temp/rerun/rerun-inputs-sm.mp4
+  # caption: Rerun visualization of various input data streams (raw data, different ML depth estimates, different pose solves).
+  # video: true
+  # aspect: 16by9
+  # size: lg
+# - imgurl: temp/feature-walkthrough-photos/exports/dev-onboard.jpg
+  # caption: Onboarding starts with a clear focus on what the user can do with Wist.
+# - imgurl: temp/feature-walkthrough-photos/exports/v0.7.0-sync.jpg
+  # caption: Syncing starts as soon as possible to reduce user wait times.
+
+- imgurl: vivid/com.armthethinker.Vivid-20210323-075225.jpg
+  aspect: 16by9
+  caption: "<strong>Vivid memory palace.</strong> Before Wist, I built a bunch of memory prototypes including a mixed media memory museum. I used photogrammetry scans, spherical photos, DepthKit volumetric video, and flat photos and videos."
+- imgurl: vivid/com.armthethinker.Vivid-20210909-081750.jpg
+  caption: "<strong>Vivid: drive by house scans.</strong> I drove by old houses I lived in, captured video, and then created photogrammetry scans to understand what it'd feel like to be able to relive meaningful places from the past."
+  aspect: 16by9
+
+# - imgurl: vivid/com.armthethinker.Vivid-20210909-081204.jpg
+- imgurl: vivid/high-five.jpg
+  caption: "<strong>Vivid: high five.</strong> Playful social interactions are always important."
+  aspect: 16by9

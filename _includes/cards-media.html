@@ -1,0 +1,48 @@
+{%- comment -%}
+   cards-media.html
+
+   Internal partial used by cards.html.
+   Renders the media region of a card: an image, or a video wrapped in
+   Bootstrap's embed-responsive helper (matching media-video.html).
+
+   Params:
+      type      "image" | "video"
+      src       full media URL (already prepended)
+      item      the card item (for video options, alt text, aspect)
+      position  "top" | "bottom" (controls which Bootstrap card class is applied)
+{%- endcomment -%}
+
+{%- assign imgClass = "card-img-top" -%}
+{%- if include.position == "bottom" -%}
+   {%- assign imgClass = "card-img-bottom" -%}
+{%- endif -%}
+
+{%- assign aspect    = include.aspect    | default: "16by9" -%}
+
+{%- if include.type == "video" -%}
+
+   {%- assign autoplay  = include.item.autoplay -%}
+   {%- if autoplay == nil %}{% assign autoplay = true %}{% endif -%}
+   {%- assign loop      = include.item.loop -%}
+   {%- if loop == nil %}{% assign loop = true %}{% endif -%}
+   {%- assign controls  = include.item.controls | default: false -%}
+
+   <div class="{{ imgClass }} embed-responsive embed-responsive-{{ aspect }} box-shadow-none">
+      <video class="embed-responsive-item"
+         {% if controls %}controls{% endif %}
+         {% if loop %}loop{% endif %}
+         {% if autoplay %}autoplay muted{% endif %}
+         playsinline>
+         <source src="{{ include.src }}" type="video/mp4">
+      </video>
+   </div>
+
+{%- else -%}
+
+   {%- assign alt = include.item.alt | default: include.item.caption | strip_html -%}
+   <!-- <img src="{{ include.src }}" class="{{ imgClass }}" alt="{{ alt }}"> -->
+   <div class="embed-responsive embed-responsive-{{ aspect }}">
+      <img class="embed-responsive-item object-fit-cover" src="{{ include.src }}" alt="{{ alt }}">
+   </div>
+
+{%- endif -%}

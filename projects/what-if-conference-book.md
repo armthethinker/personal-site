@@ -43,9 +43,10 @@ What If…?, as a company, actively drives participants to explore beyond their 
 
 {% include media-img-wall.html
    data=site.data.imgwall.whatif
-   imgstyle="height: 250px; object-fit: cover;"
+   aspect="4by3"
 %}
 
+   <!-- imgstyle="height: 350px; object-fit: cover;" -->
 {% include p-section.html
    header="My role"
    subheader="Cofounder & Chief Curiosity Curator"
@@ -78,6 +79,7 @@ What If…? began as a conversation between Matt and myself. We talked about apa
    header= "Principles of What If…?"
    data= site.data.whatif.principles
    col="col-12 col-lg-6"
+   aspect="4by3"
 %}
 
 {% include media-youtube.html
