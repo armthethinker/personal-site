@@ -4,7 +4,7 @@
 @function create-elevation($elevation, $tint: #2c2c2c) {
     $shadows: ();
     $num-layers: 4;
-    $base-alpha: 0.05 + ($elevation * 0.005);
+    $base-alpha: 0.04 + ($elevation * 0.005);
     
     @for $i from 1 through $num-layers {
         $y-offset: floor(pow(2, $i - 1) * $elevation) * 1px;

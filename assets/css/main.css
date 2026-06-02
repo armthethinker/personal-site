@@ -8999,7 +8999,7 @@ body {
 }
 .project-samsung .jumbotron .embed-responsive,
 .project-samsung .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
 }
 .project-samsung .card {
   background-color: rgb(245.24, 246.54, 248.24);
@@ -9113,7 +9113,7 @@ body {
 }
 .project-echo .jumbotron .embed-responsive,
 .project-echo .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
 }
 .project-echo .card {
   background-color: rgb(246.28, 246.68, 248.56);
@@ -9227,7 +9227,7 @@ body {
 }
 .project-hv .jumbotron .embed-responsive,
 .project-hv .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
 }
 .project-hv .card {
   background-color: rgb(249, 245.26, 246.78);
@@ -9341,7 +9341,7 @@ body {
 }
 .project-morals .jumbotron .embed-responsive,
 .project-morals .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
 }
 .project-morals .card {
   background-color: rgb(247.26, 246.68, 249.66);
@@ -9455,7 +9455,7 @@ body {
 }
 .project-whatif .jumbotron .embed-responsive,
 .project-whatif .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
 }
 .project-whatif .card {
   background-color: rgb(250.04, 246.26, 246.88);
@@ -9569,7 +9569,7 @@ body {
 }
 .project-wist .jumbotron .embed-responsive,
 .project-wist .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
 }
 .project-wist .card {
   background-color: rgb(250.1, 247.14, 247.48);
@@ -10121,7 +10121,7 @@ model-viewer {
 
 .project-hero-mediawall img {
   border-radius: 32px;
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 10px 10px 0 rgba(44, 44, 44, 0.075), 0 20px 20px 0 rgba(44, 44, 44, 0.075), 0 40px 40px 0 rgba(44, 44, 44, 0.075);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
   object-fit: cover;
   margin: 0;
 }
@@ -10208,6 +10208,14 @@ li.nav-item-w a.nav-link:hover {
   .h-lg-100 {
     height: 100% !important;
   }
+}
+
+.nav-background {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 22px;
+  box-shadow: 0 8px 8px 0 rgba(44, 44, 44, 0.05), 0 4px 4px 0 rgba(44, 44, 44, 0.05), 0 8px 8px 0 rgba(44, 44, 44, 0.05), 0 16px 16px 0 rgba(44, 44, 44, 0.05);
+  padding: 4px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

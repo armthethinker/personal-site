@@ -12,12 +12,12 @@
   # whileAt: Samsung Research America, Mobile Platform Solutions Lab
   # withWho: My coworkers in XR Design Group (XRDG)
   # imgHero:   /assets/imgopt/wist/couch2-low-poster.jpg
-  videoHero: /assets/imgopt/wist/relive-with-me-low-trimmed.mp4
+  # videoHero: /assets/imgopt/wist/relive-with-me-low-trimmed.mp4
   # videoHero: /assets/imgopt/wist/temp/relive-sm.mp4
   # videoHero: /assets/imgopt/wist/temp/social-movement.mp4
   # videoHero: /assets/imgopt/wist/small-knees-low.mp4
   # videoHero: /assets/imgopt/wist/couch2-low.mp4
-  # videoHero: /assets/imgopt/wist/walking2-low.mp4
+  videoHero: /assets/imgopt/wist/walking2-low.mp4
   imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
   imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
   imgThumb3: /assets/imgopt/wist/bento-sm/lock-screen4.jpg
