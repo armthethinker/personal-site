@@ -1,3 +1,24 @@
-{% for entry in site.data.timeline | sort: 'dateEnd' | reverse %}
-  {% include timeline-entry.html entry=entry %}
+{% comment %}
+  Normalize dateEnd to a 4-digit year integer for sorting:
+    - integer year (2021)         → "2021"
+    - "March 6, 2023"            → split on " ", take last token → "2023"
+    - "~2014"                    → split on " ", take last token, remove "~" → "2014"
+{% endcomment %}
+{% assign _years = "" %}
+{% for entry in site.data.timeline %}
+  {% assign _y = entry.dateEnd | append: "" | split: " " | last | remove: "~" %}
+  {% assign _years = _years | append: _y | append: "||" %}
+{% endfor %}
+{% assign _sorted_years = _years | split: "||" | sort | reverse | uniq %}
+
+{% for _year in _sorted_years %}
+  {% assign _year_int = _year | plus: 0 %}
+  {% if _year_int > 0 %}
+    {% for entry in site.data.timeline %}
+      {% assign _ey = entry.dateEnd | append: "" | split: " " | last | remove: "~" | plus: 0 %}
+      {% if _ey == _year_int %}
+        {% include timeline-entry.html entry=entry %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}

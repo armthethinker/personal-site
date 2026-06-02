@@ -19,8 +19,8 @@
 
 - short: Freelancing + agency UX and front-end web development
   type: work
-  dateStart: 2010
-  dateEnd: 2014
+  dateStart: 2014
+  dateEnd: 2015
   shorty: Left What If…? to pursue spatial computing as an ethical designer.
   emoji: 👨🏻‍🎨
   description1: >
@@ -29,14 +29,14 @@
     Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.
   short2: With a stint at an agency and as a freelancer.
 
-- short: Master's in HCI
+- short: Master's in HCI @ Carnegie Mellon
   type: education
   dateStart: 2015
   dateEnd: 2016
   emoji: 👨🏻‍💻, 🙌🏻, 🏦
   description1: <strong>Dual-degree master's in human-computer interaction at Carnegie Mellon University and the Madeira Interactive Technologies Institute</strong> (a small Portuguese institute off the coast of Morocco).
   description2: Researched how <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptic feedback can change moral decisions</a> in VR (and it was even <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">featured in the Wall Street Journal</a>). Led a team of three for client work to design a <a href="/projects/elementary.html">consumer banking app</a> for the Portuguese market that, honestly, we all need. 
-  short2: at Carnegie Mellon University and the M-ITI (Portugal). Worked on <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptics in VR</a> and designed a next-gen <a href="/projects/elementary.html">consumer banking app</a> for a client. <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">Coverage in WSJ.</a>
+  short2: Dual degree at Carnegie Mellon University and the M-ITI (Portugal). Worked on <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptics in VR</a> and designed a next-gen <a href="/projects/elementary.html">consumer banking app</a> for a Portuguese client. <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">Coverage in WSJ.</a>
 
 - short: Published <a href="https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/" target="_blank">The Book Of What If…?</a>
   type: work
@@ -52,7 +52,7 @@
   dateEnd: 2021
   emoji: 🤓 & 😎
   description1: <strong>Designed future AR & VR interfaces at Samsung Research America.</strong> With my team, I researched, designed, and prototyped ways to make spatial computing more human.
-  short2: A sort of precursor to Galaxy XR.
+  short2: A precursor to Galaxy XR.
 
 - short: Founded and built immersive memory startup, Wist.
   type: work
@@ -87,8 +87,26 @@
   institution: Motherboard
   link: https://www.vice.com/en/article/wist-app-relive-memories-vr/
 
+- short: How New Technology is Illuminating a Classic Ethical Dilemma
+  type: press
+  dateEnd: June 8, 2016
+  institution: The Wall Street Journal
+  link: https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082
+
 - short: Pan's Labyrinth Eyes
   type: side
   dateEnd: ~2014
   short2: Arduino project recreating the hand-eyes from Pan's Labyrinth.
   img: /assets/imgopt/samsung/img7281.jpg
+
+- short: VR UX Explorations (Humane Virtuality)
+  type: side
+  dateEnd: 2016
+  short2: Collection of sprints, each exploring a different UX question in VR.
+
+- short: First Sight (Short Film)
+  type: side
+  dateEnd: 2024
+  short2: Collaborated with director to use Wist on set, replacing some VFX work with the real thing.
+  awards: "San Diego Comic-Con International Independent Film Festival - Best Short Film (2025), Lytham International Film Festival - Best Visual Effects (2025)"
+  link: https://www.youtube.com/watch?v=URDjsHupqUM
