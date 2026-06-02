@@ -12,7 +12,8 @@
 {% if entry.dateStart and entry.dateEnd and entry.dateStart != entry.dateEnd %}
   {% assign _date = entry.dateStart | append: "-" | append: entry.dateEnd %}
 {% else %}
-  {% assign _date = entry.dateEnd | default: entry.dateStart %}
+
+   {% assign _date = entry_date | append: "" | split: " " | last %}
 {% endif %}
 
 <div class="te">
@@ -23,14 +24,17 @@
       {% if entry.short2 %}<p class="te__sub">{{ entry.short2 }}</p>{% endif %}
       {% if entry.venue %}<p class="te__meta">{{ entry.venue }}</p>{% endif %}
       {% if entry.institution %}<p class="te__meta">{{ entry.institution }}</p>{% endif %}
-      {% if entry.awards %}<p class="te__meta">🏆 {{ entry.awards }}</p>{% endif %}
+      {% if entry.awards %}
+      <div class="te__awards te__meta">
+        <span>🏆</span>
+        <div>{% assign _awards = entry.awards | split: "," %}{% for _award in _awards %}{{ _award | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
+      </div>
+      {% endif %}
       {% if entry.img %}
       <div class="te__img">
          <img class="img-fluid embed-responsive-item object-fit-cover" src="{{ entry.img }}" alt="{{ entry.short }}">
       </div>
       {% endif %}
-      {% if entry.link %}
-      <a href="{{ entry.link }}" class="te__link" target="_blank" rel="noopener">View ↗</a>
-      {% endif %}
+
    </div>
 </div>
