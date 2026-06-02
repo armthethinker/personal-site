@@ -1,11 +1,30 @@
-<div class="row mb-2">
-   <div class="col-12 col-sm-3 date">
-      {{item.date}}
-   </div>
-   <div class="col">
-      <p><strong>{{item.short}}</strong> {{item.short2}}</p>
-   </div>
-   <div class="col-2">
-      <p>{{item.tag}}</p>
-   </div>
+{% assign entry = include.entry %}
+{% assign type = entry.type | default: "work" %}
+{% assign type_label = type | replace: "-", " " | capitalize %}
+
+{% if type == "patent" %}{% assign badge_mod = "patent" %}
+{% elsif type == "award" %}{% assign badge_mod = "award" %}
+{% elsif type == "talk" %}{% assign badge_mod = "talk" %}
+{% elsif type == "side-project" %}{% assign badge_mod = "side" %}
+{% elsif type == "work" %}{% assign badge_mod = "work" %}
+{% elsif type == "education" %}{% assign badge_mod = "education" %}
+{% else %}{% assign badge_mod = "default" %}{% endif %}
+
+<div class="te">
+  <div class="te__year">{{ entry.date }}</div>
+  <div class="te__body">
+    <span class="te-badge te-badge--{{ badge_mod }}">{{ type_label }}</span>
+    <p class="te__title">{{ entry.short }}</p>
+    {% if entry.short2 %}<p class="te__sub">{{ entry.short2 }}</p>{% endif %}
+    {% if entry.venue %}<p class="te__meta">{{ entry.venue }}</p>{% endif %}
+    {% if entry.institution %}<p class="te__meta">{{ entry.institution }}</p>{% endif %}
+    {% if entry.image %}
+    <div class="te__image">
+      <img src="{{ entry.image }}" alt="{{ entry.short }}">
+    </div>
+    {% endif %}
+    {% if entry.link %}
+    <a href="{{ entry.link }}" class="te__link" target="_blank" rel="noopener">View ↗</a>
+    {% endif %}
+  </div>
 </div>

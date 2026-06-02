@@ -9,6 +9,7 @@
   tag: education
   dateStart: 2009
   dateEnd: 2013
+
 - date: 2014
   emoji: 👨🏻‍✈️
   description1: <strong>Continued to design and produce <a href="/projects/what-if-conference-book.html">The What If…? Conference</a></strong>, helping 1000s ask their own questions.
@@ -17,6 +18,7 @@
   tag: work
   dateStart: 2013
   dateEnd: 2014
+
 - date: 2015
   emoji: 👨🏻‍🎨
   description1: >
@@ -25,28 +27,45 @@
     Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.
   short: Left What If…? to pursue spatial computing as an ethical designer.
   short2: With a stint at an agency and as a freelancer.
-  dateStart: 2014
-  dateEnd: 2015
+  dateStart: 2010
+  dateEnd: 2014
+
 - date: 2015-2016
   emoji: 👨🏻‍💻, 🙌🏻, 🏦
   description1: <strong>Dual-degree master's in human-computer interaction at Carnegie Mellon University and the Madeira Interactive Technologies Institute</strong> (a small Portuguese institute off the coast of Morocco).
   description2: Researched how <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptic feedback can change moral decisions</a> in VR (and it was even <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">featured in the Wall Street Journal</a>). Led a team of three for client work to design a <a href="/projects/elementary.html">consumer banking app</a> for the Portuguese market that, honestly, we all need. 
   short: Master's in HCI
   short2: at Carnegie Mellon University and the M-ITI (Portugal). Worked on <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptics in VR</a> and designed a next-gen <a href="/projects/elementary.html">consumer banking app</a> for a client. <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">Coverage in WSJ.</a>
+  tag: education
+  dateStart: 2015
+  dateEnd: 2016
+
 - date: 2016
   emoji: 📕
   description1: >
     <strong>Published a young adult non-fiction book, <a href="https://www.amazon.com/dp/1582705291/" target="_blank">The Book Of What If…?: Questions & Activities for Curious Minds</a></strong>. Published in English, Macedonian, & Chinese.
   short: Published <a href="https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/" target="_blank">The Book Of What If…?</a>
   short2: Questions & Activities for Curious Minds.
+  tag: work
+  dateEnd: 2016
+
 - date: 2017-2021
   emoji: 🤓 & 😎
   description1: <strong>Designed future AR & VR interfaces at Samsung Research America.</strong> With my team, I researched, designed, and prototyped ways to make spatial computing more human.
   short: Designed and built future AR/VR interfaces at Samsung.
   short2: A sort of precursor to Galaxy XR.
+  tag: work
+  dateStart: 2017
+  dateEnd: 2021
+
 - date: 2021-2026
   emoji: 🤳
   description1: <strong>Creating an immersive memory startup, <a href="https://wistlabs.com" target="_blank">Wist</a>.</strong> Designing, developing, and a little bit of worrying.
   short: Founded and built immersive memory startup, Wist.
   short2: Design, eng, R&D, product, press, and everything to keep it going.
+  tag: work
+  dateStart: 2021
+  dateEnd: 2026
+
+
 

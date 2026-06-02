@@ -144,9 +144,7 @@ title: Home
                <p>Whatever can answer the biggest unknowns or can get us to the next phase.</p>
                {% include skills.html %}
                <h4 class="mt-4">Timeline</h4>
-               {% include
-                  timeline.html
-               %}
+               {% include timeline.html %}
             </div>
          </div>
       </div>
@@ -162,15 +160,10 @@ title: Home
                <h4 class="">Timeline</h4>
                <div class="row timeline d-non">
                   <div class="col">
-                     {% for item in site.data.timeline %}
+                     {% for entry in site.data.timeline-test %}
                         {% include
                            timeline-entry.html
-                           date=item.date
-                           emoji=item.emoji
-                           description1=item.description1
-                           description2=item.description2
-                           short=item.short
-                           short2=item.short2
+                           entry=entry
                         %}
                      {% endfor %}
                   </div>

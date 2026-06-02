@@ -1,0 +1,93 @@
+$te-types: (
+  patent: #4054B2, 
+  award: #C80D59, 
+  talk: #0c4da2, 
+  side: #f94c43, 
+  work: #0e6b4f, 
+  education: #b45309,
+  press: #329ac3,
+)
+
+.te
+  display: grid
+  grid-template-columns: 80px 1fr
+  column-gap: $spacer * 2
+  padding: $spacer * 1.75 0
+  border-top: $border-width solid $border-color
+  align-items: start
+
+  &:first-of-type
+    border-top: none
+
+.te__year
+  font-variant-numeric: tabular-nums
+  font-size: $font-size-sm * 0.9
+  font-weight: $font-weight-bold
+  color: $gray-500
+  padding-top: $spacer * 0.25
+  letter-spacing: 0.04em
+
+.te-badge
+  display: inline-block
+  font-size: .65rem
+  font-weight: $font-weight-bold
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  padding: 3px 9px
+  border-radius: $border-radius-pill
+  margin-bottom: $spacer * 0.5
+
+  @each $name, $color in $te-types
+    &--#{$name}
+      background: mix(white, $color, 85%)
+      color: $color
+
+  &--default
+    background: $gray-200
+    color: $gray-600
+
+.te__title
+  font-size: $font-size-base
+  font-weight: $font-weight-bold
+  color: $body-emphasis-color
+  margin-bottom: $spacer * 0.25
+  line-height: $line-height-sm
+
+.te__sub
+  font-size: $font-size-sm
+  color: $gray-600
+  margin-bottom: $spacer * 0.25
+  line-height: $line-height-base
+
+.te__meta
+  font-size: $font-size-sm * 0.875
+  color: $gray-500
+  margin-bottom: 0
+
+.te__image
+  margin-top: $spacer * 0.875
+  border-radius: $border-radius-lg
+  overflow: hidden
+
+  img
+    width: 100%
+    display: block
+    object-fit: cover
+    max-height: 220px
+
+.te__link
+  display: inline-flex
+  align-items: center
+  gap: $spacer * 0.3
+  margin-top: $spacer * 0.75
+  font-size: $font-size-sm * 0.9
+  font-weight: $font-weight-semibold
+  letter-spacing: 0.03em
+  color: $gray-500
+  text-decoration: none
+  border-bottom: $border-width solid transparent
+  transition: color .2s ease-in-out, border-color .2s ease-in-out
+
+  &:hover
+    color: $gray-700
+    border-bottom-color: currentColor

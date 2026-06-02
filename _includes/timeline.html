@@ -1,6 +1,3 @@
-{% for item in site.data.timeline %}
-    {% include
-        timeline-entry.html
-        data=item
-    %}
+{% for entry in site.data.timeline %}
+  {% include timeline-entry.html entry=entry %}
 {% endfor %}
