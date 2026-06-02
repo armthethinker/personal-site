@@ -1,4 +1,4 @@
-- short: Undergrad with philosophy, humanities perspective on technology, math, and physics. 
+- short: Undergrad in philosophy, humanities perspective on technology, math, & physics 
   type: education
   dateStart: 2009
   dateEnd: 2013
@@ -7,7 +7,7 @@
     <strong>In undergrad, I studied four components of human experience</strong>: philosophy, a humanities perspective on technology, math, and physics.
   description2: >
     On the side, I created a startup/conference, <a href="/projects/what-if-conference-book.html">What If…?</a>, that encouraged active curiosity. I also led a sustainability house, led efforts for a campus revolving sustainability fund, and created a campus bike share program.
-  short2: And built a startup (What If…?), led a sustainability house, and built a campus bike share program.
+  short2: Double major, double minor. And built a startup (What If…?), led a sustainability house, and built a campus bike share program.
 
 - short: The What If…? Conference
   type: work
@@ -15,19 +15,18 @@
   dateEnd: 2014
   emoji: 👨🏻‍✈️
   description1: <strong>Continued to design and produce <a href="/projects/what-if-conference-book.html">The What If…? Conference</a></strong>, helping 1000s ask their own questions.
-  short2: helping 1,000s ask their own questions.
+  short2: Helping 1,000s ask their own questions.
 
 - short: Freelancing + agency UX and front-end web development
   type: work
   dateStart: 2014
   dateEnd: 2015
-  shorty: Left What If…? to pursue spatial computing as an ethical designer.
   emoji: 👨🏻‍🎨
   description1: >
     <strong>Left What If…? to pursue a career in a nascent technology that could use ethical designers</strong>: spatial computing.
   description2: >
     Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.
-  short2: With a stint at an agency and as a freelancer.
+  short2: Web apps and web sites.
 
 - short: Master's in HCI @ Carnegie Mellon
   type: education
@@ -45,8 +44,9 @@
   description1: >
     <strong>Published a young adult non-fiction book, <a href="https://www.amazon.com/dp/1582705291/" target="_blank">The Book Of What If…?: Questions & Activities for Curious Minds</a></strong>. Published in English, Macedonian, & Chinese.
   short2: Questions & Activities for Curious Minds.
+  institution: Beyond Words, an imprint of Simon & Schuster
 
-- short: Designed and built future AR/VR interfaces at Samsung.
+- short: Designed and built future AR/VR interfaces at Samsung
   type: work
   dateStart: 2017
   dateEnd: 2021
@@ -54,13 +54,13 @@
   description1: <strong>Designed future AR & VR interfaces at Samsung Research America.</strong> With my team, I researched, designed, and prototyped ways to make spatial computing more human.
   short2: A precursor to Galaxy XR. Led team. Regularly presented to execs. Filed 10+ patents with 9 granted.
 
-- short: Founded and built immersive memory startup, Wist.
+- short: Founded and built immersive memory startup, Wist
   type: work
   dateStart: 2021
   dateEnd: 2026
   emoji: 🤳
   description1: <strong>Creating an immersive memory startup, <a href="https://wistlabs.com" target="_blank">Wist</a>.</strong> Designing, developing, and a little bit of worrying.
-  short2: Design, eng, R&D, product, press, and everything to keep it going.
+  short2: Design, eng, R&D, product, press, fundraising, hiring, and everything else.
 
 - short: "From 2D to 3D product design: a kind-of personal adventure"
   dateEnd: 2018
@@ -106,6 +106,7 @@
   short2: Collaborated with director to use Wist on set, replacing some VFX work with the real thing.
   awards: "San Diego Comic-Con International Independent Film Festival - Best Short Film (2025), Lytham International Film Festival - Best Visual Effects (2025)"
   link: https://www.youtube.com/watch?v=URDjsHupqUM
+  img: /assets/imgopt/other/first-sight/fs-1.jpg
 
 
 - short: Will This Game-Changing Startup Pitch for VR Tech Secure VR Business Funding?
@@ -131,3 +132,9 @@
   dateEnd: April 10, 2024
   institution: XR AI Spotlight
   link: https://www.youtube.com/watch?v=e1zkGpELIFg
+
+- short: Volumetric Pregnancy
+  type: side
+  dateEnd: 2022
+  short2: Scanned my wife every week of her pregnancy so we could see just how much bodies change. Timelapse in video, Looking Glass, and Quest.
+  img: /assets/imgopt/other/pregnancy/prego-1-crop2.jpg
