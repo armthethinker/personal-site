@@ -1,0 +1,6 @@
+{% for item in site.data.timeline %}
+    {% include
+        timeline-entry.html
+        data=item
+    %}
+{% endfor %}

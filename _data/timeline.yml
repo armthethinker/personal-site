@@ -6,11 +6,17 @@
     On the side, I created a startup/conference, <a href="/projects/what-if-conference-book.html">What If…?</a>, that encouraged active curiosity. I also led a sustainability house, led efforts for a campus revolving sustainability fund, and created a campus bike share program.
   short: Undergrad with philosophy, humanities perspective on technology, math, and physics. 
   short2: And built a startup (What If…?), led a sustainability house, and built a campus bike share program.
+  tag: education
+  dateStart: 2009
+  dateEnd: 2013
 - date: 2014
   emoji: 👨🏻‍✈️
   description1: <strong>Continued to design and produce <a href="/projects/what-if-conference-book.html">The What If…? Conference</a></strong>, helping 1000s ask their own questions.
   short: Continued to design and produce The What If…? Conference,
   short2: helping 1,000s ask their own questions.
+  tag: work
+  dateStart: 2013
+  dateEnd: 2014
 - date: 2015
   emoji: 👨🏻‍🎨
   description1: >
@@ -19,6 +25,8 @@
     Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.
   short: Left What If…? to pursue spatial computing as an ethical designer.
   short2: With a stint at an agency and as a freelancer.
+  dateStart: 2014
+  dateEnd: 2015
 - date: 2015-2016
   emoji: 👨🏻‍💻, 🙌🏻, 🏦
   description1: <strong>Dual-degree master's in human-computer interaction at Carnegie Mellon University and the Madeira Interactive Technologies Institute</strong> (a small Portuguese institute off the coast of Morocco).
@@ -41,8 +49,4 @@
   description1: <strong>Creating an immersive memory startup, <a href="https://wistlabs.com" target="_blank">Wist</a>.</strong> Designing, developing, and a little bit of worrying.
   short: Founded and built immersive memory startup, Wist.
   short2: Design, eng, R&D, product, press, and everything to keep it going.
-- date: Now
-  emoji: 🚀
-  description1: <strong>Looking for my next role.</strong>
-  short: Looking for next challenge
-  short2: as I dissolve Wist.
+

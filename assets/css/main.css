@@ -8699,38 +8699,6 @@ a:hover {
   left: 90%;
 }
 
-.timeline {
-  background-color: #161618;
-  color: #ececee;
-  font-size: 16pt;
-}
-.timeline strong,
-.timeline h2,
-.timeline .h2 {
-  color: #f7f7ff;
-}
-.timeline.timeline-transition {
-  background-image: linear-gradient(180deg, #161618 80%, #28203B 81.6%, hsl(254, 57%, 88%) 97.7%, #ddd6f3 100%);
-  padding-bottom: 240px;
-}
-.timeline .timeline-entry {
-  color: #bbb;
-}
-.timeline .timeline-entry .display-4 {
-  color: #fff;
-}
-.timeline .timeline-entry > .date {
-  opacity: 0.5;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-@media (min-width: 576px) {
-  .timeline .timeline-entry > .date {
-    text-align: right;
-  }
-}
-
 .selected-projects {
   background-color: #FAACA8;
   background-image: linear-gradient(to bottom, #DDD6F3 0%, #FAACA8 100%);

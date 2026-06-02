@@ -1,11 +1,11 @@
-<div class="row timeline-entry mb-4">
+<div class="row mb-2">
    <div class="col-12 col-sm-3 date">
-      {{include.date}}
+      {{item.date}}
    </div>
-   <div class="col description">
-      <!-- <p class="display-4">{{include.emoji}}</p> -->
-      <!-- <p>{{include.description1}}</p> -->
-      <!-- <p>{{include.description2}}</p> -->
-      <p><strong>{{include.short}}</strong> {{include.short2}}</p>
+   <div class="col">
+      <p><strong>{{item.short}}</strong> {{item.short2}}</p>
+   </div>
+   <div class="col-2">
+      <p>{{item.tag}}</p>
    </div>
 </div>
