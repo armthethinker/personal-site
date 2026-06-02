@@ -10,9 +10,9 @@ $te-types: (
 
 .te
   display: grid
-  grid-template-columns: 80px 1fr
+  grid-template-columns: 54px 1fr
   column-gap: $spacer * 2
-  padding: $spacer * 1.75 0
+  padding: $spacer 0
   border-top: $border-width solid $border-color
   align-items: start
 
@@ -21,11 +21,11 @@ $te-types: (
 
 .te__year
   font-variant-numeric: tabular-nums
-  font-size: $font-size-sm * 0.9
+  font-size: $font-size-sm * 0.8
   font-weight: $font-weight-bold
   color: $gray-500
   padding-top: $spacer * 0.25
-  letter-spacing: 0.04em
+  letter-spacing: 0.02em
 
 .te-badge
   display: inline-block
@@ -63,6 +63,12 @@ $te-types: (
   font-size: $font-size-sm * 0.875
   color: $gray-500
   margin-bottom: 0
+
+.te__awards
+  display: grid
+  grid-template-columns: 1.25em 1fr
+  column-gap: 0.35em
+  align-items: start
 
 .te__img
   margin-top: $spacer * 0.875

@@ -8572,9 +8572,9 @@ progress {
 }
 .te {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 54px 1fr;
   column-gap: 2rem;
-  padding: 1.75rem 0;
+  padding: 1rem 0;
   border-top: 1px solid #dee2e6;
   align-items: start;
 }
@@ -8584,11 +8584,11 @@ progress {
 
 .te__year {
   font-variant-numeric: tabular-nums;
-  font-size: 0.7875rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #adb5bd;
   padding-top: 0.25rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .te-badge {
@@ -8653,6 +8653,13 @@ progress {
   font-size: 0.765625rem;
   color: #adb5bd;
   margin-bottom: 0;
+}
+
+.te__awards {
+  display: grid;
+  grid-template-columns: 1.25em 1fr;
+  column-gap: 0.35em;
+  align-items: start;
 }
 
 .te__img {
