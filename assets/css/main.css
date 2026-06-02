@@ -8570,6 +8570,119 @@ progress {
     display: none !important;
   }
 }
+.te {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 2rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid #dee2e6;
+  align-items: start;
+}
+.te:first-of-type {
+  border-top: none;
+}
+
+.te__year {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.7875rem;
+  font-weight: 700;
+  color: #adb5bd;
+  padding-top: 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+.te-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 50rem;
+  margin-bottom: 0.5rem;
+}
+.te-badge--patent {
+  background: rgb(226.35, 229.35, 243.45);
+  color: #4054B2;
+}
+.te-badge--award {
+  background: rgb(246.75, 218.7, 230.1);
+  color: #C80D59;
+}
+.te-badge--talk {
+  background: rgb(218.55, 228.3, 241.05);
+  color: #0c4da2;
+}
+.te-badge--side {
+  background: rgb(254.1, 228.15, 226.8);
+  color: #f94c43;
+}
+.te-badge--work {
+  background: rgb(218.85, 232.8, 228.6);
+  color: #0e6b4f;
+}
+.te-badge--education {
+  background: rgb(243.75, 229.2, 218.1);
+  color: #b45309;
+}
+.te-badge--press {
+  background: rgb(224.25, 239.85, 246);
+  color: #329ac3;
+}
+.te-badge--default {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
+.te__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.te__sub {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.te__meta {
+  font-size: 0.765625rem;
+  color: #adb5bd;
+  margin-bottom: 0;
+}
+
+.te__img {
+  margin-top: 0.875rem;
+}
+.te__img img {
+  height: 200px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+.te__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.75rem;
+  font-size: 0.7875rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #adb5bd;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.te__link:hover {
+  color: #495057;
+  border-bottom-color: currentColor;
+}
+
 html {
   overflow-x: hidden;
   background-color: #ededed;

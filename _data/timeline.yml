@@ -1,71 +1,94 @@
-- date: 2009-2013
+- short: Undergrad with philosophy, humanities perspective on technology, math, and physics. 
+  type: education
+  dateStart: 2009
+  dateEnd: 2013
   emoji: 👨🏻‍💻, 👨🏻‍🌾, 🚴🏻‍♂️
   description1: >
     <strong>In undergrad, I studied four components of human experience</strong>: philosophy, a humanities perspective on technology, math, and physics.
   description2: >
     On the side, I created a startup/conference, <a href="/projects/what-if-conference-book.html">What If…?</a>, that encouraged active curiosity. I also led a sustainability house, led efforts for a campus revolving sustainability fund, and created a campus bike share program.
-  short: Undergrad with philosophy, humanities perspective on technology, math, and physics. 
   short2: And built a startup (What If…?), led a sustainability house, and built a campus bike share program.
-  tag: education
-  dateStart: 2009
-  dateEnd: 2013
 
-- date: 2014
+- short: The What If…? Conference
+  type: work
+  dateStart: 2010
+  dateEnd: 2014
   emoji: 👨🏻‍✈️
   description1: <strong>Continued to design and produce <a href="/projects/what-if-conference-book.html">The What If…? Conference</a></strong>, helping 1000s ask their own questions.
-  short: Continued to design and produce The What If…? Conference,
   short2: helping 1,000s ask their own questions.
-  tag: work
-  dateStart: 2013
-  dateEnd: 2014
 
-- date: 2015
+- short: Freelancing + agency UX and front-end web development
+  type: work
+  dateStart: 2010
+  dateEnd: 2014
+  shorty: Left What If…? to pursue spatial computing as an ethical designer.
   emoji: 👨🏻‍🎨
   description1: >
     <strong>Left What If…? to pursue a career in a nascent technology that could use ethical designers</strong>: spatial computing.
   description2: >
     Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.
-  short: Left What If…? to pursue spatial computing as an ethical designer.
   short2: With a stint at an agency and as a freelancer.
-  dateStart: 2010
-  dateEnd: 2014
 
-- date: 2015-2016
+- short: Master's in HCI
+  type: education
+  dateStart: 2015
+  dateEnd: 2016
   emoji: 👨🏻‍💻, 🙌🏻, 🏦
   description1: <strong>Dual-degree master's in human-computer interaction at Carnegie Mellon University and the Madeira Interactive Technologies Institute</strong> (a small Portuguese institute off the coast of Morocco).
   description2: Researched how <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptic feedback can change moral decisions</a> in VR (and it was even <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">featured in the Wall Street Journal</a>). Led a team of three for client work to design a <a href="/projects/elementary.html">consumer banking app</a> for the Portuguese market that, honestly, we all need. 
-  short: Master's in HCI
   short2: at Carnegie Mellon University and the M-ITI (Portugal). Worked on <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptics in VR</a> and designed a next-gen <a href="/projects/elementary.html">consumer banking app</a> for a client. <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">Coverage in WSJ.</a>
-  tag: education
-  dateStart: 2015
-  dateEnd: 2016
 
-- date: 2016
+- short: Published <a href="https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/" target="_blank">The Book Of What If…?</a>
+  type: work
+  dateEnd: 2016
   emoji: 📕
   description1: >
     <strong>Published a young adult non-fiction book, <a href="https://www.amazon.com/dp/1582705291/" target="_blank">The Book Of What If…?: Questions & Activities for Curious Minds</a></strong>. Published in English, Macedonian, & Chinese.
-  short: Published <a href="https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/" target="_blank">The Book Of What If…?</a>
   short2: Questions & Activities for Curious Minds.
-  tag: work
-  dateEnd: 2016
 
-- date: 2017-2021
-  emoji: 🤓 & 😎
-  description1: <strong>Designed future AR & VR interfaces at Samsung Research America.</strong> With my team, I researched, designed, and prototyped ways to make spatial computing more human.
-  short: Designed and built future AR/VR interfaces at Samsung.
-  short2: A sort of precursor to Galaxy XR.
-  tag: work
+- short: Designed and built future AR/VR interfaces at Samsung.
+  type: work
   dateStart: 2017
   dateEnd: 2021
+  emoji: 🤓 & 😎
+  description1: <strong>Designed future AR & VR interfaces at Samsung Research America.</strong> With my team, I researched, designed, and prototyped ways to make spatial computing more human.
+  short2: A sort of precursor to Galaxy XR.
 
-- date: 2021-2026
-  emoji: 🤳
-  description1: <strong>Creating an immersive memory startup, <a href="https://wistlabs.com" target="_blank">Wist</a>.</strong> Designing, developing, and a little bit of worrying.
-  short: Founded and built immersive memory startup, Wist.
-  short2: Design, eng, R&D, product, press, and everything to keep it going.
-  tag: work
+- short: Founded and built immersive memory startup, Wist.
+  type: work
   dateStart: 2021
   dateEnd: 2026
+  emoji: 🤳
+  description1: <strong>Creating an immersive memory startup, <a href="https://wistlabs.com" target="_blank">Wist</a>.</strong> Designing, developing, and a little bit of worrying.
+  short2: Design, eng, R&D, product, press, and everything to keep it going.
+
+- short: "From 2D to 3D product design: a kind-of personal adventure"
+  dateEnd: 2018
+  type: talk
+  emoji: 🎤
+  short2: Invited speaker at XD Immersive. Shared my lessons transitioning into spatial computing design.
+  venue: XD Immersive, San Francisco, CA
+  link: https://www.youtube.com/watch?v=Mtff419uLe8
 
 
 
+
+- short: LGBTQ+ VR Museum
+  type: side
+  dateEnd: 2021
+  short2: Optimized photogrammetry assets for the museum, increasing performance and visual quality.
+  img: /assets/imgopt/other/LGBTQ-vr-museum/museum4-saturated.1080w.jpg
+  link: https://tribecafilm.com/festival/archive/lgbtq-vr-museum-2022
+  awards: "Tribeca Film Festival — Immersive Competition - New Voices Award (2022)"
+
+- short: This App Lets You Relive Your Memories in VR, 'Black Mirror'-Style
+  type: press
+  dateEnd: March 6, 2023
+  institution: Motherboard
+  link: https://www.vice.com/en/article/wist-app-relive-memories-vr/
+
+- short: Pan's Labyrinth Eyes
+  type: side
+  dateEnd: ~2014
+  short2: Arduino project recreating the hand-eyes from Pan's Labyrinth.
+  img: /assets/imgopt/samsung/img7281.jpg
