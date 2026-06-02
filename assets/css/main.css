@@ -8572,11 +8572,16 @@ progress {
 }
 .te {
   display: grid;
-  grid-template-columns: 54px 1fr;
-  column-gap: 2rem;
+  grid-template-columns: 1fr;
   padding: 1rem 0;
   border-top: 1px solid #dee2e6;
   align-items: start;
+}
+@media (min-width: 576px) {
+  .te {
+    grid-template-columns: 54px 1fr;
+    column-gap: 2rem;
+  }
 }
 .te:first-of-type {
   border-top: none;
@@ -8600,6 +8605,8 @@ progress {
   padding: 3px 9px;
   border-radius: 50rem;
   margin-bottom: 0.5rem;
+  position: relative;
+  left: -9px;
 }
 .te-badge--patent {
   background: rgb(226.35, 229.35, 243.45);
@@ -8676,7 +8683,7 @@ progress {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  margin-top: 0.75rem;
+  margin-top: 0.1rem;
   font-size: 0.7875rem;
   font-weight: 600;
   letter-spacing: 0.03em;

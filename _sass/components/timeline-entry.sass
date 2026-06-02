@@ -10,11 +10,14 @@ $te-types: (
 
 .te
   display: grid
-  grid-template-columns: 54px 1fr
-  column-gap: $spacer * 2
+  grid-template-columns: 1fr
   padding: $spacer 0
   border-top: $border-width solid $border-color
   align-items: start
+
+  +media-breakpoint-up(sm)
+    grid-template-columns: 54px 1fr
+    column-gap: $spacer * 2
 
   &:first-of-type
     border-top: none
@@ -36,6 +39,8 @@ $te-types: (
   padding: 3px 9px
   border-radius: $border-radius-pill
   margin-bottom: $spacer * 0.5
+  position: relative
+  left: -9px
 
   @each $name, $color in $te-types
     &--#{$name}
@@ -83,7 +88,7 @@ $te-types: (
   display: inline-flex
   align-items: center
   gap: $spacer * 0.3
-  margin-top: $spacer * 0.75
+  margin-top: $spacer * 0.1
   font-size: $font-size-sm * 0.9
   font-weight: $font-weight-semibold
   letter-spacing: 0.03em

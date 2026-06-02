@@ -35,6 +35,8 @@
          <img class="img-fluid embed-responsive-item object-fit-cover" src="{{ entry.img }}" alt="{{ entry.short }}">
       </div>
       {% endif %}
-
+      {% if entry.link %}
+      <a href="{{ entry.link }}" class="te__link" target="_blank" rel="noopener">View ↗</a>
+      {% endif %}
    </div>
 </div>
