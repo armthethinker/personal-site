@@ -28,13 +28,15 @@
   # imgJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
   videoJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
   light: false
+
 - title: Samsung Research America
   pID: 2
   short: samsung
   emoji: 🤓
   # subtitle: Opportunities & constraints of magic spatial glasses
   subtitle: Defining & prototyping the future of AR glasses across OS, apps, and interactions
-  description: Led a team of designer-developers who used prototypes to explore the possibility space of AR glasses across OS, apps, and interactions. Promoted our vision to executives and external partners. Worked in a way that was flexible with ever changing specs while informing the device specs.
+  # description: Led a team of designer-developers who used prototypes to explore the possibility space of AR glasses across OS, apps, and interactions. Promoted our vision to executives and external partners. Worked in a way that was flexible with ever changing specs while informing the device specs.
+  description: A precursor to Galaxy XR. Explored the opportunities and constraints of spatial glasses across OS, apps, and interactions which informed efforts across Samsung and with external partners. Led an AR/VR design and development group. Regularly met with executives, partners, and visiting dignitaries. Created and managed our design process and hiring process. Designed and built prototypes and user studies, de-risking explorations. Submitted 10+ patents with 9 granted.
   role: Team Lead & Senior Designer
   date: February 2017 - May 2021
   dateYears: 2017-2021
@@ -57,6 +59,7 @@
   # imgJumbotronHero: /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   imgJumbotronHero: /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
   light: false
+
 - title: Echo
   pID: 3
   short: echo
@@ -80,6 +83,7 @@
   imgJumbotronHero: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
   bgImg: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
   small: true
+
 - title: Humane Virtuality
   pID: 4
   short: hv
@@ -106,6 +110,7 @@
   light: false
   # skip: true
   small: true
+
 - title: Moral Decisions & Haptics in VR
   pID: 5
   short: morals
@@ -131,6 +136,7 @@
   imgJumbotronHero: /assets/imgopt/morals/push-the-worker.gif
   # skip: true
   small: true
+
 - title: What If…? Conference & Book
   pID: 6
   short: whatif
