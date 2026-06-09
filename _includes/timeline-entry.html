@@ -1,3 +1,24 @@
+{% comment %}
+  Include parameters (passed from timeline.html):
+    entry             — timeline.yml entry object
+    linked_press      — pre-parsed array of all press entries that have an idLink
+    press_subsections — boolean; when true, press entries linked to this entry are
+                        rendered here instead of as top-level timeline entries
+
+  Entry fields rendered by this template:
+    type              — badge color/label (work, education, side, talk, press, patent, award)
+    dateStart/dateEnd — year column; "dateStart-dateEnd" or last token of dateEnd
+    link              — "View ↗" link; opens in new tab when http/https
+    short             — entry title
+    short2            — subtitle
+    venue             — shown for talks
+    institution       — shown for press/education
+    awards            — comma-separated string; each award on its own line  (🏆)
+    patents           — free-text note about patents                         (💡)
+    id                — used to match linked_press entries for the press
+                        subsection; also determines which entries get press
+    img               — single path string or YAML list; images shown in a row
+{% endcomment %}
 {% assign entry = include.entry %}
 {% assign type = entry.type | default: "work" %}
 {% assign type_label = type | replace: "-", " " | capitalize %}
@@ -7,12 +28,11 @@
   {% assign type_label = "side project" | capitalize %}
 {% endif %}
 
-
+{% comment %} Date display: "start-end" when range, otherwise last space-token of dateEnd (strips month/day and "~") {% endcomment %}
 {% assign entry_date = entry.dateEnd %}
 {% if entry.dateStart and entry.dateEnd and entry.dateStart != entry.dateEnd %}
   {% assign _date = entry.dateStart | append: "-" | append: entry.dateEnd %}
 {% else %}
-
    {% assign _date = entry_date | append: "" | split: " " | last %}
 {% endif %}
 
@@ -38,6 +58,23 @@
         <span>🏆</span>
         <div>{% assign _awards = entry.awards | split: "," %}{% for _award in _awards %}{{ _award | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
       </div>
+      {% endif %}
+
+      {% if entry.patents %}
+      <div class="te__patents te__meta">
+        <span>💡</span>
+        <div>{{ entry.patents }}</div>
+      </div>
+      {% endif %}
+      {% if include.press_subsections and entry.id %}
+        {% assign _eid = entry.id %}
+        {% assign _press = include.linked_press | where_exp: "p", "p.idLink == _eid or p.idLink contains _eid" %}
+        {% if _press.size > 0 %}
+      <div class="te__press te__meta">
+        <span>📰</span>
+        <div>{% for _p in _press %}<a href="{{ _p.link }}"{% if _p.link contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ _p.institution }}</a> — {{ _p.short }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
+      </div>
+        {% endif %}
       {% endif %}
       {% if entry.img %}
       <div class="te__imgs">

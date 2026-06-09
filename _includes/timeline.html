@@ -1,8 +1,20 @@
 {% comment %}
+  _press_in_subsections toggle:
+    true  — press entries with an idLink are suppressed from the main timeline and
+            rendered as subsections inside their parent entry (matched via entry.id).
+            Press entries without an idLink always appear in the main timeline.
+    false — all press entries appear as top-level timeline entries; subsections hidden.
+{% endcomment %}
+{% assign _press_in_subsections = true %}
+
+{% comment %} Pre-parse: array of all press entries that declare an idLink (used by timeline-entry.html to render press subsections) {% endcomment %}
+{% assign _linked_press = site.data.timeline | where: "type", "press" | where_exp: "p", "p.idLink" %}
+
+{% comment %}
   Normalize dateEnd to a 4-digit year integer for sorting:
-    - integer year (2021)         → "2021"
-    - "March 6, 2023"            → split on " ", take last token → "2023"
-    - "~2014"                    → split on " ", take last token, remove "~" → "2014"
+    - integer year (2021)    → "2021"
+    - "March 6, 2023"       → split on " ", take last token → "2023"
+    - "~2014"               → split on " ", take last token, remove "~" → "2014"
 {% endcomment %}
 {% assign _years = "" %}
 {% for entry in site.data.timeline %}
@@ -10,6 +22,7 @@
   {% assign _years = _years | append: _y | append: "||" %}
 {% endfor %}
 {% assign _sorted_years = _years | split: "||" | sort | reverse | uniq %}
+
 <div>
 {% for _year in _sorted_years %}
   {% assign _year_int = _year | plus: 0 %}
@@ -17,7 +30,11 @@
     {% for entry in site.data.timeline %}
       {% assign _ey = entry.dateEnd | append: "" | split: " " | last | remove: "~" | plus: 0 %}
       {% if _ey == _year_int %}
-        {% include timeline-entry.html entry=entry %}
+        {% if _press_in_subsections and entry.type == "press" and entry.idLink %}
+          {% comment %} Linked press — suppressed here, rendered as subsection in parent entry {% endcomment %}
+        {% else %}
+          {% include timeline-entry.html entry=entry linked_press=_linked_press press_subsections=_press_in_subsections %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% endif %}
