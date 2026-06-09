@@ -71,15 +71,9 @@ Wist's unique perspective and challenges were
 "
 %}
 
-{% include media-video.html
-   url="Couch2-lowbitrate.mp4"
-   caption=""
-   aspect="16by9"
-   loop=true
-   autoplay=true
-   controls=false
-   style="xl"
-   header=""
+{% include media-img-xl.html
+   url="temp/vivaldi/birth.jpg"
+   caption="**Every moment is special**, from first heartbeats to first breaths to first laughs to first steps."
 %}
 
 {% include p-section.html
@@ -118,6 +112,8 @@ I wore many hats and used all the tools in my toolbox.
 %}
 
 
+
+
 {% include cards.html
    data= site.data.wist.roles
    col="col-12 col-lg-6"
@@ -130,63 +126,42 @@ I wore many hats and used all the tools in my toolbox.
 %}
 
 
-{% include media-img-xl.html
-   url="temp/vivaldi/birth.jpg"
-   caption="**Every moment is special**, from first heartbeats to first breaths to first laughs to first steps."
-%}
 
-{% include p-section.html
-   header="Accolades & praise"
-   url=""
+{% include media-video.html
+   url="Couch2-lowbitrate.mp4"
    caption=""
-   content="
-**User feedback**
-> \"It's much more immersive than watching the apple spatial videos.\"
-
-> \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\"
-
-**Traction**
-- 18,600+ waitlist sign ups
-- 1,700+ users
-- 8,800+ memories captured
-<!-- - WoW traction TK -->
-
-**Covered in media**<br>Interviews in [Vice/Motherboard](https://www.vice.com/en/article/wist-app-relive-memories-vr/), [This Week in Startups](https://www.youtube.com/watch?v=TZlK7Ee84sI&t=1540s), [The Pitch](https://www.thepitch.show/122-wist-the-killer-use-case-for-vr), [Freethink](https://www.freethink.com/ar-vr/vr-app), [Upload VR](https://www.uploadvr.com/wist-delivers-minority-report-memory-replay/), and [XR AI Spotlight](https://www.xraispotlight.com/how-to-capture-and-relive-memories-in-3d-without-a-vision-pro/).
-"
-%}
-
-{% include p-section.html
-   url="temp/first-sight-sm.jpg"
-   caption="Wist used in the production of \"First Sight\"."
-   content="
-**Used in short film**<br>
-Worked with Andrew McGee (director) to create a version of Wist that could be used on set to replace some VFX work. [See the film.](https://www.youtube.com/watch?v=URDjsHupqUM)
-
-"
+   aspect="16by9"
+   loop=true
+   autoplay=true
+   controls=false
+   style="xl"
+   header=""
 %}
 
 {% include p-section.html
    header="Product"
    subheader="It has to be easy and just work"
    content="
-> Wist was an end-to-end spatial media platform for parents with young kids.
+
+> Wist was a spatial media platform that turned video into relivable, dynamic, volumetric moments.
+
+My guiding vision was that Wist **must be as easy as taking a video and putting on a headset**. We must work with existing capture/viewing patterns, especially for our key users: parents. Anything spatial or novel must be additive, not distracting or gimmicky.
+
+**Wist has four parts**
+1. **iOS app** for capturing, importing, browsing, and reliving memories (in spatial viewer or augmented reality)
+2. **Quest, Vision Pro apps** for browsing and reliving memories volumetrically.
+3. **Cloud enhancement pipeline** for improving capture sequence reconstruction quality.
+4. **Data backend** for user data, metrics, syncing, auth.
 
 "
 %}
 
-{% include media-img-xl.html
+{% include media-img.html
+   style="lg"
    url="temp/ux-flow.jpg"
    caption="**Wist flow.** Capture or import. Process on device and enhance in the cloud. Relive in headset or on mobile."
    extraImgClasses="img-xl-contained"
 %}
-
-
-{% include p-section.html
-   content="
-**The entire product experience balanced two things**: 
-1. familiarity with existing patterns and 
-2. novel, spatial extensions into new experiences
-   "%}
 
 {% include p-section.html
    header="iOS capture, browsing, & playback"
@@ -557,6 +532,35 @@ Each of these could be its own talk.
 {% include challenges-knew.html %}
 
 
+{% include p-section.html
+   header="Accolades & praise"
+   url=""
+   caption=""
+   content="
+**User feedback**
+> \"It's much more immersive than watching the apple spatial videos.\"
+
+> \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\"
+
+**Traction**
+- 18,600+ waitlist sign ups
+- 1,700+ users
+- 8,800+ memories captured
+<!-- - WoW traction TK -->
+
+**Covered in media**<br>Interviews in [Vice/Motherboard](https://www.vice.com/en/article/wist-app-relive-memories-vr/), [This Week in Startups](https://www.youtube.com/watch?v=TZlK7Ee84sI&t=1540s), [The Pitch](https://www.thepitch.show/122-wist-the-killer-use-case-for-vr), [Freethink](https://www.freethink.com/ar-vr/vr-app), [Upload VR](https://www.uploadvr.com/wist-delivers-minority-report-memory-replay/), and [XR AI Spotlight](https://www.xraispotlight.com/how-to-capture-and-relive-memories-in-3d-without-a-vision-pro/).
+"
+%}
+
+{% include p-section.html
+   url="temp/first-sight-sm.jpg"
+   caption="Wist used in the production of \"First Sight\"."
+   content="
+**Used in short film**<br>
+Worked with Andrew McGee (director) to create a version of Wist that could be used on set to replace some VFX work. [See the film.](https://www.youtube.com/watch?v=URDjsHupqUM)
+
+"
+%}
 
 
 
