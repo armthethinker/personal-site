@@ -25,7 +25,7 @@
          </div>
          {% if entry.link %}
          <div class="col text-end">
-            <a href="{{ entry.link }}" class="te__link stretched-link" target="_blank" rel="noopener">View ↗</a>
+            <a href="{{ entry.link }}" class="te__link stretched-link"{% if entry.link contains 'http' %} target="_blank" rel="noopener"{% endif %}>View ↗</a>
          </div>   
          {% endif %} 
       </div>
