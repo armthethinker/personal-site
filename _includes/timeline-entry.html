@@ -19,7 +19,16 @@
 <div class="te">
    <div class="te__year">{{ _date }}</div>
    <div class="te__body">
-      <span class="te-badge te-badge--{{ badge_mod }}">{{ type_label }}</span>
+      <div class="row">
+         <div class="col">
+            <span class="te-badge te-badge--{{ badge_mod }}">{{ type_label }}</span>
+         </div>
+         {% if entry.link %}
+         <div class="col text-end">
+            <a href="{{ entry.link }}" class="te__link stretched-link" target="_blank" rel="noopener">View ↗</a>
+         </div>   
+         {% endif %} 
+      </div>
       <p class="te__title">{{ entry.short }}</p>
       {% if entry.short2 %}<p class="te__sub">{{ entry.short2 }}</p>{% endif %}
       {% if entry.venue %}<p class="te__meta">{{ entry.venue }}</p>{% endif %}
@@ -34,9 +43,6 @@
       <div class="te__img">
          <img class="img-fluid embed-responsive-item object-fit-cover" src="{{ entry.img }}" alt="{{ entry.short }}">
       </div>
-      {% endif %}
-      {% if entry.link %}
-      <a href="{{ entry.link }}" class="te__link stretched-link" target="_blank" rel="noopener">View ↗</a>
       {% endif %}
    </div>
 </div>
