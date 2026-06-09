@@ -20,16 +20,18 @@
 {% endif %}
 
 {% for item in site.data.skills %}
-<strong>{{ item.category }}</strong>
-<ul class="skill-categories list-unstyled">
-   <li class="mb-2">
+<div class="row">
+   <div class="col-12 col-xl-4">
+      <strong class="text-body-secondary">{{ item.category }}</strong>
+   </div>
+   <div class="col">
       <ul class="skill-list list-inline">
          {% for skill in item.list %}
          <li class="list-inline-item">{{ skill }}</li>
          {% endfor %}
       </ul>
-   </li>
-</ul>
+   </div>
+</div>
 {% endfor %}
 
 {% if include.section == true %}
