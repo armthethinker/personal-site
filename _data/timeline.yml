@@ -8,6 +8,7 @@
   description2: >
     On the side, I created a startup/conference, <a href="/projects/what-if-conference-book.html">What If…?</a>, that encouraged active curiosity. I also led a sustainability house, led efforts for a campus revolving sustainability fund, and created a campus bike share program.
   short2: Double major, double minor. And built a startup (What If…?), led a sustainability house, and built a campus bike share program.
+  institution: Westminster College, Missouri
 
 - short: The What If…? Conference
   type: work
@@ -16,6 +17,10 @@
   emoji: 👨🏻‍✈️
   description1: <strong>Continued to design and produce <a href="/projects/what-if-conference-book.html">The What If…? Conference</a></strong>, helping 1000s ask their own questions.
   short2: Helping 1,000s ask their own questions.
+  link: /projects/what-if-conference-book.html
+  img: 
+  - /assets/imgopt/whatif/image333.jpg
+  - /assets/imgopt/whatif/fb-whatif-7.jpg
 
 - short: Freelancing + agency UX and front-end web development
   type: work
@@ -27,6 +32,9 @@
   description2: >
     Stint at an agency and as a freelancer, doing UX design and front-end web development. A few shipped products: (1) a home service worker app, (2) a political campaign management app, and (3) a restaurant food temperature app.
   short2: Web apps and web sites.
+  institution: Caledon Virtual, Dasein Design
+  # img: 
+  # - /assets/imgopt/other/dsc0168-bright-5.jpg
 
 - short: Master's in HCI @ Carnegie Mellon
   type: education
@@ -36,23 +44,32 @@
   description1: <strong>Dual-degree master's in human-computer interaction at Carnegie Mellon University and the Madeira Interactive Technologies Institute</strong> (a small Portuguese institute off the coast of Morocco).
   description2: Researched how <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptic feedback can change moral decisions</a> in VR (and it was even <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">featured in the Wall Street Journal</a>). Led a team of three for client work to design a <a href="/projects/elementary.html">consumer banking app</a> for the Portuguese market that, honestly, we all need. 
   short2: Dual degree at Carnegie Mellon University and the M-ITI (Portugal). Worked on <a href="/projects/moral-decision-making-haptic-feedback-in-virtual-environments.html">haptics in VR</a> and designed a next-gen <a href="/projects/elementary.html">consumer banking app</a> for a Portuguese client. <a href="https://www.wsj.com/articles/how-new-technology-is-illuminating-a-classic-ethical-dilemma-1465395082" target="_blank">Coverage in WSJ.</a>
+  img: 
+    - /assets/imgopt/morals/2.jpg
+    - /assets/imgopt/echo/mchugh-portfolio-hero.jpg
+    - /assets/imgopt/echo/16-10-12-elementary-30.jpg
 
-- short: Published <a href="https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/" target="_blank">The Book Of What If…?</a>
+
+- short: Published The Book Of What If…?
   type: work
   dateEnd: 2016
   emoji: 📕
-  description1: >
-    <strong>Published a young adult non-fiction book, <a href="https://www.amazon.com/dp/1582705291/" target="_blank">The Book Of What If…?: Questions & Activities for Curious Minds</a></strong>. Published in English, Macedonian, & Chinese.
   short2: Questions & Activities for Curious Minds.
   institution: Beyond Words, an imprint of Simon & Schuster
+  img: /assets/imgopt/whatif/IMG_2211.jpg
+  link: https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/
 
-- short: Designed and built future AR/VR interfaces at Samsung
+- short: Designed and built future AR/VR interfaces @ Samsung
   type: work
   dateStart: 2017
   dateEnd: 2021
   emoji: 🤓 & 😎
   description1: <strong>Designed future AR & VR interfaces at Samsung Research America.</strong> With my team, I researched, designed, and prototyped ways to make spatial computing more human.
   short2: A precursor to Galaxy XR. Led team. Regularly presented to execs. Filed 10+ patents with 9 granted.
+  img: 
+    - /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
+    - /assets/imgopt/samsung/patents/US20210319617A1-20211014-D00012.jpg
+  link: /projects/samsung.html
 
 - short: Founded and built immersive memory startup, Wist
   type: work
@@ -61,6 +78,11 @@
   emoji: 🤳
   description1: <strong>Creating an immersive memory startup, <a href="https://wistlabs.com" target="_blank">Wist</a>.</strong> Designing, developing, and a little bit of worrying.
   short2: Design, eng, R&D, product, press, fundraising, hiring, and everything else.
+  img: 
+    - /assets/imgopt/wist/temp/vivaldi/wife-son.jpg
+    - /assets/imgopt/wist/temp/features/feed-player.jpg
+    - /assets/imgopt/wist/temp/vivaldi/living-room.jpg
+  link: /projects/wist.html
 
 - short: "From 2D to 3D product design: a kind-of personal adventure"
   dateEnd: 2018
@@ -93,12 +115,18 @@
   type: side
   dateEnd: ~2014
   short2: Arduino project recreating the hand-eyes from Pan's Labyrinth.
-  img: /assets/imgopt/samsung/img7281.jpg
+  img: 
+    - /assets/imgopt/samsung/img7281.jpg
+    # - /assets/imgopt/samsung/two-screens-one-camera.gif
 
 - short: VR UX Explorations (Humane Virtuality)
   type: side
   dateEnd: 2016
-  short2: Collection of sprints, each exploring a different UX question in VR.
+  short2: Collection of sprints exploring different UX challenges in VR.
+  link: /projects/humane-virtuality.html
+  img: 
+    - /assets/imgopt/hv/hero-8.jpg
+    - /assets/imgopt/hv/diagram-binocular-disparity.jpg
 
 - short: First Sight (Short Film)
   type: side

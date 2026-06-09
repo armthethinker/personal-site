@@ -40,8 +40,8 @@
       </div>
       {% endif %}
       {% if entry.img %}
-      <div class="te__img">
-         <img class="img-fluid embed-responsive-item object-fit-cover" src="{{ entry.img }}" alt="{{ entry.short }}">
+      <div class="te__imgs">
+        {% for _img in entry.img %}<img class="img-fluid embed-responsive-item object-fit-cover" src="{{ _img }}" alt="{{ entry.short }}">{% endfor %}
       </div>
       {% endif %}
    </div>
