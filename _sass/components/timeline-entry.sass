@@ -74,11 +74,19 @@ $te-types: (
   color: $gray-500
   margin-bottom: 0
 
-.te__awards
+.te__awards,
+.te__press,
+.te__patents
   display: grid
-  grid-template-columns: 1.25em 1fr
+  grid-template-columns: 1.4em 1fr
   column-gap: 0.35em
   align-items: start
+
+.te__press,
+.te__patents
+  a
+    position: relative
+    z-index: 2
 
 .te__imgs
   display: flex
