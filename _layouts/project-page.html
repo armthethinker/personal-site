@@ -14,15 +14,13 @@
 {% endfor %}
 
 <body class="project-{{p.short}}">
-   <!-- {% include util-responsive-size.html %} -->
-   <!-- {% include project-breadcrumbs.html %} -->
-   <!-- {% include project-breadcrumbs-debug.html %} -->
+   {% include util-responsive-size.html %}
+   
    <div class="page">
       <div class="page-header">
          {% include jumbotron-header.html %}
       </div>
       <div class="page-body">
-         <!-- {% include toc.html %} -->
          {{ content }}
       </div>
    </div>
