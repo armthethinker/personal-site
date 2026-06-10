@@ -10,7 +10,8 @@ const path_1 = __importDefault(require("path"));
 const filesToHash = [
     'assets/css/main.css',
     'assets/css/main.css.map',
-    'assets/js/main.min.js'
+    'assets/js/vendor.min.js',
+    'assets/js/app.js'
 ];
 // Jekyll's data directory
 const MANIFEST_DIR = '_data';

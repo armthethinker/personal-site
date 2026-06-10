@@ -6,7 +6,8 @@ import path from 'path'
 const filesToHash = [
   'assets/css/main.css',
   'assets/css/main.css.map',
-  'assets/js/main.min.js'
+  'assets/js/vendor.min.js',
+  'assets/js/app.js'
 ]
 
 // Jekyll's data directory
