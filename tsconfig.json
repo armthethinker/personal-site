@@ -4,9 +4,11 @@
     "module": "CommonJS",
     "esModuleInterop": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "rootDir": "scripts",
+    "outDir": "scripts/build"
   },
   "include": [
-    "scripts/**/*"
+    "scripts/*.ts"
   ]
 }
