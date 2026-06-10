@@ -2,7 +2,7 @@
 layout: project-page
 pID: 1
 title: Wist
-description: Immersive memories
+description: Founded a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,800 memories and 18,600+ waitlist sign ups.
 image: /assets/imgopt/wist/couch2-low-poster.jpg
 assetURL: /assets/imgopt/wist/
 modelURL: /assets/models/wist/
