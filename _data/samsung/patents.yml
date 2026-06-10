@@ -2,7 +2,11 @@
   abstract: An augmented reality (AR) device supporting an AR is provided. The AR device includes a display, a communication circuit, at least one processor operatively connected to the display and the communication circuit, and a memory operatively connected to the at least one processor. The memory stores instructions that, when executed, cause the at least one processor to establish a connection with a user device storing a contact application and a message application, through the communication circuit, detect that the message application is executed, and display a first graphic user interface (GUI) and at least one avatar, which is disposed at a location adjacent to the first GUI and corresponds to at least one contact associated with the contact application or the message application, through the display in the AR.
   description: Interactions for an avatar-based AR chat app.
   titleShort: Avatar-based AR messaging app interactions
-  img: US20210319617A1.jpg
+  img: 
+    - US20210319617A1.jpg
+    - US20210319617A1-20211014-D00001.jpg
+    - US20210319617A1-20211014-D00017.jpg
+    - US20210319617A1-20211014-D00024.jpg
   year: 2020
   inventors: Stephanie Kim Ahn, Aaron Faucher, Andrew R McHugh, Edgar Evangelista, Jaehyun Kim
   assignee: Samsung Electronics Co Ltd
@@ -10,13 +14,14 @@
   link: https://patents.google.com/patent/US20210319617A1/
   status: Granted
   objectPosition: 50% 28%
-  small: false
 
 - title: Efficient encoding of depth data across devices
   abstract: One embodiment provides a method comprising determining a spatial relationship between an augmented reality (AR) device and a camera-equipped device. The AR device is worn by a user. The camera-equipped device is positioned within proximity of the user. The method comprises determining, based on the spatial relationship, minimum and maximum boundaries of a user volume encompassing a head and one or more extremities of the user. The minimum and maximum boundaries represent a reduced depth range that is narrower than a full depth range of a camera frustum of the camera-equipped device. The method further comprises encoding, based on the minimum and maximum boundaries, a depth image frame captured via the camera-equipped device, and transmitting the encoded depth image frame over a remote network connection. A reconstructed 3D image based in part on the encoded depth image frame is rendered by a different AR device.
   description: In an AR-HMD and depth-capture-enabled phone system, decrease the depth data that needs to be encoded by using dynamic min-max culling.
   titleShort: Efficient depth data encoding across devices
-  img: US20220005215A1-1.jpg
+  img: 
+    - US20220005215A1-1-crop1.jpg
+    - US20220005215A1-1-crop2.jpg
   year: 2020
   inventors: Edgar Evangelista, Aaron Faucher, Jaehyun Kim, Andrew R McHugh
   assignee: Samsung Electronics Co Ltd
@@ -24,12 +29,15 @@
   link: https://patents.google.com/patent/US20220005215A1/
   status: Granted
   objectPosition: 50% 97%
-  small: false
 
 - title: Automatic representation toggling based on depth camera field of view
   abstract: One embodiment provides a method comprising determining a spatial relationship between an augmented reality (AR) device and a camera-equipped device. The AR device is worn by a user. The camera-equipped device is positioned within proximity of the user. The method further comprises determining a position of the user relative to a field of view of the camera-equipped device, and providing a representation of the user for display. The representation automatically switches between a real image of the user and a virtual avatar of the user based on the position of the user.
   description: Dynamically blend between depth video and an avatar in a AR-HMD and depth capture enabled phone system, based on if the user is within the capture volume.
-  img: US20210407215A1.jpg
+  img: 
+    - US20210407215A1.jpg
+    - US20210407215A1-20211230-D00022.jpg
+    - US20210407215A1-20211230-D00011.jpg
+    - US20210407215A1-20211230-D00017.jpg
   year: 2020
   inventors: Edgar Evangelista, Aaron Faucher, Jaehyun Kim, Andrew R McHugh
   assignee: Samsung Electronics Co Ltd
@@ -37,12 +45,13 @@
   link: https://patents.google.com/patent/US20210407215A1/
   status: Granted
   objectPosition: 88% 18%
-  small: false
 
 - title: System and method for augmented reality interaction
   abstract: A method, an electronic device, and computer readable medium is provided. The method includes identifying a plurality of virtual objects for output to a display of the electronic device, including a priority level for each of the plurality of virtual objects. The method also includes comparing the priority level of an object of the plurality of virtual objects to the priority level associated with another object of the plurality of virtual objects to determine whether to modify an appearance of either object. In response to determining to modify the appearance of either object, the method further includes modifying the appearance of either. The method additionally includes rendering the plurality of virtual objects on the display of the electronic device.
   description: Rendering and organization of virtual objects based on priority levels in AR.
-  img: US20190279407A1-20190912-D00011.jpg
+  img: 
+    - US20190279407A1-20190912-D00011.jpg
+    - US20190279407A1-20190912-D00019.jpg
   year: 2018
   inventors: Andrew R McHugh, Duncan Knarr
   assignee: Samsung Electronics Co Ltd
@@ -50,12 +59,13 @@
   link: https://patents.google.com/patent/US20190279407A1/en
   status: Granted
   objectPosition: 10% 91%
-  small: false
 
 - title: Mobile device with a foldable display and method of providing user interfaces on the foldable display
   abstract: A system and method for controlling presentation on a foldable display of an electronic device is provided. A foldable electronic device comprises a foldable housing including a hinge structure, a first housing structure and a second housing structure foldable and unfoldable with respect to the first housing structure about the hinge structure. The electronic device includes a processor and a memory to store instructions that cause the processor to receive a first user input to select an application program; detect a change from a folded state to an unfolded state; determine whether the selected application program has user interface size restrictions; and in the unfolded state, display a user interface of the selected application on at least a portion of the foldable display, based in part on the screen size restriction.
   description: Novel interactions to manage multiple open apps/windows, especially for foldable devices.
-  img: US20200320906A1-20201008-D00013.jpg
+  img: 
+    - US20200320906A1-20201008-D00013.jpg
+    - US20200320906A1-20201008-D00016.jpg
   year: 2019
   inventors: Duncan Knarr, Andrew R McHugh, Seokhyun Yoon
   assignee: Samsung Electronics Co Ltd
@@ -63,13 +73,14 @@
   link: https://patents.google.com/patent/US20200320906A1/en
   status: Granted
   objectPosition: 50% 89%
-  small: false
 
 - title: System and method for head mounted device input
   abstract: According to one implementation, a head mounted display (HMD) device comprises a motion detector, a display, and a processor coupled to the motion detector and the display. A memory is also coupled to the processor, wherein the memory stores executable instructions that cause the processor to define an available range for a motion and output a graphic user interface for the available range on the display. An input based upon a motion of the HMD device detected by the inertial motion unit, within the available range is received. One of the HMD device or an external device may then be controlled in response to the input.
   description: Utilizing head or body movement as a discrete or continuous input. Useful in limited contexts for non-primary input.
   titleShort: Head/body movement as UI input for AR glasses
-  img: US20200202629A1-20200625-D00005.jpg
+  img: 
+    - US20200202629A1-20200625-D00005.jpg
+    - US20200202629A1-20200625-D00010.jpg
   year: 2019
   inventors: Priyanka Sharma, Andrew R McHugh
   assignee: Samsung Electronics Co Ltd
@@ -77,12 +88,16 @@
   link: https://patents.google.com/patent/US20200202629A1/en
   status: Granted
   objectPosition: 0% 0%
-  small: false
 
 - title: System and method for transition boundaries and distance responsive interfaces in augmented and virtual reality
   abstract: A head mounted display (HMD) device is provided. The HMD has a display panel, a depth or distance sensor to measure distances between the HMD and a real object. The HMD device sets a close transition boundary distance (CTBD) between the HMD and a close transition boundary (CTB). A far transition boundary distance (FTBD) is set between the HMD and a far transition boundary (FTB). The CTBD is less than the FTBD. As a real object that has associated near and far virtual content moves nearer to the HMD device and crosses the CTB, the virtual content transitions to near virtual content for viewing on the HMD. As the real object moves away from the HMD and crosses the FTB, the virtual content transitions to the far virtual content for viewing on the HMD.
-  description: Increased legibility and contextual controls based on user distance from UI. Additional system to prevent rapid toggling when user stands on boundary line.
-  img: US20190172262A1-20190606-D00005.jpg
+  description: Increased legibility and contextual controls based on user distance from UI. Additional system to prevent rapid toggling when user stands on boundary line. Akin to model LODs, but for interfaces.
+  titleShort: Distance-informed UI for AR glasses
+  img: 
+    - US20190172262A1-20190606-D00005.jpg
+    - US20190172262A1-20190606-D00013.jpg
+    - US20190172262A1-20190606-D00014.jpg
+    - US20190172262A1-20190606-D00015.jpg
   year: 2018
   inventors: Andrew R McHugh, Duncan Knarr
   assignee: Samsung Electronics Co Ltd
@@ -90,12 +105,16 @@
   link: https://patents.google.com/patent/US20190172262A1/en
   status: Granted
   objectPosition: 50% 90%
-  small: false
 
 - title: Systems and Methods for Manipulating Views and Shared Objects in XR Space
   abstract: In one embodiment, a method includes rendering a first sequence of image frames of an extended reality (XR) video call on touchscreen displays of an electronic device, wherein the first sequence of images portrays a shared XR space, and wherein the XR video call is between a first user of the electronic device and one or more second users, receiving gesture inputs associated with manipulating parameters of the XR space during the XR video call via the touchscreen displays, determining transformations within the XR space responsive to the gesture inputs, wherein the determination is based on a gesture type associated with each of the gesture inputs, and rendering a second sequence of image frames of the XR video call on the touchscreen displays, wherein the second sequence of images portrays the transformations to the XR space.
-  description: Interactions around embodied "video calls" in AR, from a system that can support headsets and phones."
-  img: US20220229535A1-20220721-D00038.jpg
+  description: Interactions around embodied "video calls" in AR, from a system that can support headsets and phones.
+  img: 
+    - US20220229535A1-20220721-D00038.jpg
+    - US20220229535A1-20220721-D00016.jpg
+    - US20220229535A1-20220721-D00022.jpg
+    - US20220229535A1-20220721-D00032.jpg
+    - US20220229535A1-20220721-D00034.jpg
   year: 2021
   inventors: Edgar Evangelista, Aaron Faucher, Jaehyun Kim, Andrew R McHugh
   assignee: Samsung Electronics Co Ltd
@@ -103,12 +122,16 @@
   link: https://patents.google.com/patent/US20220229535A1/en
   status: Abandoned
   objectPosition: 50% 50%
-  small: false
 
 - title: Extended reality interaction in synchronous virtual spaces using heterogeneous devices
   abstract: Extended reality interactions include capturing, with a first device, video of a first user and conveying same to a second, heterogeneous device. A 3D mesh is received by the first device from the second device for rendering an extended reality environment, which is simultaneously displayed on the second device. Video of a second user and pose transforms for compositing the video of the second user in the extended reality environment displayed on the first device is received. A view perspective of the video of the second user composited in the extended reality environment is based on the pose transforms. Input to the first device changes the view perspective. View perspective data is conveyed from the first device to the second device that causes a corresponding change in view perspective of the video of the first user composited in the extended reality environment simultaneously displayed on the second device.
-  description: AR glasses + phones in the same embodied space with minimal user effort.
-  img: US11995776-20240528-D00009.jpg
+  titleShort: Synchronous AR interactions across heterogeneous devices (phone + glasses)
+  description: Interactions and rendering techniques for smoother synchronous AR experiences.
+  img: 
+    - US11995776-20240528-D00009-crop1.jpg
+    - US11995776-20240528-D00009-crop2.jpg
+    - US11995776-20240528-D00009-crop3.jpg
+    - US11995776-20240528-D00006.jpg
   year: 2021
   inventors: Edgar Evangelista, Aaron Faucher, Jaehyun Kim, Andrew R McHugh
   assignee: Samsung Electronics Co Ltd
@@ -116,12 +139,14 @@
   link: https://patents.google.com/patent/US11995776B2/en
   status: Granted
   objectPosition: 50% 3%
-  small: false
 
 - title: System and method for conversation-based notification management
   abstract: A method for dynamic notification management at a head mounted display (HMD) includes presenting, at the HMD, an augmented reality display, receiving, at a processor controlling the HMD, a notification from an application for display at the HMD, receiving, at the processor at a first time, first sensor data from one or more of a camera or a microphone, determining, based on the first sensor data, a first value of one or more factors associated with a probability that a user of the HMD is currently in a real-world conversation, determining an importance value of the received notification at the first time, and determining whether to display the notification from the application based on a comparison of the first value of the one or more factors associated relative to the importance value of the received notification.
-  description: Contextually-aware notification management system for AR glasses.
-  img: US20220385617A1-20221201-D00004.jpg
+  titleShort: Contextually-aware notification management system for AR glasses.
+  description: Notification system that takes into account the user's current context. Context may be determined from visual or audio data, directly or via inference. Notifications may be filtered or delayed to prioritize user focus, reduce distractions, and increase safety.
+  img: 
+    - US20220385617A1-20221201-D00000.jpg
+    - US20220385617A1-20221201-D00004-crop.jpg
   year: 2022
   inventors: Jaehyun Kim, Andrew R McHugh
   assignee: Samsung Electronics Co Ltd
@@ -129,4 +154,3 @@
   link: https://patents.google.com/patent/US20220385617A1/en
   status: Granted
   objectPosition: 50% 95%
-  small: false

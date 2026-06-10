@@ -2,6 +2,7 @@
 
 @import "components/shadow"
 @import "components/timeline-entry"
+@import "components/patent-item"
    
 $break-sm: 576px
 $break-md: 768px
@@ -52,6 +53,7 @@ h1
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
    position: relative // TODO: Was removed from new Boostrap
    text-wrap-style: pretty
+   font-weight: 600
 body
    .lead
       text-wrap-style: pretty
@@ -453,6 +455,9 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
          &:hover
             background-color: scale-color(rgba($color-primary, .16), $saturation: 16%)
             box-shadow: 0 8px 16px transparentize($color-primary, .9)
+      .pi
+         border-top-color: rgba($color-primary, 0.2) !important
+      
    .project-hero#{$name}
       background-color: rgba($color-primary, 0.05)
    .project-hero#{$name}.project-hero-small

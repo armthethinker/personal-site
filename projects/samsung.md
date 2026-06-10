@@ -14,6 +14,13 @@ modelURL: /assets/models/samsung/
 "
 %}
 
+
+{% include text-big.html
+   primary="What should AR glasses be?"
+   secondary="What, How, Why"
+%}
+
+
 {% include p-section.html
    header="The challenge"
    content="
@@ -35,6 +42,8 @@ My group focused on finding real value and validating that with prototypes, acro
    - Mixed and extensible device interaction systems: AR glasses (with varying capabilities), mobile phones
 
 **Extensible/flexible designs that adapt to hardware and OS capabilities.** \"The device\" was actually a slew of potential devices, internally and with external partners.
+
+**Spatial design systems that are cohesive, opinionated, and extensible.** For instance, we may define a default behavior at the OS that can be modified by an app or user settings. This becomes more complex when the computing environment is also the user's real world, expected to have multiple apps running at once.
 
 And generally, **finding the details that must be solved for true everyday use**, not just the surface level work seen in marketing. What can we only do with spatial computers?
 
@@ -60,6 +69,7 @@ And generally, **finding the details that must be solved for true everyday use**
 
 > Patents hint at the product work I was tackling.
 
+10+ submitted. 9 granted.
 
 
 

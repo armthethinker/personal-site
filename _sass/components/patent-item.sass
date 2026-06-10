@@ -1,0 +1,67 @@
+.pi
+  border-top: $border-width solid $border-color
+  padding: $spacer * 2 0
+  &:first-of-type
+    border-top: none
+
+.pi__body
+  // display: flex
+  // flex-direction: column
+  // gap: $spacer * 0.35
+
+.pi__header
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  gap: $spacer * 1.5
+  margin-bottom: $spacer * 0.2
+  font-size: $font-size-sm * 0.85
+  color: $gray-500
+  font-variant-numeric: tabular-nums
+  font-family: $font-family-monospace
+  font-weight: $font-weight-bold
+
+// .pi__year
+
+// .pi__num
+//   font-variant-numeric: tabular-nums
+
+.pi__status
+  display: inline-block
+  font-weight: $font-weight-bold
+  text-transform: uppercase
+
+  &--granted
+    color: #309d7d
+
+  &--abandoned
+    color: $gray-600
+
+.pi__title
+  display: block
+  font-size: $font-size-base 
+  font-weight: $font-weight-bold
+  color: $body-emphasis-color
+  line-height: $line-height-sm
+  text-decoration: none
+
+  &:hover
+    color: $body-emphasis-color
+    text-decoration: underline
+
+.pi__desc
+  font-size: $font-size-base
+  color: $body-color
+  line-height: $line-height-base
+  margin-bottom: 0
+
+.pi__imgs
+  display: flex
+  flex-wrap: wrap
+  gap: $spacer * 0.5
+
+.pi__img
+  max-height: 300px
+  max-width: calc(50% - #{$spacer * 0.5})
+  object-fit: cover
+  border-radius: $border-radius

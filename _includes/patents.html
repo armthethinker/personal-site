@@ -19,50 +19,13 @@
                   </div>
                </div>
                <div class="row">
+                  <div class="col-12">
                   {% assign sorted_items = include.data | sort: "year" | reverse %}
                   {% for item in sorted_items %}
-                  {% if item.small != true %}
-                  {% if include.col != undefined %}
-                  <div class="{{include.col}} mb-4">
-                  {% else %}
-                  <div class="col mb-4">
-                  {% endif %}
-                     <div class="card h-100 card-patent">
-                        <img src="{{item.img | prepend: patentURL}}" class="card-img-top" alt="Patent image for {{item.title | strip_html}}" style="object-position: {{item.objectPosition}}">
-                        <div class="card-body">
-                           <small class="text-monospace text-muted mb-1">{{item.year}} / {{item.number}} / <span class="{% if item.status == 'Granted' %}text-success{% endif %}">{{item.status}}</span></small>
-                           <h5 class="card-title color-primary"><a href="{{item.link}}" target="_blank">{{item.titleShort | default: item.title}}</a></h5>
-                           <p class="card-text">{{item.description}}</p>
-                        </div>
-                     </div>
-                  </div>
-                  {% endif %}
+                     {% include patent-item.html item=item %}
                   {% endfor %}
-               </div>
-               {% assign sorted_items = include.data | sort: "year" | reverse %}
-               {% for item in sorted_items %}
-               {% if item.small == true %}
-               <div class="row">
-                  <div class="col-12">
-                     <div class="card card-patent-horizontal">
-                        <div class="row no-gutters">
-                           <!-- <div class="col" style=""> -->
-                           <div class="col img-background" style="background-image:url({{item.img | prepend: patentURL}}); background-position: {{item.objectPosition}}">
-                              <!-- <img src="{{item.img | prepend: patentURL}}" class="card-img card-img-left" alt="Patent image for {{item.title | strip_html}}" style="object-position: {{item.objectPosition}}"> -->
-                           </div>
-                           <div class="col-10 col-md-8">
-                              <div class="card-body">
-                                 <small class="text-monospace text-muted mb-1">{{item.year}} / {{item.number}} / <span class="{% if item.status == 'Granted' %}text-success{% endif %}">{{item.status}}</span></small>
-                                 <p class="card-title color-primary"><a href="{{item.link}}" target="_blank">{{item.title}}</a></p>
-                                 <p class="card-text">{{item.description}}</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                </div>
-               {% endif %}
-               {% endfor %}
             </div>
          </div>
       </div>
