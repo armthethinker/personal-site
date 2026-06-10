@@ -16,3 +16,7 @@
 {% assign app_js = site.data.manifest['app.js'] | default: '/assets/js/app.js' %}
 <script src="{{ vendor_js }}"></script>
 <script src="{{ app_js }}"></script>
+{% comment %} Dev tools bundle — built by `npm start`, never in a production build. {% endcomment %}
+{% if jekyll.environment != "production" %}
+<script src="/assets/js/dev.js"></script>
+{% endif %}
