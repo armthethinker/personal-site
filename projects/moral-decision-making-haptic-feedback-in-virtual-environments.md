@@ -2,8 +2,12 @@
 layout: project-page
 pID: 5
 title: Moral Decisions & Haptics in VR
-description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
 image: /assets/imgopt/morals/cover-virtual-trolley-sm.jpg
+description: We created a VR environment to test an isomorph of the
+  philosophical Trolley Problem. Some participants could feel the world around
+  them while others could not. We found that participants who have haptic
+  feedback are less likely save four people (by killing one person in
+  reach) than their non-haptic counterparts.
 assetURL: /assets/imgopt/morals/
 ---
 

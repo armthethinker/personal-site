@@ -2,11 +2,16 @@
 layout: project-page
 pID: 2
 title: Samsung
-description: A precursor to Galaxy XR. Explored the opportunities and constraints of spatial glasses across OS, apps, and interactions which informed efforts across Samsung and with external partners. Led an AR/VR design and development group. Regularly met with executives, partners, and visiting dignitaries. Created and managed our design process and hiring process. Designed and built prototypes and user studies, de-risking explorations. Submitted 10+ patents with 9 granted.
 image: /assets/imgopt/samsung/orb-1.jpg
+description: A precursor to Galaxy XR. Explored the opportunities and
+  constraints of spatial glasses across OS, apps, and interactions which
+  informed efforts across Samsung and with external partners. Led an AR/VR
+  design and development group. Regularly met with executives, partners, and
+  visiting dignitaries. Created and managed our design process and hiring
+  process. Designed and built prototypes and user studies, de-risking
+  explorations. Submitted 10+ patents with 9 granted.
 assetURL: /assets/imgopt/samsung/
 modelURL: /assets/models/samsung/
-
 ---
 
 {% include p-section.html

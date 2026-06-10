@@ -9,9 +9,11 @@ Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 - To serve the site: `$ bundle exec jekyll serve`
 - To serve and allow all incoming requests `$ bundle exec jekyll serve --host 0.0.0.0`
 - To update the bundle: `$ bundle update`
-- To optimize all images `$ npm run imgoptim`
+- To optimize all images: `$ npm run imgoptim`
+- To sync project front matter from `_data/projects.yml`: `$ npm run sync-frontmatter`
 
-- **To build for prod** `$ npm run build`
+- **To develop (watch mode):** `$ npm start`
+- **To build for prod:** `$ npm run build`
 
 Served over `:4000`.
 

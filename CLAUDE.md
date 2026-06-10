@@ -14,13 +14,14 @@ Runs `clean`, compiles SASS, starts JS/TS watchers, and launches Jekyll with liv
 ```sh
 npm run build
 ```
-Runs `clean`, compiles SASS + PostCSS autoprefixer, minifies JS, compiles TS, hashes assets (renames `main.css` and `main.min.js` with a build hash and writes `_data/manifest.json`), then runs `bundle exec jekyll build`.
+Runs `clean`, compiles SASS + PostCSS autoprefixer, minifies JS, compiles TS, syncs project front matter from `_data/projects.yml`, hashes assets (renames `main.css` and `main.min.js` with a build hash and writes `_data/manifest.json`), then runs `bundle exec jekyll build`.
 
 **Individual tasks:**
 ```sh
 npm run sass:build       # Compile SASS → assets/css/main.css
 npm run js:build         # Bundle + minify JS → assets/js/main.min.js
 npm run ts:build         # Compile TypeScript scripts/
+npm run sync-frontmatter # Sync description + image front matter in projects/ from _data/projects.yml
 npm run hash             # Hash assets and write _data/manifest.json
 bundle exec jekyll serve # Serve only (no JS/CSS rebuild)
 npm run imgoptim         # Optimize images via scripts/optimize-images.ts
@@ -38,6 +39,8 @@ Jekyll 4 static site with Bootstrap 5 (SASS source imported selectively), Masonr
 
 ### Content model
 Project metadata lives in `_data/projects.yml`. Each entry has a `pID` and `short` slug. Project pages (in `projects/`) use `layout: project-page` and set `pID` in frontmatter — the layout loops `site.data.projects` to find the matching entry and assigns it to `p` for use in the template.
+
+The `description` and `image` front matter fields in each project page are generated — do not edit them by hand. They are copied from the matching `projects.yml` entry (`description` → `description`, `imgHero` → `image`) by `npm run sync-frontmatter` (`scripts/sync-project-frontmatter.ts`), which runs automatically as part of `npm run build`. To update them, edit `_data/projects.yml` and re-run the sync.
 
 Project-specific data (cards, challenges, media) lives in `_data/<short>/` subdirectories and is referenced in project pages via `site.data.<short>.*`.
 
