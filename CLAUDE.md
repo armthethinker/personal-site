@@ -41,12 +41,16 @@ Project metadata lives in `_data/projects.yml`. Each entry has a `pID` and `shor
 
 Project-specific data (cards, challenges, media) lives in `_data/<short>/` subdirectories and is referenced in project pages via `site.data.<short>.*`.
 
+`_data/samsung/patents.yml` entries use: `title`, `titleShort` (display title, falls back to `title`), `description` (plain-language summary shown to users), `abstract` (full technical text, not rendered), `img` (filename relative to `assets/imgopt/samsung/patents/`), `objectPosition`, `year`, `number`, `link`, `status` (Granted / Abandoned), and `inventors`.
+
 ### Includes / partials
 All reusable content blocks are in `_includes/`. Key ones:
 - `cards.html` / `card-big.html` — media cards, typically fed a `data` array from `_data/`
 - `media-img.html`, `media-video.html`, `media-youtube.html` — media embeds
 - `jumbotron-header.html` — project hero section, reads from `p` (the matched project entry)
 - `timeline-entry.html` / `timeline.html` — timeline blocks
+- `patents.html` — section wrapper used in the Samsung project page; accepts `header`, `subheader`, `content`, `data`, and `col` parameters. Currently renders both the legacy `.card-patent` grid and the new `patent-item.html` list for side-by-side comparison.
+- `patent-item.html` — new-style patent list entry (`.pi` BEM namespace); receives a single `item` from `_data/samsung/patents.yml`. Renders a header row (year · patent number · status), linked title, plain-language `description`, and one or more images. Styled by `_sass/components/patent-item.sass`. Images are sized larger than timeline entry images and sit in a flex row when multiples are present. Status color is inline (no pill background): green for Granted, gray for Abandoned.
 - `model-viewer.html` — wraps `<model-viewer>` for 3D/AR assets stored in `assets/models/`
 
 ### Layouts
