@@ -63,3 +63,38 @@ All reusable content blocks are in `_includes/`. Key ones:
 ### `_config.yml` notes
 - `assets/img/` is excluded from Jekyll processing (use `assets/imgopt/` for optimized images referenced in templates)
 - `timeline.html` is also excluded from Jekyll (it's a standalone scratch/dev file)
+
+## Code styling
+## TypeScript / JavaScript Style
+
+Follow the @fat (Jacob Thornton) school of thought — lean on ASI and keep the noise down.
+
+- **Prefer TypeScript** so we have good type safety.
+- **No semicolons.** Let the compiler/parser handle statement termination. The one exception: a leading `;` to guard a line that starts with `(` or `[`.
+- **Single quotes** for strings (`'hello'`, not `"hello"`). Template literals when interpolating.
+- **3-space indentation**, no tabs.
+- `const` by default; `let` when reassignment is genuinely needed; never `var`.
+- **Arrow functions** for inline expressions, callbacks, and object methods. Use named `function` declarations for top-level, exported, or recursive functions — they hoist, read clearly, and show up better in stack traces and DevTools.
+- Trailing commas in multi-line structures (arrays, objects, params) — makes diffs cleaner.
+- One blank line between logical blocks; no blank lines at the top/bottom of a function body.
+- Opening braces on the same line, always.
+
+```ts
+// top-level: named declaration
+export function fetchUser(id: string) {
+  return fetch(`/api/users/${id}`)
+}
+
+// inline / callback: arrow
+const active = users.filter(u => u.active)
+
+setTimeout(() => refresh(), 1000)
+
+// object method: arrow so `this` is the enclosing scope
+class Timer {
+  seconds = 0
+  start() {
+    setInterval(() => { this.seconds++ }, 1000)
+  }
+}
+```
