@@ -14,13 +14,16 @@ Runs `clean`, compiles SASS, starts JS/TS watchers, and launches Jekyll with liv
 ```sh
 npm run build
 ```
-Runs `clean`, compiles SASS + PostCSS autoprefixer, minifies JS, compiles TS, syncs project front matter from `_data/projects.yml`, hashes assets (renames `main.css` and `main.min.js` with a build hash and writes `_data/manifest.json`), then runs `bundle exec jekyll build`.
+Runs `clean`, compiles SASS + PostCSS autoprefixer, bundles + minifies the app JS (no dev tools), compiles the build scripts, syncs project front matter from `_data/projects.yml`, hashes assets (renames `main.css`, `vendor.min.js`, and `app.js` with a build hash and writes `_data/manifest.json`), then runs `bundle exec jekyll build` with `JEKYLL_ENV=production`.
 
 **Individual tasks:**
 ```sh
 npm run sass:build       # Compile SASS → assets/css/main.css
-npm run js:build         # Bundle + minify JS → assets/js/main.min.js
-npm run ts:build         # Compile TypeScript scripts/
+npm run js:vendor        # Minify Bootstrap + Masonry → assets/js/vendor.min.js
+npm run js:app           # Bundle + minify _js/app → assets/js/app.js (production)
+npm run js:app:dev       # Bundle _js/app with sourcemap → assets/js/app.js (dev)
+npm run js:dev           # Bundle _js/dev with sourcemap → assets/js/dev.js (dev tools)
+npm run scripts:build    # Compile TypeScript build scripts (scripts/ → scripts/build/)
 npm run sync-frontmatter # Sync description + image front matter in projects/ from _data/projects.yml
 npm run hash             # Hash assets and write _data/manifest.json
 bundle exec jekyll serve # Serve only (no JS/CSS rebuild)
@@ -30,12 +33,16 @@ npm run imgoptim         # Optimize images via scripts/optimize-images.ts
 ## Architecture
 
 ### Stack
-Jekyll 4 static site with Bootstrap 5 (SASS source imported selectively), Masonry layout, and a small custom JS bundle. No framework — plain HTML/Liquid templates. TypeScript is only used for build scripts (`scripts/`), not the frontend.
+Jekyll 4 static site with Bootstrap 5 (SASS source imported selectively), Masonry layout, and a small custom JS bundle. No framework — plain HTML/Liquid templates. The frontend JS lives in `_js/` and is written in TypeScript, bundled with esbuild. Build scripts in `scripts/` are also TypeScript (compiled with `tsc`).
 
 ### Asset pipeline
 1. **SASS**: `_sass/main.scss` imports selected Bootstrap modules then `_sass/_main.sass`. Custom variables override Bootstrap defaults before import. Component partials live in `_sass/components/`.
-2. **JS**: `npm run js:build` concatenates Bootstrap bundle + Masonry + `_js/main.js` into `assets/js/main.min.js` via Terser.
-3. **Asset hashing**: `scripts/hash-assets.ts` renames `main.css` and `main.min.js` with a random 8-char build hash and writes a manifest to `_data/manifest.json`. Jekyll templates read the hashed paths via `site.data.manifest['main.css']` with a fallback to the unhashed path (see `_includes/common-header-css.html` and `_includes/common-js.html`). In dev (watch mode), no hashing occurs — the fallback paths are used.
+2. **JS**: three bundles, all loaded via separate `<script>` tags in `_includes/common-js.html`.
+   - `js:vendor` minifies the Bootstrap bundle + Masonry into `assets/js/vendor.min.js` (Terser). Masonry is a runtime global; app code references it via a `declare` so it stays in this cached chunk rather than the app bundle.
+   - `js:app` bundles `_js/app/index.ts` into `assets/js/app.js` with esbuild (minified IIFE in production, sourcemapped in dev). This ships in production.
+   - `js:dev` bundles `_js/dev/index.ts` into `assets/js/dev.js` (dev tools, e.g. the `TK` highlighter). Built only by `npm start`, never by `npm run build`, and loaded only when `jekyll.environment != "production"`.
+   - `_js/app/` and `_js/dev/` each have an `index.ts` entry plus a `components/` folder. The entry imports one component per line, so a tool/feature can be toggled by commenting a single import. `_js/tsconfig.json` configures type-checking + esbuild target for the frontend (separate from the root `tsconfig.json`, which is for `scripts/`).
+3. **Asset hashing**: `scripts/hash-assets.ts` renames `main.css`, `vendor.min.js`, and `app.js` with a random 8-char build hash and writes a manifest to `_data/manifest.json`. Jekyll templates read the hashed paths via `site.data.manifest[...]` with a fallback to the unhashed path (see `_includes/common-header-css.html` and `_includes/common-js.html`). `dev.js` is never hashed (dev-only). In dev (watch mode), no hashing occurs — the fallback paths are used.
 
 ### Content model
 Project metadata lives in `_data/projects.yml`. Each entry has a `pID` and `short` slug. Project pages (in `projects/`) use `layout: project-page` and set `pID` in frontmatter — the layout loops `site.data.projects` to find the matching entry and assigns it to `p` for use in the template.

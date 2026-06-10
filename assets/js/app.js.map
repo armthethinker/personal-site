@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../_js/app/components/masonry.ts", "../../_js/app/index.ts"],
+  "sourcesContent": ["// Masonry is a global from vendor.min.js (its own <script> tag), not an import \u2014\n// declaring it here keeps it out of the app bundle so it stays in the cached\n// vendor chunk. `declare` is type-only; it emits no code.\ndeclare const Masonry: new (\n   element: Element | string,\n   options?: Record<string, unknown>,\n) => unknown\n\nexport function initMasonry() {\n   const grid = document.querySelector('.m-grid')\n   if (!grid) return\n   new Masonry(grid, {\n      itemSelector: '.m-grid-item',\n      columnWidth: '.m-grid-sizer',\n      percentPosition: true,\n      horizontalOrder: true,\n   })\n}\n", "// App entry \u2014 bundled to assets/js/app.js (ships in production).\n// Comment out a line to disable a feature.\nimport { initMasonry } from './components/masonry'\n\ndocument.addEventListener('DOMContentLoaded', () => {\n   initMasonry()\n})\n"],
+  "mappings": ";;;AAQO,WAAS,cAAc;AAC3B,UAAM,OAAO,SAAS,cAAc,SAAS;AAC7C,QAAI,CAAC,KAAM;AACX,QAAI,QAAQ,MAAM;AAAA,MACf,cAAc;AAAA,MACd,aAAa;AAAA,MACb,iBAAiB;AAAA,MACjB,iBAAiB;AAAA,IACpB,CAAC;AAAA,EACJ;;;ACbA,WAAS,iBAAiB,oBAAoB,MAAM;AACjD,gBAAY;AAAA,EACf,CAAC;",
+  "names": []
+}

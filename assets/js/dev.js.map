@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../_js/dev/components/highlight-tk.ts", "../../_js/dev/index.ts"],
+  "sourcesContent": ["// Wraps every standalone \"TK\" placeholder in a blinking span so unfinished\n// copy is easy to spot while drafting. Dev-only \u2014 never bundled into production.\nexport function highlightTK() {\n   const regex = /\\bTK\\b/g\n   document.body.innerHTML = document.body.innerHTML.replace(\n      regex,\n      '<span class=\"blink\">TK</span>',\n   )\n}\n", "// Dev tools entry \u2014 bundled to assets/js/dev.js, loaded only outside production\n// (see _includes/common-js.html). Comment out a line to disable a tool.\nimport { highlightTK } from './components/highlight-tk'\n\ndocument.addEventListener('DOMContentLoaded', () => {\n   highlightTK()\n})\n"],
+  "mappings": ";;;AAEO,WAAS,cAAc;AAC3B,UAAM,QAAQ;AACd,aAAS,KAAK,YAAY,SAAS,KAAK,UAAU;AAAA,MAC/C;AAAA,MACA;AAAA,IACH;AAAA,EACH;;;ACJA,WAAS,iBAAiB,oBAAoB,MAAM;AACjD,gBAAY;AAAA,EACf,CAAC;",
+  "names": []
+}
