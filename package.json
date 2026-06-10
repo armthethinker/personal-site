@@ -20,7 +20,7 @@
     "js:vendor": "terser node_modules/bootstrap/dist/js/bootstrap.bundle.min.js node_modules/masonry-layout/dist/masonry.pkgd.min.js -o assets/js/vendor.min.js",
     "js:app": "terser _js/main.js -o assets/js/app.js --mangle --compress",
     "js:app:dev": "cp _js/main.js assets/js/app.js",
-    "jekyll:serve": "bundle exec jekyll serve --livereload --force_polling",
+    "jekyll:serve": "bundle exec jekyll serve --livereload",
     "watch:sass": "sass _sass/main.scss assets/css/main.css --load-path=node_modules --watch",
     "watch:js": "chokidar \"_js/main.js\" -c \"npm run js:app:dev\"",
     "start": "npm run clean && npm run js:vendor && npm run js:app:dev && npm run sass:build && npm-run-all --parallel watch:sass watch:js jekyll:serve",
