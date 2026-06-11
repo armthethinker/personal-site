@@ -1,0 +1,17 @@
+{% if jekyll.environment != "production" and include.debug %}
+<div class="snav-debug-container"></div>
+{% endif %}
+
+<div class="section-nav" id="section-nav">
+   <div class="container justify-content-center d-flex">
+      <div class="snav-center">
+         <div class="section-nav-capsule section-nav-inner">
+            <div class="snav-crumbs" id="snav-crumbs">
+               <span class="snav-crumb"></span>
+            </div>
+         </div>
+         <a class="section-nav-capsule section-nav-side section-nav-side-prev" id="snav-prev" hidden></a>
+         <a class="section-nav-capsule section-nav-side section-nav-side-next" id="snav-next" hidden></a>
+      </div>
+   </div>
+</div>

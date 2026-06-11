@@ -1,4 +1,7 @@
 {
+  "worktree": {
+    "bgIsolation": "none"
+  },
   "permissions": {
     "deny": [
       "Edit(assets/**)",
