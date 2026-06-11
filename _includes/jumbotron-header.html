@@ -2,7 +2,8 @@
 {% assign lightDark = "light" %}
 {% endif %}
 
-<!-- <div class="jumbotron jumbotron-fluid {{lightDark}}" style="background-image:url('{{p.bgImg}}')"> -->
+
+{% assign g = p.glance %}
 <div class="jumbotron jumbotron-fluid {{lightDark}}">
    <div class="jumbotron-bg"></div>
    <div class="container position-relative">
@@ -27,7 +28,18 @@
                   <div class="row">
                      <div class="col-12 col-sm-6">
                         <p class="fw-medium mb-0"><strong>Role</strong></p>
+                        {% if g.hats %}
+                        <div class="glance-hats mt-1 mb-3">
+                           {% for h in g.hats %}
+                           <span class="glance-hat">
+                              <strong>{{ h.label }}</strong>
+                              {% if h.note %}<span class="glance-hat-note">{{ h.note }}</span>{% endif %}
+                           </span>
+                           {% endfor %}
+                        </div>
+                        {% else %}
                         <p class="fw-medium">{{p.role}}</p>
+                        {% endif %}
                      </div>
                      <div class="col-12 col-sm-6">
                         <p class="fw-medium mb-0"><strong>Date</strong></p>

@@ -10627,34 +10627,41 @@ li.nav-item-w a.nav-link:hover {
   color: #333;
 }
 
-.project-glance-sec .project-glance-tagline {
+.project-glance-sec .project-glance-tagline,
+.jumbotron .project-glance-tagline {
   font-weight: 500;
   margin-bottom: 1.75rem;
 }
-.project-glance-sec .project-glance-metrics {
+.project-glance-sec .project-glance-metrics,
+.jumbotron .project-glance-metrics {
   margin-bottom: 1.5rem;
 }
-.project-glance-sec .glance-metric {
+.project-glance-sec .glance-metric,
+.jumbotron .glance-metric {
   padding: 6px 0;
 }
-.project-glance-sec .glance-metric-value {
+.project-glance-sec .glance-metric-value,
+.jumbotron .glance-metric-value {
   font-size: 1.85rem;
   font-weight: 700;
   line-height: 1.05;
   color: #242424;
 }
-.project-glance-sec .glance-metric-label {
+.project-glance-sec .glance-metric-label,
+.jumbotron .glance-metric-label {
   margin-top: 4px;
   font-size: 0.8rem;
   line-height: 1.25;
   color: rgb(139.7441860465, 132.8837209302, 141.1162790698);
 }
-.project-glance-sec .glance-hats {
+.project-glance-sec .glance-hats,
+.jumbotron .glance-hats {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.project-glance-sec .glance-hat {
+.project-glance-sec .glance-hat,
+.jumbotron .glance-hat {
   display: inline-flex;
   align-items: baseline;
   gap: 6px;
@@ -10663,10 +10670,12 @@ li.nav-item-w a.nav-link:hover {
   font-size: 0.85rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
-.project-glance-sec .glance-hat strong {
+.project-glance-sec .glance-hat strong,
+.jumbotron .glance-hat strong {
   color: #242424;
 }
-.project-glance-sec .glance-hat .glance-hat-note {
+.project-glance-sec .glance-hat .glance-hat-note,
+.jumbotron .glance-hat .glance-hat-note {
   font-size: 0.78rem;
   color: rgb(139.7441860465, 132.8837209302, 141.1162790698);
 }
