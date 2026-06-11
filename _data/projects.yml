@@ -28,6 +28,26 @@
   # imgJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
   videoJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
   light: false
+  glance:
+    tagline: "Founder and solo technical lead of a spatial-computing startup. I designed and built the full capture → cloud → playback stack across iOS, Quest, and Vision Pro — and raised the money and team to do it."
+    metrics:
+      - value: "~$1M"
+        label: "Raised (led by Long Journey Ventures)"
+      - value: "18,600+"
+        label: "Waitlist sign-ups"
+      - value: "8,800+"
+        label: "Memories captured"
+      - value: "1,700+"
+        label: "Users"
+    hats:
+      - label: "Founder & CEO"
+        note: "Vision, fundraising, hiring"
+      - label: "Designer"
+        note: "Spatial interaction & UI"
+      - label: "Engineer"
+        note: "iOS, headsets, shaders, backend"
+      - label: "R&D"
+        note: "CV/ML reconstruction pipeline"
 
 - title: Samsung Research America
   pID: 2
@@ -59,6 +79,26 @@
   # imgJumbotronHero: /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
   imgJumbotronHero: /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
   light: false
+  glance:
+    tagline: "Team lead and senior designer for Samsung's AR-glasses design group. I built the rapid prototyping process and helped shape the product direction that became a precursor to Galaxy XR."
+    metrics:
+      - value: "9"
+        label: "Patents granted (10+ submitted)"
+      - value: "4 yrs"
+        label: "Leading the group (2017–2021)"
+      - value: "OS · Apps · Interactions"
+        label: "Scope of exploration"
+      - value: "Execs & partners"
+        label: "Regular demos and presentations"
+    hats:
+      - label: "Team Lead"
+        note: "Process, hiring, exec demos"
+      - label: "Senior Designer"
+        note: "OS, apps, interactions"
+      - label: "Prototyper"
+        note: "Unity / C# / Blender"
+      - label: "Researcher"
+        note: "User studies, de-risking"
 
 - title: Echo
   pID: 3

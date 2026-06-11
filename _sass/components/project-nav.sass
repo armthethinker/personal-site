@@ -1,0 +1,67 @@
+.section-nav
+   // Debug: normal flow + always visible so we can confirm the component renders.
+   // Positioning (fixed + scrollspy reveal) to be re-added once this is verified.
+   position: fixed
+   top: 24px
+   width: 100%
+   z-index: 100
+   margin: 16px 0
+
+   .section-nav-inner
+      display: inline-flex
+      align-items: center
+      padding: 4px 8px
+      border-radius: 999px
+      background-color: rgba(255, 255, 255, 0.72)
+      border: 1px solid rgba(255, 255, 255, 0.65)
+      box-shadow: 0 14px 44px rgba(0, 0, 0, 0.18)
+      backdrop-filter: blur(18px) saturate(180%)
+      -webkit-backdrop-filter: blur(18px) saturate(180%)
+
+   .snav-crumbs
+      display: inline-flex
+      align-items: center
+      gap: 1px
+      max-width: 70vw
+      overflow: hidden
+
+   .snav-crumb
+      display: inline-block
+      max-width: 240px
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      padding: 5px 10px
+      border-radius: 999px
+      font-size: 0.84rem
+      font-weight: 600
+      text-decoration: none
+      color: $palette-caption
+      &:hover
+         color: #242424
+      &:last-child
+         color: var(--accent)
+         font-weight: 700
+
+   .snav-crumb-sep
+      display: inline-block
+      opacity: 0.4
+      font-size: 0.85rem
+      padding: 0 1px
+
+.snav-debug
+   margin: 16px 0
+   padding: 12px 16px
+   border: 1px dashed rgba(0, 0, 0, 0.3)
+   border-radius: 8px
+   background-color: rgba(0, 0, 0, 0.03)
+   pre
+      margin: 0
+      font-family: "SFMono-Regular", Menlo, Consolas, monospace
+      font-size: 12px
+      line-height: 1.5
+      white-space: pre-wrap
+      color: #333
+
+.section-header
+   scroll-margin-top: 84px
