@@ -1,3 +1,5 @@
+// region Types & constants
+
 interface Crumb {
    id: string
    text: string
@@ -13,6 +15,13 @@ interface Section extends Subsection {
    subs: Subsection[]
 }
 
+/** How far below the capsule's bottom edge a heading must pass before it counts as "active". */
+const ACTIVE_THRESHOLD = 24
+
+// endregion
+
+// region Helpers
+
 function slugify(text: string): string {
    return text
       .toLowerCase()
@@ -21,6 +30,27 @@ function slugify(text: string): string {
       .replace(/\s+/g, '-')
       .replace(/-+/g, '-')
 }
+
+function isVisible(el: HTMLElement | null): boolean {
+   return !!(el && el.offsetParent !== null)
+}
+
+/** Throttles a callback to at most once per animation frame. */
+function rafThrottle(fn: () => void): () => void {
+   let ticking = false
+   return () => {
+      if (ticking) return
+      ticking = true
+      requestAnimationFrame(() => {
+         fn()
+         ticking = false
+      })
+   }
+}
+
+// endregion
+
+// region Section model
 
 /** Reads the page's headings into sections, each with the subsections that follow it, assigning stable ids to any heading that lacks one. */
 function collectSections(pageBody: HTMLElement): Section[] {
@@ -66,6 +96,32 @@ function collectSections(pageBody: HTMLElement): Section[] {
    return sections
 }
 
+/** Returns the breadcrumb path (section, then current subsection if any) for the reader's current scroll position. */
+function computeActivePath(sections: Section[], threshold: number): Crumb[] {
+   const lastPast = <T extends Subsection>(candidates: T[]): T | null => {
+      let found: T | null = null
+      for (const c of candidates) {
+         if (isVisible(c.header) && c.header.getBoundingClientRect().top <= threshold) {
+            found = c
+         }
+      }
+      return found
+   }
+
+   // Default to the first section so the capsule is never empty.
+   const section = lastPast(sections) ?? sections[0]
+   const path: Crumb[] = [{ id: section.id, text: section.text }]
+
+   const sub = lastPast(section.subs)
+   if (sub) path.push({ id: sub.id, text: sub.text })
+
+   return path
+}
+
+// endregion
+
+// region Rendering
+
 function renderCrumbs(container: HTMLElement, path: Crumb[]): void {
    container.innerHTML = ''
    path.forEach((crumb, i) => {
@@ -104,6 +160,10 @@ function renderDebug(pageBody: HTMLElement, sections: Section[]): void {
    pageBody.prepend(panel)
 }
 
+// endregion
+
+// region Entry point
+
 export function initSectionNav(): void {
    const pageBody = document.querySelector<HTMLElement>('.page-body')
    const nav = document.getElementById('section-nav')
@@ -118,8 +178,25 @@ export function initSectionNav(): void {
       return
    }
 
-   const first = sections[0]
-   const path: Crumb[] = [{ id: first.id, text: first.text }]
-   if (first.subs[0]) path.push({ id: first.subs[0].id, text: first.subs[0].text })
-   renderCrumbs(crumbs, path)
+   // The active line sits just below the fixed capsule; a heading is "active" once it scrolls above it.
+   const activeLine = (): number => nav.getBoundingClientRect().bottom + ACTIVE_THRESHOLD
+   const live = document.createElement('div')
+   live.id = 'snav-live'
+   document.getElementById('snav-debug')?.prepend(live)
+   const update = (): void => {
+      const line = activeLine()
+      const path = computeActivePath(sections, line)
+      renderCrumbs(crumbs, path)
+      live.textContent =
+         `scrollY=${Math.round(window.scrollY)}  line=${Math.round(line)}  ` +
+         `active=[${path.map((c) => c.text).join(' › ')}]`
+   }
+
+   const onScroll = rafThrottle(update)
+   window.addEventListener('scroll', onScroll, { passive: true })
+   window.addEventListener('resize', onScroll)
+
+   update()
 }
+
+// endregion
