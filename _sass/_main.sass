@@ -359,6 +359,9 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
    $card-color: color.change($card-color-mixed-lightness, $lightness: $card-color-base-lightness, $space: oklch)
 
    #{$name}
+      // Expose the project accent as a CSS var so reusable components
+      // (e.g. the section-nav style variants) can theme themselves.
+      --accent: #{$color-primary}
       .color-primary,
       h1,
       a,
@@ -457,7 +460,10 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
             box-shadow: 0 8px 16px transparentize($color-primary, .9)
       .pi
          border-top-color: rgba($color-primary, 0.2) !important
-      
+      // "At a glance": accent the headline metrics.
+      .glance-metric-value
+         color: $color-primary
+
    .project-hero#{$name}
       background-color: rgba($color-primary, 0.05)
    .project-hero#{$name}.project-hero-small
@@ -1012,8 +1018,10 @@ li.nav-item-w
    @media (min-width: $break-lg)
       height: 100% !important
 
+// Project-page reader aids (imported last so palette vars above are defined).
 @import "components/project-nav"
 @import "components/project-glance"
+
 .nav-background
    background-color: rgba(255, 255, 255, 0.7)
    border-radius: $border-radius + 6px

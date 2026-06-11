@@ -1,9 +1,10 @@
 /**
- * In-page section navigation — DEBUG BUILD.
- * Renders the breadcrumb capsule (always visible, fixed by CSS) and updates the
- * active section/subsection path as the reader scrolls. Also dumps the computed
- * hierarchy into a debug panel so we can verify what collectSections() reads.
- * Reveal/enter animations are intentionally still stripped — added back later.
+ * In-page section navigation: a floating three-capsule cluster
+ * (‹ previous section | current section › subsection | next section ›) built from
+ * the page's rendered h2.section-header / h4 headings. Tracks the reader's position
+ * on scroll, keeps the middle capsule viewport-centered, and sticks to the top once
+ * scrolled past (JS-driven — see project-nav.sass for why not position: sticky).
+ * An opt-in debug panel (rendered into .snav-debug-container) dumps the hierarchy.
  */
 
 // region Types & constants
