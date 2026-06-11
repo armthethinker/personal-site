@@ -25,6 +25,8 @@ interface Section extends Subsection {
 
 /** How far below the capsule's bottom edge a heading must pass before it counts as "active". */
 const ACTIVE_THRESHOLD = 24
+/** Viewport gap kept above the nav once it sticks. Must match `.section-nav.is-stuck { top }` in project-nav.sass. */
+const STICK_OFFSET = 16
 
 // endregion
 
@@ -220,19 +222,32 @@ export function initSectionNav(): void {
    const prev = document.getElementById('snav-prev') as HTMLAnchorElement | null
    const next = document.getElementById('snav-next') as HTMLAnchorElement | null
 
-   // The active line sits just below the fixed capsule; a heading is "active" once it scrolls above it.
+   // Zero-height marker left in flow where the nav naturally sits. Its viewport
+   // position is the stable reference for when to stick (the nav itself can't be
+   // measured once it goes fixed), and we grow it to the nav's height while stuck
+   // so removing the nav from flow doesn't jump the content below.
+   const sentinel = document.createElement('div')
+   sentinel.className = 'snav-sentinel'
+   sentinel.setAttribute('aria-hidden', 'true')
+   nav.parentElement?.insertBefore(sentinel, nav)
+
+   // The active line sits just below the capsule; a heading is "active" once it scrolls above it.
    const activeLine = (): number => nav.getBoundingClientRect().bottom + ACTIVE_THRESHOLD
    const live = document.createElement('div')
    live.id = 'snav-live'
    document.getElementById('snav-debug')?.prepend(live)
    const update = (): void => {
+      const stuck = sentinel.getBoundingClientRect().top <= STICK_OFFSET
+      sentinel.style.height = stuck ? `${nav.offsetHeight}px` : '0px'
+      nav.classList.toggle('is-stuck', stuck)
+
       const line = activeLine()
       const { index, path } = computeActive(sections, line)
       if (prev) renderSide(prev, sections[index - 1])
       renderCrumbs(crumbs, path)
       if (next) renderSide(next, sections[index + 1])
       live.textContent =
-         `scrollY=${Math.round(window.scrollY)}  line=${Math.round(line)}  ` +
+         `scrollY=${Math.round(window.scrollY)}  stuck=${stuck}  line=${Math.round(line)}  ` +
          `active=[${path.map((c) => c.text).join(' › ')}]`
    }
 

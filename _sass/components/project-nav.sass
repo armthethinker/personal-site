@@ -4,13 +4,23 @@
 // per-project in the project-specific-style() mixin in _main.sass.
 
 .section-nav
-   // Debug: normal flow + always visible so we can confirm the component renders.
-   // Positioning (fixed + scrollspy reveal) to be re-added once this is verified.
-   position: fixed
-   top: 24px
+   // Starts in normal flow within the content, then sticks to the top once the
+   // reader scrolls past it. JS toggles .is-stuck (see section-nav.ts) rather than
+   // using position: sticky, which is unreliable here: html/body compute
+   // overflow-y: auto (from overflow-x: hidden), so sticky resolves to a scrollport
+   // that never scrolls.
+   position: static
    width: 100%
    z-index: 100
-   margin: 16px 0
+   // Breathing room via padding, not margin: padding is part of offsetHeight, so
+   // the JS sentinel reserves the exact in-flow footprint when sticking (margins
+   // aren't, which caused a content jump at the transition).
+   margin: 0
+   padding: 10px 0
+   &.is-stuck
+      position: fixed
+      top: 16px           // keep in sync with STICK_OFFSET in section-nav.ts
+      left: 0
 
    // Shrink-wraps the middle capsule only (sides are absolutely positioned out of
    // flow), so the container's justify-content-center keeps the middle capsule's
@@ -148,6 +158,11 @@
       opacity: 0.4
       font-size: 0.85rem
       padding: 0 1px
+
+// Holds the nav's height in flow while it's stuck so content below doesn't jump.
+// JS sets the height (see section-nav.ts); collapsed to 0 when the nav is in flow.
+.snav-sentinel
+   height: 0
 
 // Debug panel: dumps the computed section/subsection hierarchy.
 .snav-debug
