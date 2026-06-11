@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```sh
 npm start
 ```
-Runs `clean`, compiles SASS, starts JS/TS watchers, and launches Jekyll with livereload at `http://localhost:4000`.
+Runs `clean`, builds the vendor / app / dev-tools JS bundles, compiles SASS, then watches SASS + both JS bundles (esbuild `--watch`) and launches Jekyll with livereload at `http://localhost:4000`.
 
 **Production build:**
 ```sh
@@ -85,6 +85,10 @@ Follow the @fat (Jacob Thornton) school of thought — lean on ASI and keep the 
 - Trailing commas in multi-line structures (arrays, objects, params) — makes diffs cleaner.
 - One blank line between logical blocks; no blank lines at the top/bottom of a function body.
 - Opening braces on the same line, always.
+- Comments should not wrap (let the IDE handle that)
+- If the file is under 100 lines, do not use section comments (e.g. `// --- Rendering the breadcrumb trail -----------`)
+- If the file is 100 or more lines, you can group related code with regions. To start a region: `// region [Region name]`. To end a region: `// endregion`. Code regions may be nested.
+- Inline comments are not acceptable as top level documentation (e.g. don't use `// creates a crumb` over `function createCrumb() {}`). 
 
 ```ts
 // top-level: named declaration
