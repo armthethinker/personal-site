@@ -96,31 +96,49 @@ function collectSections(pageBody: HTMLElement): Section[] {
    return sections
 }
 
-/** Returns the breadcrumb path (section, then current subsection if any) for the reader's current scroll position. */
-function computeActivePath(sections: Section[], threshold: number): Crumb[] {
-   const lastPast = <T extends Subsection>(candidates: T[]): T | null => {
-      let found: T | null = null
-      for (const c of candidates) {
-         if (isVisible(c.header) && c.header.getBoundingClientRect().top <= threshold) {
-            found = c
-         }
-      }
-      return found
-   }
+interface Active {
+   index: number
+   path: Crumb[]
+}
 
-   // Default to the first section so the capsule is never empty.
-   const section = lastPast(sections) ?? sections[0]
+/** Resolves the reader's scroll position to the active section index and its breadcrumb path (section, then current subsection if any). */
+function computeActive(sections: Section[], threshold: number): Active {
+   const isPast = (h: HTMLElement): boolean =>
+      isVisible(h) && h.getBoundingClientRect().top <= threshold
+
+   // Default to the first section so the cluster is never empty.
+   let index = 0
+   sections.forEach((s, i) => {
+      if (isPast(s.header)) index = i
+   })
+
+   const section = sections[index]
    const path: Crumb[] = [{ id: section.id, text: section.text }]
 
-   const sub = lastPast(section.subs)
+   let sub: Subsection | null = null
+   for (const s of section.subs) if (isPast(s.header)) sub = s
    if (sub) path.push({ id: sub.id, text: sub.text })
 
-   return path
+   return { index, path }
 }
 
 // endregion
 
 // region Rendering
+
+/** Fills a side capsule with the adjacent (previous / next) section, or hides it when there is no such neighbor. */
+function renderSide(el: HTMLAnchorElement, section: Section | undefined): void {
+   if (!section) {
+      el.hidden = true
+      return
+   }
+   el.hidden = false
+   el.href = `#${section.id}`
+   el.textContent = ''
+   const label = el.appendChild(document.createElement('span'))
+   label.className = 'snav-side-label'
+   label.textContent = section.text
+}
 
 function renderCrumbs(container: HTMLElement, path: Crumb[]): void {
    container.innerHTML = ''
@@ -178,6 +196,9 @@ export function initSectionNav(): void {
       return
    }
 
+   const prev = document.getElementById('snav-prev') as HTMLAnchorElement | null
+   const next = document.getElementById('snav-next') as HTMLAnchorElement | null
+
    // The active line sits just below the fixed capsule; a heading is "active" once it scrolls above it.
    const activeLine = (): number => nav.getBoundingClientRect().bottom + ACTIVE_THRESHOLD
    const live = document.createElement('div')
@@ -185,8 +206,10 @@ export function initSectionNav(): void {
    document.getElementById('snav-debug')?.prepend(live)
    const update = (): void => {
       const line = activeLine()
-      const path = computeActivePath(sections, line)
+      const { index, path } = computeActive(sections, line)
+      if (prev) renderSide(prev, sections[index - 1])
       renderCrumbs(crumbs, path)
+      if (next) renderSide(next, sections[index + 1])
       live.textContent =
          `scrollY=${Math.round(window.scrollY)}  line=${Math.round(line)}  ` +
          `active=[${path.map((c) => c.text).join(' › ')}]`

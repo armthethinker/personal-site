@@ -1,9 +1,14 @@
 <div class="section-nav" id="section-nav">
    <div class="container justify-content-center d-flex">
-      <div class="section-nav-inner">
-         <div class="snav-crumbs" id="snav-crumbs">
-            <span class="snav-crumb">Section nav (default)</span>
+      {% comment %} .snav-center shrink-wraps the middle capsule so it stays viewport-centered; the side capsules are positioned absolutely off its edges and never shift it. {% endcomment %}
+      <div class="snav-center">
+         <div class="section-nav-capsule section-nav-inner">
+            <div class="snav-crumbs" id="snav-crumbs">
+               <span class="snav-crumb">Section nav (default)</span>
+            </div>
          </div>
+         <a class="section-nav-capsule section-nav-side section-nav-side-prev" id="snav-prev" hidden></a>
+         <a class="section-nav-capsule section-nav-side section-nav-side-next" id="snav-next" hidden></a>
       </div>
    </div>
 </div>

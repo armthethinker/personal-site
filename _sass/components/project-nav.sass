@@ -1,3 +1,8 @@
+// In-page section navigation — DEBUG BUILD.
+// Rendered in normal document flow, always visible (no fixed positioning, no
+// reveal). The accent for the current crumb comes from var(--accent), set
+// per-project in the project-specific-style() mixin in _main.sass.
+
 .section-nav
    // Debug: normal flow + always visible so we can confirm the component renders.
    // Positioning (fixed + scrollspy reveal) to be re-added once this is verified.
@@ -7,16 +12,71 @@
    z-index: 100
    margin: 16px 0
 
-   .section-nav-inner
+   // Shrink-wraps the middle capsule only (sides are absolutely positioned out of
+   // flow), so the container's justify-content-center keeps the middle capsule's
+   // center pinned to the viewport center regardless of how many capsules show.
+   .snav-center
+      position: relative
+      display: inline-flex
+
+   .section-nav-capsule
       display: inline-flex
       align-items: center
       padding: 4px 8px
       border-radius: 999px
-      background-color: rgba(255, 255, 255, 0.72)
-      border: 1px solid rgba(255, 255, 255, 0.65)
-      box-shadow: 0 14px 44px rgba(0, 0, 0, 0.18)
+      box-shadow: create-elevation(3)
       backdrop-filter: blur(18px) saturate(180%)
-      -webkit-backdrop-filter: blur(18px) saturate(180%)
+      background-color: rgba(255, 255, 255, 0.82)
+      border: 1px solid rgba(255, 255, 255, 0.65)
+
+
+      &.section-nav-inner
+         max-width: 40vw
+
+      // Adjacent-section capsules flanking the center breadcrumb: dimmer + smaller
+      // so the current section reads as primary. Arrows cue direction (‹ prev, next ›).
+      // Positioned absolutely off the middle capsule's edges so they never shift it.
+      &.section-nav-side
+         position: absolute
+         top: 50%
+         transform: translateY(-50%)
+         max-width: 20vw
+         padding: 7px 14px
+         border-radius: 999px
+         font-size: $font-size-base * 0.7
+         font-weight: 600
+         text-decoration: none
+         color: $palette-caption
+         background-color: rgba(255, 255, 255, 0.55)
+         border-color: rgba(255, 255, 255, 0.6)
+
+         &:hover
+            color: #242424
+         .snav-side-label
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+            min-width: 0
+      &.section-nav-side-prev
+         right: 100%
+         margin-right: 10px
+         &::before
+            content: '‹'
+            flex: none
+            margin-right: 6px
+            opacity: 0.55
+      &.section-nav-side-next
+         left: 100%
+         margin-left: 10px
+         &::after
+            content: '›'
+            flex: none
+            margin-left: 6px
+            opacity: 0.55
+
+   
+      
+      
 
    .snav-crumbs
       display: inline-flex
@@ -33,7 +93,7 @@
       text-overflow: ellipsis
       padding: 5px 10px
       border-radius: 999px
-      font-size: 0.84rem
+      font-size: $font-size-base * 0.75
       font-weight: 600
       text-decoration: none
       color: $palette-caption
@@ -49,6 +109,7 @@
       font-size: 0.85rem
       padding: 0 1px
 
+// Debug panel: dumps the computed section/subsection hierarchy.
 .snav-debug
    margin: 16px 0
    padding: 12px 16px
@@ -57,11 +118,8 @@
    background-color: rgba(0, 0, 0, 0.03)
    pre
       margin: 0
-      font-family: "SFMono-Regular", Menlo, Consolas, monospace
+      font-family: $font-family-monospace
       font-size: 12px
       line-height: 1.5
       white-space: pre-wrap
       color: #333
-
-.section-header
-   scroll-margin-top: 84px
