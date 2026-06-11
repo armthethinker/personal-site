@@ -10462,6 +10462,9 @@ li.nav-item-w a.nav-link:hover {
   top: 16px;
   left: 0;
 }
+.section-nav.is-stuck .section-nav-capsule {
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+}
 .section-nav .snav-center {
   position: relative;
   display: inline-flex;
@@ -10471,10 +10474,11 @@ li.nav-item-w a.nav-link:hover {
   align-items: center;
   padding: 4px 8px;
   border-radius: 999px;
-  box-shadow: 0 12px 12px 0 rgba(44, 44, 44, 0.055), 0 6px 6px 0 rgba(44, 44, 44, 0.055), 0 12px 12px 0 rgba(44, 44, 44, 0.055), 0 24px 24px 0 rgba(44, 44, 44, 0.055);
+  box-shadow: 0 4px 4px 0 rgba(44, 44, 44, 0.045), 0 2px 2px 0 rgba(44, 44, 44, 0.045), 0 4px 4px 0 rgba(44, 44, 44, 0.045), 0 8px 8px 0 rgba(44, 44, 44, 0.045);
   backdrop-filter: blur(12px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.65);
+  transition: box-shadow 0.22s ease;
 }
 .section-nav .section-nav-capsule.section-nav-inner {
   max-width: 70vw;
