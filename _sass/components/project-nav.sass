@@ -122,6 +122,27 @@
          color: var(--accent)
          font-weight: 700
 
+   // The major-section crumb shows its full text by default. When a subsection
+   // crumb follows (so the major crumb is no longer the last child), collapse it
+   // to just the first word to save room — but restore the full text once there's
+   // space at sm and up.
+   .snav-crumb-major
+      .snav-crumb-first
+         display: none
+      &:not(:last-child)
+         .snav-crumb-full
+            display: none
+         .snav-crumb-first
+            // display: inline
+            display: block
+            text-overflow: clip
+            overflow-x: visible
+         +media-breakpoint-up(md)
+            .snav-crumb-full
+               display: inline
+            .snav-crumb-first
+               display: none
+
    .snav-crumb-sep
       display: inline-block
       opacity: 0.4

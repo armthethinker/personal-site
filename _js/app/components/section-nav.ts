@@ -1,3 +1,11 @@
+/**
+ * In-page section navigation — DEBUG BUILD.
+ * Renders the breadcrumb capsule (always visible, fixed by CSS) and updates the
+ * active section/subsection path as the reader scrolls. Also dumps the computed
+ * hierarchy into a debug panel so we can verify what collectSections() reads.
+ * Reveal/enter animations are intentionally still stripped — added back later.
+ */
+
 // region Types & constants
 
 interface Crumb {
@@ -153,7 +161,20 @@ function renderCrumbs(container: HTMLElement, path: Crumb[]): void {
       const a = document.createElement('a')
       a.className = 'snav-crumb'
       a.href = `#${crumb.id}`
-      a.textContent = crumb.text
+      if (i === 0) {
+         // The major-section crumb carries both its full text and just its first
+         // word; CSS picks which to show (first word only when a subsection crumb
+         // is present on small screens). See _sass/components/project-nav.sass.
+         a.classList.add('snav-crumb-major')
+         const full = a.appendChild(document.createElement('span'))
+         full.className = 'snav-crumb-full'
+         full.textContent = crumb.text
+         const first = a.appendChild(document.createElement('span'))
+         first.className = 'snav-crumb-first'
+         first.textContent = crumb.text.split(/\s+/)[0] || crumb.text
+      } else {
+         a.textContent = crumb.text
+      }
       container.appendChild(a)
    })
 }
