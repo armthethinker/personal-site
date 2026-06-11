@@ -31,7 +31,10 @@
 
 
       &.section-nav-inner
-         max-width: 40vw
+         max-width: 70vw
+         +media-breakpoint-up(sm)
+            max-width: 40vw
+         
 
       // Adjacent-section capsules flanking the center breadcrumb: dimmer + smaller
       // so the current section reads as primary. Arrows cue direction (‹ prev, next ›).
@@ -43,36 +46,52 @@
          max-width: 20vw
          padding: 7px 14px
          border-radius: 999px
-         font-size: $font-size-base * 0.7
+         font-size: $font-size-base * 0.75
          font-weight: 600
          text-decoration: none
          color: $palette-caption
          background-color: rgba(255, 255, 255, 0.6)
          border-color: rgba(255, 255, 255, 0.65)
 
+         +media-breakpoint-up(sm)
+            font-size: $font-size-base * 0.7
+
          &:hover
             color: #242424
+         
          .snav-side-label
             overflow: hidden
             white-space: nowrap
             text-overflow: ellipsis
             min-width: 0
+            display: none
+
+            +media-breakpoint-up(sm)
+               display: inline
+
       &.section-nav-side-prev
          right: 100%
          margin-right: 10px
          &::before
             content: '‹'
             flex: none
-            margin-right: 6px
-            opacity: 0.55
+            margin-right: 0
+            opacity: 0.8
+            +media-breakpoint-up(sm)
+               margin-right: 6px
+               opacity: 0.55
+         
       &.section-nav-side-next
          left: 100%
          margin-left: 10px
          &::after
             content: '›'
             flex: none
-            margin-left: 6px
-            opacity: 0.55
+            margin-left: 0
+            opacity: 0.8
+            +media-breakpoint-up(sm)
+               margin-left: 6px
+               opacity: 0.55
 
    
       
