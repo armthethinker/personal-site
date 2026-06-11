@@ -181,10 +181,9 @@ function renderCrumbs(container: HTMLElement, path: Crumb[]): void {
    })
 }
 
-/** Dumps the computed hierarchy (section ids/text + their subsections) into a visible debug panel at the top of the page body. */
-function renderDebug(pageBody: HTMLElement, sections: Section[]): void {
-   const existing = document.getElementById('snav-debug')
-   if (existing) existing.remove()
+/** Dumps the computed hierarchy (section ids/text + their subsections) into the debug container and returns the live status line for the scroll loop to update. */
+function renderDebug(container: HTMLElement, sections: Section[]): HTMLElement {
+   container.textContent = ''
 
    const lines: string[] = [`sections found: ${sections.length}`, '']
    sections.forEach((s) => {
@@ -195,10 +194,15 @@ function renderDebug(pageBody: HTMLElement, sections: Section[]): void {
    const panel = document.createElement('div')
    panel.id = 'snav-debug'
    panel.className = 'snav-debug'
+   const live = document.createElement('div')
+   live.id = 'snav-live'
+   panel.appendChild(live)
    const pre = document.createElement('pre')
    pre.textContent = lines.join('\n')
    panel.appendChild(pre)
-   pageBody.prepend(panel)
+   container.appendChild(panel)
+
+   return live
 }
 
 // endregion
@@ -212,7 +216,11 @@ export function initSectionNav(): void {
    if (!pageBody || !nav || !crumbs) return
 
    const sections = collectSections(pageBody)
-   renderDebug(pageBody, sections)
+
+   // Debug output is opt-in: Jekyll only emits .snav-debug-container outside
+   // production (see navigation-sections.html), so this is null in prod.
+   const debugContainer = document.querySelector<HTMLElement>('.snav-debug-container')
+   const live = debugContainer ? renderDebug(debugContainer, sections) : null
 
    if (sections.length === 0) {
       crumbs.textContent = '(no sections found)'
@@ -233,9 +241,6 @@ export function initSectionNav(): void {
 
    // The active line sits just below the capsule; a heading is "active" once it scrolls above it.
    const activeLine = (): number => nav.getBoundingClientRect().bottom + ACTIVE_THRESHOLD
-   const live = document.createElement('div')
-   live.id = 'snav-live'
-   document.getElementById('snav-debug')?.prepend(live)
    const update = (): void => {
       const stuck = sentinel.getBoundingClientRect().top <= STICK_OFFSET
       sentinel.style.height = stuck ? `${nav.offsetHeight}px` : '0px'
@@ -246,9 +251,10 @@ export function initSectionNav(): void {
       if (prev) renderSide(prev, sections[index - 1])
       renderCrumbs(crumbs, path)
       if (next) renderSide(next, sections[index + 1])
-      live.textContent =
-         `scrollY=${Math.round(window.scrollY)}  stuck=${stuck}  line=${Math.round(line)}  ` +
-         `active=[${path.map((c) => c.text).join(' › ')}]`
+      if (live)
+         live.textContent =
+            `scrollY=${Math.round(window.scrollY)}  stuck=${stuck}  line=${Math.round(line)}  ` +
+            `active=[${path.map((c) => c.text).join(' › ')}]`
    }
 
    const onScroll = rafThrottle(update)

@@ -13,8 +13,10 @@
    {% endif %}
 {% endfor %}
 
+{% assign debug = false %}
+
 <body class="project-{{p.short}}">
-   {% include util-responsive-size.html %}
+   {% include util-responsive-size.html debug=debug %}
    
    <div class="page">
       <div class="page-header">
@@ -22,7 +24,7 @@
       </div>
       <div class="page-body">
          {% include project-glance.html %}
-         {% include navigation-sections.html %}
+         {% include navigation-sections.html debug=debug %}
          {{ content }}
       </div>
    </div>
