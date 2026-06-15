@@ -5,6 +5,7 @@
 @import "components/patent-item"
 @import "components/home-hero"
 @import "components/home-sections"
+@import "components/home-featured"
    
 $break-sm: 576px
 $break-md: 768px
@@ -422,6 +423,17 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
          // background-color: #fafafa
          // background-color: $card-color
          background-color: $card-color-mixed-lightness
+      
+      .project-rule
+         display: block
+         width: 46px
+         height: 4px
+         border-radius: 999px
+         background: $color-primary
+         margin: 0 0 $spacer
+
+         &.project-rule-center
+            margin: 0 auto $spacer
          
             
       .page-header
