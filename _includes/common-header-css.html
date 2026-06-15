@@ -9,5 +9,20 @@
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"> -->
 <!-- <link rel="stylesheet" href="/node_modules/zoom.js/css/zoom.css"> -->
 <!-- <link rel="stylesheet" href="/assets/css/styles-210221.css"> -->
+<!-- Home hero three.js explorations (variants I & J). Import map so module scripts can use bare specifiers. -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- Home hero exploration fonts (Bricolage Grotesque display + Space Mono utility). Scoped to .hh variants. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 {% assign css_path = site.data.manifest['main.css'] | default: '/assets/css/main.css' %}
 <link rel="stylesheet" href="{{ css_path }}">

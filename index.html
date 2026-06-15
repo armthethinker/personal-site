@@ -39,28 +39,110 @@ title: Home
 </div> -->
 
 <div class="container-fluid p-0">
-<!-- <div class="container-fluid p-0" style="background-image: url(/assets/imgopt/samsung/squiggle-0183.jpg); background-size: cover; background-position: 50% 90%;"> -->
-<!-- <div class="container-fluid p-0" style="background-image: url(/assets/imgopt/samsung/statue-0150.jpg); background-size: cover; background-position: 50% 50%;"> -->
-<!-- <div class="container-fluid p-0" style="background-image: url(/assets/imgopt/wist/temp/frame_encoding.jpg); background-size: cover; background-position: 50% 50%;"> -->
-<!-- <div class="container-fluid p-0" style="background-image: url(/assets/imgopt/samsung/vivid-boat-ocean.2021-02-21%2012_26_04.gif); background-size: cover; background-position: 50% 90%;"> -->
-   <!-- <div class="container-fluid p-0 shim-brightness-4 shim-gradient-transparent-to-black"> -->
-      <div class="container" >
-         <div class="row justify-content-center">
-            <div class="col-11">
-               <div class="pt-4">
-               {% include navigation.html %}
-               </div>
-            </div>
-         </div>
-         <div class="row justify-content-center andrew-header-height align-items-center">
-            <div class="col-12 col-md-10 col-xl-10">
-               <!-- <h1><div class="animated-hand animated jackInTheBox delay-1s d-inline-block">👋</div></h1> -->
-               <h1 class="text-wrap-balance display-5 fw-bold">Andrew R McHugh <br><span class="text-black">is a 0→1 founder, designer, & engineer who turns R&D ambiguity into meaningful products.</span></h1>
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-11">
+            <div class="pt-4 z-3">
+            {% include navigation.html %}
             </div>
          </div>
       </div>
-   <!-- </div> -->
+   </div>
 </div>
+
+<!-- ============================================================================
+     HOME HERO EXPLORATION — three stacked, comparable directions.
+     Each is self-contained and scoped under .hh in _sass/components/home-hero.sass.
+     Keep the winner, delete the rest (and the partial's losing regions).
+     ============================================================================ -->
+
+<!-- VARIANT A — Editorial thesis + proof strip -->
+<section class="hh hh-a">
+   <span class="hh-label">A · Editorial + proof</span>
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-12 col-md-10 col-xl-10">
+            <p class="hh-eyebrow">0→1 Design × Engineering × Strategy</p>
+            <h1 class="hh-display">I turn R&D ambiguity into <em>meaningful products</em>.</h1>
+            <p class="hh-sub"><strong>Andrew R McHugh</strong> — founder, designer, and engineer with a specialty in early stage products and spatial computing.</p>
+            <ul class="hh-proof">
+               <li><span class="hh-proof-val">~$1M</span><span class="hh-proof-lbl">raised</span></li>
+               <li><span class="hh-proof-val">9</span><span class="hh-proof-lbl">patents granted</span></li>
+               <li><span class="hh-proof-val">18.6K</span><span class="hh-proof-lbl">waitlist sign-ups</span></li>
+               <li><span class="hh-proof-val">WSJ</span><span class="hh-proof-lbl">featured</span></li>
+               <li><span class="hh-proof-val">Tribeca</span><span class="hh-proof-lbl">award-winning work</span></li>
+               <li><span class="hh-proof-val">Team Lead</span><span class="hh-proof-lbl">and IC</span></li>
+            </ul>
+         </div>
+         <p class="hh-sub">spatial computing · AR/VR · volumetric capture · CV/ML</p>
+      </div>
+   </div>
+</section>
+
+<!-- ############################################################################
+     SECTION EXPLORATIONS (divergence) — stacked, labeled variants.
+     Sections: Featured projects / Older work / Special ability / How I work / Tools.
+     Styles in _sass/components/home-sections.sass. The original sections below
+     (#work, #how) are kept as the "Current" baseline for comparison.
+     ############################################################################ -->
+
+<!-- ===== OLDER WORK · Variant A — Index list ===== -->
+<section class="container-fluid sec-explore ow-a">
+   <div class="container"><div class="row justify-content-center"><div class="col-12 col-md-11 col-xl-10">
+      <span class="sec-label">Older work · A — Index list</span>
+      {% for item in site.data.projects %}{% if item.skip == true or item.small != true %}{% continue %}{% endif %}
+      <a class="ow-a-row" href="/projects/{{ item.url }}" style="--accent: {{ item.accent }}">
+         <span class="ow-a-year">{{ item.dateYears }}</span>
+         <img class="ow-a-thumb" src="{{ item.imgHero }}" alt="">
+         <h3 class="ow-a-title">{{ item.title }}<span>{{ item.subtitle }}</span></h3>
+         <span class="ow-a-role">{{ item.role }}</span>
+         <span class="ow-a-arrow">→</span>
+      </a>
+      {% endfor %}
+   </div></div></div>
+</section>
+
+
+<!-- ===== SPECIAL ABILITY · Variant A — Pull quote ===== -->
+<section class="container-fluid sec-explore sa-a">
+   <div class="container"><div class="row justify-content-center"><div class="col-12 col-md-11 col-xl-10">
+      <span class="sec-label">Special ability · A — Pull quote</span>
+      <p class="sec-eyebrow">My special ability</p>
+      <h2 class="sa-a-stmt">Navigating early-stage ambiguity to <span class="sa-stmt-accent">identify</span>, <span class="sa-stmt-accent">design</span>, and <span class="sa-stmt-accent">build</span> what's really important.</h2>
+   </div></div></div>
+</section>
+
+<!-- ===== HOW I WORK · Variant A — Numbered principles ===== -->
+<section class="container-fluid sec-explore hw-a">
+   <div class="container"><div class="row justify-content-center"><div class="col-12 col-md-11 col-xl-10">
+      <span class="sec-label">How I work · A — Numbered principles</span>
+      <div class="hw-a-grid">
+      {% for item in site.data.how-work %}
+         <div class="hw-a-item">
+            <span class="hw-a-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+            <h4 class="hw-a-topic">{{ item.topic }}</h4>
+            <p class="hw-a-desc">{{ item.description }}</p>
+         </div>
+      {% endfor %}
+      </div>
+   </div></div></div>
+</section>
+
+
+<!-- ===== TOOLS · Variant C — Flowing inline ===== -->
+<section class="container-fluid sec-explore tl-c">
+   <div class="container"><div class="row justify-content-center"><div class="col-12 col-md-11 col-xl-10">
+      <span class="sec-label">Tools · C — Flowing inline</span>
+      {% for cat in site.data.skills %}
+      <div class="tl-c-cat">
+         <p class="tl-c-catname">{{ cat.category }}</p>
+         <p class="tl-c-run">{% for skill in cat.list %}<span>{{ skill }}</span>{% endfor %}</p>
+      </div>
+      {% endfor %}
+   </div></div></div>
+</section>
+
+<!-- ===== END SECTION EXPLORATIONS — original baseline sections below ===== -->
 
 <!-- Projects -->
 <div class="container-fluid p-0 pb-5 project-hero-shadow" id="work">
