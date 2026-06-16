@@ -45,9 +45,9 @@
             <div class='col-11 col-md-10 col-xl-8'>
                 <div class="project-rule"></div>
                 <div class='project-description'>
-                    <h2 class="text-wrap-prett mb-0">{{include.title}}</h2>
-                    <h3 class="text-wrap-balanc mb-1 h2">{{include.subtitle}}</h3>
-                    <p class="fw-medium mb-3"><small>{{include.dateYears}} • {{include.role}}</small></p>
+                    <h2 class="mb-0">{{include.title}}</h2>
+                    <h3 class="mb-1 h2">{{include.subtitle}}</h3>
+                    <p class="fw-medium mb-3 lead">{{include.dateYears}} • {{include.role}}</p>
                     <!-- <p>{{include.description}}</p> -->
                 </div>
                 <a class='btn btn-primary btn-view-project shade-{{include.short | downcase}}' href='/projects/{{include.url}}'>Learn More →</a>
