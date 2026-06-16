@@ -39,12 +39,15 @@ modelURL: /assets/models/wist/
 
 
 {% include text-big.html
-   tertiary="Press play"
+   secondary="Stop watching. Start reliving."
+
 %}
+
+
 
 {% include media-video.html
    url="temp/RELIVE-sm.mp4"
-   caption=""
+   caption="**Press play ⤴**"
    aspect="9by16"
    loop=false
    autoplay=false
@@ -57,7 +60,8 @@ modelURL: /assets/models/wist/
    header="Why immersive memories?"
    subheader="Product thesis"
    content="
-> Take a video. Step inside. Enhance forever.
+<!-- > Take a video. Step inside. Enhance forever. -->
+> \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\" – User
 
 **Immersive media is incredibly compelling, even more when it is your own memories.** I saw where the tech was going, in part from my time at Samsung, but no one was tacking the hard problem. Companies were going after high-end multi-camera rigs, or static photogrammetry, or wholly generated 2D video.
 
@@ -163,8 +167,16 @@ My guiding vision was that Wist **must be as easy as taking a video and putting 
    extraImgClasses="img-xl-contained"
 %}
 
+{% include media-img.html
+   style="lg"
+   url="temp/ux-flow-ios.jpg"
+   header="iOS"
+   subheader="Capture, browsing, & playback"
+%}
+
+
+
 {% include p-section.html
-   header="iOS capture, browsing, & playback"
    content="
 
 #### Spatial capture that feels like video
@@ -190,7 +202,7 @@ Users could also import 2D video for a \"spatial upconversion\".
 {% include p-section.html
    content="
 
-#### Beyond 2D playback, even on flat screens
+#### Beyond 2D playback on flat screens
 It was tricky to balance \"this is familiar\" and \"this is giving me way more\". My design principle was that **any effects, including depth, must be additive**.
 
 "
