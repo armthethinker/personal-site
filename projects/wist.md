@@ -39,12 +39,15 @@ modelURL: /assets/models/wist/
 
 
 {% include text-big.html
-   tertiary="Press play"
+   secondary="Stop watching. Start reliving."
+
 %}
+
+
 
 {% include media-video.html
    url="temp/RELIVE-sm.mp4"
-   caption=""
+   caption="**Press play ⤴**"
    aspect="9by16"
    loop=false
    autoplay=false
@@ -57,7 +60,8 @@ modelURL: /assets/models/wist/
    header="Why immersive memories?"
    subheader="Product thesis"
    content="
-> Take a video. Step inside. Enhance forever.
+<!-- > Take a video. Step inside. Enhance forever. -->
+> \"Even though it was something I had recorded only minutes ago, it nearly brought tears to my eyes.\" – User
 
 **Immersive media is incredibly compelling, even more when it is your own memories.** I saw where the tech was going, in part from my time at Samsung, but no one was tacking the hard problem. Companies were going after high-end multi-camera rigs, or static photogrammetry, or wholly generated 2D video.
 
@@ -79,6 +83,8 @@ Wist's unique perspective and challenges were
 {% include p-section.html
    header="What I built & led"
    subheader="Forest & the trees"
+   url="team/team-together.jpg"
+   caption="**Core team.** From left, me (Andrew), cofounder Mike Oder, and engineer Mark Kinoshita."
    content="
 
 I led the company from research prototypes through product development, fundraising, and ultimately through shutdown. 
@@ -108,17 +114,40 @@ As an **engineer**
 
 I wore many hats and used all the tools in my toolbox.
 
+#### Founder+CEO 🙋🏻‍♂️
+- **Defined** product vision, roadmap
+- **Raised** ~$1M from VCs and angels (lead: Long Journey Ventures)
+- **Hired** and led a small, highly technical team
+- **Led** user research and metrics
+- **Filmed** and edited content for social media
+
+#### Designer 👨🏻‍🎨
+- **Crafted novel UI paradigms** for spatial content on headsets and on mobile
+- **Created** beautiful experiences, focused on what matters
+- **Tuned implementations** to run smoothly without sacrificing vision
+
+#### Engineer 👨🏻‍💻
+- **Built novel UI paradigms** for spatial content on headsets and on mobile
+- **Built and led** video encoding, shader development, user data backend, performance optimization, and interaction systems - across mobile, headsets, and multiple backends
+
+#### CV/ML Researcher 👨‍🔬
+- **Researched** novel ways of rectifying temporal depth data
+- **Built and led** dynamic volumetric reconstruction pipeline, integrating sensor and ML data sources
+- **Tested and deployed** constellations of open source CV/ML models
+- **Invented** data encoding method
+
+#### Tools 🧰
 "
 %}
 
 
 
-
+<!-- 
 {% include cards.html
    data= site.data.wist.roles
    col="col-12 col-lg-6"
    markdownify=true
-%}
+%} -->
 
 
 {% include skills.html 
@@ -163,8 +192,16 @@ My guiding vision was that Wist **must be as easy as taking a video and putting 
    extraImgClasses="img-xl-contained"
 %}
 
+{% include media-img.html
+   style="lg"
+   url="temp/ux-flow-ios.jpg"
+   header="iOS"
+   subheader="Capture, browsing, & playback"
+%}
+
+
+
 {% include p-section.html
-   header="iOS capture, browsing, & playback"
    content="
 
 #### Spatial capture that feels like video
@@ -190,7 +227,7 @@ Users could also import 2D video for a \"spatial upconversion\".
 {% include p-section.html
    content="
 
-#### Beyond 2D playback, even on flat screens
+#### Beyond 2D playback on flat screens
 It was tricky to balance \"this is familiar\" and \"this is giving me way more\". My design principle was that **any effects, including depth, must be additive**.
 
 "

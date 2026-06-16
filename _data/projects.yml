@@ -1,6 +1,7 @@
 - title: "Wist: Immersive Memories"
   pID: 1
   short: wist
+  accent: "#ff6b7c" # FIXME: Need to find single source of truth
   emoji: 🤓
   # subtitle: Take a video. Step inside. 
   subtitle: Spatial capture, processing, & playback on iOS, Quest, Vision Pro
@@ -52,6 +53,7 @@
 - title: Samsung Research America
   pID: 2
   short: samsung
+  accent: "#0c4da2"
   emoji: 🤓
   # subtitle: Opportunities & constraints of magic spatial glasses
   subtitle: Defining & prototyping the future of AR glasses across OS, apps, and interactions
@@ -103,6 +105,7 @@
 - title: Echo
   pID: 3
   short: echo
+  accent: "#4054B2"
   emoji: 💸
   subtitle: Transparent consumer banking in an opaque market
   description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
@@ -127,6 +130,7 @@
 - title: Humane Virtuality
   pID: 4
   short: hv
+  accent: "#C80D59"
   emoji: 😎
   subtitle: Researching the future of VR UX in week-long sprints
   description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
@@ -154,6 +158,7 @@
 - title: Moral Decisions & Haptics in VR
   pID: 5
   short: morals
+  accent: "#7154E9"
   emoji: 🚋
   subtitle: Does feeling a virtual world change your moral decisions?
   description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
@@ -180,6 +185,7 @@
 - title: What If…? Conference & Book
   pID: 6
   short: whatif
+  accent: "#FC3F5E"
   emoji: 🤔
   # subtitle: Active curiosity to the max
   subtitle: Gathering diverse crowds to explore the world, starting with questions

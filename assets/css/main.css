@@ -8698,9 +8698,14 @@ progress {
 }
 .te__imgs img {
   height: 120px;
-  max-width: 200px;
+  max-width: 150px;
   object-fit: cover;
   border-radius: 0.375rem;
+}
+@media (min-width: 768px) {
+  .te__imgs img {
+    max-width: 200px;
+  }
 }
 
 .te__link {
@@ -8787,6 +8792,135 @@ progress {
   border-radius: 0.375rem;
 }
 
+.hh {
+  position: relative;
+  padding: 132px 0 88px;
+}
+.hh .hh-eyebrow {
+  font-family: "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f94c43;
+  margin-bottom: 20px;
+}
+.hh .hh-display {
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: clamp(2rem, 7.4vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  margin: 0;
+}
+.hh .hh-display em {
+  font-style: normal;
+  color: #f94c43;
+}
+.hh .hh-sub {
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  line-height: 1.45;
+  color: #4b5563;
+  max-width: 30ch;
+  margin: 28px 0 0;
+}
+.hh .hh-sub strong {
+  color: #1d1d1f;
+}
+.hh .hh-proof {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  padding: 0;
+  margin: 44px 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 28px;
+  justify-content: space-between;
+}
+.hh .hh-proof li {
+  display: flex;
+  flex-direction: column;
+}
+.hh .hh-proof .hh-proof-val {
+  font-family: "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1d1d1f;
+  line-height: 1;
+}
+.hh .hh-proof .hh-proof-lbl {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.sec-explore {
+  padding: 64px 0;
+}
+
+.sec-eyebrow {
+  font-family: "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent, #f94c43);
+  margin: 0 0 18px;
+}
+
+.sa-stmt-accent {
+  color: var(--accent, #f94c43);
+}
+
+.sa-a .sa-a-stmt {
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  color: #1d1d1f;
+  text-wrap: balance;
+  margin: 0;
+  max-width: 18ch;
+}
+
+.tl-c .tl-c-cat {
+  padding: 22px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+}
+@media (max-width: 680px) {
+  .tl-c .tl-c-cat {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+.tl-c .tl-c-catname {
+  font-family: "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent, #f94c43);
+  padding-top: 6px;
+}
+.tl-c .tl-c-run {
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #1d1d1f;
+  margin: 0;
+}
+.tl-c .tl-c-run span:not(:last-child)::after {
+  content: " · ";
+  color: #6b7280;
+}
+
 html {
   overflow-x: hidden;
   background-color: #ededed;
@@ -8822,6 +8956,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   position: relative;
   text-wrap-style: pretty;
   font-weight: 600;
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.font-header {
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body .lead {
@@ -9193,6 +9332,17 @@ body {
 .project-samsung .card {
   background-color: rgb(245.24, 246.54, 248.24);
 }
+.project-samsung .project-rule {
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  background: #0c4da2;
+  margin: 0 0 1rem;
+}
+.project-samsung .project-rule.project-rule-center {
+  margin: 0 auto 1rem;
+}
 .project-samsung .page-header .nav-main .nav::after {
   background-color: #0c4da2;
 }
@@ -9315,6 +9465,17 @@ body {
 }
 .project-echo .card {
   background-color: rgb(246.28, 246.68, 248.56);
+}
+.project-echo .project-rule {
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  background: #4054B2;
+  margin: 0 0 1rem;
+}
+.project-echo .project-rule.project-rule-center {
+  margin: 0 auto 1rem;
 }
 .project-echo .page-header .nav-main .nav::after {
   background-color: #4054b2;
@@ -9439,6 +9600,17 @@ body {
 .project-hv .card {
   background-color: rgb(249, 245.26, 246.78);
 }
+.project-hv .project-rule {
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  background: #C80D59;
+  margin: 0 0 1rem;
+}
+.project-hv .project-rule.project-rule-center {
+  margin: 0 auto 1rem;
+}
 .project-hv .page-header .nav-main .nav::after {
   background-color: #c80d59;
 }
@@ -9561,6 +9733,17 @@ body {
 }
 .project-morals .card {
   background-color: rgb(247.26, 246.68, 249.66);
+}
+.project-morals .project-rule {
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  background: #7154E9;
+  margin: 0 0 1rem;
+}
+.project-morals .project-rule.project-rule-center {
+  margin: 0 auto 1rem;
 }
 .project-morals .page-header .nav-main .nav::after {
   background-color: #7154e9;
@@ -9685,6 +9868,17 @@ body {
 .project-whatif .card {
   background-color: rgb(250.04, 246.26, 246.88);
 }
+.project-whatif .project-rule {
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  background: #FC3F5E;
+  margin: 0 0 1rem;
+}
+.project-whatif .project-rule.project-rule-center {
+  margin: 0 auto 1rem;
+}
 .project-whatif .page-header .nav-main .nav::after {
   background-color: #fc3f5e;
 }
@@ -9807,6 +10001,17 @@ body {
 }
 .project-wist .card {
   background-color: rgb(250.1, 247.14, 247.48);
+}
+.project-wist .project-rule {
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 999px;
+  background: #ff6b7c;
+  margin: 0 0 1rem;
+}
+.project-wist .project-rule.project-rule-center {
+  margin: 0 auto 1rem;
 }
 .project-wist .page-header .nav-main .nav::after {
   background-color: #ff6b7c;
@@ -10168,6 +10373,9 @@ video,
 .p-sec > .img-fluid {
   margin-left: -15px;
   max-width: calc(100% + 30px);
+}
+.p-sec h4, .p-sec .h4 {
+  margin-top: 2rem;
 }
 .p-sec .card {
   border: none;

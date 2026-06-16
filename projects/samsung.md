@@ -60,6 +60,15 @@ And generally, **finding the details that must be solved for true everyday use**
 **It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
 
 **Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products. -->
+
+
+<!-- #### Resulting vision
+
+After years of working in AR/VR, a few themes became clear
+
+Everyday spatial glasses, must work for us -->
+
+
 "
 %}
 
@@ -72,7 +81,9 @@ And generally, **finding the details that must be solved for true everyday use**
    subheader="The work was mysterious & important"
    content="
 
-> Patents hint at the product work I was tackling.
+<!-- > Patents hint at the product work I was tackling. -->
+
+> I can't show my designs, demos, systems... <br> **but, I can show the patents that came out of our work**
 
 10+ submitted. 9 granted.
 
@@ -89,19 +100,28 @@ And generally, **finding the details that must be solved for true everyday use**
    header="My role"
    content="
 
-I was a Team Lead and Senior Designer. I worked in and led the XR Design Group (XRDG), a group of designers and engineers who worked to understand what could be created with AR glasses and how.
+I was a **Team Lead and Senior Designer** in the XR Design Group (XRDG), a cross-functional team of designers and engineers figuring out what would make spatial AR glasses compelling.
 
-**As an AR/VR Team Lead:**
-- Demonstrated vision to executives, partners, and visiting dignitaries through conversations, presentations, and demos.
-- Created and managed the process that let us quickly explore the possibility space going from ideas, rapid prototypes, high production prototypes, and video documentation. 
-- Led and supported hiring process.
+#### Team Lead 🙋🏻‍♂️
+- **Demonstrated** vision to executives, partners, and visiting dignitaries through conversations, presentations, and demos
+- **Created and managed** the process that took us from ideas, to rapid prototypes, to high fidelity prototypes, to video documentation
+- **Set team priorities** with input from team, managers, and execs
+- **Led and supported** hiring process
+- **Mentored** teammates through spatial design problems and navigating Samsung
 
-**As a spatial designer & prototyper:** 
-- Led investigations across operating system, apps, and interactions.
-- Collaborated on prototypes (Unity/C#) and user studies, de-risking explorations.
-- Bridge design and engineering in a context where device capabilities were often changing.
-- Built internal documentation to catalog our work.
-- Submitted 10+ patents.
+#### Designer 👨🏻‍🎨
+- **Led** investigations across the operating system, apps, and interactions
+- **Designed** novel interactions and product strategies for the new spatial medium
+- **Bridged** design and engineering as device capabilities kept changing
+- **Ran** user studies to understand sentiment
+- **Rendered** pre-vis imagery to quickly show concepts
+
+#### Prototyper & Engineer 👨🏻‍💻
+- **Built** on-device prototypes (Unity/C#) that de-risked explorations
+- **Documented** the team's work — internal catalogs and a custom site showcasing our decisions and history
+
+**To support the work, I used all sorts of tools** from Unity, Blender, volumetric capture (Depthkit, Meshroom, Polycam), AR/VR design tools (Maquette, Tvori, Tilt Brush, Blocks, Quill), and 2D design tools (Sketch, Adobe Creative Suite, Procreate).
+
 
 <!-- **As a Team Lead**
 - **Priorities & vision**: Through my years of work before and at Samsung, I've developed specific principles for what AR and VR can and should be. These guide my decisions and help to set the team's vision. I work with my manager to set priorities for the team, arguing for directions that would have the highest returns on investment.
@@ -151,21 +171,14 @@ Depending on the timeline and problem we were addressing, we could shift time be
    style="md"
    aspect="16by9"
    content="
-> Almost everything shown in these patent images were built by me and the team.   
+<!-- > Almost everything shown in these patent images were built by me and the team.    -->
+> Patent imagry is adapted from working apps, prototypes.
 "
 %}
 {% include media-img-wall.html
    data=site.data.imgwall.samsung
 %}
-
-{% include media-video.html
-   url="tent-photogrammetry-5Mbps.mp4"
-   caption="**Video.** When a project needed a tent model and I happened to be learning photogrammetry, I captured and processed my tent for use."
-   aspect="16by9"
-   loop=true
-   controls=true
-%}
-
+<!-- 
 {% include model-viewer.html
    model="tent-photogrammetry/tent-photogrammetry.glb"
    modeliOS="tent-photogrammetry/tent-photogrammetry.usdz"
@@ -176,8 +189,8 @@ Depending on the timeline and problem we were addressing, we could shift time be
    cameraTarget="0m .3m 0m"
    arPlacement="floor"
    interactionPrompt="auto"
-%}
-
+%} -->
+<!-- 
 {% include p-section.html
    header="Tools used"
    content="
@@ -202,7 +215,7 @@ Most projects ended with very high fidelity multi-device prototypes and a video 
 [(My current stack →)](/#how)
 
 "
-%}
+%} -->
 
 {% include media-youtube.html
    header="Other work"
@@ -225,5 +238,5 @@ For other examples of my spatial computing work, you can look at [Humane Virtual
 "
 %}
 
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->

@@ -41,3 +41,8 @@
 - imgurl: two-screens-one-camera.gif
   caption: Hardware VR project for independently controlled eyes, like in <em>Pan's Labyrinth</em>. (Personal)
 # - imgurl: spatial-computing.2019-05-27 08_20_32.gif
+
+- imgurl: tent-photogrammetry-5Mbps.mp4
+  caption: When a project needed a tent model and I happened to be learning photogrammetry, I captured and processed my tent for use.
+  video: true
+  aspect: 16by9

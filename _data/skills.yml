@@ -19,6 +19,7 @@
     - PyTorch
     - Streamlit
     - Scikit Image
+    - Matplotlib
     - Rerun
     - Anaconda
     - Git
