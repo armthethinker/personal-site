@@ -83,6 +83,8 @@ Wist's unique perspective and challenges were
 {% include p-section.html
    header="What I built & led"
    subheader="Forest & the trees"
+   url="team/team-together.jpg"
+   caption="**Core team.** From left, me (Andrew), cofounder Mike Oder, and engineer Mark Kinoshita."
    content="
 
 I led the company from research prototypes through product development, fundraising, and ultimately through shutdown. 
