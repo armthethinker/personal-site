@@ -2,7 +2,7 @@
 layout: project-page
 pID: 2
 title: Samsung
-image: /assets/imgopt/samsung/orb-1.jpg
+image: /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
 description: A precursor to Galaxy XR. Explored the opportunities and
   constraints of spatial glasses across OS, apps, and interactions which
   informed efforts across Samsung and with external partners. Led an AR/VR
@@ -71,6 +71,53 @@ Everyday spatial glasses, must work for us -->
 
 "
 %}
+
+
+{% include p-section.html
+   header="Sample questions I tackled"
+   content="
+
+### What is an AR app?
+{: .mt-0 .mb-5 .text-body}
+
+### Can messaging apps be spatial?
+{: .mt-0 .mb-5 .text-body}
+
+### How should phone and headset users collaborate in a shared space?
+{: .mt-0 .mb-5 .text-body}
+
+### How should the OS be context-responsive?
+{: .mt-0 .mb-5 .text-body}
+
+### Can a phone act as a controller?
+{: .mt-0 .mb-5 .text-body}
+
+### How does device input capability change spatial interface design?
+{: .mt-0 .mb-5 .text-body}
+
+### What are the responsibilities of the OS, app developers, and users?
+{: .mt-0 .mb-5 .text-body}
+
+And more...
+
+
+<!-- **I created novel interactions and product strategies.** I think beyond our current black rectangles. I figure out how to meet or overcome our constraints. I design for moving targets and design for various device capabilities simultaneously.
+
+**It's a new medium and I have a moral duty to help make it a good one.** There are few opportunities – if any – in your career to help shape the direction of a new medium. Each new medium presents new opportunities and challenges to humanity. I do what I can to create more opportunities in spatial computing than challenges.
+
+**Everything is challenging and ambiguous.** While the high-level design principles are the same in spatial computing, there aren't clear answers for any particular problem. Each decision requires investigation. And, I've had to learn new tools to ideate and build spatial products. -->
+
+
+<!-- #### Resulting vision
+
+After years of working in AR/VR, a few themes became clear
+
+Everyday spatial glasses, must work for us -->
+
+
+"
+%}
+
 
 
 

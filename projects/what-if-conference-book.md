@@ -2,7 +2,7 @@
 layout: project-page
 pID: 6
 title: What If…? Conference & Book
-image: /assets/imgopt/whatif/image387.jpg
+image: /assets/imgopt/whatif/whatifoverview.gif
 description: In 2010, I cofounded a conference that used curiosity to inspire
   and provoke attendees into action. I ran the production side of the company,
   ensuring design and quality. A multifaceted company, we created conferences,

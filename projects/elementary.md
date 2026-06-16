@@ -2,7 +2,7 @@
 layout: project-page
 pID: 3
 title: Echo
-image: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
+image: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
 description: We created a better banking product that employs learning and
   prediction for the consumer to use. We spent eight months researching,
   designing, prototyping, and user testing our app in the Portuguese market. Our

@@ -3,8 +3,9 @@
 <head>
    {% include common-header-css.html %}
 
-   {% seo %}
-
+   <title>{% if page.title %}{{ page.title }} – {% endif %}Andrew R McHugh</title>
+   {% seo title=false %}
+   
 </head>
 
 {% for project in site.data.projects %}

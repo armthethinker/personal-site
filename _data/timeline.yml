@@ -80,6 +80,9 @@
   img: 
     - /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
     - /assets/imgopt/samsung/patents/US20210319617A1-20211014-D00012.jpg
+    - /assets/imgopt/samsung/patents/US20220229535A1-20220721-D00017.jpg
+    - /assets/imgopt/samsung/patents/US20190172262A1-20190606-D00006.jpg
+    - /assets/imgopt/samsung/patents/US20210407215A1-20211230-D00009.jpg
   link: /projects/samsung.html
   id: samsung
   patents: 10+ patents filed, 9 granted, spanning mixed device shared spaces, spatial input, notifications, and more.
@@ -105,6 +108,7 @@
   short2: Invited speaker at XD Immersive. Shared my lessons transitioning into spatial computing design.
   venue: XD Immersive, San Francisco, CA
   link: https://www.youtube.com/watch?v=Mtff419uLe8
+  img: /assets/imgopt/other/xd-immersive/shit-people-care-about.jpg
 
 
 
@@ -127,6 +131,8 @@
   short2: Arduino project recreating the hand-eyes from Pan's Labyrinth.
   img: 
     - /assets/imgopt/samsung/img7281.jpg
+    - /assets/imgopt/other/pan/two-eyes.jpg
+    - /assets/imgopt/other/pan/single-eye.jpg
     # - /assets/imgopt/samsung/two-screens-one-camera.gif
 
 - short: VR UX Explorations (Humane Virtuality)

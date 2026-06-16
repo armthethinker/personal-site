@@ -2,7 +2,7 @@
 layout: project-page
 pID: 5
 title: Moral Decisions & Haptics in VR
-image: /assets/imgopt/morals/cover-virtual-trolley-sm.jpg
+image: /assets/imgopt/morals/push-the-worker.gif
 description: We created a VR environment to test an isomorph of the
   philosophical Trolley Problem. Some participants could feel the world around
   them while others could not. We found that participants who have haptic
