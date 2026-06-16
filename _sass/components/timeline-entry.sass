@@ -102,9 +102,11 @@ $te-types: (
 
   img
     height: 120px
-    max-width: 200px
+    max-width: 150px
     object-fit: cover
     border-radius: $border-radius
+    +media-breakpoint-up(md)
+      max-width: 200px
 
 .te__link
   display: inline-flex
