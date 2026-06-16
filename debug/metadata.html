@@ -1,0 +1,146 @@
+---
+permalink: /debug/metadata/
+sitemap: false
+---
+{% comment %}
+Dev-only debug page for eyeballing the SEO / Open Graph metadata that {% raw %}{% seo %}{% endraw %}
+emits per page. It replicates jekyll-seo-tag's resolution rules (page.image ->
+site.image, page.title -> site.title, page.description -> page.excerpt ->
+site.description) so each page's share card can be previewed in one place — the
+image is actually loaded (via relative_url) so missing/broken/mis-encoded paths
+show up immediately. Not linked anywhere; renders nothing in production.
+
+PRINCIPLE — never display a value here that isn't pulled from our source data
+(front matter, _data, _config). Only show {% raw %}{{ page.* }}{% endraw %}, {% raw %}{{ site.* }}{% endraw %}, etc., or a
+filter chain over them. Do NOT hardcode literals or hand-reconstruct strings
+that are actually composed elsewhere (e.g. the brand suffix on the <title>,
+which lives in the layout templates, not in data) — that copy silently drifts
+from the real output and the debug page starts lying. If a tag is composed
+outside our data (like the layout-built <title>), show the source inputs that
+feed it and say where the composition happens, rather than faking the result.
+{% endcomment %}
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Metadata Debug</title>
+   <style>
+      :root { --ink:#1d1d1f; --muted:#6b7280; --line:#e5e7eb; --bg:#f4f4f5; --accent:#f94c43 }
+      * { box-sizing: border-box }
+      body { margin:0; padding:40px 24px 80px; background:var(--bg); color:var(--ink);
+             font:15px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif }
+      .wrap { max-width:1100px; margin:0 auto }
+      h1 { font-size:1.6rem; margin:0 0 4px }
+      .lede { color:var(--muted); margin:0 0 32px }
+      .lede code { background:#fff; border:1px solid var(--line); border-radius:5px; padding:1px 6px }
+      .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(440px, 1fr)); gap:24px }
+      .item { background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden;
+              display:flex; flex-direction:column }
+      .item-head { padding:14px 18px; border-bottom:1px solid var(--line);
+                   display:flex; align-items:baseline; justify-content:space-between; gap:12px }
+      .item-head .path { font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:.8rem; color:var(--muted) }
+      .item-head .name { font-weight:700 }
+      /* Open Graph share-card facsimile */
+      .card { margin:18px; border:1px solid var(--line); border-radius:10px; overflow:hidden }
+      .card-img { position:relative; aspect-ratio:1.91/1; background:#11131a;
+                  display:flex; align-items:center; justify-content:center }
+      .card-img img { width:100%; height:100%; object-fit:cover; display:block }
+      .card-img .missing { color:#9ca3af; font-size:.85rem; font-family:ui-monospace,monospace; padding:0 16px; text-align:center }
+      .card-img .broken { display:none; position:absolute; inset:0; background:#3a1416; color:#fca5a5;
+                          align-items:center; justify-content:center; font-size:.85rem; font-family:ui-monospace,monospace; text-align:center; padding:0 16px }
+      .card-img img.failed { visibility:hidden }
+      .card-img img.failed + .broken { display:flex }
+      .card-meta { padding:12px 16px; background:#fff }
+      .card-meta .domain { font-size:.72rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted) }
+      .card-meta .ct { font-weight:700; margin:3px 0; line-height:1.25 }
+      .card-meta .cd { color:var(--muted); font-size:.88rem; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden }
+      /* resolved values */
+      dl { margin:0 18px 14px; display:grid; grid-template-columns:96px 1fr; gap:0 14px; font-size:.85rem }
+      dt { color:var(--muted); padding:6px 0; border-top:1px solid var(--line) }
+      dd { margin:0; padding:6px 0; border-top:1px solid var(--line); word-break:break-word;
+           font-family:ui-monospace,'SF Mono',Menlo,monospace }
+      dd.warn { color:var(--accent) }
+      dd.note { font-family:inherit; color:var(--muted); font-style:italic }
+      details { margin:0 18px 18px }
+      summary { cursor:pointer; color:var(--muted); font-size:.82rem }
+      pre { background:#0f1117; color:#d6deeb; border-radius:8px; padding:14px; overflow:auto;
+            font-size:.75rem; line-height:1.5; margin:10px 0 0 }
+   </style>
+</head>
+<body>
+{% if jekyll.environment == "production" %}
+   <p style="font:15px sans-serif; color:#6b7280; max-width:560px; margin:60px auto; text-align:center">
+      The metadata debug page is disabled in production.
+   </p>
+{% else %}
+   <div class="wrap">
+      <h1>Metadata debug</h1>
+      <p class="lede">How <code>{% raw %}{% seo %}{% endraw %}</code> resolves Open Graph / Twitter tags per page. Images load from the live server, so a broken or missing one shows up below. Reflects the current build — rerun the build after editing front matter.</p>
+      <div class="grid">
+      {% assign pages = site.html_pages | sort: "url" %}
+      {% for page in pages %}
+         {% comment %} skip this debug page itself {% endcomment %}
+         {% unless page.url contains "/debug/" %}
+            {% assign og_title = page.title | default: site.title %}
+            {% assign og_desc = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace %}
+            {% assign og_image = page.image | default: site.image %}
+            <div class="item">
+               <div class="item-head">
+                  <span class="name">{{ og_title }}</span>
+                  <span class="path">{{ page.url }}</span>
+               </div>
+
+               <div class="card">
+                  <div class="card-img">
+                     {% if og_image %}
+                        <img src="{{ og_image | relative_url }}" alt="" loading="lazy"
+                             onerror="this.classList.add('failed')">
+                        <div class="broken">⚠ image failed to load<br>{{ og_image }}</div>
+                     {% else %}
+                        <span class="missing">no og:image — falls back to link-only card</span>
+                     {% endif %}
+                  </div>
+                  <div class="card-meta">
+                     <div class="domain">{{ site.url | remove: "https://" | remove: "http://" }}</div>
+                     <div class="ct">{{ og_title }}</div>
+                     <div class="cd">{{ og_desc }}</div>
+                  </div>
+               </div>
+
+               <dl>
+                  <dt>page.title</dt>
+                  <dd>{{ page.title | default: "— none —" }}</dd>
+                  <dt>og:title</dt>
+                  <dd>{{ og_title }}</dd>
+                  <dt>description</dt>
+                  <dd>{{ og_desc }}</dd>
+                  <dt>og:image</dt>
+                  <dd class="{% unless og_image %}warn{% endunless %}">{% if og_image %}{{ og_image | absolute_url }}{% else %}— none —{% endif %}</dd>
+                  <dt>og:url</dt>
+                  <dd>{{ page.url | absolute_url }}</dd>
+                  <dt>twitter:card</dt>
+                  <dd>{{ page.twitter.card | default: "summary" }}</dd>
+                  <dt>&lt;title&gt;</dt>
+                  <dd class="note">composed in the layout from page.title + a brand suffix (see _layouts/*.html) — not reproduced here so this page can't drift from it</dd>
+               </dl>
+
+               <details>
+                  <summary>Raw meta tags</summary>
+                  <pre>&lt;meta name="description" content="{{ og_desc | escape }}" /&gt;
+&lt;meta property="og:title" content="{{ og_title | escape }}" /&gt;
+&lt;meta property="og:description" content="{{ og_desc | escape }}" /&gt;
+{% if og_image %}&lt;meta property="og:image" content="{{ og_image | absolute_url }}" /&gt;
+&lt;meta property="twitter:image" content="{{ og_image | absolute_url }}" /&gt;
+{% endif %}&lt;meta property="og:url" content="{{ page.url | absolute_url }}" /&gt;
+&lt;meta name="twitter:card" content="{{ page.twitter.card | default: "summary" }}" /&gt;
+&lt;meta property="twitter:title" content="{{ og_title | escape }}" /&gt;</pre>
+               </details>
+            </div>
+         {% endunless %}
+      {% endfor %}
+      </div>
+   </div>
+{% endif %}
+</body>
+</html>
