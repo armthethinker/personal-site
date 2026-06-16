@@ -16,9 +16,9 @@
 title: Andrew R McHugh
 email: andrew@daseindesign.co
 description: >- # this means to ignore newlines until "baseurl:"
-   Andrew R McHugh is a designer on a mission to expand human capability through novel interfaces and democratized technology.
+   Andrew R McHugh is a founder, designer, and engineer who turns R&D ambiguity into meaningful products, specializing in early stage products and spatial computing.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://andrewrmchugh.rocks" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://andrewrmchugh.rocks" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: armthethinker
 github_username:  armthethinker
 author: Andrew R McHugh
@@ -49,4 +49,5 @@ exclude:
   - tsconfig.json
   - assets/img/
   - timeline.html
+  - debug/
 
