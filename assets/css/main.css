@@ -12762,6 +12762,9 @@ video,
   margin-left: -15px;
   max-width: calc(100% + 30px);
 }
+.p-sec h4, .p-sec .h4 {
+  margin-top: 2rem;
+}
 .p-sec .card {
   border: none;
   border-radius: 16px;
