@@ -112,17 +112,40 @@ As an **engineer**
 
 I wore many hats and used all the tools in my toolbox.
 
+#### Founder+CEO 🙋🏻‍♂️
+- **Defined** product vision, roadmap
+- **Raised** ~$1M from VCs and angels (lead: Long Journey Ventures)
+- **Hired** and led a small, highly technical team
+- **Led** user research and metrics
+- **Filmed** and edited content for social media
+
+#### Designer 👨🏻‍🎨
+- **Crafted novel UI paradigms** for spatial content on headsets and on mobile
+- **Created** beautiful experiences, focused on what matters
+- **Tuned implementations** to run smoothly without sacrificing vision
+
+#### Engineer 👨🏻‍💻
+- **Built novel UI paradigms** for spatial content on headsets and on mobile
+- **Built and led** video encoding, shader development, user data backend, performance optimization, and interaction systems - across mobile, headsets, and multiple backends
+
+#### CV/ML Researcher 👨‍🔬
+- **Researched** novel ways of rectifying temporal depth data
+- **Built and led** dynamic volumetric reconstruction pipeline, integrating sensor and ML data sources
+- **Tested and deployed** constellations of open source CV/ML models
+- **Invented** data encoding method
+
+#### Tools 🧰
 "
 %}
 
 
 
-
+<!-- 
 {% include cards.html
    data= site.data.wist.roles
    col="col-12 col-lg-6"
    markdownify=true
-%}
+%} -->
 
 
 {% include skills.html 
