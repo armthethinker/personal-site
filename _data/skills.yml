@@ -1,0 +1,48 @@
+- category: Programming Languages
+  list:
+    - Swift
+    - Python
+    - JavaScript/TypeScript
+    - C#
+    - HLSL
+    - Metal Shading Language
+    - HTML/CSS
+- category: Frameworks
+  list:
+    - SwiftUI
+    - AVFoundation
+    - Metal
+    - ARKit
+    - RealityKit
+    - OpenCV
+    - Open3D
+    - PyTorch
+    - Streamlit
+    - Scikit Image
+    - Matplotlib
+    - Rerun
+    - Anaconda
+    - Git
+    - Mixpanel
+    - Firebase (Firestore, Storage, Auth, Cloud Functions, +)
+    - FFMPEG
+    - Loops
+    - Jekyll
+    - Node
+    - Mocha
+    - Arduino
+    - LLM/AI Assisted Workflows
+- category: Design & Production
+  list:
+    - Unity
+    - Blender
+    - Reality Composer Pro
+    - Figma
+    - Sketch
+    - Premiere Pro
+    - DaVinci Resolve
+    - Rive
+    - Qualitative & Quantitative User Research
+    - Procreate
+    - Keynote
+    - Reality Scan / Reality Capture

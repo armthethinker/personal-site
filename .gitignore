@@ -22,3 +22,5 @@ error_log
 _site
 .sass-cache
 .jekyll-metadata
+/assets/imgopt
+/assets/icons/b

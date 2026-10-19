@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Home
+title: Andrew R McHugh – Founder, Designer, & Engineer
+image: /assets/imgopt/other/xd-immersive/shit-people-care-about.jpg
+description: He turns R&D ambiguity into meaningful products, specializing in early stage products and spatial computing.
 ---
+<!-- image: /assets/imgopt/andrew/andrew-r-mchugh-headshot-crop.jpg -->
 <!-- Circle images and hello -->
-<div class="row timeline justify-content-center">
+<!-- <div class="row timeline justify-content-center">
    <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
       <div class="row timeline-entry header-hero">
          <div class="col-12 col-sm-3 date"></div>
@@ -23,7 +26,8 @@ title: Home
          </div>
          <div class="col description">
             <h1>I'm Andrew R McHugh</h1>
-            <h2>I am a designer turning spatial computing R&D experiments into great products.</h2>
+            <h2>I turn R&D ambiguity into meaningful products.</h2>
+            <p>Strategy • Design • Engineering</p>
          </div>
       </div>
       <div class="row timeline-entry">
@@ -31,69 +35,182 @@ title: Home
             Now
          </div>
          <div class="col description">
-            <strong>Building a startup (<a href="http://withvivid.com" target="_blank">Vivid</a>)</strong> that makes it easy for anyone to capture and view their immersive memories – on a phone and in VR.
+            <strong>Looking for my next role</strong>  after building a startup (<a href="https://wistlabs.com" target="_blank">Wist</a>) that turned videos into relivable immersive memories.
+         </div>
+      </div>
+   </div>
+</div> -->
+
+<div class="container-fluid p-0">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-11">
+            <div class="pt-4 z-3">
+            {% include navigation.html %}
+            </div>
          </div>
       </div>
    </div>
 </div>
-<!-- Button -->
-<div class="row timeline justify-content-center">
-   <div class="col">
-      <div class="row timeline-entry">
-         <div class="col text-center">
-            <button class="btn btn-outline-primary btn-timeline d-inline" type="button" data-toggle="collapse" data-target=".collapse-timeline" aria-expanded="false" aria-controls="collapse-timeline">
-               <span class="d-inline mr-3">🐵</span><span class="d-inline">See the rest of my timeline</span>
-               <span class="d-none mr-3">🙈</span><span class="d-none">Hide my timeline</span>
-               <i class="ml-3 fas fa-chevron-up fa-rotate-180"></i>
-            </button>
+
+<section class="hh hh-a">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-12 col-md-10 col-xl-10">
+            <p class="hh-eyebrow">0→1 Design × Engineering × Strategy</p>
+            <h1 class="hh-display">I turn R&D ambiguity into <em>meaningful products</em>.</h1>
+
+            <p class="hh-sub"><strong>Andrew R McHugh</strong> — founder, designer, and engineer with a specialty in early stage products and spatial computing.</p>
+            <ul class="hh-proof">
+               <li><span class="hh-proof-val">9</span><span class="hh-proof-lbl">patents</span></li>
+               <li><span class="hh-proof-val">WSJ, Vice</span><span class="hh-proof-lbl">featured</span></li>
+               <li><span class="hh-proof-val">~$1M</span><span class="hh-proof-lbl">raised</span></li>
+               <li><span class="hh-proof-val">>18K</span><span class="hh-proof-lbl">sign-ups</span></li>
+               <li><span class="hh-proof-val">Millions</span><span class="hh-proof-lbl">views</span></li>
+               <!-- <li><span class="hh-proof-val">Tribeca</span><span class="hh-proof-lbl">award-winning</span></li> -->
+               <!-- <li><span class="hh-proof-val">Team Lead</span><span class="hh-proof-lbl">and IC</span></li> -->
+            </ul>
+
          </div>
       </div>
    </div>
-</div>
-<!-- Extended timeline -->
-<div class="row justify-content-center timeline timeline-transition collapse collapse-timeline">
-   <div class="col-12 col-sm-10 col-lg-8 col-xl-6">
-      {% for item in site.data.timeline %}
-         {% include
-            timeline-entry.html
-            date=item.date
-            emoji=item.emoji
-            description1=item.description1
-            description2=item.description2
-         %}
-      {% endfor %}
-   </div>
-</div>
+</section>
+
+
 <!-- Projects -->
-<div class="row selected-projects justify-content-center pt-4">
-   <div class="col-12 col-sm-10 col-xl-8">
-      <h1 class="text-center mt-3 pt-3" id="selected-projects">Selected projects</h1>
-      {% for item in site.data.projects %}
-         {% include
-            project-card.html
-            title                = item.title
-            pID                  = item.pID
-            short                = item.short
-            url                  = item.url
-            emoji                = item.emoji
-            subtitle             = item.subtitle
-            description          = item.description
-            role                 = item.role
-            date                 = item.date
-            whileAt              = item.whileAt
-            withWho              = item.withWho
-            imgHero              = item.imgHero
-            imgThumb1            = item.imgThumb1
-            imgThumb1Position    = item.imgThumb1Position
-            imgThumb2            = item.imgThumb2
-            imgThumb2Position    = item.imgThumb2Position
-            imgThumb3            = item.imgThumb3
-            imgThumb3Position    = item.imgThumb3Position
-            left                 = item.left
-            imgJumbotronHero     = item.imgJumbotronHero
-            videoJumbotronHero   = item.videoJumbotronHero
-            bgColor              = item.bgColor
-         %}
-      {% endfor %}
+<div class="container-fluid p-0 pb-5 project-hero-shadow" id="work">
+   {% assign flag_older_work = false %}
+   {% for item in site.data.projects %}
+      {% if item.skip == true %}
+         {% continue %}
+      {% endif %}
+      {% if item.small == true and flag_older_work == false %}
+      <div class="container">
+        <div class='row justify-content-center'>
+            <div class='col-12 col-md-10 col-xl-8'>
+               <h2 class="mt-5 mb-3 sec-eyebrow fw-normal">Older work</h2>
+            </div>
+         </div>
+      </div>
+      <!-- <section class="sec-explore ow-a">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-11 col-xl-10">
+                  {% for item in site.data.projects %}{% if item.skip == true or item.small != true %}{% continue %}{% endif %}
+                  <a class="ow-a-row" href="/projects/{{ item.url }}" style="--accent: {{ item.accent }}">
+                     <span class="ow-a-year">{{ item.dateYears }}</span>
+                     <img class="ow-a-thumb" src="{{ item.imgHero }}" alt="">
+                     <h3 class="ow-a-title">{{ item.title }}<span>{{ item.subtitle }}</span></h3>
+                     <span class="ow-a-role">{{ item.role }}</span>
+                     <span class="ow-a-arrow">→</span>
+                  </a>
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+      </section> -->
+         {% assign flag_older_work = true %}
+      {% endif %}
+      {% include
+         project-hero.html
+         title                = item.title
+         pID                  = item.pID
+         short                = item.short
+         url                  = item.url
+         emoji                = item.emoji
+         subtitle             = item.subtitle
+         description          = item.description
+         role                 = item.role
+         date                 = item.date
+         dateYears            = item.dateYears
+         whileAt              = item.whileAt
+         withWho              = item.withWho
+         imgHero              = item.imgHero
+         videoHero            = item.videoHero
+         imgThumb1            = item.imgThumb1
+         imgThumb1Position    = item.imgThumb1Position
+         imgThumb2            = item.imgThumb2
+         imgThumb2Position    = item.imgThumb2Position
+         imgThumb3            = item.imgThumb3
+         imgThumb3Position    = item.imgThumb3Position
+         left                 = item.left
+         imgJumbotronHero     = item.imgJumbotronHero
+         videoJumbotronHero   = item.videoJumbotronHero
+         bgColor              = item.bgColor
+         small                = item.small
+      %}
+   {% endfor %}
+</div>
+
+<div class="container-fluid" id="how">
+   <div class="container">
+      <div class="row justify-content-center py-5">
+         <!-- <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-7 col-xxl-6"> -->
+            <div class="col-12 col-sm-10 col-xl-8">
+               <!-- <p class="small text-center fw-medium my-4">Invent • Design • Build <span class="d-none d-sm-inline">•</span><br class="d-sm-none"> Lead Teams • Tell the Story</span></p> -->
+               <!-- <h2 class="mb-3"><span class="text-primary">My special ability</span> is integrating design+eng+product for 0→1, highly technical, R&D-led work.</h2> -->
+                <section class="sec-explore sa-a">
+                  <p class="sec-eyebrow">My special ability</p>
+                  <h2 class="sa-a-stmt">Navigating early-stage ambiguity to <span class="sa-stmt-accent">identify</span>, <span class="sa-stmt-accent">design</span>, and <span class="sa-stmt-accent">build</span> what's really important.</h2>
+               </section>
+               <h4 class="mt-5 fw-normal sec-eyebrow">How I work</h4>
+               <!-- <section class="container-fluid sec-explore hw-a">
+                  <div class="container"><div class="row justify-content-center"><div class="col-12 col-md-11 col-xl-10">
+                     <span class="sec-label">How I work · A — Numbered principles</span>
+                     <div class="hw-a-grid">
+                     {% for item in site.data.how-work %}
+                        <div class="hw-a-item">
+                           <span class="hw-a-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                           <h4 class="hw-a-topic">{{ item.topic }}</h4>
+                           <p class="hw-a-desc">{{ item.description }}</p>
+                        </div>
+                     {% endfor %}
+                     </div>
+                  </div></div></div>
+               </section> -->
+
+
+
+               <div class="row">
+                  {% for item in site.data.how-work %}
+                     <div class="col-12 col-md-6 mb-3">
+                        <div class="d-flex">
+                           <div class="ps-1 pe-3">
+                              <p class="text-center">
+                                 {% include icon.html 
+                                    icon=item.icon
+                                    size="24"
+                                 %}
+                              </p>
+                           </div>
+                           <div class="flex-grow-1">
+                              <p><strong class="font-header">{{ item.topic }}</strong> {{ item.description }}</p>
+                           </div>
+                        </div>
+                     </div>
+                           {% endfor %}
+                           <!-- <p>{{ item.emoji }}<br><strong>{{ item.topic }}</strong> {{ item.description }}</p> -->
+               </div>
+               <h4 class="mt-5 fw-normal sec-eyebrow">Tools</h4>
+               <!-- <p>Whatever can answer the biggest unknowns or can get us to the next phase.</p> -->
+               <p>Tools shape our perspective. I use whatever helps answer questions and ship.</p>
+               <section class="tl-c">
+                  {% for cat in site.data.skills %}
+                  <div class="tl-c-cat">
+                     <p class="tl-c-catname">{{ cat.category }}</p>
+                     <p class="tl-c-run">{% for skill in cat.list %}<span>{{ skill }}</span>{% endfor %}</p>
+                  </div>
+                  {% endfor %}
+               </section>
+               <h4 class="mt-5 fw-normal sec-eyebrow">Timeline</h4>
+               {% include timeline.html %}
+            </div>
+         </div>
+      </div>
    </div>
 </div>
+
+
+
+
+         

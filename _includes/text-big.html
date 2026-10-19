@@ -1,0 +1,33 @@
+<div class="p-sec">
+    <div class="container">
+        <div class="">
+            <div class="row">
+                <div class="{% include template-p-col-left.html %}">
+                    {% if include.header %}
+                    <h2>{{include.header}}</h2>
+                    {% endif %}
+                    {% if include.subheader %}
+                    <strong class="d-block mb-4">{{include.subheader}}</strong>
+                    {% endif %}
+                </div>
+                <div class="col">
+                    {{include.content | markdownify}}
+                </div>
+                <div class="{% include template-p-col-right.html %}"></div>
+            </div>
+            <div class="row">
+                <div class="col my-5">
+                    {% if include.primary %}
+                    <h1 class="display-1 text-center fw-bolder text-wrap-balance">{{include.primary}}</h1>
+                    {% endif %}
+                    {% if include.secondary %}
+                    <h2 class="display-2 text-center fw-bolder text-wrap-balance">{{include.secondary}}</h2>
+                    {% endif %}
+                    {% if include.tertiary %}
+                    <h3 class="display-3 text-center fw-bolder text-wrap-balance">{{include.tertiary}}</h3>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

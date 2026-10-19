@@ -1,0 +1,42 @@
+{% assign g = p.glance %}
+{% if g %}
+<div class="p-sec project-glance-sec">
+   <div class="container">
+      <div class="row">
+         <div class="col-12 col-md-4 col-lg-3">
+            <h2 class="section-header glance-header">At a glance</h2>
+         </div>
+         <div class="col">
+            {% if g.tagline %}
+            <p class="lead text-wrap-pretty project-glance-tagline">{{ g.tagline }}</p>
+            {% endif %}
+
+            {% if g.metrics %}
+            <div class="row project-glance-metrics">
+               {% for m in g.metrics %}
+               <div class="col-6 col-lg-3">
+                  <div class="glance-metric">
+                     <div class="glance-metric-value">{{ m.value }}</div>
+                     <div class="glance-metric-label">{{ m.label }}</div>
+                  </div>
+               </div>
+               {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if g.hats %}
+            <div class="glance-hats">
+               {% for h in g.hats %}
+               <span class="glance-hat">
+                  <strong>{{ h.label }}</strong>
+                  {% if h.note %}<span class="glance-hat-note">{{ h.note }}</span>{% endif %}
+               </span>
+               {% endfor %}
+            </div>
+            {% endif %}
+         </div>
+         <div class="col-12 col-lg-3"></div>
+      </div>
+   </div>
+</div>
+{% endif %}

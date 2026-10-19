@@ -6,6 +6,11 @@
 {% assign include.loop = false %}
 {% endif %}
 
+{% if include.urlPage != false %}
+{% assign urlPrepend = page.assetURL %}
+{% else %}
+{% assign urlPrepend = "" %}
+{% endif %}
 
 
 
@@ -17,22 +22,38 @@
    <div class="container">
       <div class="">
          <div class="row">
+            {% if include.style != "xl" %}
             <div class="col-12 col-md-4 col-lg-3">
-               <h2>{{include.header}}</h2>
+               {% if include.header %}
+               <h2 class="section-header">{{include.header}}</h2>
+               {% endif %}
+               {% if include.subheader %}
                <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% endif %}
             </div>
+            {% endif %}
             <div class="col">
+               {% if include.maxHeight %}
+               <div class="d-flex" style="max-height: {{include.maxHeight}};">
+               {% else %}
+               <div class="d-flex">
+               {% endif %}
                <div class="embed-responsive embed-responsive-{{include.aspect}}">
                   <video class="embed-responsive-item"
-                  controls="{{include.controls}}"
-                  loop="{{include.loop}}"
+
+                  {% if include.controls == true %}controls{% endif %}
+                  {% if include.loop == true %}loop{% endif %}
+                  {% if include.autoplay == true %}autoplay muted playsinline{% endif %}
                   >
                      <source src="{{include.url | prepend:urlPrepend}}" type="video/mp4">
                   </video>
                </div>
+               </div>
             </div>
             {% if include.style == "lg" %}
             <div class="col-12"></div>
+            {% elsif include.style == "xl" %}
+            <div class="d-none"></div>
             {% else %}
             <div class="col-12 col-lg-3"></div>
             {% endif %}

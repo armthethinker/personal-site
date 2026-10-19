@@ -1,0 +1,102 @@
+{% if include.skip == true %}
+
+{% else %}
+
+{% if include.fullWidth == true %}
+{% assign fullWidth = true %}
+{% else %}
+{% assign fullWidth = false %}
+{% endif %}
+
+
+
+<div class="p-sec">
+    <div class="container">
+        <div class="">
+            <div class="row">
+                <div class="col">
+                    <div class="card bento elevation-md h-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <div class="row">
+                                    <div class="col-1 d-none d-xl-block"></div>
+                                    <div class="col-12 col-lg-11 col-xl-10 col-xxl-9">
+                                        <div class="card-body p-4 ps-md-5">
+                                            <h1 class="card-title-emoji display-1 text-wrap-pretty">🤳</h1>
+                                            <h1 class="card-title text-primary text-wrap-pretty">Take a video</h1>
+                                            <p class="card-text card-text-lg text-wrap-pretty"><strong></strong> Capture immersive moments easily in Wist, just by taking a video.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg">
+                                <div class="ratio ratio-1x1">
+                                    <video autoplay="" playsinline="" loop="" muted="" preload="metadata" class="object-fit-cover" poster="media/capture2-low-poster.jpg">
+                                        <source src="media/capture2-low.mp4" type="video/mp4">
+                                        <source src="media/capture2-low.webm" type="video/webm">
+                                        <img src="media/capture2-low-poster.jpg" class="img-fluid object-fit-cover" alt="media/capture2-low-poster.jpg">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% unless fullWidth %}
+                <div class="col-12 col-md-4 col-lg-3"></div>
+                {% endunless %}
+                <div class="col">
+                    <div class="card bento elevation-md h-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <div class="row">
+                                    <div class="col-1 d-none d-xl-block"></div>
+                                    <div class="col-12 col-lg-11 col-xl-10 col-xxl-9">
+                                        <div class="card-body p-4 ps-md-5">
+                                            <h1 class="card-title-emoji display-1 text-wrap-pretty">{{ include.emoji }}</h1>
+                                            <h1 class="card-title text-primary text-wrap-pretty">{{ include.title }}</h1>
+                                            <p class="card-text card-text-lg text-wrap-pretty"><strong>{{ include.subtitle }}</strong> {{ include.description }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg">
+                                <div class="embed-responsive embed-responsive-{{include.aspect}}">
+                                    <video class="embed-responsive-item"
+                                    controls="{{include.controls}}"
+                                    loop="{{include.loop}}"
+                                    autoplay="{{include.autoplay}}"
+                                    muted="{{include.autoplay}}"
+                                    playsinline
+                                    >
+                                        <source src="{{include.url | prepend:urlPrepend}}" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        {% if item.url %}
+                        {% if imgBottom == false %}
+                        <img src="{{item.url}}" class="card-img-top" alt="{{item.caption | strip_html}}">
+                        {% endif %}
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title color-primary"><strong>{{item.header}}</strong></p>
+                            <p class="card-text">{{item.caption | markdownify}}</p>
+                        </div>
+                        {% if item.url %}
+                        {% if imgBottom == true %}
+                        <img src="{{item.url}}" class="card-img-bottom" alt="{{item.caption | strip_html}}">
+                        {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endif %}

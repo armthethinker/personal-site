@@ -1,10 +1,12 @@
 ---
 layout: project-page
-pID: 3
+pID: 4
 title: Humane Virtuality
-description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
-image: /assets/img/hv/IMG_9699.JPG
-assetURL: /assets/img/hv/
+image: /assets/imgopt/hv/00-demo-1.gif
+description: For three months, I explored VR UX design with the goal of learning
+  new technologies; designing humanely; creating rapid, interactive prototypes;
+  and regularly sharing my work through case studies and weekly journals.
+assetURL: /assets/imgopt/hv/
 ---
 
 {% include p-section.html
@@ -15,7 +17,7 @@ When I was in my dual-degree master’s program at Carnegie Mellon University (C
 
 **I didn't find an internship that would let me explore what I needed to, so I decided to create my own. I spent a few months researching core VR UX challenges in shorter, focused design sprints.**
 "
-   url="program-breakdown2x.png"
+   url="program-breakdown2x.jpg"
    caption="The timeline and various locations of my master's program."
 %}
 
@@ -82,7 +84,7 @@ I build an environment with togglable elements and various interaction methods:
 %}
 
 {% include media-img.html
-   url="diagram-ut-setup1600w.png"
+   url="diagram-ut-setup1600w.jpg"
    caption="How I had to set up my devices to get meaningful data from user studies."
 %}
 
@@ -103,16 +105,16 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 %}
 
 {% include media-img.html
-   url="ex7-grid.png"
+   url="ex7-grid.jpg"
    caption="A grid I used to test a helper function that would draw an image on a partial cylinder"
    style="lg"
    captionSide=false
-   url2="diagram-binocular-disparity.png"
+   url2="diagram-binocular-disparity.jpg"
    caption2="A diagram I made to illustrate binocular disparity in my case study."
 %}
 
 {% include media-img.html
-   url="diagram-cylinder-scale-position.png"
+   url="diagram-cylinder-scale-position.jpg"
    caption="A diagram I made to illustrate how a feeling of depth can be constructed from a set of planes or cylinders."
    style="lg"
    captionSide=false
@@ -133,14 +135,14 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 %}
 
 {% include media-img-xl.html
-   url="transition20-color.png"
+   url="transition20-color.jpg"
    caption="I created an ontology of ~20 ways to traverse environments in VR. This early sketch allowed me to make better decisions about which methods I wanted to build."
 %}
 
 {% include media-img.html
    url="ex11-jump.gif"
    caption="**Jump cut.** The user is instantly transferring between the start and end point. These are straightforward and comfortable, but can make the user lose context."
-   style="md"
+   style="lg"
    captionSide=false
    url2="ex11-micromovements.gif"
    caption2="**Micromovements.** If jump cuts are the most comfortable, but make you lose context, what if the user went through a series of `n` jump cuts between the start and end points? I thought it was nifty, but the few people I tried it on thought the prototype was lagging."
@@ -176,9 +178,9 @@ A 3D-ified mockup of a flat Dribbble mockup I ran across.
 {% include media-img.html
    url="critique-spherical@2x.jpg"
    caption="Critically examining @oscarmarinmiro's video controls layout."
-   style="md"
+   style="lg"
    captionSide=false
-   url2="Screen Shot 2016-06-30 at 7.36.17 AM.png"
+   url2="Screen Shot 2016-06-30 at 7.36.17 AM.jpg"
    caption2="My first pass put the controls right in front of the user. This is uncomfortable because (1) the relaxed human eyeline is a few degrees down from horizontal and (2) it immediately gets in between you and the content (especially uncomfortable if you accidentally brought up the controls)."
 %}
 
@@ -208,7 +210,7 @@ Inspired by @oscarmarinmiro.
 %}
 
 {% include media-img.html
-   url="earth-3.png"
+   url="earth-3.jpg"
    caption="Before I applied the atmospheric effect to the Earth."
    style="md"
    captionSide=false
@@ -230,7 +232,7 @@ I started by building a model solar system where I had a lot of control over whe
 %}
 
 {% include media-img.html
-   url="Screen Shot 2016-08-11 at 8.38.31 PM.png"
+   url="Screen Shot 2016-08-11 at 8.38.31 PM.jpg"
 %}
 
 {% include p-section.html

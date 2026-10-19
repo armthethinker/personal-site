@@ -1,10 +1,10 @@
-- name: Bio
-  link: /
-- name: Projects
-  link: /#selected-projects
+- name: Work
+  link: /#work
+- name: How
+  link: /#how
 - name: CV
   link: /assets/CV-Andrew-R-McHugh.pdf
   newPage: true
 - name: Book
-  link: http://amzn.com/1582705291
+  link: https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/
   newPage: true

@@ -1,0 +1,80 @@
+// Home section styles — the variants that won the divergence stage:
+//   .sa-a  special ability (oversized pull quote)   .tl-c  tools (flowing inline)
+// Each item can carry its own accent via inline `--accent` (from projects.yml);
+// var(--accent) falls back to red.
+// Shares the Bricolage Grotesque (display) + Space Mono (data/labels) system from the heroes.
+
+$s-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+$s-mono: 'Space Mono', ui-monospace, 'SF Mono', Menlo, monospace
+$s-ink: #1d1d1f
+$s-muted: #6b7280
+$s-line: rgba(0,0,0,.12)
+$s-accent: var(--accent, #f94c43)
+
+// Shared scaffolding -----------------------------------------------------------
+.sec-explore
+   padding: 64px 0
+
+.sec-eyebrow
+   font-family: $s-mono
+   font-size: 13px
+   letter-spacing: 0.06em
+   text-transform: uppercase
+   color: $s-accent
+   margin: 0 0 18px
+
+// =============================================================================
+// MY SPECIAL ABILITY  (.sa)
+// =============================================================================
+
+.sa-stmt-accent
+   color: $s-accent
+
+// SA-A — Pull quote (oversized)
+.sa-a
+   .sa-a-stmt
+      font-family: $s-display
+      font-weight: 700
+      font-size: clamp(2rem, 4.6vw, 3.6rem)
+      line-height: 1.06
+      letter-spacing: -0.025em
+      color: $s-ink
+      text-wrap: balance
+      margin: 0
+      max-width: 18ch
+
+// =============================================================================
+// TOOLS  (.tl)
+// =============================================================================
+
+// TL-C — Flowing inline
+.tl-c
+   .tl-c-cat
+      padding: 22px 0
+      border-top: 1px solid $s-line
+      display: grid
+      grid-template-columns: 200px 1fr
+      gap: 24px
+      @media (max-width: 680px)
+         grid-template-columns: 1fr
+         gap: 8px
+
+   .tl-c-catname
+      font-family: $s-mono
+      font-size: 0.78rem
+      letter-spacing: 0.04em
+      text-transform: uppercase
+      color: $s-accent
+      padding-top: 6px
+
+   .tl-c-run
+      font-family: $s-display
+      font-weight: 600
+      font-size: clamp(1.2rem, 2vw, 1.7rem)
+      line-height: 1.4
+      letter-spacing: -0.01em
+      color: $s-ink
+      margin: 0
+      span:not(:last-child)::after
+         content: " · "
+         color: $s-muted

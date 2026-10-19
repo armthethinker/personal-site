@@ -9,6 +9,11 @@ Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 - To serve the site: `$ bundle exec jekyll serve`
 - To serve and allow all incoming requests `$ bundle exec jekyll serve --host 0.0.0.0`
 - To update the bundle: `$ bundle update`
+- To optimize all images: `$ npm run imgoptim`
+- To sync project front matter from `_data/projects.yml`: `$ npm run sync-frontmatter`
+
+- **To develop (watch mode):** `$ npm start`
+- **To build for prod:** `$ npm run build`
 
 Served over `:4000`.
 
@@ -77,4 +82,41 @@ Fullscreen image, but probably needs some work
    cameraTarget=".1m 1.3m 0m"
    arPlacement="floor"
 %}
+```
+
+
+# Transition plan and notes
+
+```json
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jekyll": "^1.0.0",
+    "grunt-text-replace": "^0.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "zoom.js": "git+https://git@github.com/fat/zoom.js.git"
+  }
+
+
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "zoom.js": "git+https://git@github.com/fat/zoom.js.git"
+
+
+    "bootstrap": "^5.3.0",
+    "anchor-js": "^5.0.0",
+    "is_js": "^0.9.0",
+    "jquery.scrollto": "^2.1.3",
+    "jquery.fitvids": "fitvids#^1.1.0"
+
 ```

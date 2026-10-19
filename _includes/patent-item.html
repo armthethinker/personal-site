@@ -1,0 +1,21 @@
+{% assign patentURL = "/assets/imgopt/samsung/patents/" %}
+{% assign item = include.item %}
+
+<div class="pi">
+    <div class="pi__body mb-3">
+        <div class="pi__header">
+            <span class="pi__year">{{ item.year }}</span>
+            {% if item.number %}<span class="pi__num">{{ item.number }}</span>{% endif %}
+            {% if item.status %}<span class="pi__status pi__status--{{ item.status | downcase }}">{{ item.status }}</span>{% endif %}
+        </div>
+        <a class="pi__title" href="{{ item.link }}" target="_blank" rel="noopener">{{ item.titleShort | default: item.title }}</a>
+        <p class="pi__desc">{{ item.description }}</p>
+    </div>
+    {% if item.img %}
+    <div class="pi__imgs">
+        {% for _img in item.img %}
+        <img class="pi__img" src="{{ _img | prepend: patentURL }}" alt="{{ item.titleShort | default: item.title }}" style="object-position: {{ item.objectPosition }}">
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>

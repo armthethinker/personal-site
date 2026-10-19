@@ -1,0 +1,8 @@
+{% assign icon = include.icon %}
+{% assign icon_path = "/assets/icons/b/" | append: icon | append: ".svg" %}
+{% assign size = include.size | default: "32" %}
+{% assign class = "mb-0 box-shadow-none" %}
+{% if include.class %}
+   {% assign class = class | append: " " | append: include.class %}
+{% endif %}
+<img src="{{ icon_path }}" alt="{{ icon }}" width="{{ size }}" height="{{ size }}" class="{{ class }}" aria-hidden="true">

@@ -1,0 +1,12 @@
+- header: Capture
+  caption: Take a video in Wist, or import from camera roll.
+  url: /assets/imgopt/wist/capture2-low.mp4
+  type: video
+- header: Process
+  caption: On device for an initial version. Higher quality processes on the cloud.
+  url: /assets/imgopt/wist/temp/importScanLayers.gif
+  type: image
+- header: Step inside
+  caption: Relive memories on iOS, Quest, or Vision Pro.
+  url: /assets/imgopt/wist/walking2-low.mp4
+  type: video

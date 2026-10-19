@@ -1,0 +1,1051 @@
+@use "sass:color"
+
+@import "components/shadow"
+@import "components/timeline-entry"
+@import "components/patent-item"
+@import "components/home-hero"
+@import "components/home-sections"
+   
+$break-sm: 576px
+$break-md: 768px
+$break-lg: 992px
+$break-xl: 1200px
+// $break-xxl: 1400px // FIXME: Work this in
+
+$perspective: 1300px
+
+$palette-timeline-bg: #161618
+$palette-body: #585359
+$palette-caption: lighten($palette-body, 20%)
+$palette-pageBg: #ededed
+$palette-pageBg-dark: darken($palette-pageBg, 2.5%)
+
+$border-radius: 16px
+
+@function perceptual-color($color, $l: null, $a: null)
+   $adjusted: $color
+   @if $l 
+      $adjusted: color.change($adjusted, $lightness: $l, $space: oklch)
+   @if $a 
+      $adjusted: color.change($adjusted, $alpha: $a)
+   @return color.to-gamut(color.to-space($adjusted, srgb), $method: local-minde)
+
+
+//                   https://coolors.co/161618-484349-ddd6f3-faaca8-f7f7ff
+// extra saturation: https://coolors.co/161618-484349-4c1af2-f94c43-f7f7ff
+html
+   overflow-x: hidden
+   background-color: $palette-pageBg
+   ::selection
+      color: #fefefe
+      background-color: #1a76ef
+body
+   color: #495061
+strong,
+h2,
+h3,
+h4,
+h5,
+h6
+   color: #242424
+
+h1
+   color: rgb(249, 76, 67)
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+   position: relative // TODO: Was removed from new Boostrap
+   text-wrap-style: pretty
+   font-weight: 600
+
+   font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif // FIXME: Get this into a variable for reuse across the board
+
+.font-header
+   font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+
+body
+   .lead
+      text-wrap-style: pretty
+
+.text-wrap-pretty
+   text-wrap-style: pretty !important
+.text-wrap-balance
+   text-wrap-style: balance !important
+
+a
+   color: #f94c43
+   // color: #f7f7ff
+   // border-bottom: #f94c43 solid 3px
+   &:hover
+      color: #f94c43
+.header
+   position: relative
+   height: 500px
+   background-color: $palette-timeline-bg
+   // overflow: hidden
+   .header-name
+      width: 800px
+      position: absolute
+      color: #f7f7ff
+      text-align: center
+      transform: translate(-50%,-50%)
+      top: 50%
+      left: 50%
+      // text-shadow: 0 0 24px rgba(0,0,0,.2)
+      font-size: larger
+   .header-bg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: 50% 40%
+   .circ
+      background-color: black
+      position: absolute
+      transform: translate(-50%,-50%)
+      border-radius: 100%
+      object-fit: cover
+      object-position: 50% 30%
+      box-shadow: 0 0 32px rgba(22,22,24,.5), 0 0 64px rgba(22,22,24,.3)
+      // border: 16px $palette-timeline-bg solid
+      height: 200px
+      width: 200px
+   .circ1
+      background-color: black
+      top: 10%
+      left: 10%
+      object-position: 20% 0
+   .circ2
+      background-color: black
+      top: 30%
+      left: 25%
+   .circ3
+      background-color: black
+      top: 40%
+      left: 40%
+   .circ4
+      background-color: black
+      top: 45%
+      left: 50%
+   .circ5
+      background-color: black
+      top: 40%
+      left: 60%
+   .circ6
+      background-color: black
+      top: 30%
+      left: 75%
+   .circ7
+      background-color: black
+      top: 10%
+      left: 90%
+
+// .timeline
+//    background-color: $palette-timeline-bg
+//    color: #ececee
+//    // font-weight: 800
+//    font-size: 16pt
+//    // padding-top: 72px
+//    strong,
+//    h2
+//       color: #f7f7ff
+
+//    &.timeline-transition
+//       background-image: linear-gradient(180deg, $palette-timeline-bg 80%, #28203B 81.6%, hsla(254, 57%, 88%, 1) 97.7%, #ddd6f3 100%)
+//       padding-bottom: 240px
+//       // margin-left: -15px
+//       // margin-right: -15px
+
+//    .timeline-entry
+//       // margin-bottom: 72px
+//       color: #bbb
+//       .display-4
+//          color: #fff
+
+//       >.date
+//          opacity: .5
+//          margin-bottom: 16px
+//          text-transform: uppercase
+//          font-weight: 600
+//          @media (min-width: $break-sm)
+//             text-align: right
+
+.selected-projects
+   background-color: #FAACA8
+   background-image: linear-gradient(to bottom, #DDD6F3 0%, #FAACA8 100%)
+
+body
+   overflow-x: hidden
+   background-color: transparent
+
+.container
+   @media (min-width: $break-lg)
+      padding-left:  80px
+      padding-right: 80px
+   @media (min-width: $break-lg + 80px * 2)
+      padding-left:  15px
+      padding-right: 15px
+   @media (min-width: $break-xl)
+      padding-left:  80px
+      padding-right: 80px
+   @media (min-width: $break-xl + 80px * 2)
+      padding-left:  15px
+      padding-right: 15px
+
+.project-card
+   box-shadow: 0 8px 16px rgba(0,0,0,.3)
+   margin: 60px auto
+   padding: 40px 40px 40px
+   position: relative
+   transform-style: preserve-3d
+   perspective: $perspective
+   transition: box-shadow 2s
+   border-radius: $border-radius
+   background: white
+
+   @media (min-width: $break-md)
+      padding: 64px 64px 56px
+
+   @media (min-width: $break-lg)
+      padding: 64px 64px 24px
+
+   h3
+      font-size: 1.3rem
+      margin-bottom: 1.6rem
+   img.hero
+      object-fit: cover
+      object-position: 50% 30%
+      height: 300px
+      width: calc(100% + 2 * 40px)
+      left: -40px
+      transition: transform .5s, box-shadow .5s, border-radius .5s
+      box-shadow: 0 16px 32px rgba(0,0,0,0)
+      position: relative
+
+      @media (min-width: $break-md)
+         left: -64px
+         width: calc(100% + 2 * 64px)
+
+      @media (min-width: $break-lg)
+         left: auto
+         right: auto
+         position: relative
+         width: calc(100% + 64px)
+         margin-top: -64px
+         margin-right: -64px
+         height: 620px
+
+      @media (min-width: $break-xl)
+         height: 500px
+
+   .thumb-container
+      height: 72px
+      width: calc(100% + 32px)
+      position: relative
+      top: -32px
+      left: -16px
+      right: -16px
+
+      @media (min-width: $break-sm)
+         height: 96px
+      @media (min-width: $break-md)
+         height: 112px
+      @media (min-width: $break-lg)
+         position: absolute
+         top: -64px - 32px
+         left: auto
+         right: -64px - 32px
+         height: 144px*3 + 32px*2
+         width: 144px
+
+      img.thumb
+         object-fit: cover
+         object-position: 50% 50%
+         height: 80px
+         width: 80px
+         border-radius: 8px
+         box-shadow: 0 8px 16px rgba(0,0,0,.2)
+         transition: transform .5s, box-shadow .5s
+
+         @media (min-width: $break-sm)
+            margin-bottom: 32px
+            height: 104px
+            width: 104px
+
+         @media (min-width: $break-md)
+            margin-bottom: 32px
+            height: 128px
+            width: 128px
+
+         @media (min-width: $break-lg)
+            height: 144px
+            width: 144px
+
+   .btn-view-project
+      padding-top: 1rem
+      padding-bottom: 1rem
+      border-radius: 50px
+      box-shadow: 0 8px 16px rgba(0,0,0,.3)
+   .project-description
+      transition: transform .5s
+
+   @media (min-width: $break-lg)
+      .project-description
+         bottom: 0
+      p
+         margin-bottom: 0
+   .project-meta
+      padding: 0 0 36px
+      transition: transform .5s
+      @media (min-width: $break-lg)
+         padding: 24px 0
+      p
+         margin-bottom: 0
+   &:hover
+      box-shadow: 0 16px 40px rgba(0,0,0,.15)
+      img.hero
+         transform: translateZ(32px)
+         box-shadow: 0 16px 32px rgba(0,0,0,.1)
+         border-radius: 8px
+      img.thumb
+         box-shadow: 0 16px 32px rgba(0,0,0,.1)
+         &:nth-child(1)
+            transform: translateZ(64px) rotateY(8deg)
+         &:nth-child(2)
+            transform: translateZ(56px) rotateY(0deg)
+         &:nth-child(3)
+            transform: translateZ(64px) rotateY(-8deg)
+         @media (min-width: $break-lg)
+            transform: translateZ(56px) rotateY(-15deg) !important
+      .project-description
+         transform: translateZ(24px)
+      .project-meta
+         transform: translateZ(24px)
+      .btn-view-project
+         transform: translateZ(32px)
+
+
+// .btn.btn-view-project
+//    border-radius: 50px
+//    border-width: 0
+//    padding: 0.7rem 1.2rem
+
+
+$palette-samsung: #0c4da2
+$palette-samsung-secondary: #000
+
+$palette-echo: #4054B2
+$palette-echo-secondary: rgb(251, 218, 71)
+
+$palette-hv: #C80D59
+$palette-hv-secondary: #000
+
+// $palette-morals: #544C51
+$palette-morals: #7154E9
+$palette-morals-secondary: #ffffff
+
+// $palette-whatif: #f4973a
+// $palette-whatif-secondary: rgb(69, 58, 244)
+
+// $palette-wist: #FFA3AD
+// $palette-wist-secondary: #4AC6FF
+$palette-wist: #ff6b7c
+$palette-wist-secondary: #2b1b1d
+
+$palette-whatif: #FC3F5E
+$palette-whatif-secondary: rgb(72, 63, 187)
+
+$palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palette-wist]
+
+@mixin project-specific-style($name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity)
+   $hover-color: color.adjust($color-primary, $lightness: -0.08, $space: oklch)
+   $card-color-base-lightness: color.channel($color-primary, "lightness", $space: oklch)
+   $card-color-mixed-lightness: color.mix($color-primary, #fafafa, 2%)
+   $card-color: color.change($card-color-mixed-lightness, $lightness: $card-color-base-lightness, $space: oklch)
+
+   #{$name}
+      // Expose the project accent as a CSS var so reusable components
+      // (e.g. the section-nav style variants) can theme themselves.
+      --accent: #{$color-primary}
+      .color-primary,
+      h1,
+      a,
+      h3,
+      strong
+         color: $color-primary
+      a:hover
+         color: color.to-gamut(color.to-space($hover-color, srgb), $method: local-minde) !important
+      a.nav-link:hover
+         background-color: color.adjust($color-primary, $lightness: 25%, $alpha: -0.3) !important
+      &.project-card
+         h2
+            color: $color-primary
+         h3
+            color: $palette-body
+      .bg-primary
+         background-color: $color-primary
+      .btn
+         color: $color-primary
+         background-color: lighten($color-primary, $btn-bg-lighten)
+         border-color: $color-primary
+         box-shadow: 0 8px 16px rgba($color-primary, $box-shadow-intensity) !important
+         transition: background-color 0.2s, box-shadow .2s, transform .5s
+         border-radius: 50px
+         border-width: 0
+         padding: 0.7rem 1.2rem
+         &:hover
+            // background-color: lighten($color-primary, 30%) !important
+            background-color: perceptual-color($color-primary, $l: 0.80) !important
+            box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
+            border-color: $color-primary !important
+         &:active
+            background-color: perceptual-color($color-primary, $l: 0.70) !important
+            box-shadow: 0 12px 24px rgba($color-primary, 20%) !important
+            border-color: $color-primary !important
+      .btn-outline
+         background-color: white
+      .jumbotron
+         // text-shadow: 0 0 24px rgba($color-secondary, $text-shadow-opacity)
+         h2, h3, h4, p
+            // color: color.mix($color-primary, $palette-body, $weight: 50%)
+            // color: perceptual-color($color-primary, $l: 0.12, $a: 0.75)
+            color: perceptual-color($color-primary, $l: 0.12, $a: 0.75)
+         .jumbotron-bg
+            // background-color: rgba($color-secondary, $jumbotron-opacity)
+            // background-color: perceptual-color($color-primary, $l: 0.9)
+            background-color: rgba($color-primary, 0.05)
+         .embed-responsive,
+         img
+            box-shadow: create-elevation(5)
+      .card
+         // background-color: rgba($color-primary, 0.05)
+         // background-color: #ededed
+         // background-color: color.mix(#ededed, rgba($color-primary, 0.05), 0.5)
+         // background-color: color.mix(#ededed, $color-primary, 90)
+         // background-color: #fafafa
+         // background-color: $card-color
+         background-color: $card-color-mixed-lightness
+      
+      .project-rule
+         display: block
+         width: 46px
+         height: 4px
+         border-radius: 999px
+         background: $color-primary
+         margin: 0 0 $spacer
+
+         &.project-rule-center
+            margin: 0 auto $spacer
+         
+            
+      .page-header
+         .nav-main
+            .nav
+               &::after
+                  background-color: rgba($color-primary, 100%)
+      .page-body
+         h2.section-header:not(:empty):before
+            content: " "
+            position: absolute
+            height: 4px
+            width: 24px
+            top: -8px
+            border-radius: 2px
+            background-color: $color-primary
+      footer,
+      .footer
+         margin-top: 104px
+         background-color: $palette-pageBg
+         &::before
+            background-color: rgba($color-primary, 100%)
+         a,
+         strong
+            color: $color-primary
+      blockquote
+         // &::before
+         //    background-color: $color-primary
+         background-color: rgba($color-primary, .08)
+         border-radius: 4px $border-radius $border-radius 4px
+         border-left: solid 4px $color-primary
+      .toc-link
+         background-color: rgba($color-primary, .08)
+         color: $color-primary
+         text-decoration: none
+         &:hover
+            background-color: scale-color(rgba($color-primary, .16), $saturation: 16%)
+            box-shadow: 0 8px 16px transparentize($color-primary, .9)
+      .pi
+         border-top-color: rgba($color-primary, 0.2) !important
+      // "At a glance": accent the headline metrics.
+      .glance-metric-value
+         color: $color-primary
+
+   .project-hero#{$name}
+      background-color: rgba($color-primary, 0.05)
+   .project-hero#{$name}.project-hero-small
+      background-color: none
+      transition: background-color .2s
+      .project-description
+         background-color: rgba($color-primary, 0.05)
+         // &:hover
+         //    background-color: rgba($color-primary, 0.09)
+      
+//                              $name, $color-primary, $btn-bg-lighten, $box-shadow-intensity, $color-secondary, $jumbotron-opacity, $text-shadow-opacity
+@include project-specific-style(".project-samsung",   $palette-samsung,   50%, 20%, $palette-samsung-secondary,  80%,   100%)
+@include project-specific-style(".project-echo",      $palette-echo,      45%, 20%, $palette-echo-secondary,     70%,   100%)
+@include project-specific-style(".project-hv",        $palette-hv,        50%, 20%, $palette-hv-secondary,       70%,    20%)
+@include project-specific-style(".project-morals",    $palette-morals,    30%, 20%, $palette-morals-secondary,   64%,    60%)
+@include project-specific-style(".project-whatif",    $palette-whatif,    32%, 20%, $palette-whatif-secondary,   30%,     0%)
+@include project-specific-style(".project-wist",      $palette-wist,      20%, 30%, $palette-wist-secondary,     80%,   100%)
+
+.btn.btn-timeline
+   box-sizing: border-box
+   background: linear-gradient($palette-timeline-bg, $palette-timeline-bg), linear-gradient(30deg, #AC32B4 30%, #4579E7 50%, #DD7962 85%)
+   border: 12px solid transparent
+   background-repeat: no-repeat
+   background-origin: padding-box, border-box
+   border-radius: 28px
+   position: relative
+   margin-top: 24px
+   margin-bottom: 24px
+   color: white
+   &:before
+      content: ""
+      position: absolute
+      top: -7px
+      bottom: -7px
+      left: -7px
+      right: -7px
+      border: 9px solid $palette-timeline-bg
+      border-radius: 25px
+   i
+      transition: transform .5s
+
+
+
+
+$embed-responsive-aspect-ratios: (21 9), (16 9), (5 4), (4 3), (1 1) !default
+
+.embed-responsive
+   position: relative
+   display: block
+   width: 100%
+   padding: 0
+   overflow: hidden
+
+   &::before
+      display: block
+      content: ""
+
+   .embed-responsive-item,
+   iframe,
+   embed,
+   object,
+   video
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border: 0
+
+
+@each $ratio in $embed-responsive-aspect-ratios
+   $x: nth($ratio, 1)
+   $y: nth($ratio, 2)
+
+   .embed-responsive-#{$x}by#{$y}
+      &::before
+         padding-top: percentage($y / $x)
+   .embed-responsive-#{$y}by#{$x}
+      &::before
+         padding-top: percentage($x / $y)
+
+
+
+@media (min-width: $break-lg)
+   .project-card.left-hand
+      > .row
+         flex-direction: row-reverse !important
+      img.hero
+         margin-right: 0
+         margin-left: -64px
+      .thumb-container
+         right: unset
+         left: -96px
+      &:hover
+         img.thumb
+            transform: translateZ(56px) rotateY(15deg) !important
+.nav-core
+   background-color: $palette-timeline-bg
+   padding: 24px
+   font-weight: 600
+   a
+      color: rgba(255,255,255,.3)
+   a.active
+      color: white
+   a:hover:not(.active)
+      color: rgba(255,255,255,.5)
+.header-hero
+   margin-top: 24px
+   margin-bottom: 48px !important
+   @media (min-width: $break-sm)
+      margin-top: 72px
+      margin-bottom: 24px !important
+.circ-inline
+   height: 50px
+   width: 50px
+   border-radius: 50%
+   object-fit: cover
+   @media (min-width: $break-sm)
+      height: 60px
+      width: 60px
+   @media (min-width: $break-md)
+      height: 80px
+      width: 80px
+.circ-flex
+   max-width: 100%
+   border-radius: 50%
+   object-fit: cover
+.footer
+   padding-top: 32px
+   padding-bottom: 80px
+   &::before
+      content: ' '
+      height: 4px
+      width: calc(100% - 30px)
+      left: 15px
+      border-radius: 2px
+      top: -32px
+      position: relative
+   a
+      color: $palette-body
+
+img
+   box-shadow: 0 24px 56px rgba(0,0,0,.2)
+   &.img-fluid
+      width: 100%
+   &.rounded
+      border-radius: $border-radius !important
+      // corner-shape: superellipse(0.6)
+   &.cover
+      object-fit: cover
+   &.contain
+      object-fit: contain
+   &.img-xl
+      width: calc(100% + 60px)
+      max-width: calc(100% + 60px)
+      margin-left: -30px
+      &.img-xl-contained
+         max-height: 1040px
+         object-fit: contain
+         background-color: white
+.embed-responsive
+   border-radius: $border-radius
+   box-shadow: 0 24px 56px rgba(0,0,0,.2)
+
+.card
+   margin-bottom: 24px
+   @media (min-width: $break-sm)
+      min-width: 200px
+.p-sec
+   .card
+      img,
+      .embed-responsive
+         margin-bottom: 0
+         box-shadow: none
+         &.card-img-top
+            // border-radius: $border-radius $border-radius 0 0
+            border-radius: $border-radius
+         &.card-img-bottom
+            // border-radius: 0 0 $border-radius $border-radius
+            border-radius: $border-radius
+
+         &.card-img-left
+            // border-radius: $border-radius 0 0 $border-radius
+            border-radius: $border-radius
+
+         &.card-img-right
+            // border-radius: 0 $border-radius $border-radius 0
+            border-radius: $border-radius
+
+      &.card-patent
+         overflow: hidden
+         img
+            height: 250px
+            width: 100%
+            object-fit: cover
+      &.card-patent-horizontal
+         img.card-img-left
+            height: 100%
+            width: 100%
+            object-fit: cover
+            // todo em, rem font size
+         .col.img-background
+            background-size: cover
+            border-radius: $border-radius 0 0 $border-radius
+      .card-body
+         p
+            font-size: 1rem
+.p-img-container
+   margin-bottom: 16px
+img,
+video,
+.embed-responsive
+   margin-bottom: 8px
+.p-img-caption,
+.caption
+   font-size: 80%
+   color: $palette-caption
+.page-header
+   .card
+      margin-top: 40px
+      box-shadow: 0 24px 48px rgba(0,0,0,.2) !important
+      // border-radius: 0 0 $border-radius $border-radius !important
+      // background-color: red
+      img.card-img
+         border-radius: $border-radius $border-radius 0 0
+         height: 100%
+         object-fit: cover
+         @media (min-width: $break-lg)
+            border-radius: $border-radius 0 0 $border-radius
+      .card-text
+         margin-bottom: 16px
+      .card-aside
+         font-size: 80%
+// .page-body
+//    .card-body
+//       font-size: 80%
+//       color: $palette-caption
+// .page-header
+//    width: calc(100% + 30px)
+//    margin-left: -15px
+.p-sec
+   &.p-sec-header
+      margin-top: 120px
+   > .img-fluid
+      margin-left: -15px
+      max-width: calc(100% + 30px)
+   h4, .h4
+      margin-top: $spacer * 2
+   .card
+      border: none
+      border-radius: $border-radius
+      box-shadow: 0 16px 32px rgba(0,0,0,.1)
+      img
+         border-radius: $border-radius $border-radius 0 0
+   blockquote
+      font-size: 140%
+      font-weight: 300
+      padding: 24px
+      position: relative
+      margin-bottom: 1.5rem
+      // &::before
+      //    content: " "
+      //    height: 100%
+      //    width: 4px
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    border-radius: 4px
+      p
+         margin-bottom: 0
+      .blockquote-source
+         padding-top: 0
+         margin-top: 1.5rem
+         // font-size: $blockquote-small-font-size
+         // color: $blockquote-small-color
+
+// .container-fluid.theme-dark
+//    background-color: #101020
+//    color: #eeeeee
+.page-header
+   .nav-main
+      margin-bottom: 56px
+      font-weight: 600
+      .nav::after
+         content: ' '
+         height: 4px
+         width: calc(100% - 30px)
+         margin-left: 15px
+         border-radius: 10px
+         background-color: rgba(0,0,0,.4)
+         position: relative
+   .nav
+      margin-left: -15px
+      margin-right: -15px
+   li.nav-item
+      a.nav-link
+         padding-left: 0.7rem
+         padding-right: 0.7rem
+   .jumbotron
+      position: relative
+      background-position: 50% 50%
+      background-size: cover
+      background-repeat: no-repeat
+   .jumbotron-bg
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: rgba(250,200,250,.9)
+   .jbg-1
+      opacity: .9
+      background-color: #8EC5FC
+      background-image: linear-gradient(115deg, #8EC5FC 0%, #E0C3FC 100%)
+   .jbg-2
+      background-color: #FBDA47
+      // opacity: .8
+   .jumbotron
+      margin-bottom: 80px
+      img.img-bottom
+         position: relative
+         bottom: -64px
+      video.video-bottom
+         bottom: -64px
+
+
+.btn
+   border-radius: $border-radius
+.btn-outline
+   background-color: none !important
+.light,
+.light h2
+   color: white
+
+
+   // width: 100%
+
+// One for each column
+$masonry-1: 100 200 100 150 100 200
+$masonry-2: 150 125 175 100 200 150
+$masonry-3: 200 100 150 125 200 150
+
+// Sets the height of an image in a column
+@mixin setHeightOfNthOfType($selector, $heightArray)
+   @for $i from 1 through length($heightArray)
+      #{$selector}:nth-of-type(#{$i})
+         height: nth($heightArray, $i) + px
+
+// Creates a list that is a multiple of a given list
+@function multiplyList($list, $multiple)
+   $returnList: ()
+   @each $item in $list
+      $returnList: append($returnList, $item * $multiple)
+   @return $returnList
+
+// .masonry-set
+//    > .masonry-1
+//       @include setHeightOfNthOfType(".img-masonry", $masonry-1)
+//       @media (min-width: $break-md)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-1, 2))
+//       @media (min-width: $break-xl)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-1, 3))
+//    > .masonry-2
+//       @include setHeightOfNthOfType(".img-masonry", $masonry-2)
+//       @media (min-width: $break-md)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-2, 2))
+//       @media (min-width: $break-xl)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-2, 3))
+//    > .masonry-3
+//       @include setHeightOfNthOfType(".img-masonry", $masonry-3)
+//       @media (min-width: $break-md)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 2))
+//       @media (min-width: $break-xl)
+//          @include setHeightOfNthOfType(".img-masonry", multiplyList($masonry-3, 3))
+//    .img-masonry
+//       border-radius: $border-radius
+//       margin: 16px 0px
+//       object-fit: cover
+//    @media (max-width: $break-sm)
+//       .col
+//          padding-left: 8px
+//          padding-right: 8px
+//       .img-masonry
+//          border-radius: $border-radius
+//          margin: 8px 0px
+// FIXME: Remove old Masonry code
+
+
+.m-grid
+   margin: 0 auto
+
+.m-grid-sizer,
+.m-grid-item
+   width: 50%
+  
+   @media (min-width: 992px)
+      width: 33.333%
+
+.m-grid-item--lg
+   width: 100%
+  
+   @media (min-width: 992px)
+      width: 66.666%
+
+.m-grid-item
+   padding: 12px // FIXME: use grid gutter variable
+   float: left
+
+.m-grid-content
+   width: 100%
+   display: block
+
+
+p
+   + ul,
+   + ol
+      margin-top: -0.8rem
+.table-of-contents
+   margin-bottom: 40px
+.toc-list-item
+   text-align: left
+.toc-link
+   display: inline-block
+   padding: .5rem 1rem
+   border-radius: 16px
+   margin: .3rem 0rem
+   &:hover
+      text-decoration: none
+// .page-main
+   // background-color: #FAACA8
+
+
+// a[href^="#"]
+//    color: green !important
+//    font-weight: 900 !important
+
+
+model-viewer
+   width: 100%
+   min-height: 344px
+   box-shadow: 0 8px 16px rgba(0,0,0,.2)
+   border-radius: $border-radius
+   margin-bottom: 8px
+
+.alert
+   border-radius: $border-radius
+
+
+
+.project-hero-shadow
+   background: create-linear-gradient(rgb(33, 33, 33), 0, 1%, 0.07)
+
+.project-hero
+   overflow: hidden
+   // background: linear-gradient(180deg,rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 1.5%)
+   // background: linear-gradient(0deg,rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.032) 0.5%, rgba(0, 0, 0, 0.010) 1.0%, rgba(0, 0, 0, 0.003) 1.5%, rgba(0, 0, 0, 0.0) 2.0%)
+   background: create-linear-gradient(rgb(33, 33, 33), 0, 1%, 0.07)
+   background-color: rgb(244, 246, 249)
+   padding: 100px 0
+
+   // at larger widths, increase the vertical padding
+   @media (min-width: $break-sm)
+      padding: 150px 0
+   @media (min-width: $break-md)
+      padding: 200px 0
+
+   &.project-hero-small
+      padding: 16px 0
+      background: none
+
+      .project-description
+         padding: 16px
+         // background-color: aliceblue
+         border-radius: 26px
+         overflow: hidden
+
+.project-hero-mediawall
+   img
+      // height: 300px
+      // width: 400px
+      border-radius: $border-radius * 2
+      box-shadow: create-elevation(5)
+      object-fit: cover
+      margin: 0
+
+   
+
+
+.negative-margin
+   margin-left: -15px
+   margin-right: -15px
+
+@keyframes blinker 
+   0%,
+   100%
+      opacity: 1
+   25%,
+   75%
+      opacity: 0.2
+   50%
+      opacity: 0
+
+.blink 
+  animation: blinker 0.2s linear infinite
+  color: red
+  font-weight: bold
+
+
+.fs-xs-small
+   @media (max-width: $break-sm)
+      font-size: .875em !important
+
+li.nav-item,
+li.nav-item-w
+   a.nav-link
+      border-radius: 1rem
+
+   a.nav-link:hover
+      background-color: color.adjust($primary, $lightness: -15%, $alpha: -0.9)
+
+.andrew-header-height
+   min-height: 400px
+   height: 50vh
+   max-height: 600px
+
+.main-header-text-shadow
+   text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 6px rgba(0, 0, 0, 0.4), 0 0 12px rgba(0, 0, 0, 0.3)
+
+.bg-footer
+   background-color: $palette-pageBg-dark
+
+.progressive-blur
+   backdrop-filter: blur(10px)
+   /* The mask dictates where the blur is visible (black) vs hidden (transparent) */
+   -webkit-mask: linear-gradient(to bottom, black, transparent)
+   mask: linear-gradient(to bottom, black, transparent)
+
+.shim-brightness-4
+   backdrop-filter: brightness(0.4)
+.shim-brightness-6
+   backdrop-filter: brightness(0.6)
+.shim-brightness-8
+   backdrop-filter: brightness(0.8)
+
+.shim-gradient-transparent-to-black
+   background: radial-gradient(ellipse at top in hsl shorter hue, hsla(0, 0%, 0%, 0.55), rgba(0, 0, 0, 0.37) 43.28%, rgba(0, 0, 0, 0.16862745098039217) 57.14%, hsla(0, 0%, 0%, 0) 68.49%)
+
+.box-shadow-none
+   box-shadow: none !important
+
+// At breakpoints lg and above, .h-lg-100 is height: 100% !important
+.h-lg-100
+   @media (min-width: $break-lg)
+      height: 100% !important
+
+// Project-page reader aids (imported last so palette vars above are defined).
+@import "components/project-nav"
+@import "components/project-glance"
+
+.nav-background
+   background-color: rgba(255, 255, 255, 0.7)
+   border-radius: $border-radius + 6px
+   box-shadow: create-elevation(2)
+   padding: 4px
+   font-weight: 600

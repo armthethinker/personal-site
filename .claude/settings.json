@@ -1,0 +1,11 @@
+{
+  "worktree": {
+    "bgIsolation": "none"
+  },
+  "permissions": {
+    "deny": [
+      "Edit(assets/**)",
+      "Edit(_site/**)"
+    ]
+  }
+}

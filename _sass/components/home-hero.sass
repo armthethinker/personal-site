@@ -1,0 +1,73 @@
+// Home hero 
+
+$hh-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+$hh-mono: 'Space Mono', ui-monospace, 'SF Mono', Menlo, monospace
+$hh-ink: #1d1d1f
+$hh-accent: #f94c43
+$hh-muted: #6b7280
+
+.hh
+   position: relative
+   padding: 132px 0 88px
+   
+
+   .hh-eyebrow
+      font-family: $hh-mono
+      font-size: 13px
+      font-weight: 400
+      letter-spacing: 0.08em
+      text-transform: uppercase
+      color: $hh-accent
+      margin-bottom: 20px
+
+   .hh-display
+      font-family: $hh-display
+      font-weight: 700
+      color: $hh-ink
+      font-size: clamp(2rem, 7.4vw, 5rem)
+      line-height: 0.98
+      letter-spacing: -0.025em
+      text-wrap: balance
+      margin: 0
+
+      em
+         font-style: normal
+         color: $hh-accent
+
+   .hh-sub
+      font-size: clamp(1.05rem, 1.6vw, 1.35rem)
+      line-height: 1.45
+      color: #4b5563
+      max-width: 30ch
+      margin: 28px 0 0
+
+      strong
+         color: $hh-ink
+
+   .hh-proof
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+      gap: 14px 20px
+      padding: 0
+      margin: 44px 0 0
+      border-top: 1px solid rgba(0,0,0,.1)
+      padding-top: 28px
+      justify-content: space-between
+
+      li
+         display: flex
+         flex-direction: column
+
+      .hh-proof-val
+         font-family: $hh-mono
+         font-weight: 700
+         font-size: 1.5rem
+         color: $hh-ink
+         line-height: 1
+
+      .hh-proof-lbl
+         font-size: 0.82rem
+         color: $hh-muted
+         margin-top: 6px
+

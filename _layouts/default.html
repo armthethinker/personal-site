@@ -3,22 +3,24 @@
 <head>
    {% include common-header-css.html %}
 
-   {% seo %}
+   <title>{{ page.title }}</title>
+   {% seo title=false %}
 
 </head>
 
 <body class="page-main">
-   <div class="container-fluid">
-      <!-- {% include util-responsive-size.html %} -->
-      <!-- {% include all-page-alert.html %} -->
-      {% include navigation.html %}
+   <div class="container-fluid p-0">
+      {% include util-responsive-size.html %}
+      
       {{ content }}
    </div>
-   <div class="row justify-content-center">
-      <div class="col-12 col-sm-10 col-xl-8">
+
+   <div class="row justify-content-center bg-footer">
+      <div class="col-12 col-sm-10 col-xl-8 col-xxl-6">
          {% include footer.html %}
       </div>
    </div>
+
    {% include common-js.html %}
 </body>
 </html>

@@ -1,112 +1,212 @@
-- title: Samsung+
+- title: "Wist: Immersive Memories"
   pID: 1
-  short: samsung
+  short: wist
+  accent: "#ff6b7c" # FIXME: Need to find single source of truth
   emoji: 🤓
-  subtitle: Spatial computing & magic glasses
-  description: A mixture of details about Samsung and my personal 3D work, respecting my NDA.
-  role: Senior Designer & Team Lead
-  date: February 2017 - Now
+  # subtitle: Take a video. Step inside. 
+  subtitle: Spatial capture, processing, & playback on iOS, Quest, Vision Pro
+  # description: Concept, to funding, to beta, to end.
+  description: Founded a spatial computing company that turned video into immersive, replayable memories across iOS, Quest, and Vision Pro. Raised ~1M. Built the team. Designed and developed the volumetric capture, processing, and playback stack that processed over 8,800 memories and 18,600+ waitlist sign ups.
+  role: Founder, CEO (Design, Eng, Product, R&D)
+  date: May 2021 - 2026
+  dateYears: 2021-2026
+  # whileAt: Samsung Research America, Mobile Platform Solutions Lab
+  # withWho: My coworkers in XR Design Group (XRDG)
+  # imgHero:   /assets/imgopt/wist/couch2-low-poster.jpg
+  # videoHero: /assets/imgopt/wist/relive-with-me-low-trimmed.mp4
+  # videoHero: /assets/imgopt/wist/temp/relive-sm.mp4
+  # videoHero: /assets/imgopt/wist/temp/social-movement.mp4
+  # videoHero: /assets/imgopt/wist/small-knees-low.mp4
+  # videoHero: /assets/imgopt/wist/couch2-low.mp4
+  videoHero: /assets/imgopt/wist/walking2-low.mp4
+  imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
+  imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
+  imgThumb3: /assets/imgopt/wist/bento-sm/lock-screen4.jpg
+  left: false
+  url: wist.html
+  bgImg:     /assets/imgopt/wist/couch2-low-poster.jpg
+  # imgJumbotronHero: /assets/imgopt/wist/couch2-low-poster.jpg
+  # imgJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
+  videoJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
+  light: false
+  glance:
+    tagline: "Founder and solo technical lead of a spatial-computing startup. I designed and built the full capture → cloud → playback stack across iOS, Quest, and Vision Pro — and raised the money and team to do it."
+    metrics:
+      - value: "~$1M"
+        label: "Raised (led by Long Journey Ventures)"
+      - value: "18,600+"
+        label: "Waitlist sign-ups"
+      - value: "8,800+"
+        label: "Memories captured"
+      - value: "1,700+"
+        label: "Users"
+    hats:
+      - label: "Founder & CEO"
+        note: "Vision, fundraising, hiring"
+      - label: "Designer"
+        note: "Spatial interaction & UI"
+      - label: "Engineer"
+        note: "iOS, headsets, shaders, backend"
+      - label: "R&D"
+        note: "CV/ML reconstruction pipeline"
+
+- title: Samsung Research America
+  pID: 2
+  short: samsung
+  accent: "#0c4da2"
+  emoji: 🤓
+  # subtitle: Opportunities & constraints of magic spatial glasses
+  subtitle: Defining & prototyping the future of AR glasses across OS, apps, and interactions
+  # description: Led a team of designer-developers who used prototypes to explore the possibility space of AR glasses across OS, apps, and interactions. Promoted our vision to executives and external partners. Worked in a way that was flexible with ever changing specs while informing the device specs.
+  description: A precursor to Galaxy XR. Explored the opportunities and constraints of spatial glasses across OS, apps, and interactions which informed efforts across Samsung and with external partners. Led an AR/VR design and development group. Regularly met with executives, partners, and visiting dignitaries. Created and managed our design process and hiring process. Designed and built prototypes and user studies, de-risking explorations. Submitted 10+ patents with 9 granted.
+  role: Team Lead & Senior Designer
+  date: February 2017 - May 2021
+  dateYears: 2017-2021
   whileAt: Samsung Research America, Mobile Platform Solutions Lab
   withWho: My coworkers in XR Design Group (XRDG)
-  imgHero:   /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
-  imgThumb1: /assets/img/samsung/baby.gif
+  # imgHero:   /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgHero:   /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
+  imgThumb1: /assets/imgopt/samsung/baby.gif
   imgThumb1Position:
-  imgThumb2: /assets/img/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  # imgThumb2: /assets/imgopt/samsung/displacement-torus.2019-07-20 22_34_21.gif
+  imgThumb2: /assets/imgopt/patents/US20220005215A1-1.jpg
   imgThumb2Position:
-  imgThumb3: /assets/img/samsung/two-screens-one-camera.gif
+  imgThumb3: /assets/imgopt/samsung/two-screens-one-camera.gif
   imgThumb3Position:
   left: true
   url: samsung.html
-  bgImg:     /assets/img/samsung/orb-1.jpg
-  videoJumbotronHero:
-  imgJumbotronHero: /assets/img/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
-  light: true
+  # bgImg:     /assets/imgopt/samsung/orb-1.jpg
+  bgImg: /assets/imgopt/samsung/patents/US20220229535A1-20220721-D00029.jpg
+
+  # imgJumbotronHero: /assets/imgopt/samsung/blender-example--phone-gallery.2021-02-21 11_54_33.gif
+  imgJumbotronHero: /assets/imgopt/samsung/galaxy/012-kv-galaxy-XR-lifestyle-try-on-04-2p.jpg
+  light: false
+  glance:
+    tagline: "Team lead and senior designer for Samsung's AR-glasses design group. I built the rapid prototyping process and helped shape the product direction that became a precursor to Galaxy XR."
+    metrics:
+      - value: "9"
+        label: "Patents granted (10+ submitted)"
+      - value: "4 yrs"
+        label: "Leading the group (2017–2021)"
+      - value: "OS · Apps · Interactions"
+        label: "Scope of exploration"
+      - value: "Execs & partners"
+        label: "Regular demos and presentations"
+    hats:
+      - label: "Team Lead"
+        note: "Process, hiring, exec demos"
+      - label: "Senior Designer"
+        note: "OS, apps, interactions"
+      - label: "Prototyper"
+        note: "Unity / C# / Blender"
+      - label: "Researcher"
+        note: "User studies, de-risking"
+
 - title: Echo
-  pID: 2
+  pID: 3
   short: echo
+  accent: "#4054B2"
   emoji: 💸
   subtitle: Transparent consumer banking in an opaque market
   description: We created a better banking product that employs learning and prediction for the consumer to use. We spent eight months researching, designing, prototyping, and user testing our app in the Portuguese market. Our client was Exictos, a Portuguese banking software company. Echo lets you master your finances.
-  role: Project Manager, Prototyping Lead, UX Designer
-  date: January 2016 to December 2016
+  role: PM, Prototyping Lead, UX Designer
+  date: January 2016 - December 2016
+  dateYears: 2016
   whileAt: M-ITI / Carnegie Mellon University
   withWho: Jae-Won Kim, Andrew Novotny, Joel Rodrigues
-  imgHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
-  imgThumb1: /assets/img/echo/16-05-14-elementary-6.jpg
+  imgHero: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
+  imgThumb1: /assets/imgopt/echo/16-05-14-elementary-6.jpg
   imgThumb1Position: 10% 0%
-  imgThumb2: /assets/img/echo/16-09-22-elementary-16.jpg
+  imgThumb2: /assets/imgopt/echo/16-09-22-elementary-16.jpg
   imgThumb2Position: 45% 100%
-  imgThumb3: /assets/img/echo/16-02-24-exploration-25-1.jpg
+  imgThumb3: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
   imgThumb3Position: 50% 0
   left: false
   url: elementary.html
-  imgJumbotronHero: /assets/img/echo/echo-overview.2019-06-02 22_17_19.gif
-  bgImg: /assets/img/echo/16-02-24-exploration-25-1.jpg
+  imgJumbotronHero: /assets/imgopt/echo/echo-overview.2019-06-02 22_17_19.gif
+  bgImg: /assets/imgopt/echo/16-02-24-exploration-25-1.jpg
+  small: true
+
 - title: Humane Virtuality
-  pID: 3
+  pID: 4
   short: hv
+  accent: "#C80D59"
   emoji: 😎
   subtitle: Researching the future of VR UX in week-long sprints
   description: For three months, I explored VR UX design with the goal of learning new technologies; designing humanely; creating rapid, interactive prototypes; and regularly sharing my work through case studies and weekly journals.
   role: UX Designer
   date: June - August 2016
+  dateYears: 2016
   whileAt: Over the summer during my master’s degree at CMU/M-ITI
   withWho: Myself
-  imgHero: /assets/img/hv/00-demo-1.gif
-  imgThumb1: /assets/img/hv/ex11-animate-medium.gif
+  imgHero: /assets/imgopt/hv/00-demo-1.gif
+  imgThumb1: /assets/imgopt/hv/ex11-animate-medium.gif
   imgThumb1Position: 50% 50%
-  imgThumb2: /assets/img/hv/ex7-1.gif
+  imgThumb2: /assets/imgopt/hv/ex7-1.gif
   imgThumb2Position: 50% 50%
-  imgThumb3: /assets/img/hv/hero-10.gif
+  imgThumb3: /assets/imgopt/hv/hero-10.gif
   imgThumb3Position: 50% 50%
   left: true
   url: humane-virtuality.html
-  bgImg: /assets/img/hv/IMG_9699.JPG
+  bgImg: /assets/imgopt/hv/IMG_9699.JPG
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/hv/ex6-sidebyside-direct-inverse.gif
-  light: true
+  imgJumbotronHero: /assets/imgopt/hv/ex6-sidebyside-direct-inverse.gif
+  light: false
+  # skip: true
+  small: true
+
 - title: Moral Decisions & Haptics in VR
-  pID: 4
+  pID: 5
   short: morals
+  accent: "#7154E9"
   emoji: 🚋
   subtitle: Does feeling a virtual world change your moral decisions?
   description: We created a VR environment to test an isomorph of the philosophical Trolley Problem. Some participants could feel the world around them while others could not. We found that participants who have haptic feedback are less likely save four people (by killing one person in reach) than their non-haptic counterparts.
   role: UX & Research Methods Designer
   date: October - December 2015
+  dateYears: 2015
   whileAt: Carnegie Mellon University
   withWho: Ivan Wang, Maddie Duque, Swetha Kannan
-  imgHero: /assets/img/morals/push-the-worker.gif
-  imgThumb1: /assets/img/morals/2.jpg
+  imgHero: /assets/imgopt/morals/push-the-worker.gif
+  imgThumb1: /assets/imgopt/morals/2.jpg
   imgThumb1Position: 20% 50%
-  imgThumb2: /assets/img/morals/4.jpg
+  imgThumb2: /assets/imgopt/morals/4.jpg
   imgThumb2Position: 30% 50%
-  imgThumb3: /assets/img/morals/screen-shot-2016-01-14-at-2.34.39-pm.png
+  imgThumb3: /assets/imgopt/morals/screen-shot-2016-01-14-at-2.34.39-pm.jpg
   imgThumb3Position: 50% 50%
   left: false
   url: moral-decision-making-haptic-feedback-in-virtual-environments.html
-  bgImg: /assets/img/morals/cover-virtual-trolley-sm.jpg
+  bgImg: /assets/imgopt/morals/cover-virtual-trolley-sm.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/morals/push-the-worker.gif
+  imgJumbotronHero: /assets/imgopt/morals/push-the-worker.gif
+  # skip: true
+  small: true
+
 - title: What If…? Conference & Book
-  pID: 5
+  pID: 6
   short: whatif
+  accent: "#FC3F5E"
   emoji: 🤔
-  subtitle: Active curiosity to the max
+  # subtitle: Active curiosity to the max
+  subtitle: Gathering diverse crowds to explore the world, starting with questions
   description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
   role: Cofounder & Chief Curiosity Curator
   date: November 2010 - June 2014
+  dateYears: 2010-2014
   whileAt: Our startup, What If...? LLC
   withWho: Cofounder Matt Murrie and many others along the way
-  imgHero: /assets/img/whatif/whatifoverview.gif
-  imgThumb1: /assets/img/whatif/image264.jpg
+  imgHero: /assets/imgopt/whatif/whatifoverview.gif
+  imgThumb1: /assets/imgopt/whatif/image264.jpg
   imgThumb1Position: 50% 50%
-  imgThumb2: /assets/img/whatif/image139.jpg
+  imgThumb2: /assets/imgopt/whatif/image139.jpg
   imgThumb2Position: 50% 50%
-  imgThumb3: /assets/img/whatif/image333.jpg
+  imgThumb3: /assets/imgopt/whatif/image333.jpg
   imgThumb3Position: 50% 50%
   left: true
   url: what-if-conference-book.html
-  bgImg: /assets/img/whatif/image387.jpg
+  bgImg: /assets/imgopt/whatif/image387.jpg
   videoJumbotronHero:
-  imgJumbotronHero: /assets/img/whatif/whatifoverview.gif
-  light: true
+  imgJumbotronHero: /assets/imgopt/whatif/whatifoverview.gif
+  light: false
+  # skip: true
+  small: true

@@ -3,8 +3,9 @@
 <head>
    {% include common-header-css.html %}
 
-   {% seo %}
-
+   <title>{% if page.title %}{{ page.title }} – {% endif %}Andrew R McHugh</title>
+   {% seo title=false %}
+   
 </head>
 
 {% for project in site.data.projects %}
@@ -13,15 +14,18 @@
    {% endif %}
 {% endfor %}
 
+{% assign debug = false %}
+
 <body class="project-{{p.short}}">
-   <!-- {% include util-responsive-size.html %} -->
+   {% include util-responsive-size.html debug=debug %}
+   
    <div class="page">
       <div class="page-header">
-         <!-- {% include all-page-alert.html %} -->
          {% include jumbotron-header.html %}
       </div>
-      <div class="container-fluid page-body">
-         {% include toc.html %}
+      <div class="page-body">
+         <!-- {% include project-glance.html %} -->
+         {% include navigation-sections.html debug=debug %}
          {{ content }}
       </div>
    </div>

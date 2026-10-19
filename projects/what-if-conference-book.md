@@ -1,10 +1,14 @@
 ---
 layout: project-page
-pID: 5
+pID: 6
 title: What If…? Conference & Book
-description: In 2010, I cofounded a conference that used curiosity to inspire and provoke attendees into action. I ran the production side of the company, ensuring design and quality. A multifaceted company, we created conferences, workshops, independent conferences, and a book. We helped 1,000s of people solve problems by teaching them how to ask better, more radical questions.
-image: /assets/img/whatif/image387.jpg
-assetURL: /assets/img/whatif/
+image: /assets/imgopt/whatif/whatifoverview.gif
+description: In 2010, I cofounded a conference that used curiosity to inspire
+  and provoke attendees into action. I ran the production side of the company,
+  ensuring design and quality. A multifaceted company, we created conferences,
+  workshops, independent conferences, and a book. We helped 1,000s of people
+  solve problems by teaching them how to ask better, more radical questions.
+assetURL: /assets/imgopt/whatif/
 ---
 
 {% include p-section.html
@@ -24,6 +28,7 @@ What If…?, as a company, actively drives participants to explore beyond their 
    urlCode="eRw5Id9emKo"
    caption="Our promotional explanation video."
    aspect="16by9"
+   style="lg"
 %}
 
 {% include p-section.html
@@ -42,8 +47,10 @@ What If…?, as a company, actively drives participants to explore beyond their 
 
 {% include media-img-wall.html
    data=site.data.imgwall.whatif
+   aspect="4by3"
 %}
 
+   <!-- imgstyle="height: 350px; object-fit: cover;" -->
 {% include p-section.html
    header="My role"
    subheader="Cofounder & Chief Curiosity Curator"
@@ -76,6 +83,7 @@ What If…? began as a conversation between Matt and myself. We talked about apa
    header= "Principles of What If…?"
    data= site.data.whatif.principles
    col="col-12 col-lg-6"
+   aspect="4by3"
 %}
 
 {% include media-youtube.html
@@ -145,7 +153,7 @@ We were honored to be sponsored by Quirky; littleBits; Schlafly Beer; the Region
 
 Each entry starts by exploring the question and helping our reader (8–12 year olds) understand a few foundational facts. Most entries also have an activity for kids to delve deeper into the question. Some entries have peer-interviews with other kids; expert interviews with the likes of David Eagleman, Amber Case, and Aubrey de Grey; and profiles on historic individuals.
 
-<a class='btn btn-outline' href='http://amzn.com/1582705291' target='_blank'>Amazon: _The Book of What If…?: Questions and Activities for Curious Minds_ ></a>
+<a class='btn' href='https://www.amazon.com/Book-What-If-Questions-Activities/dp/1582705283/' target='_blank'>Get The Book On Amazon →</a>
 
 My book came out in 2016. It was co-written with Matt Murrie and published by Aladdin / Beyond Words (an imprint of Simon & Schuster).
 "

@@ -1,0 +1,183 @@
+// In-page section navigation: a floating three-capsule cluster that starts in the
+// content and sticks to the top on scroll (.is-stuck toggled by section-nav.ts).
+// The accent for the current crumb comes from var(--accent), set per-project in
+// the project-specific-style() mixin in _main.sass.
+
+.section-nav
+   // Starts in normal flow within the content, then sticks to the top once the
+   // reader scrolls past it. JS toggles .is-stuck (see section-nav.ts) rather than
+   // using position: sticky, which is unreliable here: html/body compute
+   // overflow-y: auto (from overflow-x: hidden), so sticky resolves to a scrollport
+   // that never scrolls.
+   position: static
+   width: 100%
+   z-index: 100
+   // Breathing room via padding, not margin: padding is part of offsetHeight, so
+   // the JS sentinel reserves the exact in-flow footprint when sticking (margins
+   // aren't, which caused a content jump at the transition).
+   margin: 0
+   padding: 10px 0
+   &.is-stuck
+      position: fixed
+      top: 16px           // keep in sync with STICK_OFFSET in section-nav.ts
+      left: 0
+      .section-nav-capsule
+         box-shadow: create-elevation(5)
+
+   // Shrink-wraps the middle capsule only (sides are absolutely positioned out of
+   // flow), so the container's justify-content-center keeps the middle capsule's
+   // center pinned to the viewport center regardless of how many capsules show.
+   .snav-center
+      position: relative
+      display: inline-flex
+
+   .section-nav-capsule
+      display: inline-flex
+      align-items: center
+      padding: 4px 8px
+      border-radius: 999px
+      box-shadow: create-elevation(1)
+      backdrop-filter: blur(12px) saturate(180%)
+      background-color: rgba(255, 255, 255, 0.82)
+      border: 1px solid rgba(255, 255, 255, 0.65)
+      transition: box-shadow 0.22s ease
+
+
+      &.section-nav-inner
+         max-width: 70vw
+         +media-breakpoint-up(sm)
+            max-width: 40vw
+         
+
+      // Adjacent-section capsules flanking the center breadcrumb: dimmer + smaller
+      // so the current section reads as primary. Arrows cue direction (‹ prev, next ›).
+      // Positioned absolutely off the middle capsule's edges so they never shift it.
+      &.section-nav-side
+         position: absolute
+         top: 50%
+         transform: translateY(-50%)
+         max-width: 20vw
+         padding: 7px 14px
+         border-radius: 999px
+         font-size: $font-size-base * 0.75
+         font-weight: 600
+         text-decoration: none
+         color: $palette-caption
+         background-color: rgba(255, 255, 255, 0.6)
+         border-color: rgba(255, 255, 255, 0.65)
+
+         +media-breakpoint-up(sm)
+            font-size: $font-size-base * 0.7
+
+         &:hover
+            color: #242424
+         
+         .snav-side-label
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+            min-width: 0
+            display: none
+
+            +media-breakpoint-up(sm)
+               display: inline
+
+      &.section-nav-side-prev
+         right: 100%
+         margin-right: 10px
+         &::before
+            content: '‹'
+            flex: none
+            margin-right: 0
+            opacity: 0.8
+            +media-breakpoint-up(sm)
+               margin-right: 6px
+               opacity: 0.55
+         
+      &.section-nav-side-next
+         left: 100%
+         margin-left: 10px
+         &::after
+            content: '›'
+            flex: none
+            margin-left: 0
+            opacity: 0.8
+            +media-breakpoint-up(sm)
+               margin-left: 6px
+               opacity: 0.55
+
+   
+      
+      
+
+   .snav-crumbs
+      display: inline-flex
+      align-items: center
+      gap: 1px
+      max-width: 90vw
+      overflow: hidden
+
+   .snav-crumb
+      display: inline-block
+      max-width: 100%
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      padding: 5px 10px
+      border-radius: 999px
+      font-size: $font-size-base * 0.75
+      font-weight: 600
+      text-decoration: none
+      color: $palette-caption
+      &:hover
+         color: #242424
+      &:last-child
+         color: var(--accent)
+         font-weight: 700
+
+   // The major-section crumb shows its full text by default. When a subsection
+   // crumb follows (so the major crumb is no longer the last child), collapse it
+   // to just the first word to save room — but restore the full text once there's
+   // space at sm and up.
+   .snav-crumb-major
+      .snav-crumb-first
+         display: none
+      &:not(:last-child)
+         .snav-crumb-full
+            display: none
+         .snav-crumb-first
+            // display: inline
+            display: block
+            text-overflow: clip
+            overflow-x: visible
+         +media-breakpoint-up(md)
+            .snav-crumb-full
+               display: inline
+            .snav-crumb-first
+               display: none
+
+   .snav-crumb-sep
+      display: inline-block
+      opacity: 0.4
+      font-size: 0.85rem
+      padding: 0 1px
+
+// Holds the nav's height in flow while it's stuck so content below doesn't jump.
+// JS sets the height (see section-nav.ts); collapsed to 0 when the nav is in flow.
+.snav-sentinel
+   height: 0
+
+// Debug panel: dumps the computed section/subsection hierarchy.
+.snav-debug
+   margin: 16px 0
+   padding: 12px 16px
+   border: 1px dashed rgba(0, 0, 0, 0.3)
+   border-radius: 8px
+   background-color: rgba(0, 0, 0, 0.03)
+   pre
+      margin: 0
+      font-family: $font-family-monospace
+      font-size: 12px
+      line-height: 1.5
+      white-space: pre-wrap
+      color: #333

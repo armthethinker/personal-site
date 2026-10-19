@@ -1,0 +1,20 @@
+- challenge: Low quality LiDAR capture
+  knew: LiDAR only capture won't hit the quality level for high retention. Locking to hardware limits scalability.
+  considered: On device processing, playback time processing, backend processing.
+  decided: Keep on device processing to make captures immediately available, increases trust with users. Build backend processing to hit higher quality bar which will increase retention.
+  outcome: Drastically increased quality over hardware-only capture. Allowed us to pursue imported video which increased our potential.
+- challenge: Staging social & multiplayer
+  knew: Social+multiplayer is critical to long term retention ... but Wist must succeed as a single player experience first. This would open us to many new problems while trying to solve core capture/processing/playback already.
+  considered: Lightweight features that could be small tests. Going all in on social or multiplayer.
+  decided: Delay until the core is solid.
+  outcome: Looking back, this was directionally the right call but I should have started testing these features earlier.
+- challenge: Expressing depth on a flat screen
+  knew: Headsets are the best experience, but people are out and about with their phones. Mobile AR playback was interesting to users ... and confusing.
+  considered: No phone playback. Mobile playback limited to AR with new UI. 2D video only playback on mobile.
+  decided: Find a few key ways to express depth that adds to the experience. Prototyped a set of mathematical couplings between the 3D scene camera, the user's input, the scrub position, and the playback camera.
+  outcome: Feels like a natural extension of 2D video. Swipe, tilt, or scrub to explore the scene without getting lost.
+- challenge: Should the enhancement pipeline be centered on a single ML model or a combination of traditional CV and ML models?
+  knew: No one ML model can get full depth+pose+intrinsics well enough to hit the quality level we need (nor is that defensible). Traditional CV is powerful though prone to its own failures. Combining could be more robust ... or could lead to complexity that we won't be able to deal with.
+  considered: Open source models. Training our own. Traditional CV techniques. Constellation of methods.
+  decided: Constellation of methods. Our unique value is building the end to end system, including orchestration and rectification of the various methods.
+  outcome: Built a robust pipeline that rectifies the various data sources against each other (e.g. multiple depth estimators) as well as physical constraints (e.g. motion expectation contraints across the sequence), using both ML models (DepthPro, MapAnything, RAFT, FiLM, +) and traditional CV (filters, SFM, photogrammetry, +).
