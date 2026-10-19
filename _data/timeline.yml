@@ -87,6 +87,14 @@
   id: samsung
   patents: 10+ patents filed, 9 granted, spanning mixed device shared spaces, spatial input, notifications, and more.
 
+
+- short: Game prototyping
+  type: side
+  dateEnd: 2026
+  short2: Experimenting with various video game genres and mechanics. 
+  # img: /assets/imgopt/other/
+
+
 - short: Founded and built immersive memory startup, Wist
   type: work
   dateStart: 2021
@@ -201,3 +209,4 @@
   dateEnd: 2022
   short2: Scanned my wife every week of her pregnancy so we could see just how much bodies change. Timelapse in video, Looking Glass, and Quest.
   img: /assets/imgopt/other/pregnancy/prego-1-crop2.jpg
+
