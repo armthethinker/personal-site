@@ -9091,6 +9091,11 @@ body {
   }
 }
 
+@media (min-width: 1650px) {
+  .container.container-xxl-extraSpace {
+    max-width: 1570px;
+  }
+}
 .project-card {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   margin: 60px auto;
@@ -9327,7 +9332,7 @@ body {
 }
 .project-samsung .jumbotron .embed-responsive,
 .project-samsung .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .project-samsung .card {
   background-color: rgb(245.24, 246.54, 248.24);
@@ -9461,7 +9466,7 @@ body {
 }
 .project-echo .jumbotron .embed-responsive,
 .project-echo .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .project-echo .card {
   background-color: rgb(246.28, 246.68, 248.56);
@@ -9595,7 +9600,7 @@ body {
 }
 .project-hv .jumbotron .embed-responsive,
 .project-hv .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .project-hv .card {
   background-color: rgb(249, 245.26, 246.78);
@@ -9729,7 +9734,7 @@ body {
 }
 .project-morals .jumbotron .embed-responsive,
 .project-morals .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .project-morals .card {
   background-color: rgb(247.26, 246.68, 249.66);
@@ -9863,7 +9868,7 @@ body {
 }
 .project-whatif .jumbotron .embed-responsive,
 .project-whatif .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .project-whatif .card {
   background-color: rgb(250.04, 246.26, 246.88);
@@ -9997,7 +10002,7 @@ body {
 }
 .project-wist .jumbotron .embed-responsive,
 .project-wist .jumbotron img {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .project-wist .card {
   background-color: rgb(250.1, 247.14, 247.48);
@@ -10292,9 +10297,27 @@ img.img-xl.img-xl-contained {
 
 .embed-responsive {
   border-radius: 16px;
+  --squircle-radius: 16px;
+  --squircle-smooth: 1;
   box-shadow: 0 24px 56px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 768px) {
+  .focus-group .focus-item {
+    z-index: 1;
+    will-change: opacity, transform, box-shadow;
+    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  body:not(.is-touching) .focus-group .focus-item:hover {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1.08);
+  }
+  body:not(.is-touching) .focus-group:has(.focus-item:hover) .focus-item:not(:hover) {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
 .card {
   margin-bottom: 24px;
 }
@@ -10399,10 +10422,20 @@ video,
 .p-sec .card {
   border: none;
   border-radius: 16px;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  --squircle-radius: 16px;
+  --squircle-smooth: 1;
+  box-shadow: 0 8px 8px 0 rgba(44, 44, 44, 0.032), 0 4px 4px 0 rgba(44, 44, 44, 0.032), 0 8px 8px 0 rgba(44, 44, 44, 0.032), 0 16px 16px 0 rgba(44, 44, 44, 0.032);
+  will-change: box-shadow;
 }
 .p-sec .card img {
   border-radius: 16px 16px 0 0;
+  --squircle-radius: 16px 16px 0 0;
+  --squircle-smooth: 1;
+}
+@media (min-width: 768px) {
+  .p-sec .card.focus-item:has(:hover) {
+    box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
+  }
 }
 .p-sec blockquote {
   font-size: 140%;
@@ -10588,7 +10621,7 @@ model-viewer {
 
 .project-hero-mediawall img {
   border-radius: 32px;
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
   object-fit: cover;
   margin: 0;
 }
@@ -10691,7 +10724,7 @@ li.nav-item-w a.nav-link:hover {
   left: 0;
 }
 .section-nav.is-stuck .section-nav-capsule {
-  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 10px 10px 0 rgba(44, 44, 44, 0.065), 0 20px 20px 0 rgba(44, 44, 44, 0.065), 0 40px 40px 0 rgba(44, 44, 44, 0.065);
+  box-shadow: 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 10px 10px 0 rgba(44, 44, 44, 0.05), 0 20px 20px 0 rgba(44, 44, 44, 0.05), 0 40px 40px 0 rgba(44, 44, 44, 0.05);
 }
 .section-nav .snav-center {
   position: relative;
@@ -10702,7 +10735,7 @@ li.nav-item-w a.nav-link:hover {
   align-items: center;
   padding: 4px 8px;
   border-radius: 999px;
-  box-shadow: 0 4px 4px 0 rgba(44, 44, 44, 0.045), 0 2px 2px 0 rgba(44, 44, 44, 0.045), 0 4px 4px 0 rgba(44, 44, 44, 0.045), 0 8px 8px 0 rgba(44, 44, 44, 0.045);
+  box-shadow: 0 4px 4px 0 rgba(44, 44, 44, 0.026), 0 2px 2px 0 rgba(44, 44, 44, 0.026), 0 4px 4px 0 rgba(44, 44, 44, 0.026), 0 8px 8px 0 rgba(44, 44, 44, 0.026);
   backdrop-filter: blur(12px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.65);
@@ -10911,7 +10944,7 @@ li.nav-item-w a.nav-link:hover {
 .nav-background {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 22px;
-  box-shadow: 0 8px 8px 0 rgba(44, 44, 44, 0.05), 0 4px 4px 0 rgba(44, 44, 44, 0.05), 0 8px 8px 0 rgba(44, 44, 44, 0.05), 0 16px 16px 0 rgba(44, 44, 44, 0.05);
+  box-shadow: 0 8px 8px 0 rgba(44, 44, 44, 0.032), 0 4px 4px 0 rgba(44, 44, 44, 0.032), 0 8px 8px 0 rgba(44, 44, 44, 0.032), 0 16px 16px 0 rgba(44, 44, 44, 0.032);
   padding: 4px;
   font-weight: 600;
 }

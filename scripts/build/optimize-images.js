@@ -27,6 +27,7 @@ async function processImages() {
         const ext = parsedPath.ext.toLowerCase();
         const isImage = ['.png', '.jpg', '.jpeg', '.webp'].includes(ext);
         if (isImage) {
+            // continue
             // --- Process Images ---
             const image = (0, sharp_1.default)(file);
             const metadata = await image.metadata();

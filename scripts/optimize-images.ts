@@ -30,6 +30,7 @@ async function processImages() {
         const isImage = ['.png', '.jpg', '.jpeg', '.webp'].includes(ext)
         
         if (isImage) {
+            // continue
             // --- Process Images ---
             const image = sharp(file)
             const metadata = await image.metadata()
