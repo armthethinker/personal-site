@@ -33,6 +33,23 @@ $border-radius: 16px
 
 //                   https://coolors.co/161618-484349-ddd6f3-faaca8-f7f7ff
 // extra saturation: https://coolors.co/161618-484349-4c1af2-f94c43-f7f7ff
+
+
+=smooth-corners($r: $border-radius, $smoothness: 1)
+   border-radius: $r
+
+   --squircle-radius: #{$r}
+   --squircle-smooth: #{$smoothness}
+
+   // FIXME: Need to rebuild cards from scratch to support this
+   // .ready-smooth-corners &
+   //    -webkit-mask-image: paint(squircle)
+   //    mask-image: paint(squircle)
+
+
+
+
+
 html
    overflow-x: hidden
    background-color: $palette-pageBg
