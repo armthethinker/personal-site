@@ -1,0 +1,113 @@
+capture:
+- header: Capture a video
+  caption: Behind the scenes, Wist captures per-frame depth and camera pose data to reconstruct the 3D memory.
+  url: /assets/imgopt/wist/capture2-low.mp4
+  type: video
+- header: Or import a video
+  caption: The source video is uploaded and processed to generate the 3D data.
+  url: /assets/imgopt/wist/temp/features/timer.jpg
+  type: image
+
+playback:
+- header: In headsets
+  caption: Relive and walk around the moment on Quest and Vision Pro
+  url: /assets/imgopt/wist/temp/throwing-low.mp4
+  type: video
+- header: And on mobile
+  caption: Experience a depth-enhanced 2D-inspired viewer
+  url: /assets/imgopt/wist/temp/wist-spatial-scrubbing.MOV
+  type: video
+
+enhance:
+- header: Source data is flawed or missing
+  caption: For example, LiDAR is high quality at low frequencies and near-field, but has low accuracy for high frequency spatial data and far-field.
+  url: /assets/imgopt/wist/decks/enhance.jpg
+  type: image
+- header: Enhance with a constellation of models
+  caption: The backend pipeline infers additional data used to resolve and refine the source memory. Users don't need the details, just that it works for them.
+  url: /assets/imgopt/wist/temp/importScanLayers.gif
+  type: image
+- header: Build around unique constraints
+  caption: Captures are taken in the wild, may not have all data (e.g. depth, pose). Each ML model and CV technique has limitations. I built a pipeline that blended approaches to yield high quality reconstructions.
+  url: /assets/imgopt/wist/temp/rerun/rerun-ba-solve-trimmed-sm.mp4
+  type: video
+
+# sweat:
+# - header: Auto-stabilize jittery memories
+#   url: /assets/imgopt/wist/temp/ios-stabilization.mp4
+#   type: video
+# - header: Memory-vibes VFX that honors the capture
+#   url: /assets/imgopt/wist/temp/vivaldi/birth.jpg
+#   type: image
+# - header: World-aligned playback on headsets and mobile
+#   url: /assets/imgopt/wist/temp/wist-v0.8.7-maintain-up.mp4
+#   type: video
+# - header: Auto export
+#   url: /assets/imgopt/wist/temp/features/auto-export.jpg
+#   type: image
+# - header: Beautiful VR shadows on volumetric buttons (Quest)
+#   url: /assets/imgopt/wist/temp/feature-walkthrough-photos/quest/icon-closeup.jpg
+#   type: image
+# - header: Person highlighting
+#   url: /assets/imgopt/wist/temp/feature-walkthrough-photos/exports/featuresHighlights/person-highlighting-single.jpg
+#   type: image
+# - header: Featured & favorite memories
+#   url: /assets/imgopt/wist/temp/features/your-memories-closeup3.jpg
+#   type: image
+# - header: Fast time-to-magic
+#   url: /assets/imgopt/wist/temp/onboarding/onboarding-try.jpg
+#   type: image
+# - header: Beautiful, soft player
+#   url: /assets/imgopt/wist/temp/features/scrubber.jpg
+#   type: image
+# - header: Easily align memories
+#   url: /assets/imgopt/wist/temp/visionOS-grabbing.mp4
+#   type: video
+# - header: Focused, collapsible menus (Vision Pro)
+#   url: /assets/imgopt/wist/temp/feature-walkthrough-photos/avp/browse-collapsed.jpg
+#   type: image
+
+sweat2:
+- header: Captures have hand jitter
+  caption: Auto-stabilize memories by separating the capture camera from the constrained render camera
+  url: /assets/imgopt/wist/temp/ios-stabilization.mp4
+  type: video
+- header: Memory-vibes VFX that honors the capture
+  url: /assets/imgopt/wist/temp/vivaldi/birth.jpg
+  type: image
+- header: World-aligned playback on headsets and mobile
+  url: /assets/imgopt/wist/temp/wist-v0.8.7-maintain-up.mp4
+  type: video
+- header: Auto export
+  url: /assets/imgopt/wist/temp/features/auto-export.jpg
+  type: image
+- header: Beautiful VR shadows on volumetric buttons (Quest)
+  url: /assets/imgopt/wist/temp/feature-walkthrough-photos/quest/icon-closeup.jpg
+  type: image
+- header: Person highlighting
+  url: /assets/imgopt/wist/temp/feature-walkthrough-photos/exports/featuresHighlights/person-highlighting-single.jpg
+  type: image
+- header: Featured & favorite memories
+  url: /assets/imgopt/wist/temp/features/your-memories-closeup3.jpg
+  type: image
+- header: Fast time-to-magic
+  url: /assets/imgopt/wist/temp/onboarding/onboarding-try.jpg
+  type: image
+- header: Beautiful, soft player
+  url: /assets/imgopt/wist/temp/features/scrubber.jpg
+  type: image
+- header: Easily align memories
+  url: /assets/imgopt/wist/temp/visionOS-grabbing.mp4
+  type: video
+- header: Focused, collapsible menus (Vision Pro)
+  url: /assets/imgopt/wist/temp/feature-walkthrough-photos/avp/browse-collapsed.jpg
+  type: image
+
+# - header: Import
+#   caption: On device for an initial version. Higher quality processes on the cloud.
+#   url: /assets/imgopt/wist/temp/importScanLayers.gif
+#   type: image
+# - header: Step inside
+#   caption: Relive memories on iOS, Quest, or Vision Pro.
+#   url: /assets/imgopt/wist/walking2-low.mp4
+#   type: video

@@ -10,14 +10,19 @@
       src       full media URL (already prepended)
       item      the card item (for video options, alt text, aspect)
       position  "top" | "bottom" (controls which Bootstrap card class is applied)
+      objectFit  "cover" | "contain"
 {%- endcomment -%}
 
 {%- assign imgClass = "card-img-top" -%}
+{%- assign forceResponsiveBottom = include.position == "bottom" -%}
 {%- if include.position == "bottom" -%}
    {%- assign imgClass = "card-img-bottom" -%}
 {%- endif -%}
 
 {%- assign aspect    = include.aspect    | default: "16by9" -%}
+
+
+{%- assign objectFit = include.objectFit | default: "cover" -%}
 
 {%- if include.type == "video" -%}
 
@@ -28,7 +33,7 @@
    {%- assign controls  = include.item.controls | default: false -%}
 
    <div class="{{ imgClass }} embed-responsive embed-responsive-{{ aspect }} box-shadow-none">
-      <video class="embed-responsive-item"
+      <video class="embed-responsive-item object-fit-{{ objectFit }}"
          {% if controls %}controls{% endif %}
          {% if loop %}loop{% endif %}
          {% if autoplay %}autoplay muted{% endif %}
@@ -42,7 +47,7 @@
    {%- assign alt = include.item.alt | default: include.item.caption | strip_html -%}
    <!-- <img src="{{ include.src }}" class="{{ imgClass }}" alt="{{ alt }}"> -->
    <div class="embed-responsive embed-responsive-{{ aspect }}">
-      <img class="embed-responsive-item object-fit-cover" src="{{ include.src }}" alt="{{ alt }}">
+      <img class="embed-responsive-item object-fit-{{ objectFit }}" src="{{ include.src }}" alt="{{ alt }}">
    </div>
 
 {%- endif -%}

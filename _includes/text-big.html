@@ -1,4 +1,4 @@
-<div class="p-sec">
+<div class="p-sec {% if include.spacing %}{{include.spacing}}{% endif %}">
     <div class="container">
         <div class="">
             <div class="row">
@@ -16,7 +16,7 @@
                 <div class="{% include template-p-col-right.html %}"></div>
             </div>
             <div class="row">
-                <div class="col my-5">
+            <div class="col my-5">
                     {% if include.primary %}
                     <h1 class="display-1 text-center fw-bolder text-wrap-balance">{{include.primary}}</h1>
                     {% endif %}
@@ -25,6 +25,13 @@
                     {% endif %}
                     {% if include.tertiary %}
                     <h3 class="display-3 text-center fw-bolder text-wrap-balance">{{include.tertiary}}</h3>
+                    {% endif %}
+                    {% if include.body %}
+                    <p class="display-6 text-center fw-bolder text-wrap-balance">{{include.body}}</p>
+                    {% endif %}
+                    {% if include.bodyList %}
+                    {% assign bodyList = include.bodyList | split: ";" %}
+                    <p class="display-6 text-center fw-bolder text-wrap-balance">{% for item in bodyList %}{{item}}<br>{% endfor %}</p>
                     {% endif %}
                 </div>
             </div>

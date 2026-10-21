@@ -527,7 +527,7 @@ $palettes: [$palette-echo, $palette-hv, $palette-morals, $palette-whatif, $palet
 
 
 
-$embed-responsive-aspect-ratios: (21 9), (16 9), (5 4), (4 3), (1 1) !default
+$embed-responsive-aspect-ratios: (21 9), (16 9), (14 9), (13 9), (5 4), (4 3), (1 1) !default
 
 .embed-responsive
    position: relative
@@ -539,6 +539,11 @@ $embed-responsive-aspect-ratios: (21 9), (16 9), (5 4), (4 3), (1 1) !default
    &::before
       display: block
       content: ""
+   
+   // &.embed-responsive-force-bottom
+   //    position: absolute
+   //    bottom: 0
+   
 
    .embed-responsive-item,
    iframe,
@@ -552,6 +557,8 @@ $embed-responsive-aspect-ratios: (21 9), (16 9), (5 4), (4 3), (1 1) !default
       width: 100%
       height: 100%
       border: 0
+
+
 
 
 @each $ratio in $embed-responsive-aspect-ratios
@@ -654,6 +661,8 @@ img
       min-width: 200px
 .p-sec
    .card
+      justify-content: space-between
+
       img,
       .embed-responsive
          margin-bottom: 0
@@ -689,8 +698,9 @@ img
             background-size: cover
             border-radius: $border-radius 0 0 $border-radius
       .card-body
-         p
+         p:not(.lead)
             font-size: 1rem
+   
 .p-img-container
    margin-bottom: 16px
 img,
@@ -990,6 +1000,7 @@ model-viewer
   animation: blinker 0.2s linear infinite
   color: red
   font-weight: bold
+  font-size: xx-large
 
 
 .fs-xs-small

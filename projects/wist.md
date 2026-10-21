@@ -10,51 +10,172 @@ modelURL: /assets/models/wist/
 ---
 
 
-{% include text-big.html
-   primary="Capture & relive memories spatially"
-   secondary="just by taking a video"
+{% include p-section.html
+   header="Overview"
 %}
-
-
-
-
-{% include cards.html
-   data= site.data.wist.flow
-   col="col-12 col-lg-4"
-   colsub="col-12 col-md-6 col-lg-12"
-   fullWidth=true
-%}
-
-<!-- 
-{% include card-big.html
-   fullWidth=true
-   emoji="🤳"
-   title="Take a video"
-   subtitle="Capture immersive moments easily in Wist, just by taking or importing a video."
-   url="capture2-low.mp4"
-   aspect="1by1"
-   skip=true
-%} -->
-
-
 
 {% include text-big.html
-   secondary="Stop watching. Start reliving."
-
+   secondary="Wist turned 2D video into relivable, immersive memories"
+   bodyList="
+3D video reprojected into space;
+Across iOS, Quest, and Vision Pro;
+Synced across devices;
+And no harder than regular video
+"
 %}
-
-
 
 {% include media-video.html
-   url="temp/RELIVE-sm.mp4"
-   caption="**Press play ⤴**"
-   aspect="9by16"
-   loop=false
-   autoplay=false
-   controls=true
+   url="Couch2-lowbitrate.mp4"
+   caption=""
+   aspect="16by9"
+   loop=true
+   autoplay=true
+   controls=false
    style="xl"
-   maxHeight="70vh"
 %}
+
+
+
+<!-- {% include text-big.html
+   tertiary="I made this new experience \"just work\"."
+%} -->
+   <!-- body="Design + Engineering + Product + R&D + Founding" -->
+
+
+{% include text-big.html
+   tertiary="I made Wist \"just work\"."
+   bodyList="
+From the initial prototyping & discovery;
+To founding, raising, & building the team;
+To leading design, eng, & product;
+"
+%}
+
+
+{% include text-big.html
+   secondary="Capture as easy as video"
+   body="Open Wist on iOS then"
+   spacing="mt-5 pt-5"
+%}
+
+{% include cards.html
+   data= site.data.wist.cardsec.capture
+   col="col-12 col-md-6"
+   fullWidth=true
+   imgBottom=true
+%}
+
+{% include text-big.html
+   body="Users should be able to stay in the moment, not learn a new capture technique. The app (and backend) should do the heavy lifting."
+%}
+
+{% include text-big.html
+   secondary="True immersive playback"
+   body="3D movies are for watching. Wist is for reliving a life in motion."
+   spacing="mt-5 pt-5"
+%}
+
+{% include cards.html
+   data= site.data.wist.cardsec.playback
+   col="col-12 col-md-6"
+   fullWidth=true
+   imgBottom=true
+   aspect="14by9"
+%}
+
+{% include text-big.html
+   body="Captures are synced to make the experience seamless"
+%}
+
+{% include text-big.html
+   secondary="Enhance forever"
+   body="Don't get stuck with today's pipeline"
+   spacing="mt-5 pt-5"
+%}
+
+{% include text-big.html
+   secondary="Enhance forever"
+   body="Don't get stuck with today's pipeline"
+   spacing="mt-5 pt-5"
+%}
+
+{% include cards.html
+   data= site.data.wist.cardsec.enhance
+   col="col-12 col-md-4 mx-auto"
+   fullWidth=true
+   imgBottom=true
+%}
+
+{% include text-big.html
+   body="Might seem weird that a designer is deep in computer vision and machine learning... That is what makes me unique. I solve problems, using my wide background to pursue the highest impact work."
+%}
+
+
+{% include text-big.html
+   secondary="The whole flow"
+   spacing="mt-5 pt-5"
+%}
+
+{% include media-img-xl.html
+   style="lg"
+   url="temp/ux-flow.jpg"
+   caption="** TK Wist flow.** Capture or import. Process on device and enhance in the cloud. Relive in headset or on mobile."
+   extraImgClasses="img-xl-contained"
+%}
+
+
+{% include text-big.html
+   secondary="As a designer with a wide background"
+   tertiary="I crafted every detail"
+   bodyList="
+Vision;
+Product framing;
+Spatial interaction design;
+Visual design;
+Prototyping;
+Volumetric reconstruction pipeline;
+Usability;
+Performance;
+Metrics;
+Real-time VFX;
+Encoding;
+"
+   spacing="mt-5 pt-5"
+%}
+
+
+{% include text-big.html
+   tertiary="Details made sci-fi real"
+   body="And we had to build everything from scratch"
+%}
+
+{% include cards.html
+   data= site.data.wist.cardsec.sweat2
+   col="col-12 col-md-6"
+   fullWidth=true
+   imgBottom=true
+   useProblemSolutionHeaderFormat=true
+%}
+
+
+{% include text-big.html
+   tertiary="All to make the experience just work"
+   body="Especially for parents"
+   spacing="my-5 py-5"
+%}
+
+
+{% include text-big.html
+   body=""
+   spacing="my-5 py-5"
+%}
+
+{% include text-big.html
+   body="And, if you like writing ⤵"
+   spacing="my-5 py-5"
+%}
+
+
 
 {% include p-section.html
    header="Why immersive memories?"

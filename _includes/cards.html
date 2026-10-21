@@ -16,8 +16,13 @@
 {% assign _markdownify = false %}
 {% endif %}
 
+
+
+
 {% assign aspect = include.aspect | default: "1by1" %}
 {% assign colsub = include.colsub | default: "col-12" %}
+
+{% assign useProblemSolutionHeaderFormat = include.useProblemSolutionHeaderFormat | default: false %}
 
 
 <div class="p-sec">
@@ -37,12 +42,19 @@
             <div class="col">
                <div class="row">
                   {% for item in include.data %}
+                  <!-- Captions may be needed to be formatted with Markdown. Instead of doing that in the html, let's interpret that now and assign to a "caption" variable -->
+                  {% if _markdownify %}
+                  {% assign caption = item.caption | markdownify %}
+                  {% else %}
+                  {% assign caption = item.caption %}
+                  {% endif %}
+
                   {% if include.col != undefined %}
                   <div class="{{include.col}} mb-4">
                   {% else %}
                   <div class="col mb-4">
                   {% endif %}
-                     <div class="card h-lg-100">
+                     <div class="card h-lg-100 {% if imgBottom == true %}mb-0{% endif %}">
                         <div class="row align-items-center">
                            <div class="{{colsub}}">
                               {% if item.url and imgBottom == false %}
@@ -52,11 +64,12 @@
 
                            <div class="{{colsub}}">
                         <div class="card-body">
-                           <p class="card-title color-primary font-header"><strong>{{item.header}}</strong></p>
-                           {% if _markdownify %}
-                           <p class="card-text">{{item.caption | markdownify}}</p>
+                           {% if useProblemSolutionHeaderFormat %}
+                           <p class="card-title color-primary font-header"><strong>Problem: </strong><span class="text-body">{{item.header}}</span></p>
+                           <p class="card-text"><strong>Solution:</strong> {{caption}}</p>
                            {% else %}
-                           <p class="card-text">{{item.caption}}</p>
+                           <p class="card-title color-primary font-header"><strong>{{item.header}}</strong></p>
+                           <p class="card-text">{{caption}}</p>
                            {% endif %}
                         </div>
                         </div>
