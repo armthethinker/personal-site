@@ -25,7 +25,7 @@ And no harder than regular video
 %}
 
 {% include media-video.html
-   url="Couch2-lowbitrate.mp4"
+   url="temp/clips/holding-kiddo-sm.mp4"
    caption=""
    aspect="16by9"
    loop=true
@@ -101,13 +101,13 @@ To leading design, eng, & product;
 
 {% include cards.html
    data= site.data.wist.cardsec.enhance
-   col="col-12 col-md-4 mx-auto"
+   col="col-12 col-md-6 col-lg-4 mx-auto"
    fullWidth=true
    imgBottom=true
 %}
 
 {% include text-big.html
-   body="Might seem weird that a designer is deep in computer vision and machine learning... That is what makes me unique. I solve problems, using my wide background to pursue the highest impact work."
+   body="Might seem weird that a designer is deep in computer vision and machine learning... That is what makes me unique. <span class='color-primary'>I solve problems</span>, using my wide background to pursue the highest impact work."
 %}
 
 
@@ -144,17 +144,21 @@ Encoding;
 %}
 
 
+
+
 {% include text-big.html
-   tertiary="Details made sci-fi real"
+   tertiary="1,000 details made sci-fi real"
    body="And we had to build everything from scratch"
 %}
 
-{% include cards.html
+{% include cards-horizontal.html
    data= site.data.wist.cardsec.sweat2
-   col="col-12 col-md-6"
+   col="col-12 col-xl-10 col-xxl-6 mx-auto"
+   colsub="col-12 col-md-6"
    fullWidth=true
    imgBottom=true
    useProblemSolutionHeaderFormat=true
+
 %}
 
 
@@ -376,9 +380,9 @@ It was tricky to balance \"this is familiar\" and \"this is giving me way more\"
 
 
 {% include media-video.html
-   url="temp/wist-v0.8.7-maintain-up.mp4"
+   url="temp/clips/maintain-up-square-sm.mp4"
    caption="**Always up**: with a known world orientation frame, a shaky camera gets correctly oriented each frame."
-   aspect="16by9"
+   aspect="1by1"
    loop=true
    controls=false
    autoplay=true

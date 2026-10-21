@@ -10,7 +10,7 @@ $break-sm: 576px
 $break-md: 768px
 $break-lg: 992px
 $break-xl: 1200px
-// $break-xxl: 1400px // FIXME: Work this in
+$break-xxl: 1400px // FIXME: Work this in
 
 $perspective: 1300px
 
@@ -194,6 +194,11 @@ body
    @media (min-width: $break-xl + 80px * 2)
       padding-left:  15px
       padding-right: 15px
+
+@media (min-width: $break-xxl + 250px)
+   .container.container-xxl-extraSpace
+      max-width: 1320px + 250px
+   
 
 .project-card
    box-shadow: 0 8px 16px rgba(0,0,0,.3)
@@ -652,8 +657,31 @@ img
          object-fit: contain
          background-color: white
 .embed-responsive
-   border-radius: $border-radius
+   +smooth-corners()
    box-shadow: 0 24px 56px rgba(0,0,0,.2)
+
+@media (min-width: $break-md)
+   .focus-group
+      // &:hover
+      //    .focus-item
+      //       opacity: 0.4
+      //       transform: scale(1)
+      
+      .focus-item
+         z-index: 1
+         will-change: opacity, transform, box-shadow
+         transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1)
+         
+         body:not(.is-touching) &
+            &:hover
+               opacity: 1
+               z-index: 2
+               transform: scale(1.08)
+      // @media (hover: hover) and (pointer: fine)
+      body:not(.is-touching) &
+         &:has(.focus-item:hover) .focus-item:not(:hover)
+               opacity: 0.4
+               transform: scale(1)
 
 .card
    margin-bottom: 24px
@@ -661,7 +689,7 @@ img
       min-width: 200px
 .p-sec
    .card
-      justify-content: space-between
+      justify-content: space-between // FIXME: Test against space-between on other pages
 
       img,
       .embed-responsive
@@ -744,10 +772,17 @@ video,
       margin-top: $spacer * 2
    .card
       border: none
-      border-radius: $border-radius
-      box-shadow: 0 16px 32px rgba(0,0,0,.1)
+      // border-radius: $border-radius
+      +smooth-corners()
+      // overflow: hidden
+      // box-shadow: 0 16px 32px rgba(0,0,0,.1)
+      box-shadow: create-elevation(2)
+      will-change: box-shadow
       img
-         border-radius: $border-radius $border-radius 0 0
+         +smooth-corners($border-radius $border-radius 0 0)
+      @media (min-width: $break-md)
+         &.focus-item:has(:hover)
+            box-shadow: create-elevation(5)
    blockquote
       font-size: 140%
       font-weight: 300

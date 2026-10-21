@@ -15,7 +15,7 @@ playback:
   type: video
 - header: And on mobile
   caption: Experience a depth-enhanced 2D-inspired viewer
-  url: /assets/imgopt/wist/temp/wist-spatial-scrubbing.MOV
+  url: /assets/imgopt/wist/temp/wist-spatial-scrubbing-sm.mp4
   type: video
 
 enhance:
@@ -72,36 +72,54 @@ sweat2:
   caption: Auto-stabilize memories by separating the capture camera from the constrained render camera
   url: /assets/imgopt/wist/temp/ios-stabilization.mp4
   type: video
-- header: Memory-vibes VFX that honors the capture
-  url: /assets/imgopt/wist/temp/vivaldi/birth.jpg
-  type: image
-- header: World-aligned playback on headsets and mobile
-  url: /assets/imgopt/wist/temp/wist-v0.8.7-maintain-up.mp4
+- header: Users expect cinematic VFX before they use the app
+  caption: Memory-vibes VFX honors the capture without degrading or distracting
+  url: /assets/imgopt/wist/temp/clips/just-born-sm.mp4
   type: video
-- header: Auto export
+- header: Captures may have rotation
+  caption: Wist counter-rolls the capture to maintain world up alignment, on headsets and mobile
+  url: /assets/imgopt/wist/temp/clips/maintain-up-square-sm.mp4
+  type: video
+- header: Users want access to their 2D videos
+  caption: Auto export to their camera roll
   url: /assets/imgopt/wist/temp/features/auto-export.jpg
   type: image
-- header: Beautiful VR shadows on volumetric buttons (Quest)
+- header: Soft VR shadows are computationally expensive
+  caption: Pre-render soft blurred icons for beautiful fake shadows on volumetric buttons (Quest)
   url: /assets/imgopt/wist/temp/feature-walkthrough-photos/quest/icon-closeup.jpg
   type: image
-- header: Person highlighting
-  url: /assets/imgopt/wist/temp/feature-walkthrough-photos/exports/featuresHighlights/person-highlighting-single.jpg
-  type: image
-- header: Featured & favorite memories
+- header: Scene backgrounds can distract from the people
+  caption: Toggle person highlighting to use our segmentation mask
+  url: /assets/imgopt/wist/temp/clips/person-highlighting-sm.mp4
+  type: video
+- header: Users want to know what Wist can do. Users want a way to highlight their favorite captures.
+  caption: Featured memories show example, high-quality captures. Favoriting is a lightweight feature, allowing one level of grouping.
   url: /assets/imgopt/wist/temp/features/your-memories-closeup3.jpg
   type: image
-- header: Fast time-to-magic
+- header: New users are wary of camera permissions
+  caption: Pack the viewer into onboarding flow to decrease time-to-magic and build trust
   url: /assets/imgopt/wist/temp/onboarding/onboarding-try.jpg
   type: image
-- header: Beautiful, soft player
+- header: If the app is percieved as complex, users will churn
+  caption: Continually reinforce simplicity and use subtle effects to create a beautiful player UI
   url: /assets/imgopt/wist/temp/features/scrubber.jpg
   type: image
-- header: Easily align memories
-  url: /assets/imgopt/wist/temp/visionOS-grabbing.mp4
+- header: Spatial content blocks real world alignment reference
+  caption: Capture pauses, fades, and clips bounds
+  # url: /assets/imgopt/wist/temp/visionOS-grabbing.mp4
+  url: /assets/imgopt/wist/temp/clips/grabbing-align-sm.mp4
   type: video
 - header: Focused, collapsible menus (Vision Pro)
   url: /assets/imgopt/wist/temp/feature-walkthrough-photos/avp/browse-collapsed.jpg
   type: image
+- header: Captures with high movement run away from you
+  caption: A portal feature reframes the scene
+  url: /assets/imgopt/wist/temp/clips/portal2-sm.mp4
+  type: video
+- header: Browsing captures can be cumbersome
+  caption: Expandable menu unifies playback and browsing, contextually animating and grabbable for comfort
+  url: /assets/imgopt/wist/temp/clips/quest-menu-grabbable-sm.mp4
+  type: video
 
 # - header: Import
 #   caption: On device for an initial version. Higher quality processes on the cloud.

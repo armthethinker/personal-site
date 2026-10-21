@@ -184,5 +184,13 @@
     run(initMasonry);
     run(initSectionNav);
   });
+  document.addEventListener("touchstart", () => {
+    document.body.classList.add("is-touching");
+    document.body.classList.remove("is-hovering");
+  }, { passive: true });
+  document.addEventListener("mousemove", () => {
+    document.body.classList.add("is-hovering");
+    document.body.classList.remove("is-touching");
+  }, { passive: true });
 })();
 //# sourceMappingURL=app.js.map

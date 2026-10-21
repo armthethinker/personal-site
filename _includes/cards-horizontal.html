@@ -1,0 +1,92 @@
+{% if include.imgBottom == true %}
+{% assign imgBottom = true %}
+{% else %}
+{% assign imgBottom = false %}
+{% endif %}
+
+{% if include.fullWidth == true %}
+{% assign fullWidth = true %}
+{% else %}
+{% assign fullWidth = false %}
+{% endif %}
+
+{% if include.markdownify == true %}
+{% assign _markdownify = true %}
+{% else %}
+{% assign _markdownify = false %}
+{% endif %}
+
+
+
+
+{% assign aspect = include.aspect | default: "1by1" %}
+{% assign colsub = include.colsub | default: "col-12" %}
+
+{% assign useProblemSolutionHeaderFormat = include.useProblemSolutionHeaderFormat | default: false %}
+
+
+<div class="p-sec">
+   <div class="container container-xxl-extraSpace">
+      <div class="">
+         <div class="row">
+            {% unless fullWidth %}
+            <div class="col-12 col-md-4 col-lg-3">
+               {% if include.header %}
+               <h2 class="section-header">{{include.header}}</h2>
+               {% endif %}
+               {% if include.subheader %}
+               <strong class="d-block mb-4">{{include.subheader}}</strong>
+               {% endif %}
+            </div>
+            {% endunless %}
+            <div class="col">
+               <div class="row focus-group">
+                  {% for item in include.data %}
+                  {% if _markdownify %}
+                  {% assign caption = item.caption | markdownify %}
+                  {% else %}
+                  {% assign caption = item.caption %}
+                  {% endif %}
+                  {% assign oddItemIndex = forloop.index0 | modulo: 2 %}
+
+                  {% if include.col != undefined %}
+                  <div class="{{include.col}} mb-4">
+                  {% else %}
+                  <div class="col mb-4">
+                  {% endif %}
+                     <div class="card h-lg-100 focus-item {% if imgBottom == true %}mb-0{% endif %} card-horizontal-feature justify-content-around">
+                        <div class="row align-items-center {% if oddItemIndex == 1 %}flex-row-reverse{% endif %}">
+                            {% if item.url and imgBottom == false %}
+                            <div class="{{colsub}}">
+                                {% include cards-media.html type=item.type src=item.url item=item position="top" aspect=aspect %}
+                            </div>
+                            {% endif %}
+
+                           <div class="{{colsub}}">
+                                <div class="card-body">
+                                {% if useProblemSolutionHeaderFormat %}
+                                <p class="card-title color-primary font-header mb-4"><strong>Problem</strong><br><span class="text-body">{{item.header}}</span></p>
+                                <p class="card-text"><strong>Solution</strong><br>{{caption}}</p>
+                                {% else %}
+                                <p class="card-title color-primary font-header"><strong>{{item.header}}</strong></p>
+                                <p class="card-text">{{caption}}</p>
+                                {% endif %}
+                                </div>
+                            </div>
+                            {% if item.url %}
+                            {% if imgBottom == true %}
+                            <div class="{{colsub}}">
+                                {% include cards-media.html type=item.type src=item.url item=item position="bottom" aspect=aspect %}
+                            </div>
+                            {% endif %}
+                            {% endif %}
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -12,7 +12,28 @@ function run(feature: () => void): void {
    }
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
    run(initMasonry)
    run(initSectionNav)
 })
+
+// Supporting the focus group interaction
+document.addEventListener('touchstart', () => {
+   document.body.classList.add('is-touching')
+   document.body.classList.remove('is-hovering')
+}, { passive: true })
+document.addEventListener('mousemove', () => {
+   document.body.classList.add('is-hovering')
+   document.body.classList.remove('is-touching')
+}, { passive: true })
+
+// if ('paintWorklet' in CSS) {
+//    CSS.paintWorklet.addModule('https://www.unpkg.com/css-houdini-squircle/squircle.min.js')
+//       .then(() => {
+//          document.body.classList.add('ready-smooth-corners')
+//       })
+//       .catch((e) => {
+//          console.error("Squircle paint worklet failed to load", e)
+//       })
+// }

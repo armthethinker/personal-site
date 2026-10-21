@@ -18,7 +18,7 @@
   # videoHero: /assets/imgopt/wist/temp/social-movement.mp4
   # videoHero: /assets/imgopt/wist/small-knees-low.mp4
   # videoHero: /assets/imgopt/wist/couch2-low.mp4
-  videoHero: /assets/imgopt/wist/walking2-low.mp4
+  videoHero:  /assets/imgopt/wist/temp/throwing-low.mp4
   imgThumb1: /assets/imgopt/wist/small-knees-low-poster.jpg
   imgThumb2: /assets/imgopt/wist/relive-with-me-low-poster.jpg
   imgThumb3: /assets/imgopt/wist/bento-sm/lock-screen4.jpg
@@ -27,7 +27,8 @@
   bgImg:     /assets/imgopt/wist/couch2-low-poster.jpg
   # imgJumbotronHero: /assets/imgopt/wist/couch2-low-poster.jpg
   # imgJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
-  videoJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
+  # videoJumbotronHero: /assets/imgopt/wist/walking2-low.mp4
+  videoJumbotronHero: /assets/imgopt/wist/temp/throwing-low.mp4
   light: false
   glance:
     tagline: "Founder and solo technical lead of a spatial-computing startup. I designed and built the full capture → cloud → playback stack across iOS, Quest, and Vision Pro — and raised the money and team to do it."
