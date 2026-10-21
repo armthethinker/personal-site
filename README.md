@@ -11,6 +11,7 @@ Built from Bootstrap, Jekyll, a couple JS libraries, and hacks here and there.
 - To update the bundle: `$ bundle update`
 - To optimize all images: `$ npm run imgoptim`
 - To sync project front matter from `_data/projects.yml`: `$ npm run sync-frontmatter`
+- To find local `ipconfig getifaddr en0`
 
 - **To develop (watch mode):** `$ npm start`
 - **To build for prod:** `$ npm run build`
