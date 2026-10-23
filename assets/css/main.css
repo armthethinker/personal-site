@@ -8823,7 +8823,7 @@ progress {
   font-size: clamp(1.05rem, 1.6vw, 1.35rem);
   line-height: 1.45;
   color: #4b5563;
-  max-width: 30ch;
+  max-width: 34ch;
   margin: 28px 0 0;
 }
 .hh .hh-sub strong {
@@ -10127,62 +10127,63 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+  object-fit: cover;
 }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%;
+  padding-top: round(42.8571428571%, 1px);
 }
 
 .embed-responsive-9by21::before {
-  padding-top: 233.3333333333%;
+  padding-top: round(233.3333333333%, 1px);
 }
 
 .embed-responsive-16by9::before {
-  padding-top: 56.25%;
+  padding-top: round(56.25%, 1px);
 }
 
 .embed-responsive-9by16::before {
-  padding-top: 177.7777777778%;
+  padding-top: round(177.7777777778%, 1px);
 }
 
 .embed-responsive-14by9::before {
-  padding-top: 64.2857142857%;
+  padding-top: round(64.2857142857%, 1px);
 }
 
 .embed-responsive-9by14::before {
-  padding-top: 155.5555555556%;
+  padding-top: round(155.5555555556%, 1px);
 }
 
 .embed-responsive-13by9::before {
-  padding-top: 69.2307692308%;
+  padding-top: round(69.2307692308%, 1px);
 }
 
 .embed-responsive-9by13::before {
-  padding-top: 144.4444444444%;
+  padding-top: round(144.4444444444%, 1px);
 }
 
 .embed-responsive-5by4::before {
-  padding-top: 80%;
+  padding-top: round(80%, 1px);
 }
 
 .embed-responsive-4by5::before {
-  padding-top: 125%;
+  padding-top: round(125%, 1px);
 }
 
 .embed-responsive-4by3::before {
-  padding-top: 75%;
+  padding-top: round(75%, 1px);
 }
 
 .embed-responsive-3by4::before {
-  padding-top: 133.3333333333%;
+  padding-top: round(133.3333333333%, 1px);
 }
 
 .embed-responsive-1by1::before {
-  padding-top: 100%;
+  padding-top: round(100%, 1px);
 }
 
 .embed-responsive-1by1::before {
-  padding-top: 100%;
+  padding-top: round(100%, 1px);
 }
 
 @media (min-width: 992px) {
