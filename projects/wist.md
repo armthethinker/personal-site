@@ -35,20 +35,12 @@ And no harder than regular video
    style="xl"
 %}
 
-
-
-<!-- {% include text-big.html
-   tertiary="I made this new experience \"just work\"."
-%} -->
-   <!-- body="Design + Engineering + Product + R&D + Founding" -->
-
-
 {% include text-big.html
    tertiary="I made Wist \"just work\"."
    bodyList="
-From the initial prototyping & discovery;
+From initial prototyping & discovery;
 To founding, raising, & building the team;
-To leading + crafting design, eng, & product;
+To leading + crafting design, eng, & product
 "
 %}
 
@@ -75,7 +67,7 @@ To leading + crafting design, eng, & product;
 
 {% include text-big.html
    secondary="True immersive playback"
-   body="3D movies are for watching. Wist is for reliving a life in motion."
+   body="3D movies → watching. <br>Wist → reliving."
    spacing="mt-5 pt-5"
 %}
 
@@ -90,18 +82,12 @@ To leading + crafting design, eng, & product;
 %}
 
 {% include text-big.html
-   body="Captures are synced to make the experience seamless"
+   body="Synced captures make a seamless experience across devices. It just works."
 %}
 
 {% include text-big.html
    secondary="Enhance forever"
-   body="Don't get stuck with today's pipeline"
-   spacing="mt-5 pt-5"
-%}
-
-{% include text-big.html
-   secondary="Enhance forever"
-   body="Don't get stuck with today's pipeline"
+   body="Continual improvement with reconstruction advancements"
    spacing="mt-5 pt-5"
 %}
 
@@ -119,19 +105,22 @@ To leading + crafting design, eng, & product;
 
 {% include text-big.html
    secondary="The whole flow"
+   bodyList="Capture on iOS;Relive on any platform"
    spacing="mt-5 pt-5"
 %}
+
 
 {% include media-img-xl.html
    style="lg"
    url="temp/ux-flow.jpg"
-   caption="** TK Wist flow.** Capture or import. Process on device and enhance in the cloud. Relive in headset or on mobile."
    extraImgClasses="img-xl-contained"
 %}
-
+{% include text-big.html
+   body="Initial processing runs on device during capture. Server-side processing additionally enhances the capture with a constellation of techniques. But, a user doesn't need to think about it."
+%}
 
 {% include text-big.html
-   secondary="As a designer with a wide background"
+   secondary="Operating across design & engineering"
    tertiary="I crafted every detail"
    bodyList="
 Vision;
@@ -154,7 +143,7 @@ Encoding;
 
 {% include text-big.html
    tertiary="1,000 details made sci-fi real"
-   body="And we had to build everything from scratch"
+   body="Largely built from scratch"
 %}
 
 {% include cards-horizontal.html

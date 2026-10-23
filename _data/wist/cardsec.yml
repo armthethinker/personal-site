@@ -9,12 +9,12 @@ capture:
   type: image
 
 playback:
-- header: In headsets
-  caption: Relive and walk around the moment on Quest and Vision Pro
+- header: Emotionally gripping in headset
+  caption: Relive memories in your space as though you are there again. <br><small class="text-secondary d-block mt-2">Quest 2, 3, Pro<br> Vision Pro</small>
   url: /assets/imgopt/wist/temp/throwing-low.mp4
   type: video
-- header: And on mobile
-  caption: Experience a depth-enhanced 2D-inspired viewer
+- header: Depth-enhanced on mobile
+  caption: 2D paradigms get extended with our our additional data, enabling spatial scrubbing, jitter reduction, world up alignment. <br><small class="text-secondary d-block mt-2">iOS</small>
   url: /assets/imgopt/wist/temp/wist-spatial-scrubbing-sm.mp4
   type: video
 
@@ -68,27 +68,27 @@ enhance:
 #   type: image
 
 sweat2:
-- header: Captures have hand jitter
-  caption: Auto-stabilize memories by separating the capture camera from the constrained render camera
+- header: Captured hand jitter is distracting
+  caption: Auto-stabilize memories by separating the capture camera from the constrained render camera in the reprojected scene
   url: /assets/imgopt/wist/temp/ios-stabilization.mp4
   type: video
-- header: Users expect cinematic VFX before they use the app
-  caption: Memory-vibes VFX honors the capture without degrading or distracting
+- header: Users expect cinematic sci-fi VFX before they use the app
+  caption: "VFX with \"memory vibes\" honors the capture without degrading the central content"
   url: /assets/imgopt/wist/temp/clips/just-born-sm.mp4
   type: video
 - header: Captures may have rotation
   caption: Wist counter-rolls the capture to maintain world up alignment, on headsets and mobile
   url: /assets/imgopt/wist/temp/clips/maintain-up-square-sm.mp4
   type: video
-- header: Users want access to their 2D videos
-  caption: Auto export to their camera roll
+- header: Users want their video outside of Wist
+  caption: Auto export a 2D copy to their camera roll
   url: /assets/imgopt/wist/temp/features/auto-export.jpg
   type: image
 - header: Soft VR shadows are computationally expensive
   caption: Pre-render soft blurred icons for beautiful fake shadows on volumetric buttons (Quest)
   url: /assets/imgopt/wist/temp/feature-walkthrough-photos/quest/icon-closeup.jpg
   type: image
-- header: Scene backgrounds can distract from the people
+- header: Scene backgrounds can distract from people
   caption: Toggle person highlighting to use our segmentation mask
   url: /assets/imgopt/wist/temp/clips/person-highlighting-sm.mp4
   type: video
@@ -97,7 +97,7 @@ sweat2:
   url: /assets/imgopt/wist/temp/features/your-memories-closeup3.jpg
   type: image
 - header: New users are wary of camera permissions
-  caption: Pack the viewer into onboarding flow to decrease time-to-magic and build trust
+  caption: Pack the viewer into onboarding flow to decrease time-to-magic and build trust, increasing onboarding conversion by 15%
   url: /assets/imgopt/wist/temp/onboarding/onboarding-try.jpg
   type: image
 - header: If the app is percieved as complex, users will churn
@@ -109,17 +109,18 @@ sweat2:
   # url: /assets/imgopt/wist/temp/visionOS-grabbing.mp4
   url: /assets/imgopt/wist/temp/clips/grabbing-align-sm.mp4
   type: video
-- header: Focused, collapsible menus (Vision Pro)
-  url: /assets/imgopt/wist/temp/feature-walkthrough-photos/avp/browse-collapsed.jpg
-  type: image
-- header: Captures with high movement run away from you
-  caption: A portal feature reframes the scene
+- header: Captures with high movement can run away
+  caption: A toggle realigns the capture to a stable portal
   url: /assets/imgopt/wist/temp/clips/portal2-sm.mp4
   type: video
 - header: Browsing captures can be cumbersome
   caption: Expandable menu unifies playback and browsing, contextually animating and grabbable for comfort
   url: /assets/imgopt/wist/temp/clips/quest-menu-grabbable-sm.mp4
   type: video
+- header: Platforms have different UI conventions
+  caption: Experiment with layout, interaction, and visuals across platforms during beta
+  url: /assets/imgopt/wist/temp/feature-walkthrough-photos/avp/browse-collapsed.jpg
+  type: image
 
 # - header: Import
 #   caption: On device for an initial version. Higher quality processes on the cloud.
