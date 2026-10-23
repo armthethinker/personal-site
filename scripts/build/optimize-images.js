@@ -25,7 +25,7 @@ async function processImages() {
         const targetDirPath = path_1.default.join(TARGET_DIR, parsedPath.dir);
         await fs_1.promises.mkdir(targetDirPath, { recursive: true });
         const ext = parsedPath.ext.toLowerCase();
-        const isImage = ['.png', '.jpg', '.jpeg', '.webp'].includes(ext);
+        const isImage = ['.png', '.jpg', '.jpeg', '.webp', '.heic'].includes(ext);
         if (isImage) {
             // continue
             // --- Process Images ---
