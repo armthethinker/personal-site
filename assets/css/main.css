@@ -10305,21 +10305,20 @@ img.img-xl.img-xl-contained {
 @media (min-width: 768px) {
   .focus-group .focus-item {
     z-index: 1;
-    will-change: opacity, transform, box-shadow;
-    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform, box-shadow, filter;
+    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   }
   body:not(.is-touching) .focus-group .focus-item:hover {
     opacity: 1;
     z-index: 2;
     transform: scale(1.08);
+    filter: blur(0px);
   }
   body:not(.is-touching) .focus-group:has(.focus-item:hover) .focus-item:not(:hover) {
-    opacity: 0.4;
+    opacity: 0.3;
     transform: scale(1);
+    filter: blur(4px);
   }
-}
-.card {
-  margin-bottom: 24px;
 }
 @media (min-width: 576px) {
   .card {
@@ -10327,9 +10326,6 @@ img.img-xl.img-xl-contained {
   }
 }
 
-.p-sec .card {
-  justify-content: space-between;
-}
 .p-sec .card img,
 .p-sec .card .embed-responsive {
   margin-bottom: 0;

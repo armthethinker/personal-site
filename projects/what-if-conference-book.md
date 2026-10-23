@@ -84,6 +84,7 @@ What If…? began as a conversation between Matt and myself. We talked about apa
    data= site.data.whatif.principles
    col="col-12 col-lg-6"
    aspect="4by3"
+   cardContentFlexClasses="align-content-start"
 %}
 
 {% include media-youtube.html

@@ -21,6 +21,9 @@
 
 {% assign aspect = include.aspect | default: "1by1" %}
 {% assign colsub = include.colsub | default: "col-12" %}
+{% assign colsubimg = include.colsubimg | default: colsub %}
+
+{% assign cardContentFlexClasses = include.cardContentFlexClasses | default: "justify-content-between align-content-between" %}
 
 {% assign useProblemSolutionHeaderFormat = include.useProblemSolutionHeaderFormat | default: false %}
 
@@ -54,13 +57,14 @@
                   <div class="col mb-4">
                   {% endif %}
                      <div class="card h-lg-100 {% if imgBottom == true %}mb-0{% endif %}">
-                        <div class="row align-items-center">
-                           <div class="{{colsub}}">
-                              {% if item.url and imgBottom == false %}
+                        <div class="row align-items-center h-lg-100 {{cardContentFlexClasses}}">
+                           {% if item.url and imgBottom == false %}
+                           <div class="{{colsubimg}}">
                               {% include cards-media.html type=item.type src=item.url item=item position="top" aspect=aspect %}
-                              {% endif %}
                            </div>
-
+                           {% endif %}
+                           
+                           {% if item.header and caption %}
                            <div class="{{colsub}}">
                               <div class="card-body">
                                  {% if useProblemSolutionHeaderFormat %}
@@ -72,13 +76,15 @@
                                  {% endif %}
                               </div>
                            </div>
+                           {% endif %}
+                           {% if item.url %}
+                           {% if imgBottom == true %}
+                           <div class="{{colsubimg}}">
+                              {% include cards-media.html type=item.type src=item.url item=item position="bottom" aspect=aspect %}
+                           </div>
+                           {% endif %}
+                           {% endif %}
                         </div>
-                        {% if item.url %}
-                        {% if imgBottom == true %}
-
-                         {% include cards-media.html type=item.type src=item.url item=item position="bottom" aspect=aspect %}
-                        {% endif %}
-                        {% endif %}
                      </div>
                   </div>
                   {% endfor %}

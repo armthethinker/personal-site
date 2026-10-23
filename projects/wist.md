@@ -12,6 +12,7 @@ modelURL: /assets/models/wist/
 
 {% include p-section.html
    header="Overview"
+   subheader="What Wist is"
 %}
 
 {% include text-big.html
@@ -47,7 +48,7 @@ And no harder than regular video
    bodyList="
 From the initial prototyping & discovery;
 To founding, raising, & building the team;
-To leading design, eng, & product;
+To leading + crafting design, eng, & product;
 "
 %}
 
@@ -60,9 +61,12 @@ To leading design, eng, & product;
 
 {% include cards.html
    data= site.data.wist.cardsec.capture
-   col="col-12 col-md-6"
+   col="col-12 col-md-10 col-lg-12 col-xl-10 col-xxl-9 mx-auto"
+   colsub="col-12 col-lg-5 col-xxl-4"
+   colsubimg="col"
    fullWidth=true
    imgBottom=true
+   aspect="1by1"
 %}
 
 {% include text-big.html
@@ -77,7 +81,9 @@ To leading design, eng, & product;
 
 {% include cards.html
    data= site.data.wist.cardsec.playback
-   col="col-12 col-md-6"
+   col="col-12 col-md-10 col-lg-12 col-xl-11 col-xxl-10 mx-auto"
+   colsub="col-12 col-lg-4"
+   colsubimg="col"
    fullWidth=true
    imgBottom=true
    aspect="14by9"

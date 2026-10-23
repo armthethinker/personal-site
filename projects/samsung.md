@@ -204,7 +204,7 @@ Depending on the timeline and problem we were addressing, we could shift time be
    data=site.data.samsung.typesOfWork
    col="col-12 col-md-6 col-xl-4"
    aspect="16by9"
-
+   cardContentFlexClasses="align-content-start"
 %}
 
 
