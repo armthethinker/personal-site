@@ -334,7 +334,7 @@ Users could also import 2D video for a \"spatial upconversion\".
 
 {% include media-img.html
    url="capture2-low.mp4"
-   caption="**Capturing** feels like video. We use a depth effect at camera init to hint at the difference between Wist and other camera apps. Dismissable. Hints at depth capture. Surfaces most important camera performance notices (e.g. phone is hot)."
+   caption="**Capturing** feels like video. We use a depth effect at camera init to hint at the difference between Wist and other camera apps. Dismissible. Hints at depth capture. Surfaces most important camera performance notices (e.g. phone is hot)."
    video=true
    aspect="1by1"
    url2="bento-sm/import.jpg"
@@ -452,7 +452,7 @@ There is an interplay between what we can build, what is performant, and what us
 
 **Playback-focused UI** prioritizes reliving moments over navigation and viewer options.
 
-**Sci-fi insipired, but not distracting visual styling.** Critical that we play the memory vividly, lean into user notions of \"memory viewers\" from sci-fi media (including the artifacts), but we cannot let the styling get in the way of the moment.
+**Sci-fi inspired, but not distracting visual styling.** Critical that we play the memory vividly, lean into user notions of \"memory viewers\" from sci-fi media (including the artifacts), but we cannot let the styling get in the way of the moment.
 
 **Space specific considerations** for how the reprojected media intersects a user's space and their varied intentions while using the app:
    - Getting closer to the capture position fades in the culled edges
